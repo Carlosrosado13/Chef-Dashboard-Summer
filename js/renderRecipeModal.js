@@ -1,3 +1,5 @@
+import { scaleRecipe } from "./scaleRecipe.js";
+
 function createElement(tagName, className, textContent) {
   const element = document.createElement(tagName);
 
@@ -78,7 +80,7 @@ export function createRecipeModal() {
   return {
     element: modal,
     openRecipe(recipe) {
-      body.replaceChildren(renderRecipe(recipe));
+      body.replaceChildren(renderRecipe(recipe, recipe));
       open();
     },
     openMissingRecipe(title) {
@@ -89,24 +91,78 @@ export function createRecipeModal() {
   };
 }
 
-function renderRecipe(recipe) {
+function renderRecipe(recipe, originalRecipe) {
   const content = createElement("article", "recipe-modal__content");
   const title = createElement("h2", "recipe-modal__title", recipe.title);
-  const meta = createElement("p", "recipe-modal__meta", `${recipe.category} | Yield: ${recipe.yield}`);
+  const meta = createElement("p", "recipe-modal__meta", `${recipe.category} | Original yield: ${originalRecipe.yield}`);
+  const scaler = renderYieldScaler(recipe, originalRecipe, content);
 
   const ingredientsTitle = createElement("h3", "", "Ingredients");
+  const ingredientsWrap = createElement("div", "recipe-modal__ingredients-wrap");
+  ingredientsWrap.append(renderIngredients(recipe.ingredients));
   const stepsTitle = createElement("h3", "", "Steps");
 
   content.append(
     title,
     meta,
+    scaler,
     ingredientsTitle,
-    renderIngredients(recipe.ingredients),
+    ingredientsWrap,
     stepsTitle,
     renderSteps(recipe.steps)
   );
 
   return content;
+}
+
+function renderYieldScaler(recipe, originalRecipe, content) {
+  const form = createElement("form", "recipe-scaler");
+  const label = createElement("label", "recipe-scaler__label", "Target yield");
+  const input = createElement("input", "recipe-scaler__input");
+  const scaleButton = createElement("button", "recipe-scaler__button", "Scale");
+  const resetButton = createElement("button", "recipe-scaler__button", "Reset");
+  const message = createElement("p", "recipe-scaler__message", `Current yield: ${recipe.yield}`);
+
+  input.type = "text";
+  input.value = recipe.yield;
+  input.placeholder = "Example: 48 servings";
+  scaleButton.type = "submit";
+  resetButton.type = "button";
+
+  label.append(input);
+  form.append(label, scaleButton, resetButton, message);
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const result = scaleRecipe(originalRecipe, input.value);
+
+    if (!result.ok) {
+      message.textContent = result.error;
+      message.dataset.tone = "error";
+      return;
+    }
+
+    updateScaledIngredients(content, result.recipe.ingredients);
+    message.textContent = `Current yield: ${result.recipe.yield} | Scale factor: ${result.scaleFactor.toFixed(2)}`;
+    message.dataset.tone = "success";
+  });
+
+  resetButton.addEventListener("click", () => {
+    input.value = originalRecipe.yield;
+    updateScaledIngredients(content, originalRecipe.ingredients);
+    message.textContent = `Current yield: ${originalRecipe.yield}`;
+    message.dataset.tone = "neutral";
+  });
+
+  return form;
+}
+
+function updateScaledIngredients(content, ingredients) {
+  const ingredientsWrap = content.querySelector(".recipe-modal__ingredients-wrap");
+
+  if (ingredientsWrap) {
+    ingredientsWrap.replaceChildren(renderIngredients(ingredients));
+  }
 }
 
 function renderMissingRecipe(title) {

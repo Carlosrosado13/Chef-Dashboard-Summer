@@ -359,6 +359,63 @@ button {
   font-size: 1rem;
 }
 
+.recipe-scaler {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface-muted);
+}
+
+.recipe-scaler__label {
+  display: grid;
+  gap: 4px;
+  min-width: min(220px, 100%);
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.recipe-scaler__input {
+  min-height: 38px;
+  padding: 8px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font: inherit;
+}
+
+.recipe-scaler__button {
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+  cursor: pointer;
+}
+
+.recipe-scaler__button:first-of-type {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+.recipe-scaler__message {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.recipe-scaler__message[data-tone="success"] {
+  color: var(--color-accent-strong);
+}
+
+.recipe-scaler__message[data-tone="error"] {
+  color: var(--color-error);
+}
+
 .recipe-modal__ingredients,
 .recipe-modal__steps {
   margin: 0;
