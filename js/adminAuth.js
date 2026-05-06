@@ -1,4 +1,36 @@
 const SESSION_KEY = "chefDashboard.adminSession";
+const LOCAL_WORKER_ORIGIN = "http://127.0.0.1:8787";
+
+function getApiUrl(path) {
+  if (/^https?:\/\//i.test(path)) {
+    return path;
+  }
+
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+  const isLocalStaticHost = ["localhost", "127.0.0.1"].includes(window.location.hostname) && window.location.port !== "8787";
+
+  return isLocalStaticHost ? `${LOCAL_WORKER_ORIGIN}${normalizedPath}` : normalizedPath;
+}
+
+async function readJsonResponse(response) {
+  const text = await response.text();
+
+  if (!text.trim()) {
+    return {
+      ok: false,
+      error: `Empty response from admin API (${response.status}).`
+    };
+  }
+
+  try {
+    return JSON.parse(text);
+  } catch {
+    return {
+      ok: false,
+      error: `Admin API returned invalid JSON (${response.status}).`
+    };
+  }
+}
 
 function getStoredSession() {
   const rawSession = sessionStorage.getItem(SESSION_KEY);
@@ -37,9 +69,10 @@ export function getAdminAuthHeader() {
 }
 
 export async function adminFetch(url, options = {}) {
-  const response = await fetch(url, {
+  const response = await fetch(getApiUrl(url), {
     ...options,
     headers: {
+      Accept: "application/json",
       ...(options.headers || {}),
       ...getAdminAuthHeader()
     }
@@ -87,14 +120,15 @@ function renderLoginForm(container, options = {}) {
     message.textContent = "Checking password...";
 
     try {
-      const response = await fetch("/api/admin/login", {
+      const response = await fetch(getApiUrl("/api/admin/login"), {
         method: "POST",
         headers: {
+          Accept: "application/json",
           "content-type": "application/json"
         },
         body: JSON.stringify({ password: input.value })
       });
-      const result = await response.json();
+      const result = await readJsonResponse(response);
 
       if (!response.ok || !result.ok) {
         message.textContent = result.error || "Login failed.";
@@ -127,7 +161,7 @@ async function verifySession() {
 
   try {
     const response = await adminFetch("/api/admin/session");
-    const result = await response.json();
+    const result = await readJsonResponse(response);
 
     return response.ok && result.ok ? result : { ok: false };
   } catch {
