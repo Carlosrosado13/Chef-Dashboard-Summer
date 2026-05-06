@@ -1,4 +1,5 @@
 import { initializeAdminAuth } from "./adminAuth.js";
+import { initMenuAssignment } from "./adminMenuAssignment.js";
 import { loadRecipes } from "./loadRecipes.js";
 import { applyRecipePatch, rollbackRecipePatch } from "./applyRecipePatch.js";
 import { generateCreateRecipePatch, generateRecipePatch } from "./generateRecipePatch.js";
@@ -465,6 +466,7 @@ function renderAdmin() {
 
 async function initAdmin() {
   if (adminInitialized) {
+    await initMenuAssignment({ recipes: state.recipes });
     renderAdmin();
     return;
   }
@@ -493,6 +495,7 @@ async function initAdmin() {
 
     state.recipes = recipeResult.recipes;
     state.schema = schema;
+    await initMenuAssignment({ recipes: state.recipes });
     createRecipeButton.addEventListener("click", startCreateRecipe);
     searchInput.addEventListener("input", () => {
       state.search = searchInput.value;

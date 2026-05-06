@@ -581,6 +581,11 @@ button {
   align-items: start;
 }
 
+.admin-content {
+  display: grid;
+  gap: 16px;
+}
+
 .admin-header-status {
   display: grid;
   justify-items: end;
@@ -628,6 +633,7 @@ button {
 }
 
 .admin-field input,
+.admin-field select,
 .admin-field textarea {
   width: 100%;
   min-height: 38px;
@@ -641,6 +647,57 @@ button {
 
 .admin-field textarea {
   resize: vertical;
+}
+
+.menu-assignment-panel {
+  display: grid;
+  gap: 12px;
+}
+
+.menu-assignment-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) minmax(260px, 1fr) minmax(280px, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.menu-assignment-controls,
+.menu-assignment-recipes,
+.menu-assignment-preview {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+
+.menu-assignment-recipes input[type="search"] {
+  width: 100%;
+  min-height: 38px;
+  padding: 8px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text);
+  font: inherit;
+}
+
+.menu-assignment-recipes .recipe-list {
+  max-height: 360px;
+  overflow: auto;
+}
+
+.admin-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.admin-check input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-accent);
 }
 
 .recipe-list {
@@ -926,6 +983,10 @@ button {
 
 @media (max-width: 980px) {
   .admin-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-assignment-grid {
     grid-template-columns: 1fr;
   }
 }
