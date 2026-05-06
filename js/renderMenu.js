@@ -141,6 +141,7 @@ export function renderWeek(weekName, week) {
   section.dataset.week = weekName;
   const heading = createElement("h3", "menu-week__title", weekName);
   const days = createElement("div", "menu-week__days");
+  days.dataset.viewMode = Object.keys(week.days || {}).length > 1 ? "weekly" : "daily";
 
   for (const [dayName, dayMenu] of Object.entries(week.days || {})) {
     days.append(renderDay(dayName, dayMenu));
@@ -178,7 +179,9 @@ export function renderMenu(menuData, options = {}) {
   }
 
   for (const [mealType, mealRotation] of Object.entries(filteredData)) {
-    fragment.append(renderMealType(mealType, mealRotation));
+    const mealElement = renderMealType(mealType, mealRotation);
+    mealElement.dataset.viewMode = options.viewMode || "daily";
+    fragment.append(mealElement);
   }
 
   return fragment;

@@ -8,12 +8,14 @@ import {
 
 const state = {
   menuData: null,
+  viewMode: "daily",
   selectedMealType: "",
   selectedWeek: "",
   selectedDay: ""
 };
 
 let menuRoot;
+let viewFilter;
 let mealFilter;
 let weekFilter;
 let dayFilter;
@@ -141,6 +143,28 @@ function syncDefaultSelections() {
 }
 
 function renderControls(options) {
+  if (dayFilter) {
+    dayFilter.closest(".control-group").hidden = state.viewMode === "weekly";
+  }
+
+  renderFilterButtons(
+    viewFilter,
+    [
+      {
+        label: "Daily View",
+        value: "daily"
+      },
+      {
+        label: "Weekly View",
+        value: "weekly"
+      }
+    ],
+    state.viewMode,
+    (viewMode) => {
+      state.viewMode = viewMode;
+    }
+  );
+
   renderFilterButtons(
     mealFilter,
     options.mealTypes.map((mealType) => ({
@@ -204,14 +228,22 @@ function renderDashboard() {
     filters: {
       mealType: state.selectedMealType,
       week: state.selectedWeek,
-      day: state.selectedDay
-    }
+      day: state.viewMode === "daily" ? state.selectedDay : ""
+    },
+    viewMode: state.viewMode
   });
+
+  if (state.viewMode === "daily") {
+    setStatus(`${formatMealType(state.selectedMealType)} | ${state.selectedWeek} | ${state.selectedDay}`, "success");
+  } else {
+    setStatus(`${formatMealType(state.selectedMealType)} | ${state.selectedWeek}`, "success");
+  }
   console.log("[menu-dashboard] rendering completed");
 }
 
 async function initDashboard() {
   menuRoot = document.querySelector("#menu-root");
+  viewFilter = document.querySelector("#view-filter");
   mealFilter = document.querySelector("#meal-filter");
   weekFilter = document.querySelector("#week-filter");
   dayFilter = document.querySelector("#day-filter");
