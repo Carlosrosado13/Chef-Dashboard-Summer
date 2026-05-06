@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/menuRotation.schema.json",
+  "title": "Menu Rotation",
+  "description": "A structured menu rotation containing lunch and dinner schedules organized by week, day, and menu category.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "lunch": {
+      "$ref": "#/$defs/lunchRotation",
+      "description": "The lunch menu rotation grouped by week and day."
+    },
+    "dinner": {
+      "$ref": "#/$defs/dinnerRotation",
+      "description": "The dinner menu rotation grouped by week and day."
+    }
+  },
+  "$defs": {
+    "lunchRotation": {
+      "type": "object",
+      "description": "A lunch rotation containing week records.",
+      "additionalProperties": false,
+      "required": [
+        "weeks"
+      ],
+      "properties": {
+        "weeks": {
+          "type": "object",
+          "description": "Lunch menu weeks keyed by week name or number.",
+          "minProperties": 1,
+          "additionalProperties": {
+            "$ref": "#/$defs/lunchWeek"
+          }
+        }
+      }
+    },
+    "dinnerRotation": {
+      "type": "object",
+      "description": "A dinner rotation containing week records.",
+      "additionalProperties": false,
+      "required": [
+        "weeks"
+      ],
+      "properties": {
+        "weeks": {
+          "type": "object",
+          "description": "Dinner menu weeks keyed by week name or number.",
+          "minProperties": 1,
+          "additionalProperties": {
+            "$ref": "#/$defs/dinnerWeek"
+          }
+        }
+      }
+    },
+    "lunchWeek": {
+      "type": "object",
+      "description": "A single lunch menu week containing day records.",
+      "additionalProperties": false,
+      "required": [
+        "days"
+      ],
+      "properties": {
+        "days": {
+          "type": "object",
+          "description": "Lunch menu days keyed by day name.",
+          "minProperties": 1,
+          "additionalProperties": {
+            "$ref": "#/$defs/lunchDay"
+          }
+        }
+      }
+    },
+    "dinnerWeek": {
+      "type": "object",
+      "description": "A single dinner menu week containing day records.",
+      "additionalProperties": false,
+      "required": [
+        "days"
+      ],
+      "properties": {
+        "days": {
+          "type": "object",
+          "description": "Dinner menu days keyed by day name.",
+          "minProperties": 1,
+          "additionalProperties": {
+            "$ref": "#/$defs/dinnerDay"
+          }
+        }
+      }
+    },
+    "lunchDay": {
+      "type": "object",
+      "description": "The lunch menu categories for a single day.",
+      "additionalProperties": false,
+      "properties": {
+        "SOUP": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The soup served at lunch."
+        },
+        "SALAD": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The salad served at lunch."
+        },
+        "MAIN 1": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The first main lunch option."
+        },
+        "MAIN 2": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The second main lunch option."
+        },
+        "DESSERT": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The dessert served at lunch."
+        }
+      }
+    },
+    "dinnerDay": {
+      "type": "object",
+      "description": "The dinner menu categories for a single day.",
+      "additionalProperties": false,
+      "properties": {
+        "Appetizer 1": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The first appetizer served at dinner."
+        },
+        "Appetizer 2": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The second appetizer served at dinner."
+        },
+        "Elevated": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The elevated dinner entree option."
+        },
+        "Traditional": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The traditional dinner entree option."
+        },
+        "Alternative": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The alternative dinner entree option."
+        },
+        "Veg 1": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The first dinner vegetable side."
+        },
+        "Veg 2": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The second dinner vegetable side."
+        },
+        "Starch": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The dinner starch side."
+        },
+        "Dessert": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The dessert served at dinner."
+        }
+      }
+    },
+    "menuItem": {
+      "type": "string",
+      "description": "The menu item name assigned to this category."
+    }
+  }
+}
