@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe Admin</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="dashboard admin-dashboard">
+    <header class="dashboard-header">
+      <div>
+        <p class="dashboard-eyebrow">Safe editing workflow</p>
+        <h1>Recipe Admin</h1>
+      </div>
+      <p id="admin-status" class="dashboard-status" role="status">Loading recipes...</p>
+    </header>
+
+    <section id="admin-error" class="frontend-error" role="alert" hidden></section>
+
+    <section class="admin-layout" aria-label="Recipe management">
+      <aside class="admin-panel recipe-list-panel">
+        <h2>Recipes</h2>
+        <label class="admin-field">
+          <span>Search recipes</span>
+          <input id="recipe-search" type="search" placeholder="Search by title or category">
+        </label>
+        <div id="recipe-list" class="recipe-list" aria-label="Recipe list"></div>
+      </aside>
+
+      <section class="admin-panel recipe-editor-panel">
+        <div id="recipe-editor-root"></div>
+      </section>
+
+      <aside class="admin-panel validation-panel">
+        <h2>Validation</h2>
+        <div id="validation-root"></div>
+        <h2>Patch Preview</h2>
+        <pre id="patch-preview" class="patch-preview">{}</pre>
+      </aside>
+    </section>
+  </main>
+
+  <script type="module" src="js/adminRecipeEditor.js"></script>
+</body>
+</html>
