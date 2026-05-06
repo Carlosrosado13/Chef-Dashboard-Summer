@@ -197,6 +197,35 @@ function renderFilterButtons(container, options, selectedValue, onSelect) {
   );
 }
 
+function renderSelectControl(container, options, selectedValue, onSelect) {
+  if (!container) {
+    throw new Error("Select container was not found.");
+  }
+
+  if (options.length === 0) {
+    container.replaceChildren();
+    return;
+  }
+
+  const select = document.createElement("select");
+  select.className = "select-filter__control";
+
+  for (const option of options) {
+    const item = document.createElement("option");
+    item.value = option.value;
+    item.textContent = option.label;
+    item.selected = selectedValue === option.value;
+    select.append(item);
+  }
+
+  select.addEventListener("change", () => {
+    onSelect(select.value);
+    renderDashboard();
+  });
+
+  container.replaceChildren(select);
+}
+
 function createFilterButton(label, value, isActive, onSelect) {
   const button = document.createElement("button");
   button.type = "button";
@@ -279,7 +308,7 @@ function renderControls(options) {
     }
   );
 
-  renderFilterButtons(
+  renderSelectControl(
     weekFilter,
     options.weeks.map((week) => ({
       label: week,
@@ -292,7 +321,7 @@ function renderControls(options) {
     }
   );
 
-  renderFilterButtons(
+  renderSelectControl(
     dayFilter,
     options.days.map((day) => ({
       label: day,

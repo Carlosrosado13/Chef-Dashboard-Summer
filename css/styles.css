@@ -2011,6 +2011,19 @@ body {
   box-shadow: 0 8px 20px rgba(15, 143, 131, 0.22);
 }
 
+#view-filter,
+#meal-filter {
+  padding: 2px;
+  border: 1px solid rgba(15, 143, 131, 0.14);
+  border-radius: 8px;
+  background: #f4fbf6;
+}
+
+#view-filter .filter-button,
+#meal-filter .filter-button {
+  box-shadow: none;
+}
+
 .dashboard-controls .quick-switch-group .filter-button {
   border-color: rgba(247, 183, 51, 0.55);
   background: var(--color-citrus-soft);
@@ -2204,6 +2217,7 @@ body {
 .admin-field input,
 .admin-field select,
 .admin-field textarea,
+.select-filter__control,
 .menu-assignment-recipes input[type="search"],
 .recipe-create-row input {
   border-color: rgba(15, 143, 131, 0.22);
@@ -2701,7 +2715,7 @@ body {
 .dashboard-controls__body {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   min-width: 0;
   overflow-x: auto;
   padding-bottom: 1px;
@@ -2712,7 +2726,7 @@ body {
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
   min-width: 0;
   padding: 0 6px 0 0;
   border-right: 1px solid rgba(207, 226, 216, 0.85);
@@ -2730,7 +2744,7 @@ body {
 .dashboard-controls h2 {
   flex: 0 0 auto;
   min-width: auto;
-  font-size: 0.64rem;
+  font-size: 0.62rem;
   line-height: 1;
   white-space: nowrap;
 }
@@ -2745,6 +2759,29 @@ body {
   padding-bottom: 0;
 }
 
+.select-filter {
+  display: inline-flex;
+}
+
+.select-filter__control {
+  min-height: 30px;
+  min-width: 108px;
+  padding: 3px 28px 3px 8px;
+  border: 1px solid rgba(15, 143, 131, 0.18);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--color-text);
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 750;
+  box-shadow: 0 2px 0 rgba(15, 143, 131, 0.08);
+}
+
+.select-filter__control:focus {
+  outline: 3px solid rgba(247, 183, 51, 0.28);
+  border-color: var(--color-accent);
+}
+
 .filter-button,
 .week-filter__button {
   min-height: 30px;
@@ -2757,6 +2794,7 @@ body {
 
 .quick-switch-buttons .filter-button {
   min-width: auto;
+  padding-inline: 7px;
 }
 
 .dashboard-controls .quick-switch-group {
