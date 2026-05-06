@@ -164,6 +164,10 @@ button {
   margin-top: 20px;
 }
 
+.forecast-root {
+  margin-top: 20px;
+}
+
 .menu-root > * {
   animation: view-in 180ms ease;
 }
@@ -1015,6 +1019,121 @@ button {
   color: var(--color-accent-strong);
 }
 
+.forecast-panel {
+  display: grid;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-panel);
+}
+
+.forecast-panel__header h2 {
+  margin: 0 0 4px;
+  font-size: 1.35rem;
+}
+
+.forecast-panel__header p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.forecast-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.forecast-card {
+  display: grid;
+  gap: 2px;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface-muted);
+}
+
+.forecast-card__label {
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.forecast-card__value {
+  color: var(--color-accent-strong);
+  font-size: 1.1rem;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.forecast-section,
+.forecast-alerts,
+.forecast-trend {
+  padding: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface-muted);
+}
+
+.forecast-alerts--active {
+  border-color: #e0c46d;
+  background: #fff9e8;
+}
+
+.forecast-section h3,
+.forecast-alerts h3,
+.forecast-trend h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+.forecast-trend p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.forecast-list,
+.forecast-alert-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.forecast-list__item,
+.forecast-alert-list__item {
+  padding-top: 8px;
+  border-top: 1px solid var(--color-border);
+}
+
+.forecast-list__item:first-child,
+.forecast-alert-list__item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.forecast-list__item span,
+.forecast-alert-list__item span {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.forecast-list__item strong,
+.forecast-alert-list__item strong {
+  color: var(--color-accent-strong);
+}
+
+.forecast-alert-list__item--shortage strong,
+.forecast-alert-list__item--review strong {
+  color: var(--color-error);
+}
+
 .admin-layout {
   display: grid;
   grid-template-columns: minmax(220px, 280px) minmax(0, 1fr) minmax(260px, 360px);
@@ -1395,7 +1514,8 @@ button {
   .inventory-panel,
   .purchase-panel,
   .food-cost-panel,
-  .analytics-panel {
+  .analytics-panel,
+  .forecast-panel {
     padding: 14px;
   }
 
