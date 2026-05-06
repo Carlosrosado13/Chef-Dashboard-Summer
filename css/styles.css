@@ -144,6 +144,10 @@ button {
   gap: 20px;
 }
 
+.ingredient-root {
+  margin-top: 20px;
+}
+
 .menu-root > * {
   animation: view-in 180ms ease;
 }
@@ -366,6 +370,103 @@ button {
   margin-bottom: 6px;
 }
 
+.ingredient-panel {
+  display: grid;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-panel);
+}
+
+.ingredient-panel__header h2 {
+  margin: 0 0 4px;
+  font-size: 1.35rem;
+}
+
+.ingredient-panel__header p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.ingredient-panel__groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.ingredient-group {
+  padding: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface-muted);
+}
+
+.ingredient-group__title {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.ingredient-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ingredient-list__item {
+  display: grid;
+  grid-template-columns: minmax(72px, auto) 1fr;
+  gap: 4px 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--color-border);
+}
+
+.ingredient-list__item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.ingredient-list__quantity {
+  color: var(--color-accent-strong);
+  font-weight: 700;
+}
+
+.ingredient-list__name {
+  overflow-wrap: anywhere;
+}
+
+.ingredient-list__sources {
+  grid-column: 2;
+  color: var(--color-muted);
+  font-size: 0.82rem;
+}
+
+.ingredient-warning {
+  padding: 14px;
+  border: 1px solid #e0c46d;
+  border-radius: 8px;
+  background: #fff9e8;
+}
+
+.ingredient-warning h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.ingredient-warning ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.ingredient-empty {
+  margin: 0;
+  color: var(--color-muted);
+}
+
 @media (max-width: 720px) {
   .dashboard {
     width: min(100% - 20px, 1180px);
@@ -384,8 +485,17 @@ button {
 
   .menu-meal,
   .menu-week,
-  .dashboard-controls {
+  .dashboard-controls,
+  .ingredient-panel {
     padding: 14px;
+  }
+
+  .ingredient-list__item {
+    grid-template-columns: 1fr;
+  }
+
+  .ingredient-list__sources {
+    grid-column: auto;
   }
 
   .filter-buttons {

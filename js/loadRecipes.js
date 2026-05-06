@@ -1,6 +1,6 @@
 const DEFAULT_RECIPES_URL = "data/recipes/sample-recipes.json";
 
-function normalizeTitle(title) {
+export function normalizeRecipeTitle(title) {
   return String(title || "")
     .toLowerCase()
     .replace(/\s+/g, " ")
@@ -40,9 +40,9 @@ export async function loadRecipes(url = DEFAULT_RECIPES_URL) {
 }
 
 export function findRecipeByTitle(recipes, title) {
-  const normalizedTitle = normalizeTitle(title);
+  const normalizedTitle = normalizeRecipeTitle(title);
 
-  return recipes.find((recipe) => normalizeTitle(recipe.title) === normalizedTitle) || null;
+  return recipes.find((recipe) => normalizeRecipeTitle(recipe.title) === normalizedTitle) || null;
 }
 
 export { DEFAULT_RECIPES_URL };

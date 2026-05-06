@@ -1,5 +1,7 @@
 import { loadMenuData } from "./loadMenuData.js";
+import { aggregateIngredients } from "./aggregateIngredients.js";
 import { findRecipeByTitle, loadRecipes } from "./loadRecipes.js";
+import { renderIngredientListInto } from "./renderIngredientList.js";
 import { createRecipeModal } from "./renderRecipeModal.js";
 import {
   getAvailableDays,
@@ -19,6 +21,7 @@ const state = {
 let recipes = [];
 let recipeModal;
 let menuRoot;
+let ingredientRoot;
 let viewFilter;
 let mealFilter;
 let weekFilter;
@@ -55,6 +58,10 @@ function renderPanelMessage(className, title, message) {
 
 function showLoadingState() {
   renderPanelMessage("menu-state menu-state--loading", "Loading menu", "Fetching processed winter menu data.");
+
+  if (ingredientRoot) {
+    ingredientRoot.replaceChildren();
+  }
 }
 
 function showEmptyState() {
@@ -71,6 +78,10 @@ function showFrontendError(message) {
 
   setStatus("Unable to render menu", "error");
   renderPanelMessage("menu-state menu-state--error", "Menu unavailable", message);
+
+  if (ingredientRoot) {
+    ingredientRoot.replaceChildren();
+  }
 }
 
 function clearFrontendError() {
@@ -238,6 +249,14 @@ function renderDashboard() {
     onMenuItemClick: handleMenuItemClick
   });
 
+  renderIngredientListInto(
+    ingredientRoot,
+    aggregateIngredients(state.menuData, recipes, {
+      mealType: state.selectedMealType,
+      week: state.selectedWeek
+    })
+  );
+
   if (state.viewMode === "daily") {
     setStatus(`${formatMealType(state.selectedMealType)} | ${state.selectedWeek} | ${state.selectedDay}`, "success");
   } else {
@@ -259,6 +278,7 @@ function handleMenuItemClick(menuItem) {
 
 async function initDashboard() {
   menuRoot = document.querySelector("#menu-root");
+  ingredientRoot = document.querySelector("#ingredient-root");
   viewFilter = document.querySelector("#view-filter");
   mealFilter = document.querySelector("#meal-filter");
   weekFilter = document.querySelector("#week-filter");
