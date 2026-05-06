@@ -1,7 +1,14 @@
 {
   "title": "Incomplete Vegetable Soup",
   "category": "soup",
-  "ingredients": [],
+  "ingredients": [
+    {
+      "name": "Carrots",
+      "amount": "two",
+      "unit": "lb",
+      "prep": "diced"
+    }
+  ],
   "steps": [],
   "notes": "This example is intentionally invalid."
 }
