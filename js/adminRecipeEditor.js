@@ -1,4 +1,5 @@
 import { loadRecipes } from "./loadRecipes.js";
+import { applyRecipePatch, rollbackRecipePatch } from "./applyRecipePatch.js";
 import { generateRecipePatch } from "./generateRecipePatch.js";
 import { renderPatchPreview } from "./renderPatchPreview.js";
 import {
@@ -15,6 +16,8 @@ const state = {
   selectedIndex: null,
   draft: null,
   validation: null,
+  patchHistory: [],
+  notice: null,
   search: "",
   isDirty: false
 };
@@ -123,7 +126,12 @@ function validateDraft(recipe) {
 
 function updateValidationAndPatch() {
   renderValidation(validationRoot, state.validation);
-  renderPatchPreview(patchPreviewRoot, createPatchPreview());
+  renderPatchPreview(patchPreviewRoot, createPatchPreview(), {
+    onApply: applyCurrentPatch,
+    onRollback: rollbackLastPatch,
+    canRollback: state.patchHistory.length > 0,
+    notice: state.notice
+  });
 }
 
 function createPatchPreview() {
@@ -180,6 +188,63 @@ function validateRecipeAgainstSchema(recipe, schema) {
   }
 
   return errors.length === 0 ? { ok: true } : { ok: false, errors };
+}
+
+function validateCurrentSchema(recipe) {
+  return validateRecipeAgainstSchema(recipe, state.schema);
+}
+
+function applyCurrentPatch() {
+  const patch = createPatchPreview();
+  const result = applyRecipePatch(state.recipes, patch, validateCurrentSchema);
+
+  if (!result.ok) {
+    state.notice = {
+      tone: "error",
+      message: result.error
+    };
+    state.validation = result.details?.length ? { ok: false, errors: result.details } : state.validation;
+    updateValidationAndPatch();
+    return;
+  }
+
+  state.recipes = result.recipes;
+  state.patchHistory.push(result.historyEntry);
+  state.selectedIndex = result.historyEntry.index;
+  state.draft = structuredClone(result.appliedRecipe);
+  state.validation = validateCurrentSchema(state.draft);
+  state.isDirty = false;
+  state.notice = {
+    tone: "success",
+    message: `Patch applied in memory at ${result.historyEntry.appliedAt}.`
+  };
+  renderAdmin();
+}
+
+function rollbackLastPatch() {
+  const lastPatch = state.patchHistory.at(-1);
+  const result = rollbackRecipePatch(state.recipes, lastPatch, validateCurrentSchema);
+
+  if (!result.ok) {
+    state.notice = {
+      tone: "error",
+      message: result.error
+    };
+    updateValidationAndPatch();
+    return;
+  }
+
+  state.recipes = result.recipes;
+  state.patchHistory.pop();
+  state.selectedIndex = lastPatch.index;
+  state.draft = structuredClone(result.rolledBackRecipe);
+  state.validation = validateCurrentSchema(state.draft);
+  state.isDirty = false;
+  state.notice = {
+    tone: "success",
+    message: `Rolled back in memory at ${result.rolledBackAt}.`
+  };
+  renderAdmin();
 }
 
 function validateIngredient(ingredient, index, errors) {

@@ -53,8 +53,38 @@ function renderChangedField(field, change) {
   return section;
 }
 
-export function renderPatchPreview(container, patch) {
+function renderPatchActions(patch, options) {
+  const actions = createElement("div", "patch-actions");
+  const applyButton = createElement("button", "filter-button", "Apply Patch");
+  const rollbackButton = createElement("button", "filter-button", "Rollback Last Patch");
+
+  applyButton.type = "button";
+  rollbackButton.type = "button";
+  applyButton.disabled = !patch?.ok || !patch.hasChanges;
+  rollbackButton.disabled = !options.canRollback;
+  applyButton.addEventListener("click", () => options.onApply?.());
+  rollbackButton.addEventListener("click", () => options.onRollback?.());
+  actions.append(applyButton, rollbackButton);
+
+  return actions;
+}
+
+function renderNotice(notice) {
+  if (!notice) {
+    return null;
+  }
+
+  const message = createElement("p", `patch-notice patch-notice--${notice.tone}`, notice.message);
+  return message;
+}
+
+export function renderPatchPreview(container, patch, options = {}) {
   container.replaceChildren();
+
+  const notice = renderNotice(options.notice);
+  if (notice) {
+    container.append(notice);
+  }
 
   if (!patch || Object.keys(patch).length === 0) {
     container.append(createElement("p", "admin-muted", "Patch preview will appear after selecting and editing a recipe."));
@@ -62,6 +92,7 @@ export function renderPatchPreview(container, patch) {
   }
 
   if (!patch.ok) {
+    container.append(renderPatchActions(patch, options));
     container.append(renderBlockedPatch(patch));
     return;
   }
@@ -72,7 +103,7 @@ export function renderPatchPreview(container, patch) {
     "admin-muted",
     `${patch.operation} | ${patch.source} | ${patch.timestamp}`
   );
-  panel.append(summary);
+  panel.append(renderPatchActions(patch, options), summary);
 
   if (!patch.hasChanges) {
     panel.append(createElement("p", "admin-muted", "No changed fields yet."));

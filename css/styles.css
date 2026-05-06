@@ -691,6 +691,36 @@ button {
   gap: 12px;
 }
 
+.patch-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.patch-actions .filter-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.patch-notice {
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.patch-notice--success {
+  border: 1px solid #a9d3bf;
+  background: #eefaf4;
+  color: var(--color-accent-strong);
+}
+
+.patch-notice--error {
+  border: 1px solid #d99b90;
+  background: #fff4f2;
+  color: var(--color-error);
+}
+
 .patch-panel--blocked {
   padding: 12px;
   border: 1px solid #d99b90;
