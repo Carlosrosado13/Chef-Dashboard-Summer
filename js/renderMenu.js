@@ -111,24 +111,38 @@ export function getAvailableDays(menuData, filters = {}) {
   });
 }
 
-export function renderMenuItem(category, value) {
+export function renderMenuItem(category, value, options = {}) {
   const item = createElement("div", "menu-item");
   const categoryElement = createElement("dt", "menu-item__category", category);
-  const valueElement = createElement("dd", "menu-item__value", value || "Not scheduled");
+  const valueElement = createElement("dd", "menu-item__value");
+  const button = createElement("button", "menu-item__button", value || "Not scheduled");
+  button.type = "button";
+  button.disabled = !value;
+
+  if (value) {
+    button.addEventListener("click", () => {
+      options.onMenuItemClick?.({
+        category,
+        title: value
+      });
+    });
+  }
+
+  valueElement.append(button);
 
   item.append(categoryElement, valueElement);
 
   return item;
 }
 
-export function renderDay(dayName, dayMenu) {
+export function renderDay(dayName, dayMenu, options = {}) {
   const section = createElement("section", "menu-day");
   section.dataset.day = dayName;
   const heading = createElement("h4", "menu-day__title", dayName);
   const list = createElement("dl", "menu-day__items");
 
   for (const [category, value] of Object.entries(dayMenu || {})) {
-    list.append(renderMenuItem(category, value));
+    list.append(renderMenuItem(category, value, options));
   }
 
   section.append(heading, list);
@@ -136,7 +150,7 @@ export function renderDay(dayName, dayMenu) {
   return section;
 }
 
-export function renderWeek(weekName, week) {
+export function renderWeek(weekName, week, options = {}) {
   const section = createElement("section", "menu-week");
   section.dataset.week = weekName;
   const heading = createElement("h3", "menu-week__title", weekName);
@@ -144,7 +158,7 @@ export function renderWeek(weekName, week) {
   days.dataset.viewMode = Object.keys(week.days || {}).length > 1 ? "weekly" : "daily";
 
   for (const [dayName, dayMenu] of Object.entries(week.days || {})) {
-    days.append(renderDay(dayName, dayMenu));
+    days.append(renderDay(dayName, dayMenu, options));
   }
 
   section.append(heading, days);
@@ -152,7 +166,7 @@ export function renderWeek(weekName, week) {
   return section;
 }
 
-export function renderMealType(mealType, mealRotation) {
+export function renderMealType(mealType, mealRotation, options = {}) {
   const section = createElement("section", "menu-meal");
   section.dataset.mealType = mealType;
   const title = mealType.charAt(0).toUpperCase() + mealType.slice(1);
@@ -160,7 +174,7 @@ export function renderMealType(mealType, mealRotation) {
   const weeks = createElement("div", "menu-meal__weeks");
 
   for (const [weekName, week] of Object.entries(mealRotation.weeks || {})) {
-    weeks.append(renderWeek(weekName, week));
+    weeks.append(renderWeek(weekName, week, options));
   }
 
   section.append(heading, weeks);
@@ -179,7 +193,7 @@ export function renderMenu(menuData, options = {}) {
   }
 
   for (const [mealType, mealRotation] of Object.entries(filteredData)) {
-    const mealElement = renderMealType(mealType, mealRotation);
+    const mealElement = renderMealType(mealType, mealRotation, options);
     mealElement.dataset.viewMode = options.viewMode || "daily";
     fragment.append(mealElement);
   }

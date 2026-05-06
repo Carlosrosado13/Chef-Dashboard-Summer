@@ -1,4 +1,6 @@
 import { loadMenuData } from "./loadMenuData.js";
+import { findRecipeByTitle, loadRecipes } from "./loadRecipes.js";
+import { createRecipeModal } from "./renderRecipeModal.js";
 import {
   getAvailableDays,
   getAvailableMealTypes,
@@ -14,6 +16,8 @@ const state = {
   selectedDay: ""
 };
 
+let recipes = [];
+let recipeModal;
 let menuRoot;
 let viewFilter;
 let mealFilter;
@@ -230,7 +234,8 @@ function renderDashboard() {
       week: state.selectedWeek,
       day: state.viewMode === "daily" ? state.selectedDay : ""
     },
-    viewMode: state.viewMode
+    viewMode: state.viewMode,
+    onMenuItemClick: handleMenuItemClick
   });
 
   if (state.viewMode === "daily") {
@@ -241,6 +246,17 @@ function renderDashboard() {
   console.log("[menu-dashboard] rendering completed");
 }
 
+function handleMenuItemClick(menuItem) {
+  const recipe = findRecipeByTitle(recipes, menuItem.title);
+
+  if (recipe) {
+    recipeModal.openRecipe(recipe);
+    return;
+  }
+
+  recipeModal.openMissingRecipe(menuItem.title);
+}
+
 async function initDashboard() {
   menuRoot = document.querySelector("#menu-root");
   viewFilter = document.querySelector("#view-filter");
@@ -249,6 +265,8 @@ async function initDashboard() {
   dayFilter = document.querySelector("#day-filter");
   menuStatus = document.querySelector("#menu-status");
   frontendError = document.querySelector("#frontend-error");
+  recipeModal = createRecipeModal();
+  document.body.append(recipeModal.element);
 
   try {
     clearFrontendError();
@@ -261,6 +279,12 @@ async function initDashboard() {
       showFrontendError(result.error);
       return;
     }
+
+    const recipeResult = await loadRecipes();
+    if (!recipeResult.ok) {
+      console.warn("[menu-dashboard] recipes unavailable:", recipeResult.error);
+    }
+    recipes = recipeResult.recipes;
 
     state.menuData = result.data;
     console.log("[menu-dashboard] data loaded", state.menuData);

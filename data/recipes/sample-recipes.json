@@ -1,0 +1,189 @@
+[
+  {
+    "title": "Roasted Tomato Basil Soup",
+    "yield": "24 servings",
+    "category": "soup",
+    "ingredients": [
+      {
+        "name": "Roma tomatoes",
+        "amount": 12,
+        "unit": "lb"
+      },
+      {
+        "name": "Yellow onion",
+        "amount": 3,
+        "unit": "lb"
+      },
+      {
+        "name": "Fresh basil",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Vegetable stock",
+        "amount": 2,
+        "unit": "gal"
+      }
+    ],
+    "steps": [
+      "Roast tomatoes and onions until lightly caramelized.",
+      "Simmer roasted vegetables with stock until tender.",
+      "Blend until smooth, finish with basil, and adjust seasoning."
+    ]
+  },
+  {
+    "title": "Grilled Lemon-Herb Chicken",
+    "yield": "24 servings",
+    "category": "entree",
+    "ingredients": [
+      {
+        "name": "Chicken breast",
+        "amount": 12,
+        "unit": "lb"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Chopped parsley",
+        "amount": 1,
+        "unit": "cup"
+      }
+    ],
+    "steps": [
+      "Marinate chicken with lemon juice, olive oil, herbs, and seasoning.",
+      "Grill chicken until marked and cooked through.",
+      "Rest briefly, slice, and hold warm for service."
+    ]
+  },
+  {
+    "title": "Beef Bourguignon",
+    "yield": "24 servings",
+    "category": "entree",
+    "ingredients": [
+      {
+        "name": "Beef chuck",
+        "amount": 14,
+        "unit": "lb"
+      },
+      {
+        "name": "Mushrooms",
+        "amount": 4,
+        "unit": "lb"
+      },
+      {
+        "name": "Pearl onions",
+        "amount": 3,
+        "unit": "lb"
+      },
+      {
+        "name": "Red wine",
+        "amount": 2,
+        "unit": "qt"
+      }
+    ],
+    "steps": [
+      "Brown beef in batches and remove from the pan.",
+      "Cook mushrooms and onions, then deglaze with wine.",
+      "Braise beef with vegetables until tender and sauce is reduced."
+    ]
+  },
+  {
+    "title": "Cream of Mushroom Soup",
+    "yield": "24 servings",
+    "category": "soup",
+    "ingredients": [
+      {
+        "name": "Cremini mushrooms",
+        "amount": 8,
+        "unit": "lb"
+      },
+      {
+        "name": "Onion",
+        "amount": 2,
+        "unit": "lb"
+      },
+      {
+        "name": "Cream",
+        "amount": 2,
+        "unit": "qt"
+      },
+      {
+        "name": "Vegetable stock",
+        "amount": 2,
+        "unit": "gal"
+      }
+    ],
+    "steps": [
+      "Saute mushrooms and onions until moisture evaporates.",
+      "Add stock and simmer until flavors develop.",
+      "Blend partially, finish with cream, and season."
+    ]
+  },
+  {
+    "title": "Beef Meatloaf with Jus",
+    "yield": "24 servings",
+    "category": "entree",
+    "ingredients": [
+      {
+        "name": "Ground beef",
+        "amount": 12,
+        "unit": "lb"
+      },
+      {
+        "name": "Breadcrumbs",
+        "amount": 4,
+        "unit": "cup"
+      },
+      {
+        "name": "Eggs",
+        "amount": 12,
+        "unit": "each"
+      },
+      {
+        "name": "Beef jus",
+        "amount": 2,
+        "unit": "qt"
+      }
+    ],
+    "steps": [
+      "Mix beef, breadcrumbs, eggs, and seasoning until just combined.",
+      "Shape into loaves and bake until cooked through.",
+      "Slice and serve with hot beef jus."
+    ]
+  },
+  {
+    "title": "Coffee-Rubbed Beef Tenderloin, shallot butter (GF)",
+    "yield": "24 servings",
+    "category": "dinner elevated",
+    "ingredients": [
+      {
+        "name": "Beef tenderloin",
+        "amount": 12,
+        "unit": "lb"
+      },
+      {
+        "name": "Ground coffee",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Shallot butter",
+        "amount": 2,
+        "unit": "lb"
+      }
+    ],
+    "steps": [
+      "Season tenderloin with coffee rub and kosher salt.",
+      "Sear and roast to desired doneness.",
+      "Rest, slice, and finish with shallot butter."
+    ]
+  }
+]
