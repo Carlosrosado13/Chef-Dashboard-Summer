@@ -1,13 +1,22 @@
 import { loadMenuData } from "./loadMenuData.js";
-import { getAvailableWeeks, renderMenuInto } from "./renderMenu.js";
+import {
+  getAvailableDays,
+  getAvailableMealTypes,
+  getAvailableWeeksForMeal,
+  renderMenuInto
+} from "./renderMenu.js";
 
 const state = {
   menuData: null,
-  selectedWeek: ""
+  selectedMealType: "",
+  selectedWeek: "",
+  selectedDay: ""
 };
 
 let menuRoot;
+let mealFilter;
 let weekFilter;
+let dayFilter;
 let menuStatus;
 let frontendError;
 
@@ -67,39 +76,109 @@ function clearFrontendError() {
   frontendError.hidden = true;
 }
 
-function renderWeekButtons(weeks) {
-  if (!weekFilter) {
-    throw new Error("Week filter container was not found.");
+function formatMealType(mealType) {
+  return mealType.charAt(0).toUpperCase() + mealType.slice(1);
+}
+
+function renderFilterButtons(container, options, selectedValue, onSelect) {
+  if (!container) {
+    throw new Error("Filter container was not found.");
   }
 
-  if (weeks.length === 0) {
-    weekFilter.replaceChildren();
+  if (options.length === 0) {
+    container.replaceChildren();
     return;
   }
 
-  const buttons = [createWeekButton("All weeks", "", state.selectedWeek === "")];
-
-  for (const week of weeks) {
-    buttons.push(createWeekButton(week, week, state.selectedWeek === week));
-  }
-
-  weekFilter.replaceChildren(...buttons);
+  container.replaceChildren(
+    ...options.map((option) => createFilterButton(option.label, option.value, selectedValue === option.value, onSelect))
+  );
 }
 
-function createWeekButton(label, value, isActive) {
+function createFilterButton(label, value, isActive, onSelect) {
   const button = document.createElement("button");
   button.type = "button";
-  button.className = "week-filter__button";
+  button.className = "filter-button";
   button.textContent = label;
-  button.dataset.week = value;
+  button.dataset.value = value;
   button.setAttribute("aria-pressed", String(isActive));
 
   button.addEventListener("click", () => {
-    state.selectedWeek = value;
+    onSelect(value);
     renderDashboard();
   });
 
   return button;
+}
+
+function syncDefaultSelections() {
+  const mealTypes = getAvailableMealTypes(state.menuData);
+
+  if (!mealTypes.includes(state.selectedMealType)) {
+    state.selectedMealType = mealTypes[0] || "";
+  }
+
+  const weeks = getAvailableWeeksForMeal(state.menuData, state.selectedMealType);
+
+  if (!weeks.includes(state.selectedWeek)) {
+    state.selectedWeek = weeks[0] || "";
+  }
+
+  const days = getAvailableDays(state.menuData, {
+    mealType: state.selectedMealType,
+    week: state.selectedWeek
+  });
+
+  if (!days.includes(state.selectedDay)) {
+    state.selectedDay = days[0] || "";
+  }
+
+  return {
+    mealTypes,
+    weeks,
+    days
+  };
+}
+
+function renderControls(options) {
+  renderFilterButtons(
+    mealFilter,
+    options.mealTypes.map((mealType) => ({
+      label: formatMealType(mealType),
+      value: mealType
+    })),
+    state.selectedMealType,
+    (mealType) => {
+      state.selectedMealType = mealType;
+      state.selectedWeek = "";
+      state.selectedDay = "";
+    }
+  );
+
+  renderFilterButtons(
+    weekFilter,
+    options.weeks.map((week) => ({
+      label: week,
+      value: week
+    })),
+    state.selectedWeek,
+    (week) => {
+      state.selectedWeek = week;
+      state.selectedDay = "";
+    }
+  );
+
+  renderFilterButtons(
+    dayFilter,
+    options.days.map((day) => ({
+      label: day,
+      value: day
+    })),
+    state.selectedDay,
+    (day) => {
+      state.selectedDay = day;
+    }
+  );
 }
 
 function renderDashboard() {
@@ -112,10 +191,10 @@ function renderDashboard() {
   }
 
   console.log("[menu-dashboard] rendering started");
-  const weeks = getAvailableWeeks(state.menuData);
-  renderWeekButtons(weeks);
+  const options = syncDefaultSelections();
+  renderControls(options);
 
-  if (weeks.length === 0) {
+  if (!state.selectedMealType || !state.selectedWeek || !state.selectedDay) {
     showEmptyState();
     console.log("[menu-dashboard] rendering completed");
     return;
@@ -123,7 +202,9 @@ function renderDashboard() {
 
   renderMenuInto(menuRoot, state.menuData, {
     filters: {
-      week: state.selectedWeek
+      mealType: state.selectedMealType,
+      week: state.selectedWeek,
+      day: state.selectedDay
     }
   });
   console.log("[menu-dashboard] rendering completed");
@@ -131,7 +212,9 @@ function renderDashboard() {
 
 async function initDashboard() {
   menuRoot = document.querySelector("#menu-root");
+  mealFilter = document.querySelector("#meal-filter");
   weekFilter = document.querySelector("#week-filter");
+  dayFilter = document.querySelector("#day-filter");
   menuStatus = document.querySelector("#menu-status");
   frontendError = document.querySelector("#frontend-error");
 

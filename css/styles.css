@@ -81,9 +81,16 @@ button {
 }
 
 .dashboard-controls {
+  display: grid;
+  gap: 16px;
   padding: 16px;
   margin-bottom: 20px;
   box-shadow: var(--shadow-panel);
+}
+
+.control-group {
+  display: grid;
+  gap: 10px;
 }
 
 .dashboard-controls h2,
@@ -94,16 +101,17 @@ button {
 }
 
 .dashboard-controls h2 {
-  margin-bottom: 12px;
   font-size: 1rem;
 }
 
+.filter-buttons,
 .week-filter {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
+.filter-button,
 .week-filter__button {
   min-height: 38px;
   padding: 8px 12px;
@@ -112,8 +120,15 @@ button {
   background: var(--color-surface);
   color: var(--color-text);
   cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
 }
 
+.filter-button:hover,
+.week-filter__button:hover {
+  transform: translateY(-1px);
+}
+
+.filter-button[aria-pressed="true"],
 .week-filter__button[aria-pressed="true"] {
   border-color: var(--color-accent);
   background: var(--color-accent);
@@ -123,6 +138,10 @@ button {
 .menu-root {
   display: grid;
   gap: 20px;
+}
+
+.menu-root > * {
+  animation: view-in 180ms ease;
 }
 
 .frontend-error {
@@ -262,5 +281,32 @@ button {
   .menu-week,
   .dashboard-controls {
     padding: 14px;
+  }
+
+  .filter-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .filter-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  .filter-buttons {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes view-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

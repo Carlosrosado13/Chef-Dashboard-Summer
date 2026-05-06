@@ -57,7 +57,7 @@ export function getFilteredMenuData(menuData, filters = {}) {
 export function getAvailableWeeks(menuData) {
   const weeks = new Set();
 
-  for (const mealRotation of Object.values(menuData || {})) {
+  for (const mealRotation of Object.values(menuData || {}).filter(Boolean)) {
     for (const weekName of Object.keys(mealRotation.weeks || {})) {
       weeks.add(weekName);
     }
@@ -68,6 +68,46 @@ export function getAvailableWeeks(menuData) {
     const secondNumber = Number(secondWeek.match(/\d+/)?.[0] || 0);
 
     return firstNumber - secondNumber || firstWeek.localeCompare(secondWeek);
+  });
+}
+
+export function getAvailableMealTypes(menuData) {
+  return Object.keys(menuData || {}).filter((mealType) => {
+    const weeks = menuData[mealType]?.weeks || {};
+    return Object.keys(weeks).length > 0;
+  });
+}
+
+export function getAvailableWeeksForMeal(menuData, mealType) {
+  return getAvailableWeeks(mealType ? { [mealType]: menuData?.[mealType] } : menuData);
+}
+
+export function getAvailableDays(menuData, filters = {}) {
+  const days = new Set();
+  const filteredData = getFilteredMenuData(menuData, {
+    mealType: filters.mealType,
+    week: filters.week
+  });
+
+  for (const mealRotation of Object.values(filteredData)) {
+    for (const week of Object.values(mealRotation.weeks || {})) {
+      for (const dayName of Object.keys(week.days || {})) {
+        days.add(dayName);
+      }
+    }
+  }
+
+  const dayOrder = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+  return Array.from(days).sort((firstDay, secondDay) => {
+    const firstIndex = dayOrder.indexOf(firstDay);
+    const secondIndex = dayOrder.indexOf(secondDay);
+
+    if (firstIndex !== -1 || secondIndex !== -1) {
+      return (firstIndex === -1 ? 99 : firstIndex) - (secondIndex === -1 ? 99 : secondIndex);
+    }
+
+    return firstDay.localeCompare(secondDay);
   });
 }
 
