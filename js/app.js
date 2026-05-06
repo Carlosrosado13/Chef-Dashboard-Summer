@@ -1,5 +1,6 @@
 import { loadMenuData } from "./loadMenuData.js";
 import { aggregateIngredients } from "./aggregateIngredients.js";
+import { calculateAnalytics } from "./calculateAnalytics.js";
 import { calculateFoodCosts, loadPricing } from "./calculateFoodCosts.js";
 import { calculateInventoryNeeds } from "./calculateInventoryNeeds.js";
 import { generatePurchaseOrders, loadSuppliers } from "./generatePurchaseOrders.js";
@@ -9,6 +10,7 @@ import { renderIngredientListInto } from "./renderIngredientList.js";
 import { renderInventoryPanelInto } from "./renderInventoryPanel.js";
 import { renderPurchaseOrdersInto } from "./renderPurchaseOrders.js";
 import { renderFoodCostsInto } from "./renderFoodCosts.js";
+import { renderAnalyticsDashboardInto } from "./renderAnalyticsDashboard.js";
 import { createRecipeModal } from "./renderRecipeModal.js";
 import {
   getAvailableDays,
@@ -36,6 +38,7 @@ let ingredientRoot;
 let inventoryRoot;
 let purchaseOrderRoot;
 let foodCostRoot;
+let analyticsRoot;
 let viewFilter;
 let mealFilter;
 let weekFilter;
@@ -88,6 +91,10 @@ function showLoadingState() {
   if (foodCostRoot) {
     foodCostRoot.replaceChildren();
   }
+
+  if (analyticsRoot) {
+    analyticsRoot.replaceChildren();
+  }
 }
 
 function showEmptyState() {
@@ -119,6 +126,10 @@ function showFrontendError(message) {
 
   if (foodCostRoot) {
     foodCostRoot.replaceChildren();
+  }
+
+  if (analyticsRoot) {
+    analyticsRoot.replaceChildren();
   }
 }
 
@@ -295,6 +306,12 @@ function renderDashboard() {
   const inventoryNeeds = calculateInventoryNeeds(ingredientSummary, inventory);
   const purchaseOrders = generatePurchaseOrders(inventoryNeeds, ingredientSummary, suppliers);
   const foodCosts = calculateFoodCosts(ingredientSummary, inventoryNeeds, purchaseOrders, pricing);
+  const analytics = calculateAnalytics({
+    ingredientSummary,
+    inventoryNeeds,
+    purchaseOrders,
+    foodCosts
+  });
 
   renderIngredientListInto(
     ingredientRoot,
@@ -306,6 +323,7 @@ function renderDashboard() {
   renderInventoryPanelInto(inventoryRoot, inventoryNeeds);
   renderPurchaseOrdersInto(purchaseOrderRoot, purchaseOrders);
   renderFoodCostsInto(foodCostRoot, foodCosts);
+  renderAnalyticsDashboardInto(analyticsRoot, analytics);
 
   if (state.viewMode === "daily") {
     setStatus(`${formatMealType(state.selectedMealType)} | ${state.selectedWeek} | ${state.selectedDay}`, "success");
@@ -337,6 +355,7 @@ async function initDashboard() {
   inventoryRoot = document.querySelector("#inventory-root");
   purchaseOrderRoot = document.querySelector("#purchase-order-root");
   foodCostRoot = document.querySelector("#food-cost-root");
+  analyticsRoot = document.querySelector("#analytics-root");
   viewFilter = document.querySelector("#view-filter");
   mealFilter = document.querySelector("#meal-filter");
   weekFilter = document.querySelector("#week-filter");
