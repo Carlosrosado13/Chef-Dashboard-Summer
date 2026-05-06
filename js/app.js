@@ -209,6 +209,7 @@ function renderSelectControl(container, options, selectedValue, onSelect) {
 
   const select = document.createElement("select");
   select.className = "select-filter__control";
+  select.id = container.id === "week-filter" ? "week-select" : container.id === "day-filter" ? "day-select" : "";
 
   for (const option of options) {
     const item = document.createElement("option");
@@ -273,7 +274,7 @@ function syncDefaultSelections() {
 
 function renderControls(options) {
   if (dayFilter) {
-    dayFilter.closest(".control-group").hidden = state.viewMode === "weekly";
+    dayFilter.closest(".toolbar-field").hidden = state.viewMode === "weekly";
   }
 
   renderFilterButtons(
@@ -503,11 +504,7 @@ function handleIngredientTargetYieldChange(targetYield) {
 }
 
 function setupResponsiveControls() {
-  if (!controlsPanel) {
-    return;
-  }
-
-  controlsPanel.open = true;
+  controlsPanel?.removeAttribute("open");
 }
 
 async function initDashboard() {

@@ -30,27 +30,26 @@
         <a href="#analytics-root">Analytics</a>
       </nav>
 
-      <details id="dashboard-controls" class="dashboard-controls" aria-label="Menu filters" open>
-        <summary class="dashboard-controls__summary">Menu Controls</summary>
-        <div class="dashboard-controls__body">
-          <div class="control-group">
-            <h2>View</h2>
-            <div id="view-filter" class="filter-buttons" aria-label="Select view mode"></div>
-          </div>
-          <div class="control-group">
-            <h2>Meal</h2>
+      <section id="dashboard-controls" class="dashboard-toolbar" aria-label="Menu filters">
+        <div class="dashboard-toolbar__body" role="toolbar" aria-label="Operational menu controls">
+          <div class="toolbar-field">
+            <span class="toolbar-field__label">Meal</span>
             <div id="meal-filter" class="filter-buttons" aria-label="Select meal type"></div>
           </div>
-          <div class="control-group">
-            <h2>Week</h2>
+          <div class="toolbar-field">
+            <span class="toolbar-field__label">View</span>
+            <div id="view-filter" class="filter-buttons" aria-label="Select view mode"></div>
+          </div>
+          <div class="toolbar-field">
+            <label class="toolbar-field__label" for="week-select">Week</label>
             <div id="week-filter" class="select-filter" aria-label="Select week"></div>
           </div>
-          <div class="control-group">
-            <h2>Day</h2>
+          <div class="toolbar-field">
+            <label class="toolbar-field__label" for="day-select">Day</label>
             <div id="day-filter" class="select-filter" aria-label="Select day"></div>
           </div>
-          <div class="control-group quick-switch-group">
-            <h2>Switch</h2>
+          <div class="toolbar-field toolbar-field--switch">
+            <span class="toolbar-field__label">Switch</span>
             <div class="quick-switch-buttons" aria-label="Quick week and day switching">
               <button id="previous-week" class="filter-button" type="button">Prev Week</button>
               <button id="next-week" class="filter-button" type="button">Next Week</button>
@@ -59,7 +58,7 @@
             </div>
           </div>
         </div>
-      </details>
+      </section>
 
       <section id="frontend-error" class="frontend-error" role="alert" hidden></section>
       <section id="menu-root" class="menu-root" aria-live="polite"></section>
