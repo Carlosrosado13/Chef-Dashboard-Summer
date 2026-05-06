@@ -89,6 +89,8 @@ export async function handleAdminLogin(request, env) {
   console.log(`[admin-auth] ${request.method} /api/admin/login ${createTimestamp()}`);
 
   if (!env?.ADMIN_SECRET) {
+    console.warn("[admin-auth] ADMIN_SECRET is missing. Add it to .dev.vars for Wrangler local development.");
+
     return jsonResponse({
       ok: false,
       error: "Admin authentication is not configured.",
