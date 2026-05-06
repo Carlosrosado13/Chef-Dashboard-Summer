@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/recipe.schema.json",
+  "title": "Recipe",
+  "description": "A structured recipe record for dashboard menu planning, ingredient tracking, and preparation reference.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "yield",
+    "category",
+    "ingredients",
+    "steps"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The display name of the recipe as it should appear in the dashboard."
+    },
+    "yield": {
+      "type": "string",
+      "description": "The finished quantity produced by the recipe, such as number of portions, pans, trays, or servings."
+    },
+    "category": {
+      "type": "string",
+      "description": "The menu or production category for the recipe, such as soup, entree, side, dessert, or salad."
+    },
+    "ingredients": {
+      "type": "array",
+      "description": "The ingredients required to prepare the recipe.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "description": "A single ingredient with quantity and unit details.",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "amount",
+          "unit"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The ingredient name as it should appear in prep lists or recipe views."
+          },
+          "amount": {
+            "type": "number",
+            "description": "The numeric quantity of the ingredient needed for the recipe."
+          },
+          "unit": {
+            "type": "string",
+            "description": "The measurement unit for the ingredient amount, such as lb, oz, cup, tsp, each, or case."
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "description": "The ordered preparation instructions for completing the recipe.",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "description": "A single preparation instruction in the recipe method."
+      }
+    }
+  }
+}
