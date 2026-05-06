@@ -1,7 +1,7 @@
 import { initializeAdminAuth } from "./adminAuth.js";
 import { loadRecipes } from "./loadRecipes.js";
 import { applyRecipePatch, rollbackRecipePatch } from "./applyRecipePatch.js";
-import { generateRecipePatch } from "./generateRecipePatch.js";
+import { generateCreateRecipePatch, generateRecipePatch } from "./generateRecipePatch.js";
 import { renderPatchPreview } from "./renderPatchPreview.js";
 import {
   clearRecipeDraft,
@@ -9,6 +9,10 @@ import {
   loadRecipeDraft,
   saveRecipeDraft
 } from "./recipeDraftManager.js";
+import {
+  createEmptyRecipeDraft,
+  renderRecipeCreateWizard
+} from "./renderRecipeCreateWizard.js";
 import {
   renderRecipeEditor,
   renderRecipeList,
@@ -20,6 +24,7 @@ const RECIPE_SCHEMA_URL = "schemas/recipe.schema.json";
 const state = {
   recipes: [],
   schema: null,
+  mode: "edit",
   selectedIndex: null,
   draft: null,
   validation: null,
@@ -32,6 +37,7 @@ const state = {
 
 let statusElement;
 let errorElement;
+let createRecipeButton;
 let searchInput;
 let listRoot;
 let editorRoot;
@@ -94,6 +100,7 @@ function selectRecipe(index) {
   }
 
   state.selectedIndex = index;
+  state.mode = "edit";
   const recipe = state.recipes[index];
   const draftRecord = loadRecipeDraft(getRecipeDraftId(recipe, index));
   state.draftRecord = null;
@@ -107,6 +114,21 @@ function selectRecipe(index) {
 
   state.validation = null;
   state.isDirty = state.draftRecord !== null;
+  renderAdmin();
+}
+
+function startCreateRecipe() {
+  if (state.isDirty && !window.confirm("Discard unsaved changes and create a new recipe?")) {
+    return;
+  }
+
+  state.mode = "create";
+  state.selectedIndex = null;
+  state.draft = createEmptyRecipeDraft();
+  state.validation = validateRecipeAgainstSchema(state.draft, state.schema);
+  state.draftRecord = null;
+  state.notice = null;
+  state.isDirty = false;
   renderAdmin();
 }
 
@@ -125,9 +147,43 @@ function cancelEditing() {
   }
 
   state.selectedIndex = null;
+  state.mode = "edit";
   state.draft = null;
   state.validation = null;
   state.draftRecord = null;
+  state.isDirty = false;
+  renderAdmin();
+}
+
+function updateCreateDraft(recipe) {
+  state.draft = recipe;
+  state.validation = validateRecipeAgainstSchema(recipe, state.schema);
+  state.isDirty = true;
+  updateValidationAndPatch();
+}
+
+function validateCreateDraft(recipe) {
+  state.draft = recipe;
+  state.validation = validateRecipeAgainstSchema(recipe, state.schema);
+  state.isDirty = true;
+  updateValidationAndPatch();
+}
+
+function resetCreateDraft() {
+  state.draft = createEmptyRecipeDraft();
+  state.validation = validateRecipeAgainstSchema(state.draft, state.schema);
+  state.isDirty = false;
+  renderAdmin();
+}
+
+function cancelCreateRecipe() {
+  if (state.isDirty && !window.confirm("Discard this unsaved new recipe?")) {
+    return;
+  }
+
+  state.mode = "edit";
+  state.draft = null;
+  state.validation = null;
   state.isDirty = false;
   renderAdmin();
 }
@@ -169,6 +225,19 @@ function updateValidationAndPatch() {
 }
 
 function createPatchPreview() {
+  if (state.mode === "create") {
+    if (!state.draft) {
+      return {};
+    }
+
+    const validation = state.validation || validateRecipeAgainstSchema(state.draft, state.schema);
+
+    return generateCreateRecipePatch(state.draft, validation, {
+      proposedIndex: state.recipes.length,
+      source: "data/recipes/sample-recipes.json"
+    });
+  }
+
   if (state.selectedIndex === null || !state.draft) {
     return {};
   }
@@ -230,6 +299,16 @@ function validateCurrentSchema(recipe) {
 
 function applyCurrentPatch() {
   const patch = createPatchPreview();
+
+  if (patch.operation !== "updateRecipe") {
+    state.notice = {
+      tone: "error",
+      message: "Create recipe patches are preview-only until persistence is implemented."
+    };
+    updateValidationAndPatch();
+    return;
+  }
+
   const result = applyRecipePatch(state.recipes, patch, validateCurrentSchema);
 
   if (!result.ok) {
@@ -364,12 +443,21 @@ function validateIngredient(ingredient, index, errors) {
 
 function renderAdmin() {
   renderRecipeList(listRoot, getFilteredRecipes(), state.selectedIndex, selectRecipe);
-  renderRecipeEditor(editorRoot, state.draft, {
-    onChange: updateDraft,
-    onValidate: validateDraft,
-    onReset: resetDraft,
-    onCancel: cancelEditing
-  });
+  if (state.mode === "create") {
+    renderRecipeCreateWizard(editorRoot, state.draft, {
+      onChange: updateCreateDraft,
+      onValidate: validateCreateDraft,
+      onReset: resetCreateDraft,
+      onCancel: cancelCreateRecipe
+    });
+  } else {
+    renderRecipeEditor(editorRoot, state.draft, {
+      onChange: updateDraft,
+      onValidate: validateDraft,
+      onReset: resetDraft,
+      onCancel: cancelEditing
+    });
+  }
   renderDraftStatus();
   updateValidationAndPatch();
   setStatus(state.isDirty ? "Unsaved changes" : "Ready", state.isDirty ? "error" : "success");
@@ -384,6 +472,7 @@ async function initAdmin() {
   adminInitialized = true;
   statusElement = document.querySelector("#admin-status");
   errorElement = document.querySelector("#admin-error");
+  createRecipeButton = document.querySelector("#create-recipe-button");
   searchInput = document.querySelector("#recipe-search");
   listRoot = document.querySelector("#recipe-list");
   editorRoot = document.querySelector("#recipe-editor-root");
@@ -404,6 +493,7 @@ async function initAdmin() {
 
     state.recipes = recipeResult.recipes;
     state.schema = schema;
+    createRecipeButton.addEventListener("click", startCreateRecipe);
     searchInput.addEventListener("input", () => {
       state.search = searchInput.value;
       renderAdmin();

@@ -48,3 +48,38 @@ export function generateRecipePatch(originalRecipe, editedRecipe, validationResu
     hasChanges: Object.keys(changedFields).length > 0
   };
 }
+
+export function generateCreateRecipePatch(recipe, validationResult, options = {}) {
+  if (!validationResult?.ok) {
+    return {
+      ok: false,
+      blocked: true,
+      operation: "createRecipe",
+      reason: "New recipe must pass validation before a create patch can be generated.",
+      errors: validationResult?.errors || [],
+      timestamp: new Date().toISOString()
+    };
+  }
+
+  const changedFields = {};
+
+  for (const field of PATCH_FIELDS) {
+    changedFields[field] = {
+      original: null,
+      updated: cloneValue(recipe[field])
+    };
+  }
+
+  return {
+    ok: true,
+    operation: "createRecipe",
+    patchType: "create-recipe",
+    source: options.source || "data/recipes/sample-recipes.json",
+    proposedIndex: options.proposedIndex,
+    title: recipe.title,
+    timestamp: new Date().toISOString(),
+    changedFields,
+    hasChanges: true,
+    recipe: structuredClone(recipe)
+  };
+}
