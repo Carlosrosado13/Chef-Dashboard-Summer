@@ -54,10 +54,27 @@ export function getFilteredMenuData(menuData, filters = {}) {
   return filteredData;
 }
 
+export function getAvailableWeeks(menuData) {
+  const weeks = new Set();
+
+  for (const mealRotation of Object.values(menuData || {})) {
+    for (const weekName of Object.keys(mealRotation.weeks || {})) {
+      weeks.add(weekName);
+    }
+  }
+
+  return Array.from(weeks).sort((firstWeek, secondWeek) => {
+    const firstNumber = Number(firstWeek.match(/\d+/)?.[0] || 0);
+    const secondNumber = Number(secondWeek.match(/\d+/)?.[0] || 0);
+
+    return firstNumber - secondNumber || firstWeek.localeCompare(secondWeek);
+  });
+}
+
 export function renderMenuItem(category, value) {
   const item = createElement("div", "menu-item");
   const categoryElement = createElement("dt", "menu-item__category", category);
-  const valueElement = createElement("dd", "menu-item__value", value || "");
+  const valueElement = createElement("dd", "menu-item__value", value || "Not scheduled");
 
   item.append(categoryElement, valueElement);
 
@@ -110,6 +127,12 @@ export function renderMealType(mealType, mealRotation) {
 export function renderMenu(menuData, options = {}) {
   const fragment = document.createDocumentFragment();
   const filteredData = getFilteredMenuData(menuData, options.filters || {});
+
+  if (Object.keys(filteredData).length === 0) {
+    const emptyState = createElement("p", "menu-empty", "No menu items match the selected filters.");
+    fragment.append(emptyState);
+    return fragment;
+  }
 
   for (const [mealType, mealRotation] of Object.entries(filteredData)) {
     fragment.append(renderMealType(mealType, mealRotation));
