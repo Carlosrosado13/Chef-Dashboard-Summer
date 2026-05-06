@@ -46,6 +46,10 @@ let viewFilter;
 let mealFilter;
 let weekFilter;
 let dayFilter;
+let previousWeekButton;
+let nextWeekButton;
+let previousDayButton;
+let nextDayButton;
 let menuStatus;
 let frontendError;
 
@@ -76,31 +80,51 @@ function renderPanelMessage(className, title, message) {
   menuRoot.replaceChildren(panel);
 }
 
+function createSkeletonPanel(title = "Loading") {
+  const panel = document.createElement("section");
+  panel.className = "skeleton-panel";
+
+  const heading = document.createElement("h2");
+  heading.textContent = title;
+
+  const lines = document.createElement("div");
+  lines.className = "skeleton-lines";
+
+  for (let index = 0; index < 4; index += 1) {
+    const line = document.createElement("span");
+    line.className = "skeleton-line";
+    lines.append(line);
+  }
+
+  panel.append(heading, lines);
+  return panel;
+}
+
 function showLoadingState() {
   renderPanelMessage("menu-state menu-state--loading", "Loading menu", "Fetching processed winter menu data.");
 
   if (ingredientRoot) {
-    ingredientRoot.replaceChildren();
+    ingredientRoot.replaceChildren(createSkeletonPanel("Ingredients"));
   }
 
   if (inventoryRoot) {
-    inventoryRoot.replaceChildren();
+    inventoryRoot.replaceChildren(createSkeletonPanel("Inventory"));
   }
 
   if (purchaseOrderRoot) {
-    purchaseOrderRoot.replaceChildren();
+    purchaseOrderRoot.replaceChildren(createSkeletonPanel("Purchase Orders"));
   }
 
   if (foodCostRoot) {
-    foodCostRoot.replaceChildren();
+    foodCostRoot.replaceChildren(createSkeletonPanel("Food Costing"));
   }
 
   if (analyticsRoot) {
-    analyticsRoot.replaceChildren();
+    analyticsRoot.replaceChildren(createSkeletonPanel("Analytics"));
   }
 
   if (forecastRoot) {
-    forecastRoot.replaceChildren();
+    forecastRoot.replaceChildren(createSkeletonPanel("Forecast"));
   }
 }
 
@@ -278,6 +302,85 @@ function renderControls(options) {
       state.selectedDay = day;
     }
   );
+
+  updateQuickSwitchButtons(options);
+}
+
+function updateQuickSwitchButtons(options) {
+  const weekIndex = options.weeks.indexOf(state.selectedWeek);
+  const dayIndex = options.days.indexOf(state.selectedDay);
+  const isWeeklyView = state.viewMode === "weekly";
+
+  if (previousWeekButton) previousWeekButton.disabled = weekIndex <= 0;
+  if (nextWeekButton) nextWeekButton.disabled = weekIndex === -1 || weekIndex >= options.weeks.length - 1;
+  if (previousDayButton) previousDayButton.disabled = isWeeklyView || dayIndex <= 0;
+  if (nextDayButton) nextDayButton.disabled = isWeeklyView || dayIndex === -1 || dayIndex >= options.days.length - 1;
+}
+
+function moveWeek(delta) {
+  const weeks = getAvailableWeeksForMeal(state.menuData, state.selectedMealType);
+  const index = weeks.indexOf(state.selectedWeek);
+  const nextWeek = weeks[index + delta];
+
+  if (!nextWeek) {
+    return;
+  }
+
+  state.selectedWeek = nextWeek;
+  state.selectedDay = "";
+  renderDashboard();
+}
+
+function moveDay(delta) {
+  const days = getAvailableDays(state.menuData, {
+    mealType: state.selectedMealType,
+    week: state.selectedWeek
+  });
+  const index = days.indexOf(state.selectedDay);
+  const nextDay = days[index + delta];
+
+  if (!nextDay) {
+    return;
+  }
+
+  state.selectedDay = nextDay;
+  renderDashboard();
+}
+
+function enhanceCollapsiblePanel(root, label) {
+  const panel = root?.firstElementChild;
+
+  if (!panel || panel.dataset.collapsibleReady === "true") {
+    return;
+  }
+
+  const header = panel.querySelector("header") || panel;
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "panel-collapse-button";
+  button.textContent = "Collapse";
+  button.setAttribute("aria-expanded", "true");
+  button.setAttribute("aria-label", `Collapse ${label}`);
+  panel.classList.add("operational-panel");
+  panel.dataset.collapsibleReady = "true";
+
+  button.addEventListener("click", () => {
+    const isCollapsed = panel.classList.toggle("is-collapsed");
+    button.textContent = isCollapsed ? "Expand" : "Collapse";
+    button.setAttribute("aria-expanded", String(!isCollapsed));
+    button.setAttribute("aria-label", `${isCollapsed ? "Expand" : "Collapse"} ${label}`);
+  });
+
+  header.append(button);
+}
+
+function enhanceOperationalPanels() {
+  enhanceCollapsiblePanel(ingredientRoot, "ingredients");
+  enhanceCollapsiblePanel(inventoryRoot, "inventory");
+  enhanceCollapsiblePanel(purchaseOrderRoot, "purchase orders");
+  enhanceCollapsiblePanel(foodCostRoot, "food costing");
+  enhanceCollapsiblePanel(analyticsRoot, "analytics");
+  enhanceCollapsiblePanel(forecastRoot, "forecast");
 }
 
 function renderDashboard() {
@@ -343,6 +446,7 @@ function renderDashboard() {
   renderFoodCostsInto(foodCostRoot, foodCosts);
   renderAnalyticsDashboardInto(analyticsRoot, analytics);
   renderForecastDashboardInto(forecastRoot, forecasts);
+  enhanceOperationalPanels();
 
   if (state.viewMode === "daily") {
     setStatus(`${formatMealType(state.selectedMealType)} | ${state.selectedWeek} | ${state.selectedDay}`, "success");
@@ -380,10 +484,18 @@ async function initDashboard() {
   mealFilter = document.querySelector("#meal-filter");
   weekFilter = document.querySelector("#week-filter");
   dayFilter = document.querySelector("#day-filter");
+  previousWeekButton = document.querySelector("#previous-week");
+  nextWeekButton = document.querySelector("#next-week");
+  previousDayButton = document.querySelector("#previous-day");
+  nextDayButton = document.querySelector("#next-day");
   menuStatus = document.querySelector("#menu-status");
   frontendError = document.querySelector("#frontend-error");
   recipeModal = createRecipeModal();
   document.body.append(recipeModal.element);
+  previousWeekButton?.addEventListener("click", () => moveWeek(-1));
+  nextWeekButton?.addEventListener("click", () => moveWeek(1));
+  previousDayButton?.addEventListener("click", () => moveDay(-1));
+  nextDayButton?.addEventListener("click", () => moveDay(1));
 
   try {
     clearFrontendError();
