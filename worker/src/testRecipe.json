@@ -1,0 +1,27 @@
+{
+  "title": "Lemon Herb Roast Chicken",
+  "yield": "24 servings",
+  "category": "entree",
+  "ingredients": [
+    {
+      "name": "Chicken breast",
+      "amount": 12,
+      "unit": "lb"
+    },
+    {
+      "name": "Lemon juice",
+      "amount": 2,
+      "unit": "cup"
+    },
+    {
+      "name": "Fresh parsley",
+      "amount": 0.5,
+      "unit": "cup"
+    }
+  ],
+  "steps": [
+    "Season the chicken with lemon juice, parsley, and standard kitchen seasoning.",
+    "Roast until the chicken reaches the required internal temperature.",
+    "Rest, slice, and hold for service."
+  ]
+}
