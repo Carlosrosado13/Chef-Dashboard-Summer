@@ -17,7 +17,11 @@ function mapIngredient(rawIngredient) {
   };
 }
 
-function mapRawRecipe(rawRecipe) {
+export function extractRecipeFields(rawRecipe) {
+  if (!rawRecipe || typeof rawRecipe !== "object" || Array.isArray(rawRecipe)) {
+    throw new TypeError("Recipe input must be a JSON object.");
+  }
+
   const rawIngredients = firstDefined(rawRecipe.ingredients, rawRecipe.items, []);
 
   return {
@@ -30,11 +34,7 @@ function mapRawRecipe(rawRecipe) {
 }
 
 export function extractRecipe(rawRecipe) {
-  if (!rawRecipe || typeof rawRecipe !== "object" || Array.isArray(rawRecipe)) {
-    throw new TypeError("Recipe input must be a JSON object.");
-  }
-
-  const normalizedRecipe = normalizeRecipe(mapRawRecipe(rawRecipe));
+  const normalizedRecipe = normalizeRecipe(extractRecipeFields(rawRecipe));
   const result = validateRecipe(normalizedRecipe);
 
   if (!result.ok) {

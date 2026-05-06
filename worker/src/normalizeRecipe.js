@@ -46,15 +46,30 @@ function normalizeSteps(steps) {
 }
 
 export function normalizeRecipe(recipe) {
-  const ingredients = Array.isArray(recipe.ingredients) ? recipe.ingredients : [];
+  const normalizedRecipe = {};
 
-  return {
-    title: trimString(recipe.title) || "",
-    yield: trimString(recipe.yield) || "",
-    category: trimString(recipe.category) || "",
-    ingredients: ingredients
+  if (Object.hasOwn(recipe, "title")) {
+    normalizedRecipe.title = trimString(recipe.title);
+  }
+
+  if (Object.hasOwn(recipe, "yield")) {
+    normalizedRecipe.yield = trimString(recipe.yield);
+  }
+
+  if (Object.hasOwn(recipe, "category")) {
+    normalizedRecipe.category = trimString(recipe.category);
+  }
+
+  if (Object.hasOwn(recipe, "ingredients")) {
+    const ingredients = Array.isArray(recipe.ingredients) ? recipe.ingredients : [];
+    normalizedRecipe.ingredients = ingredients
       .filter((ingredient) => !isEmptyIngredient(ingredient))
-      .map(normalizeIngredient),
-    steps: normalizeSteps(recipe.steps)
-  };
+      .map(normalizeIngredient);
+  }
+
+  if (Object.hasOwn(recipe, "steps")) {
+    normalizedRecipe.steps = normalizeSteps(recipe.steps);
+  }
+
+  return normalizedRecipe;
 }
