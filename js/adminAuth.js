@@ -1,5 +1,8 @@
 const SESSION_KEY = "chefDashboard.adminSession";
 const LOCAL_WORKER_ORIGIN = "http://127.0.0.1:8787";
+const ADMIN_LOGIN_PATH = "/api/admin/login";
+const ADMIN_LOGOUT_PATH = "/api/admin/logout";
+const ADMIN_SESSION_PATH = "/api/admin/session";
 
 function getApiUrl(path) {
   if (/^https?:\/\//i.test(path)) {
@@ -10,6 +13,12 @@ function getApiUrl(path) {
   const isLocalStaticHost = ["localhost", "127.0.0.1"].includes(window.location.hostname) && window.location.port !== "8787";
 
   return isLocalStaticHost ? `${LOCAL_WORKER_ORIGIN}${normalizedPath}` : normalizedPath;
+}
+
+function logAuthRequest(method, path) {
+  const url = getApiUrl(path);
+  console.log(`[admin-auth-ui] ${method} ${url}`);
+  return url;
 }
 
 async function readJsonResponse(response) {
@@ -120,7 +129,7 @@ function renderLoginForm(container, options = {}) {
     message.textContent = "Checking password...";
 
     try {
-      const response = await fetch(getApiUrl("/api/admin/login"), {
+      const response = await fetch(logAuthRequest("POST", ADMIN_LOGIN_PATH), {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -160,7 +169,7 @@ async function verifySession() {
   }
 
   try {
-    const response = await adminFetch("/api/admin/session");
+    const response = await adminFetch(ADMIN_SESSION_PATH);
     const result = await readJsonResponse(response);
 
     return response.ok && result.ok ? result : { ok: false };
@@ -198,7 +207,7 @@ export async function initializeAdminAuth(options = {}) {
   }
 
   logoutButton.addEventListener("click", async () => {
-    await adminFetch("/api/admin/logout", { method: "POST" }).catch(() => {});
+    await adminFetch(ADMIN_LOGOUT_PATH, { method: "POST" }).catch(() => {});
     clearAdminSession();
     showLogin();
   });

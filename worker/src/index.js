@@ -18,6 +18,14 @@ const ROUTES = {
 
 const LOCAL_DEV_ORIGIN_PATTERN = /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/;
 
+function normalizePathname(pathname) {
+  if (pathname.length > 1 && pathname.endsWith("/")) {
+    return pathname.replace(/\/+$/, "");
+  }
+
+  return pathname;
+}
+
 function createCorsHeaders(request) {
   const origin = request?.headers?.get("origin") || "";
   const allowOrigin = LOCAL_DEV_ORIGIN_PATTERN.test(origin) ? origin : "*";
@@ -79,31 +87,32 @@ function methodNotAllowedResponse(pathname, method, allowedMethods, request) {
 
 async function routeRequest(request, env) {
   const url = new URL(request.url);
-  const allowedMethods = ROUTES[url.pathname];
+  const pathname = normalizePathname(url.pathname);
+  const allowedMethods = ROUTES[pathname];
 
-  console.log(`[worker-router] ${request.method} ${url.pathname} ${new Date().toISOString()}`);
+  console.log(`[worker-router] pathname=${pathname} request.method=${request.method} ${new Date().toISOString()}`);
 
   if (request.method === "OPTIONS") {
     return handleOptionsRequest(request);
   }
 
   if (allowedMethods && !allowedMethods.includes(request.method)) {
-    return methodNotAllowedResponse(url.pathname, request.method, allowedMethods, request);
+    return methodNotAllowedResponse(pathname, request.method, allowedMethods, request);
   }
 
-  if (request.method === "POST" && url.pathname === "/api/admin/login") {
+  if (request.method === "POST" && pathname === "/api/admin/login") {
     return withCors(await handleAdminLogin(request, env), request);
   }
 
-  if (request.method === "POST" && url.pathname === "/api/admin/logout") {
+  if (request.method === "POST" && pathname === "/api/admin/logout") {
     return withCors(await handleAdminLogout(request), request);
   }
 
-  if (request.method === "GET" && url.pathname === "/api/admin/session") {
+  if (request.method === "GET" && pathname === "/api/admin/session") {
     return withCors(handleAdminSession(request), request);
   }
 
-  if (request.method === "POST" && url.pathname === "/api/recipe/validate-patch") {
+  if (request.method === "POST" && pathname === "/api/recipe/validate-patch") {
     const auth = requireAdminAuth(request);
     if (!auth.ok) {
       return withCors(auth.response, request);
@@ -111,7 +120,7 @@ async function routeRequest(request, env) {
     return withCors(await handleValidatePatch(request), request);
   }
 
-  if (request.method === "POST" && url.pathname === "/api/recipe/save-draft") {
+  if (request.method === "POST" && pathname === "/api/recipe/save-draft") {
     const auth = requireAdminAuth(request);
     if (!auth.ok) {
       return withCors(auth.response, request);
@@ -119,7 +128,7 @@ async function routeRequest(request, env) {
     return withCors(await handleSaveDraft(request), request);
   }
 
-  if (request.method === "POST" && url.pathname === "/api/recipe/commit-patch") {
+  if (request.method === "POST" && pathname === "/api/recipe/commit-patch") {
     const auth = requireAdminAuth(request);
     if (!auth.ok) {
       return withCors(auth.response, request);
