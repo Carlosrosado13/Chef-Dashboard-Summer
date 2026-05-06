@@ -1,4 +1,5 @@
 import { handleSaveDraft, handleValidatePatch } from "./recipePatchApi.js";
+import { handleCommitPatch } from "./recipePatchRoutes.js";
 
 function jsonResponse(body, status = 200) {
   return new Response(JSON.stringify(body, null, 2), {
@@ -9,7 +10,7 @@ function jsonResponse(body, status = 200) {
   });
 }
 
-function routeRequest(request) {
+function routeRequest(request, env) {
   const url = new URL(request.url);
 
   if (request.method === "POST" && url.pathname === "/api/recipe/validate-patch") {
@@ -20,6 +21,10 @@ function routeRequest(request) {
     return handleSaveDraft(request);
   }
 
+  if (request.method === "POST" && url.pathname === "/api/recipe/commit-patch") {
+    return handleCommitPatch(request, env);
+  }
+
   return jsonResponse({
     ok: false,
     error: "Route not found.",
@@ -28,8 +33,8 @@ function routeRequest(request) {
 }
 
 export default {
-  fetch(request) {
-    return routeRequest(request);
+  fetch(request, env) {
+    return routeRequest(request, env);
   }
 };
 

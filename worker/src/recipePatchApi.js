@@ -7,7 +7,7 @@ function createTimestamp() {
   return new Date().toISOString();
 }
 
-function jsonResponse(body, status = 200) {
+export function jsonResponse(body, status = 200) {
   return new Response(JSON.stringify(body, null, 2), {
     status,
     headers: {
@@ -16,7 +16,7 @@ function jsonResponse(body, status = 200) {
   });
 }
 
-function createError(message, status = 400, details = []) {
+export function createError(message, status = 400, details = []) {
   return jsonResponse({
     ok: false,
     error: message,
@@ -52,7 +52,7 @@ function isRecord(value) {
   return value !== null && typeof value === "object" && !Array.isArray(value);
 }
 
-function validatePatchStructure(patch) {
+export function validatePatchStructure(patch) {
   const errors = [];
 
   if (!isRecord(patch)) {
