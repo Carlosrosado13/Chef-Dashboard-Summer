@@ -478,13 +478,7 @@ function setupResponsiveControls() {
     return;
   }
 
-  const mediaQuery = window.matchMedia("(min-width: 720px)");
-  const syncControlsState = () => {
-    controlsPanel.open = mediaQuery.matches;
-  };
-
-  syncControlsState();
-  mediaQuery.addEventListener("change", syncControlsState);
+  controlsPanel.open = true;
 }
 
 async function initDashboard() {

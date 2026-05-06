@@ -2588,3 +2588,136 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Unified compact operational toolbar */
+.dashboard-controls {
+  top: 54px;
+  display: block;
+  margin-bottom: 8px;
+  padding: 6px;
+  max-height: none;
+  overflow: visible;
+}
+
+.dashboard-controls__summary {
+  display: none;
+}
+
+.dashboard-controls__body {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  overflow-x: auto;
+  padding-bottom: 1px;
+  scroll-snap-type: x proximity;
+}
+
+.control-group {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+  padding: 0 6px 0 0;
+  border-right: 1px solid rgba(207, 226, 216, 0.85);
+}
+
+.control-group:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.control-group[hidden] {
+  display: none;
+}
+
+.dashboard-controls h2 {
+  flex: 0 0 auto;
+  min-width: auto;
+  font-size: 0.64rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.filter-buttons,
+.week-filter,
+.quick-switch-buttons {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  gap: 4px;
+  overflow: visible;
+  padding-bottom: 0;
+}
+
+.filter-button,
+.week-filter__button {
+  min-height: 30px;
+  min-width: auto;
+  padding: 4px 8px;
+  font-size: 0.76rem;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.quick-switch-buttons .filter-button {
+  min-width: auto;
+}
+
+.dashboard-controls .quick-switch-group {
+  margin-left: 0;
+}
+
+.menu-root {
+  gap: 8px;
+}
+
+@media (min-width: 720px) {
+  .dashboard-controls {
+    top: 54px;
+  }
+
+  .dashboard-controls__body {
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+
+  .filter-buttons,
+  .week-filter,
+  .quick-switch-buttons {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard-controls {
+    top: 58px;
+  }
+
+  .dashboard-controls__body {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 520px) {
+  .dashboard-section-nav {
+    top: 70px;
+  }
+
+  .dashboard-controls {
+    top: 108px;
+    padding: 5px;
+  }
+
+  .control-group {
+    gap: 4px;
+    padding-right: 5px;
+  }
+
+  .filter-button,
+  .week-filter__button {
+    min-width: auto;
+    min-height: 30px;
+    padding: 4px 7px;
+  }
+}
