@@ -686,6 +686,63 @@ button {
   white-space: pre-wrap;
 }
 
+.patch-panel {
+  display: grid;
+  gap: 12px;
+}
+
+.patch-panel--blocked {
+  padding: 12px;
+  border: 1px solid #d99b90;
+  border-radius: 8px;
+  background: #fff4f2;
+}
+
+.patch-field {
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface-muted);
+}
+
+.patch-field__title {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.patch-field__values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.patch-field__label {
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.patch-field__value {
+  min-width: 0;
+  margin: 0;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: auto;
+  font-size: 0.82rem;
+  white-space: pre-wrap;
+}
+
+.patch-field__value--original {
+  border: 1px solid #e4b6ae;
+  background: #fff4f2;
+}
+
+.patch-field__value--updated {
+  border: 1px solid #a9d3bf;
+  background: #eefaf4;
+}
+
 @media (max-width: 720px) {
   .dashboard {
     width: min(100% - 20px, 1180px);
@@ -724,6 +781,10 @@ button {
 
   .filter-button {
     width: 100%;
+  }
+
+  .patch-field__values {
+    grid-template-columns: 1fr;
   }
 }
 

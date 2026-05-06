@@ -1,4 +1,6 @@
 import { loadRecipes } from "./loadRecipes.js";
+import { generateRecipePatch } from "./generateRecipePatch.js";
+import { renderPatchPreview } from "./renderPatchPreview.js";
 import {
   renderRecipeEditor,
   renderRecipeList,
@@ -23,7 +25,7 @@ let searchInput;
 let listRoot;
 let editorRoot;
 let validationRoot;
-let patchPreview;
+let patchPreviewRoot;
 
 async function loadJson(url) {
   const response = await fetch(url, {
@@ -121,7 +123,7 @@ function validateDraft(recipe) {
 
 function updateValidationAndPatch() {
   renderValidation(validationRoot, state.validation);
-  patchPreview.textContent = JSON.stringify(createPatchPreview(), null, 2);
+  renderPatchPreview(patchPreviewRoot, createPatchPreview());
 }
 
 function createPatchPreview() {
@@ -129,30 +131,12 @@ function createPatchPreview() {
     return {};
   }
 
-  return {
-    operation: "updateRecipe",
-    source: "data/recipes/sample-recipes.json",
+  const validation = state.validation || validateRecipeAgainstSchema(state.draft, state.schema);
+
+  return generateRecipePatch(state.recipes[state.selectedIndex], state.draft, validation, {
     index: state.selectedIndex,
-    originalTitle: state.recipes[state.selectedIndex].title,
-    valid: state.validation?.ok ?? false,
-    changes: diffRecipe(state.recipes[state.selectedIndex], state.draft),
-    recipe: state.draft
-  };
-}
-
-function diffRecipe(original, draft) {
-  const changes = {};
-
-  for (const key of ["title", "yield", "category", "ingredients", "steps"]) {
-    if (JSON.stringify(original[key]) !== JSON.stringify(draft[key])) {
-      changes[key] = {
-        from: original[key],
-        to: draft[key]
-      };
-    }
-  }
-
-  return changes;
+    source: "data/recipes/sample-recipes.json"
+  });
 }
 
 function validateRecipeAgainstSchema(recipe, schema) {
@@ -245,7 +229,7 @@ async function initAdmin() {
   listRoot = document.querySelector("#recipe-list");
   editorRoot = document.querySelector("#recipe-editor-root");
   validationRoot = document.querySelector("#validation-root");
-  patchPreview = document.querySelector("#patch-preview");
+  patchPreviewRoot = document.querySelector("#patch-preview-root");
 
   try {
     clearError();
