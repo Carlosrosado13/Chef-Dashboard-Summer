@@ -20,22 +20,17 @@ function formatAmount(amount) {
   return "As needed";
 }
 
-function groupIngredientsByUnit(ingredients) {
-  return ingredients.reduce((groups, ingredient) => {
-    const groupName = ingredient.unit || "Unspecified unit";
-    const group = groups.get(groupName) || [];
-    group.push(ingredient);
-    groups.set(groupName, group);
-    return groups;
-  }, new Map());
-}
-
-function renderIngredientGroup(unit, ingredients) {
-  const section = createElement("section", "ingredient-group");
-  const heading = createElement("h3", "ingredient-group__title", unit);
+function renderIngredientGroup(group, isOpen) {
+  const section = createElement("details", "ingredient-group");
+  const heading = createElement("summary", "ingredient-group__title");
+  const headingText = createElement("span", "", group.category);
+  const count = createElement("span", "ingredient-group__count", `${group.count} item${group.count === 1 ? "" : "s"}`);
   const list = createElement("ul", "ingredient-list");
 
-  for (const ingredient of ingredients) {
+  section.open = isOpen;
+  heading.append(headingText, count);
+
+  for (const ingredient of group.ingredients) {
     const item = createElement("li", "ingredient-list__item");
     const quantity = createElement("span", "ingredient-list__quantity", `${formatAmount(ingredient.amount)} ${ingredient.unit}`.trim());
     const name = createElement("span", "ingredient-list__name", ingredient.name);
@@ -146,11 +141,11 @@ export function renderIngredientList(summary, options = {}) {
   if (summary.ingredients.length === 0) {
     panel.append(createElement("p", "ingredient-empty", "No linked recipe ingredients are available for this selection yet."));
   } else {
-    const groups = groupIngredientsByUnit(summary.ingredients);
+    const groups = summary.categorizedIngredients || [];
     const groupWrap = createElement("div", "ingredient-panel__groups");
 
-    for (const [unit, ingredients] of groups.entries()) {
-      groupWrap.append(renderIngredientGroup(unit, ingredients));
+    for (const [index, group] of groups.entries()) {
+      groupWrap.append(renderIngredientGroup(group, index === 0));
     }
 
     panel.append(groupWrap);

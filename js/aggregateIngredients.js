@@ -1,4 +1,5 @@
 import { findRecipeByTitle, normalizeRecipeTitle } from "./loadRecipes.js";
+import { categorizeIngredients } from "./categorizeIngredients.js";
 import { parseQuantity, parseYieldValue, scaleRecipe } from "./scaleRecipe.js";
 
 function normalizeIngredientName(name) {
@@ -152,6 +153,7 @@ export function aggregateIngredients(menuData, recipes, filters = {}) {
       targetYield: filters.targetYield || ""
     },
     ingredients,
+    categorizedIngredients: categorizeIngredients(ingredients),
     missingRecipes,
     unitIssues: Array.from(unitIssues.values()),
     scalingIssues,

@@ -511,9 +511,26 @@ button {
 }
 
 .ingredient-group__title {
-  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0;
   font-size: 1rem;
   text-transform: capitalize;
+  cursor: pointer;
+}
+
+.ingredient-group[open] .ingredient-group__title {
+  margin-bottom: 10px;
+}
+
+.ingredient-group__count {
+  flex: 0 0 auto;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: none;
 }
 
 .ingredient-list {
