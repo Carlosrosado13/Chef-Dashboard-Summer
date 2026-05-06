@@ -15,7 +15,8 @@ const state = {
   viewMode: "daily",
   selectedMealType: "",
   selectedWeek: "",
-  selectedDay: ""
+  selectedDay: "",
+  ingredientTargetYield: ""
 };
 
 let recipes = [];
@@ -253,8 +254,12 @@ function renderDashboard() {
     ingredientRoot,
     aggregateIngredients(state.menuData, recipes, {
       mealType: state.selectedMealType,
-      week: state.selectedWeek
-    })
+      week: state.selectedWeek,
+      targetYield: state.ingredientTargetYield
+    }),
+    {
+      onTargetYieldChange: handleIngredientTargetYieldChange
+    }
   );
 
   if (state.viewMode === "daily") {
@@ -274,6 +279,11 @@ function handleMenuItemClick(menuItem) {
   }
 
   recipeModal.openMissingRecipe(menuItem.title);
+}
+
+function handleIngredientTargetYieldChange(targetYield) {
+  state.ingredientTargetYield = targetYield;
+  renderDashboard();
 }
 
 async function initDashboard() {

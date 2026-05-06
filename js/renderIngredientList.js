@@ -83,7 +83,54 @@ function renderUnitIssues(unitIssues) {
   return section;
 }
 
-export function renderIngredientList(summary) {
+function renderScalingIssues(scalingIssues) {
+  if (scalingIssues.length === 0) {
+    return null;
+  }
+
+  const section = createElement("section", "ingredient-warning");
+  section.append(createElement("h3", "", "Scaling review needed"));
+
+  const list = createElement("ul", "");
+  for (const issue of scalingIssues) {
+    list.append(createElement("li", "", `${issue.title}: ${issue.message}`));
+  }
+
+  section.append(list);
+  return section;
+}
+
+function renderYieldControls(summary, options) {
+  const form = createElement("form", "ingredient-scaler");
+  const label = createElement("label", "ingredient-scaler__label", "Global target yield");
+  const input = createElement("input", "ingredient-scaler__input");
+  const applyButton = createElement("button", "ingredient-scaler__button", "Apply");
+  const resetButton = createElement("button", "ingredient-scaler__button", "Reset");
+  const hint = createElement("p", "ingredient-scaler__hint", "Applies the same target yield to every linked recipe in this meal/week.");
+
+  input.type = "text";
+  input.value = summary.filters.targetYield || "";
+  input.placeholder = "Example: 48 servings";
+  applyButton.type = "submit";
+  resetButton.type = "button";
+
+  label.append(input);
+  form.append(label, applyButton, resetButton, hint);
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    options.onTargetYieldChange?.(input.value.trim());
+  });
+
+  resetButton.addEventListener("click", () => {
+    input.value = "";
+    options.onTargetYieldChange?.("");
+  });
+
+  return form;
+}
+
+export function renderIngredientList(summary, options = {}) {
   const panel = createElement("section", "ingredient-panel");
   const header = createElement("header", "ingredient-panel__header");
   const title = createElement("h2", "", "Ingredient Summary");
@@ -94,7 +141,7 @@ export function renderIngredientList(summary) {
   );
 
   header.append(title, meta);
-  panel.append(header);
+  panel.append(header, renderYieldControls(summary, options));
 
   if (summary.ingredients.length === 0) {
     panel.append(createElement("p", "ingredient-empty", "No linked recipe ingredients are available for this selection yet."));
@@ -110,7 +157,12 @@ export function renderIngredientList(summary) {
   }
 
   const unitIssues = renderUnitIssues(summary.unitIssues);
+  const scalingIssues = renderScalingIssues(summary.scalingIssues || []);
   const missingRecipes = renderMissingRecipes(summary.missingRecipes);
+
+  if (scalingIssues) {
+    panel.append(scalingIssues);
+  }
 
   if (unitIssues) {
     panel.append(unitIssues);
@@ -123,10 +175,10 @@ export function renderIngredientList(summary) {
   return panel;
 }
 
-export function renderIngredientListInto(container, summary) {
+export function renderIngredientListInto(container, summary, options = {}) {
   if (!container) {
     throw new Error("An ingredient container is required.");
   }
 
-  container.replaceChildren(renderIngredientList(summary));
+  container.replaceChildren(renderIngredientList(summary, options));
 }
