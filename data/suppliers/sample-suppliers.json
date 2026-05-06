@@ -1,0 +1,107 @@
+[
+  {
+    "supplierName": "Northstar Produce",
+    "supportedCategories": [
+      "Produce"
+    ],
+    "contactInfo": {
+      "email": "orders@northstarproduce.example",
+      "phone": "555-0101"
+    },
+    "preferredOrderUnits": {
+      "Produce": "lb"
+    },
+    "estimatedUnitCostByCategory": {
+      "Produce": 2.75
+    }
+  },
+  {
+    "supplierName": "Harbor & Field Proteins",
+    "supportedCategories": [
+      "Protein"
+    ],
+    "contactInfo": {
+      "email": "chefdesk@harborfield.example",
+      "phone": "555-0102"
+    },
+    "preferredOrderUnits": {
+      "Protein": "lb"
+    },
+    "estimatedUnitCostByCategory": {
+      "Protein": 8.5
+    }
+  },
+  {
+    "supplierName": "Creamline Dairy",
+    "supportedCategories": [
+      "Dairy"
+    ],
+    "contactInfo": {
+      "email": "orders@creamline.example",
+      "phone": "555-0103"
+    },
+    "preferredOrderUnits": {
+      "Dairy": "qt"
+    },
+    "estimatedUnitCostByCategory": {
+      "Dairy": 4.25
+    }
+  },
+  {
+    "supplierName": "Pantry Staples Co.",
+    "supportedCategories": [
+      "Dry Goods",
+      "Bakery",
+      "Spices",
+      "Canned Goods"
+    ],
+    "contactInfo": {
+      "email": "orders@pantrystaples.example",
+      "phone": "555-0104"
+    },
+    "preferredOrderUnits": {
+      "Dry Goods": "lb",
+      "Bakery": "each",
+      "Spices": "oz",
+      "Canned Goods": "case"
+    },
+    "estimatedUnitCostByCategory": {
+      "Dry Goods": 3.1,
+      "Bakery": 1.75,
+      "Spices": 1.4,
+      "Canned Goods": 18
+    }
+  },
+  {
+    "supplierName": "Kitchen Liquids Supply",
+    "supportedCategories": [
+      "Oils & Liquids"
+    ],
+    "contactInfo": {
+      "email": "orders@kitchenliquids.example",
+      "phone": "555-0105"
+    },
+    "preferredOrderUnits": {
+      "Oils & Liquids": "qt"
+    },
+    "estimatedUnitCostByCategory": {
+      "Oils & Liquids": 6
+    }
+  },
+  {
+    "supplierName": "Frozen Goods Direct",
+    "supportedCategories": [
+      "Frozen"
+    ],
+    "contactInfo": {
+      "email": "orders@frozengoods.example",
+      "phone": "555-0106"
+    },
+    "preferredOrderUnits": {
+      "Frozen": "case"
+    },
+    "estimatedUnitCostByCategory": {
+      "Frozen": 24
+    }
+  }
+]
