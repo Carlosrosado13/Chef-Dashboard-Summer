@@ -8,8 +8,9 @@ import { validateMenuRotation } from "./validateMenuRotation.js";
 const currentFile = fileURLToPath(import.meta.url);
 const currentDir = dirname(currentFile);
 const projectRoot = resolve(currentDir, "../..");
+const dataDir = resolve(projectRoot, "data");
 const sourcePath = resolve(projectRoot, "data/raw/winter/menu.json");
-const processedDir = resolve(projectRoot, "processed");
+const processedDir = resolve(dataDir, "processed");
 const cleanMenuPath = resolve(processedDir, "clean-menu.json");
 const migrationReportPath = resolve(processedDir, "migration-report.json");
 
@@ -141,8 +142,8 @@ function createMigrationReport(rawData, normalizedData, validationResult) {
   return {
     source: "data/raw/winter/menu.json",
     output: {
-      cleanMenu: "processed/clean-menu.json",
-      report: "processed/migration-report.json"
+      cleanMenu: "data/processed/clean-menu.json",
+      report: "data/processed/migration-report.json"
     },
     valid: validationResult.ok,
     summary: {
