@@ -83,6 +83,7 @@ export function renderMenuItem(category, value) {
 
 export function renderDay(dayName, dayMenu) {
   const section = createElement("section", "menu-day");
+  section.dataset.day = dayName;
   const heading = createElement("h4", "menu-day__title", dayName);
   const list = createElement("dl", "menu-day__items");
 
@@ -97,6 +98,7 @@ export function renderDay(dayName, dayMenu) {
 
 export function renderWeek(weekName, week) {
   const section = createElement("section", "menu-week");
+  section.dataset.week = weekName;
   const heading = createElement("h3", "menu-week__title", weekName);
   const days = createElement("div", "menu-week__days");
 
@@ -111,6 +113,7 @@ export function renderWeek(weekName, week) {
 
 export function renderMealType(mealType, mealRotation) {
   const section = createElement("section", "menu-meal");
+  section.dataset.mealType = mealType;
   const title = mealType.charAt(0).toUpperCase() + mealType.slice(1);
   const heading = createElement("h2", "menu-meal__title", title);
   const weeks = createElement("div", "menu-meal__weeks");

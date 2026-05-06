@@ -20,6 +20,32 @@ function setStatus(message, tone = "neutral") {
   menuStatus.dataset.tone = tone;
 }
 
+function renderPanelMessage(className, title, message) {
+  if (!menuRoot) {
+    return;
+  }
+
+  const panel = document.createElement("section");
+  panel.className = className;
+
+  const heading = document.createElement("h2");
+  heading.textContent = title;
+
+  const copy = document.createElement("p");
+  copy.textContent = message;
+
+  panel.append(heading, copy);
+  menuRoot.replaceChildren(panel);
+}
+
+function showLoadingState() {
+  renderPanelMessage("menu-state menu-state--loading", "Loading menu", "Fetching processed winter menu data.");
+}
+
+function showEmptyState() {
+  renderPanelMessage("menu-state menu-state--empty", "No menu data", "No lunch or dinner menu entries are available yet.");
+}
+
 function showFrontendError(message) {
   console.error("[menu-dashboard] frontend error:", message);
 
@@ -29,6 +55,7 @@ function showFrontendError(message) {
   }
 
   setStatus("Unable to render menu", "error");
+  renderPanelMessage("menu-state menu-state--error", "Menu unavailable", message);
 }
 
 function clearFrontendError() {
@@ -45,9 +72,12 @@ function renderWeekButtons(weeks) {
     throw new Error("Week filter container was not found.");
   }
 
-  const buttons = [
-    createWeekButton("All weeks", "", state.selectedWeek === "")
-  ];
+  if (weeks.length === 0) {
+    weekFilter.replaceChildren();
+    return;
+  }
+
+  const buttons = [createWeekButton("All weeks", "", state.selectedWeek === "")];
 
   for (const week of weeks) {
     buttons.push(createWeekButton(week, week, state.selectedWeek === week));
@@ -82,7 +112,15 @@ function renderDashboard() {
   }
 
   console.log("[menu-dashboard] rendering started");
-  renderWeekButtons(getAvailableWeeks(state.menuData));
+  const weeks = getAvailableWeeks(state.menuData);
+  renderWeekButtons(weeks);
+
+  if (weeks.length === 0) {
+    showEmptyState();
+    console.log("[menu-dashboard] rendering completed");
+    return;
+  }
+
   renderMenuInto(menuRoot, state.menuData, {
     filters: {
       week: state.selectedWeek
@@ -100,6 +138,7 @@ async function initDashboard() {
   try {
     clearFrontendError();
     setStatus("Loading menu data...");
+    showLoadingState();
 
     const result = await loadMenuData();
 

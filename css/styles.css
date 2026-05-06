@@ -134,6 +134,34 @@ button {
   color: var(--color-error);
 }
 
+.menu-state {
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-panel);
+}
+
+.menu-state h2 {
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+}
+
+.menu-state p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.menu-state--error {
+  border-color: #d99b90;
+  background: #fff4f2;
+}
+
+.menu-state--error h2,
+.menu-state--error p {
+  color: var(--color-error);
+}
+
 .menu-meal {
   padding: 18px;
   box-shadow: var(--shadow-panel);
