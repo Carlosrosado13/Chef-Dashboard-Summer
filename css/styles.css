@@ -581,12 +581,36 @@ button {
   align-items: start;
 }
 
+.admin-header-status {
+  display: grid;
+  justify-items: end;
+  gap: 6px;
+}
+
 .admin-panel {
   padding: 16px;
   border: 1px solid var(--color-border);
   border-radius: 8px;
   background: var(--color-surface);
   box-shadow: var(--shadow-panel);
+}
+
+.admin-auth-panel {
+  width: min(420px, 100%);
+}
+
+.admin-login {
+  display: grid;
+  gap: 12px;
+}
+
+.admin-login h2 {
+  margin: 0;
+}
+
+.admin-auth-error {
+  margin: 0;
+  color: var(--color-error);
 }
 
 .admin-panel h2 {
@@ -806,6 +830,10 @@ button {
     align-items: flex-start;
     flex-direction: column;
     gap: 10px;
+  }
+
+  .admin-header-status {
+    justify-items: start;
   }
 
   .dashboard h1 {

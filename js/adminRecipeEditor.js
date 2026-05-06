@@ -1,3 +1,4 @@
+import { initializeAdminAuth } from "./adminAuth.js";
 import { loadRecipes } from "./loadRecipes.js";
 import { applyRecipePatch, rollbackRecipePatch } from "./applyRecipePatch.js";
 import { generateRecipePatch } from "./generateRecipePatch.js";
@@ -37,6 +38,7 @@ let editorRoot;
 let validationRoot;
 let patchPreviewRoot;
 let draftStatusRoot;
+let adminInitialized = false;
 
 async function loadJson(url) {
   const response = await fetch(url, {
@@ -374,6 +376,12 @@ function renderAdmin() {
 }
 
 async function initAdmin() {
+  if (adminInitialized) {
+    renderAdmin();
+    return;
+  }
+
+  adminInitialized = true;
   statusElement = document.querySelector("#admin-status");
   errorElement = document.querySelector("#admin-error");
   searchInput = document.querySelector("#recipe-search");
@@ -414,8 +422,14 @@ async function initAdmin() {
   }
 }
 
+function bootAdmin() {
+  initializeAdminAuth({
+    onAuthenticated: initAdmin
+  });
+}
+
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initAdmin, { once: true });
+  document.addEventListener("DOMContentLoaded", bootAdmin, { once: true });
 } else {
-  initAdmin();
+  bootAdmin();
 }
