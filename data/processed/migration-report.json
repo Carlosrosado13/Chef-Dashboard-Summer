@@ -1,0 +1,87 @@
+{
+  "source": "data/raw/winter/menu.json",
+  "output": {
+    "cleanMenu": "data/processed/clean-menu.json",
+    "report": "data/processed/migration-report.json"
+  },
+  "valid": true,
+  "summary": {
+    "invalidMenuEntries": 0,
+    "encodingIssues": 2,
+    "placeholderValues": 6,
+    "missingValues": 0,
+    "normalizedWeekNames": 4
+  },
+  "invalidMenuEntries": [],
+  "encodingIssues": [
+    {
+      "path": "lunch.Week 1.Monday.DESSERT",
+      "value": "Chocolate Pot de CrÃ¨me",
+      "normalizedValue": "Chocolate Pot de CrÃ ̈me"
+    },
+    {
+      "path": "lunch.Week 1.Thursday.DESSERT",
+      "value": "Espresso CrÃ¨me BrÃ»lÃ©e",
+      "normalizedValue": "Espresso CrÃ ̈me BrÃ»lÃ©e"
+    }
+  ],
+  "placeholderValues": [
+    {
+      "path": "dinner.1.Tuesday.Alternative",
+      "value": "N/A",
+      "normalizedValue": ""
+    },
+    {
+      "path": "dinner.1.Saturday.Alternative",
+      "value": "N/A",
+      "normalizedValue": ""
+    },
+    {
+      "path": "dinner.1.Sunday.Alternative",
+      "value": "N/A",
+      "normalizedValue": ""
+    },
+    {
+      "path": "dinner.2.Saturday.Alternative",
+      "value": "N/A",
+      "normalizedValue": ""
+    },
+    {
+      "path": "dinner.3.Sunday.Alternative",
+      "value": "N/A",
+      "normalizedValue": ""
+    },
+    {
+      "path": "dinner.4.Sunday.Alternative",
+      "value": "N/A",
+      "normalizedValue": ""
+    }
+  ],
+  "missingValues": [],
+  "normalizedWeekNames": [
+    {
+      "path": "dinner.weeks.1",
+      "from": "1",
+      "to": "Week 1"
+    },
+    {
+      "path": "dinner.weeks.2",
+      "from": "2",
+      "to": "Week 2"
+    },
+    {
+      "path": "dinner.weeks.3",
+      "from": "3",
+      "to": "Week 3"
+    },
+    {
+      "path": "dinner.weeks.4",
+      "from": "4",
+      "to": "Week 4"
+    }
+  ],
+  "normalizedTopLevelSections": [
+    "lunch",
+    "dinner"
+  ]
+}
