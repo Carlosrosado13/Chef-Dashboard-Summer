@@ -143,7 +143,7 @@ export function renderMenu(menuData, options = {}) {
 
 export function renderMenuInto(container, menuData, options = {}) {
   if (!container) {
-    return;
+    throw new Error("A render container is required.");
   }
 
   container.replaceChildren(renderMenu(menuData, options));

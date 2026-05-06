@@ -125,6 +125,15 @@ button {
   gap: 20px;
 }
 
+.frontend-error {
+  margin-bottom: 20px;
+  padding: 14px 16px;
+  border: 1px solid #d99b90;
+  border-radius: 8px;
+  background: #fff4f2;
+  color: var(--color-error);
+}
+
 .menu-meal {
   padding: 18px;
   box-shadow: var(--shadow-panel);

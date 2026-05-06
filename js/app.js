@@ -1,14 +1,15 @@
 import { loadMenuData } from "./loadMenuData.js";
 import { getAvailableWeeks, renderMenuInto } from "./renderMenu.js";
 
-const menuRoot = document.querySelector("#menu-root");
-const weekFilter = document.querySelector("#week-filter");
-const menuStatus = document.querySelector("#menu-status");
-
 const state = {
   menuData: null,
   selectedWeek: ""
 };
+
+let menuRoot;
+let weekFilter;
+let menuStatus;
+let frontendError;
 
 function setStatus(message, tone = "neutral") {
   if (!menuStatus) {
@@ -19,9 +20,29 @@ function setStatus(message, tone = "neutral") {
   menuStatus.dataset.tone = tone;
 }
 
+function showFrontendError(message) {
+  console.error("[menu-dashboard] frontend error:", message);
+
+  if (frontendError) {
+    frontendError.textContent = message;
+    frontendError.hidden = false;
+  }
+
+  setStatus("Unable to render menu", "error");
+}
+
+function clearFrontendError() {
+  if (!frontendError) {
+    return;
+  }
+
+  frontendError.textContent = "";
+  frontendError.hidden = true;
+}
+
 function renderWeekButtons(weeks) {
   if (!weekFilter) {
-    return;
+    throw new Error("Week filter container was not found.");
   }
 
   const buttons = [
@@ -56,27 +77,53 @@ function renderDashboard() {
     return;
   }
 
+  if (!menuRoot) {
+    throw new Error("Menu root container was not found.");
+  }
+
+  console.log("[menu-dashboard] rendering started");
   renderWeekButtons(getAvailableWeeks(state.menuData));
   renderMenuInto(menuRoot, state.menuData, {
     filters: {
       week: state.selectedWeek
     }
   });
+  console.log("[menu-dashboard] rendering completed");
 }
 
 async function initDashboard() {
-  setStatus("Loading menu data...");
+  menuRoot = document.querySelector("#menu-root");
+  weekFilter = document.querySelector("#week-filter");
+  menuStatus = document.querySelector("#menu-status");
+  frontendError = document.querySelector("#frontend-error");
 
-  const result = await loadMenuData();
+  try {
+    clearFrontendError();
+    setStatus("Loading menu data...");
 
-  if (!result.ok) {
-    setStatus(result.error, "error");
-    return;
+    const result = await loadMenuData();
+
+    if (!result.ok) {
+      showFrontendError(result.error);
+      return;
+    }
+
+    state.menuData = result.data;
+    console.log("[menu-dashboard] data loaded", state.menuData);
+    setStatus("Menu data loaded", "success");
+    renderDashboard();
+  } catch (error) {
+    showFrontendError(error.message || "Menu rendering failed.");
   }
-
-  state.menuData = result.data;
-  setStatus("Menu data loaded", "success");
-  renderDashboard();
 }
 
-initDashboard();
+function bootDashboard() {
+  console.log("[menu-dashboard] bootstrap started");
+  initDashboard();
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", bootDashboard, { once: true });
+} else {
+  bootDashboard();
+}
