@@ -3,6 +3,12 @@ import { applyRecipePatch, rollbackRecipePatch } from "./applyRecipePatch.js";
 import { generateRecipePatch } from "./generateRecipePatch.js";
 import { renderPatchPreview } from "./renderPatchPreview.js";
 import {
+  clearRecipeDraft,
+  getRecipeDraftId,
+  loadRecipeDraft,
+  saveRecipeDraft
+} from "./recipeDraftManager.js";
+import {
   renderRecipeEditor,
   renderRecipeList,
   renderValidation
@@ -18,6 +24,7 @@ const state = {
   validation: null,
   patchHistory: [],
   notice: null,
+  draftRecord: null,
   search: "",
   isDirty: false
 };
@@ -29,6 +36,7 @@ let listRoot;
 let editorRoot;
 let validationRoot;
 let patchPreviewRoot;
+let draftStatusRoot;
 
 async function loadJson(url) {
   const response = await fetch(url, {
@@ -84,9 +92,19 @@ function selectRecipe(index) {
   }
 
   state.selectedIndex = index;
-  state.draft = structuredClone(state.recipes[index]);
+  const recipe = state.recipes[index];
+  const draftRecord = loadRecipeDraft(getRecipeDraftId(recipe, index));
+  state.draftRecord = null;
+  state.draft = structuredClone(recipe);
+
+  if (draftRecord && window.confirm(`Restore locally saved draft from ${formatTimestamp(draftRecord.savedAt)}?`)) {
+    state.draft = structuredClone(draftRecord.draft);
+    state.draftRecord = draftRecord;
+    state.isDirty = true;
+  }
+
   state.validation = null;
-  state.isDirty = false;
+  state.isDirty = state.draftRecord !== null;
   renderAdmin();
 }
 
@@ -95,6 +113,7 @@ function resetDraft() {
   state.draft = recipe ? structuredClone(recipe) : null;
   state.validation = null;
   state.isDirty = false;
+  clearCurrentDraft();
   renderAdmin();
 }
 
@@ -106,6 +125,7 @@ function cancelEditing() {
   state.selectedIndex = null;
   state.draft = null;
   state.validation = null;
+  state.draftRecord = null;
   state.isDirty = false;
   renderAdmin();
 }
@@ -114,6 +134,7 @@ function updateDraft(recipe) {
   state.draft = recipe;
   state.validation = validateRecipeAgainstSchema(recipe, state.schema);
   state.isDirty = true;
+  persistCurrentDraft();
   updateValidationAndPatch();
 }
 
@@ -121,7 +142,18 @@ function validateDraft(recipe) {
   state.draft = recipe;
   state.validation = validateRecipeAgainstSchema(recipe, state.schema);
   state.isDirty = true;
+  persistCurrentDraft();
   updateValidationAndPatch();
+}
+
+function persistCurrentDraft() {
+  if (state.selectedIndex === null || !state.draft) {
+    return;
+  }
+
+  const recipeId = getRecipeDraftId(state.recipes[state.selectedIndex], state.selectedIndex);
+  state.draftRecord = saveRecipeDraft(recipeId, state.draft);
+  renderDraftStatus();
 }
 
 function updateValidationAndPatch() {
@@ -214,6 +246,7 @@ function applyCurrentPatch() {
   state.draft = structuredClone(result.appliedRecipe);
   state.validation = validateCurrentSchema(state.draft);
   state.isDirty = false;
+  clearCurrentDraft();
   state.notice = {
     tone: "success",
     message: `Patch applied in memory at ${result.historyEntry.appliedAt}.`
@@ -240,11 +273,63 @@ function rollbackLastPatch() {
   state.draft = structuredClone(result.rolledBackRecipe);
   state.validation = validateCurrentSchema(state.draft);
   state.isDirty = false;
+  clearCurrentDraft();
   state.notice = {
     tone: "success",
     message: `Rolled back in memory at ${result.rolledBackAt}.`
   };
   renderAdmin();
+}
+
+function clearCurrentDraft() {
+  if (state.selectedIndex === null) {
+    return;
+  }
+
+  const recipeId = getRecipeDraftId(state.recipes[state.selectedIndex], state.selectedIndex);
+  clearRecipeDraft(recipeId);
+  state.draftRecord = null;
+  renderDraftStatus();
+}
+
+function clearDraftManually() {
+  if (!state.draftRecord || !window.confirm("Clear the locally saved draft for this recipe?")) {
+    return;
+  }
+
+  clearCurrentDraft();
+  state.notice = {
+    tone: "success",
+    message: "Local draft cleared."
+  };
+  renderAdmin();
+}
+
+function renderDraftStatus() {
+  if (!draftStatusRoot) {
+    return;
+  }
+
+  draftStatusRoot.replaceChildren();
+
+  const message = document.createElement("span");
+  message.textContent = state.draftRecord
+    ? `Draft saved locally at ${formatTimestamp(state.draftRecord.savedAt)}.`
+    : "No local draft saved.";
+  draftStatusRoot.append(message);
+
+  if (state.draftRecord) {
+    const clearButton = document.createElement("button");
+    clearButton.type = "button";
+    clearButton.className = "draft-status__button";
+    clearButton.textContent = "Clear draft";
+    clearButton.addEventListener("click", clearDraftManually);
+    draftStatusRoot.append(clearButton);
+  }
+}
+
+function formatTimestamp(timestamp) {
+  return new Date(timestamp).toLocaleString();
 }
 
 function validateIngredient(ingredient, index, errors) {
@@ -283,6 +368,7 @@ function renderAdmin() {
     onReset: resetDraft,
     onCancel: cancelEditing
   });
+  renderDraftStatus();
   updateValidationAndPatch();
   setStatus(state.isDirty ? "Unsaved changes" : "Ready", state.isDirty ? "error" : "success");
 }
@@ -295,6 +381,7 @@ async function initAdmin() {
   editorRoot = document.querySelector("#recipe-editor-root");
   validationRoot = document.querySelector("#validation-root");
   patchPreviewRoot = document.querySelector("#patch-preview-root");
+  draftStatusRoot = document.querySelector("#draft-status");
 
   try {
     clearError();
