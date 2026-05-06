@@ -16,27 +16,35 @@ const ROUTES = {
   "/api/recipe/commit-patch": ["POST"]
 };
 
-const CORS_HEADERS = {
-  "access-control-allow-origin": "*",
-  "access-control-allow-methods": "GET, POST, OPTIONS",
-  "access-control-allow-headers": "authorization, content-type, accept",
-  "access-control-max-age": "86400"
-};
+const LOCAL_DEV_ORIGIN_PATTERN = /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/;
 
-function jsonResponse(body, status = 200) {
+function createCorsHeaders(request) {
+  const origin = request?.headers?.get("origin") || "";
+  const allowOrigin = LOCAL_DEV_ORIGIN_PATTERN.test(origin) ? origin : "*";
+
+  return {
+    "access-control-allow-origin": allowOrigin,
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-headers": "authorization, content-type, accept",
+    "access-control-max-age": "86400",
+    vary: "Origin"
+  };
+}
+
+function jsonResponse(body, status = 200, request = null) {
   return new Response(JSON.stringify(body, null, 2), {
     status,
     headers: {
       "content-type": "application/json; charset=utf-8",
-      ...CORS_HEADERS
+      ...createCorsHeaders(request)
     }
   });
 }
 
-function withCors(response) {
+function withCors(response, request) {
   const headers = new Headers(response.headers);
 
-  for (const [key, value] of Object.entries(CORS_HEADERS)) {
+  for (const [key, value] of Object.entries(createCorsHeaders(request))) {
     headers.set(key, value);
   }
 
@@ -47,14 +55,14 @@ function withCors(response) {
   });
 }
 
-function optionsResponse() {
+function handleOptionsRequest(request) {
   return new Response(null, {
     status: 204,
-    headers: CORS_HEADERS
+    headers: createCorsHeaders(request)
   });
 }
 
-function methodNotAllowedResponse(pathname, method, allowedMethods) {
+function methodNotAllowedResponse(pathname, method, allowedMethods, request) {
   console.warn(`[worker-router] ${method} ${pathname} rejected. Allowed: ${allowedMethods.join(", ")}`);
 
   const response = jsonResponse({
@@ -63,7 +71,7 @@ function methodNotAllowedResponse(pathname, method, allowedMethods) {
     code: "METHOD_NOT_ALLOWED",
     allowedMethods,
     timestamp: new Date().toISOString()
-  }, 405);
+  }, 405, request);
 
   response.headers.set("allow", allowedMethods.join(", "));
   return response;
@@ -76,60 +84,60 @@ async function routeRequest(request, env) {
   console.log(`[worker-router] ${request.method} ${url.pathname} ${new Date().toISOString()}`);
 
   if (request.method === "OPTIONS") {
-    return optionsResponse();
+    return handleOptionsRequest(request);
   }
 
   if (allowedMethods && !allowedMethods.includes(request.method)) {
-    return methodNotAllowedResponse(url.pathname, request.method, allowedMethods);
+    return methodNotAllowedResponse(url.pathname, request.method, allowedMethods, request);
   }
 
   if (request.method === "POST" && url.pathname === "/api/admin/login") {
-    return handleAdminLogin(request, env);
+    return withCors(await handleAdminLogin(request, env), request);
   }
 
   if (request.method === "POST" && url.pathname === "/api/admin/logout") {
-    return handleAdminLogout(request);
+    return withCors(await handleAdminLogout(request), request);
   }
 
   if (request.method === "GET" && url.pathname === "/api/admin/session") {
-    return handleAdminSession(request);
+    return withCors(handleAdminSession(request), request);
   }
 
   if (request.method === "POST" && url.pathname === "/api/recipe/validate-patch") {
     const auth = requireAdminAuth(request);
     if (!auth.ok) {
-      return auth.response;
+      return withCors(auth.response, request);
     }
-    return handleValidatePatch(request);
+    return withCors(await handleValidatePatch(request), request);
   }
 
   if (request.method === "POST" && url.pathname === "/api/recipe/save-draft") {
     const auth = requireAdminAuth(request);
     if (!auth.ok) {
-      return auth.response;
+      return withCors(auth.response, request);
     }
-    return handleSaveDraft(request);
+    return withCors(await handleSaveDraft(request), request);
   }
 
   if (request.method === "POST" && url.pathname === "/api/recipe/commit-patch") {
     const auth = requireAdminAuth(request);
     if (!auth.ok) {
-      return auth.response;
+      return withCors(auth.response, request);
     }
-    return handleCommitPatch(request, env);
+    return withCors(await handleCommitPatch(request, env), request);
   }
 
   return jsonResponse({
     ok: false,
     error: "Route not found.",
     timestamp: new Date().toISOString()
-  }, 404);
+  }, 404, request);
 }
 
 export default {
   async fetch(request, env) {
-    return withCors(await routeRequest(request, env));
+    return routeRequest(request, env);
   }
 };
 
-export { routeRequest };
+export { createCorsHeaders, handleOptionsRequest, routeRequest };
