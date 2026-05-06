@@ -148,6 +148,10 @@ button {
   margin-top: 20px;
 }
 
+.inventory-root {
+  margin-top: 20px;
+}
+
 .menu-root > * {
   animation: view-in 180ms ease;
 }
@@ -591,6 +595,108 @@ button {
   color: var(--color-muted);
 }
 
+.inventory-panel {
+  display: grid;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-panel);
+}
+
+.inventory-panel__header h2 {
+  margin: 0 0 4px;
+  font-size: 1.35rem;
+}
+
+.inventory-panel__header p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.inventory-panel__groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.inventory-group {
+  padding: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface-muted);
+}
+
+.inventory-group__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.inventory-group[open] .inventory-group__title {
+  margin-bottom: 10px;
+}
+
+.inventory-group__count {
+  flex: 0 0 auto;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.inventory-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.inventory-list__item {
+  display: grid;
+  gap: 4px;
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+}
+
+.inventory-list__item--shortage,
+.inventory-list__item--missing {
+  border-color: #d99b90;
+  background: #fff4f2;
+}
+
+.inventory-list__item--low,
+.inventory-list__item--unit-mismatch {
+  border-color: #e0c46d;
+  background: #fff9e8;
+}
+
+.inventory-list__name {
+  font-weight: 700;
+}
+
+.inventory-list__metric {
+  color: var(--color-muted);
+  font-size: 0.88rem;
+}
+
+.inventory-list__status {
+  color: var(--color-accent-strong);
+  font-weight: 700;
+}
+
+.inventory-list__item--shortage .inventory-list__status,
+.inventory-list__item--missing .inventory-list__status {
+  color: var(--color-error);
+}
+
 .admin-layout {
   display: grid;
   grid-template-columns: minmax(220px, 280px) minmax(0, 1fr) minmax(260px, 360px);
@@ -967,7 +1073,8 @@ button {
   .menu-meal,
   .menu-week,
   .dashboard-controls,
-  .ingredient-panel {
+  .ingredient-panel,
+  .inventory-panel {
     padding: 14px;
   }
 

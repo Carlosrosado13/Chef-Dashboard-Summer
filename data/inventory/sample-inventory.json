@@ -1,0 +1,107 @@
+[
+  {
+    "ingredientName": "Roma tomatoes",
+    "currentQuantity": 18,
+    "unit": "lb",
+    "category": "Produce",
+    "reorderThreshold": 8
+  },
+  {
+    "ingredientName": "Yellow onion",
+    "currentQuantity": 8,
+    "unit": "lb",
+    "category": "Produce",
+    "reorderThreshold": 5
+  },
+  {
+    "ingredientName": "Fresh basil",
+    "currentQuantity": 1,
+    "unit": "cup",
+    "category": "Produce",
+    "reorderThreshold": 1
+  },
+  {
+    "ingredientName": "Vegetable stock",
+    "currentQuantity": 3,
+    "unit": "gal",
+    "category": "Canned Goods",
+    "reorderThreshold": 2
+  },
+  {
+    "ingredientName": "Chicken breast",
+    "currentQuantity": 8,
+    "unit": "lb",
+    "category": "Protein",
+    "reorderThreshold": 6
+  },
+  {
+    "ingredientName": "Lemon juice",
+    "currentQuantity": 3,
+    "unit": "cup",
+    "category": "Oils & Liquids",
+    "reorderThreshold": 1
+  },
+  {
+    "ingredientName": "Olive oil",
+    "currentQuantity": 1,
+    "unit": "cup",
+    "category": "Oils & Liquids",
+    "reorderThreshold": 2
+  },
+  {
+    "ingredientName": "Chopped parsley",
+    "currentQuantity": 2,
+    "unit": "cup",
+    "category": "Produce",
+    "reorderThreshold": 1
+  },
+  {
+    "ingredientName": "Beef chuck",
+    "currentQuantity": 10,
+    "unit": "lb",
+    "category": "Protein",
+    "reorderThreshold": 8
+  },
+  {
+    "ingredientName": "Mushrooms",
+    "currentQuantity": 2,
+    "unit": "lb",
+    "category": "Produce",
+    "reorderThreshold": 3
+  },
+  {
+    "ingredientName": "Pearl onions",
+    "currentQuantity": 6,
+    "unit": "lb",
+    "category": "Produce",
+    "reorderThreshold": 2
+  },
+  {
+    "ingredientName": "Red wine",
+    "currentQuantity": 1,
+    "unit": "qt",
+    "category": "Oils & Liquids",
+    "reorderThreshold": 1
+  },
+  {
+    "ingredientName": "Cream",
+    "currentQuantity": 1,
+    "unit": "qt",
+    "category": "Dairy",
+    "reorderThreshold": 1
+  },
+  {
+    "ingredientName": "Ground beef",
+    "currentQuantity": 6,
+    "unit": "lb",
+    "category": "Protein",
+    "reorderThreshold": 8
+  },
+  {
+    "ingredientName": "Breadcrumbs",
+    "currentQuantity": 3,
+    "unit": "cup",
+    "category": "Dry Goods",
+    "reorderThreshold": 2
+  }
+]

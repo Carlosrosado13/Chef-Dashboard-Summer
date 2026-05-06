@@ -1,7 +1,10 @@
 import { loadMenuData } from "./loadMenuData.js";
 import { aggregateIngredients } from "./aggregateIngredients.js";
+import { calculateInventoryNeeds } from "./calculateInventoryNeeds.js";
+import { loadInventory } from "./loadInventory.js";
 import { findRecipeByTitle, loadRecipes } from "./loadRecipes.js";
 import { renderIngredientListInto } from "./renderIngredientList.js";
+import { renderInventoryPanelInto } from "./renderInventoryPanel.js";
 import { createRecipeModal } from "./renderRecipeModal.js";
 import {
   getAvailableDays,
@@ -20,9 +23,11 @@ const state = {
 };
 
 let recipes = [];
+let inventory = [];
 let recipeModal;
 let menuRoot;
 let ingredientRoot;
+let inventoryRoot;
 let viewFilter;
 let mealFilter;
 let weekFilter;
@@ -63,6 +68,10 @@ function showLoadingState() {
   if (ingredientRoot) {
     ingredientRoot.replaceChildren();
   }
+
+  if (inventoryRoot) {
+    inventoryRoot.replaceChildren();
+  }
 }
 
 function showEmptyState() {
@@ -82,6 +91,10 @@ function showFrontendError(message) {
 
   if (ingredientRoot) {
     ingredientRoot.replaceChildren();
+  }
+
+  if (inventoryRoot) {
+    inventoryRoot.replaceChildren();
   }
 }
 
@@ -250,17 +263,20 @@ function renderDashboard() {
     onMenuItemClick: handleMenuItemClick
   });
 
-  renderIngredientListInto(
-    ingredientRoot,
-    aggregateIngredients(state.menuData, recipes, {
+  const ingredientSummary = aggregateIngredients(state.menuData, recipes, {
       mealType: state.selectedMealType,
       week: state.selectedWeek,
       targetYield: state.ingredientTargetYield
-    }),
+    });
+
+  renderIngredientListInto(
+    ingredientRoot,
+    ingredientSummary,
     {
       onTargetYieldChange: handleIngredientTargetYieldChange
     }
   );
+  renderInventoryPanelInto(inventoryRoot, calculateInventoryNeeds(ingredientSummary, inventory));
 
   if (state.viewMode === "daily") {
     setStatus(`${formatMealType(state.selectedMealType)} | ${state.selectedWeek} | ${state.selectedDay}`, "success");
@@ -289,6 +305,7 @@ function handleIngredientTargetYieldChange(targetYield) {
 async function initDashboard() {
   menuRoot = document.querySelector("#menu-root");
   ingredientRoot = document.querySelector("#ingredient-root");
+  inventoryRoot = document.querySelector("#inventory-root");
   viewFilter = document.querySelector("#view-filter");
   mealFilter = document.querySelector("#meal-filter");
   weekFilter = document.querySelector("#week-filter");
@@ -315,6 +332,12 @@ async function initDashboard() {
       console.warn("[menu-dashboard] recipes unavailable:", recipeResult.error);
     }
     recipes = recipeResult.recipes;
+
+    const inventoryResult = await loadInventory();
+    if (!inventoryResult.ok) {
+      console.warn("[menu-dashboard] inventory unavailable:", inventoryResult.error);
+    }
+    inventory = inventoryResult.inventory;
 
     state.menuData = result.data;
     console.log("[menu-dashboard] data loaded", state.menuData);
