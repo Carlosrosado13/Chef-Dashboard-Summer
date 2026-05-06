@@ -1,0 +1,142 @@
+[
+  {
+    "ingredientName": "Roma tomatoes",
+    "unitPrice": 2.4,
+    "purchaseUnit": "lb",
+    "supplier": "Northstar Produce",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Yellow onion",
+    "unitPrice": 1.25,
+    "purchaseUnit": "lb",
+    "supplier": "Northstar Produce",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Fresh basil",
+    "unitPrice": 7,
+    "purchaseUnit": "cup",
+    "supplier": "Northstar Produce",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Vegetable stock",
+    "unitPrice": 18,
+    "purchaseUnit": "gal",
+    "supplier": "Pantry Staples Co.",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Chicken breast",
+    "unitPrice": 4.85,
+    "purchaseUnit": "lb",
+    "supplier": "Harbor & Field Proteins",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Lemon juice",
+    "unitPrice": 1.9,
+    "purchaseUnit": "cup",
+    "supplier": "Kitchen Liquids Supply",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Olive oil",
+    "unitPrice": 5.5,
+    "purchaseUnit": "cup",
+    "supplier": "Kitchen Liquids Supply",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Chopped parsley",
+    "unitPrice": 3.25,
+    "purchaseUnit": "cup",
+    "supplier": "Northstar Produce",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Beef chuck",
+    "unitPrice": 6.75,
+    "purchaseUnit": "lb",
+    "supplier": "Harbor & Field Proteins",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Mushrooms",
+    "unitPrice": 3.5,
+    "purchaseUnit": "lb",
+    "supplier": "Northstar Produce",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Pearl onions",
+    "unitPrice": 2.25,
+    "purchaseUnit": "lb",
+    "supplier": "Northstar Produce",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Red wine",
+    "unitPrice": 9,
+    "purchaseUnit": "qt",
+    "supplier": "Kitchen Liquids Supply",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Cremini mushrooms",
+    "unitPrice": 3.8,
+    "purchaseUnit": "lb",
+    "supplier": "Northstar Produce",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Onion",
+    "unitPrice": 1.25,
+    "purchaseUnit": "lb",
+    "supplier": "Northstar Produce",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Cream",
+    "unitPrice": 4.25,
+    "purchaseUnit": "qt",
+    "supplier": "Creamline Dairy",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Ground beef",
+    "unitPrice": 5.9,
+    "purchaseUnit": "lb",
+    "supplier": "Harbor & Field Proteins",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Breadcrumbs",
+    "unitPrice": 0.65,
+    "purchaseUnit": "cup",
+    "supplier": "Pantry Staples Co.",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Eggs",
+    "unitPrice": 0.32,
+    "purchaseUnit": "each",
+    "supplier": "Harbor & Field Proteins",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Beef jus",
+    "unitPrice": 10,
+    "purchaseUnit": "qt",
+    "supplier": "Kitchen Liquids Supply",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  },
+  {
+    "ingredientName": "Beef tenderloin",
+    "unitPrice": 18.5,
+    "purchaseUnit": "lb",
+    "supplier": "Harbor & Field Proteins",
+    "lastUpdated": "2026-05-01T12:00:00Z"
+  }
+]

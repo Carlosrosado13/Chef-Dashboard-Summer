@@ -156,6 +156,10 @@ button {
   margin-top: 20px;
 }
 
+.food-cost-root {
+  margin-top: 20px;
+}
+
 .menu-root > * {
   animation: view-in 180ms ease;
 }
@@ -823,6 +827,97 @@ button {
   font-size: 0.88rem;
 }
 
+.food-cost-panel {
+  display: grid;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-panel);
+}
+
+.food-cost-panel__header h2 {
+  margin: 0 0 4px;
+  font-size: 1.35rem;
+}
+
+.food-cost-panel__header p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.food-cost-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.food-cost-metric {
+  display: grid;
+  gap: 2px;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface-muted);
+}
+
+.food-cost-metric__label {
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.food-cost-metric__value {
+  color: var(--color-accent-strong);
+  font-size: 1.1rem;
+}
+
+.food-cost-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.food-cost-card {
+  padding: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface-muted);
+}
+
+.food-cost-card h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+.food-cost-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.food-cost-list__item {
+  padding-top: 8px;
+  border-top: 1px solid var(--color-border);
+}
+
+.food-cost-list__item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.food-cost-list__item span {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.food-cost-list__item strong {
+  color: var(--color-accent-strong);
+}
+
 .admin-layout {
   display: grid;
   grid-template-columns: minmax(220px, 280px) minmax(0, 1fr) minmax(260px, 360px);
@@ -1201,7 +1296,8 @@ button {
   .dashboard-controls,
   .ingredient-panel,
   .inventory-panel,
-  .purchase-panel {
+  .purchase-panel,
+  .food-cost-panel {
     padding: 14px;
   }
 

@@ -142,7 +142,8 @@ export function aggregateIngredients(menuData, recipes, filters = {}) {
     }
   }
 
-  const ingredients = Array.from(ingredientMap.values()).sort((first, second) => {
+  const categorizedGroups = categorizeIngredients(Array.from(ingredientMap.values()));
+  const ingredients = categorizedGroups.flatMap((group) => group.ingredients).sort((first, second) => {
     return first.name.localeCompare(second.name) || first.unit.localeCompare(second.unit);
   });
 
@@ -153,7 +154,7 @@ export function aggregateIngredients(menuData, recipes, filters = {}) {
       targetYield: filters.targetYield || ""
     },
     ingredients,
-    categorizedIngredients: categorizeIngredients(ingredients),
+    categorizedIngredients: categorizedGroups,
     missingRecipes,
     unitIssues: Array.from(unitIssues.values()),
     scalingIssues,
