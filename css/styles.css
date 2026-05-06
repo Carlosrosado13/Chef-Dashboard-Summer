@@ -2176,3 +2176,415 @@ body {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
+
+/* Compact kitchen operations refinement */
+body {
+  padding-bottom: 0;
+  font-size: 15px;
+}
+
+.dashboard {
+  width: min(1280px, calc(100% - 20px));
+  padding: 10px 0 28px;
+}
+
+.dashboard-header {
+  position: sticky;
+  top: 0;
+  z-index: 24;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+}
+
+.dashboard-eyebrow {
+  margin-bottom: 1px;
+  font-size: 0.68rem;
+}
+
+.dashboard h1 {
+  font-size: clamp(1.2rem, 2.3vw, 1.65rem);
+}
+
+.dashboard-status {
+  padding: 5px 8px;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.dashboard-section-nav {
+  top: 56px;
+  z-index: 23;
+  gap: 6px;
+  margin-bottom: 6px;
+  padding: 5px 0;
+}
+
+.dashboard-section-nav a {
+  min-height: 34px;
+  padding: 5px 9px;
+  font-size: 0.78rem;
+}
+
+.dashboard-controls {
+  top: 96px;
+  z-index: 22;
+  gap: 8px;
+  margin-bottom: 10px;
+  padding: 8px;
+  max-height: 42vh;
+}
+
+.dashboard-controls__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 34px;
+  padding: 3px 2px;
+  color: var(--color-accent-strong);
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.dashboard-controls__summary::after {
+  content: "Show";
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  text-transform: none;
+}
+
+.dashboard-controls[open] .dashboard-controls__summary::after {
+  content: "Hide";
+}
+
+.dashboard-controls__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.control-group {
+  gap: 5px;
+}
+
+.dashboard-controls h2 {
+  font-size: 0.68rem;
+}
+
+.filter-buttons,
+.week-filter,
+.quick-switch-buttons {
+  gap: 6px;
+}
+
+.filter-button,
+.week-filter__button {
+  min-height: 34px;
+  min-width: 72px;
+  padding: 5px 9px;
+  font-size: 0.82rem;
+}
+
+.quick-switch-buttons .filter-button {
+  min-width: 86px;
+}
+
+.menu-root {
+  gap: 10px;
+}
+
+.ingredient-root,
+.inventory-root,
+.purchase-order-root,
+.food-cost-root,
+.analytics-root,
+.forecast-root {
+  margin-top: 12px;
+  scroll-margin-top: 150px;
+}
+
+.menu-root {
+  scroll-margin-top: 150px;
+}
+
+.menu-meal,
+.menu-week,
+.menu-day,
+.ingredient-panel,
+.inventory-panel,
+.purchase-panel,
+.food-cost-panel,
+.analytics-panel,
+.forecast-panel,
+.admin-panel,
+.skeleton-panel {
+  padding: 10px;
+}
+
+.menu-meal__title,
+.ingredient-panel__header h2,
+.inventory-panel__header h2,
+.purchase-panel__header h2,
+.food-cost-panel__header h2,
+.analytics-panel__header h2,
+.forecast-panel__header h2 {
+  font-size: 1rem;
+}
+
+.menu-week__title {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.menu-meal__weeks,
+.menu-week__days,
+.ingredient-panel,
+.inventory-panel,
+.purchase-panel,
+.food-cost-panel,
+.analytics-panel,
+.forecast-panel,
+.ingredient-panel__groups,
+.inventory-panel__groups,
+.purchase-panel__orders,
+.purchase-order__groups,
+.food-cost-grid,
+.analytics-grid,
+.forecast-grid {
+  gap: 8px;
+}
+
+.menu-week__days {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.menu-day__title {
+  margin-bottom: 7px;
+  padding: 3px 7px;
+  font-size: 0.92rem;
+}
+
+.menu-day__items {
+  gap: 5px;
+}
+
+.menu-item {
+  gap: 2px;
+  padding-top: 6px;
+}
+
+.menu-item__category {
+  font-size: 0.68rem;
+}
+
+.menu-item__button {
+  min-height: 32px;
+  padding: 5px 7px;
+  font-size: 0.9rem;
+}
+
+.ingredient-group,
+.inventory-group,
+.purchase-order,
+.purchase-category,
+.food-cost-card,
+.analytics-section,
+.analytics-quality,
+.forecast-section,
+.forecast-alerts,
+.forecast-trend,
+.food-cost-metric,
+.analytics-card,
+.forecast-card {
+  padding: 9px;
+}
+
+.food-cost-metrics,
+.analytics-cards,
+.forecast-cards {
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  gap: 7px;
+}
+
+.food-cost-metric__label,
+.analytics-card__label,
+.forecast-card__label {
+  font-size: 0.66rem;
+}
+
+.food-cost-metric__value,
+.analytics-card__value,
+.forecast-card__value {
+  font-size: 0.98rem;
+}
+
+.ingredient-list,
+.inventory-list,
+.purchase-list,
+.food-cost-list,
+.analytics-list,
+.forecast-list,
+.forecast-alert-list {
+  gap: 5px;
+}
+
+.ingredient-list__item,
+.purchase-line,
+.food-cost-list__item,
+.analytics-list__item,
+.forecast-list__item,
+.forecast-alert-list__item {
+  padding-top: 5px;
+}
+
+.inventory-list__item {
+  gap: 2px;
+  padding: 7px;
+}
+
+.panel-collapse-button {
+  min-height: 30px;
+  padding: 4px 8px;
+  font-size: 0.76rem;
+}
+
+.recipe-modal {
+  padding: 8px;
+}
+
+.recipe-modal__panel {
+  width: min(820px, 100%);
+  padding: 12px;
+}
+
+.recipe-modal__close,
+.recipe-scaler__input,
+.recipe-scaler__button {
+  min-height: 36px;
+}
+
+.recipe-modal__title {
+  font-size: 1.12rem;
+}
+
+.recipe-modal__meta,
+.recipe-modal__content,
+.recipe-scaler__message {
+  font-size: 0.9rem;
+}
+
+.recipe-scaler,
+.ingredient-scaler {
+  gap: 7px;
+  padding: 8px;
+}
+
+.ingredient-scaler__input,
+.ingredient-scaler__button {
+  min-height: 34px;
+}
+
+.ingredient-warning,
+.frontend-error,
+.menu-state {
+  padding: 10px;
+}
+
+.mobile-bottom-nav {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .dashboard {
+    width: min(1280px, calc(100% - 24px));
+    padding-top: 12px;
+  }
+
+  .dashboard-header {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .dashboard-controls {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .dashboard-controls__summary {
+    display: none;
+  }
+
+  .dashboard-controls__body {
+    grid-template-columns: minmax(110px, 0.8fr) minmax(120px, 0.75fr) minmax(220px, 1.25fr) minmax(220px, 1.25fr) minmax(250px, 1.35fr);
+    align-items: end;
+  }
+
+  .filter-buttons,
+  .week-filter,
+  .quick-switch-buttons {
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+
+  .filter-button,
+  .week-filter__button {
+    min-width: auto;
+  }
+
+  .menu-week__days[data-view-mode="daily"] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard-controls {
+    top: 92px;
+  }
+
+  .menu-week__days {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .food-cost-metrics,
+  .analytics-cards,
+  .forecast-cards {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .dashboard {
+    width: min(100% - 10px, 1280px);
+    padding-top: 6px;
+  }
+
+  .dashboard-header {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .dashboard-status {
+    width: fit-content;
+  }
+
+  .dashboard-section-nav {
+    top: 76px;
+  }
+
+  .dashboard-controls {
+    top: 116px;
+  }
+
+  .menu-week__days,
+  .ingredient-panel__groups,
+  .inventory-panel__groups,
+  .food-cost-grid,
+  .analytics-grid,
+  .forecast-grid {
+    grid-template-columns: 1fr;
+  }
+}

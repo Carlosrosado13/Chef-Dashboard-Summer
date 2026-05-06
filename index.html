@@ -24,33 +24,36 @@
       <a href="#analytics-root">Analytics</a>
     </nav>
 
-    <section class="dashboard-controls" aria-label="Menu filters">
-      <div class="control-group">
-        <h2>View</h2>
-        <div id="view-filter" class="filter-buttons" aria-label="Select view mode"></div>
-      </div>
-      <div class="control-group">
-        <h2>Meal</h2>
-        <div id="meal-filter" class="filter-buttons" aria-label="Select meal type"></div>
-      </div>
-      <div class="control-group">
-        <h2>Week</h2>
-        <div id="week-filter" class="filter-buttons" aria-label="Select week"></div>
-      </div>
-      <div class="control-group">
-        <h2>Day</h2>
-        <div id="day-filter" class="filter-buttons" aria-label="Select day"></div>
-      </div>
-      <div class="control-group quick-switch-group">
-        <h2>Quick Switch</h2>
-        <div class="quick-switch-buttons" aria-label="Quick week and day switching">
-          <button id="previous-week" class="filter-button" type="button">Prev Week</button>
-          <button id="next-week" class="filter-button" type="button">Next Week</button>
-          <button id="previous-day" class="filter-button" type="button">Prev Day</button>
-          <button id="next-day" class="filter-button" type="button">Next Day</button>
+    <details id="dashboard-controls" class="dashboard-controls" aria-label="Menu filters">
+      <summary class="dashboard-controls__summary">Filters</summary>
+      <div class="dashboard-controls__body">
+        <div class="control-group">
+          <h2>View</h2>
+          <div id="view-filter" class="filter-buttons" aria-label="Select view mode"></div>
+        </div>
+        <div class="control-group">
+          <h2>Meal</h2>
+          <div id="meal-filter" class="filter-buttons" aria-label="Select meal type"></div>
+        </div>
+        <div class="control-group">
+          <h2>Week</h2>
+          <div id="week-filter" class="filter-buttons" aria-label="Select week"></div>
+        </div>
+        <div class="control-group">
+          <h2>Day</h2>
+          <div id="day-filter" class="filter-buttons" aria-label="Select day"></div>
+        </div>
+        <div class="control-group quick-switch-group">
+          <h2>Switch</h2>
+          <div class="quick-switch-buttons" aria-label="Quick week and day switching">
+            <button id="previous-week" class="filter-button" type="button">Prev Week</button>
+            <button id="next-week" class="filter-button" type="button">Next Week</button>
+            <button id="previous-day" class="filter-button" type="button">Prev Day</button>
+            <button id="next-day" class="filter-button" type="button">Next Day</button>
+          </div>
         </div>
       </div>
-    </section>
+    </details>
 
     <section id="frontend-error" class="frontend-error" role="alert" hidden></section>
     <section id="menu-root" class="menu-root" aria-live="polite"></section>
@@ -60,14 +63,6 @@
     <section id="food-cost-root" class="food-cost-root" aria-live="polite"></section>
     <section id="analytics-root" class="analytics-root" aria-live="polite"></section>
     <section id="forecast-root" class="forecast-root" aria-live="polite"></section>
-
-    <nav class="mobile-bottom-nav" aria-label="Kitchen quick navigation">
-      <a href="#menu-root">Menu</a>
-      <a href="#ingredient-root">Prep</a>
-      <a href="#inventory-root">Stock</a>
-      <a href="#purchase-order-root">Order</a>
-      <a href="#dashboard-top">Top</a>
-    </nav>
   </main>
   <script type="module" src="js/app.js"></script>
 </body>

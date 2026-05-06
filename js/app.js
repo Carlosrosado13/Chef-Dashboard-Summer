@@ -46,6 +46,7 @@ let viewFilter;
 let mealFilter;
 let weekFilter;
 let dayFilter;
+let controlsPanel;
 let previousWeekButton;
 let nextWeekButton;
 let previousDayButton;
@@ -472,6 +473,20 @@ function handleIngredientTargetYieldChange(targetYield) {
   renderDashboard();
 }
 
+function setupResponsiveControls() {
+  if (!controlsPanel) {
+    return;
+  }
+
+  const mediaQuery = window.matchMedia("(min-width: 720px)");
+  const syncControlsState = () => {
+    controlsPanel.open = mediaQuery.matches;
+  };
+
+  syncControlsState();
+  mediaQuery.addEventListener("change", syncControlsState);
+}
+
 async function initDashboard() {
   menuRoot = document.querySelector("#menu-root");
   ingredientRoot = document.querySelector("#ingredient-root");
@@ -484,6 +499,7 @@ async function initDashboard() {
   mealFilter = document.querySelector("#meal-filter");
   weekFilter = document.querySelector("#week-filter");
   dayFilter = document.querySelector("#day-filter");
+  controlsPanel = document.querySelector("#dashboard-controls");
   previousWeekButton = document.querySelector("#previous-week");
   nextWeekButton = document.querySelector("#next-week");
   previousDayButton = document.querySelector("#previous-day");
@@ -496,6 +512,7 @@ async function initDashboard() {
   nextWeekButton?.addEventListener("click", () => moveWeek(1));
   previousDayButton?.addEventListener("click", () => moveDay(-1));
   nextDayButton?.addEventListener("click", () => moveDay(1));
+  setupResponsiveControls();
 
   try {
     clearFrontendError();
