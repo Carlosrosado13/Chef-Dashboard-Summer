@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "chef-dashboard-summer-worker",
+  "main": "worker/src/index.js",
+  "compatibility_date": "2026-05-06",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "dev": {
+    "local_protocol": "http",
+    "port": 8787
+  },
+  "vars": {}
+}
