@@ -38,10 +38,24 @@ function jsonResponse(body, status = 200, request = null) {
   return new Response(JSON.stringify(body, null, 2), {
     status,
     headers: {
-      "content-type": "application/json",
+      "content-type": "application/json; charset=UTF-8",
       ...createCorsHeaders(request)
     }
   });
+}
+
+function optionsResponse(request, allowedMethods) {
+  const allowedWithOptions = [...new Set([...allowedMethods, "OPTIONS"])];
+  const response = new Response(null, {
+    status: 204,
+    headers: {
+      ...createCorsHeaders(request),
+      allow: allowedWithOptions.join(", ")
+    }
+  });
+
+  response.headers.set("Access-Control-Allow-Methods", allowedWithOptions.join(","));
+  return response;
 }
 
 function withCors(response, request) {
@@ -203,17 +217,8 @@ function handleOptionsRequest(request, pathname = "") {
   const allowedMethods = pathname === ADMIN_EXTRACT_URL_PATH
     ? ["POST"]
     : (getAllowedMethods(pathname) || ["GET", "POST"]);
-  const allowedWithOptions = [...new Set([...allowedMethods, "OPTIONS"])];
-  const response = jsonResponse({
-    ok: true,
-    method: "OPTIONS",
-    pathname,
-    allowedMethods: allowedWithOptions,
-    timestamp: new Date().toISOString()
-  }, 200, request);
 
-  response.headers.set("allow", allowedWithOptions.join(", "));
-  return response;
+  return optionsResponse(request, allowedMethods);
 }
 
 function methodNotAllowedResponse(pathname, method, allowedMethods, request) {

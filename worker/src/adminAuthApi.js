@@ -9,7 +9,7 @@ function jsonResponse(body, status = 200) {
   return new Response(JSON.stringify(body, null, 2), {
     status,
     headers: {
-      "content-type": "application/json; charset=utf-8"
+      "content-type": "application/json; charset=UTF-8"
     }
   });
 }

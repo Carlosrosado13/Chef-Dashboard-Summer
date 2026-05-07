@@ -8016,7 +8016,7 @@ function jsonResponse(body, status = 200) {
   return new Response(JSON.stringify(body, null, 2), {
     status,
     headers: {
-      "content-type": "application/json; charset=utf-8"
+      "content-type": "application/json; charset=UTF-8"
     }
   });
 }
@@ -8641,7 +8641,7 @@ function jsonResponse2(body, status = 200) {
   return new Response(JSON.stringify(body, null, 2), {
     status,
     headers: {
-      "content-type": "application/json; charset=utf-8"
+      "content-type": "application/json; charset=UTF-8"
     }
   });
 }
@@ -9131,12 +9131,25 @@ function jsonResponse3(body, status = 200, request = null) {
   return new Response(JSON.stringify(body, null, 2), {
     status,
     headers: {
-      "content-type": "application/json",
+      "content-type": "application/json; charset=UTF-8",
       ...createCorsHeaders(request)
     }
   });
 }
 __name(jsonResponse3, "jsonResponse");
+function optionsResponse(request, allowedMethods) {
+  const allowedWithOptions = [.../* @__PURE__ */ new Set([...allowedMethods, "OPTIONS"])];
+  const response = new Response(null, {
+    status: 204,
+    headers: {
+      ...createCorsHeaders(request),
+      allow: allowedWithOptions.join(", ")
+    }
+  });
+  response.headers.set("Access-Control-Allow-Methods", allowedWithOptions.join(","));
+  return response;
+}
+__name(optionsResponse, "optionsResponse");
 function withCors(response, request) {
   const headers = new Headers(response.headers);
   for (const [key, value] of Object.entries(createCorsHeaders(request))) {
@@ -9262,16 +9275,7 @@ function getAllowedMethods(pathname) {
 __name(getAllowedMethods, "getAllowedMethods");
 function handleOptionsRequest(request, pathname = "") {
   const allowedMethods = pathname === ADMIN_EXTRACT_URL_PATH ? ["POST"] : getAllowedMethods(pathname) || ["GET", "POST"];
-  const allowedWithOptions = [.../* @__PURE__ */ new Set([...allowedMethods, "OPTIONS"])];
-  const response = jsonResponse3({
-    ok: true,
-    method: "OPTIONS",
-    pathname,
-    allowedMethods: allowedWithOptions,
-    timestamp: (/* @__PURE__ */ new Date()).toISOString()
-  }, 200, request);
-  response.headers.set("allow", allowedWithOptions.join(", "));
-  return response;
+  return optionsResponse(request, allowedMethods);
 }
 __name(handleOptionsRequest, "handleOptionsRequest");
 function methodNotAllowedResponse(pathname, method, allowedMethods, request) {
