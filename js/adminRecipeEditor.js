@@ -619,10 +619,19 @@ async function extractRecipeFromUrl(url) {
       },
       body: JSON.stringify({ url: state.importUrl })
     });
-    const result = await response.json();
+    const result = await readExtractionJson(response);
 
     if (!response.ok || !result.ok) {
       throw new Error(result.error || "Recipe extraction failed.");
+    }
+
+    if (result.debug) {
+      state.importStatus = {
+        tone: "success",
+        message: result.debug
+      };
+      renderEntryControls();
+      return;
     }
 
     state.importStatus = {
@@ -637,6 +646,18 @@ async function extractRecipeFromUrl(url) {
       message: error.message || "Recipe extraction failed."
     };
     renderEntryControls();
+  }
+}
+
+async function readExtractionJson(response) {
+  const contentType = response.headers.get("content-type") || "";
+  const text = await response.text();
+
+  try {
+    return JSON.parse(text);
+  } catch {
+    const snippet = text.trim().slice(0, 80);
+    throw new Error(`Extraction endpoint returned ${contentType || "unknown content type"} from ${response.url || "unknown URL"}: ${snippet}`);
   }
 }
 

@@ -100,7 +100,10 @@ export function getAdminAuthHeader() {
 }
 
 export async function adminFetch(url, options = {}) {
-  const response = await fetch(getApiUrl(url), {
+  const apiUrl = getApiUrl(url);
+  console.log(`[admin-api-ui] ${options.method || "GET"} ${apiUrl}`);
+
+  const response = await fetch(apiUrl, {
     ...options,
     headers: {
       Accept: "application/json",

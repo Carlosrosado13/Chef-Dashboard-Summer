@@ -44,6 +44,13 @@ function jsonResponse(body, status = 200, request = null) {
   });
 }
 
+function debugJsonResponse(body, status = 200, request = null) {
+  return Response.json(body, {
+    status,
+    headers: createCorsHeaders(request)
+  });
+}
+
 function withCors(response, request) {
   const headers = new Headers(response.headers);
 
@@ -73,6 +80,12 @@ routeHandlers.set(`GET ${ADMIN_SESSION_PATH}`, (request) => (
 ));
 
 routeHandlers.set(`POST ${ADMIN_EXTRACT_URL_PATH}`, async (request) => {
+  console.log("EXTRACT ROUTE HIT");
+  return debugJsonResponse({
+    ok: true,
+    debug: "extract route working"
+  }, 200, request);
+
   if (!DEV_ADMIN_AUTH_BYPASS) {
     const auth = requireAdminAuth(request);
     if (!auth.ok) {
