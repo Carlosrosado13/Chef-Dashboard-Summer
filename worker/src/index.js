@@ -4,7 +4,7 @@ import {
   handleAdminSession,
   requireAdminAuth
 } from "./adminAuthApi.js";
-import { extractRecipeFields, extractRecipeFromHtmlDocument, normalizeRecipe } from "./extractRecipe.js";
+import { extractRecipeFromHtmlDocument } from "./extractRecipe.js";
 import { handleSaveDraft, handleValidatePatch } from "./recipePatchApi.js";
 import { handleCommitPatch } from "./recipePatchRoutes.js";
 import { validateRecipe } from "./validateRecipe.js";
@@ -29,8 +29,8 @@ function normalizePathname(pathname) {
 function createCorsHeaders(request) {
   return {
     "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept",
-    "Access-Control-Allow-Methods": "GET, POST, OPTIONS"
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type, Authorization"
   };
 }
 
@@ -38,7 +38,7 @@ function jsonResponse(body, status = 200, request = null) {
   return new Response(JSON.stringify(body, null, 2), {
     status,
     headers: {
-      "content-type": "application/json; charset=utf-8",
+      "content-type": "application/json",
       ...createCorsHeaders(request)
     }
   });
@@ -72,7 +72,7 @@ routeHandlers.set(`GET ${ADMIN_SESSION_PATH}`, (request) => (
   withCors(handleAdminSession(request), request)
 ));
 
-routeHandlers.set(`POST ${ADMIN_EXTRACT_URL_PATH}`, async (request) => {
+async function handleExtractRecipeUrl(request) {
   console.log(`[recipe-extract] ${request.method} ${ADMIN_EXTRACT_URL_PATH}`);
 
   if (!DEV_ADMIN_AUTH_BYPASS) {
@@ -118,14 +118,11 @@ routeHandlers.set(`POST ${ADMIN_EXTRACT_URL_PATH}`, async (request) => {
     }, 502, request);
   }
 
-  const contentType = response.headers.get("content-type") || "";
   const body = await response.text();
   let recipe;
 
   try {
-    recipe = contentType.includes("application/json")
-      ? normalizeRecipe(extractRecipeFields(JSON.parse(body)))
-      : extractRecipeFromHtmlDocument(body, sourceUrl);
+    recipe = extractRecipeFromHtmlDocument(body, sourceUrl);
   } catch (error) {
     console.warn(`[recipe-extract] extraction failed ${error.message || error}`);
     return jsonResponse({
@@ -137,12 +134,19 @@ routeHandlers.set(`POST ${ADMIN_EXTRACT_URL_PATH}`, async (request) => {
   const validation = validateRecipe(recipe);
   console.log(`[recipe-extract] validation=${validation.ok ? "ok" : "failed"}`);
 
+  if (!validation.ok) {
+    return jsonResponse({
+      ok: false,
+      error: validation.errors.map((error) => error.message).join("; ") || "Extracted recipe failed validation."
+    }, 422, request);
+  }
+
   return jsonResponse({
     ok: true,
     recipe,
     validation
   }, 200, request);
-});
+}
 
 routeHandlers.set(`POST ${RECIPE_VALIDATE_PATCH_PATH}`, async (request) => {
   if (!DEV_ADMIN_AUTH_BYPASS) {
@@ -196,7 +200,10 @@ function getAllowedMethods(pathname) {
 }
 
 function handleOptionsRequest(request, pathname = "") {
-  const allowedWithOptions = [...new Set([...(getAllowedMethods(pathname) || ["GET", "POST"]), "OPTIONS"])];
+  const allowedMethods = pathname === ADMIN_EXTRACT_URL_PATH
+    ? ["POST"]
+    : (getAllowedMethods(pathname) || ["GET", "POST"]);
+  const allowedWithOptions = [...new Set([...allowedMethods, "OPTIONS"])];
   const response = jsonResponse({
     ok: true,
     method: "OPTIONS",
@@ -236,6 +243,14 @@ async function routeRequest(request, env) {
 
   if (request.method === "OPTIONS") {
     return handleOptionsRequest(request, pathname);
+  }
+
+  if (pathname === ADMIN_EXTRACT_URL_PATH) {
+    if (request.method !== "POST") {
+      return methodNotAllowedResponse(pathname, request.method, ["POST"], request);
+    }
+
+    return handleExtractRecipeUrl(request);
   }
 
   if (allowedMethods && !allowedMethods.includes(request.method)) {
