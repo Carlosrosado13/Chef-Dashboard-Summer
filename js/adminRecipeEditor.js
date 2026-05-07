@@ -611,11 +611,11 @@ async function extractRecipeFromUrl(url) {
   renderEntryControls();
 
   try {
-    const response = await adminFetch("/api/recipe/extract-url", {
+    const response = await adminFetch("/api/admin/extract-url", {
       method: "POST",
       headers: {
         Accept: "application/json",
-        "content-type": "text/plain"
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({ url: state.importUrl })
     });
@@ -626,13 +626,11 @@ async function extractRecipeFromUrl(url) {
     }
 
     state.importStatus = {
-      tone: result.validation?.ok ? "success" : "error",
-      message: result.validation?.ok
-        ? "Recipe extracted. Review the draft before adding it to the system."
-        : "Recipe extracted with validation issues. Correct the highlighted fields before saving."
+      tone: "success",
+      message: "Recipe extracted. Review the draft before adding it to the system."
     };
     renderEntryControls();
-    openExtractionPreview(result.recipe, result.validation);
+    openExtractionPreview(result.recipe, validateRecipeAgainstSchema(result.recipe, state.schema));
   } catch (error) {
     state.importStatus = {
       tone: "error",

@@ -8,14 +8,27 @@ const DEV_AUTH_STATE = {
   authenticated: true
 };
 
+function getConfiguredApiOrigin() {
+  const globalOrigin = window.CHEF_DASHBOARD_API_ORIGIN;
+  const metaOrigin = document.querySelector("meta[name='chef-dashboard-api-origin']")?.content;
+  const apiOrigin = String(globalOrigin || metaOrigin || "").trim();
+
+  return apiOrigin.replace(/\/+$/, "");
+}
+
 function getApiUrl(path) {
   if (/^https?:\/\//i.test(path)) {
     return path;
   }
 
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+  const configuredApiOrigin = getConfiguredApiOrigin();
   const isLocalStaticHost = ["localhost", "127.0.0.1"].includes(window.location.hostname) && window.location.port !== "8787";
   const isLocalFile = window.location.protocol === "file:";
+
+  if (configuredApiOrigin) {
+    return `${configuredApiOrigin}${normalizedPath}`;
+  }
 
   return isLocalStaticHost || isLocalFile ? `${LOCAL_WORKER_ORIGIN}${normalizedPath}` : normalizedPath;
 }

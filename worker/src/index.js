@@ -15,10 +15,8 @@ const ADMIN_SESSION_PATH = "/api/admin/session";
 const RECIPE_VALIDATE_PATCH_PATH = "/api/recipe/validate-patch";
 const RECIPE_SAVE_DRAFT_PATH = "/api/recipe/save-draft";
 const RECIPE_COMMIT_PATCH_PATH = "/api/recipe/commit-patch";
-const RECIPE_EXTRACT_URL_PATH = "/api/recipe/extract-url";
+const ADMIN_EXTRACT_URL_PATH = "/api/admin/extract-url";
 const DEV_ADMIN_AUTH_BYPASS = true;
-
-const LOCAL_DEV_ORIGIN_PATTERN = /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/;
 
 function normalizePathname(pathname) {
   if (pathname.length > 1 && pathname.endsWith("/")) {
@@ -29,15 +27,10 @@ function normalizePathname(pathname) {
 }
 
 function createCorsHeaders(request) {
-  const origin = request?.headers?.get("origin") || "";
-  const allowOrigin = LOCAL_DEV_ORIGIN_PATTERN.test(origin) ? origin : "*";
-
   return {
-    "access-control-allow-origin": allowOrigin,
-    "access-control-allow-methods": "GET, POST, OPTIONS",
-    "access-control-allow-headers": "authorization, content-type, accept",
-    "access-control-max-age": "86400",
-    vary: "Origin"
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Methods": "POST, OPTIONS"
   };
 }
 
@@ -79,7 +72,7 @@ routeHandlers.set(`GET ${ADMIN_SESSION_PATH}`, (request) => (
   withCors(handleAdminSession(request), request)
 ));
 
-routeHandlers.set(`POST ${RECIPE_EXTRACT_URL_PATH}`, async (request) => {
+routeHandlers.set(`POST ${ADMIN_EXTRACT_URL_PATH}`, async (request) => {
   if (!DEV_ADMIN_AUTH_BYPASS) {
     const auth = requireAdminAuth(request);
     if (!auth.ok) {
@@ -93,9 +86,7 @@ routeHandlers.set(`POST ${RECIPE_EXTRACT_URL_PATH}`, async (request) => {
   if (!sourceUrl || !/^https?:\/\//i.test(sourceUrl)) {
     return jsonResponse({
       ok: false,
-      error: "A valid recipe URL is required.",
-      code: "INVALID_RECIPE_URL",
-      timestamp: new Date().toISOString()
+      error: "A valid recipe URL is required."
     }, 400, request);
   }
 
@@ -109,9 +100,7 @@ routeHandlers.set(`POST ${RECIPE_EXTRACT_URL_PATH}`, async (request) => {
   if (!response.ok) {
     return jsonResponse({
       ok: false,
-      error: `Unable to fetch recipe URL: ${response.status} ${response.statusText}`,
-      code: "RECIPE_URL_FETCH_FAILED",
-      timestamp: new Date().toISOString()
+      error: `Unable to fetch recipe URL: ${response.status} ${response.statusText}`
     }, 502, request);
   }
 
@@ -126,20 +115,22 @@ routeHandlers.set(`POST ${RECIPE_EXTRACT_URL_PATH}`, async (request) => {
   } catch (error) {
     return jsonResponse({
       ok: false,
-      error: error.message || "Unable to extract recipe data from the URL.",
-      code: "RECIPE_EXTRACTION_FAILED",
-      timestamp: new Date().toISOString()
+      error: error.message || "Unable to extract recipe data from the URL."
     }, 422, request);
   }
 
   const validation = validateRecipe(recipe);
 
+  if (!validation.ok) {
+    return jsonResponse({
+      ok: false,
+      error: validation.errors.map((error) => error.message).join("; ") || "Extracted recipe failed validation."
+    }, 422, request);
+  }
+
   return jsonResponse({
     ok: true,
-    sourceUrl,
-    recipe,
-    validation,
-    timestamp: new Date().toISOString()
+    recipe
   }, 200, request);
 });
 
