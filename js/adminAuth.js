@@ -11,8 +11,9 @@ function getApiUrl(path) {
 
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
   const isLocalStaticHost = ["localhost", "127.0.0.1"].includes(window.location.hostname) && window.location.port !== "8787";
+  const isLocalFile = window.location.protocol === "file:";
 
-  return isLocalStaticHost ? `${LOCAL_WORKER_ORIGIN}${normalizedPath}` : normalizedPath;
+  return isLocalStaticHost || isLocalFile ? `${LOCAL_WORKER_ORIGIN}${normalizedPath}` : normalizedPath;
 }
 
 function logAuthRequest(method, path) {
@@ -137,6 +138,7 @@ function renderLoginForm(container, options = {}) {
         },
         body: JSON.stringify({ password: input.value })
       });
+      console.log(`[admin-auth-ui] response ${response.status} ${response.statusText || ""}`.trim());
       const result = await readJsonResponse(response);
 
       if (!response.ok || !result.ok) {
