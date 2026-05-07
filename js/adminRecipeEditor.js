@@ -625,21 +625,14 @@ async function extractRecipeFromUrl(url) {
       throw new Error(result.error || "Recipe extraction failed.");
     }
 
-    if (result.debug) {
-      state.importStatus = {
-        tone: "success",
-        message: result.debug
-      };
-      renderEntryControls();
-      return;
-    }
-
     state.importStatus = {
-      tone: "success",
-      message: "Recipe extracted. Review the draft before adding it to the system."
+      tone: result.validation?.ok === false ? "error" : "success",
+      message: result.validation?.ok === false
+        ? "Recipe extracted with validation issues. Correct the draft before saving."
+        : "Recipe extracted. Review the draft before adding it to the system."
     };
     renderEntryControls();
-    openExtractionPreview(result.recipe, validateRecipeAgainstSchema(result.recipe, state.schema));
+    openExtractionPreview(result.recipe, result.validation || validateRecipeAgainstSchema(result.recipe, state.schema));
   } catch (error) {
     state.importStatus = {
       tone: "error",

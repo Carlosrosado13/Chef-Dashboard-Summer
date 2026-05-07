@@ -29,8 +29,8 @@ function normalizePathname(pathname) {
 function createCorsHeaders(request) {
   return {
     "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "Content-Type",
-    "Access-Control-Allow-Methods": "POST, OPTIONS"
+    "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS"
   };
 }
 
@@ -41,13 +41,6 @@ function jsonResponse(body, status = 200, request = null) {
       "content-type": "application/json; charset=utf-8",
       ...createCorsHeaders(request)
     }
-  });
-}
-
-function debugJsonResponse(body, status = 200, request = null) {
-  return Response.json(body, {
-    status,
-    headers: createCorsHeaders(request)
   });
 }
 
@@ -80,11 +73,7 @@ routeHandlers.set(`GET ${ADMIN_SESSION_PATH}`, (request) => (
 ));
 
 routeHandlers.set(`POST ${ADMIN_EXTRACT_URL_PATH}`, async (request) => {
-  console.log("EXTRACT ROUTE HIT");
-  return debugJsonResponse({
-    ok: true,
-    debug: "extract route working"
-  }, 200, request);
+  console.log(`[recipe-extract] ${request.method} ${ADMIN_EXTRACT_URL_PATH}`);
 
   if (!DEV_ADMIN_AUTH_BYPASS) {
     const auth = requireAdminAuth(request);
@@ -95,6 +84,7 @@ routeHandlers.set(`POST ${ADMIN_EXTRACT_URL_PATH}`, async (request) => {
 
   const parsed = await request.json().catch(() => null);
   const sourceUrl = parsed?.url ? String(parsed.url).trim() : "";
+  console.log(`[recipe-extract] source=${sourceUrl || "missing"}`);
 
   if (!sourceUrl || !/^https?:\/\//i.test(sourceUrl)) {
     return jsonResponse({
@@ -103,14 +93,25 @@ routeHandlers.set(`POST ${ADMIN_EXTRACT_URL_PATH}`, async (request) => {
     }, 400, request);
   }
 
-  const response = await fetch(sourceUrl, {
-    headers: {
-      accept: "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
-      "user-agent": "ChefDashboardRecipeImporter/1.0"
-    }
-  });
+  let response;
+
+  try {
+    response = await fetch(sourceUrl, {
+      headers: {
+        accept: "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
+        "user-agent": "ChefDashboardRecipeImporter/1.0"
+      }
+    });
+  } catch (error) {
+    console.warn(`[recipe-extract] fetch error ${error.message || error}`);
+    return jsonResponse({
+      ok: false,
+      error: error.message || "Unable to fetch recipe URL."
+    }, 502, request);
+  }
 
   if (!response.ok) {
+    console.warn(`[recipe-extract] fetch failed ${response.status} ${response.statusText}`);
     return jsonResponse({
       ok: false,
       error: `Unable to fetch recipe URL: ${response.status} ${response.statusText}`
@@ -126,6 +127,7 @@ routeHandlers.set(`POST ${ADMIN_EXTRACT_URL_PATH}`, async (request) => {
       ? normalizeRecipe(extractRecipeFields(JSON.parse(body)))
       : extractRecipeFromHtmlDocument(body, sourceUrl);
   } catch (error) {
+    console.warn(`[recipe-extract] extraction failed ${error.message || error}`);
     return jsonResponse({
       ok: false,
       error: error.message || "Unable to extract recipe data from the URL."
@@ -133,17 +135,12 @@ routeHandlers.set(`POST ${ADMIN_EXTRACT_URL_PATH}`, async (request) => {
   }
 
   const validation = validateRecipe(recipe);
-
-  if (!validation.ok) {
-    return jsonResponse({
-      ok: false,
-      error: validation.errors.map((error) => error.message).join("; ") || "Extracted recipe failed validation."
-    }, 422, request);
-  }
+  console.log(`[recipe-extract] validation=${validation.ok ? "ok" : "failed"}`);
 
   return jsonResponse({
     ok: true,
-    recipe
+    recipe,
+    validation
   }, 200, request);
 });
 
@@ -239,18 +236,6 @@ async function routeRequest(request, env) {
 
   if (request.method === "OPTIONS") {
     return handleOptionsRequest(request, pathname);
-  }
-
-  if (request.method === "POST" && pathname === "/api/admin/login") {
-    return withCors(await handleAdminLogin(request, env), request);
-  }
-
-  if (request.method === "POST" && pathname === "/api/admin/logout") {
-    return withCors(await handleAdminLogout(request), request);
-  }
-
-  if (request.method === "GET" && pathname === "/api/admin/session") {
-    return withCors(handleAdminSession(request), request);
   }
 
   if (allowedMethods && !allowedMethods.includes(request.method)) {

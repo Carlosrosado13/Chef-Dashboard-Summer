@@ -227,7 +227,7 @@ export function extractRecipeFromHtml(html, sourceUrl = "") {
       title: jsonLdRecipes.name,
       yield: firstDefined(jsonLdRecipes.recipeYield, jsonLdRecipes.yield),
       category: firstDefined(jsonLdRecipes.recipeCategory, jsonLdRecipes.category),
-      ingredients: jsonLdRecipes.recipeIngredient || jsonLdRecipes.ingredients || [],
+      ingredients: (jsonLdRecipes.recipeIngredient || jsonLdRecipes.ingredients || []).map(mapIngredient),
       steps: (Array.isArray(jsonLdRecipes.recipeInstructions)
         ? jsonLdRecipes.recipeInstructions
         : [jsonLdRecipes.recipeInstructions]).map(mapInstruction).filter(Boolean),
