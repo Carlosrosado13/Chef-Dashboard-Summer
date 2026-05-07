@@ -1,5 +1,6 @@
+import { getApiUrl } from "./apiConfig.js";
+
 const SESSION_KEY = "chefDashboard.adminSession";
-const LOCAL_WORKER_ORIGIN = "http://127.0.0.1:8787";
 const ADMIN_LOGIN_PATH = "/api/admin/login";
 const ADMIN_LOGOUT_PATH = "/api/admin/logout";
 const ADMIN_SESSION_PATH = "/api/admin/session";
@@ -7,31 +8,6 @@ const DEV_ADMIN_AUTH_BYPASS = true;
 const DEV_AUTH_STATE = {
   authenticated: true
 };
-
-function getConfiguredApiOrigin() {
-  const globalOrigin = window.CHEF_DASHBOARD_API_ORIGIN;
-  const metaOrigin = document.querySelector("meta[name='chef-dashboard-api-origin']")?.content;
-  const apiOrigin = String(globalOrigin || metaOrigin || "").trim();
-
-  return apiOrigin.replace(/\/+$/, "");
-}
-
-function getApiUrl(path) {
-  if (/^https?:\/\//i.test(path)) {
-    return path;
-  }
-
-  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
-  const configuredApiOrigin = getConfiguredApiOrigin();
-  const isLocalStaticHost = ["localhost", "127.0.0.1"].includes(window.location.hostname) && window.location.port !== "8787";
-  const isLocalFile = window.location.protocol === "file:";
-
-  if (configuredApiOrigin) {
-    return `${configuredApiOrigin}${normalizedPath}`;
-  }
-
-  return isLocalStaticHost || isLocalFile ? `${LOCAL_WORKER_ORIGIN}${normalizedPath}` : normalizedPath;
-}
 
 function logAuthRequest(method, path) {
   const url = getApiUrl(path);
