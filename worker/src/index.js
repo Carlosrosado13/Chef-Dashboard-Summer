@@ -14,15 +14,6 @@ const RECIPE_VALIDATE_PATCH_PATH = "/api/recipe/validate-patch";
 const RECIPE_SAVE_DRAFT_PATH = "/api/recipe/save-draft";
 const RECIPE_COMMIT_PATCH_PATH = "/api/recipe/commit-patch";
 
-const ROUTES = {
-  [ADMIN_LOGIN_PATH]: ["POST"],
-  [ADMIN_LOGOUT_PATH]: ["POST"],
-  [ADMIN_SESSION_PATH]: ["GET"],
-  [RECIPE_VALIDATE_PATCH_PATH]: ["POST"],
-  [RECIPE_SAVE_DRAFT_PATH]: ["POST"],
-  [RECIPE_COMMIT_PATCH_PATH]: ["POST"]
-};
-
 const LOCAL_DEV_ORIGIN_PATTERN = /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/;
 
 function normalizePathname(pathname) {
@@ -70,8 +61,54 @@ function withCors(response, request) {
   });
 }
 
+const ROUTE_HANDLERS = {
+  [ADMIN_LOGIN_PATH]: {
+    POST: async (request, env) => withCors(await handleAdminLogin(request, env), request)
+  },
+  [ADMIN_LOGOUT_PATH]: {
+    POST: async (request) => withCors(await handleAdminLogout(request), request)
+  },
+  [ADMIN_SESSION_PATH]: {
+    GET: (request) => withCors(handleAdminSession(request), request)
+  },
+  [RECIPE_VALIDATE_PATCH_PATH]: {
+    POST: async (request) => {
+      const auth = requireAdminAuth(request);
+      if (!auth.ok) {
+        return withCors(auth.response, request);
+      }
+
+      return withCors(await handleValidatePatch(request), request);
+    }
+  },
+  [RECIPE_SAVE_DRAFT_PATH]: {
+    POST: async (request) => {
+      const auth = requireAdminAuth(request);
+      if (!auth.ok) {
+        return withCors(auth.response, request);
+      }
+
+      return withCors(await handleSaveDraft(request), request);
+    }
+  },
+  [RECIPE_COMMIT_PATCH_PATH]: {
+    POST: async (request, env) => {
+      const auth = requireAdminAuth(request);
+      if (!auth.ok) {
+        return withCors(auth.response, request);
+      }
+
+      return withCors(await handleCommitPatch(request, env), request);
+    }
+  }
+};
+
+function getAllowedMethods(pathname) {
+  return ROUTE_HANDLERS[pathname] ? Object.keys(ROUTE_HANDLERS[pathname]) : null;
+}
+
 function handleOptionsRequest(request, pathname = "") {
-  const allowedWithOptions = [...new Set([...(ROUTES[pathname] || ["GET", "POST"]), "OPTIONS"])];
+  const allowedWithOptions = [...new Set([...(getAllowedMethods(pathname) || ["GET", "POST"]), "OPTIONS"])];
   const response = jsonResponse({
     ok: true,
     method: "OPTIONS",
@@ -105,7 +142,7 @@ function methodNotAllowedResponse(pathname, method, allowedMethods, request) {
 async function routeRequest(request, env) {
   const url = new URL(request.url);
   const pathname = normalizePathname(url.pathname);
-  const allowedMethods = ROUTES[pathname];
+  const allowedMethods = getAllowedMethods(pathname);
 
   console.log(`[worker-router] pathname=${pathname} request.method=${request.method} ${new Date().toISOString()}`);
 
@@ -117,40 +154,10 @@ async function routeRequest(request, env) {
     return methodNotAllowedResponse(pathname, request.method, allowedMethods, request);
   }
 
-  if (request.method === "POST" && pathname === ADMIN_LOGIN_PATH) {
-    return withCors(await handleAdminLogin(request, env), request);
-  }
+  const routeHandler = ROUTE_HANDLERS[pathname]?.[request.method];
 
-  if (request.method === "POST" && pathname === ADMIN_LOGOUT_PATH) {
-    return withCors(await handleAdminLogout(request), request);
-  }
-
-  if (request.method === "GET" && pathname === ADMIN_SESSION_PATH) {
-    return withCors(handleAdminSession(request), request);
-  }
-
-  if (request.method === "POST" && pathname === RECIPE_VALIDATE_PATCH_PATH) {
-    const auth = requireAdminAuth(request);
-    if (!auth.ok) {
-      return withCors(auth.response, request);
-    }
-    return withCors(await handleValidatePatch(request), request);
-  }
-
-  if (request.method === "POST" && pathname === RECIPE_SAVE_DRAFT_PATH) {
-    const auth = requireAdminAuth(request);
-    if (!auth.ok) {
-      return withCors(auth.response, request);
-    }
-    return withCors(await handleSaveDraft(request), request);
-  }
-
-  if (request.method === "POST" && pathname === RECIPE_COMMIT_PATCH_PATH) {
-    const auth = requireAdminAuth(request);
-    if (!auth.ok) {
-      return withCors(auth.response, request);
-    }
-    return withCors(await handleCommitPatch(request, env), request);
+  if (routeHandler) {
+    return routeHandler(request, env);
   }
 
   return jsonResponse({
