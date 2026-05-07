@@ -61,50 +61,63 @@ function withCors(response, request) {
   });
 }
 
-const ROUTE_HANDLERS = {
-  [ADMIN_LOGIN_PATH]: {
-    POST: async (request, env) => withCors(await handleAdminLogin(request, env), request)
-  },
-  [ADMIN_LOGOUT_PATH]: {
-    POST: async (request) => withCors(await handleAdminLogout(request), request)
-  },
-  [ADMIN_SESSION_PATH]: {
-    GET: (request) => withCors(handleAdminSession(request), request)
-  },
-  [RECIPE_VALIDATE_PATCH_PATH]: {
-    POST: async (request) => {
-      const auth = requireAdminAuth(request);
-      if (!auth.ok) {
-        return withCors(auth.response, request);
-      }
+const routeHandlers = new Map();
 
-      return withCors(await handleValidatePatch(request), request);
-    }
-  },
-  [RECIPE_SAVE_DRAFT_PATH]: {
-    POST: async (request) => {
-      const auth = requireAdminAuth(request);
-      if (!auth.ok) {
-        return withCors(auth.response, request);
-      }
+routeHandlers.set(`POST ${ADMIN_LOGIN_PATH}`, async (request, env) => (
+  withCors(await handleAdminLogin(request, env), request)
+));
 
-      return withCors(await handleSaveDraft(request), request);
-    }
-  },
-  [RECIPE_COMMIT_PATCH_PATH]: {
-    POST: async (request, env) => {
-      const auth = requireAdminAuth(request);
-      if (!auth.ok) {
-        return withCors(auth.response, request);
-      }
+routeHandlers.set(`POST ${ADMIN_LOGOUT_PATH}`, async (request) => (
+  withCors(await handleAdminLogout(request), request)
+));
 
-      return withCors(await handleCommitPatch(request, env), request);
-    }
+routeHandlers.set(`GET ${ADMIN_SESSION_PATH}`, (request) => (
+  withCors(handleAdminSession(request), request)
+));
+
+routeHandlers.set(`POST ${RECIPE_VALIDATE_PATCH_PATH}`, async (request) => {
+  const auth = requireAdminAuth(request);
+  if (!auth.ok) {
+    return withCors(auth.response, request);
   }
-};
+
+  return withCors(await handleValidatePatch(request), request);
+});
+
+routeHandlers.set(`POST ${RECIPE_SAVE_DRAFT_PATH}`, async (request) => {
+  const auth = requireAdminAuth(request);
+  if (!auth.ok) {
+    return withCors(auth.response, request);
+  }
+
+  return withCors(await handleSaveDraft(request), request);
+});
+
+routeHandlers.set(`POST ${RECIPE_COMMIT_PATCH_PATH}`, async (request, env) => {
+  const auth = requireAdminAuth(request);
+  if (!auth.ok) {
+    return withCors(auth.response, request);
+  }
+
+  return withCors(await handleCommitPatch(request, env), request);
+});
+
+function getRouteHandler(method, pathname) {
+  return routeHandlers.get(`${method} ${pathname}`) || null;
+}
 
 function getAllowedMethods(pathname) {
-  return ROUTE_HANDLERS[pathname] ? Object.keys(ROUTE_HANDLERS[pathname]) : null;
+  const methods = [];
+
+  for (const routeKey of routeHandlers.keys()) {
+    const [method, routePathname] = routeKey.split(" ");
+
+    if (routePathname === pathname) {
+      methods.push(method);
+    }
+  }
+
+  return methods.length ? methods : null;
 }
 
 function handleOptionsRequest(request, pathname = "") {
@@ -166,7 +179,7 @@ async function routeRequest(request, env) {
     return methodNotAllowedResponse(pathname, request.method, allowedMethods, request);
   }
 
-  const routeHandler = ROUTE_HANDLERS[pathname]?.[request.method];
+  const routeHandler = getRouteHandler(request.method, pathname);
 
   if (routeHandler) {
     return routeHandler(request, env);
@@ -186,5 +199,3 @@ export default {
     return routeRequest(request, env);
   }
 };
-
-export { ADMIN_LOGIN_PATH, createCorsHeaders, handleOptionsRequest, routeRequest };
