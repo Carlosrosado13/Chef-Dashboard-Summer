@@ -17,6 +17,19 @@ const RECIPE_SAVE_DRAFT_PATH = "/api/recipe/save-draft";
 const RECIPE_COMMIT_PATCH_PATH = "/api/recipe/commit-patch";
 const ADMIN_EXTRACT_URL_PATH = "/api/admin/extract-url";
 const DEV_ADMIN_AUTH_BYPASS = true;
+const RECIPE_FETCH_HEADERS = {
+  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Referer": "https://www.google.com/",
+  "Cache-Control": "no-cache",
+  "Pragma": "no-cache",
+  "Upgrade-Insecure-Requests": "1",
+  "Sec-Fetch-Dest": "document",
+  "Sec-Fetch-Mode": "navigate",
+  "Sec-Fetch-Site": "cross-site",
+  "Sec-Fetch-User": "?1"
+};
 
 function normalizePathname(pathname) {
   if (pathname.length > 1 && pathname.endsWith("/")) {
@@ -112,14 +125,7 @@ async function handleExtractRecipeUrl(request) {
   try {
     console.log("Fetching recipe URL:", sourceUrl);
     response = await fetch(sourceUrl, {
-      headers: {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.9",
-        "Referer": "https://www.google.com/",
-        "Cache-Control": "no-cache",
-        "Pragma": "no-cache"
-      }
+      headers: RECIPE_FETCH_HEADERS
     });
     console.log("Response status:", response.status);
   } catch (error) {

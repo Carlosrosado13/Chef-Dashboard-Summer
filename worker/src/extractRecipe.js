@@ -37,6 +37,10 @@ function firstDefined(...values) {
   return values.find((value) => value !== undefined && value !== null);
 }
 
+function firstNonEmpty(...values) {
+  return values.find((value) => value !== undefined && value !== null && String(value).trim() !== "");
+}
+
 function stripHtml(value = "") {
   return String(value)
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
@@ -208,6 +212,26 @@ function getFirstTagText(html, tagName) {
   return match ? stripHtml(match[1]) : "";
 }
 
+function getHostName(sourceUrl = "") {
+  try {
+    return new URL(sourceUrl).hostname.replace(/^www\./, "");
+  } catch {
+    return "";
+  }
+}
+
+function decodeHtmlAttribute(value = "") {
+  return stripHtml(value)
+    .replace(/&#x([0-9a-f]+);/gi, (_match, hex) => String.fromCharCode(parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_match, code) => String.fromCharCode(Number(code)));
+}
+
+function getAttribute(tag, attributeName) {
+  const escapedName = attributeName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = tag.match(new RegExp(`${escapedName}=["']([^"']+)["']`, "i"));
+  return match ? decodeHtmlAttribute(match[1]) : "";
+}
+
 function extractListByClassHint(html, hints) {
   const hintPattern = hints.join("|");
   const itemPattern = new RegExp(`<[^>]+class=["'][^"']*(?:${hintPattern})[^"']*["'][^>]*>([\\s\\S]*?)<\\/[^>]+>`, "gi");
@@ -217,7 +241,162 @@ function extractListByClassHint(html, hints) {
     .filter((value) => value.length > 0);
 }
 
+function extractByItemProp(html, itemPropNames) {
+  const propPattern = itemPropNames.join("|");
+  const elementPattern = new RegExp(`<(?<tag>[a-z0-9-]+)[^>]+itemprop=["'](?:${propPattern})["'][^>]*>(?<body>[\\s\\S]*?)<\\/\\k<tag>>`, "gi");
+  const metaPattern = new RegExp(`<meta[^>]+itemprop=["'](?:${propPattern})["'][^>]+content=["']([^"']+)["'][^>]*>`, "gi");
+  const values = [];
+
+  for (const match of html.matchAll(metaPattern)) {
+    values.push(decodeHtmlAttribute(match[1]));
+  }
+
+  for (const match of html.matchAll(elementPattern)) {
+    values.push(stripHtml(match.groups?.body || ""));
+  }
+
+  return values.filter(Boolean);
+}
+
+function extractFirstByItemProp(html, itemPropNames) {
+  return extractByItemProp(html, itemPropNames)[0] || "";
+}
+
+function extractByDataAttribute(html, attributeHints) {
+  const hintPattern = attributeHints.join("|");
+  const pattern = new RegExp(`<(?<tag>[a-z0-9-]+)[^>]+data-[^=]*=["'][^"']*(?:${hintPattern})[^"']*["'][^>]*>(?<body>[\\s\\S]*?)<\\/\\k<tag>>`, "gi");
+
+  return [...html.matchAll(pattern)]
+    .map((match) => stripHtml(match.groups?.body || ""))
+    .filter(Boolean);
+}
+
+function extractMicrodataRecipe(html, sourceUrl = "") {
+  const ingredients = extractByItemProp(html, ["recipeIngredient", "ingredients"]).map(parseIngredientText);
+  const steps = extractByItemProp(html, ["recipeInstructions", "instructions"]).map(mapInstruction).filter(Boolean);
+
+  if (!ingredients.length && !steps.length) {
+    return null;
+  }
+
+  return {
+    title: firstNonEmpty(extractFirstByItemProp(html, ["name"]), getMetaContent(html, "og:title"), getFirstTagText(html, "h1")),
+    yield: firstNonEmpty(extractFirstByItemProp(html, ["recipeYield", "yield"]), getMetaContent(html, "recipe:yield"), ""),
+    category: firstDefined(extractFirstByItemProp(html, ["recipeCategory"]), getMetaContent(html, "article:section"), ""),
+    ingredients,
+    steps,
+    notes: [
+      firstDefined(extractFirstByItemProp(html, ["description"]), getMetaContent(html, "description")),
+      sourceUrl ? `Imported from ${sourceUrl}` : ""
+    ].filter(Boolean)
+  };
+}
+
+function getDomainHints(sourceUrl = "") {
+  const host = getHostName(sourceUrl);
+
+  if (host.includes("foodnetwork.com")) {
+    return {
+      ingredients: ["o-Ingredients__a-Ingredient", "ingredient", "ingredients", "recipe-ingredients"],
+      steps: ["o-Method__m-Step", "direction", "directions", "instruction", "instructions", "method"],
+      yield: ["recipe-yield", "o-RecipeInfo__a-Description"]
+    };
+  }
+
+  if (host.includes("allrecipes.com")) {
+    return {
+      ingredients: ["mm-recipes-structured-ingredients__list-item", "ingredients-item", "ingredient"],
+      steps: ["comp mntl-sc-block mntl-sc-block-html", "mntl-sc-block", "instructions-section-item", "direction"],
+      yield: ["recipe-servings", "mntl-recipe-details__value"]
+    };
+  }
+
+  if (host.includes("bbcgoodfood.com")) {
+    return {
+      ingredients: ["ingredients-list__item", "recipe__ingredients", "ingredient"],
+      steps: ["method-steps__list-item", "recipe__method-steps", "method", "step"],
+      yield: ["post-header__servings", "recipe__meta"]
+    };
+  }
+
+  if (host.includes("simplyrecipes.com")) {
+    return {
+      ingredients: ["structured-ingredients__list-item", "ingredient"],
+      steps: ["comp mntl-sc-block", "mntl-sc-block", "method", "instruction", "direction"],
+      yield: ["recipe-serving", "mntl-recipe-details__value"]
+    };
+  }
+
+  return {
+    ingredients: ["recipeIngredient", "recipe-ingredient", "ingredients-item", "ingredient", "ingredients"],
+    steps: ["recipeInstructions", "recipe-instruction", "instructions-item", "instruction", "directions", "direction", "method", "step"],
+    yield: ["recipe-yield", "servings", "yield"]
+  };
+}
+
+function extractDomFallbackRecipe(html, sourceUrl = "") {
+  const hints = getDomainHints(sourceUrl);
+  const ingredients = [
+    ...extractListByClassHint(html, hints.ingredients),
+    ...extractByDataAttribute(html, hints.ingredients)
+  ].map(parseIngredientText);
+  const steps = [
+    ...extractListByClassHint(html, hints.steps),
+    ...extractByDataAttribute(html, hints.steps)
+  ].map(stripHtml).filter(Boolean);
+  const yieldValue = firstDefined(
+    extractListByClassHint(html, hints.yield)[0],
+    getMetaContent(html, "recipe:yield"),
+    getMetaContent(html, "servings"),
+    ""
+  );
+
+  if (!ingredients.length && !steps.length) {
+    return null;
+  }
+
+  return {
+    title: firstNonEmpty(getMetaContent(html, "og:title"), getFirstTagText(html, "h1"), getFirstTagText(html, "title")),
+    yield: yieldValue,
+    category: firstDefined(getMetaContent(html, "article:section"), ""),
+    ingredients,
+    steps,
+    notes: [
+      getMetaContent(html, "description"),
+      sourceUrl ? `Imported from ${sourceUrl}` : ""
+    ].filter(Boolean)
+  };
+}
+
+function isAntiBotHtml(html, sourceUrl = "") {
+  const text = stripHtml(html).toLowerCase();
+  const host = getHostName(sourceUrl);
+  const antiBotPatterns = [
+    "access denied",
+    "are you a human",
+    "verify you are human",
+    "checking your browser",
+    "enable javascript and cookies",
+    "temporarily unavailable",
+    "unusual traffic",
+    "bot detection",
+    "blocked automated",
+    "request blocked",
+    "akamai",
+    "perimeterx",
+    "datadome",
+    "cloudflare ray id"
+  ];
+
+  return antiBotPatterns.some((pattern) => text.includes(pattern))
+    || (host.includes("foodnetwork.com") && text.includes("forbidden"));
+}
+
 export function extractRecipeFromHtml(html, sourceUrl = "") {
+  if (isAntiBotHtml(html, sourceUrl)) {
+    throw new Error("Website blocked automated access");
+  }
+
   const jsonLdRecipes = getJsonLdBlocks(html)
     .flatMap(flattenJsonLd)
     .find(isRecipeNode);
@@ -238,17 +417,22 @@ export function extractRecipeFromHtml(html, sourceUrl = "") {
     };
   }
 
-  return {
-    title: firstDefined(getMetaContent(html, "og:title"), getFirstTagText(html, "h1"), getFirstTagText(html, "title")),
-    yield: firstDefined(getMetaContent(html, "recipe:yield"), getMetaContent(html, "servings"), ""),
-    category: firstDefined(getMetaContent(html, "article:section"), ""),
-    ingredients: extractListByClassHint(html, ["ingredient", "ingredients"]).map(parseIngredientText),
-    steps: extractListByClassHint(html, ["instruction", "instructions", "direction", "directions", "method"]),
-    notes: [
-      getMetaContent(html, "description"),
-      sourceUrl ? `Imported from ${sourceUrl}` : ""
-    ].filter(Boolean)
-  };
+  const microdataRecipe = extractMicrodataRecipe(html, sourceUrl);
+  if (microdataRecipe) {
+    return microdataRecipe;
+  }
+
+  const fallbackRecipe = extractDomFallbackRecipe(html, sourceUrl);
+  if (fallbackRecipe) {
+    return fallbackRecipe;
+  }
+
+  const host = getHostName(sourceUrl);
+  if (host.includes("foodnetwork.com") || host.includes("allrecipes.com") || host.includes("bbcgoodfood.com") || host.includes("simplyrecipes.com")) {
+    throw new Error("Recipe schema not found");
+  }
+
+  throw new Error("Unsupported recipe website");
 }
 
 export function extractRecipeFromHtmlDocument(html, sourceUrl = "") {
