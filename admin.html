@@ -14,17 +14,17 @@
         <h1>Recipe Admin</h1>
       </div>
       <div class="admin-header-status">
-        <p id="auth-status" class="dashboard-status" role="status">Checking authentication...</p>
-        <p id="admin-status" class="dashboard-status" role="status">Admin locked</p>
+        <p id="auth-status" class="dashboard-status" role="status">Authenticated (development mode)</p>
+        <p id="admin-status" class="dashboard-status" role="status">Loading admin tools...</p>
         <button id="admin-logout" class="filter-button" type="button" hidden>Log out</button>
       </div>
     </header>
 
     <section id="admin-error" class="frontend-error" role="alert" hidden></section>
 
-    <section id="admin-auth-root" class="admin-auth-panel admin-panel" aria-label="Admin login"></section>
+    <section id="admin-auth-root" class="admin-auth-panel admin-panel" aria-label="Admin login" hidden></section>
 
-    <section id="admin-content" class="admin-content" hidden>
+    <section id="admin-content" class="admin-content">
       <nav class="admin-section-nav" aria-label="Admin sections">
         <button class="admin-section-nav__button" type="button" data-admin-section="recipes" aria-pressed="true">Recipes</button>
         <button class="admin-section-nav__button" type="button" data-admin-section="menu-assignments" aria-pressed="false">Menu Assignments</button>

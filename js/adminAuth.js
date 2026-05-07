@@ -3,6 +3,10 @@ const LOCAL_WORKER_ORIGIN = "http://127.0.0.1:8787";
 const ADMIN_LOGIN_PATH = "/api/admin/login";
 const ADMIN_LOGOUT_PATH = "/api/admin/logout";
 const ADMIN_SESSION_PATH = "/api/admin/session";
+const DEV_ADMIN_AUTH_BYPASS = true;
+const DEV_AUTH_STATE = {
+  authenticated: true
+};
 
 function getApiUrl(path) {
   if (/^https?:\/\//i.test(path)) {
@@ -73,6 +77,10 @@ export function clearAdminSession() {
 }
 
 export function getAdminAuthHeader() {
+  if (DEV_ADMIN_AUTH_BYPASS) {
+    return {};
+  }
+
   const session = getStoredSession();
 
   return session ? { Authorization: `Bearer ${session.token}` } : {};
@@ -187,6 +195,19 @@ export async function initializeAdminAuth(options = {}) {
   const contentRoot = document.querySelector("#admin-content");
   const statusRoot = document.querySelector("#auth-status");
   const logoutButton = document.querySelector("#admin-logout");
+
+  if (DEV_ADMIN_AUTH_BYPASS) {
+    // Development-only bypass: keep the production auth flow below intact so it can be restored.
+    clearAdminSession();
+    authRoot.hidden = true;
+    authRoot.replaceChildren();
+    contentRoot.hidden = false;
+    logoutButton.hidden = true;
+    statusRoot.textContent = "Authenticated (development mode)";
+    statusRoot.dataset.tone = "success";
+    options.onAuthenticated?.(DEV_AUTH_STATE);
+    return;
+  }
 
   function showAuthenticated(session) {
     authRoot.hidden = true;
