@@ -144,10 +144,22 @@ async function routeRequest(request, env) {
   const pathname = normalizePathname(url.pathname);
   const allowedMethods = getAllowedMethods(pathname);
 
-  console.log(`[worker-router] pathname=${pathname} request.method=${request.method} ${new Date().toISOString()}`);
+  console.log(request.method, pathname);
 
   if (request.method === "OPTIONS") {
     return handleOptionsRequest(request, pathname);
+  }
+
+  if (request.method === "POST" && pathname === "/api/admin/login") {
+    return withCors(await handleAdminLogin(request, env), request);
+  }
+
+  if (request.method === "POST" && pathname === "/api/admin/logout") {
+    return withCors(await handleAdminLogout(request), request);
+  }
+
+  if (request.method === "GET" && pathname === "/api/admin/session") {
+    return withCors(handleAdminSession(request), request);
   }
 
   if (allowedMethods && !allowedMethods.includes(request.method)) {
