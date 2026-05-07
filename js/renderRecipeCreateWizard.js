@@ -67,7 +67,8 @@ export function createEmptyRecipeDraft() {
         unit: ""
       }
     ],
-    steps: [""]
+    steps: [""],
+    notes: []
   };
 }
 
@@ -81,6 +82,8 @@ export function renderRecipeCreateWizard(container, draft, options = {}) {
   const stepsTitle = createElement("h3", "", "Steps");
   const stepRows = createElement("div", "recipe-create-rows");
   const addStep = createElement("button", "filter-button", "Add Step");
+  const notesField = createElement("label", "admin-field");
+  const notes = createElement("textarea", "");
   const preview = createElement("section", "recipe-create-preview");
   const actions = createElement("div", "admin-actions");
   const validateButton = createElement("button", "filter-button", "Preview Create Patch");
@@ -94,6 +97,12 @@ export function renderRecipeCreateWizard(container, draft, options = {}) {
   for (const step of recipe.steps || []) {
     stepRows.append(createStepRow(step));
   }
+
+  notes.name = "notes";
+  notes.rows = 5;
+  notes.placeholder = "One note per line";
+  notes.value = (recipe.notes || []).join("\n");
+  notesField.append(createElement("span", "", "Notes"), notes);
 
   addIngredient.type = "button";
   addIngredient.addEventListener("click", () => {
@@ -125,6 +134,7 @@ export function renderRecipeCreateWizard(container, draft, options = {}) {
     stepsTitle,
     stepRows,
     addStep,
+    notesField,
     preview,
     actions
   );
@@ -175,7 +185,11 @@ export function readCreateRecipeForm(form) {
         unit: String(units[index] || "").trim()
       }))
       .filter((ingredient) => ingredient.name || ingredient.unit || Number.isFinite(ingredient.amount)),
-    steps
+    steps,
+    notes: String(formData.get("notes") || "")
+      .split("\n")
+      .map((note) => note.trim())
+      .filter(Boolean)
   };
 }
 

@@ -1,4 +1,4 @@
-import { initializeAdminAuth } from "./adminAuth.js";
+import { adminFetch, initializeAdminAuth } from "./adminAuth.js";
 import { initMenuAssignment } from "./adminMenuAssignment.js";
 import { loadRecipes } from "./loadRecipes.js";
 import { applyRecipePatch, rollbackRecipePatch } from "./applyRecipePatch.js";
@@ -33,12 +33,16 @@ const state = {
   notice: null,
   draftRecord: null,
   search: "",
+  entryMode: null,
+  importUrl: "",
+  importStatus: null,
   isDirty: false
 };
 
 let statusElement;
 let errorElement;
 let createRecipeButton;
+let entryRoot;
 let searchInput;
 let listRoot;
 let editorRoot;
@@ -124,9 +128,26 @@ function startCreateRecipe() {
   }
 
   state.mode = "create";
+  state.entryMode = "scratch";
   state.selectedIndex = null;
   state.draft = createEmptyRecipeDraft();
   state.validation = validateRecipeAgainstSchema(state.draft, state.schema);
+  state.draftRecord = null;
+  state.notice = null;
+  state.isDirty = false;
+  renderAdmin();
+}
+
+function startImportRecipe() {
+  if (state.isDirty && !window.confirm("Discard unsaved changes and import a recipe?")) {
+    return;
+  }
+
+  state.entryMode = "import";
+  state.selectedIndex = null;
+  state.mode = "edit";
+  state.draft = null;
+  state.validation = null;
   state.draftRecord = null;
   state.notice = null;
   state.isDirty = false;
@@ -183,9 +204,25 @@ function cancelCreateRecipe() {
   }
 
   state.mode = "edit";
+  state.entryMode = null;
   state.draft = null;
   state.validation = null;
   state.isDirty = false;
+  renderAdmin();
+}
+
+function useImportedRecipe(recipe) {
+  state.mode = "create";
+  state.entryMode = "import";
+  state.selectedIndex = null;
+  state.draft = structuredClone(recipe);
+  state.validation = validateRecipeAgainstSchema(state.draft, state.schema);
+  state.draftRecord = null;
+  state.notice = {
+    tone: "success",
+    message: "Imported recipe loaded into the editor. Review and correct it before saving."
+  };
+  state.isDirty = true;
   renderAdmin();
 }
 
@@ -291,6 +328,8 @@ function validateRecipeAgainstSchema(recipe, schema) {
     });
   }
 
+  validateNotes(recipe, errors);
+
   return errors.length === 0 ? { ok: true } : { ok: false, errors };
 }
 
@@ -301,12 +340,38 @@ function validateCurrentSchema(recipe) {
 function applyCurrentPatch() {
   const patch = createPatchPreview();
 
-  if (patch.operation !== "updateRecipe") {
+  if (patch.operation === "createRecipe") {
+    const recipe = structuredClone(patch.recipe);
+    const validation = validateCurrentSchema(recipe);
+
+    if (!validation.ok) {
+      state.notice = {
+        tone: "error",
+        message: "New recipe failed validation."
+      };
+      state.validation = validation;
+      updateValidationAndPatch();
+      return;
+    }
+
+    state.recipes = [...state.recipes, recipe];
+    state.selectedIndex = state.recipes.length - 1;
+    state.mode = "edit";
+    state.entryMode = null;
+    state.draft = structuredClone(recipe);
+    state.validation = validateCurrentSchema(state.draft);
+    state.patchHistory.push({
+      ...structuredClone(patch),
+      index: state.selectedIndex,
+      appliedAt: new Date().toISOString(),
+      rollbackRecipe: null
+    });
     state.notice = {
-      tone: "error",
-      message: "Create recipe patches are preview-only until persistence is implemented."
+      tone: "success",
+      message: "New recipe added in memory for review and testing."
     };
-    updateValidationAndPatch();
+    state.isDirty = false;
+    renderAdmin();
     return;
   }
 
@@ -338,6 +403,23 @@ function applyCurrentPatch() {
 
 function rollbackLastPatch() {
   const lastPatch = state.patchHistory.at(-1);
+
+  if (lastPatch?.operation === "createRecipe") {
+    state.recipes = state.recipes.filter((_, index) => index !== lastPatch.index);
+    state.patchHistory.pop();
+    state.selectedIndex = null;
+    state.mode = "edit";
+    state.draft = null;
+    state.validation = null;
+    state.isDirty = false;
+    state.notice = {
+      tone: "success",
+      message: "Created recipe removed from memory."
+    };
+    renderAdmin();
+    return;
+  }
+
   const result = rollbackRecipePatch(state.recipes, lastPatch, validateCurrentSchema);
 
   if (!result.ok) {
@@ -442,7 +524,186 @@ function validateIngredient(ingredient, index, errors) {
   }
 }
 
+function validateNotes(recipe, errors) {
+  if (recipe.notes === undefined) {
+    return;
+  }
+
+  if (!Array.isArray(recipe.notes)) {
+    errors.push({ message: "notes must be array" });
+    return;
+  }
+
+  recipe.notes.forEach((note, index) => {
+    if (typeof note !== "string") {
+      errors.push({ message: `notes[${index}] must be string` });
+    }
+  });
+}
+
+function createElement(tagName, className, textContent) {
+  const element = document.createElement(tagName);
+
+  if (className) {
+    element.className = className;
+  }
+
+  if (textContent !== undefined) {
+    element.textContent = textContent;
+  }
+
+  return element;
+}
+
+function renderEntryControls() {
+  if (!entryRoot) {
+    return;
+  }
+
+  const panel = createElement("section", "recipe-entry");
+  const modeButtons = createElement("div", "recipe-entry__modes");
+  const importButton = createElement("button", "recipe-entry__mode-button", "Import From Website");
+  const scratchButton = createElement("button", "recipe-entry__mode-button", "Create From Scratch");
+
+  importButton.type = "button";
+  scratchButton.type = "button";
+  importButton.setAttribute("aria-pressed", String(state.entryMode === "import"));
+  scratchButton.setAttribute("aria-pressed", String(state.entryMode === "scratch"));
+  importButton.addEventListener("click", startImportRecipe);
+  scratchButton.addEventListener("click", startCreateRecipe);
+  modeButtons.append(importButton, scratchButton);
+  panel.append(modeButtons);
+
+  if (state.entryMode === "import") {
+    const form = createElement("form", "recipe-entry__import");
+    const field = createElement("label", "admin-field");
+    const label = createElement("span", "", "Recipe URL");
+    const input = createElement("input", "");
+    const submit = createElement("button", "filter-button", "Extract Recipe");
+    const message = createElement("p", state.importStatus?.tone === "error" ? "admin-auth-error" : "admin-muted", state.importStatus?.message || "Paste a public recipe page to start an editable kitchen-ready draft.");
+
+    input.type = "url";
+    input.name = "recipeUrl";
+    input.placeholder = "https://example.com/recipe";
+    input.value = state.importUrl;
+    submit.type = "submit";
+    field.append(label, input);
+    form.append(field, submit, message);
+    form.addEventListener("input", () => {
+      state.importUrl = input.value;
+    });
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      extractRecipeFromUrl(input.value);
+    });
+    panel.append(form);
+  }
+
+  entryRoot.replaceChildren(panel);
+}
+
+async function extractRecipeFromUrl(url) {
+  state.importUrl = String(url || "").trim();
+  state.importStatus = {
+    tone: "neutral",
+    message: "Extracting recipe data..."
+  };
+  renderEntryControls();
+
+  try {
+    const response = await adminFetch("/api/recipe/extract-url", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "content-type": "text/plain"
+      },
+      body: JSON.stringify({ url: state.importUrl })
+    });
+    const result = await response.json();
+
+    if (!response.ok || !result.ok) {
+      throw new Error(result.error || "Recipe extraction failed.");
+    }
+
+    state.importStatus = {
+      tone: result.validation?.ok ? "success" : "error",
+      message: result.validation?.ok
+        ? "Recipe extracted. Review the draft before adding it to the system."
+        : "Recipe extracted with validation issues. Correct the highlighted fields before saving."
+    };
+    renderEntryControls();
+    openExtractionPreview(result.recipe, result.validation);
+  } catch (error) {
+    state.importStatus = {
+      tone: "error",
+      message: error.message || "Recipe extraction failed."
+    };
+    renderEntryControls();
+  }
+}
+
+function openExtractionPreview(recipe, validation) {
+  let modalDraft = structuredClone(recipe);
+  let modalValidation = validation || validateRecipeAgainstSchema(modalDraft, state.schema);
+  const overlay = createElement("div", "recipe-import-modal");
+  const dialog = createElement("section", "recipe-import-modal__dialog");
+  const header = createElement("header", "recipe-import-modal__header");
+  const body = createElement("div", "recipe-import-modal__body");
+  const editor = createElement("div", "");
+  const validationRoot = createElement("aside", "recipe-import-modal__validation");
+  const actions = createElement("div", "admin-actions recipe-import-modal__actions");
+  const useButton = createElement("button", "filter-button", "Use This Recipe");
+  const closeButton = createElement("button", "filter-button", "Close");
+
+  function refreshValidation() {
+    modalValidation = validateRecipeAgainstSchema(modalDraft, state.schema);
+    renderValidation(validationRoot, modalValidation);
+    useButton.disabled = !modalValidation.ok;
+  }
+
+  useButton.type = "button";
+  closeButton.type = "button";
+  useButton.addEventListener("click", () => {
+    useImportedRecipe(modalDraft);
+    overlay.remove();
+  });
+  closeButton.addEventListener("click", () => overlay.remove());
+  header.append(
+    createElement("h2", "", "Editable Extraction Preview"),
+    createElement("p", "admin-muted", "Correct imported fields now, then load the recipe into the admin editor.")
+  );
+  actions.append(useButton, closeButton);
+  body.append(editor, validationRoot);
+  dialog.append(header, body, actions);
+  overlay.append(dialog);
+  document.body.append(overlay);
+
+  const previewOptions = {
+    onChange(recipeDraft) {
+      modalDraft = recipeDraft;
+      refreshValidation();
+    },
+    onValidate(recipeDraft) {
+      modalDraft = recipeDraft;
+      refreshValidation();
+    },
+    onReset() {
+      modalDraft = structuredClone(recipe);
+      renderRecipeCreateWizard(editor, modalDraft, previewOptions);
+      refreshValidation();
+    },
+    onCancel() {
+      overlay.remove();
+    }
+  };
+
+  renderRecipeCreateWizard(editor, modalDraft, previewOptions);
+  renderValidation(validationRoot, modalValidation);
+  useButton.disabled = !modalValidation.ok;
+}
+
 function renderAdmin() {
+  renderEntryControls();
   renderRecipeList(listRoot, getFilteredRecipes(), state.selectedIndex, selectRecipe);
   if (state.mode === "create") {
     renderRecipeCreateWizard(editorRoot, state.draft, {
@@ -475,6 +736,7 @@ async function initAdmin() {
   statusElement = document.querySelector("#admin-status");
   errorElement = document.querySelector("#admin-error");
   createRecipeButton = document.querySelector("#create-recipe-button");
+  entryRoot = document.querySelector("#recipe-entry-root");
   searchInput = document.querySelector("#recipe-search");
   listRoot = document.querySelector("#recipe-list");
   editorRoot = document.querySelector("#recipe-editor-root");

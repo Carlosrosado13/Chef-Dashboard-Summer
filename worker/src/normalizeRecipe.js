@@ -45,6 +45,19 @@ function normalizeSteps(steps) {
     .filter((step) => step.length > 0);
 }
 
+function normalizeNotes(notes) {
+  if (notes === undefined || notes === null) {
+    return [];
+  }
+
+  const noteList = Array.isArray(notes) ? notes : [notes];
+
+  return noteList
+    .filter((note) => note !== undefined && note !== null)
+    .map((note) => String(note).trim())
+    .filter((note) => note.length > 0);
+}
+
 export function normalizeRecipe(recipe) {
   const normalizedRecipe = {};
 
@@ -69,6 +82,10 @@ export function normalizeRecipe(recipe) {
 
   if (Object.hasOwn(recipe, "steps")) {
     normalizedRecipe.steps = normalizeSteps(recipe.steps);
+  }
+
+  if (Object.hasOwn(recipe, "notes")) {
+    normalizedRecipe.notes = normalizeNotes(recipe.notes);
   }
 
   return normalizedRecipe;

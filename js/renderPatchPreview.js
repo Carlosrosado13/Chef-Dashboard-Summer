@@ -60,7 +60,7 @@ function renderPatchActions(patch, options) {
 
   applyButton.type = "button";
   rollbackButton.type = "button";
-  applyButton.disabled = !patch?.ok || !patch.hasChanges || patch.operation !== "updateRecipe";
+  applyButton.disabled = !patch?.ok || !patch.hasChanges || !["updateRecipe", "createRecipe"].includes(patch.operation);
   rollbackButton.disabled = !options.canRollback;
   applyButton.addEventListener("click", () => options.onApply?.());
   rollbackButton.addEventListener("click", () => options.onRollback?.());

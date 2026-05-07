@@ -1,6 +1,6 @@
 import { validateRecipe } from "./validateRecipe.js";
 
-const ALLOWED_PATCH_FIELDS = ["title", "yield", "category", "ingredients", "steps"];
+const ALLOWED_PATCH_FIELDS = ["title", "yield", "category", "ingredients", "steps", "notes"];
 const draftPatchStore = new Map();
 
 function createTimestamp() {

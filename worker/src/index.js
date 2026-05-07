@@ -4,8 +4,10 @@ import {
   handleAdminSession,
   requireAdminAuth
 } from "./adminAuthApi.js";
+import { extractRecipeFields, extractRecipeFromHtmlDocument, normalizeRecipe } from "./extractRecipe.js";
 import { handleSaveDraft, handleValidatePatch } from "./recipePatchApi.js";
 import { handleCommitPatch } from "./recipePatchRoutes.js";
+import { validateRecipe } from "./validateRecipe.js";
 
 const ADMIN_LOGIN_PATH = "/api/admin/login";
 const ADMIN_LOGOUT_PATH = "/api/admin/logout";
@@ -13,6 +15,7 @@ const ADMIN_SESSION_PATH = "/api/admin/session";
 const RECIPE_VALIDATE_PATCH_PATH = "/api/recipe/validate-patch";
 const RECIPE_SAVE_DRAFT_PATH = "/api/recipe/save-draft";
 const RECIPE_COMMIT_PATCH_PATH = "/api/recipe/commit-patch";
+const RECIPE_EXTRACT_URL_PATH = "/api/recipe/extract-url";
 const DEV_ADMIN_AUTH_BYPASS = true;
 
 const LOCAL_DEV_ORIGIN_PATTERN = /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/;
@@ -75,6 +78,70 @@ routeHandlers.set(`POST ${ADMIN_LOGOUT_PATH}`, async (request) => (
 routeHandlers.set(`GET ${ADMIN_SESSION_PATH}`, (request) => (
   withCors(handleAdminSession(request), request)
 ));
+
+routeHandlers.set(`POST ${RECIPE_EXTRACT_URL_PATH}`, async (request) => {
+  if (!DEV_ADMIN_AUTH_BYPASS) {
+    const auth = requireAdminAuth(request);
+    if (!auth.ok) {
+      return withCors(auth.response, request);
+    }
+  }
+
+  const parsed = await request.json().catch(() => null);
+  const sourceUrl = parsed?.url ? String(parsed.url).trim() : "";
+
+  if (!sourceUrl || !/^https?:\/\//i.test(sourceUrl)) {
+    return jsonResponse({
+      ok: false,
+      error: "A valid recipe URL is required.",
+      code: "INVALID_RECIPE_URL",
+      timestamp: new Date().toISOString()
+    }, 400, request);
+  }
+
+  const response = await fetch(sourceUrl, {
+    headers: {
+      accept: "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
+      "user-agent": "ChefDashboardRecipeImporter/1.0"
+    }
+  });
+
+  if (!response.ok) {
+    return jsonResponse({
+      ok: false,
+      error: `Unable to fetch recipe URL: ${response.status} ${response.statusText}`,
+      code: "RECIPE_URL_FETCH_FAILED",
+      timestamp: new Date().toISOString()
+    }, 502, request);
+  }
+
+  const contentType = response.headers.get("content-type") || "";
+  const body = await response.text();
+  let recipe;
+
+  try {
+    recipe = contentType.includes("application/json")
+      ? normalizeRecipe(extractRecipeFields(JSON.parse(body)))
+      : extractRecipeFromHtmlDocument(body, sourceUrl);
+  } catch (error) {
+    return jsonResponse({
+      ok: false,
+      error: error.message || "Unable to extract recipe data from the URL.",
+      code: "RECIPE_EXTRACTION_FAILED",
+      timestamp: new Date().toISOString()
+    }, 422, request);
+  }
+
+  const validation = validateRecipe(recipe);
+
+  return jsonResponse({
+    ok: true,
+    sourceUrl,
+    recipe,
+    validation,
+    timestamp: new Date().toISOString()
+  }, 200, request);
+});
 
 routeHandlers.set(`POST ${RECIPE_VALIDATE_PATCH_PATH}`, async (request) => {
   if (!DEV_ADMIN_AUTH_BYPASS) {

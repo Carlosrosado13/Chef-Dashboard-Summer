@@ -84,7 +84,8 @@ export function renderRecipeEditor(container, recipe, options = {}) {
       formatIngredients(recipe.ingredients).split("\n").filter(Boolean),
       "amount | unit | name"
     ),
-    createTextareaField("steps", "Steps", recipe.steps, "One step per line")
+    createTextareaField("steps", "Steps", recipe.steps, "One step per line"),
+    createTextareaField("notes", "Notes", recipe.notes, "One note per line")
   );
 
   const actions = createElement("div", "admin-actions");
@@ -120,6 +121,10 @@ export function readRecipeForm(form) {
     steps: String(formData.get("steps") || "")
       .split("\n")
       .map((step) => step.trim())
+      .filter(Boolean),
+    notes: String(formData.get("notes") || "")
+      .split("\n")
+      .map((note) => note.trim())
       .filter(Boolean)
   };
 }

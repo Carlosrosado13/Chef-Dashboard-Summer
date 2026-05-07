@@ -1,4 +1,4 @@
-const PATCH_FIELDS = ["title", "yield", "category", "ingredients", "steps"];
+const PATCH_FIELDS = ["title", "yield", "category", "ingredients", "steps", "notes"];
 
 function cloneValue(value) {
   return value === undefined ? undefined : structuredClone(value);
