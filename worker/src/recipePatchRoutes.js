@@ -1,12 +1,19 @@
 import { commitRecipePatch } from "./githubRecipeCommit.js";
 import { createError, jsonResponse, parseJsonRequest } from "./recipePatchApi.js";
 
+const SAVE_PATHS = new Set(["/api/recipe/commit-patch", "/api/recipe/save"]);
+
 function createTimestamp() {
   return new Date().toISOString();
 }
 
 export async function handleCommitPatch(request, env) {
-  console.log(`[recipe-api] ${request.method} /api/recipe/commit-patch ${createTimestamp()}`);
+  const pathname = new URL(request.url).pathname;
+  console.log(`[recipe-api] ${request.method} ${pathname} ${createTimestamp()}`);
+
+  if (!SAVE_PATHS.has(pathname)) {
+    return createError("Recipe save route is not registered.", 404, [{ message: pathname }]);
+  }
 
   const parsed = await parseJsonRequest(request);
   if (!parsed.ok) {
@@ -26,6 +33,9 @@ export async function handleCommitPatch(request, env) {
 
   return jsonResponse({
     ok: true,
+    saved: true,
+    recipeId: result.recipeId,
+    updatedFiles: result.updatedFiles,
     message: result.message,
     commitMessage: result.commitMessage,
     source: result.source,

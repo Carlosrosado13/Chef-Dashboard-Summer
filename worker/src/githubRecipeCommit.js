@@ -481,6 +481,12 @@ export async function commitRecipePatch(payload, env) {
     return {
       ok: true,
       message: "Recipe saved to GitHub.",
+      saved: true,
+      recipeId: createRecipeId(applyResult.updatedRecipe),
+      updatedFiles: [
+        sourceResult.sourcePath,
+        ...(menuResult.changed ? [menuSourceResult.sourcePath] : [])
+      ],
       commitMessage,
       source: sourceResult.sourcePath,
       branch: env.GH_BRANCH,

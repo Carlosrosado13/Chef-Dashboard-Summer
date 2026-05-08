@@ -15,6 +15,7 @@ const ADMIN_SESSION_PATH = "/api/admin/session";
 const RECIPE_VALIDATE_PATCH_PATH = "/api/recipe/validate-patch";
 const RECIPE_SAVE_DRAFT_PATH = "/api/recipe/save-draft";
 const RECIPE_COMMIT_PATCH_PATH = "/api/recipe/commit-patch";
+const RECIPE_SAVE_PATH = "/api/recipe/save";
 const ADMIN_EXTRACT_URL_PATH = "/api/admin/extract-url";
 const DEV_ADMIN_AUTH_BYPASS = true;
 const RECIPE_FETCH_HEADERS = {
@@ -196,7 +197,7 @@ routeHandlers.set(`POST ${RECIPE_SAVE_DRAFT_PATH}`, async (request) => {
   return withCors(await handleSaveDraft(request), request);
 });
 
-routeHandlers.set(`POST ${RECIPE_COMMIT_PATCH_PATH}`, async (request, env) => {
+async function handleRecipeSaveRequest(request, env) {
   if (!DEV_ADMIN_AUTH_BYPASS) {
     const auth = requireAdminAuth(request);
     if (!auth.ok) {
@@ -205,7 +206,22 @@ routeHandlers.set(`POST ${RECIPE_COMMIT_PATCH_PATH}`, async (request, env) => {
   }
 
   return withCors(await handleCommitPatch(request, env), request);
-});
+}
+
+routeHandlers.set(`POST ${RECIPE_COMMIT_PATCH_PATH}`, handleRecipeSaveRequest);
+routeHandlers.set(`POST ${RECIPE_SAVE_PATH}`, handleRecipeSaveRequest);
+
+function isRecipeSavePath(pathname) {
+  return pathname === RECIPE_COMMIT_PATCH_PATH || pathname === RECIPE_SAVE_PATH;
+}
+
+function routeRecipeSavePath(request, env, pathname) {
+  if (request.method !== "POST") {
+    return methodNotAllowedResponse(pathname, request.method, ["POST"], request);
+  }
+
+  return handleRecipeSaveRequest(request, env);
+}
 
 function getRouteHandler(method, pathname) {
   return routeHandlers.get(`${method} ${pathname}`) || null;
@@ -268,6 +284,10 @@ async function routeRequest(request, env) {
     }
 
     return handleExtractRecipeUrl(request);
+  }
+
+  if (isRecipeSavePath(pathname)) {
+    return routeRecipeSavePath(request, env, pathname);
   }
 
   if (allowedMethods && !allowedMethods.includes(request.method)) {
