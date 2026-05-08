@@ -181,6 +181,10 @@ export function generateCreateRecipePatch(recipe, validationResult, options = {}
   const changedFields = {};
 
   for (const field of PATCH_FIELDS) {
+    if (recipe[field] === undefined) {
+      continue;
+    }
+
     changedFields[field] = {
       original: null,
       updated: cloneValue(recipe[field])

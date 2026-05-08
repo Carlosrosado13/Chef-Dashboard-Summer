@@ -32,6 +32,10 @@ export async function handleCommitPatch(request, env) {
     branch: result.branch,
     audit: result.audit,
     github: result.github,
+    recipe: result.recipe,
+    recipeIndex: result.recipeIndex,
+    recipes: result.recipes,
+    menu: result.menu,
     timestamp: createTimestamp()
   });
 }

@@ -67,15 +67,11 @@ export function renderPatchPreview(container, patch, options = {}) {
   const message = createElement("p", "admin-muted", options.notice ? "Save Success" : status.message);
   const actions = createElement("div", "patch-actions");
   const saveButton = createElement("button", "filter-button", "Save Recipe");
-  const undoButton = createElement("button", "filter-button", "Undo Last Save");
 
   saveButton.type = "button";
-  undoButton.type = "button";
   saveButton.disabled = !patch?.ok || !["updateRecipe", "createRecipe"].includes(patch.operation);
-  undoButton.disabled = !options.canRollback;
   saveButton.addEventListener("click", () => options.onApply?.());
-  undoButton.addEventListener("click", () => options.onRollback?.());
-  actions.append(saveButton, undoButton);
+  actions.append(saveButton);
   panel.append(title, message, actions);
   container.append(panel);
 }

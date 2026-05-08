@@ -168,6 +168,34 @@ export async function initMenuAssignment({ recipes = [] } = {}) {
   }
 }
 
+export async function reloadMenuAssignment({ recipes = [] } = {}) {
+  state.recipes = recipes;
+
+  if (!state.root) {
+    return;
+  }
+
+  try {
+    const [menuResult, menuSchema] = await Promise.all([
+      loadMenuData(`data/processed/clean-menu.json?v=${Date.now()}`),
+      loadJson(`${MENU_SCHEMA_URL}?v=${Date.now()}`)
+    ]);
+
+    if (!menuResult.ok) {
+      throw new Error(menuResult.error);
+    }
+
+    state.menuData = menuResult.data;
+    state.menuSchema = menuSchema;
+    state.assignment = normalizeSelection(state.assignment);
+    state.error = null;
+    render();
+  } catch (error) {
+    state.error = error.message || "Unable to reload menu assignment tools.";
+    render();
+  }
+}
+
 export function updateMenuRecipeReferences(originalRecipeId, updatedRecipeId) {
   if (!state.menuData || !originalRecipeId || !updatedRecipeId || originalRecipeId === updatedRecipeId) {
     return {

@@ -2,6 +2,7 @@ import { validateRecipe } from "./validateRecipe.js";
 import { validatePatchStructure } from "./recipePatchApi.js";
 
 const DEFAULT_RECIPE_SOURCE = "data/recipes/sample-recipes.json";
+const DEFAULT_MENU_SOURCE = "data/processed/clean-menu.json";
 
 function createTimestamp() {
   return new Date().toISOString();
@@ -13,6 +14,14 @@ function isRecord(value) {
 
 function cloneValue(value) {
   return structuredClone(value);
+}
+
+function createRecipeId(recipeOrTitle) {
+  const title = typeof recipeOrTitle === "string" ? recipeOrTitle : recipeOrTitle?.title;
+  return String(title || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 }
 
 function normalizeForComparison(value) {
@@ -85,6 +94,27 @@ function validateSourcePath(source) {
   };
 }
 
+function validateMenuSourcePath(source) {
+  const sourcePath = source || DEFAULT_MENU_SOURCE;
+
+  if (
+    sourcePath.includes("..") ||
+    sourcePath.startsWith("/") ||
+    !sourcePath.endsWith(".json") ||
+    !["data/processed/clean-menu.json"].includes(sourcePath)
+  ) {
+    return {
+      ok: false,
+      errors: [{ message: "menuSource must be data/processed/clean-menu.json" }]
+    };
+  }
+
+  return {
+    ok: true,
+    sourcePath
+  };
+}
+
 function applyPatchToRecipeDataset(recipes, patch) {
   const structureErrors = validatePatchStructure(patch);
 
@@ -99,6 +129,30 @@ function applyPatchToRecipeDataset(recipes, patch) {
     return {
       ok: false,
       errors: [{ message: "Recipe dataset must be an array." }]
+    };
+  }
+
+  if (patch.operation === "createRecipe") {
+    const recipe = cloneValue(patch.recipe);
+    const validation = validateRecipe(recipe);
+
+    if (!validation.ok) {
+      return {
+        ok: false,
+        errors: validation.errors
+      };
+    }
+
+    const updatedRecipes = cloneValue(recipes);
+    updatedRecipes.push(recipe);
+
+    return {
+      ok: true,
+      originalRecipe: null,
+      updatedRecipe: recipe,
+      updatedRecipes,
+      created: true,
+      index: updatedRecipes.length - 1
     };
   }
 
@@ -154,6 +208,81 @@ function applyPatchToRecipeDataset(recipes, patch) {
   };
 }
 
+function applyMenuAssignment(menuData, assignment, recipeTitle, originalTitle = "") {
+  if (!assignment && !originalTitle) {
+    return {
+      ok: true,
+      updatedMenu: menuData,
+      applied: false,
+      changed: false
+    };
+  }
+
+  const updatedMenu = cloneValue(menuData);
+  const oldReferences = new Set([originalTitle, createRecipeId(originalTitle)].filter(Boolean));
+  let referenceUpdateCount = 0;
+
+  if (recipeTitle && oldReferences.size > 0 && !oldReferences.has(recipeTitle)) {
+    for (const meal of Object.values(updatedMenu || {})) {
+      for (const weekValue of Object.values(meal?.weeks || {})) {
+        for (const dayValue of Object.values(weekValue?.days || {})) {
+          for (const [slotCategory, value] of Object.entries(dayValue || {})) {
+            if (oldReferences.has(value)) {
+              dayValue[slotCategory] = recipeTitle;
+              referenceUpdateCount += 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  let slotAssignment = null;
+
+  if (assignment) {
+    const mealType = assignment.mealType || "dinner";
+    const week = assignment.week || "";
+    const day = assignment.day || "";
+    const category = assignment.category || "";
+
+    if (!updatedMenu?.[mealType]?.weeks?.[week]?.days?.[day]) {
+      return {
+        ok: false,
+        errors: [{ message: "Selected menu slot is not available." }]
+      };
+    }
+
+    const updatedDayMenu = updatedMenu[mealType].weeks[week].days[day];
+
+    if (!Object.hasOwn(updatedDayMenu, category)) {
+      return {
+        ok: false,
+        errors: [{ message: "Selected menu category is not available." }]
+      };
+    }
+
+    const originalValue = updatedDayMenu[category] || "";
+    updatedDayMenu[category] = recipeTitle;
+    slotAssignment = {
+      mealType,
+      week,
+      day,
+      category,
+      originalValue,
+      updatedValue: recipeTitle
+    };
+  }
+
+  return {
+    ok: true,
+    updatedMenu,
+    applied: true,
+    changed: referenceUpdateCount > 0 || (slotAssignment && slotAssignment.originalValue !== recipeTitle),
+    referenceUpdateCount,
+    assignment: slotAssignment
+  };
+}
+
 function createCommitMessage(patch) {
   const title = patch.updatedTitle || patch.originalTitle || `recipe ${patch.index}`;
 
@@ -182,7 +311,7 @@ async function githubRequest(url, env, options = {}) {
   return data;
 }
 
-async function fetchRecipeFile(env, sourcePath) {
+async function fetchGithubFile(env, sourcePath) {
   const url = `https://api.github.com/repos/${env.GH_OWNER}/${env.GH_REPO}/contents/${sourcePath}?ref=${encodeURIComponent(env.GH_BRANCH)}`;
   const data = await githubRequest(url, env);
 
@@ -196,7 +325,7 @@ async function fetchRecipeFile(env, sourcePath) {
   };
 }
 
-async function commitRecipeFile(env, sourcePath, currentSha, content, message) {
+async function commitGithubFile(env, sourcePath, currentSha, content, message) {
   const url = `https://api.github.com/repos/${env.GH_OWNER}/${env.GH_REPO}/contents/${sourcePath}`;
 
   return githubRequest(url, env, {
@@ -247,7 +376,19 @@ export async function commitRecipePatch(payload, env) {
   }
 
   try {
-    const sourceFile = await fetchRecipeFile(env, sourceResult.sourcePath);
+    const menuSourceResult = validateMenuSourcePath(payload.menuSource);
+
+    if (!menuSourceResult.ok) {
+      return {
+        ok: false,
+        status: 400,
+        error: "Menu source path is not allowed.",
+        details: menuSourceResult.errors,
+        timestamp
+      };
+    }
+
+    const sourceFile = await fetchGithubFile(env, sourceResult.sourcePath);
     const recipes = JSON.parse(sourceFile.content);
     const applyResult = applyPatchToRecipeDataset(recipes, payload.patch);
 
@@ -261,9 +402,41 @@ export async function commitRecipePatch(payload, env) {
       };
     }
 
+    let menuPlan = null;
+    let menuResult = {
+      applied: false,
+      changed: false
+    };
+
+    if (payload.menuAssignment) {
+      const menuFile = await fetchGithubFile(env, menuSourceResult.sourcePath);
+      const menuData = JSON.parse(menuFile.content);
+      const menuApplyResult = applyMenuAssignment(
+        menuData,
+        payload.menuAssignment,
+        applyResult.updatedRecipe.title,
+        applyResult.originalRecipe?.title || payload.patch.originalTitle || ""
+      );
+
+      if (!menuApplyResult.ok) {
+        return {
+          ok: false,
+          status: 422,
+          error: "Menu assignment could not be applied.",
+          details: menuApplyResult.errors,
+          timestamp
+        };
+      }
+
+      menuPlan = {
+        file: menuFile,
+        applyResult: menuApplyResult
+      };
+    }
+
     const updatedContent = `${JSON.stringify(applyResult.updatedRecipes, null, 2)}\n`;
     const commitMessage = payload.commitMessage || createCommitMessage(payload.patch);
-    const commitResult = await commitRecipeFile(
+    const commitResult = await commitGithubFile(
       env,
       sourceResult.sourcePath,
       sourceFile.sha,
@@ -272,9 +445,42 @@ export async function commitRecipePatch(payload, env) {
     );
     const commitSha = commitResult.commit?.sha || commitResult.content?.sha || "";
 
+    if (menuPlan) {
+      const menuApplyResult = menuPlan.applyResult;
+
+      if (menuApplyResult.changed) {
+        const menuCommitResult = await commitGithubFile(
+          env,
+          menuSourceResult.sourcePath,
+          menuPlan.file.sha,
+          `${JSON.stringify(menuApplyResult.updatedMenu, null, 2)}\n`,
+          `Assign recipe: ${applyResult.updatedRecipe.title}`
+        );
+
+        menuResult = {
+          applied: true,
+          changed: true,
+          source: menuSourceResult.sourcePath,
+          assignment: menuApplyResult.assignment,
+          github: {
+            commitSha: menuCommitResult.commit?.sha || menuCommitResult.content?.sha || "",
+            contentSha: menuCommitResult.content?.sha || "",
+            htmlUrl: menuCommitResult.commit?.html_url || menuCommitResult.content?.html_url || ""
+          }
+        };
+      } else {
+        menuResult = {
+          applied: true,
+          changed: false,
+          source: menuSourceResult.sourcePath,
+          assignment: menuApplyResult.assignment
+        };
+      }
+    }
+
     return {
       ok: true,
-      message: "Recipe patch committed to GitHub.",
+      message: "Recipe saved to GitHub.",
       commitMessage,
       source: sourceResult.sourcePath,
       branch: env.GH_BRANCH,
@@ -282,7 +488,7 @@ export async function commitRecipePatch(payload, env) {
         timestamp,
         patchTimestamp: payload.patch.timestamp || "",
         appliedAt: createTimestamp(),
-        originalTitle: payload.patch.originalTitle || applyResult.originalRecipe.title,
+        originalTitle: payload.patch.originalTitle || applyResult.originalRecipe?.title || "",
         updatedTitle: payload.patch.updatedTitle || applyResult.updatedRecipe.title,
         changedFields: Object.keys(payload.patch.changedFields || {}),
         previousFileSha: sourceFile.sha,
@@ -291,7 +497,7 @@ export async function commitRecipePatch(payload, env) {
           source: sourceResult.sourcePath,
           branch: env.GH_BRANCH,
           previousFileSha: sourceFile.sha,
-          recipeIndex: payload.patch.index,
+          recipeIndex: applyResult.index ?? payload.patch.index,
           originalRecipe: applyResult.originalRecipe
         }
       },
@@ -299,7 +505,11 @@ export async function commitRecipePatch(payload, env) {
         commitSha,
         contentSha: commitResult.content?.sha || "",
         htmlUrl: commitResult.commit?.html_url || commitResult.content?.html_url || ""
-      }
+      },
+      recipe: applyResult.updatedRecipe,
+      recipeIndex: applyResult.index ?? payload.patch.index,
+      recipes: applyResult.updatedRecipes,
+      menu: menuResult
     };
   } catch (error) {
     return {

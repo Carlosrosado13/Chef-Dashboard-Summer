@@ -1,5 +1,5 @@
 import { adminFetch, initializeAdminAuth } from "./adminAuth.js";
-import { assignRecipeToMenuSlot, initMenuAssignment, updateMenuRecipeReferences } from "./adminMenuAssignment.js";
+import { initMenuAssignment, reloadMenuAssignment } from "./adminMenuAssignment.js";
 import { loadRecipes } from "./loadRecipes.js";
 import { applyRecipePatch, rollbackRecipePatch } from "./applyRecipePatch.js";
 import { generateCreateRecipePatch, generateRecipePatch } from "./generateRecipePatch.js";
@@ -412,7 +412,41 @@ function validateCurrentSchema(recipe) {
   return validateRecipeForKitchen(recipe);
 }
 
+async function reloadPersistedData(selectedTitle = "", fallbackRecipes = null) {
+  const recipeResult = await loadRecipes(`data/recipes/sample-recipes.json?v=${Date.now()}`);
+
+  if (!recipeResult.ok) {
+    throw new Error(recipeResult.error);
+  }
+
+  const reloadedHasRecipe = !selectedTitle || recipeResult.recipes.some((recipe) => recipe.title === selectedTitle);
+  state.recipes = reloadedHasRecipe || !Array.isArray(fallbackRecipes) ? recipeResult.recipes : fallbackRecipes;
+  await reloadMenuAssignment({ recipes: state.recipes });
+
+  const selectedIndex = selectedTitle
+    ? state.recipes.findIndex((recipe) => recipe.title === selectedTitle)
+    : -1;
+
+  state.selectedIndex = selectedIndex >= 0 ? selectedIndex : null;
+  state.mode = selectedIndex >= 0 ? "edit" : "edit";
+  state.entryMode = null;
+  state.draft = selectedIndex >= 0 ? structuredClone(state.recipes[selectedIndex]) : null;
+  state.validation = state.draft ? validateRecipeForKitchen(state.draft) : null;
+}
+
 async function applyCurrentPatch() {
+  try {
+    await applyCurrentPatchUnsafe();
+  } catch (error) {
+    state.notice = {
+      tone: "error",
+      message: error.message || "Recipe save failed."
+    };
+    updateValidationAndPatch();
+  }
+}
+
+async function applyCurrentPatchUnsafe() {
   const patch = createPatchPreview();
 
   if (patch.operation === "createRecipe") {
@@ -430,24 +464,29 @@ async function applyCurrentPatch() {
       return;
     }
 
-    state.recipes = [...state.recipes, recipe];
-    state.selectedIndex = state.recipes.length - 1;
-    state.mode = "edit";
-    state.entryMode = null;
-    state.draft = structuredClone(recipe);
-    state.validation = validateCurrentSchema(state.draft);
+    const commitResult = await commitRecipePatch(patch, null, recipe);
+
+    if (!commitResult.ok) {
+      state.notice = {
+        tone: "error",
+        message: commitResult.error
+      };
+      updateValidationAndPatch();
+      return;
+    }
+
+    await reloadPersistedData(recipe.title, commitResult.recipes);
     state.patchHistory.push({
       ...structuredClone(patch),
-      index: state.selectedIndex,
-      appliedAt: new Date().toISOString(),
-      rollbackRecipe: null
+      index: commitResult.recipeIndex,
+      appliedAt: commitResult.timestamp,
+      rollbackRecipe: null,
+      github: commitResult.github,
+      menu: commitResult.menu
     });
-    const menuAssignment = assignRecipeToMenuSlot(state.productionAssignment, recipe.title);
     state.notice = {
-      tone: menuAssignment.ok ? "success" : "error",
-      message: menuAssignment.ok
-        ? `Recipe saved and assigned to ${state.productionAssignment.week} ${state.productionAssignment.day} ${state.productionAssignment.category}.`
-        : `Recipe saved, but menu assignment failed: ${menuAssignment.error}`
+      tone: "success",
+      message: `Recipe saved permanently and assigned to ${state.productionAssignment.week} ${state.productionAssignment.day} ${state.productionAssignment.category}.`
     };
     state.isDirty = false;
     state.localSaveStatus = "idle";
@@ -462,12 +501,21 @@ async function applyCurrentPatch() {
   const draftId = getCurrentDraftId();
 
   if (patch.ok && !patch.hasChanges && state.selectedIndex !== null && state.draft) {
-    const selectedMenuAssignment = assignRecipeToMenuSlot(state.productionAssignment, state.draft.title);
+    const commitResult = await commitRecipePatch(patch, state.recipes[state.selectedIndex], state.draft);
+
+    if (!commitResult.ok) {
+      state.notice = {
+        tone: "error",
+        message: commitResult.error
+      };
+      updateValidationAndPatch();
+      return;
+    }
+
+    await reloadPersistedData(state.draft.title, commitResult.recipes);
     state.notice = {
-      tone: selectedMenuAssignment.ok ? "success" : "error",
-      message: selectedMenuAssignment.ok
-        ? `Recipe assigned to ${state.productionAssignment.week} ${state.productionAssignment.day} ${state.productionAssignment.category}.`
-        : `Menu assignment failed: ${selectedMenuAssignment.error}`
+      tone: "success",
+      message: `Recipe assignment saved permanently for ${state.productionAssignment.week} ${state.productionAssignment.day} ${state.productionAssignment.category}.`
     };
     state.isDirty = false;
     state.localSaveStatus = "idle";
@@ -493,21 +541,22 @@ async function applyCurrentPatch() {
   }
 
   const commitResult = await commitRecipePatch(patch, state.recipes[patch.index], result.appliedRecipe);
-  const linkedMenuUpdate = result.linkedMenuUpdate?.hasRecipeIdChange
-    ? updateMenuRecipeReferences(result.linkedMenuUpdate.originalRecipeId, result.linkedMenuUpdate.updatedRecipeId)
-    : { updatedCount: 0 };
-  const selectedMenuAssignment = assignRecipeToMenuSlot(state.productionAssignment, result.appliedRecipe.title);
 
-  state.recipes = result.recipes;
+  if (!commitResult.ok) {
+    state.notice = {
+      tone: "error",
+      message: commitResult.error
+    };
+    updateValidationAndPatch();
+    return;
+  }
+
+  await reloadPersistedData(result.appliedRecipe.title, commitResult.recipes);
   state.patchHistory.push({
     ...result.historyEntry,
-    github: commitResult.ok ? commitResult.github : null,
-    linkedMenuUpdate,
-    selectedMenuAssignment
+    github: commitResult.github,
+    menu: commitResult.menu
   });
-  state.selectedIndex = result.historyEntry.index;
-  state.draft = structuredClone(result.appliedRecipe);
-  state.validation = validateCurrentSchema(state.draft);
   state.isDirty = false;
   state.localSaveStatus = "idle";
   draftSaver.cancel();
@@ -516,8 +565,8 @@ async function applyCurrentPatch() {
   }
   state.draftRecord = null;
   state.notice = {
-    tone: commitResult.ok ? "success" : "error",
-    message: createApplyPatchMessage(result.historyEntry.appliedAt, commitResult, linkedMenuUpdate, selectedMenuAssignment)
+    tone: "success",
+    message: createApplyPatchMessage(result.historyEntry.appliedAt, commitResult)
   };
   renderAdmin();
 }
@@ -532,7 +581,9 @@ async function commitRecipePatch(patch, originalRecipe, updatedRecipe) {
       body: JSON.stringify({
         patch,
         originalRecipe,
-        updatedRecipe
+        updatedRecipe,
+        menuAssignment: state.productionAssignment,
+        menuSource: "data/processed/clean-menu.json"
       })
     });
     const result = await response.json();
@@ -545,24 +596,17 @@ async function commitRecipePatch(patch, originalRecipe, updatedRecipe) {
   } catch (error) {
     return {
       ok: false,
-      error: error.message || "Recipe patch applied locally, but could not be committed."
+      error: error.message || "Recipe save could not be committed."
     };
   }
 }
 
-function createApplyPatchMessage(appliedAt, commitResult, linkedMenuUpdate, selectedMenuAssignment) {
-  const menuMessage = linkedMenuUpdate.updatedCount > 0
-    ? ` ${linkedMenuUpdate.updatedCount} linked menu assignment${linkedMenuUpdate.updatedCount === 1 ? "" : "s"} updated.`
-    : "";
-  const selectedSlotMessage = selectedMenuAssignment?.ok
+function createApplyPatchMessage(appliedAt, commitResult) {
+  const menuMessage = commitResult.menu?.applied
     ? ` Assigned to ${state.productionAssignment.week} ${state.productionAssignment.day} ${state.productionAssignment.category}.`
-    : ` Menu assignment failed: ${selectedMenuAssignment?.error || "Selected slot unavailable."}`;
+    : "";
 
-  if (commitResult.ok) {
-    return `Recipe saved and committed to ${commitResult.source} at ${appliedAt}.${menuMessage}${selectedSlotMessage}`;
-  }
-
-  return `Recipe saved in memory at ${appliedAt}, but the recipe file commit did not complete: ${commitResult.error}.${menuMessage}${selectedSlotMessage}`;
+  return `Recipe saved permanently at ${appliedAt}.${menuMessage}`;
 }
 
 function rollbackLastPatch() {
@@ -604,7 +648,7 @@ function rollbackLastPatch() {
   clearCurrentDraft();
   state.notice = {
     tone: "success",
-    message: `Rolled back in memory at ${result.rolledBackAt}.`
+    message: `Rolled back locally at ${result.rolledBackAt}.`
   };
   renderAdmin();
 }

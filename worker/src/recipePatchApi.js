@@ -59,11 +59,11 @@ export function validatePatchStructure(patch) {
     return [{ message: "patch must be an object" }];
   }
 
-  if (patch.operation !== "updateRecipe") {
-    errors.push({ message: "patch.operation must be updateRecipe" });
+  if (!["updateRecipe", "createRecipe"].includes(patch.operation)) {
+    errors.push({ message: "patch.operation must be updateRecipe or createRecipe" });
   }
 
-  if (!Number.isInteger(patch.index) || patch.index < 0) {
+  if (patch.operation === "updateRecipe" && (!Number.isInteger(patch.index) || patch.index < 0)) {
     errors.push({ message: "patch.index must be a non-negative integer" });
   }
 
@@ -83,7 +83,7 @@ export function validatePatchStructure(patch) {
     }
   }
 
-  if (Object.keys(patch.changedFields).length === 0) {
+  if (patch.operation === "createRecipe" && Object.keys(patch.changedFields).length === 0) {
     errors.push({ message: "patch.changedFields must include at least one changed field" });
   }
 
