@@ -11,9 +11,6 @@ import {
   loadRecipeDraft
 } from "./recipeDraftManager.js";
 import {
-  createEmptyRecipeDraft
-} from "./renderRecipeCreateWizard.js";
-import {
   renderRecipeEditor,
   renderRecipeList,
   renderValidation
@@ -46,6 +43,16 @@ const state = {
 };
 
 const draftSaver = createDebouncedRecipeDraftSaver(500);
+
+function createEmptyRecipeDraft() {
+  return {
+    title: "",
+    yield: "",
+    category: "Elevated",
+    ingredients: [],
+    steps: []
+  };
+}
 
 let statusElement;
 let errorElement;
@@ -152,7 +159,7 @@ function startCreateRecipe() {
   state.selectedIndex = null;
   state.draft = createEmptyRecipeDraft();
   state.draft.category = state.productionAssignment.category;
-  state.validation = validateRecipeAgainstSchema(state.draft, state.schema);
+  state.validation = validateRecipeForKitchen(state.draft);
   state.draftRecord = null;
   state.notice = null;
   state.isDirty = false;
@@ -207,11 +214,10 @@ function cancelEditing() {
 function updateCreateDraft(recipe, assignment) {
   updateProductionAssignment(assignment);
   state.draft = recipe;
-  state.validation = validateRecipeAgainstSchema(recipe, state.schema);
+  state.validation = validateRecipeForKitchen(recipe);
   state.isDirty = true;
   state.localSaveStatus = "unsaved";
   scheduleCurrentDraftSave();
-  logRecipeState();
   updateValidationAndPatch();
 }
 
@@ -222,11 +228,10 @@ function updateProductionAssignment(assignment) {
 function validateCreateDraft(recipe, assignment) {
   updateProductionAssignment(assignment);
   state.draft = recipe;
-  state.validation = validateRecipeAgainstSchema(recipe, state.schema);
+  state.validation = validateRecipeForKitchen(recipe);
   state.isDirty = true;
   state.localSaveStatus = "unsaved";
   scheduleCurrentDraftSave();
-  logRecipeState();
   updateValidationAndPatch();
 }
 
@@ -234,7 +239,7 @@ function resetCreateDraft() {
   clearCurrentDraft();
   state.draft = createEmptyRecipeDraft();
   state.draft.category = state.productionAssignment.category;
-  state.validation = validateRecipeAgainstSchema(state.draft, state.schema);
+  state.validation = validateRecipeForKitchen(state.draft);
   state.isDirty = false;
   state.localSaveStatus = "idle";
   renderAdmin();
@@ -261,7 +266,7 @@ function useImportedRecipe(recipe) {
   state.selectedIndex = null;
   state.draft = structuredClone(recipe);
   state.draft.category = state.draft.category || state.productionAssignment.category;
-  state.validation = validateRecipeAgainstSchema(state.draft, state.schema);
+  state.validation = validateRecipeForKitchen(state.draft);
   state.draftRecord = null;
   state.notice = {
     tone: "success",
@@ -275,22 +280,20 @@ function useImportedRecipe(recipe) {
 function updateDraft(recipe, assignment) {
   updateProductionAssignment(assignment);
   state.draft = recipe;
-  state.validation = validateRecipeAgainstSchema(recipe, state.schema);
+  state.validation = validateRecipeForKitchen(recipe);
   state.isDirty = true;
   state.localSaveStatus = "unsaved";
   scheduleCurrentDraftSave();
-  logRecipeState();
   updateValidationAndPatch();
 }
 
 function validateDraft(recipe, assignment) {
   updateProductionAssignment(assignment);
   state.draft = recipe;
-  state.validation = validateRecipeAgainstSchema(recipe, state.schema);
+  state.validation = validateRecipeForKitchen(recipe);
   state.isDirty = true;
   state.localSaveStatus = "unsaved";
   scheduleCurrentDraftSave();
-  logRecipeState();
   updateValidationAndPatch();
 }
 
@@ -340,14 +343,6 @@ function scheduleCurrentDraftSave() {
   });
 }
 
-function logRecipeState() {
-  const originalRecipe = state.selectedIndex === null ? null : state.recipes[state.selectedIndex];
-  const patch = createPatchPreview();
-  console.log("Original recipe:", originalRecipe);
-  console.log("Draft recipe:", state.draft);
-  console.log("Detected changed fields:", patch.changedFields || {});
-}
-
 function updateValidationAndPatch() {
   renderValidation(validationRoot, state.validation);
   renderPatchPreview(patchPreviewRoot, createPatchPreview(), {
@@ -364,7 +359,7 @@ function createPatchPreview() {
       return {};
     }
 
-    const validation = state.validation || validateRecipeAgainstSchema(state.draft, state.schema);
+    const validation = state.validation || validateRecipeForKitchen(state.draft);
 
     return generateCreateRecipePatch(state.draft, validation, {
       proposedIndex: state.recipes.length,
@@ -376,7 +371,7 @@ function createPatchPreview() {
     return {};
   }
 
-  const validation = state.validation || validateRecipeAgainstSchema(state.draft, state.schema);
+  const validation = state.validation || validateRecipeForKitchen(state.draft);
 
   return generateRecipePatch(state.recipes[state.selectedIndex], state.draft, validation, {
     index: state.selectedIndex,
@@ -384,55 +379,37 @@ function createPatchPreview() {
   });
 }
 
-function validateRecipeAgainstSchema(recipe, schema) {
-  const errors = [];
-  const allowedRootProperties = Object.keys(schema.properties || {});
+function validateRecipeForKitchen(recipe) {
+  const missing = [];
 
-  for (const property of schema.required || []) {
-    if (recipe[property] === undefined || recipe[property] === "") {
-      errors.push({ message: `Missing required property: ${property}` });
-    }
+  if (!String(recipe?.title || "").trim()) {
+    missing.push("Recipe Name");
   }
 
-  for (const property of Object.keys(recipe)) {
-    if (!allowedRootProperties.includes(property)) {
-      errors.push({ message: `Unknown property is not allowed: ${property}` });
-    }
+  if (!String(recipe?.category || "").trim()) {
+    missing.push("Recipe Category");
   }
 
-  for (const property of ["title", "yield", "category"]) {
-    if (recipe[property] !== undefined && typeof recipe[property] !== "string") {
-      errors.push({ message: `${property} must be string` });
-    }
+  if (!Array.isArray(recipe?.ingredients) || recipe.ingredients.length === 0) {
+    missing.push("Ingredients");
   }
 
-  if (!Array.isArray(recipe.ingredients) || recipe.ingredients.length < 1) {
-    errors.push({ message: "ingredients must include at least 1 item" });
-  } else {
-    recipe.ingredients.forEach((ingredient, index) => {
-      validateIngredient(ingredient, index, errors);
-    });
+  if (!Array.isArray(recipe?.steps) || recipe.steps.length === 0) {
+    missing.push("Steps");
   }
 
-  if (!Array.isArray(recipe.steps) || recipe.steps.length < 1) {
-    errors.push({ message: "steps must include at least 1 item" });
-  } else {
-    recipe.steps.forEach((step, index) => {
-      if (typeof step !== "string") {
-        errors.push({ message: `steps[${index}] must be string` });
-      }
-    });
-  }
-
-  validateNotes(recipe, errors);
-  validateTags(recipe, errors);
-  validateMetadata(recipe, errors);
-
-  return errors.length === 0 ? { ok: true } : { ok: false, errors };
+  return missing.length === 0
+    ? { ok: true, status: "Ready to Save" }
+    : {
+        ok: false,
+        status: "Missing Required Fields",
+        missing,
+        errors: missing.map((field) => ({ message: field }))
+      };
 }
 
 function validateCurrentSchema(recipe) {
-  return validateRecipeAgainstSchema(recipe, state.schema);
+  return validateRecipeForKitchen(recipe);
 }
 
 async function applyCurrentPatch() {
@@ -483,6 +460,26 @@ async function applyCurrentPatch() {
   }
 
   const draftId = getCurrentDraftId();
+
+  if (patch.ok && !patch.hasChanges && state.selectedIndex !== null && state.draft) {
+    const selectedMenuAssignment = assignRecipeToMenuSlot(state.productionAssignment, state.draft.title);
+    state.notice = {
+      tone: selectedMenuAssignment.ok ? "success" : "error",
+      message: selectedMenuAssignment.ok
+        ? `Recipe assigned to ${state.productionAssignment.week} ${state.productionAssignment.day} ${state.productionAssignment.category}.`
+        : `Menu assignment failed: ${selectedMenuAssignment.error}`
+    };
+    state.isDirty = false;
+    state.localSaveStatus = "idle";
+    draftSaver.cancel();
+    if (draftId) {
+      clearRecipeDraft(draftId);
+    }
+    state.draftRecord = null;
+    renderAdmin();
+    return;
+  }
+
   const result = applyRecipePatch(state.recipes, patch, validateCurrentSchema);
 
   if (!result.ok) {
@@ -662,7 +659,7 @@ function renderDraftStatus() {
 
 function createDraftStatusMessage() {
   const patch = createPatchPreview();
-  const patchStatus = patch.hasChanges ? "Patch ready" : "No patch changes";
+  const patchStatus = patch.ok ? "Ready to Save" : "Missing Required Fields";
 
   if (state.localSaveStatus === "unsaved") {
     return `Unsaved changes. ${patchStatus}.`;
@@ -683,90 +680,18 @@ function createWorkflowStatusMessage() {
   const patch = createPatchPreview();
 
   if (state.localSaveStatus === "saved") {
-    return patch.hasChanges ? "Saved locally | Patch ready" : "Saved locally";
+    return patch.ok ? "Saved locally | Ready to Save" : "Saved locally";
   }
 
   if (state.isDirty) {
-    return patch.hasChanges ? "Unsaved changes | Patch ready" : "Unsaved changes";
+    return patch.ok ? "Unsaved changes | Ready to Save" : "Unsaved changes";
   }
 
-  return patch.hasChanges ? "Patch ready" : "Ready";
+  return patch.ok ? "Ready to Save" : "Ready";
 }
 
 function formatTimestamp(timestamp) {
   return new Date(timestamp).toLocaleString();
-}
-
-function validateIngredient(ingredient, index, errors) {
-  const allowedProperties = ["name", "amount", "unit"];
-
-  for (const property of ["name", "amount", "unit"]) {
-    if (ingredient[property] === undefined || ingredient[property] === "") {
-      errors.push({ message: `ingredients[${index}] missing required property: ${property}` });
-    }
-  }
-
-  for (const property of Object.keys(ingredient)) {
-    if (!allowedProperties.includes(property)) {
-      errors.push({ message: `ingredients[${index}] unknown property: ${property}` });
-    }
-  }
-
-  if (typeof ingredient.name !== "string") {
-    errors.push({ message: `ingredients[${index}].name must be string` });
-  }
-
-  if (!Number.isFinite(ingredient.amount)) {
-    errors.push({ message: `ingredients[${index}].amount must be number` });
-  }
-
-  if (typeof ingredient.unit !== "string") {
-    errors.push({ message: `ingredients[${index}].unit must be string` });
-  }
-}
-
-function validateNotes(recipe, errors) {
-  if (recipe.notes === undefined) {
-    return;
-  }
-
-  if (!Array.isArray(recipe.notes)) {
-    errors.push({ message: "notes must be array" });
-    return;
-  }
-
-  recipe.notes.forEach((note, index) => {
-    if (typeof note !== "string") {
-      errors.push({ message: `notes[${index}] must be string` });
-    }
-  });
-}
-
-function validateTags(recipe, errors) {
-  if (recipe.tags === undefined) {
-    return;
-  }
-
-  if (!Array.isArray(recipe.tags)) {
-    errors.push({ message: "tags must be array" });
-    return;
-  }
-
-  recipe.tags.forEach((tag, index) => {
-    if (typeof tag !== "string") {
-      errors.push({ message: `tags[${index}] must be string` });
-    }
-  });
-}
-
-function validateMetadata(recipe, errors) {
-  if (recipe.metadata === undefined) {
-    return;
-  }
-
-  if (recipe.metadata === null || typeof recipe.metadata !== "object" || Array.isArray(recipe.metadata)) {
-    errors.push({ message: "metadata must be object" });
-  }
 }
 
 function createElement(tagName, className, textContent) {
@@ -860,7 +785,7 @@ async function extractRecipeFromUrl(url) {
         : "Recipe extracted. Review the draft before adding it to the system."
     };
     renderEntryControls();
-    openExtractionPreview(result.recipe, result.validation || validateRecipeAgainstSchema(result.recipe, state.schema));
+    openExtractionPreview(result.recipe, validateRecipeForKitchen(result.recipe));
   } catch (error) {
     state.importStatus = {
       tone: "error",
@@ -884,7 +809,7 @@ async function readExtractionJson(response) {
 
 function openExtractionPreview(recipe, validation) {
   let modalDraft = structuredClone(recipe);
-  let modalValidation = validation || validateRecipeAgainstSchema(modalDraft, state.schema);
+  let modalValidation = validation || validateRecipeForKitchen(modalDraft);
   const overlay = createElement("div", "recipe-import-modal");
   const dialog = createElement("section", "recipe-import-modal__dialog");
   const header = createElement("header", "recipe-import-modal__header");
@@ -896,7 +821,7 @@ function openExtractionPreview(recipe, validation) {
   const closeButton = createElement("button", "filter-button", "Close");
 
   function refreshValidation() {
-    modalValidation = validateRecipeAgainstSchema(modalDraft, state.schema);
+    modalValidation = validateRecipeForKitchen(modalDraft);
     renderValidation(validationRoot, modalValidation);
     useButton.disabled = !modalValidation.ok;
   }

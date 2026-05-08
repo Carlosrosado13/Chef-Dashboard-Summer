@@ -12,76 +12,45 @@ function createElement(tagName, className, textContent) {
   return element;
 }
 
-function formatValue(value) {
-  if (typeof value === "string") {
-    return value;
-  }
-
-  return JSON.stringify(value, null, 2);
-}
-
-function renderBlockedPatch(patch) {
-  const panel = createElement("section", "patch-panel patch-panel--blocked");
-  panel.append(createElement("p", "admin-errors", patch.reason));
-
-  if (patch.errors?.length) {
-    const list = createElement("ul", "admin-errors");
-    for (const error of patch.errors) {
-      list.append(createElement("li", "", error.message));
-    }
-    panel.append(list);
-  }
-
-  if (patch.hasChanges) {
-    for (const [field, change] of Object.entries(patch.changedFields || {})) {
-      panel.append(renderChangedField(field, change));
-    }
-  }
-
-  return panel;
-}
-
-function renderChangedField(field, change) {
-  const section = createElement("section", "patch-field");
-  const heading = createElement("h3", "patch-field__title", field);
-  const values = createElement("div", "patch-field__values");
-  const original = createElement("pre", "patch-field__value patch-field__value--original", formatValue(change.original));
-  const updated = createElement("pre", "patch-field__value patch-field__value--updated", formatValue(change.updated));
-
-  values.append(
-    createElement("span", "patch-field__label", "Original"),
-    createElement("span", "patch-field__label", "Updated"),
-    original,
-    updated
-  );
-  section.append(heading, values);
-
-  return section;
-}
-
-function renderPatchActions(patch, options) {
-  const actions = createElement("div", "patch-actions");
-  const applyButton = createElement("button", "filter-button", "Save Previewed Changes");
-  const rollbackButton = createElement("button", "filter-button", "Undo Last Save");
-
-  applyButton.type = "button";
-  rollbackButton.type = "button";
-  applyButton.disabled = !patch?.ok || !patch.hasChanges || !["updateRecipe", "createRecipe"].includes(patch.operation);
-  rollbackButton.disabled = !options.canRollback;
-  applyButton.addEventListener("click", () => options.onApply?.());
-  rollbackButton.addEventListener("click", () => options.onRollback?.());
-  actions.append(applyButton, rollbackButton);
-
-  return actions;
-}
-
 function renderNotice(notice) {
   if (!notice) {
     return null;
   }
 
-  const message = createElement("p", `patch-notice patch-notice--${notice.tone}`, notice.message);
+  const message = createElement("p", `save-status save-status--${notice.tone}`, notice.message);
   return message;
+}
+
+function createSaveMessage(patch) {
+  if (!patch || Object.keys(patch).length === 0) {
+    return {
+      tone: "neutral",
+      title: "Missing Required Fields",
+      message: "Choose a recipe or start a new one."
+    };
+  }
+
+  if (!patch.ok) {
+    return {
+      tone: "error",
+      title: "Missing Required Fields",
+      message: "Complete Recipe Name, Category, Ingredients, and Steps."
+    };
+  }
+
+  if (patch.hasChanges) {
+    return {
+      tone: "success",
+      title: "Ready to Save",
+      message: "Save will update the recipe and place it on the selected menu slot."
+    };
+  }
+
+  return {
+    tone: "success",
+    title: "Ready to Save",
+    message: "Save will place this recipe on the selected menu slot."
+  };
 }
 
 export function renderPatchPreview(container, patch, options = {}) {
@@ -92,31 +61,21 @@ export function renderPatchPreview(container, patch, options = {}) {
     container.append(notice);
   }
 
-  if (!patch || Object.keys(patch).length === 0) {
-    container.append(createElement("p", "admin-muted", "Save preview will appear after selecting or entering a recipe."));
-    return;
-  }
+  const status = createSaveMessage(patch);
+  const panel = createElement("section", `save-panel save-panel--${status.tone}`);
+  const title = createElement("h3", "", options.notice ? "Patch Applied" : status.title);
+  const message = createElement("p", "admin-muted", options.notice ? "Save Success" : status.message);
+  const actions = createElement("div", "patch-actions");
+  const saveButton = createElement("button", "filter-button", "Save Recipe");
+  const undoButton = createElement("button", "filter-button", "Undo Last Save");
 
-  if (!patch.ok) {
-    container.append(renderPatchActions(patch, options));
-    container.append(renderBlockedPatch(patch));
-    return;
-  }
-
-  const panel = createElement("section", "patch-panel");
-  const summary = createElement(
-    "p",
-    "admin-muted",
-    patch.hasChanges ? "Ready to save this recipe." : "No recipe changes yet."
-  );
-  panel.append(renderPatchActions(patch, options), summary);
-
-  if (!patch.hasChanges) {
-    panel.append(createElement("p", "admin-muted", "No changed fields yet."));
-  } else {
-    for (const [field, change] of Object.entries(patch.changedFields)) {
-      panel.append(renderChangedField(field, change));
-    }
-  }
+  saveButton.type = "button";
+  undoButton.type = "button";
+  saveButton.disabled = !patch?.ok || !["updateRecipe", "createRecipe"].includes(patch.operation);
+  undoButton.disabled = !options.canRollback;
+  saveButton.addEventListener("click", () => options.onApply?.());
+  undoButton.addEventListener("click", () => options.onRollback?.());
+  actions.append(saveButton, undoButton);
+  panel.append(title, message, actions);
   container.append(panel);
 }

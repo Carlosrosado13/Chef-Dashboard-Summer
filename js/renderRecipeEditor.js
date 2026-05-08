@@ -278,18 +278,19 @@ export function renderValidation(container, result) {
   container.replaceChildren();
 
   if (!result) {
-    container.append(createElement("p", "admin-muted", "Recipe check will appear here."));
+    container.append(createElement("p", "save-status save-status--neutral", "Missing Required Fields"));
     return;
   }
 
   if (result.ok) {
-    container.append(createElement("p", "admin-valid", "Ready to save."));
+    container.append(createElement("p", "save-status save-status--success", "Ready to Save"));
     return;
   }
 
-  const list = createElement("ul", "admin-errors");
-  for (const error of result.errors) {
-    list.append(createElement("li", "", error.message));
-  }
-  container.append(list);
+  const panel = createElement("section", "save-panel save-panel--error");
+  panel.append(
+    createElement("h3", "", "Missing Required Fields"),
+    createElement("p", "admin-muted", (result.missing || []).join(", "))
+  );
+  container.append(panel);
 }

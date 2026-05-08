@@ -135,9 +135,6 @@ export function generateRecipePatch(originalRecipe, draftRecipe, validationResul
   const normalizedOriginalRecipe = normalizeRecipeForPatch(originalRecipe);
   const normalizedDraftRecipe = normalizeRecipeForPatch(draftRecipe);
   const changedFields = getRecipeChanges(normalizedOriginalRecipe, normalizedDraftRecipe);
-  console.log("Original recipe:", normalizedOriginalRecipe);
-  console.log("Draft recipe:", normalizedDraftRecipe);
-  console.log("Detected changed fields:", changedFields);
 
   if (!validationResult?.ok) {
     return {

@@ -1783,48 +1783,6 @@ button {
   color: #ffffff;
 }
 
-.recipe-create-form h3 {
-  margin: 8px 0 0;
-}
-
-.recipe-create-rows {
-  display: grid;
-  gap: 8px;
-}
-
-.recipe-create-row {
-  display: grid;
-  gap: 8px;
-}
-
-.recipe-create-row--ingredient {
-  grid-template-columns: minmax(80px, 0.5fr) minmax(80px, 0.5fr) minmax(160px, 1fr) auto;
-}
-
-.recipe-create-row--step {
-  grid-template-columns: minmax(0, 1fr) auto;
-}
-
-.recipe-create-row input {
-  min-height: 38px;
-  padding: 8px 10px;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  font: inherit;
-}
-
-.recipe-create-preview {
-  padding: 12px;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  background: var(--color-surface-muted);
-}
-
-.recipe-create-preview h3,
-.recipe-create-preview p {
-  margin-top: 0;
-}
-
 .draft-status {
   display: flex;
   flex-wrap: wrap;
@@ -1921,6 +1879,46 @@ button {
   border: 1px solid #d99b90;
   background: #fff4f2;
   color: var(--color-error);
+}
+
+.save-status,
+.save-panel {
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface-muted);
+}
+
+.save-panel {
+  display: grid;
+  gap: 10px;
+}
+
+.save-panel h3,
+.save-panel p,
+.save-status {
+  margin: 0;
+}
+
+.save-status--success,
+.save-panel--success {
+  border-color: #a9d3bf;
+  background: #eefaf4;
+  color: var(--color-accent-strong);
+}
+
+.save-status--error,
+.save-panel--error {
+  border-color: #d99b90;
+  background: #fff4f2;
+  color: var(--color-error);
+}
+
+.save-status--neutral,
+.save-panel--neutral {
+  border-color: rgba(207, 226, 216, 0.9);
+  background: #f8fcf9;
+  color: var(--color-muted);
 }
 
 .patch-panel--blocked {
@@ -2020,11 +2018,6 @@ button {
   }
 
   .purchase-line {
-    grid-template-columns: 1fr;
-  }
-
-  .recipe-create-row--ingredient,
-  .recipe-create-row--step {
     grid-template-columns: 1fr;
   }
 
@@ -2355,7 +2348,6 @@ body {
 .food-cost-metric,
 .analytics-card,
 .forecast-card,
-.recipe-create-preview,
 .draft-status,
 .patch-field {
   border-color: rgba(207, 226, 216, 0.9);
@@ -2445,8 +2437,7 @@ body {
 .admin-field select,
 .admin-field textarea,
 .select-filter__control,
-.menu-assignment-recipes input[type="search"],
-.recipe-create-row input {
+.menu-assignment-recipes input[type="search"] {
   border-color: rgba(15, 143, 131, 0.22);
   background: #ffffff;
   color: var(--color-text);
@@ -2457,8 +2448,7 @@ body {
 .admin-field input:focus,
 .admin-field select:focus,
 .admin-field textarea:focus,
-.menu-assignment-recipes input[type="search"]:focus,
-.recipe-create-row input:focus {
+.menu-assignment-recipes input[type="search"]:focus {
   outline: 3px solid rgba(247, 183, 51, 0.32);
   border-color: var(--color-accent);
 }
