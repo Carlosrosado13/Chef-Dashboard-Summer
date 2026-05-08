@@ -51,7 +51,13 @@ function createTextareaField(name, label, values, placeholder) {
 
 function formatIngredients(ingredients) {
   return (ingredients || [])
-    .map((ingredient) => `${ingredient.amount ?? ""} | ${ingredient.unit ?? ""} | ${ingredient.name ?? ""}`)
+    .map((ingredient) => {
+      if (typeof ingredient === "string") {
+        return ingredient;
+      }
+
+      return `${ingredient.amount ?? ""} | ${ingredient.unit ?? ""} | ${ingredient.name ?? ""}`;
+    })
     .join("\n");
 }
 
@@ -116,7 +122,9 @@ export function renderRecipeEditor(container, recipe, options = {}) {
   actions.append(validateButton, resetButton, cancelButton);
   form.append(actions);
 
-  form.addEventListener("input", () => options.onChange?.(readRecipeForm(form, recipe)));
+  const emitChange = () => options.onChange?.(readRecipeForm(form, recipe));
+  form.addEventListener("input", emitChange);
+  form.addEventListener("change", emitChange);
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     options.onValidate?.(readRecipeForm(form, recipe));
@@ -171,14 +179,32 @@ function parseIngredients(value) {
     .split("\n")
     .map((line) => line.trim())
     .filter(Boolean)
-    .map((line) => {
-      const [amount, unit, ...nameParts] = line.split("|").map((part) => part.trim());
-      return {
-        amount: Number(amount),
-        unit: unit || "",
-        name: nameParts.join(" | ") || ""
-      };
-    });
+    .map(parseIngredientLine)
+    .filter((ingredient) => ingredient.name || ingredient.unit || ingredient.amount !== 0);
+}
+
+function parseIngredientLine(line) {
+  const parts = line.split("|").map((part) => part.trim());
+
+  if (parts.length >= 3) {
+    const [amount, unit, ...nameParts] = parts;
+    return {
+      amount: parseIngredientAmount(amount),
+      unit: unit || "",
+      name: nameParts.join(" | ") || ""
+    };
+  }
+
+  return {
+    amount: 0,
+    unit: "",
+    name: line
+  };
+}
+
+function parseIngredientAmount(value) {
+  const amount = Number(String(value || "").trim());
+  return Number.isFinite(amount) ? amount : 0;
 }
 
 export function renderValidation(container, result) {

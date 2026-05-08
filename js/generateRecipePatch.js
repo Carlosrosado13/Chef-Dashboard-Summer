@@ -4,6 +4,77 @@ function cloneValue(value) {
   return value === undefined ? undefined : structuredClone(value);
 }
 
+function normalizeText(value) {
+  return String(value ?? "").trim();
+}
+
+function normalizeAmount(value) {
+  if (typeof value === "number") {
+    return Number.isFinite(value) ? value : 0;
+  }
+
+  const parsed = Number(String(value ?? "").trim());
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function parseIngredientLine(line) {
+  const parts = String(line || "").split("|").map((part) => part.trim());
+
+  if (parts.length >= 3) {
+    const [amount, unit, ...nameParts] = parts;
+    return {
+      amount: normalizeAmount(amount),
+      unit: normalizeText(unit),
+      name: normalizeText(nameParts.join(" | "))
+    };
+  }
+
+  return {
+    amount: 0,
+    unit: "",
+    name: normalizeText(line)
+  };
+}
+
+function normalizeIngredient(ingredient) {
+  if (typeof ingredient === "string") {
+    return parseIngredientLine(ingredient);
+  }
+
+  return {
+    amount: normalizeAmount(ingredient?.amount),
+    unit: normalizeText(ingredient?.unit),
+    name: normalizeText(ingredient?.name)
+  };
+}
+
+function normalizeStringList(value) {
+  if (Array.isArray(value)) {
+    return value
+      .map((item) => normalizeText(item))
+      .filter(Boolean);
+  }
+
+  return String(value || "")
+    .split("\n")
+    .map((item) => normalizeText(item))
+    .filter(Boolean);
+}
+
+function normalizeRecipeForPatch(recipe = {}) {
+  return {
+    ...structuredClone(recipe),
+    title: normalizeText(recipe.title),
+    yield: normalizeText(recipe.yield),
+    category: normalizeText(recipe.category),
+    ingredients: Array.isArray(recipe.ingredients)
+      ? recipe.ingredients.map(normalizeIngredient).filter((ingredient) => ingredient.name || ingredient.unit || ingredient.amount !== 0)
+      : normalizeStringList(recipe.ingredients).map(parseIngredientLine),
+    steps: normalizeStringList(recipe.steps),
+    notes: normalizeStringList(recipe.notes)
+  };
+}
+
 function normalizeForComparison(value) {
   if (Array.isArray(value)) {
     return value.map(normalizeForComparison);
@@ -26,13 +97,15 @@ function valuesEqual(left, right) {
 }
 
 export function getRecipeChanges(originalRecipe, editedRecipe) {
+  const normalizedOriginalRecipe = normalizeRecipeForPatch(originalRecipe);
+  const normalizedEditedRecipe = normalizeRecipeForPatch(editedRecipe);
   const changedFields = {};
 
   for (const field of PATCH_FIELDS) {
-    if (!valuesEqual(originalRecipe?.[field], editedRecipe?.[field])) {
+    if (!valuesEqual(normalizedOriginalRecipe?.[field], normalizedEditedRecipe?.[field])) {
       changedFields[field] = {
-        original: cloneValue(originalRecipe?.[field]),
-        updated: cloneValue(editedRecipe?.[field])
+        original: cloneValue(normalizedOriginalRecipe?.[field]),
+        updated: cloneValue(normalizedEditedRecipe?.[field])
       };
     }
   }
@@ -40,14 +113,23 @@ export function getRecipeChanges(originalRecipe, editedRecipe) {
   return changedFields;
 }
 
-export function generateRecipePatch(originalRecipe, editedRecipe, validationResult, options = {}) {
-  const changedFields = getRecipeChanges(originalRecipe, editedRecipe);
+export function generateRecipePatch(originalRecipe, draftRecipe, validationResult, options = {}) {
+  const normalizedOriginalRecipe = normalizeRecipeForPatch(originalRecipe);
+  const normalizedDraftRecipe = normalizeRecipeForPatch(draftRecipe);
+  const changedFields = getRecipeChanges(normalizedOriginalRecipe, normalizedDraftRecipe);
+  console.log("Original recipe:", normalizedOriginalRecipe);
+  console.log("Draft recipe:", normalizedDraftRecipe);
   console.log("Detected changed fields:", changedFields);
 
   if (!validationResult?.ok) {
     return {
       ok: false,
       blocked: true,
+      operation: "updateRecipe",
+      source: options.source || "data/recipes/sample-recipes.json",
+      index: options.index,
+      originalTitle: normalizedOriginalRecipe?.title || "",
+      updatedTitle: normalizedDraftRecipe?.title || "",
       reason: "Edited recipe must pass validation before a patch can be generated.",
       errors: validationResult?.errors || [],
       changedFields,
@@ -61,8 +143,8 @@ export function generateRecipePatch(originalRecipe, editedRecipe, validationResu
     operation: "updateRecipe",
     source: options.source || "data/recipes/sample-recipes.json",
     index: options.index,
-    originalTitle: originalRecipe?.title || "",
-    updatedTitle: editedRecipe?.title || "",
+    originalTitle: normalizedOriginalRecipe?.title || "",
+    updatedTitle: normalizedDraftRecipe?.title || "",
     timestamp: new Date().toISOString(),
     changedFields,
     hasChanges: Object.keys(changedFields).length > 0

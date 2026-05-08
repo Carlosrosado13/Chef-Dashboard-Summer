@@ -302,8 +302,10 @@ function scheduleCurrentDraftSave() {
 }
 
 function logRecipeState() {
-  console.log("Recipe state updated:", state.draft);
+  const originalRecipe = state.selectedIndex === null ? null : state.recipes[state.selectedIndex];
   const patch = createPatchPreview();
+  console.log("Original recipe:", originalRecipe);
+  console.log("Draft recipe:", state.draft);
   console.log("Detected changed fields:", patch.changedFields || {});
 }
 
