@@ -200,6 +200,74 @@ function mapInstruction(instruction) {
   return stripHtml(firstDefined(instruction.text, instruction.name, ""));
 }
 
+function normalizeExtractedTextField(value, fallback = "") {
+  if (Array.isArray(value)) {
+    return normalizeExtractedTextField(value[0], fallback);
+  }
+
+  if (value && typeof value === "object") {
+    return normalizeExtractedTextField(
+      firstDefined(value.name, value.text, value.value, value.label),
+      fallback
+    );
+  }
+
+  const text = value === undefined || value === null ? "" : stripHtml(value);
+  return text || fallback;
+}
+
+function formatIngredientLine(ingredient) {
+  if (typeof ingredient === "string") {
+    return stripHtml(ingredient);
+  }
+
+  if (!ingredient || typeof ingredient !== "object") {
+    return "";
+  }
+
+  const amount = normalizeExtractedTextField(firstDefined(ingredient.amount, ingredient.quantity, ingredient.qty));
+  const unit = normalizeExtractedTextField(firstDefined(ingredient.unit, ingredient.measure, ingredient.uom));
+  const name = normalizeExtractedTextField(firstDefined(ingredient.name, ingredient.ingredient, ingredient.item));
+
+  return [amount, unit, name].filter(Boolean).join(" ").trim();
+}
+
+function normalizeExtractedIngredients(ingredients) {
+  const ingredientList = Array.isArray(ingredients) ? ingredients : [ingredients];
+
+  return ingredientList
+    .map(formatIngredientLine)
+    .filter((ingredient) => ingredient.length > 0);
+}
+
+function normalizeExtractedSteps(steps) {
+  const stepList = Array.isArray(steps) ? steps : [steps];
+
+  return stepList
+    .map(mapInstruction)
+    .filter((step) => step.length > 0);
+}
+
+export function normalizeExtractedRecipeForEditor(recipe) {
+  return {
+    title: normalizeExtractedTextField(firstDefined(recipe?.title, recipe?.name)),
+    category: normalizeExtractedTextField(
+      firstDefined(recipe?.category, recipe?.recipeCategory, recipe?.type, recipe?.section),
+      "Traditional"
+    ),
+    yield: normalizeExtractedTextField(
+      firstDefined(recipe?.yield, recipe?.recipeYield, recipe?.servings, recipe?.portions),
+      "24 servings"
+    ),
+    ingredients: normalizeExtractedIngredients(
+      firstDefined(recipe?.ingredients, recipe?.recipeIngredient, recipe?.items, [])
+    ),
+    steps: normalizeExtractedSteps(
+      firstDefined(recipe?.steps, recipe?.method, recipe?.instructions, recipe?.recipeInstructions, [])
+    )
+  };
+}
+
 function getMetaContent(html, name) {
   const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const pattern = new RegExp(`<meta[^>]+(?:name|property)=["']${escapedName}["'][^>]+content=["']([^"']+)["'][^>]*>`, "i");
@@ -436,7 +504,7 @@ export function extractRecipeFromHtml(html, sourceUrl = "") {
 }
 
 export function extractRecipeFromHtmlDocument(html, sourceUrl = "") {
-  return normalizeRecipe(extractRecipeFromHtml(html, sourceUrl));
+  return normalizeExtractedRecipeForEditor(extractRecipeFromHtml(html, sourceUrl));
 }
 
 export { normalizeRecipe };

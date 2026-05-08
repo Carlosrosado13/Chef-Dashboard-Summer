@@ -4,6 +4,19 @@ function trimString(value) {
   return typeof value === "string" ? value.trim() : value;
 }
 
+function normalizeTextField(value, fallback = "") {
+  if (Array.isArray(value)) {
+    return normalizeTextField(value[0], fallback);
+  }
+
+  if (value && typeof value === "object") {
+    return normalizeTextField(value.name || value.text || value.value || value.label, fallback);
+  }
+
+  const text = value === undefined || value === null ? "" : String(value).trim();
+  return text || fallback;
+}
+
 function normalizeAmount(amount) {
   if (typeof amount === "number") {
     return amount;
@@ -18,6 +31,10 @@ function normalizeAmount(amount) {
 }
 
 function isEmptyIngredient(ingredient) {
+  if (typeof ingredient === "string") {
+    return ingredient.trim() === "";
+  }
+
   if (!ingredient || typeof ingredient !== "object") {
     return true;
   }
@@ -29,10 +46,18 @@ function isEmptyIngredient(ingredient) {
 }
 
 function normalizeIngredient(ingredient) {
+  if (typeof ingredient === "string") {
+    return {
+      name: ingredient.trim(),
+      amount: 0,
+      unit: ""
+    };
+  }
+
   return {
-    name: trimString(ingredient.name) || "",
+    name: normalizeTextField(ingredient.name),
     amount: normalizeAmount(ingredient.amount),
-    unit: normalizeUnit(ingredient.unit)
+    unit: normalizeUnit(normalizeTextField(ingredient.unit))
   };
 }
 
@@ -41,7 +66,7 @@ function normalizeSteps(steps) {
 
   return stepList
     .filter((step) => step !== undefined && step !== null)
-    .map((step) => String(step).trim())
+    .map((step) => normalizeTextField(step))
     .filter((step) => step.length > 0);
 }
 
@@ -62,19 +87,17 @@ export function normalizeRecipe(recipe) {
   const normalizedRecipe = {};
 
   if (Object.hasOwn(recipe, "title")) {
-    normalizedRecipe.title = trimString(recipe.title);
+    normalizedRecipe.title = normalizeTextField(recipe.title);
   }
 
   if (Object.hasOwn(recipe, "yield")) {
-    normalizedRecipe.yield = trimString(recipe.yield);
+    normalizedRecipe.yield = normalizeTextField(recipe.yield, "24 servings");
   }
 
-  if (Object.hasOwn(recipe, "category")) {
-    normalizedRecipe.category = trimString(recipe.category);
-  }
+  normalizedRecipe.category = normalizeTextField(recipe.category, "Traditional");
 
   if (Object.hasOwn(recipe, "ingredients")) {
-    const ingredients = Array.isArray(recipe.ingredients) ? recipe.ingredients : [];
+    const ingredients = Array.isArray(recipe.ingredients) ? recipe.ingredients : [recipe.ingredients];
     normalizedRecipe.ingredients = ingredients
       .filter((ingredient) => !isEmptyIngredient(ingredient))
       .map(normalizeIngredient);

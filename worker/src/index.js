@@ -7,7 +7,6 @@ import {
 import { extractRecipeFromHtmlDocument } from "./extractRecipe.js";
 import { handleSaveDraft, handleValidatePatch } from "./recipePatchApi.js";
 import { handleCommitPatch } from "./recipePatchRoutes.js";
-import { validateRecipe } from "./validateRecipe.js";
 
 const ADMIN_LOGIN_PATH = "/api/admin/login";
 const ADMIN_LOGOUT_PATH = "/api/admin/logout";
@@ -56,6 +55,38 @@ function jsonResponse(body, status = 200, request = null) {
       ...createCorsHeaders(request)
     }
   });
+}
+
+function validateExtractedRecipeForEditor(recipe) {
+  const errors = [];
+
+  if (!recipe || typeof recipe !== "object") {
+    return {
+      ok: false,
+      errors: [{ message: "Extracted recipe must be an object." }]
+    };
+  }
+
+  if (typeof recipe.title !== "string" || recipe.title.trim() === "") {
+    errors.push({ message: "Recipe Name is required." });
+  }
+
+  if (typeof recipe.category !== "string" || recipe.category.trim() === "") {
+    errors.push({ message: "Recipe Category is required." });
+  }
+
+  if (!Array.isArray(recipe.ingredients) || recipe.ingredients.length === 0) {
+    errors.push({ message: "Ingredients are required." });
+  }
+
+  if (!Array.isArray(recipe.steps) || recipe.steps.length === 0) {
+    errors.push({ message: "Steps are required." });
+  }
+
+  return {
+    ok: errors.length === 0,
+    errors
+  };
 }
 
 function optionsResponse(request, allowedMethods) {
@@ -158,7 +189,7 @@ async function handleExtractRecipeUrl(request) {
     }, 422, request);
   }
 
-  const validation = validateRecipe(recipe);
+  const validation = validateExtractedRecipeForEditor(recipe);
   console.log(`[recipe-extract] validation=${validation.ok ? "ok" : "failed"}`);
 
   if (!validation.ok) {
