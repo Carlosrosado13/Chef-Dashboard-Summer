@@ -1,4 +1,9 @@
 export const PATCH_FIELDS = ["title", "yield", "category", "ingredients", "steps", "notes", "tags", "metadata"];
+const KNOWN_UNITS = new Set([
+  "bag", "bags", "bunch", "bunches", "can", "cans", "case", "cases", "clove", "cloves",
+  "cup", "cups", "each", "ea", "fl", "gal", "g", "kg", "lb", "lbs", "oz", "pt", "qt",
+  "t", "tbsp", "tablespoon", "tablespoons", "tsp", "teaspoon", "teaspoons"
+]);
 
 function cloneValue(value) {
   return value === undefined ? undefined : structuredClone(value);
@@ -29,6 +34,19 @@ function parseIngredientLine(line) {
     };
   }
 
+  const textParts = String(line || "").replace(/\s+/g, " ").trim().split(" ");
+  const amount = normalizeAmount(textParts[0]);
+
+  if (amount !== 0 && textParts.length >= 3) {
+    const unitCandidate = textParts[1].toLowerCase();
+    const hasKnownUnit = KNOWN_UNITS.has(unitCandidate);
+    return {
+      amount,
+      unit: hasKnownUnit ? normalizeText(textParts[1]) : "",
+      name: normalizeText(textParts.slice(hasKnownUnit ? 2 : 1).join(" "))
+    };
+  }
+
   return {
     amount: 0,
     unit: "",
@@ -51,13 +69,13 @@ function normalizeIngredient(ingredient) {
 function normalizeStringList(value) {
   if (Array.isArray(value)) {
     return value
-      .map((item) => normalizeText(item))
+      .map((item) => normalizeText(item).replace(/^\d+[\.)]\s*/, ""))
       .filter(Boolean);
   }
 
   return String(value || "")
     .split("\n")
-    .map((item) => normalizeText(item))
+    .map((item) => normalizeText(item).replace(/^\d+[\.)]\s*/, ""))
     .filter(Boolean);
 }
 

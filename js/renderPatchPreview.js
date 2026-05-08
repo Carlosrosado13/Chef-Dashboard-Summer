@@ -61,8 +61,8 @@ function renderChangedField(field, change) {
 
 function renderPatchActions(patch, options) {
   const actions = createElement("div", "patch-actions");
-  const applyButton = createElement("button", "filter-button", "Apply Patch");
-  const rollbackButton = createElement("button", "filter-button", "Rollback Last Patch");
+  const applyButton = createElement("button", "filter-button", "Save Previewed Changes");
+  const rollbackButton = createElement("button", "filter-button", "Undo Last Save");
 
   applyButton.type = "button";
   rollbackButton.type = "button";
@@ -93,7 +93,7 @@ export function renderPatchPreview(container, patch, options = {}) {
   }
 
   if (!patch || Object.keys(patch).length === 0) {
-    container.append(createElement("p", "admin-muted", "Patch preview will appear after selecting and editing a recipe."));
+    container.append(createElement("p", "admin-muted", "Save preview will appear after selecting or entering a recipe."));
     return;
   }
 
@@ -107,7 +107,7 @@ export function renderPatchPreview(container, patch, options = {}) {
   const summary = createElement(
     "p",
     "admin-muted",
-    `${patch.operation} | ${patch.source} | ${patch.timestamp}`
+    patch.hasChanges ? "Ready to save this recipe." : "No recipe changes yet."
   );
   panel.append(renderPatchActions(patch, options), summary);
 
@@ -118,8 +118,5 @@ export function renderPatchPreview(container, patch, options = {}) {
       panel.append(renderChangedField(field, change));
     }
   }
-
-  const raw = createElement("pre", "patch-preview", JSON.stringify(patch, null, 2));
-  panel.append(raw);
   container.append(panel);
 }

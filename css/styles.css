@@ -1737,6 +1737,44 @@ button {
   gap: 10px;
 }
 
+.production-recipe-form {
+  gap: 14px;
+}
+
+.production-recipe-form__header {
+  display: grid;
+  gap: 4px;
+}
+
+.production-recipe-form__header p {
+  margin: 0;
+}
+
+.production-recipe-form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 12px;
+}
+
+.production-recipe-form__grid .admin-field:first-child {
+  grid-column: 1 / -1;
+}
+
+.production-recipe-form__textarea textarea {
+  min-height: 150px;
+  line-height: 1.45;
+}
+
+.production-recipe-form__primary {
+  border-color: var(--color-accent-strong);
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+.production-recipe-form__actions {
+  justify-content: flex-start;
+}
+
 .create-recipe-button {
   width: 100%;
   margin-bottom: 12px;
@@ -2010,6 +2048,10 @@ button {
   }
 
   .menu-assignment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .production-recipe-form__grid {
     grid-template-columns: 1fr;
   }
 }

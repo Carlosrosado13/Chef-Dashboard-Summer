@@ -33,7 +33,7 @@ function renderRecipeList(container, recipes, selectedRecipeId, onSelect) {
     const recipeId = createRecipeId(recipe);
     const button = el("button", "recipe-list__item", recipe.title);
     button.type = "button";
-    button.setAttribute("aria-pressed", String(recipeId === selectedRecipeId));
+    button.setAttribute("aria-pressed", String(recipeId === selectedRecipeId || recipe.title === selectedRecipeId));
     button.addEventListener("click", () => onSelect(recipeId));
     container.append(button);
   }
@@ -100,7 +100,7 @@ function renderPatchSummary(container, patch) {
 export function renderMenuAssignmentEditor(container, state, options = {}) {
   const mealTypes = Object.keys(state.menuData || {});
   const menuOptions = getMenuOptions(state.menuData, state.assignment.mealType, state.assignment.week);
-  const selectedRecipe = state.recipes.find((recipe) => createRecipeId(recipe) === state.assignment.recipeId);
+  const selectedRecipe = state.recipes.find((recipe) => createRecipeId(recipe) === state.assignment.recipeId || recipe.title === state.assignment.recipeId);
   const filteredRecipes = state.recipes.filter((recipe) => {
     const query = state.recipeQuery.toLowerCase().trim();
     return !query || `${recipe.title} ${recipe.category}`.toLowerCase().includes(query);

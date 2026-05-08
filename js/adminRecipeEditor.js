@@ -1,5 +1,5 @@
 import { adminFetch, initializeAdminAuth } from "./adminAuth.js";
-import { initMenuAssignment, updateMenuRecipeReferences } from "./adminMenuAssignment.js";
+import { assignRecipeToMenuSlot, initMenuAssignment, updateMenuRecipeReferences } from "./adminMenuAssignment.js";
 import { loadRecipes } from "./loadRecipes.js";
 import { applyRecipePatch, rollbackRecipePatch } from "./applyRecipePatch.js";
 import { generateCreateRecipePatch, generateRecipePatch } from "./generateRecipePatch.js";
@@ -11,8 +11,7 @@ import {
   loadRecipeDraft
 } from "./recipeDraftManager.js";
 import {
-  createEmptyRecipeDraft,
-  renderRecipeCreateWizard
+  createEmptyRecipeDraft
 } from "./renderRecipeCreateWizard.js";
 import {
   renderRecipeEditor,
@@ -37,7 +36,13 @@ const state = {
   importUrl: "",
   importStatus: null,
   isDirty: false,
-  localSaveStatus: "idle"
+  localSaveStatus: "idle",
+  productionAssignment: {
+    mealType: "dinner",
+    week: "Week 1",
+    day: "Monday",
+    category: "Elevated"
+  }
 };
 
 const draftSaver = createDebouncedRecipeDraftSaver(500);
@@ -86,6 +91,15 @@ function clearError() {
 
 function getSelectedRecipe() {
   return state.selectedIndex === null ? null : state.recipes[state.selectedIndex];
+}
+
+function normalizeProductionAssignment(assignment = {}) {
+  return {
+    mealType: "dinner",
+    week: assignment.week || state.productionAssignment.week || "Week 1",
+    day: assignment.day || state.productionAssignment.day || "Monday",
+    category: assignment.category || state.productionAssignment.category || "Elevated"
+  };
 }
 
 function getFilteredRecipes() {
@@ -137,6 +151,7 @@ function startCreateRecipe() {
   state.entryMode = "scratch";
   state.selectedIndex = null;
   state.draft = createEmptyRecipeDraft();
+  state.draft.category = state.productionAssignment.category;
   state.validation = validateRecipeAgainstSchema(state.draft, state.schema);
   state.draftRecord = null;
   state.notice = null;
@@ -189,7 +204,8 @@ function cancelEditing() {
   renderAdmin();
 }
 
-function updateCreateDraft(recipe) {
+function updateCreateDraft(recipe, assignment) {
+  updateProductionAssignment(assignment);
   state.draft = recipe;
   state.validation = validateRecipeAgainstSchema(recipe, state.schema);
   state.isDirty = true;
@@ -199,7 +215,12 @@ function updateCreateDraft(recipe) {
   updateValidationAndPatch();
 }
 
-function validateCreateDraft(recipe) {
+function updateProductionAssignment(assignment) {
+  state.productionAssignment = normalizeProductionAssignment(assignment);
+}
+
+function validateCreateDraft(recipe, assignment) {
+  updateProductionAssignment(assignment);
   state.draft = recipe;
   state.validation = validateRecipeAgainstSchema(recipe, state.schema);
   state.isDirty = true;
@@ -212,6 +233,7 @@ function validateCreateDraft(recipe) {
 function resetCreateDraft() {
   clearCurrentDraft();
   state.draft = createEmptyRecipeDraft();
+  state.draft.category = state.productionAssignment.category;
   state.validation = validateRecipeAgainstSchema(state.draft, state.schema);
   state.isDirty = false;
   state.localSaveStatus = "idle";
@@ -238,6 +260,7 @@ function useImportedRecipe(recipe) {
   state.entryMode = "import";
   state.selectedIndex = null;
   state.draft = structuredClone(recipe);
+  state.draft.category = state.draft.category || state.productionAssignment.category;
   state.validation = validateRecipeAgainstSchema(state.draft, state.schema);
   state.draftRecord = null;
   state.notice = {
@@ -249,7 +272,8 @@ function useImportedRecipe(recipe) {
   renderAdmin();
 }
 
-function updateDraft(recipe) {
+function updateDraft(recipe, assignment) {
+  updateProductionAssignment(assignment);
   state.draft = recipe;
   state.validation = validateRecipeAgainstSchema(recipe, state.schema);
   state.isDirty = true;
@@ -259,7 +283,8 @@ function updateDraft(recipe) {
   updateValidationAndPatch();
 }
 
-function validateDraft(recipe) {
+function validateDraft(recipe, assignment) {
+  updateProductionAssignment(assignment);
   state.draft = recipe;
   state.validation = validateRecipeAgainstSchema(recipe, state.schema);
   state.isDirty = true;
@@ -267,6 +292,20 @@ function validateDraft(recipe) {
   scheduleCurrentDraftSave();
   logRecipeState();
   updateValidationAndPatch();
+}
+
+function saveDraft(recipe, assignment) {
+  updateDraft(recipe, assignment);
+  window.setTimeout(() => {
+    applyCurrentPatch();
+  });
+}
+
+function saveCreateDraft(recipe, assignment) {
+  updateCreateDraft(recipe, assignment);
+  window.setTimeout(() => {
+    applyCurrentPatch();
+  });
 }
 
 function getCurrentDraftId() {
@@ -426,9 +465,12 @@ async function applyCurrentPatch() {
       appliedAt: new Date().toISOString(),
       rollbackRecipe: null
     });
+    const menuAssignment = assignRecipeToMenuSlot(state.productionAssignment, recipe.title);
     state.notice = {
-      tone: "success",
-      message: "New recipe added in memory for review and testing."
+      tone: menuAssignment.ok ? "success" : "error",
+      message: menuAssignment.ok
+        ? `Recipe saved and assigned to ${state.productionAssignment.week} ${state.productionAssignment.day} ${state.productionAssignment.category}.`
+        : `Recipe saved, but menu assignment failed: ${menuAssignment.error}`
     };
     state.isDirty = false;
     state.localSaveStatus = "idle";
@@ -457,12 +499,14 @@ async function applyCurrentPatch() {
   const linkedMenuUpdate = result.linkedMenuUpdate?.hasRecipeIdChange
     ? updateMenuRecipeReferences(result.linkedMenuUpdate.originalRecipeId, result.linkedMenuUpdate.updatedRecipeId)
     : { updatedCount: 0 };
+  const selectedMenuAssignment = assignRecipeToMenuSlot(state.productionAssignment, result.appliedRecipe.title);
 
   state.recipes = result.recipes;
   state.patchHistory.push({
     ...result.historyEntry,
     github: commitResult.ok ? commitResult.github : null,
-    linkedMenuUpdate
+    linkedMenuUpdate,
+    selectedMenuAssignment
   });
   state.selectedIndex = result.historyEntry.index;
   state.draft = structuredClone(result.appliedRecipe);
@@ -476,7 +520,7 @@ async function applyCurrentPatch() {
   state.draftRecord = null;
   state.notice = {
     tone: commitResult.ok ? "success" : "error",
-    message: createApplyPatchMessage(result.historyEntry.appliedAt, commitResult, linkedMenuUpdate)
+    message: createApplyPatchMessage(result.historyEntry.appliedAt, commitResult, linkedMenuUpdate, selectedMenuAssignment)
   };
   renderAdmin();
 }
@@ -509,16 +553,19 @@ async function commitRecipePatch(patch, originalRecipe, updatedRecipe) {
   }
 }
 
-function createApplyPatchMessage(appliedAt, commitResult, linkedMenuUpdate) {
+function createApplyPatchMessage(appliedAt, commitResult, linkedMenuUpdate, selectedMenuAssignment) {
   const menuMessage = linkedMenuUpdate.updatedCount > 0
     ? ` ${linkedMenuUpdate.updatedCount} linked menu assignment${linkedMenuUpdate.updatedCount === 1 ? "" : "s"} updated.`
     : "";
+  const selectedSlotMessage = selectedMenuAssignment?.ok
+    ? ` Assigned to ${state.productionAssignment.week} ${state.productionAssignment.day} ${state.productionAssignment.category}.`
+    : ` Menu assignment failed: ${selectedMenuAssignment?.error || "Selected slot unavailable."}`;
 
   if (commitResult.ok) {
-    return `Patch applied and committed to ${commitResult.source} at ${appliedAt}.${menuMessage}`;
+    return `Recipe saved and committed to ${commitResult.source} at ${appliedAt}.${menuMessage}${selectedSlotMessage}`;
   }
 
-  return `Patch applied in memory at ${appliedAt}, but the recipe file commit did not complete: ${commitResult.error}.${menuMessage}`;
+  return `Recipe saved in memory at ${appliedAt}, but the recipe file commit did not complete: ${commitResult.error}.${menuMessage}${selectedSlotMessage}`;
 }
 
 function rollbackLastPatch() {
@@ -872,17 +919,28 @@ function openExtractionPreview(recipe, validation) {
   document.body.append(overlay);
 
   const previewOptions = {
-    onChange(recipeDraft) {
+    mode: "create",
+    assignment: state.productionAssignment,
+    onChange(recipeDraft, assignment) {
       modalDraft = recipeDraft;
+      updateProductionAssignment(assignment);
       refreshValidation();
     },
-    onValidate(recipeDraft) {
+    onValidate(recipeDraft, assignment) {
       modalDraft = recipeDraft;
+      updateProductionAssignment(assignment);
+      refreshValidation();
+    },
+    onSave(recipeDraft, assignment) {
+      modalDraft = recipeDraft;
+      updateProductionAssignment(assignment);
+      useImportedRecipe(modalDraft);
+      overlay.remove();
       refreshValidation();
     },
     onReset() {
       modalDraft = structuredClone(recipe);
-      renderRecipeCreateWizard(editor, modalDraft, previewOptions);
+      renderRecipeEditor(editor, modalDraft, previewOptions);
       refreshValidation();
     },
     onCancel() {
@@ -890,7 +948,7 @@ function openExtractionPreview(recipe, validation) {
     }
   };
 
-  renderRecipeCreateWizard(editor, modalDraft, previewOptions);
+  renderRecipeEditor(editor, modalDraft, previewOptions);
   renderValidation(validationRoot, modalValidation);
   useButton.disabled = !modalValidation.ok;
 }
@@ -899,16 +957,22 @@ function renderAdmin() {
   renderEntryControls();
   renderRecipeList(listRoot, getFilteredRecipes(), state.selectedIndex, selectRecipe);
   if (state.mode === "create") {
-    renderRecipeCreateWizard(editorRoot, state.draft, {
+    renderRecipeEditor(editorRoot, state.draft, {
+      mode: "create",
+      assignment: state.productionAssignment,
       onChange: updateCreateDraft,
       onValidate: validateCreateDraft,
+      onSave: saveCreateDraft,
       onReset: resetCreateDraft,
       onCancel: cancelCreateRecipe
     });
   } else {
     renderRecipeEditor(editorRoot, state.draft, {
+      mode: "edit",
+      assignment: state.productionAssignment,
       onChange: updateDraft,
       onValidate: validateDraft,
+      onSave: saveDraft,
       onReset: resetDraft,
       onCancel: cancelEditing
     });

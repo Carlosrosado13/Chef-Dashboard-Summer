@@ -206,3 +206,44 @@ export function updateMenuRecipeReferences(originalRecipeId, updatedRecipeId) {
     menuData: state.menuData
   };
 }
+
+export function assignRecipeToMenuSlot(assignment = {}, recipeTitle = "") {
+  const mealType = assignment.mealType || "dinner";
+  const week = assignment.week || "Week 1";
+  const day = assignment.day || "Monday";
+  const category = assignment.category || "Elevated";
+
+  if (!state.menuData?.[mealType]?.weeks?.[week]?.days?.[day]) {
+    return {
+      ok: false,
+      updatedCount: 0,
+      error: "Selected menu slot is not available.",
+      menuData: state.menuData
+    };
+  }
+
+  const nextMenuData = structuredClone(state.menuData);
+  const dayMenu = nextMenuData[mealType].weeks[week].days[day];
+  const originalValue = dayMenu[category] || "";
+
+  dayMenu[category] = recipeTitle;
+  state.menuData = nextMenuData;
+  state.assignment = normalizeSelection({
+    mealType,
+    week,
+    day,
+    category,
+    recipeId: recipeTitle,
+    action: "assign"
+  });
+  updatePatch();
+  render();
+
+  return {
+    ok: true,
+    updatedCount: originalValue === recipeTitle ? 0 : 1,
+    originalValue,
+    updatedValue: recipeTitle,
+    menuData: state.menuData
+  };
+}

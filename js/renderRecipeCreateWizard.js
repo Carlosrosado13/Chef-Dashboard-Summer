@@ -70,7 +70,7 @@ export function createEmptyRecipeDraft() {
   return {
     title: "",
     yield: "",
-    category: "",
+    category: "Elevated",
     ingredients: [
       {
         name: "",

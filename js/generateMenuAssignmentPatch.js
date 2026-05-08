@@ -30,7 +30,7 @@ export function validateMenuAssignment(menuData, recipes, assignment) {
   if (!categories.includes(assignment.category)) errors.push({ message: "Select a valid menu category." });
 
   if (assignment.action !== "remove") {
-    const recipeExists = recipes.some((recipe) => createRecipeId(recipe) === assignment.recipeId);
+    const recipeExists = recipes.some((recipe) => createRecipeId(recipe) === assignment.recipeId || recipe.title === assignment.recipeId);
     if (!recipeExists) errors.push({ message: "Selected recipe does not exist." });
   }
 
