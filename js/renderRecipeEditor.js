@@ -23,6 +23,19 @@ function createInputField(name, label, value) {
   return wrapper;
 }
 
+function createJsonTextareaField(name, label, value, placeholder) {
+  const wrapper = createElement("label", "admin-field");
+  const labelText = createElement("span", "", label);
+  const textarea = createElement("textarea", "");
+  textarea.name = name;
+  textarea.rows = 6;
+  textarea.placeholder = placeholder;
+  textarea.value = value === undefined ? "" : JSON.stringify(value, null, 2);
+
+  wrapper.append(labelText, textarea);
+  return wrapper;
+}
+
 function createTextareaField(name, label, values, placeholder) {
   const wrapper = createElement("label", "admin-field");
   const labelText = createElement("span", "", label);
@@ -85,7 +98,9 @@ export function renderRecipeEditor(container, recipe, options = {}) {
       "amount | unit | name"
     ),
     createTextareaField("steps", "Steps", recipe.steps, "One step per line"),
-    createTextareaField("notes", "Notes", recipe.notes, "One note per line")
+    createTextareaField("notes", "Notes", recipe.notes, "One note per line"),
+    createInputField("tags", "Tags", (recipe.tags || []).join(", ")),
+    createJsonTextareaField("metadata", "Metadata", recipe.metadata, "{ \"source\": \"...\" }")
   );
 
   const actions = createElement("div", "admin-actions");
@@ -101,19 +116,19 @@ export function renderRecipeEditor(container, recipe, options = {}) {
   actions.append(validateButton, resetButton, cancelButton);
   form.append(actions);
 
-  form.addEventListener("input", () => options.onChange?.(readRecipeForm(form)));
+  form.addEventListener("input", () => options.onChange?.(readRecipeForm(form, recipe)));
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    options.onValidate?.(readRecipeForm(form));
+    options.onValidate?.(readRecipeForm(form, recipe));
   });
 
   container.replaceChildren(form);
 }
 
-export function readRecipeForm(form) {
+export function readRecipeForm(form, baseRecipe = {}) {
   const formData = new FormData(form);
-
-  return {
+  const recipe = {
+    ...structuredClone(baseRecipe),
     title: String(formData.get("title") || "").trim(),
     yield: String(formData.get("yield") || "").trim(),
     category: String(formData.get("category") || "").trim(),
@@ -127,6 +142,28 @@ export function readRecipeForm(form) {
       .map((note) => note.trim())
       .filter(Boolean)
   };
+
+  const tags = String(formData.get("tags") || "")
+    .split(",")
+    .map((tag) => tag.trim())
+    .filter(Boolean);
+
+  if (tags.length > 0 || Object.hasOwn(baseRecipe, "tags")) {
+    recipe.tags = tags;
+  }
+
+  const metadataValue = String(formData.get("metadata") || "").trim();
+  if (metadataValue) {
+    try {
+      recipe.metadata = JSON.parse(metadataValue);
+    } catch {
+      recipe.metadata = metadataValue;
+    }
+  } else if (Object.hasOwn(baseRecipe, "metadata")) {
+    delete recipe.metadata;
+  }
+
+  return recipe;
 }
 
 function parseIngredients(value) {

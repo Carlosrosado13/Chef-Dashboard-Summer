@@ -32,6 +32,12 @@ function renderBlockedPatch(patch) {
     panel.append(list);
   }
 
+  if (patch.hasChanges) {
+    for (const [field, change] of Object.entries(patch.changedFields || {})) {
+      panel.append(renderChangedField(field, change));
+    }
+  }
+
   return panel;
 }
 

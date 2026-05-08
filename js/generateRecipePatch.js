@@ -1,11 +1,28 @@
-const PATCH_FIELDS = ["title", "yield", "category", "ingredients", "steps", "notes"];
+export const PATCH_FIELDS = ["title", "yield", "category", "ingredients", "steps", "notes", "tags", "metadata"];
 
 function cloneValue(value) {
   return value === undefined ? undefined : structuredClone(value);
 }
 
+function normalizeForComparison(value) {
+  if (Array.isArray(value)) {
+    return value.map(normalizeForComparison);
+  }
+
+  if (value && typeof value === "object") {
+    return Object.keys(value)
+      .sort()
+      .reduce((normalized, key) => {
+        normalized[key] = normalizeForComparison(value[key]);
+        return normalized;
+      }, {});
+  }
+
+  return value;
+}
+
 function valuesEqual(left, right) {
-  return JSON.stringify(left) === JSON.stringify(right);
+  return JSON.stringify(normalizeForComparison(left)) === JSON.stringify(normalizeForComparison(right));
 }
 
 export function getRecipeChanges(originalRecipe, editedRecipe) {
@@ -24,17 +41,20 @@ export function getRecipeChanges(originalRecipe, editedRecipe) {
 }
 
 export function generateRecipePatch(originalRecipe, editedRecipe, validationResult, options = {}) {
+  const changedFields = getRecipeChanges(originalRecipe, editedRecipe);
+  console.log("Detected changed fields:", changedFields);
+
   if (!validationResult?.ok) {
     return {
       ok: false,
       blocked: true,
       reason: "Edited recipe must pass validation before a patch can be generated.",
       errors: validationResult?.errors || [],
+      changedFields,
+      hasChanges: Object.keys(changedFields).length > 0,
       timestamp: new Date().toISOString()
     };
   }
-
-  const changedFields = getRecipeChanges(originalRecipe, editedRecipe);
 
   return {
     ok: true,

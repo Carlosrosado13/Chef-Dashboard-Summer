@@ -15,8 +15,25 @@ function cloneValue(value) {
   return structuredClone(value);
 }
 
+function normalizeForComparison(value) {
+  if (Array.isArray(value)) {
+    return value.map(normalizeForComparison);
+  }
+
+  if (value && typeof value === "object") {
+    return Object.keys(value)
+      .sort()
+      .reduce((normalized, key) => {
+        normalized[key] = normalizeForComparison(value[key]);
+        return normalized;
+      }, {});
+  }
+
+  return value;
+}
+
 function valuesEqual(left, right) {
-  return JSON.stringify(left) === JSON.stringify(right);
+  return JSON.stringify(normalizeForComparison(left)) === JSON.stringify(normalizeForComparison(right));
 }
 
 function encodeBase64(value) {

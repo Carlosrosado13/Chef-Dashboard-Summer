@@ -20,6 +20,29 @@ export function saveRecipeDraft(recipeId, draft) {
   return record;
 }
 
+export function createDebouncedRecipeDraftSaver(delay = 500) {
+  let timerId = null;
+
+  function cancel() {
+    if (timerId !== null) {
+      window.clearTimeout(timerId);
+      timerId = null;
+    }
+  }
+
+  return {
+    schedule(recipeId, draft, onSaved) {
+      cancel();
+      timerId = window.setTimeout(() => {
+        timerId = null;
+        const record = saveRecipeDraft(recipeId, draft);
+        onSaved?.(record);
+      }, delay);
+    },
+    cancel
+  };
+}
+
 export function loadRecipeDraft(recipeId) {
   const rawDraft = localStorage.getItem(getDraftKey(recipeId));
 

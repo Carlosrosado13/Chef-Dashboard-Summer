@@ -1,14 +1,14 @@
 import { adminFetch, initializeAdminAuth } from "./adminAuth.js";
-import { initMenuAssignment } from "./adminMenuAssignment.js";
+import { initMenuAssignment, updateMenuRecipeReferences } from "./adminMenuAssignment.js";
 import { loadRecipes } from "./loadRecipes.js";
 import { applyRecipePatch, rollbackRecipePatch } from "./applyRecipePatch.js";
 import { generateCreateRecipePatch, generateRecipePatch } from "./generateRecipePatch.js";
 import { renderPatchPreview } from "./renderPatchPreview.js";
 import {
   clearRecipeDraft,
+  createDebouncedRecipeDraftSaver,
   getRecipeDraftId,
-  loadRecipeDraft,
-  saveRecipeDraft
+  loadRecipeDraft
 } from "./recipeDraftManager.js";
 import {
   createEmptyRecipeDraft,
@@ -36,8 +36,11 @@ const state = {
   entryMode: null,
   importUrl: "",
   importStatus: null,
-  isDirty: false
+  isDirty: false,
+  localSaveStatus: "idle"
 };
+
+const draftSaver = createDebouncedRecipeDraftSaver(500);
 
 let statusElement;
 let errorElement;
@@ -104,12 +107,14 @@ function selectRecipe(index) {
     return;
   }
 
+  clearCurrentDraft();
   state.selectedIndex = index;
   state.mode = "edit";
   const recipe = state.recipes[index];
   const draftRecord = loadRecipeDraft(getRecipeDraftId(recipe, index));
   state.draftRecord = null;
   state.draft = structuredClone(recipe);
+  state.localSaveStatus = "idle";
 
   if (draftRecord && window.confirm(`Restore locally saved draft from ${formatTimestamp(draftRecord.savedAt)}?`)) {
     state.draft = structuredClone(draftRecord.draft);
@@ -127,6 +132,7 @@ function startCreateRecipe() {
     return;
   }
 
+  clearCurrentDraft();
   state.mode = "create";
   state.entryMode = "scratch";
   state.selectedIndex = null;
@@ -135,6 +141,7 @@ function startCreateRecipe() {
   state.draftRecord = null;
   state.notice = null;
   state.isDirty = false;
+  state.localSaveStatus = "idle";
   renderAdmin();
 }
 
@@ -143,6 +150,7 @@ function startImportRecipe() {
     return;
   }
 
+  clearCurrentDraft();
   state.entryMode = "import";
   state.selectedIndex = null;
   state.mode = "edit";
@@ -151,6 +159,7 @@ function startImportRecipe() {
   state.draftRecord = null;
   state.notice = null;
   state.isDirty = false;
+  state.localSaveStatus = "idle";
   renderAdmin();
 }
 
@@ -159,6 +168,7 @@ function resetDraft() {
   state.draft = recipe ? structuredClone(recipe) : null;
   state.validation = null;
   state.isDirty = false;
+  state.localSaveStatus = "idle";
   clearCurrentDraft();
   renderAdmin();
 }
@@ -168,12 +178,14 @@ function cancelEditing() {
     return;
   }
 
+  clearCurrentDraft();
   state.selectedIndex = null;
   state.mode = "edit";
   state.draft = null;
   state.validation = null;
   state.draftRecord = null;
   state.isDirty = false;
+  state.localSaveStatus = "idle";
   renderAdmin();
 }
 
@@ -181,6 +193,9 @@ function updateCreateDraft(recipe) {
   state.draft = recipe;
   state.validation = validateRecipeAgainstSchema(recipe, state.schema);
   state.isDirty = true;
+  state.localSaveStatus = "unsaved";
+  scheduleCurrentDraftSave();
+  logRecipeState();
   updateValidationAndPatch();
 }
 
@@ -188,13 +203,18 @@ function validateCreateDraft(recipe) {
   state.draft = recipe;
   state.validation = validateRecipeAgainstSchema(recipe, state.schema);
   state.isDirty = true;
+  state.localSaveStatus = "unsaved";
+  scheduleCurrentDraftSave();
+  logRecipeState();
   updateValidationAndPatch();
 }
 
 function resetCreateDraft() {
+  clearCurrentDraft();
   state.draft = createEmptyRecipeDraft();
   state.validation = validateRecipeAgainstSchema(state.draft, state.schema);
   state.isDirty = false;
+  state.localSaveStatus = "idle";
   renderAdmin();
 }
 
@@ -203,11 +223,13 @@ function cancelCreateRecipe() {
     return;
   }
 
+  clearCurrentDraft();
   state.mode = "edit";
   state.entryMode = null;
   state.draft = null;
   state.validation = null;
   state.isDirty = false;
+  state.localSaveStatus = "idle";
   renderAdmin();
 }
 
@@ -223,6 +245,7 @@ function useImportedRecipe(recipe) {
     message: "Imported recipe loaded into the editor. Review and correct it before saving."
   };
   state.isDirty = true;
+  state.localSaveStatus = "unsaved";
   renderAdmin();
 }
 
@@ -230,7 +253,9 @@ function updateDraft(recipe) {
   state.draft = recipe;
   state.validation = validateRecipeAgainstSchema(recipe, state.schema);
   state.isDirty = true;
-  persistCurrentDraft();
+  state.localSaveStatus = "unsaved";
+  scheduleCurrentDraftSave();
+  logRecipeState();
   updateValidationAndPatch();
 }
 
@@ -238,18 +263,48 @@ function validateDraft(recipe) {
   state.draft = recipe;
   state.validation = validateRecipeAgainstSchema(recipe, state.schema);
   state.isDirty = true;
-  persistCurrentDraft();
+  state.localSaveStatus = "unsaved";
+  scheduleCurrentDraftSave();
+  logRecipeState();
   updateValidationAndPatch();
 }
 
-function persistCurrentDraft() {
-  if (state.selectedIndex === null || !state.draft) {
+function getCurrentDraftId() {
+  if (state.selectedIndex !== null) {
+    return getRecipeDraftId(state.recipes[state.selectedIndex], state.selectedIndex);
+  }
+
+  if (state.mode === "create") {
+    return `create:${state.entryMode || "scratch"}`;
+  }
+
+  return null;
+}
+
+function scheduleCurrentDraftSave() {
+  if (!state.draft) {
     return;
   }
 
-  const recipeId = getRecipeDraftId(state.recipes[state.selectedIndex], state.selectedIndex);
-  state.draftRecord = saveRecipeDraft(recipeId, state.draft);
+  const recipeId = getCurrentDraftId();
+  if (!recipeId) {
+    return;
+  }
+
+  state.localSaveStatus = "unsaved";
   renderDraftStatus();
+  draftSaver.schedule(recipeId, state.draft, (record) => {
+    state.draftRecord = record;
+    state.localSaveStatus = "saved";
+    renderDraftStatus();
+    setStatus(createWorkflowStatusMessage(), state.isDirty ? "error" : "success");
+  });
+}
+
+function logRecipeState() {
+  console.log("Recipe state updated:", state.draft);
+  const patch = createPatchPreview();
+  console.log("Detected changed fields:", patch.changedFields || {});
 }
 
 function updateValidationAndPatch() {
@@ -329,6 +384,8 @@ function validateRecipeAgainstSchema(recipe, schema) {
   }
 
   validateNotes(recipe, errors);
+  validateTags(recipe, errors);
+  validateMetadata(recipe, errors);
 
   return errors.length === 0 ? { ok: true } : { ok: false, errors };
 }
@@ -337,10 +394,11 @@ function validateCurrentSchema(recipe) {
   return validateRecipeAgainstSchema(recipe, state.schema);
 }
 
-function applyCurrentPatch() {
+async function applyCurrentPatch() {
   const patch = createPatchPreview();
 
   if (patch.operation === "createRecipe") {
+    const draftId = getCurrentDraftId();
     const recipe = structuredClone(patch.recipe);
     const validation = validateCurrentSchema(recipe);
 
@@ -371,10 +429,16 @@ function applyCurrentPatch() {
       message: "New recipe added in memory for review and testing."
     };
     state.isDirty = false;
+    state.localSaveStatus = "idle";
+    if (draftId) {
+      clearRecipeDraft(draftId);
+    }
+    state.draftRecord = null;
     renderAdmin();
     return;
   }
 
+  const draftId = getCurrentDraftId();
   const result = applyRecipePatch(state.recipes, patch, validateCurrentSchema);
 
   if (!result.ok) {
@@ -387,18 +451,72 @@ function applyCurrentPatch() {
     return;
   }
 
+  const commitResult = await commitRecipePatch(patch, state.recipes[patch.index], result.appliedRecipe);
+  const linkedMenuUpdate = result.linkedMenuUpdate?.hasRecipeIdChange
+    ? updateMenuRecipeReferences(result.linkedMenuUpdate.originalRecipeId, result.linkedMenuUpdate.updatedRecipeId)
+    : { updatedCount: 0 };
+
   state.recipes = result.recipes;
-  state.patchHistory.push(result.historyEntry);
+  state.patchHistory.push({
+    ...result.historyEntry,
+    github: commitResult.ok ? commitResult.github : null,
+    linkedMenuUpdate
+  });
   state.selectedIndex = result.historyEntry.index;
   state.draft = structuredClone(result.appliedRecipe);
   state.validation = validateCurrentSchema(state.draft);
   state.isDirty = false;
-  clearCurrentDraft();
+  state.localSaveStatus = "idle";
+  draftSaver.cancel();
+  if (draftId) {
+    clearRecipeDraft(draftId);
+  }
+  state.draftRecord = null;
   state.notice = {
-    tone: "success",
-    message: `Patch applied in memory at ${result.historyEntry.appliedAt}.`
+    tone: commitResult.ok ? "success" : "error",
+    message: createApplyPatchMessage(result.historyEntry.appliedAt, commitResult, linkedMenuUpdate)
   };
   renderAdmin();
+}
+
+async function commitRecipePatch(patch, originalRecipe, updatedRecipe) {
+  try {
+    const response = await adminFetch("/api/recipe/commit-patch", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        patch,
+        originalRecipe,
+        updatedRecipe
+      })
+    });
+    const result = await response.json();
+
+    if (!response.ok || !result.ok) {
+      throw new Error(result.error || "Recipe patch commit failed.");
+    }
+
+    return result;
+  } catch (error) {
+    return {
+      ok: false,
+      error: error.message || "Recipe patch applied locally, but could not be committed."
+    };
+  }
+}
+
+function createApplyPatchMessage(appliedAt, commitResult, linkedMenuUpdate) {
+  const menuMessage = linkedMenuUpdate.updatedCount > 0
+    ? ` ${linkedMenuUpdate.updatedCount} linked menu assignment${linkedMenuUpdate.updatedCount === 1 ? "" : "s"} updated.`
+    : "";
+
+  if (commitResult.ok) {
+    return `Patch applied and committed to ${commitResult.source} at ${appliedAt}.${menuMessage}`;
+  }
+
+  return `Patch applied in memory at ${appliedAt}, but the recipe file commit did not complete: ${commitResult.error}.${menuMessage}`;
 }
 
 function rollbackLastPatch() {
@@ -446,13 +564,16 @@ function rollbackLastPatch() {
 }
 
 function clearCurrentDraft() {
-  if (state.selectedIndex === null) {
+  const recipeId = getCurrentDraftId();
+
+  if (!recipeId) {
     return;
   }
 
-  const recipeId = getRecipeDraftId(state.recipes[state.selectedIndex], state.selectedIndex);
+  draftSaver.cancel();
   clearRecipeDraft(recipeId);
   state.draftRecord = null;
+  state.localSaveStatus = "idle";
   renderDraftStatus();
 }
 
@@ -477,9 +598,7 @@ function renderDraftStatus() {
   draftStatusRoot.replaceChildren();
 
   const message = document.createElement("span");
-  message.textContent = state.draftRecord
-    ? `Draft saved locally at ${formatTimestamp(state.draftRecord.savedAt)}.`
-    : "No local draft saved.";
+  message.textContent = createDraftStatusMessage();
   draftStatusRoot.append(message);
 
   if (state.draftRecord) {
@@ -490,6 +609,39 @@ function renderDraftStatus() {
     clearButton.addEventListener("click", clearDraftManually);
     draftStatusRoot.append(clearButton);
   }
+}
+
+function createDraftStatusMessage() {
+  const patch = createPatchPreview();
+  const patchStatus = patch.hasChanges ? "Patch ready" : "No patch changes";
+
+  if (state.localSaveStatus === "unsaved") {
+    return `Unsaved changes. ${patchStatus}.`;
+  }
+
+  if (state.localSaveStatus === "saved" && state.draftRecord) {
+    return `Saved locally at ${formatTimestamp(state.draftRecord.savedAt)}. ${patchStatus}.`;
+  }
+
+  if (state.draftRecord) {
+    return `Saved locally at ${formatTimestamp(state.draftRecord.savedAt)}. ${patchStatus}.`;
+  }
+
+  return `No local draft saved. ${patchStatus}.`;
+}
+
+function createWorkflowStatusMessage() {
+  const patch = createPatchPreview();
+
+  if (state.localSaveStatus === "saved") {
+    return patch.hasChanges ? "Saved locally | Patch ready" : "Saved locally";
+  }
+
+  if (state.isDirty) {
+    return patch.hasChanges ? "Unsaved changes | Patch ready" : "Unsaved changes";
+  }
+
+  return patch.hasChanges ? "Patch ready" : "Ready";
 }
 
 function formatTimestamp(timestamp) {
@@ -539,6 +691,33 @@ function validateNotes(recipe, errors) {
       errors.push({ message: `notes[${index}] must be string` });
     }
   });
+}
+
+function validateTags(recipe, errors) {
+  if (recipe.tags === undefined) {
+    return;
+  }
+
+  if (!Array.isArray(recipe.tags)) {
+    errors.push({ message: "tags must be array" });
+    return;
+  }
+
+  recipe.tags.forEach((tag, index) => {
+    if (typeof tag !== "string") {
+      errors.push({ message: `tags[${index}] must be string` });
+    }
+  });
+}
+
+function validateMetadata(recipe, errors) {
+  if (recipe.metadata === undefined) {
+    return;
+  }
+
+  if (recipe.metadata === null || typeof recipe.metadata !== "object" || Array.isArray(recipe.metadata)) {
+    errors.push({ message: "metadata must be object" });
+  }
 }
 
 function createElement(tagName, className, textContent) {
@@ -734,7 +913,7 @@ function renderAdmin() {
   }
   renderDraftStatus();
   updateValidationAndPatch();
-  setStatus(state.isDirty ? "Unsaved changes" : "Ready", state.isDirty ? "error" : "success");
+  setStatus(createWorkflowStatusMessage(), state.isDirty ? "error" : "success");
 }
 
 async function initAdmin() {

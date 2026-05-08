@@ -167,3 +167,42 @@ export async function initMenuAssignment({ recipes = [] } = {}) {
     render();
   }
 }
+
+export function updateMenuRecipeReferences(originalRecipeId, updatedRecipeId) {
+  if (!state.menuData || !originalRecipeId || !updatedRecipeId || originalRecipeId === updatedRecipeId) {
+    return {
+      ok: true,
+      updatedCount: 0,
+      menuData: state.menuData
+    };
+  }
+
+  const nextMenuData = structuredClone(state.menuData);
+  let updatedCount = 0;
+
+  for (const meal of Object.values(nextMenuData)) {
+    for (const week of Object.values(meal?.weeks || {})) {
+      for (const day of Object.values(week?.days || {})) {
+        for (const [category, recipeId] of Object.entries(day || {})) {
+          if (recipeId === originalRecipeId) {
+            day[category] = updatedRecipeId;
+            updatedCount += 1;
+          }
+        }
+      }
+    }
+  }
+
+  state.menuData = nextMenuData;
+  state.assignment = normalizeSelection({
+    recipeId: state.assignment.recipeId === originalRecipeId ? updatedRecipeId : state.assignment.recipeId
+  });
+  updatePatch();
+  render();
+
+  return {
+    ok: true,
+    updatedCount,
+    menuData: state.menuData
+  };
+}

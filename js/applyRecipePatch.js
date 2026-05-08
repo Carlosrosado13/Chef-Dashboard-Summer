@@ -2,6 +2,13 @@ function cloneValue(value) {
   return structuredClone(value);
 }
 
+function createRecipeId(recipe) {
+  return String(recipe?.title || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 function createFailure(message, details = []) {
   return {
     ok: false,
@@ -40,11 +47,18 @@ export function applyRecipePatch(recipes, patch, validateRecipe) {
   }
 
   updatedRecipes[patch.index] = updatedRecipe;
+  const originalRecipeId = createRecipeId(originalRecipe);
+  const updatedRecipeId = createRecipeId(updatedRecipe);
 
   return {
     ok: true,
     recipes: updatedRecipes,
     appliedRecipe: updatedRecipe,
+    linkedMenuUpdate: {
+      hasRecipeIdChange: originalRecipeId !== updatedRecipeId,
+      originalRecipeId,
+      updatedRecipeId
+    },
     historyEntry: {
       ...cloneValue(patch),
       appliedAt: new Date().toISOString(),

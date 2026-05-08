@@ -55,6 +55,17 @@ function createField(name, label, value = "") {
   return wrapper;
 }
 
+function createJsonField(name, label, value) {
+  const wrapper = createElement("label", "admin-field");
+  const textarea = createElement("textarea", "");
+  textarea.name = name;
+  textarea.rows = 5;
+  textarea.placeholder = "{ \"source\": \"...\" }";
+  textarea.value = value === undefined ? "" : JSON.stringify(value, null, 2);
+  wrapper.append(createElement("span", "", label), textarea);
+  return wrapper;
+}
+
 export function createEmptyRecipeDraft() {
   return {
     title: "",
@@ -68,7 +79,8 @@ export function createEmptyRecipeDraft() {
       }
     ],
     steps: [""],
-    notes: []
+    notes: [],
+    tags: []
   };
 }
 
@@ -135,6 +147,8 @@ export function renderRecipeCreateWizard(container, draft, options = {}) {
     stepRows,
     addStep,
     notesField,
+    createField("tags", "Tags", (recipe.tags || []).join(", ")),
+    createJsonField("metadata", "Metadata", recipe.metadata),
     preview,
     actions
   );
@@ -174,7 +188,7 @@ export function readCreateRecipeForm(form) {
     .map((step) => String(step).trim())
     .filter(Boolean);
 
-  return {
+  const recipe = {
     title: String(formData.get("title") || "").trim(),
     yield: String(formData.get("yield") || "").trim(),
     category: String(formData.get("category") || "").trim(),
@@ -191,6 +205,26 @@ export function readCreateRecipeForm(form) {
       .map((note) => note.trim())
       .filter(Boolean)
   };
+
+  const tags = String(formData.get("tags") || "")
+    .split(",")
+    .map((tag) => tag.trim())
+    .filter(Boolean);
+
+  if (tags.length > 0) {
+    recipe.tags = tags;
+  }
+
+  const metadataValue = String(formData.get("metadata") || "").trim();
+  if (metadataValue) {
+    try {
+      recipe.metadata = JSON.parse(metadataValue);
+    } catch {
+      recipe.metadata = metadataValue;
+    }
+  }
+
+  return recipe;
 }
 
 function renderCreatePreview(container, recipe) {

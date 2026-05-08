@@ -70,6 +70,19 @@
         "type": "string",
         "description": "A single recipe note."
       }
+    },
+    "tags": {
+      "type": "array",
+      "description": "Optional tags for filtering, dietary notes, service context, or search.",
+      "items": {
+        "type": "string",
+        "description": "A single recipe tag."
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Optional structured metadata for imports, source references, or CMS workflow data.",
+      "additionalProperties": true
     }
   }
 }
