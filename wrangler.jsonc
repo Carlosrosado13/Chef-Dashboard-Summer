@@ -10,5 +10,9 @@
     "local_protocol": "http",
     "port": 8787
   },
-  "vars": {}
+  "vars": {
+    "GH_OWNER": "Carlosrosado13",
+    "GH_REPO": "Chef-Dashboard-Summer",
+    "GH_BRANCH": "main"
+  }
 }
