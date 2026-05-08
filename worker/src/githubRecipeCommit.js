@@ -302,10 +302,27 @@ async function githubRequest(url, env, options = {}) {
   });
 
   const text = await response.text();
-  const data = text ? JSON.parse(text) : null;
+
+  console.log("[github-api] URL:", url);
+  console.log("[github-api] STATUS:", response.status);
+  console.log("[github-api] RESPONSE:", text);
+
+  let data = null;
+
+  try {
+    data = text ? JSON.parse(text) : null;
+  } catch (parseError) {
+    data = {
+      raw: text
+    };
+  }
 
   if (!response.ok) {
-    throw new Error(data?.message || `GitHub API request failed with ${response.status}`);
+    throw new Error(
+      data?.message ||
+      data?.raw ||
+      `GitHub API request failed with ${response.status}`
+    );
   }
 
   return data;
