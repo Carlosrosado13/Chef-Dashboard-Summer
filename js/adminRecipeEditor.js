@@ -40,7 +40,8 @@ const state = {
     mealType: "dinner",
     week: "Week 1",
     day: "Monday",
-    category: "Elevated"
+    category: "Elevated",
+    slotMode: "existing"
   }
 };
 
@@ -112,6 +113,18 @@ function normalizeProductionAssignment(assignment = {}) {
   };
 }
 
+function cleanMenuRecipeName(value) {
+  return String(value || "")
+    .replace(/^Hot Appetizer:\s*/i, "")
+    .trim();
+}
+
+function getAssignedMenuRecipeName(assignment = state.productionAssignment) {
+  return cleanMenuRecipeName(
+    state.menuData?.[assignment.mealType || "dinner"]?.weeks?.[assignment.week]?.days?.[assignment.day]?.[assignment.category]
+  );
+}
+
 function getFilteredRecipes() {
   const query = state.search.toLowerCase().trim();
 
@@ -157,6 +170,7 @@ function startCreateRecipe() {
   }
 
   clearCurrentDraft();
+  state.productionAssignment = normalizeProductionAssignment({ slotMode: "new" });
   state.mode = "create";
   state.entryMode = "scratch";
   state.selectedIndex = null;
@@ -176,6 +190,7 @@ function startImportRecipe() {
   }
 
   clearCurrentDraft();
+  state.productionAssignment = normalizeProductionAssignment({ slotMode: "existing" });
   state.entryMode = "import";
   state.selectedIndex = null;
   state.mode = "edit";
@@ -241,6 +256,7 @@ function validateCreateDraft(recipe, assignment) {
 function resetCreateDraft() {
   clearCurrentDraft();
   state.draft = createEmptyRecipeDraft();
+  state.productionAssignment = normalizeProductionAssignment({ slotMode: "new" });
   state.draft.category = state.productionAssignment.category;
   state.validation = validateRecipeForKitchen(state.draft);
   state.isDirty = false;
@@ -269,6 +285,10 @@ function useImportedRecipe(recipe) {
   state.selectedIndex = null;
   state.draft = structuredClone(recipe);
   state.draft.category = state.draft.category || state.productionAssignment.category;
+  if (state.productionAssignment.slotMode !== "new") {
+    state.draft.title = getAssignedMenuRecipeName() || state.draft.title;
+    state.draft.category = state.productionAssignment.category;
+  }
   state.validation = validateRecipeForKitchen(state.draft);
   state.draftRecord = null;
   state.notice = {
