@@ -368,6 +368,12 @@ button {
   padding: 8px 12px;
 }
 
+.dashboard-section-nav a[aria-current="page"] {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
 .mobile-bottom-nav {
   position: fixed;
   right: 10px;

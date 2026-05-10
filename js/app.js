@@ -2,7 +2,6 @@ import { loadMenuData } from "./loadMenuData.js";
 import { aggregateIngredients } from "./aggregateIngredients.js";
 import { calculateAnalytics } from "./calculateAnalytics.js";
 import { calculateFoodCosts, loadPricing } from "./calculateFoodCosts.js";
-import { calculateForecasts } from "./calculateForecasts.js";
 import { calculateInventoryNeeds } from "./calculateInventoryNeeds.js";
 import { generatePurchaseOrders, loadSuppliers } from "./generatePurchaseOrders.js";
 import { loadInventory } from "./loadInventory.js";
@@ -10,9 +9,7 @@ import { findRecipeByTitle, loadRecipes } from "./loadRecipes.js";
 import { renderIngredientListInto } from "./renderIngredientList.js";
 import { renderInventoryPanelInto } from "./renderInventoryPanel.js";
 import { renderPurchaseOrdersInto } from "./renderPurchaseOrders.js";
-import { renderFoodCostsInto } from "./renderFoodCosts.js";
 import { renderAnalyticsDashboardInto } from "./renderAnalyticsDashboard.js";
-import { renderForecastDashboardInto } from "./renderForecastDashboard.js";
 import { createRecipeModal } from "./renderRecipeModal.js";
 import {
   getAvailableDays,
@@ -23,6 +20,7 @@ import {
 
 const state = {
   menuData: null,
+  activeDashboardSection: "menu",
   viewMode: "daily",
   selectedMealType: "",
   selectedWeek: "",
@@ -53,6 +51,15 @@ let previousDayButton;
 let nextDayButton;
 let menuStatus;
 let frontendError;
+let sectionNav;
+
+const DASHBOARD_SECTIONS = {
+  menu: ["menuRoot"],
+  ingredients: ["ingredientRoot"],
+  inventory: ["inventoryRoot"],
+  orders: ["purchaseOrderRoot"],
+  analytics: ["analyticsRoot"]
+};
 
 function setStatus(message, tone = "neutral") {
   if (!menuStatus) {
@@ -81,52 +88,9 @@ function renderPanelMessage(className, title, message) {
   menuRoot.replaceChildren(panel);
 }
 
-function createSkeletonPanel(title = "Loading") {
-  const panel = document.createElement("section");
-  panel.className = "skeleton-panel";
-
-  const heading = document.createElement("h2");
-  heading.textContent = title;
-
-  const lines = document.createElement("div");
-  lines.className = "skeleton-lines";
-
-  for (let index = 0; index < 4; index += 1) {
-    const line = document.createElement("span");
-    line.className = "skeleton-line";
-    lines.append(line);
-  }
-
-  panel.append(heading, lines);
-  return panel;
-}
-
 function showLoadingState() {
-  renderPanelMessage("menu-state menu-state--loading", "Loading menu", "Fetching processed winter menu data.");
-
-  if (ingredientRoot) {
-    ingredientRoot.replaceChildren(createSkeletonPanel("Ingredients"));
-  }
-
-  if (inventoryRoot) {
-    inventoryRoot.replaceChildren(createSkeletonPanel("Inventory"));
-  }
-
-  if (purchaseOrderRoot) {
-    purchaseOrderRoot.replaceChildren(createSkeletonPanel("Purchase Orders"));
-  }
-
-  if (foodCostRoot) {
-    foodCostRoot.replaceChildren(createSkeletonPanel("Food Costing"));
-  }
-
-  if (analyticsRoot) {
-    analyticsRoot.replaceChildren(createSkeletonPanel("Analytics"));
-  }
-
-  if (forecastRoot) {
-    forecastRoot.replaceChildren(createSkeletonPanel("Forecast"));
-  }
+  renderPanelMessage("menu-state menu-state--loading", "Loading menu", "Fetching processed menu data.");
+  clearOperationalPanels();
 }
 
 function showEmptyState() {
@@ -176,6 +140,42 @@ function clearFrontendError() {
 
   frontendError.textContent = "";
   frontendError.hidden = true;
+}
+
+function getPanelRootsByName() {
+  return {
+    menuRoot,
+    ingredientRoot,
+    inventoryRoot,
+    purchaseOrderRoot,
+    foodCostRoot,
+    analyticsRoot,
+    forecastRoot
+  };
+}
+
+function clearOperationalPanels() {
+  for (const root of [ingredientRoot, inventoryRoot, purchaseOrderRoot, foodCostRoot, analyticsRoot, forecastRoot]) {
+    root?.replaceChildren();
+  }
+}
+
+function syncSectionVisibility() {
+  const roots = getPanelRootsByName();
+  const visibleRootNames = new Set(DASHBOARD_SECTIONS[state.activeDashboardSection] || DASHBOARD_SECTIONS.menu);
+
+  for (const [rootName, root] of Object.entries(roots)) {
+    if (!root) {
+      continue;
+    }
+
+    root.hidden = !visibleRootNames.has(rootName);
+  }
+
+  for (const link of sectionNav?.querySelectorAll("[data-dashboard-section]") || []) {
+    const isActive = link.dataset.dashboardSection === state.activeDashboardSection;
+    link.setAttribute("aria-current", isActive ? "page" : "false");
+  }
 }
 
 function formatMealType(mealType) {
@@ -432,9 +432,64 @@ function enhanceOperationalPanels() {
   enhanceCollapsiblePanel(ingredientRoot, "ingredients");
   enhanceCollapsiblePanel(inventoryRoot, "inventory", { defaultCollapsedOnMobile: true });
   enhanceCollapsiblePanel(purchaseOrderRoot, "purchase orders", { defaultCollapsedOnMobile: true });
-  enhanceCollapsiblePanel(foodCostRoot, "food costing", { defaultCollapsedOnMobile: true });
   enhanceCollapsiblePanel(analyticsRoot, "analytics", { defaultCollapsedOnMobile: true });
-  enhanceCollapsiblePanel(forecastRoot, "forecast", { defaultCollapsedOnMobile: true });
+}
+
+function createOperationalData() {
+  const ingredientSummary = aggregateIngredients(state.menuData, recipes, {
+    mealType: state.selectedMealType,
+    week: state.selectedWeek,
+    targetYield: state.ingredientTargetYield
+  });
+  const inventoryNeeds = calculateInventoryNeeds(ingredientSummary, inventory);
+  const purchaseOrders = generatePurchaseOrders(inventoryNeeds, ingredientSummary, suppliers);
+  const foodCosts = calculateFoodCosts(ingredientSummary, inventoryNeeds, purchaseOrders, pricing);
+  const analytics = calculateAnalytics({
+    ingredientSummary,
+    inventoryNeeds,
+    purchaseOrders,
+    foodCosts
+  });
+
+  return {
+    ingredientSummary,
+    inventoryNeeds,
+    purchaseOrders,
+    analytics
+  };
+}
+
+function renderActiveOperationalSection() {
+  clearOperationalPanels();
+
+  if (state.activeDashboardSection === "menu") {
+    return;
+  }
+
+  const {
+    ingredientSummary,
+    inventoryNeeds,
+    purchaseOrders,
+    analytics
+  } = createOperationalData();
+
+  if (state.activeDashboardSection === "ingredients") {
+    renderIngredientListInto(
+      ingredientRoot,
+      ingredientSummary,
+      {
+        onTargetYieldChange: handleIngredientTargetYieldChange
+      }
+    );
+  } else if (state.activeDashboardSection === "inventory") {
+    renderInventoryPanelInto(inventoryRoot, inventoryNeeds);
+  } else if (state.activeDashboardSection === "orders") {
+    renderPurchaseOrdersInto(purchaseOrderRoot, purchaseOrders);
+  } else if (state.activeDashboardSection === "analytics") {
+    renderAnalyticsDashboardInto(analyticsRoot, analytics);
+  }
+
+  enhanceOperationalPanels();
 }
 
 function renderDashboard() {
@@ -449,6 +504,7 @@ function renderDashboard() {
   console.log("[menu-dashboard] rendering started");
   const options = syncDefaultSelections();
   renderControls(options);
+  syncSectionVisibility();
 
   if (!state.selectedMealType || !state.selectedWeek || !state.selectedDay) {
     showEmptyState();
@@ -466,41 +522,7 @@ function renderDashboard() {
     onMenuItemClick: handleMenuItemClick
   });
 
-  const ingredientSummary = aggregateIngredients(state.menuData, recipes, {
-    mealType: state.selectedMealType,
-    week: state.selectedWeek,
-    targetYield: state.ingredientTargetYield
-  });
-  const inventoryNeeds = calculateInventoryNeeds(ingredientSummary, inventory);
-  const purchaseOrders = generatePurchaseOrders(inventoryNeeds, ingredientSummary, suppliers);
-  const foodCosts = calculateFoodCosts(ingredientSummary, inventoryNeeds, purchaseOrders, pricing);
-  const analytics = calculateAnalytics({
-    ingredientSummary,
-    inventoryNeeds,
-    purchaseOrders,
-    foodCosts
-  });
-  const forecasts = calculateForecasts({
-    ingredientSummary,
-    inventoryNeeds,
-    purchaseOrders,
-    foodCosts,
-    analytics
-  });
-
-  renderIngredientListInto(
-    ingredientRoot,
-    ingredientSummary,
-    {
-      onTargetYieldChange: handleIngredientTargetYieldChange
-    }
-  );
-  renderInventoryPanelInto(inventoryRoot, inventoryNeeds);
-  renderPurchaseOrdersInto(purchaseOrderRoot, purchaseOrders);
-  renderFoodCostsInto(foodCostRoot, foodCosts);
-  renderAnalyticsDashboardInto(analyticsRoot, analytics);
-  renderForecastDashboardInto(forecastRoot, forecasts);
-  enhanceOperationalPanels();
+  renderActiveOperationalSection();
 
   if (state.viewMode === "daily") {
     setStatus(`${formatMealType(state.selectedMealType)} | ${state.selectedWeek} | ${state.selectedDay}`, "success");
@@ -524,6 +546,20 @@ function handleMenuItemClick(menuItem) {
 function handleIngredientTargetYieldChange(targetYield) {
   state.ingredientTargetYield = targetYield;
   renderDashboard();
+}
+
+function setupSectionNavigation() {
+  sectionNav?.addEventListener("click", (event) => {
+    const link = event.target.closest("[data-dashboard-section]");
+
+    if (!link) {
+      return;
+    }
+
+    event.preventDefault();
+    state.activeDashboardSection = link.dataset.dashboardSection || "menu";
+    renderDashboard();
+  });
 }
 
 function setupResponsiveControls() {
@@ -586,6 +622,7 @@ async function initDashboard() {
   nextDayButton = document.querySelector("#next-day");
   menuStatus = document.querySelector("#menu-status");
   frontendError = document.querySelector("#frontend-error");
+  sectionNav = document.querySelector(".dashboard-section-nav");
   recipeModal = createRecipeModal();
   document.body.append(recipeModal.element);
   previousWeekButton?.addEventListener("click", () => moveWeek(-1));
@@ -593,6 +630,7 @@ async function initDashboard() {
   previousDayButton?.addEventListener("click", () => moveDay(-1));
   nextDayButton?.addEventListener("click", () => moveDay(1));
   setupResponsiveControls();
+  setupSectionNavigation();
   listenForAdminRefreshes();
 
   try {
