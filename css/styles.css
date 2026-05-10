@@ -1492,6 +1492,19 @@ button {
   gap: 16px;
 }
 
+.admin-content[data-active-admin-section="workspace"] .admin-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+}
+
+.admin-content[data-active-admin-section="workspace"] .recipe-list-panel {
+  display: none;
+}
+
+.admin-content[data-active-admin-section="workspace"][data-admin-has-draft="false"] #recipe-editor-root,
+.admin-content[data-active-admin-section="workspace"][data-admin-has-draft="false"] #draft-status {
+  display: none;
+}
+
 .admin-header-status {
   display: grid;
   justify-items: end;

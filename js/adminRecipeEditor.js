@@ -68,6 +68,7 @@ let validationRoot;
 let patchPreviewRoot;
 let draftStatusRoot;
 let auditHistoryRoot;
+let adminContentRoot;
 let adminInitialized = false;
 
 async function loadJson(url) {
@@ -1252,6 +1253,10 @@ function openExtractionPreview(recipe, validation) {
 }
 
 function renderAdmin() {
+  if (adminContentRoot) {
+    adminContentRoot.dataset.adminHasDraft = String(Boolean(state.draft));
+  }
+
   renderEntryControls();
   renderRecipeList(listRoot, getFilteredRecipes(), state.selectedIndex, selectRecipe);
   if (state.mode === "create") {
@@ -1295,6 +1300,7 @@ async function initAdmin() {
   adminInitialized = true;
   statusElement = document.querySelector("#admin-status");
   errorElement = document.querySelector("#admin-error");
+  adminContentRoot = document.querySelector("#admin-content");
   createRecipeButton = document.querySelector("#create-recipe-button");
   entryRoot = document.querySelector("#recipe-entry-root");
   searchInput = document.querySelector("#recipe-search");
