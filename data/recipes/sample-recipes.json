@@ -1,37 +1,5 @@
 [
   {
-    "title": "Roasted Tomato Basil Soup",
-    "yield": "24 servings",
-    "category": "soup",
-    "ingredients": [
-      {
-        "name": "Roma tomatoes",
-        "amount": 12,
-        "unit": "lb"
-      },
-      {
-        "name": "Yellow onion",
-        "amount": 3,
-        "unit": "lb"
-      },
-      {
-        "name": "Fresh basil",
-        "amount": 2,
-        "unit": "cup"
-      },
-      {
-        "name": "Vegetable stock",
-        "amount": 2,
-        "unit": "gal"
-      }
-    ],
-    "steps": [
-      "Roast tomatoes and onions until lightly caramelized.",
-      "Simmer roasted vegetables with stock until tender.",
-      "Blend until smooth, finish with basil, and adjust seasoning."
-    ]
-  },
-  {
     "title": "Grilled Lemon-Herb Chicken",
     "yield": "24 servings",
     "category": "entree",
