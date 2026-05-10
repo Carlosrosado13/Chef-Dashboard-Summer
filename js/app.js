@@ -378,7 +378,7 @@ function moveDay(delta) {
   renderDashboard();
 }
 
-function enhanceCollapsiblePanel(root, label) {
+function enhanceCollapsiblePanel(root, label, options = {}) {
   const panel = root?.firstElementChild;
 
   if (!panel || panel.dataset.collapsibleReady === "true") {
@@ -395,23 +395,32 @@ function enhanceCollapsiblePanel(root, label) {
   panel.classList.add("operational-panel");
   panel.dataset.collapsibleReady = "true";
 
-  button.addEventListener("click", () => {
-    const isCollapsed = panel.classList.toggle("is-collapsed");
+  const setCollapsed = (isCollapsed) => {
+    panel.classList.toggle("is-collapsed", isCollapsed);
     button.textContent = isCollapsed ? "Expand" : "Collapse";
     button.setAttribute("aria-expanded", String(!isCollapsed));
     button.setAttribute("aria-label", `${isCollapsed ? "Expand" : "Collapse"} ${label}`);
+  };
+
+  button.addEventListener("click", () => {
+    const isCollapsed = panel.classList.toggle("is-collapsed");
+    setCollapsed(isCollapsed);
   });
 
   header.append(button);
+
+  if (options.defaultCollapsedOnMobile && window.matchMedia("(max-width: 640px)").matches) {
+    setCollapsed(true);
+  }
 }
 
 function enhanceOperationalPanels() {
   enhanceCollapsiblePanel(ingredientRoot, "ingredients");
-  enhanceCollapsiblePanel(inventoryRoot, "inventory");
-  enhanceCollapsiblePanel(purchaseOrderRoot, "purchase orders");
-  enhanceCollapsiblePanel(foodCostRoot, "food costing");
-  enhanceCollapsiblePanel(analyticsRoot, "analytics");
-  enhanceCollapsiblePanel(forecastRoot, "forecast");
+  enhanceCollapsiblePanel(inventoryRoot, "inventory", { defaultCollapsedOnMobile: true });
+  enhanceCollapsiblePanel(purchaseOrderRoot, "purchase orders", { defaultCollapsedOnMobile: true });
+  enhanceCollapsiblePanel(foodCostRoot, "food costing", { defaultCollapsedOnMobile: true });
+  enhanceCollapsiblePanel(analyticsRoot, "analytics", { defaultCollapsedOnMobile: true });
+  enhanceCollapsiblePanel(forecastRoot, "forecast", { defaultCollapsedOnMobile: true });
 }
 
 function renderDashboard() {
