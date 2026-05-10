@@ -292,13 +292,14 @@ function createCommitMessage(patch) {
 async function githubRequest(url, env, options = {}) {
   const response = await fetch(url, {
     ...options,
-    headers: {
-      accept: "application/vnd.github+json",
-      authorization: `Bearer ${env.GH_TOKEN}`,
-      "content-type": "application/json",
-      "x-github-api-version": "2022-11-28",
-      ...(options.headers || {})
-    }
+   headers: {
+  accept: "application/vnd.github+json",
+  authorization: `Bearer ${env.GH_TOKEN}`,
+  "content-type": "application/json",
+  "x-github-api-version": "2022-11-28",
+  "user-agent": "chef-dashboard-worker",
+  ...(options.headers || {})
+}
   });
 
   const text = await response.text();
