@@ -563,9 +563,49 @@ function createDeleteRecipePatch(recipe, index) {
     source: "data/recipes/sample-recipes.json",
     index,
     originalTitle: recipe.title,
+    recipeTitle: recipe.title,
+    recipeId: createRecipeId(recipe),
     timestamp: new Date().toISOString(),
     changedFields: {},
     hasChanges: true
+  };
+}
+
+function validateDeleteCommitPayload(payload) {
+  const errors = [];
+  const patch = payload?.patch;
+
+  if (!patch || typeof patch !== "object" || Array.isArray(patch)) {
+    errors.push("Delete payload must include a patch object.");
+  }
+
+  if (patch?.operation !== "deleteRecipe") {
+    errors.push("Delete payload operation must be deleteRecipe.");
+  }
+
+  if (!Number.isInteger(patch?.index) || patch.index < 0 || patch.index >= state.recipes.length) {
+    errors.push("Delete payload index is outside the recipe list.");
+  }
+
+  if (typeof patch?.source !== "string" || !patch.source.startsWith("data/recipes/")) {
+    errors.push("Delete payload source must be a recipe JSON path string.");
+  }
+
+  if (typeof payload?.menuSource !== "string") {
+    errors.push("Delete payload menuSource must be a string.");
+  }
+
+  if (!payload?.originalRecipe || typeof payload.originalRecipe !== "object" || !String(payload.originalRecipe.title || "").trim()) {
+    errors.push("Delete payload originalRecipe must include a title.");
+  }
+
+  if (!Array.isArray(state.recipes)) {
+    errors.push("Recipe state must be an array before deletion.");
+  }
+
+  return {
+    ok: errors.length === 0,
+    errors
   };
 }
 
@@ -632,12 +672,16 @@ async function deleteSelectedRecipe() {
   const recipe = getSelectedRecipe();
   const patch = createDeleteRecipePatch(recipe, state.selectedIndex);
   const draftId = getCurrentDraftId();
-  const commitResult = await commitRecipePatch(patch, recipe, null);
+  const commitResult = await commitRecipePatch(patch, recipe, null, {
+    skipMenuAssignment: true,
+    validatePayload: validateDeleteCommitPayload,
+    commitMessage: `Delete recipe: ${recipe.title}`
+  });
 
   if (!commitResult.ok) {
     state.notice = {
       tone: "error",
-      message: "Recipe deletion failed."
+      message: `Recipe deletion failed. ${commitResult.error || ""}`.trim()
     };
     updateValidationAndPatch();
     return;
@@ -797,25 +841,46 @@ async function applyCurrentPatchUnsafe() {
   renderAdmin();
 }
 
-async function commitRecipePatch(patch, originalRecipe, updatedRecipe) {
+async function commitRecipePatch(patch, originalRecipe, updatedRecipe, options = {}) {
   try {
+    const payload = {
+      patch,
+      source: "data/recipes/sample-recipes.json",
+      originalRecipe,
+      updatedRecipe,
+      menuSource: "data/processed/clean-menu.json"
+    };
+
+    if (!options.skipMenuAssignment) {
+      payload.menuAssignment = state.productionAssignment;
+    }
+
+    if (options.commitMessage) {
+      payload.commitMessage = options.commitMessage;
+    }
+
+    const validation = options.validatePayload?.(payload);
+    if (validation && !validation.ok) {
+      return {
+        ok: false,
+        error: validation.errors.join(" ")
+      };
+    }
+
     const response = await adminFetch("/api/recipe/commit-patch", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({
-        patch,
-        originalRecipe,
-        updatedRecipe,
-        menuAssignment: state.productionAssignment,
-        menuSource: "data/processed/clean-menu.json"
-      })
+      body: JSON.stringify(payload)
     });
     const result = await response.json();
 
     if (!response.ok || !result.ok) {
-      throw new Error(result.error || "Recipe patch commit failed.");
+      const details = Array.isArray(result.details)
+        ? result.details.map((detail) => detail.message || JSON.stringify(detail)).filter(Boolean).join(" ")
+        : "";
+      throw new Error([result.error || "Recipe patch commit failed.", details].filter(Boolean).join(" "));
     }
 
     return result;

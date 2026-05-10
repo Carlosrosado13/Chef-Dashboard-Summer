@@ -76,6 +76,13 @@ function validateGithubEnv(env) {
 function validateSourcePath(source) {
   const sourcePath = source || DEFAULT_RECIPE_SOURCE;
 
+  if (typeof sourcePath !== "string") {
+    return {
+      ok: false,
+      errors: [{ message: "patch.source must be a string path.", receivedType: typeof sourcePath }]
+    };
+  }
+
   if (
     sourcePath.includes("..") ||
     sourcePath.startsWith("/") ||
@@ -96,6 +103,13 @@ function validateSourcePath(source) {
 
 function validateMenuSourcePath(source) {
   const sourcePath = source || DEFAULT_MENU_SOURCE;
+
+  if (typeof sourcePath !== "string") {
+    return {
+      ok: false,
+      errors: [{ message: "menuSource must be a string path.", receivedType: typeof sourcePath }]
+    };
+  }
 
   if (
     sourcePath.includes("..") ||
@@ -475,6 +489,10 @@ export async function commitRecipePatch(payload, env) {
     };
   }
 
+  console.log("[recipe-commit] operation:", payload.patch.operation || "missing");
+  console.log("[recipe-commit] source type:", typeof (payload.patch.source || payload.source));
+  console.log("[recipe-commit] menuSource type:", typeof payload.menuSource);
+
   const sourceResult = validateSourcePath(payload.patch.source || payload.source);
 
   if (!sourceResult.ok) {
@@ -505,6 +523,7 @@ export async function commitRecipePatch(payload, env) {
     const applyResult = applyPatchToRecipeDataset(recipes, payload.patch);
 
     if (!applyResult.ok) {
+      console.log("[recipe-commit] apply failed:", JSON.stringify(applyResult.errors || []));
       return {
         ok: false,
         status: 422,
@@ -546,6 +565,7 @@ export async function commitRecipePatch(payload, env) {
       );
 
       if (!menuApplyResult.ok) {
+        console.log("[recipe-commit] menu assignment failed:", JSON.stringify(menuApplyResult.errors || []));
         return {
           ok: false,
           status: 422,
@@ -647,11 +667,12 @@ export async function commitRecipePatch(payload, env) {
       menu: menuResult
     };
   } catch (error) {
+    console.log("[recipe-commit] exception:", error?.stack || error?.message || error);
     return {
       ok: false,
       status: 502,
       error: "GitHub commit failed.",
-      details: [{ message: error.message || "Unknown GitHub API error" }],
+      details: [{ message: error.message || "Unknown GitHub API error", stack: error.stack || "" }],
       timestamp
     };
   }

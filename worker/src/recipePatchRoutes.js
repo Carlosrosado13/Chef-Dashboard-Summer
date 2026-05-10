@@ -24,7 +24,15 @@ export async function handleCommitPatch(request, env) {
 
   if (!result.ok) {
     console.log(`[recipe-api] commit-patch failed ${result.status || 500} ${result.error}`);
-    return createError(result.error, result.status || 500, result.details || []);
+    return createError(result.error, result.status || 500, [
+      ...(result.details || []),
+      {
+        message: "Commit patch rejected by worker.",
+        operation: parsed.data?.patch?.operation || "",
+        sourceType: typeof (parsed.data?.patch?.source || parsed.data?.source),
+        menuSourceType: typeof parsed.data?.menuSource
+      }
+    ]);
   }
 
   console.log(
