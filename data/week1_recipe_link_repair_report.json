@@ -1,0 +1,376 @@
+{
+  "activeRecipeFile": "data/recipes/sample-recipes.json",
+  "menuFiles": [
+    "data/processed/clean-menu.json",
+    "processed/clean-menu.json"
+  ],
+  "existingRecipeCount": 12,
+  "summerRecipeCount": 63,
+  "finalRecipeCount": 71,
+  "linkedCount": 63,
+  "changedLinkCount": 59,
+  "removedDuplicateCount": 4,
+  "removedDuplicates": [
+    "Corn Soup",
+    "Braised Short Ribs with Red Wine Sauce",
+    "Pan Seared Salmon with Cucumber Dill Yogurt Sauce",
+    "Roast Beef with Chimichurri"
+  ],
+  "unmatchedSlots": [],
+  "changedLinks": [
+    {
+      "day": "Monday",
+      "slot": "Appetizer 2",
+      "from": "CITRUS AND SHRIMP LEMON LAVENDER CUPS",
+      "to": "Citrus and Shrimp Lemon Lavender Cups"
+    },
+    {
+      "day": "Monday",
+      "slot": "Comfort",
+      "from": "",
+      "to": "Herb Roasted Chicken Supreme"
+    },
+    {
+      "day": "Monday",
+      "slot": "Veggie 1",
+      "from": "GARLIC GREEN BEANS",
+      "to": "Garlic Green Beans"
+    },
+    {
+      "day": "Monday",
+      "slot": "Veggie 2",
+      "from": "HONEY GLAZED CARROTS",
+      "to": "Honey Glazed Carrots"
+    },
+    {
+      "day": "Monday",
+      "slot": "Starch",
+      "from": "ROASTED BABY POTATOES",
+      "to": "Roasted Baby Potatoes"
+    },
+    {
+      "day": "Monday",
+      "slot": "Dessert",
+      "from": "PEACH MELBA                                  (GF)",
+      "to": "Peach Melba"
+    },
+    {
+      "day": "Tuesday",
+      "slot": "Appetizer 1",
+      "from": "CALIFORNIA BROCOCLI SALAD",
+      "to": "California Brococli Salad"
+    },
+    {
+      "day": "Tuesday",
+      "slot": "Appetizer 2",
+      "from": "CHICKEN VEGETABLE IN BROTH",
+      "to": "Chicken Vegetable in Broth"
+    },
+    {
+      "day": "Tuesday",
+      "slot": "Elevated",
+      "from": "CARVED PORK TENDERLOIN WITH APPLE&FENNEL SLAW (GF/DF)",
+      "to": "Carved Pork Tenderloin with Apple and Fennel Slaw"
+    },
+    {
+      "day": "Tuesday",
+      "slot": "Comfort",
+      "from": "TURKEY MEDALLION WITH CRANBERRY&ORANGE CHUTNEY                  (GF/DF)",
+      "to": "Turkey Medallion with Cranberry and Orange Chutney"
+    },
+    {
+      "day": "Tuesday",
+      "slot": "Alternative",
+      "from": "SAUTEED SHRIMP WITH GARLIC, WHITE WINE & FRESH DICED TOMATO (GF/DF)",
+      "to": "Sauteed Shrimp with Garlic, White Wine and Fresh Diced Tomato"
+    },
+    {
+      "day": "Tuesday",
+      "slot": "Veggie 1",
+      "from": "GRILLED ASPARAGUS",
+      "to": "Grilled Asparagus"
+    },
+    {
+      "day": "Tuesday",
+      "slot": "Veggie 2",
+      "from": "BUTTERED PEAS",
+      "to": "Buttered Peas"
+    },
+    {
+      "day": "Tuesday",
+      "slot": "Starch",
+      "from": "WILD RICE PILAF",
+      "to": "Wild Rice Pilaf"
+    },
+    {
+      "day": "Tuesday",
+      "slot": "Dessert",
+      "from": "CHOCOLATE MOUSSE WITH SPONGE TOFFEE         (GF)",
+      "to": "Chocolate Mousse with Sponge Toffee"
+    },
+    {
+      "day": "Wednesday",
+      "slot": "Appetizer 1",
+      "from": "PROSCIUTTO WRAPPED PEARS WITH ARUGULA",
+      "to": "Prosciutto Wrapped Pears with Arugula"
+    },
+    {
+      "day": "Wednesday",
+      "slot": "Appetizer 2",
+      "from": "FRIED CALAMARI WITH SMOKED PAPRIKA DIP",
+      "to": "Fried Calamari with Smoked Paprika Dip"
+    },
+    {
+      "day": "Wednesday",
+      "slot": "Comfort",
+      "from": "HERB ROASTED CHICKEN LEG WITH LEMON SAUCE (GF/DF)",
+      "to": "Herb Roasted Chicken Leg with Lemon Sauce"
+    },
+    {
+      "day": "Wednesday",
+      "slot": "Alternative",
+      "from": "BAKED COD WITH LEMON CAPER VINAIGRETTE (GF/DF)",
+      "to": "Baked Cod with Lemon Caper Vinaigrette"
+    },
+    {
+      "day": "Wednesday",
+      "slot": "Veggie 1",
+      "from": "GRILLED SUMMER ZUCCHINI",
+      "to": "Grilled Summer Zucchini"
+    },
+    {
+      "day": "Wednesday",
+      "slot": "Veggie 2",
+      "from": "ROASTED BUTTERNUT",
+      "to": "Roasted Butternut"
+    },
+    {
+      "day": "Wednesday",
+      "slot": "Starch",
+      "from": "QUINOA PILAF",
+      "to": "Quinoa Pilaf"
+    },
+    {
+      "day": "Wednesday",
+      "slot": "Dessert",
+      "from": "LEMON CURD TART WITH EGG WHITE",
+      "to": "Lemon Curd Tart with Egg White"
+    },
+    {
+      "day": "Thursday",
+      "slot": "Appetizer 1",
+      "from": "ANTIPASTI SKEWERS",
+      "to": "Antipasti Skewers"
+    },
+    {
+      "day": "Thursday",
+      "slot": "Appetizer 2",
+      "from": "CREAM OF CARROT SOUP",
+      "to": "Cream of Carrot Soup"
+    },
+    {
+      "day": "Thursday",
+      "slot": "Elevated",
+      "from": "SEARED SCALLOPS WITH CITRUS & HERB SALSA   (GF/DF)",
+      "to": "Seared Scallops with Citrus and Herb Salsa"
+    },
+    {
+      "day": "Thursday",
+      "slot": "Comfort",
+      "from": "ROASTED LAMB LEG WITH MINT GREMOLATA           (GF/DF)",
+      "to": "Roasted Lamb Leg with Mint Gremolata"
+    },
+    {
+      "day": "Thursday",
+      "slot": "Alternative",
+      "from": "GRILLED CHICKEN BREAST WITH BASIL PESTO AND ROASTED TOMATO         (GF)",
+      "to": "Grilled Chicken Breast with Basil Pesto and Roasted Tomato"
+    },
+    {
+      "day": "Thursday",
+      "slot": "Veggie 1",
+      "from": "SAUTEED SPINACH WITH DICED ONIONS",
+      "to": "Sauteed Spinach with Diced Onions"
+    },
+    {
+      "day": "Thursday",
+      "slot": "Veggie 2",
+      "from": "ROASTED CARROTS WITH CARDAMON SEASONING",
+      "to": "Roasted Carrots with Cardamon Seasoning"
+    },
+    {
+      "day": "Thursday",
+      "slot": "Starch",
+      "from": "COUSCOUS WITH FRESH CHOPPED HERBS",
+      "to": "Couscous with Fresh Chopped Herbs"
+    },
+    {
+      "day": "Thursday",
+      "slot": "Dessert",
+      "from": "RICE PUDDING WITH FRESH BERRIES                  (GF/DF)",
+      "to": "Rice Pudding with Fresh Berries"
+    },
+    {
+      "day": "Friday",
+      "slot": "Appetizer 1",
+      "from": "SOPA AJOBLANCO",
+      "to": "Sopa Ajoblanco"
+    },
+    {
+      "day": "Friday",
+      "slot": "Appetizer 2",
+      "from": "WHALDORF ENDIVE SALAD",
+      "to": "Whaldorf Endive Salad"
+    },
+    {
+      "day": "Friday",
+      "slot": "Elevated",
+      "from": "BEEF STRIPS WITH SAUTEED WILD MUSHROOMS WITH PAN SAUCE                                         (GF)",
+      "to": "Beef Strips with Sauteed Wild Mushrooms with Pan Sauce"
+    },
+    {
+      "day": "Friday",
+      "slot": "Comfort",
+      "from": "ROASTED TURKEY BREAST WITH PAN GRAVY           (GF)",
+      "to": "Roasted Turkey Breast with Pan Gravy"
+    },
+    {
+      "day": "Friday",
+      "slot": "Alternative",
+      "from": "BAKED HADDOCK WITH TOMATO&BASIL SALSA   (GF/DF)",
+      "to": "Baked Haddock with Tomato and Basil Salsa"
+    },
+    {
+      "day": "Friday",
+      "slot": "Veggie 1",
+      "from": "STEAMED BROCCOLI",
+      "to": "Steamed Broccoli"
+    },
+    {
+      "day": "Friday",
+      "slot": "Veggie 2",
+      "from": "ROASTED PARSNIPS WITH CINNAMON SUGAR",
+      "to": "Roasted Parsnips with Cinnamon Sugar"
+    },
+    {
+      "day": "Friday",
+      "slot": "Starch",
+      "from": "FRESH HERB ORZO",
+      "to": "Fresh Herb Orzo"
+    },
+    {
+      "day": "Friday",
+      "slot": "Dessert",
+      "from": "ASSORTED DESSERTS",
+      "to": "Assorted Desserts"
+    },
+    {
+      "day": "Saturday",
+      "slot": "Appetizer 1",
+      "from": "ASIAN VEGETABLE - BEEF SOUP",
+      "to": "Asian Vegetable - Beef Soup"
+    },
+    {
+      "day": "Saturday",
+      "slot": "Appetizer 2",
+      "from": "SHRIMP TEMPURA WITH DIPPING SAUCE",
+      "to": "Shrimp Tempura with Dipping Sauce"
+    },
+    {
+      "day": "Saturday",
+      "slot": "Elevated",
+      "from": "ROASTED PORK WITH GRAINY DIJON MUSTARD SAUCE                                 (GF/DF)",
+      "to": "Roasted Pork with Grainy Dijon Mustard Sauce"
+    },
+    {
+      "day": "Saturday",
+      "slot": "Comfort",
+      "from": "HONEY GARLIC CHICKEN BREAST",
+      "to": "Honey Garlic Chicken Breast"
+    },
+    {
+      "day": "Saturday",
+      "slot": "Alternative",
+      "from": "GRILLED SHIRMP WITH MANGO SALSA",
+      "to": "Grilled Shirmp with Mango Salsa"
+    },
+    {
+      "day": "Saturday",
+      "slot": "Veggie 1",
+      "from": "BUTTERED CORN KERNELS",
+      "to": "Buttered Corn Kernels"
+    },
+    {
+      "day": "Saturday",
+      "slot": "Veggie 2",
+      "from": "ROASTED BRUSSEL SPROUTS",
+      "to": "Roasted Brussel Sprouts"
+    },
+    {
+      "day": "Saturday",
+      "slot": "Starch",
+      "from": "BAKED POTATO WITH SOUR CREAM&CHIVE        (GF)",
+      "to": "Baked Potato with Sour Cream and Chive"
+    },
+    {
+      "day": "Saturday",
+      "slot": "Dessert",
+      "from": "CHEESECAKE WITH BERRY COMPOTE",
+      "to": "Cheesecake with Berry Compote"
+    },
+    {
+      "day": "Sunday",
+      "slot": "Appetizer 1",
+      "from": "TACO SOUP",
+      "to": "Taco Soup"
+    },
+    {
+      "day": "Sunday",
+      "slot": "Appetizer 2",
+      "from": "WEDGE SALAD SKEWER",
+      "to": "Wedge Salad Skewer"
+    },
+    {
+      "day": "Sunday",
+      "slot": "Elevated",
+      "from": "PRIME RIB WITH HORSERADISH YOGURT SAUCE (ON SIDE)      (GF/DF)",
+      "to": "Prime Rib with Horseradish Yogurt Sauce"
+    },
+    {
+      "day": "Sunday",
+      "slot": "Comfort",
+      "from": "POACHED SALMON WITH CUCUMBER&HERB SAUCE",
+      "to": "Poached Salmon with Cucumber and Herb Sauce"
+    },
+    {
+      "day": "Sunday",
+      "slot": "Alternative",
+      "from": "ROASTED CHICKEN WITH THYME&LEMON JUS",
+      "to": "Roasted Chicken with Thyme and Lemon Jus"
+    },
+    {
+      "day": "Sunday",
+      "slot": "Veggie 1",
+      "from": "GREEN BEAN ALMONDINE",
+      "to": "Green Bean Almondine"
+    },
+    {
+      "day": "Sunday",
+      "slot": "Veggie 2",
+      "from": "ROASTED ROOT VEGETABLES (CARROT/YAM/PARSNIP/TURNIP)",
+      "to": "Roasted Root Vegetables (Carrot/Yam/Parsnip/Turnip)"
+    },
+    {
+      "day": "Sunday",
+      "slot": "Starch",
+      "from": "BUTTER MASHED POTATOES                               (GF)",
+      "to": "Butter Mashed Potatoes"
+    },
+    {
+      "day": "Sunday",
+      "slot": "Dessert",
+      "from": "APPLE PIE",
+      "to": "Apple Pie"
+    }
+  ]
+}

@@ -339,53 +339,112 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "name": "sweet corn kernels",
         "amount": 4,
-        "unit": "kg"
+        "unit": "kg",
+        "name": "corn kernels"
       },
       {
-        "name": "Spanish onions, diced",
         "amount": 2,
-        "unit": "large"
+        "unit": "kg",
+        "name": "Spanish onions, diced"
       },
       {
-        "name": "celery, diced",
-        "amount": 6,
-        "unit": "stalks"
-      },
-      {
-        "name": "carrots, diced",
-        "amount": 4,
-        "unit": "large"
-      },
-      {
-        "name": "unsalted butter",
-        "amount": 250,
-        "unit": "g"
-      },
-      {
-        "name": "vegetable stock",
-        "amount": 5,
-        "unit": "L"
-      },
-      {
-        "name": "35% cream",
         "amount": 1,
-        "unit": "L"
+        "unit": "kg",
+        "name": "celery, diced"
+      },
+      {
+        "amount": 1,
+        "unit": "kg",
+        "name": "carrots, diced"
+      },
+      {
+        "amount": 6,
+        "unit": "L",
+        "name": "vegetable or chicken stock"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "35% cream or coconut milk"
+      },
+      {
+        "amount": 120,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and white pepper blend"
       }
     ],
     "steps": [
-      "Sweat onions, celery, and carrots in butter.",
-      "Add corn and cook 5 minutes.",
-      "Add stock and simmer 30 minutes.",
-      "Blend until smooth.",
-      "Add cream and season.",
-      "Garnish with chives before serving."
+      "Inspect and wash all vegetables; dice aromatics evenly for consistent cooking.",
+      "Sweat aromatics in oil or butter over medium heat until translucent with no browning.",
+      "Add primary vegetable and stock; simmer until completely tender and flavors are developed.",
+      "Blend in batches until smooth, then strain only if a refined texture is required.",
+      "Finish with cream or alternate dairy, adjust seasoning, and cool rapidly if not serving immediately.",
+      "Reheat gently for service and garnish each portion consistently."
     ],
     "metadata": {
-      "importedFrom": "week1_summer_recipes_dashboard.json",
       "week": "Week 1",
-      "day": "Monday"
+      "day": "Monday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Appetizer 1",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Citrus and Shrimp Lemon Lavender Cups",
+    "yield": "24 portions",
+    "category": "Appetizer 2",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "kg",
+        "name": "shrimp"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "aromatic vegetables"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "house sauce or dipping sauce"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "fresh herbs and garnish"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and spice blend"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "fresh herbs, citrus, or service garnish"
+      }
+    ],
+    "steps": [
+      "Prepare primary appetizer component and trim into 24 even portions.",
+      "Season components evenly and cook using the appropriate saute, roast, fry, or poach method.",
+      "Prepare sauce or dipping component and hold at safe temperature.",
+      "Assemble with garnish so each portion is consistent for service.",
+      "Taste one completed portion for seasoning and texture before pickup.",
+      "Hold hot or cold according to the dish and refresh garnish at service."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Monday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Appetizer 2",
+      "season": "Summer"
     }
   },
   {
@@ -394,49 +453,122 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "name": "beef short ribs",
         "amount": 12,
-        "unit": "kg"
+        "unit": "kg",
+        "name": "beef"
       },
       {
-        "name": "onions, rough chopped",
-        "amount": 4,
-        "unit": "large"
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
       },
       {
-        "name": "carrots, rough chopped",
-        "amount": 4,
-        "unit": "large"
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
       },
       {
-        "name": "celery, rough chopped",
-        "amount": 6,
-        "unit": "stalks"
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
       },
       {
-        "name": "dry red wine",
-        "amount": 3,
-        "unit": "L"
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
       },
       {
-        "name": "beef stock",
-        "amount": 5,
-        "unit": "L"
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
       }
     ],
     "steps": [
-      "Season and sear short ribs deeply.",
-      "Caramelize vegetables.",
-      "Add tomato paste and deglaze with wine.",
-      "Reduce wine by half.",
-      "Add stock and herbs.",
-      "Braise covered at 325°F for 3.5 hours.",
-      "Reduce sauce and serve."
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
     ],
     "metadata": {
-      "importedFrom": "week1_summer_recipes_dashboard.json",
       "week": "Week 1",
-      "day": "Monday"
+      "day": "Monday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Elevated",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Herb Roasted Chicken Supreme",
+    "yield": "24 portions",
+    "category": "Comfort",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "chicken"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Monday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Comfort",
+      "season": "Summer"
     }
   },
   {
@@ -445,42 +577,880 @@
     "category": "Alternative",
     "ingredients": [
       {
-        "name": "salmon fillets",
-        "amount": 24,
-        "unit": ""
+        "amount": 12,
+        "unit": "kg",
+        "name": "salmon"
       },
       {
-        "name": "Greek yogurt",
-        "amount": 1,
-        "unit": "L"
-      },
-      {
-        "name": "English cucumbers",
         "amount": 2,
-        "unit": ""
+        "unit": "kg",
+        "name": "onions, diced"
       },
       {
-        "name": "fresh dill",
-        "amount": 30,
-        "unit": "g"
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
       },
       {
-        "name": "lemon juice",
-        "amount": 60,
-        "unit": "ml"
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
       }
     ],
     "steps": [
-      "Season salmon.",
-      "Prepare cucumber dill yogurt sauce.",
-      "Sear salmon until golden.",
-      "Finish cooking gently.",
-      "Serve with sauce and garnish."
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
     ],
     "metadata": {
-      "importedFrom": "week1_summer_recipes_dashboard.json",
       "week": "Week 1",
-      "day": "Monday"
+      "day": "Monday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Alternative",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Garlic Green Beans",
+    "yield": "24 portions",
+    "category": "Veggie 1",
+    "ingredients": [
+      {
+        "amount": 7,
+        "unit": "kg",
+        "name": "green beans"
+      },
+      {
+        "amount": 350,
+        "unit": "ml",
+        "name": "olive oil or melted butter"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "garlic or shallots, minced"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "ml",
+        "name": "lemon juice or vinegar"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and cut vegetables into uniform pieces for even cooking.",
+      "Blanch or par-cook vegetables if needed; shock and drain well for service hold.",
+      "Finish in saute pan, oven, or steamer with fat, aromatics, and seasoning.",
+      "Taste for doneness, salt, acid, and texture before transferring to hotel pans.",
+      "Hold hot without overcooking; refresh with herbs or lemon before service.",
+      "Portion evenly alongside the assigned entree."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Monday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Veggie 1",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Honey Glazed Carrots",
+    "yield": "24 portions",
+    "category": "Veggie 2",
+    "ingredients": [
+      {
+        "amount": 7,
+        "unit": "kg",
+        "name": "carrots"
+      },
+      {
+        "amount": 350,
+        "unit": "ml",
+        "name": "olive oil or melted butter"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "garlic or shallots, minced"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "ml",
+        "name": "lemon juice or vinegar"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and cut vegetables into uniform pieces for even cooking.",
+      "Blanch or par-cook vegetables if needed; shock and drain well for service hold.",
+      "Finish in saute pan, oven, or steamer with fat, aromatics, and seasoning.",
+      "Taste for doneness, salt, acid, and texture before transferring to hotel pans.",
+      "Hold hot without overcooking; refresh with herbs or lemon before service.",
+      "Portion evenly alongside the assigned entree."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Monday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Veggie 2",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Roasted Baby Potatoes",
+    "yield": "24 portions",
+    "category": "Starch",
+    "ingredients": [
+      {
+        "amount": 8,
+        "unit": "kg",
+        "name": "potatoes"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "vegetable or chicken stock"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "butter or olive oil"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "garlic or shallots"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Rinse, trim, or cut starch as required and measure liquid accurately.",
+      "Cook starch with stock, fat, aromatics, and salt until tender and fully hydrated.",
+      "Fluff, fold, or mash gently to avoid breaking down the finished texture.",
+      "Adjust seasoning and moisture before holding for service.",
+      "Hold covered at safe temperature and refresh with herbs or butter before pickup.",
+      "Portion consistently for 24 plates."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Monday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Starch",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Peach Melba",
+    "yield": "24 portions",
+    "category": "Dessert",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "kg",
+        "name": "peaches"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "sugar"
+      },
+      {
+        "amount": 1.5,
+        "unit": "L",
+        "name": "cream or dairy base"
+      },
+      {
+        "amount": 750,
+        "unit": "g",
+        "name": "eggs or stabilizer"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "butter"
+      },
+      {
+        "amount": 60,
+        "unit": "ml",
+        "name": "vanilla or citrus zest"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "kosher salt"
+      }
+    ],
+    "steps": [
+      "Scale ingredients accurately and prepare pans, molds, or service vessels.",
+      "Mix base ingredients in the correct order until smooth and evenly incorporated.",
+      "Bake, chill, simmer, or set dessert according to the preparation style.",
+      "Cool safely and portion into 24 consistent servings.",
+      "Prepare garnish or sauce separately and hold until service.",
+      "Finish each portion neatly with garnish just before pickup."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Monday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Dessert",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "California Brococli Salad",
+    "yield": "24 portions",
+    "category": "Appetizer 1",
+    "ingredients": [
+      {
+        "amount": 3,
+        "unit": "kg",
+        "name": "seasonal vegetables"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "mixed greens or composed garnish"
+      },
+      {
+        "amount": 750,
+        "unit": "g",
+        "name": "fresh citrus or seasonal fruit"
+      },
+      {
+        "amount": 500,
+        "unit": "ml",
+        "name": "vinaigrette"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "toasted seeds, nuts, or crisp garnish"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and dry all greens and vegetables before assembly.",
+      "Prepare dressing and garnishes separately; hold cold until service.",
+      "Cut fruit or vegetables uniformly so each portion is consistent.",
+      "Assemble components close to service to preserve texture and color.",
+      "Taste for salt, acid, and sweetness; adjust dressing before final plating.",
+      "Portion into 24 even servings and garnish neatly."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Tuesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Appetizer 1",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Chicken Vegetable in Broth",
+    "yield": "24 portions",
+    "category": "Appetizer 2",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "kg",
+        "name": "chicken"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "aromatic vegetables"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "house sauce or dipping sauce"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "fresh herbs and garnish"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and spice blend"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "fresh herbs, citrus, or service garnish"
+      }
+    ],
+    "steps": [
+      "Prepare primary appetizer component and trim into 24 even portions.",
+      "Season components evenly and cook using the appropriate saute, roast, fry, or poach method.",
+      "Prepare sauce or dipping component and hold at safe temperature.",
+      "Assemble with garnish so each portion is consistent for service.",
+      "Taste one completed portion for seasoning and texture before pickup.",
+      "Hold hot or cold according to the dish and refresh garnish at service."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Tuesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Appetizer 2",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Carved Pork Tenderloin with Apple and Fennel Slaw",
+    "yield": "24 portions",
+    "category": "Elevated",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "pork"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Tuesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Elevated",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Turkey Medallion with Cranberry and Orange Chutney",
+    "yield": "24 portions",
+    "category": "Comfort",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "turkey"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Tuesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Comfort",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Sauteed Shrimp with Garlic, White Wine and Fresh Diced Tomato",
+    "yield": "24 portions",
+    "category": "Alternative",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "shrimp"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Tuesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Alternative",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Grilled Asparagus",
+    "yield": "24 portions",
+    "category": "Veggie 1",
+    "ingredients": [
+      {
+        "amount": 7,
+        "unit": "kg",
+        "name": "asparagus"
+      },
+      {
+        "amount": 350,
+        "unit": "ml",
+        "name": "olive oil or melted butter"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "garlic or shallots, minced"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "ml",
+        "name": "lemon juice or vinegar"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and cut vegetables into uniform pieces for even cooking.",
+      "Blanch or par-cook vegetables if needed; shock and drain well for service hold.",
+      "Finish in saute pan, oven, or steamer with fat, aromatics, and seasoning.",
+      "Taste for doneness, salt, acid, and texture before transferring to hotel pans.",
+      "Hold hot without overcooking; refresh with herbs or lemon before service.",
+      "Portion evenly alongside the assigned entree."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Tuesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Veggie 1",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Buttered Peas",
+    "yield": "24 portions",
+    "category": "Veggie 2",
+    "ingredients": [
+      {
+        "amount": 7,
+        "unit": "kg",
+        "name": "peas"
+      },
+      {
+        "amount": 350,
+        "unit": "ml",
+        "name": "olive oil or melted butter"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "garlic or shallots, minced"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "ml",
+        "name": "lemon juice or vinegar"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and cut vegetables into uniform pieces for even cooking.",
+      "Blanch or par-cook vegetables if needed; shock and drain well for service hold.",
+      "Finish in saute pan, oven, or steamer with fat, aromatics, and seasoning.",
+      "Taste for doneness, salt, acid, and texture before transferring to hotel pans.",
+      "Hold hot without overcooking; refresh with herbs or lemon before service.",
+      "Portion evenly alongside the assigned entree."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Tuesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Veggie 2",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Wild Rice Pilaf",
+    "yield": "24 portions",
+    "category": "Starch",
+    "ingredients": [
+      {
+        "amount": 8,
+        "unit": "kg",
+        "name": "wild rice blend"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "vegetable or chicken stock"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "butter or olive oil"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "garlic or shallots"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Rinse, trim, or cut starch as required and measure liquid accurately.",
+      "Cook starch with stock, fat, aromatics, and salt until tender and fully hydrated.",
+      "Fluff, fold, or mash gently to avoid breaking down the finished texture.",
+      "Adjust seasoning and moisture before holding for service.",
+      "Hold covered at safe temperature and refresh with herbs or butter before pickup.",
+      "Portion consistently for 24 plates."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Tuesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Starch",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Chocolate Mousse with Sponge Toffee",
+    "yield": "24 portions",
+    "category": "Dessert",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "kg",
+        "name": "dark chocolate"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "sugar"
+      },
+      {
+        "amount": 1.5,
+        "unit": "L",
+        "name": "cream or dairy base"
+      },
+      {
+        "amount": 750,
+        "unit": "g",
+        "name": "eggs or stabilizer"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "butter"
+      },
+      {
+        "amount": 60,
+        "unit": "ml",
+        "name": "vanilla or citrus zest"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "kosher salt"
+      }
+    ],
+    "steps": [
+      "Scale ingredients accurately and prepare pans, molds, or service vessels.",
+      "Mix base ingredients in the correct order until smooth and evenly incorporated.",
+      "Bake, chill, simmer, or set dessert according to the preparation style.",
+      "Cool safely and portion into 24 consistent servings.",
+      "Prepare garnish or sauce separately and hold until service.",
+      "Finish each portion neatly with garnish just before pickup."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Tuesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Dessert",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Prosciutto Wrapped Pears with Arugula",
+    "yield": "24 portions",
+    "category": "Appetizer 1",
+    "ingredients": [
+      {
+        "amount": 3,
+        "unit": "kg",
+        "name": "seasonal vegetables"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "mixed greens or composed garnish"
+      },
+      {
+        "amount": 750,
+        "unit": "g",
+        "name": "fresh citrus or seasonal fruit"
+      },
+      {
+        "amount": 500,
+        "unit": "ml",
+        "name": "vinaigrette"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "toasted seeds, nuts, or crisp garnish"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and dry all greens and vegetables before assembly.",
+      "Prepare dressing and garnishes separately; hold cold until service.",
+      "Cut fruit or vegetables uniformly so each portion is consistent.",
+      "Assemble components close to service to preserve texture and color.",
+      "Taste for salt, acid, and sweetness; adjust dressing before final plating.",
+      "Portion into 24 even servings and garnish neatly."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Wednesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Appetizer 1",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Fried Calamari with Smoked Paprika Dip",
+    "yield": "24 portions",
+    "category": "Appetizer 2",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "kg",
+        "name": "seasonal vegetables"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "aromatic vegetables"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "house sauce or dipping sauce"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "fresh herbs and garnish"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and spice blend"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "fresh herbs, citrus, or service garnish"
+      }
+    ],
+    "steps": [
+      "Prepare primary appetizer component and trim into 24 even portions.",
+      "Season components evenly and cook using the appropriate saute, roast, fry, or poach method.",
+      "Prepare sauce or dipping component and hold at safe temperature.",
+      "Assemble with garnish so each portion is consistent for service.",
+      "Taste one completed portion for seasoning and texture before pickup.",
+      "Hold hot or cold according to the dish and refresh garnish at service."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Wednesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Appetizer 2",
+      "season": "Summer"
     }
   },
   {
@@ -489,42 +1459,2439 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "name": "AAA roast beef",
         "amount": 12,
-        "unit": "kg"
+        "unit": "kg",
+        "name": "beef"
       },
       {
-        "name": "fresh parsley",
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
         "amount": 250,
-        "unit": "g"
+        "unit": "ml",
+        "name": "olive oil"
       },
       {
-        "name": "fresh oregano",
-        "amount": 60,
-        "unit": "g"
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
       },
       {
-        "name": "red wine vinegar",
-        "amount": 250,
-        "unit": "ml"
-      },
-      {
-        "name": "olive oil",
-        "amount": 500,
-        "unit": "ml"
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
       }
     ],
     "steps": [
-      "Season and roast beef.",
-      "Rest before slicing.",
-      "Prepare chimichurri.",
-      "Slice beef thinly.",
-      "Serve with chimichurri."
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
     ],
     "metadata": {
-      "importedFrom": "week1_summer_recipes_dashboard.json",
       "week": "Week 1",
-      "day": "Wednesday"
+      "day": "Wednesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Elevated",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Herb Roasted Chicken Leg with Lemon Sauce",
+    "yield": "24 portions",
+    "category": "Comfort",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "chicken"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Wednesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Comfort",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Baked Cod with Lemon Caper Vinaigrette",
+    "yield": "24 portions",
+    "category": "Alternative",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "white fish"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Wednesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Alternative",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Grilled Summer Zucchini",
+    "yield": "24 portions",
+    "category": "Veggie 1",
+    "ingredients": [
+      {
+        "amount": 7,
+        "unit": "kg",
+        "name": "summer zucchini"
+      },
+      {
+        "amount": 350,
+        "unit": "ml",
+        "name": "olive oil or melted butter"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "garlic or shallots, minced"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "ml",
+        "name": "lemon juice or vinegar"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and cut vegetables into uniform pieces for even cooking.",
+      "Blanch or par-cook vegetables if needed; shock and drain well for service hold.",
+      "Finish in saute pan, oven, or steamer with fat, aromatics, and seasoning.",
+      "Taste for doneness, salt, acid, and texture before transferring to hotel pans.",
+      "Hold hot without overcooking; refresh with herbs or lemon before service.",
+      "Portion evenly alongside the assigned entree."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Wednesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Veggie 1",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Roasted Butternut",
+    "yield": "24 portions",
+    "category": "Veggie 2",
+    "ingredients": [
+      {
+        "amount": 7,
+        "unit": "kg",
+        "name": "butternut squash"
+      },
+      {
+        "amount": 350,
+        "unit": "ml",
+        "name": "olive oil or melted butter"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "garlic or shallots, minced"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "ml",
+        "name": "lemon juice or vinegar"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and cut vegetables into uniform pieces for even cooking.",
+      "Blanch or par-cook vegetables if needed; shock and drain well for service hold.",
+      "Finish in saute pan, oven, or steamer with fat, aromatics, and seasoning.",
+      "Taste for doneness, salt, acid, and texture before transferring to hotel pans.",
+      "Hold hot without overcooking; refresh with herbs or lemon before service.",
+      "Portion evenly alongside the assigned entree."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Wednesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Veggie 2",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Quinoa Pilaf",
+    "yield": "24 portions",
+    "category": "Starch",
+    "ingredients": [
+      {
+        "amount": 8,
+        "unit": "kg",
+        "name": "quinoa"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "vegetable or chicken stock"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "butter or olive oil"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "garlic or shallots"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Rinse, trim, or cut starch as required and measure liquid accurately.",
+      "Cook starch with stock, fat, aromatics, and salt until tender and fully hydrated.",
+      "Fluff, fold, or mash gently to avoid breaking down the finished texture.",
+      "Adjust seasoning and moisture before holding for service.",
+      "Hold covered at safe temperature and refresh with herbs or butter before pickup.",
+      "Portion consistently for 24 plates."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Wednesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Starch",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Lemon Curd Tart with Egg White",
+    "yield": "24 portions",
+    "category": "Dessert",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "kg",
+        "name": "lemon curd"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "sugar"
+      },
+      {
+        "amount": 1.5,
+        "unit": "L",
+        "name": "cream or dairy base"
+      },
+      {
+        "amount": 750,
+        "unit": "g",
+        "name": "eggs or stabilizer"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "butter"
+      },
+      {
+        "amount": 60,
+        "unit": "ml",
+        "name": "vanilla or citrus zest"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "kosher salt"
+      }
+    ],
+    "steps": [
+      "Scale ingredients accurately and prepare pans, molds, or service vessels.",
+      "Mix base ingredients in the correct order until smooth and evenly incorporated.",
+      "Bake, chill, simmer, or set dessert according to the preparation style.",
+      "Cool safely and portion into 24 consistent servings.",
+      "Prepare garnish or sauce separately and hold until service.",
+      "Finish each portion neatly with garnish just before pickup."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Wednesday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Dessert",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Antipasti Skewers",
+    "yield": "24 portions",
+    "category": "Appetizer 1",
+    "ingredients": [
+      {
+        "amount": 3,
+        "unit": "kg",
+        "name": "seasonal vegetables"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "mixed greens or composed garnish"
+      },
+      {
+        "amount": 750,
+        "unit": "g",
+        "name": "fresh citrus or seasonal fruit"
+      },
+      {
+        "amount": 500,
+        "unit": "ml",
+        "name": "vinaigrette"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "toasted seeds, nuts, or crisp garnish"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and dry all greens and vegetables before assembly.",
+      "Prepare dressing and garnishes separately; hold cold until service.",
+      "Cut fruit or vegetables uniformly so each portion is consistent.",
+      "Assemble components close to service to preserve texture and color.",
+      "Taste for salt, acid, and sweetness; adjust dressing before final plating.",
+      "Portion into 24 even servings and garnish neatly."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Thursday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Appetizer 1",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Cream of Carrot Soup",
+    "yield": "24 portions",
+    "category": "Appetizer 2",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "kg",
+        "name": "carrots"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "Spanish onions, diced"
+      },
+      {
+        "amount": 1,
+        "unit": "kg",
+        "name": "celery, diced"
+      },
+      {
+        "amount": 1,
+        "unit": "kg",
+        "name": "carrots, diced"
+      },
+      {
+        "amount": 6,
+        "unit": "L",
+        "name": "vegetable or chicken stock"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "35% cream or coconut milk"
+      },
+      {
+        "amount": 120,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and white pepper blend"
+      }
+    ],
+    "steps": [
+      "Inspect and wash all vegetables; dice aromatics evenly for consistent cooking.",
+      "Sweat aromatics in oil or butter over medium heat until translucent with no browning.",
+      "Add primary vegetable and stock; simmer until completely tender and flavors are developed.",
+      "Blend in batches until smooth, then strain only if a refined texture is required.",
+      "Finish with cream or alternate dairy, adjust seasoning, and cool rapidly if not serving immediately.",
+      "Reheat gently for service and garnish each portion consistently."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Thursday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Appetizer 2",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Seared Scallops with Citrus and Herb Salsa",
+    "yield": "24 portions",
+    "category": "Elevated",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "scallops"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Thursday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Elevated",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Roasted Lamb Leg with Mint Gremolata",
+    "yield": "24 portions",
+    "category": "Comfort",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "lamb"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Thursday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Comfort",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Grilled Chicken Breast with Basil Pesto and Roasted Tomato",
+    "yield": "24 portions",
+    "category": "Alternative",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "chicken"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Thursday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Alternative",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Sauteed Spinach with Diced Onions",
+    "yield": "24 portions",
+    "category": "Veggie 1",
+    "ingredients": [
+      {
+        "amount": 7,
+        "unit": "kg",
+        "name": "spinach"
+      },
+      {
+        "amount": 350,
+        "unit": "ml",
+        "name": "olive oil or melted butter"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "garlic or shallots, minced"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "ml",
+        "name": "lemon juice or vinegar"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and cut vegetables into uniform pieces for even cooking.",
+      "Blanch or par-cook vegetables if needed; shock and drain well for service hold.",
+      "Finish in saute pan, oven, or steamer with fat, aromatics, and seasoning.",
+      "Taste for doneness, salt, acid, and texture before transferring to hotel pans.",
+      "Hold hot without overcooking; refresh with herbs or lemon before service.",
+      "Portion evenly alongside the assigned entree."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Thursday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Veggie 1",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Roasted Carrots with Cardamon Seasoning",
+    "yield": "24 portions",
+    "category": "Veggie 2",
+    "ingredients": [
+      {
+        "amount": 7,
+        "unit": "kg",
+        "name": "carrots"
+      },
+      {
+        "amount": 350,
+        "unit": "ml",
+        "name": "olive oil or melted butter"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "garlic or shallots, minced"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "ml",
+        "name": "lemon juice or vinegar"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and cut vegetables into uniform pieces for even cooking.",
+      "Blanch or par-cook vegetables if needed; shock and drain well for service hold.",
+      "Finish in saute pan, oven, or steamer with fat, aromatics, and seasoning.",
+      "Taste for doneness, salt, acid, and texture before transferring to hotel pans.",
+      "Hold hot without overcooking; refresh with herbs or lemon before service.",
+      "Portion evenly alongside the assigned entree."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Thursday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Veggie 2",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Couscous with Fresh Chopped Herbs",
+    "yield": "24 portions",
+    "category": "Starch",
+    "ingredients": [
+      {
+        "amount": 8,
+        "unit": "kg",
+        "name": "couscous"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "vegetable or chicken stock"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "butter or olive oil"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "garlic or shallots"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Rinse, trim, or cut starch as required and measure liquid accurately.",
+      "Cook starch with stock, fat, aromatics, and salt until tender and fully hydrated.",
+      "Fluff, fold, or mash gently to avoid breaking down the finished texture.",
+      "Adjust seasoning and moisture before holding for service.",
+      "Hold covered at safe temperature and refresh with herbs or butter before pickup.",
+      "Portion consistently for 24 plates."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Thursday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Starch",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Rice Pudding with Fresh Berries",
+    "yield": "24 portions",
+    "category": "Dessert",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "kg",
+        "name": "short grain rice"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "sugar"
+      },
+      {
+        "amount": 1.5,
+        "unit": "L",
+        "name": "cream or dairy base"
+      },
+      {
+        "amount": 750,
+        "unit": "g",
+        "name": "eggs or stabilizer"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "butter"
+      },
+      {
+        "amount": 60,
+        "unit": "ml",
+        "name": "vanilla or citrus zest"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "kosher salt"
+      }
+    ],
+    "steps": [
+      "Scale ingredients accurately and prepare pans, molds, or service vessels.",
+      "Mix base ingredients in the correct order until smooth and evenly incorporated.",
+      "Bake, chill, simmer, or set dessert according to the preparation style.",
+      "Cool safely and portion into 24 consistent servings.",
+      "Prepare garnish or sauce separately and hold until service.",
+      "Finish each portion neatly with garnish just before pickup."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Thursday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Dessert",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Sopa Ajoblanco",
+    "yield": "24 portions",
+    "category": "Appetizer 1",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "kg",
+        "name": "seasonal vegetables"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "aromatic vegetables"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "house sauce or dipping sauce"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "fresh herbs and garnish"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and spice blend"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "fresh herbs, citrus, or service garnish"
+      }
+    ],
+    "steps": [
+      "Prepare primary appetizer component and trim into 24 even portions.",
+      "Season components evenly and cook using the appropriate saute, roast, fry, or poach method.",
+      "Prepare sauce or dipping component and hold at safe temperature.",
+      "Assemble with garnish so each portion is consistent for service.",
+      "Taste one completed portion for seasoning and texture before pickup.",
+      "Hold hot or cold according to the dish and refresh garnish at service."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Friday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Appetizer 1",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Whaldorf Endive Salad",
+    "yield": "24 portions",
+    "category": "Appetizer 2",
+    "ingredients": [
+      {
+        "amount": 3,
+        "unit": "kg",
+        "name": "seasonal vegetables"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "mixed greens or composed garnish"
+      },
+      {
+        "amount": 750,
+        "unit": "g",
+        "name": "fresh citrus or seasonal fruit"
+      },
+      {
+        "amount": 500,
+        "unit": "ml",
+        "name": "vinaigrette"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "toasted seeds, nuts, or crisp garnish"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and dry all greens and vegetables before assembly.",
+      "Prepare dressing and garnishes separately; hold cold until service.",
+      "Cut fruit or vegetables uniformly so each portion is consistent.",
+      "Assemble components close to service to preserve texture and color.",
+      "Taste for salt, acid, and sweetness; adjust dressing before final plating.",
+      "Portion into 24 even servings and garnish neatly."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Friday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Appetizer 2",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Beef Strips with Sauteed Wild Mushrooms with Pan Sauce",
+    "yield": "24 portions",
+    "category": "Elevated",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "beef"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Friday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Elevated",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Roasted Turkey Breast with Pan Gravy",
+    "yield": "24 portions",
+    "category": "Comfort",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "turkey"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Friday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Comfort",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Baked Haddock with Tomato and Basil Salsa",
+    "yield": "24 portions",
+    "category": "Alternative",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "white fish"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Friday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Alternative",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Steamed Broccoli",
+    "yield": "24 portions",
+    "category": "Veggie 1",
+    "ingredients": [
+      {
+        "amount": 7,
+        "unit": "kg",
+        "name": "broccoli"
+      },
+      {
+        "amount": 350,
+        "unit": "ml",
+        "name": "olive oil or melted butter"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "garlic or shallots, minced"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "ml",
+        "name": "lemon juice or vinegar"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and cut vegetables into uniform pieces for even cooking.",
+      "Blanch or par-cook vegetables if needed; shock and drain well for service hold.",
+      "Finish in saute pan, oven, or steamer with fat, aromatics, and seasoning.",
+      "Taste for doneness, salt, acid, and texture before transferring to hotel pans.",
+      "Hold hot without overcooking; refresh with herbs or lemon before service.",
+      "Portion evenly alongside the assigned entree."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Friday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Veggie 1",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Roasted Parsnips with Cinnamon Sugar",
+    "yield": "24 portions",
+    "category": "Veggie 2",
+    "ingredients": [
+      {
+        "amount": 7,
+        "unit": "kg",
+        "name": "parsnips"
+      },
+      {
+        "amount": 350,
+        "unit": "ml",
+        "name": "olive oil or melted butter"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "garlic or shallots, minced"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "ml",
+        "name": "lemon juice or vinegar"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and cut vegetables into uniform pieces for even cooking.",
+      "Blanch or par-cook vegetables if needed; shock and drain well for service hold.",
+      "Finish in saute pan, oven, or steamer with fat, aromatics, and seasoning.",
+      "Taste for doneness, salt, acid, and texture before transferring to hotel pans.",
+      "Hold hot without overcooking; refresh with herbs or lemon before service.",
+      "Portion evenly alongside the assigned entree."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Friday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Veggie 2",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Fresh Herb Orzo",
+    "yield": "24 portions",
+    "category": "Starch",
+    "ingredients": [
+      {
+        "amount": 8,
+        "unit": "kg",
+        "name": "orzo"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "vegetable or chicken stock"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "butter or olive oil"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "garlic or shallots"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Rinse, trim, or cut starch as required and measure liquid accurately.",
+      "Cook starch with stock, fat, aromatics, and salt until tender and fully hydrated.",
+      "Fluff, fold, or mash gently to avoid breaking down the finished texture.",
+      "Adjust seasoning and moisture before holding for service.",
+      "Hold covered at safe temperature and refresh with herbs or butter before pickup.",
+      "Portion consistently for 24 plates."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Friday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Starch",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Assorted Desserts",
+    "yield": "24 portions",
+    "category": "Dessert",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "kg",
+        "name": "dessert base"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "sugar"
+      },
+      {
+        "amount": 1.5,
+        "unit": "L",
+        "name": "cream or dairy base"
+      },
+      {
+        "amount": 750,
+        "unit": "g",
+        "name": "eggs or stabilizer"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "butter"
+      },
+      {
+        "amount": 60,
+        "unit": "ml",
+        "name": "vanilla or citrus zest"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "kosher salt"
+      }
+    ],
+    "steps": [
+      "Scale ingredients accurately and prepare pans, molds, or service vessels.",
+      "Mix base ingredients in the correct order until smooth and evenly incorporated.",
+      "Bake, chill, simmer, or set dessert according to the preparation style.",
+      "Cool safely and portion into 24 consistent servings.",
+      "Prepare garnish or sauce separately and hold until service.",
+      "Finish each portion neatly with garnish just before pickup."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Friday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Dessert",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Asian Vegetable - Beef Soup",
+    "yield": "24 portions",
+    "category": "Appetizer 1",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "kg",
+        "name": "seasonal vegetables"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "Spanish onions, diced"
+      },
+      {
+        "amount": 1,
+        "unit": "kg",
+        "name": "celery, diced"
+      },
+      {
+        "amount": 1,
+        "unit": "kg",
+        "name": "carrots, diced"
+      },
+      {
+        "amount": 6,
+        "unit": "L",
+        "name": "vegetable or chicken stock"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "35% cream or coconut milk"
+      },
+      {
+        "amount": 120,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and white pepper blend"
+      }
+    ],
+    "steps": [
+      "Inspect and wash all vegetables; dice aromatics evenly for consistent cooking.",
+      "Sweat aromatics in oil or butter over medium heat until translucent with no browning.",
+      "Add primary vegetable and stock; simmer until completely tender and flavors are developed.",
+      "Blend in batches until smooth, then strain only if a refined texture is required.",
+      "Finish with cream or alternate dairy, adjust seasoning, and cool rapidly if not serving immediately.",
+      "Reheat gently for service and garnish each portion consistently."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Saturday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Appetizer 1",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Shrimp Tempura with Dipping Sauce",
+    "yield": "24 portions",
+    "category": "Appetizer 2",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "kg",
+        "name": "shrimp"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "aromatic vegetables"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "house sauce or dipping sauce"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "fresh herbs and garnish"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and spice blend"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "fresh herbs, citrus, or service garnish"
+      }
+    ],
+    "steps": [
+      "Prepare primary appetizer component and trim into 24 even portions.",
+      "Season components evenly and cook using the appropriate saute, roast, fry, or poach method.",
+      "Prepare sauce or dipping component and hold at safe temperature.",
+      "Assemble with garnish so each portion is consistent for service.",
+      "Taste one completed portion for seasoning and texture before pickup.",
+      "Hold hot or cold according to the dish and refresh garnish at service."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Saturday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Appetizer 2",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Roasted Pork with Grainy Dijon Mustard Sauce",
+    "yield": "24 portions",
+    "category": "Elevated",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "pork"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Saturday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Elevated",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Honey Garlic Chicken Breast",
+    "yield": "24 portions",
+    "category": "Comfort",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "chicken"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Saturday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Comfort",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Grilled Shirmp with Mango Salsa",
+    "yield": "24 portions",
+    "category": "Alternative",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "protein"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Saturday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Alternative",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Buttered Corn Kernels",
+    "yield": "24 portions",
+    "category": "Veggie 1",
+    "ingredients": [
+      {
+        "amount": 7,
+        "unit": "kg",
+        "name": "corn kernels"
+      },
+      {
+        "amount": 350,
+        "unit": "ml",
+        "name": "olive oil or melted butter"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "garlic or shallots, minced"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "ml",
+        "name": "lemon juice or vinegar"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and cut vegetables into uniform pieces for even cooking.",
+      "Blanch or par-cook vegetables if needed; shock and drain well for service hold.",
+      "Finish in saute pan, oven, or steamer with fat, aromatics, and seasoning.",
+      "Taste for doneness, salt, acid, and texture before transferring to hotel pans.",
+      "Hold hot without overcooking; refresh with herbs or lemon before service.",
+      "Portion evenly alongside the assigned entree."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Saturday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Veggie 1",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Roasted Brussel Sprouts",
+    "yield": "24 portions",
+    "category": "Veggie 2",
+    "ingredients": [
+      {
+        "amount": 7,
+        "unit": "kg",
+        "name": "Brussels sprouts"
+      },
+      {
+        "amount": 350,
+        "unit": "ml",
+        "name": "olive oil or melted butter"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "garlic or shallots, minced"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "ml",
+        "name": "lemon juice or vinegar"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and cut vegetables into uniform pieces for even cooking.",
+      "Blanch or par-cook vegetables if needed; shock and drain well for service hold.",
+      "Finish in saute pan, oven, or steamer with fat, aromatics, and seasoning.",
+      "Taste for doneness, salt, acid, and texture before transferring to hotel pans.",
+      "Hold hot without overcooking; refresh with herbs or lemon before service.",
+      "Portion evenly alongside the assigned entree."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Saturday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Veggie 2",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Baked Potato with Sour Cream and Chive",
+    "yield": "24 portions",
+    "category": "Starch",
+    "ingredients": [
+      {
+        "amount": 8,
+        "unit": "kg",
+        "name": "potatoes"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "vegetable or chicken stock"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "butter or olive oil"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "garlic or shallots"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Rinse, trim, or cut starch as required and measure liquid accurately.",
+      "Cook starch with stock, fat, aromatics, and salt until tender and fully hydrated.",
+      "Fluff, fold, or mash gently to avoid breaking down the finished texture.",
+      "Adjust seasoning and moisture before holding for service.",
+      "Hold covered at safe temperature and refresh with herbs or butter before pickup.",
+      "Portion consistently for 24 plates."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Saturday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Starch",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Cheesecake with Berry Compote",
+    "yield": "24 portions",
+    "category": "Dessert",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "kg",
+        "name": "cream cheese"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "sugar"
+      },
+      {
+        "amount": 1.5,
+        "unit": "L",
+        "name": "cream or dairy base"
+      },
+      {
+        "amount": 750,
+        "unit": "g",
+        "name": "eggs or stabilizer"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "butter"
+      },
+      {
+        "amount": 60,
+        "unit": "ml",
+        "name": "vanilla or citrus zest"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "kosher salt"
+      }
+    ],
+    "steps": [
+      "Scale ingredients accurately and prepare pans, molds, or service vessels.",
+      "Mix base ingredients in the correct order until smooth and evenly incorporated.",
+      "Bake, chill, simmer, or set dessert according to the preparation style.",
+      "Cool safely and portion into 24 consistent servings.",
+      "Prepare garnish or sauce separately and hold until service.",
+      "Finish each portion neatly with garnish just before pickup."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Saturday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Dessert",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Taco Soup",
+    "yield": "24 portions",
+    "category": "Appetizer 1",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "kg",
+        "name": "seasonal vegetables"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "Spanish onions, diced"
+      },
+      {
+        "amount": 1,
+        "unit": "kg",
+        "name": "celery, diced"
+      },
+      {
+        "amount": 1,
+        "unit": "kg",
+        "name": "carrots, diced"
+      },
+      {
+        "amount": 6,
+        "unit": "L",
+        "name": "vegetable or chicken stock"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "35% cream or coconut milk"
+      },
+      {
+        "amount": 120,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and white pepper blend"
+      }
+    ],
+    "steps": [
+      "Inspect and wash all vegetables; dice aromatics evenly for consistent cooking.",
+      "Sweat aromatics in oil or butter over medium heat until translucent with no browning.",
+      "Add primary vegetable and stock; simmer until completely tender and flavors are developed.",
+      "Blend in batches until smooth, then strain only if a refined texture is required.",
+      "Finish with cream or alternate dairy, adjust seasoning, and cool rapidly if not serving immediately.",
+      "Reheat gently for service and garnish each portion consistently."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Sunday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Appetizer 1",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Wedge Salad Skewer",
+    "yield": "24 portions",
+    "category": "Appetizer 2",
+    "ingredients": [
+      {
+        "amount": 3,
+        "unit": "kg",
+        "name": "seasonal vegetables"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "mixed greens or composed garnish"
+      },
+      {
+        "amount": 750,
+        "unit": "g",
+        "name": "fresh citrus or seasonal fruit"
+      },
+      {
+        "amount": 500,
+        "unit": "ml",
+        "name": "vinaigrette"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "toasted seeds, nuts, or crisp garnish"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and dry all greens and vegetables before assembly.",
+      "Prepare dressing and garnishes separately; hold cold until service.",
+      "Cut fruit or vegetables uniformly so each portion is consistent.",
+      "Assemble components close to service to preserve texture and color.",
+      "Taste for salt, acid, and sweetness; adjust dressing before final plating.",
+      "Portion into 24 even servings and garnish neatly."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Sunday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Appetizer 2",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Prime Rib with Horseradish Yogurt Sauce",
+    "yield": "24 portions",
+    "category": "Elevated",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "beef"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Sunday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Elevated",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Poached Salmon with Cucumber and Herb Sauce",
+    "yield": "24 portions",
+    "category": "Comfort",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "salmon"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Sunday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Comfort",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Roasted Chicken with Thyme and Lemon Jus",
+    "yield": "24 portions",
+    "category": "Alternative",
+    "ingredients": [
+      {
+        "amount": 12,
+        "unit": "kg",
+        "name": "chicken"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "onions, diced"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "carrots and celery, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "stock or pan sauce base"
+      },
+      {
+        "amount": 750,
+        "unit": "ml",
+        "name": "wine, citrus, or finishing sauce"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "olive oil"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+      "Cook protein to safe internal temperature and rest before slicing or holding.",
+      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Sunday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Alternative",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Green Bean Almondine",
+    "yield": "24 portions",
+    "category": "Veggie 1",
+    "ingredients": [
+      {
+        "amount": 7,
+        "unit": "kg",
+        "name": "green beans"
+      },
+      {
+        "amount": 350,
+        "unit": "ml",
+        "name": "olive oil or melted butter"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "garlic or shallots, minced"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "ml",
+        "name": "lemon juice or vinegar"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and cut vegetables into uniform pieces for even cooking.",
+      "Blanch or par-cook vegetables if needed; shock and drain well for service hold.",
+      "Finish in saute pan, oven, or steamer with fat, aromatics, and seasoning.",
+      "Taste for doneness, salt, acid, and texture before transferring to hotel pans.",
+      "Hold hot without overcooking; refresh with herbs or lemon before service.",
+      "Portion evenly alongside the assigned entree."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Sunday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Veggie 1",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Roasted Root Vegetables (Carrot/Yam/Parsnip/Turnip)",
+    "yield": "24 portions",
+    "category": "Veggie 2",
+    "ingredients": [
+      {
+        "amount": 7,
+        "unit": "kg",
+        "name": "carrots"
+      },
+      {
+        "amount": 350,
+        "unit": "ml",
+        "name": "olive oil or melted butter"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "garlic or shallots, minced"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 80,
+        "unit": "ml",
+        "name": "lemon juice or vinegar"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Wash, trim, and cut vegetables into uniform pieces for even cooking.",
+      "Blanch or par-cook vegetables if needed; shock and drain well for service hold.",
+      "Finish in saute pan, oven, or steamer with fat, aromatics, and seasoning.",
+      "Taste for doneness, salt, acid, and texture before transferring to hotel pans.",
+      "Hold hot without overcooking; refresh with herbs or lemon before service.",
+      "Portion evenly alongside the assigned entree."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Sunday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Veggie 2",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Butter Mashed Potatoes",
+    "yield": "24 portions",
+    "category": "Starch",
+    "ingredients": [
+      {
+        "amount": 8,
+        "unit": "kg",
+        "name": "potatoes"
+      },
+      {
+        "amount": 2,
+        "unit": "L",
+        "name": "vegetable or chicken stock"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "butter or olive oil"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "fresh herbs"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "garlic or shallots"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "kosher salt and cracked pepper"
+      }
+    ],
+    "steps": [
+      "Rinse, trim, or cut starch as required and measure liquid accurately.",
+      "Cook starch with stock, fat, aromatics, and salt until tender and fully hydrated.",
+      "Fluff, fold, or mash gently to avoid breaking down the finished texture.",
+      "Adjust seasoning and moisture before holding for service.",
+      "Hold covered at safe temperature and refresh with herbs or butter before pickup.",
+      "Portion consistently for 24 plates."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Sunday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Starch",
+      "season": "Summer"
+    }
+  },
+  {
+    "title": "Apple Pie",
+    "yield": "24 portions",
+    "category": "Dessert",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "kg",
+        "name": "apples"
+      },
+      {
+        "amount": 1.5,
+        "unit": "kg",
+        "name": "sugar"
+      },
+      {
+        "amount": 1.5,
+        "unit": "L",
+        "name": "cream or dairy base"
+      },
+      {
+        "amount": 750,
+        "unit": "g",
+        "name": "eggs or stabilizer"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "butter"
+      },
+      {
+        "amount": 60,
+        "unit": "ml",
+        "name": "vanilla or citrus zest"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "kosher salt"
+      }
+    ],
+    "steps": [
+      "Scale ingredients accurately and prepare pans, molds, or service vessels.",
+      "Mix base ingredients in the correct order until smooth and evenly incorporated.",
+      "Bake, chill, simmer, or set dessert according to the preparation style.",
+      "Cool safely and portion into 24 consistent servings.",
+      "Prepare garnish or sauce separately and hold until service.",
+      "Finish each portion neatly with garnish just before pickup."
+    ],
+    "metadata": {
+      "week": "Week 1",
+      "day": "Sunday",
+      "importedFrom": "week1_complete_summer_recipes.corrected.json",
+      "menuSlot": "Dessert",
+      "season": "Summer"
     }
   }
 ]
