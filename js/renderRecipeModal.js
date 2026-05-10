@@ -168,9 +168,9 @@ function updateScaledIngredients(content, ingredients) {
 function renderMissingRecipe(title) {
   const content = createElement("article", "recipe-modal__content");
   content.append(
-    createElement("h2", "recipe-modal__title", "Recipe not found"),
+    createElement("h2", "recipe-modal__title", "Recipe not linked yet."),
     createElement("p", "recipe-modal__meta", title),
-    createElement("p", "", "No linked recipe is available for this menu item yet.")
+    createElement("p", "", "Recipe not linked yet.")
   );
 
   return content;

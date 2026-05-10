@@ -134,7 +134,11 @@
         },
         "Traditional": {
           "$ref": "#/$defs/menuItem",
-          "description": "The traditional dinner entree option."
+          "description": "Legacy name for the comfort dinner entree option."
+        },
+        "Comfort": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The comfort dinner entree option."
         },
         "Alternative": {
           "$ref": "#/$defs/menuItem",
@@ -142,9 +146,17 @@
         },
         "Veg 1": {
           "$ref": "#/$defs/menuItem",
+          "description": "Legacy name for the first dinner vegetable side."
+        },
+        "Veggie 1": {
+          "$ref": "#/$defs/menuItem",
           "description": "The first dinner vegetable side."
         },
         "Veg 2": {
+          "$ref": "#/$defs/menuItem",
+          "description": "Legacy name for the second dinner vegetable side."
+        },
+        "Veggie 2": {
           "$ref": "#/$defs/menuItem",
           "description": "The second dinner vegetable side."
         },

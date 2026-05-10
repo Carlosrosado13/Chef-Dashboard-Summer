@@ -1,543 +1,327 @@
 {
-  "lunch": {
-    "weeks": {
-      "Week 1": {
-        "days": {
-          "Monday": {
-            "SOUP": "Roasted Tomato Basil Soup",
-            "SALAD": "Arugula, Shaved Fennel & Citrus",
-            "MAIN 1": "Grilled Lemon-Herb Chicken",
-            "MAIN 2": "Seared Salmon with Dill Yogurt",
-            "DESSERT": "Chocolate Pot de CrÃ ̈me"
-          },
-          "Tuesday": {
-            "SOUP": "Cream of Mushroom Soup",
-            "SALAD": "Mixed Greens, Pear & Candied Walnuts",
-            "MAIN 1": "Beef Bourguignon",
-            "MAIN 2": "Ricotta Gnocchi, Brown Butter Sage",
-            "DESSERT": "Vanilla Bean Panna Cotta"
-          },
-          "Wednesday": {
-            "SOUP": "Sweet Corn Chowder",
-            "SALAD": "Cucumber, Dill & Yogurt Salad",
-            "MAIN 1": "Teriyaki Glazed Salmon",
-            "MAIN 2": "Pork Tenderloin with Apple Jus",
-            "DESSERT": "Lemon Olive Oil Cake"
-          },
-          "Thursday": {
-            "SOUP": "Roasted Red Pepper Soup",
-            "SALAD": "Classic Caesar Salad (House Dressing)",
-            "MAIN 1": "Chicken Piccata",
-            "MAIN 2": "Grilled Portobello with Romesco",
-            "DESSERT": "Espresso CrÃ ̈me BrÃ»lÃ©e"
-          },
-          "Friday": {
-            "SOUP": "New England Clam Chowder",
-            "SALAD": "Bibb Lettuce, Avocado & Herb Salad",
-            "MAIN 1": "Pan-Seared Cod, Herb Beurre Blanc",
-            "MAIN 2": "Grilled Chicken Pesto",
-            "DESSERT": "Flourless Chocolate Cake"
-          },
-          "Saturday": {
-            "SOUP": "Garlic & Potato",
-            "SALAD": "Spinach, Strawberry, Balsamic",
-            "MAIN 1": "Shrimp Scampi",
-            "MAIN 2": "Wild Mushroom Risotto",
-            "DESSERT": "Almond Cake with Citrus Glaze"
-          },
-          "Sunday": {
-            "SOUP": "Chicken Noodle",
-            "SALAD": "Tomato & Burrata",
-            "MAIN 1": "Roast Chicken with Pan Jus",
-            "MAIN 2": "Vegetable Lasagna",
-            "DESSERT": "Apple Tart"
-          }
-        }
-      },
-      "Week 2": {
-        "days": {
-          "Monday": {
-            "SOUP": "Carrot Ginger Soup",
-            "SALAD": "Baby Kale, Quinoa & Pomegranate Salad",
-            "MAIN 1": "Grilled Swordfish with Caponata",
-            "MAIN 2": "Chicken Marsala",
-            "DESSERT": "Coconut Rice Pudding"
-          },
-          "Tuesday": {
-            "SOUP": "French Onion Soup",
-            "SALAD": "Roasted Beet & Goat Cheese Salad",
-            "MAIN 1": "Lamb Meatballs with Yogurt Sauce",
-            "MAIN 2": "Spinach & Ricotta Cannelloni",
-            "DESSERT": "Chocolate Mousse"
-          },
-          "Wednesday": {
-            "SOUP": "Leek & Potato Soup",
-            "SALAD": "Shaved Brussels Sprouts & Parmesan Salad",
-            "MAIN 1": "Miso-Glazed Salmon",
-            "MAIN 2": "Pork Schnitzel",
-            "DESSERT": "Vanilla Poached Pears"
-          },
-          "Thursday": {
-            "SOUP": "Tomato Bisque",
-            "SALAD": "Mixed Greens with Champagne Vinaigrette",
-            "MAIN 1": "Turkey Roulade",
-            "MAIN 2": "Eggplant Parmesan",
-            "DESSERT": "Lemon Tart"
-          },
-          "Friday": {
-            "SOUP": "Potato & Bacon Chowder",
-            "SALAD": "Classic Wedge Salad",
-            "MAIN 1": "Seared Scallops",
-            "MAIN 2": "Beef Stroganoff",
-            "DESSERT": "Cheesecake Bars"
-          },
-          "Saturday": {
-            "SOUP": "Roasted Cauliflower Soup",
-            "SALAD": "Arugula & Shaved Parmesan Salad",
-            "MAIN 1": "Grilled Chicken Pesto",
-            "MAIN 2": "Mushroom Tagliatelle",
-            "DESSERT": "Berry Shortcake"
-          },
-          "Sunday": {
-            "SOUP": "Lentil & Herb Soup",
-            "SALAD": "Cabbage Slaw with Apple Cider Vinaigrette",
-            "MAIN 1": "Braised Pork Shoulder",
-            "MAIN 2": "Stuffed Peppers",
-            "DESSERT": "Bread Pudding with Vanilla Sauce"
-          }
-        }
-      },
-      "Week 3": {
-        "days": {
-          "Monday": {
-            "SOUP": "Butternut Squash Soup (8 oz)",
-            "SALAD": "Spinach Salad with Dried Cranberries & Almonds",
-            "MAIN 1": "Seared Trout with Brown Butter",
-            "MAIN 2": "Herb-Roasted Chicken Thigh",
-            "DESSERT": "Maple Panna Cotta"
-          },
-          "Tuesday": {
-            "SOUP": "Tomato Fennel Soup (8 oz)",
-            "SALAD": "Asian Slaw",
-            "MAIN 1": "Beef Meatloaf with Jus",
-            "MAIN 2": "Vegetable Stir-Fry with Sesame",
-            "DESSERT": "Chocolate Chip Cookie Bars"
-          },
-          "Wednesday": {
-            "SOUP": "Corn & Pepper Chowder (8 oz)",
-            "SALAD": "Romaine, Cucumber & Herb Vinaigrette Salad",
-            "MAIN 1": "Shrimp & Grits",
-            "MAIN 2": "Chicken Alfredo",
-            "DESSERT": "Lemon Pound Cake"
-          },
-          "Thursday": {
-            "SOUP": "Mushroom Velouté (8 oz)",
-            "SALAD": "Arugula, Pear & Walnut Salad",
-            "MAIN 1": "Braised Lamb Shoulder",
-            "MAIN 2": "Ricotta Stuffed Shells",
-            "DESSERT": "Chocolate Tart"
-          },
-          "Friday": {
-            "SOUP": "Seafood Chowder (8 oz)",
-            "SALAD": "Mixed Greens Salad",
-            "MAIN 1": "Fish & Chips",
-            "MAIN 2": "Braised Beef Pot Roast",
-            "DESSERT": "Vanilla Custard"
-          },
-          "Saturday": {
-            "SOUP": "Minestrone Soup (8 oz)",
-            "SALAD": "Caprese Salad",
-            "MAIN 1": "Grilled Sausage & Peppers",
-            "MAIN 2": "Spinach Gnocchi",
-            "DESSERT": "Cannoli Cream Parfait"
-          },
-          "Sunday": {
-            "SOUP": "Turkey & Rice Soup (8 oz)",
-            "SALAD": "Apple & Celery Salad",
-            "MAIN 1": "Roast Turkey",
-            "MAIN 2": "Vegetable Pot Pie",
-            "DESSERT": "Pumpkin Cheesecake"
-          }
-        }
-      },
-      "Week 4": {
-        "days": {
-          "Monday": {
-            "SOUP": "Tomato Basil Soup (8 oz)",
-            "SALAD": "Arugula & Cherry Tomato Salad",
-            "MAIN 1": "Lemon-Garlic Shrimp",
-            "MAIN 2": "Chicken Parmesan",
-            "DESSERT": "Tiramisu Cup"
-          },
-          "Tuesday": {
-            "SOUP": "Roasted Garlic & Potato Soup (8 oz)",
-            "SALAD": "Mixed Greens Salad with Balsamic",
-            "MAIN 1": "Grilled Flank Steak with Chimichurri",
-            "MAIN 2": "Mushroom Risotto",
-            "DESSERT": "Brownie with Whipped Cream"
-          },
-          "Wednesday": {
-            "SOUP": "Miso Vegetable Soup (8 oz)",
-            "SALAD": "Cucumber & Seaweed Salad",
-            "MAIN 1": "Teriyaki Chicken Bowl",
-            "MAIN 2": "Seared Salmon Poke-Style",
-            "DESSERT": "Mango Sorbet"
-          },
-          "Thursday": {
-            "SOUP": "Cream of Broccoli Soup (8 oz)",
-            "SALAD": "Kale Caesar Salad",
-            "MAIN 1": "Pork Tenderloin with Mustard Jus",
-            "MAIN 2": "Zucchini & Tomato Tart",
-            "DESSERT": "Lemon Bars"
-          },
-          "Friday": {
-            "SOUP": "Corn Chowder (8 oz)",
-            "SALAD": "Bibb Lettuce & Radish Salad",
-            "MAIN 1": "Crab Cakes",
-            "MAIN 2": "Beef Pastrami Sandwich",
-            "DESSERT": "Chocolate Layer Cake"
-          },
-          "Saturday": {
-            "SOUP": "Black Bean Soup (8 oz)",
-            "SALAD": "Coleslaw",
-            "MAIN 1": "BBQ Chicken",
-            "MAIN 2": "Mac & Cheese (Elevated)",
-            "DESSERT": "Peach Cobbler"
-          },
-          "Sunday": {
-            "SOUP": "Vegetable Soup (8 oz)",
-            "SALAD": "Mixed Greens with Citrus Vinaigrette",
-            "MAIN 1": "Shaved Beef Sliders",
-            "MAIN 2": "Eggplant & Chickpea Stew",
-            "DESSERT": "Vanilla Bean Panna Cotta"
-          }
-        }
-      }
-    }
-  },
   "dinner": {
     "weeks": {
       "Week 1": {
         "days": {
           "Monday": {
-            "Appetizer 1": "Hot Appetizer: Crispy Prosciutto-Wrapped Mozzarella, spicy tomato fondue (GF)",
-            "Appetizer 2": "Cold Appetizer: Chefs Green Salad with Roasted Pepper and Blue Cheese ( Choice Dressing ) (GF)",
-            "Elevated": "Coffee-Rubbed Beef Tenderloin, shallot butter (GF)",
-            "Traditional": "Poached Haddock Filet, Herb sauce (GF)",
-            "Alternative": "WILD MUSHROOM & LEEK GALETTE (V)",
-            "Veg 1": "Charred Green Beans, lemon gremolata",
-            "Veg 2": "Honey-Glazed Baby Carrots",
-            "Starch": "Grilled Parmesan Polenta",
-            "Dessert": "Bittersweet Chocolate Budino (Italian Chocolate Pudding) with Candied Pecans and Cinnamon Whipped Topping (GF)"
+            "Appetizer 1": "CORN SOUP",
+            "Appetizer 2": "CITRUS AND SHRIMP LEMON LAVENDER CUPS",
+            "Elevated": "BRAISED SHORT RIBS WITH RED WINE SAUCE (GF/DF)",
+            "Comfort": "",
+            "Alternative": "PAN SEARED SALMON WITH CUCUMBER/DILL YOGURT SAUCE (GF)",
+            "Veggie 1": "GARLIC GREEN BEANS",
+            "Veggie 2": "HONEY GLAZED CARROTS",
+            "Starch": "ROASTED BABY POTATOES",
+            "Dessert": "PEACH MELBA                                  (GF)"
           },
           "Tuesday": {
-            "Appetizer 1": "Hot Appetizer: Shrimp and Grits with Cheese Crostini",
-            "Appetizer 2": "Cold Appetizer: Chefs Salad with Walnuts and Sauteed Apple ( Choice Dressing ) (GF/DF)",
-            "Elevated": "Thai Coconut Beef with Glass Noodles (GF/DF)",
-            "Traditional": "Herb-Crusted Chicken Breast, Tuscan Italian sauce",
-            "Alternative": "",
-            "Veg 1": "Sautéed Swiss Chard, garlic confit (whole roasted cloves)",
-            "Veg 2": "Roasted Cauliflower with Rockafeller Style Bread Crumbs (Bacon/Thyme/Butter)",
-            "Starch": "Whipped Yukon Gold Potatoes",
-            "Dessert": "Orange Blossom Crème Caramel with Cinnamon Whipped Topping"
+            "Appetizer 1": "CALIFORNIA BROCOCLI SALAD",
+            "Appetizer 2": "CHICKEN VEGETABLE IN BROTH",
+            "Elevated": "CARVED PORK TENDERLOIN WITH APPLE&FENNEL SLAW (GF/DF)",
+            "Comfort": "TURKEY MEDALLION WITH CRANBERRY&ORANGE CHUTNEY                  (GF/DF)",
+            "Alternative": "SAUTEED SHRIMP WITH GARLIC, WHITE WINE & FRESH DICED TOMATO (GF/DF)",
+            "Veggie 1": "GRILLED ASPARAGUS",
+            "Veggie 2": "BUTTERED PEAS",
+            "Starch": "WILD RICE PILAF",
+            "Dessert": "CHOCOLATE MOUSSE WITH SPONGE TOFFEE         (GF)"
           },
           "Wednesday": {
-            "Appetizer 1": "Hot Appetizer: Duck Confit Spring Roll, hoisin gastrique (DF)",
-            "Appetizer 2": "Cold Appetizer: Baby Spinach, Sundried Tomato, and Mandarin Salad with Poppy Seed Dressing (GF/DF)",
-            "Elevated": "Seared Hanger Steak, bordelaise (GF/DF)",
-            "Traditional": "Miso-Marinated Seabass Filets (CHEFS FISH) (GF/DF)",
-            "Alternative": "Ricotta & Spinach Stuffed Manicotti (V)",
-            "Veg 1": "Sesame Steamed Broccolini",
-            "Veg 2": "Maple Roasted Squash",
-            "Starch": "Ginger Jasmine Rice",
-            "Dessert": "Assorted Desserts"
+            "Appetizer 1": "PROSCIUTTO WRAPPED PEARS WITH ARUGULA",
+            "Appetizer 2": "FRIED CALAMARI WITH SMOKED PAPRIKA DIP",
+            "Elevated": "ROAST BEEF WITH CHIMICHURRI                (GF/DF)",
+            "Comfort": "HERB ROASTED CHICKEN LEG WITH LEMON SAUCE (GF/DF)",
+            "Alternative": "BAKED COD WITH LEMON CAPER VINAIGRETTE (GF/DF)",
+            "Veggie 1": "GRILLED SUMMER ZUCCHINI",
+            "Veggie 2": "ROASTED BUTTERNUT",
+            "Starch": "QUINOA PILAF",
+            "Dessert": "LEMON CURD TART WITH EGG WHITE"
           },
           "Thursday": {
-            "Appetizer 1": "Hot Appetizer: Truffle (White Truffle Oil) Arancini, pecorino cream",
-            "Appetizer 2": "Cold Appetizer: Creamy Cauliflower Soup with White Bean (GF)",
-            "Elevated": "Linguini alle Vongole - Baby Clams in White wine cream sauce",
-            "Traditional": "Pan-Seared Duck Breast, blackberry jus (GF/DF)",
-            "Alternative": "Grilled Halloumi, lentil stew & herbs (V)",
-            "Veg 1": "Steamed Carrots and Garden Peas (Mixed)",
-            "Veg 2": "Sautéed Spinach, nutmeg",
-            "Starch": "Herb buttered Linguini",
-            "Dessert": "Espresso Chocolate Tart (GF)"
+            "Appetizer 1": "ANTIPASTI SKEWERS",
+            "Appetizer 2": "CREAM OF CARROT SOUP",
+            "Elevated": "SEARED SCALLOPS WITH CITRUS & HERB SALSA   (GF/DF)",
+            "Comfort": "ROASTED LAMB LEG WITH MINT GREMOLATA           (GF/DF)",
+            "Alternative": "GRILLED CHICKEN BREAST WITH BASIL PESTO AND ROASTED TOMATO         (GF)",
+            "Veggie 1": "SAUTEED SPINACH WITH DICED ONIONS",
+            "Veggie 2": "ROASTED CARROTS WITH CARDAMON SEASONING",
+            "Starch": "COUSCOUS WITH FRESH CHOPPED HERBS",
+            "Dessert": "RICE PUDDING WITH FRESH BERRIES                  (GF/DF)"
           },
           "Friday": {
-            "Appetizer 1": "Crispy Corn And Crab Fritters With Spicy Mayo",
-            "Appetizer 2": "Cold Appetizer: Red Cabbage Slaw (GF/DF)",
-            "Elevated": "Seared Salmon Filet, tomato olive relish (GF/DF)",
-            "Traditional": "Slow-Roasted Pork Loin, Mushroom Cream Sauce (GF)",
-            "Alternative": "Pumpkin & Sage Gnocchi (V)",
-            "Veg 1": "Grilled Asparagus",
-            "Veg 2": "Roasted Pepper Medley",
-            "Starch": "Herb Farro",
-            "Dessert": "Vanilla Bean Soufflé"
+            "Appetizer 1": "SOPA AJOBLANCO",
+            "Appetizer 2": "WHALDORF ENDIVE SALAD",
+            "Elevated": "BEEF STRIPS WITH SAUTEED WILD MUSHROOMS WITH PAN SAUCE                                         (GF)",
+            "Comfort": "ROASTED TURKEY BREAST WITH PAN GRAVY           (GF)",
+            "Alternative": "BAKED HADDOCK WITH TOMATO&BASIL SALSA   (GF/DF)",
+            "Veggie 1": "STEAMED BROCCOLI",
+            "Veggie 2": "ROASTED PARSNIPS WITH CINNAMON SUGAR",
+            "Starch": "FRESH HERB ORZO",
+            "Dessert": "ASSORTED DESSERTS"
           },
           "Saturday": {
-            "Appetizer 1": "Hot Appetizer: Potato and Bacon Soup (GF)",
-            "Appetizer 2": "Cold Appetizer: Bruschetta with Crostini",
-            "Elevated": "Rack of Lamb, pistachio crust (GF/DF)",
-            "Traditional": "Moroccan Vegetable Tagine (V)",
-            "Alternative": "",
-            "Veg 1": "Glazed Turnips",
-            "Veg 2": "Roasted Brussels with Maple Bacon",
-            "Starch": "Saffron Couscous with Fresh Herbs",
-            "Dessert": "Red Velvet Sandwich"
+            "Appetizer 1": "ASIAN VEGETABLE - BEEF SOUP",
+            "Appetizer 2": "SHRIMP TEMPURA WITH DIPPING SAUCE",
+            "Elevated": "ROASTED PORK WITH GRAINY DIJON MUSTARD SAUCE                                 (GF/DF)",
+            "Comfort": "HONEY GARLIC CHICKEN BREAST",
+            "Alternative": "GRILLED SHIRMP WITH MANGO SALSA",
+            "Veggie 1": "BUTTERED CORN KERNELS",
+            "Veggie 2": "ROASTED BRUSSEL SPROUTS",
+            "Starch": "BAKED POTATO WITH SOUR CREAM&CHIVE        (GF)",
+            "Dessert": "CHEESECAKE WITH BERRY COMPOTE"
           },
           "Sunday": {
-            "Appetizer 1": "Hot Appetizer: Baked Brie in Phyllo with Thyme & Honey",
-            "Appetizer 2": "Cold Appetizer: Mushroom Soup (GF)",
-            "Elevated": "Prime Rib Roast, au jus (GF/DF)",
-            "Traditional": "Butternut Squash & Chestnut Ravioli (V)",
-            "Alternative": "",
-            "Veg 1": "Creamed Kale",
-            "Veg 2": "Roasted Root Vegetables",
-            "Starch": "Duck Fat Roasted Potatoes",
-            "Dessert": "Toffee Bread Pudding with Cinnamon Whipped Topping"
+            "Appetizer 1": "TACO SOUP",
+            "Appetizer 2": "WEDGE SALAD SKEWER",
+            "Elevated": "PRIME RIB WITH HORSERADISH YOGURT SAUCE (ON SIDE)      (GF/DF)",
+            "Comfort": "POACHED SALMON WITH CUCUMBER&HERB SAUCE",
+            "Alternative": "ROASTED CHICKEN WITH THYME&LEMON JUS",
+            "Veggie 1": "GREEN BEAN ALMONDINE",
+            "Veggie 2": "ROASTED ROOT VEGETABLES (CARROT/YAM/PARSNIP/TURNIP)",
+            "Starch": "BUTTER MASHED POTATOES                               (GF)",
+            "Dessert": "APPLE PIE"
           }
         }
       },
       "Week 2": {
         "days": {
-          "Sunday": {
-            "Appetizer 1": "Hot Appetizer: Cheddar & Chive Popovers",
-            "Appetizer 2": "Cold Appetizer: Caesar Salad (Classic - Pre Tossed)",
-            "Elevated": "Roasted Beef Tenderloin (GF/DF)",
-            "Traditional": "Maple-Glazed Salmon (GF/DF)",
-            "Alternative": "Savory Bread Pudding with Leeks (V)",
-            "Veg 1": "Buttered Peas",
-            "Veg 2": "Roasted Parsnips",
-            "Starch": "Creamy Sundried Tomato Polenta",
-            "Dessert": "Bourbon Bread Pudding"
-          },
           "Monday": {
-            "Appetizer 1": "Hot Appetizer: Shrimp & Chorizo Skillet with Polenta Stack (GF)",
-            "Appetizer 2": "Cold Appetizer: Baked Beet Salad with Goat Cheese Cinnamon Vinaigrette (GF)",
-            "Elevated": "Veal Srip Milanese",
-            "Traditional": "Roasted Haddock, saffron tomato broth (GF/DF)",
-            "Alternative": "Grilled Polenta Cakes, mushroom ragout (V)",
-            "Veg 1": "Broccoli Rabe",
-            "Veg 2": "Roasted Cherry Tomatoes",
-            "Starch": "Lemon Risotto",
-            "Dessert": "Almond Semolina Cake"
+            "Appetizer 1": "COCONUT SHRIMP WITH LIME DIP",
+            "Appetizer 2": "CARROT AND ORANGE SOUP",
+            "Elevated": "MAPLE GLAZED SALMON FILET WITH",
+            "Comfort": "CHICKEN CORDON BLEU",
+            "Alternative": "ROAST CHICKEN WITH PAPRIKA",
+            "Veggie 1": "STEAMED CAULIFLOWER FLORETS",
+            "Veggie 2": "STEAMED CARROTS",
+            "Starch": "BAKED FARRO PILAF",
+            "Dessert": "BLACK FOREST CAKE"
           },
           "Tuesday": {
-            "Appetizer 1": "Hot Appetizer: Baked Escargot, garlic parsley butter with Garlic Crostini",
-            "Appetizer 2": "Cold Appetizer: Chefs Salad with Garden Vegetables (Choice Dressing)",
-            "Elevated": "Beef Wellington (Carved) (DF)",
-            "Traditional": "Cider-Braised Chicken Thighs",
-            "Alternative": "Wild Mushroom Stroganoff (V)",
-            "Veg 1": "Roasted Green and Yellow Zucchini",
-            "Veg 2": "Glazed Pearl Onions",
-            "Starch": "Pommes Anna",
-            "Dessert": "Dark Chocolate Marquis (GF)"
+            "Appetizer 1": "ROASTED RED PEPPER HUMMUS AND PITA",
+            "Appetizer 2": "SPICY TUNA AND CRISPY RICE CRACKER",
+            "Elevated": "SEARED HALIBUT WITH CHERRY TOMATO&OLIVE",
+            "Comfort": "PASTA WITH SUMMER VEGETABLES WITH LEMON PARMESAN SAUCE",
+            "Alternative": "",
+            "Veggie 1": "GRILLED ASPARAGUS",
+            "Veggie 2": "ROASTED MUSHROOMS",
+            "Starch": "WILD RICE",
+            "Dessert": "PEACH FRIED PIES"
           },
           "Wednesday": {
-            "Appetizer 1": "Hot Appetizer: Smoked Gouda Stuffed Mushrooms",
-            "Appetizer 2": "Cold Appetizer: Baby Spinach, Tomato, and Mandarin Salad with Poppy Seed Dressing",
-            "Elevated": "Grilled Beef Tenderloin, rosemary jus (GF/DF)",
-            "Traditional": "Blackened Red Snapper (CHEFS FISH) (GF/DF)",
-            "Alternative": "Sweet Potato & Kale Gratin (V)",
-            "Veg 1": "Charred Okra",
-            "Veg 2": "Roasted Beets",
-            "Starch": "Coconut Rice",
-            "Dessert": "NEW DESSERT TITLE HERE"
+            "Appetizer 1": "SHAVED FENNEL AND ORANGE SALAD",
+            "Appetizer 2": "CUCUMBER AND DILL SALAD",
+            "Elevated": "CHICKEN MARSALA IN MUSHROOM SAUCE",
+            "Comfort": "OPEN FACED ROAST BEEF DIP",
+            "Alternative": "LEMON BAKED COD",
+            "Veggie 1": "SAUTEED SPINACH WITH DICED ONIONS",
+            "Veggie 2": "ROASTED BABY TOP CARROTS",
+            "Starch": "GARLIC MASHED POTATOES",
+            "Dessert": "BANANA CREAM PIE"
           },
           "Thursday": {
-            "Appetizer 1": "Hot Appetizer: Pork Belly Bao",
-            "Appetizer 2": "Cold Appetizer: Seafood Chowder",
-            "Elevated": "Glazed Manhattan Meatloaf, Chefs Sauce (DF)",
-            "Traditional": "Seared Scallopine of Turkey, marsala cream (GF)",
-            "Alternative": "Pasta - Chicken Tetrazzini (Chicken, Bacon, Mushroom - Herb Cream sauce)",
-            "Veg 1": "Snow Peas",
-            "Veg 2": "Roasted Shiitakes",
-            "Starch": "Tomato Vegetable Orzo",
-            "Dessert": "Black Sesame Panna Cotta (GF)"
+            "Appetizer 1": "CORN CHOWDER",
+            "Appetizer 2": "MANGO AND AVOCADO SALAD",
+            "Elevated": "VEAL SHANK WITH NATURAL JUS",
+            "Comfort": "CHICKEN PARMESAN",
+            "Alternative": "SEARED SCALLOPS WITH SQUASH PUREE",
+            "Veggie 1": "ROASTED ZUCCHINI CHUNKS",
+            "Veggie 2": "BUTTERED PEAS",
+            "Starch": "ANCIENT GRAINS",
+            "Dessert": "ASSORTED DESSERTS"
           },
           "Friday": {
-            "Appetizer 1": "Hot Appetizer: French Onion Soup with Swiss Cheese Crostini",
-            "Appetizer 2": "Cold Appetizer: Minestrone Soup",
-            "Elevated": "BBQ Pork Ribs, Carolina Gold Sauce (DF)",
-            "Traditional": "Seared CHEFS FISH (GF/DF)",
-            "Alternative": "Spinach & Gruyère Soufflé (V)",
-            "Veg 1": "Steamed Cauliflower",
-            "Veg 2": "Sauteed Haricots Verts",
-            "Starch": "Garlic Mashed Potatoes",
-            "Dessert": "Chocolate Hazelnut Torte"
+            "Appetizer 1": "SMOKED SALMON CUCUMBER BITES",
+            "Appetizer 2": "GAZPACHO SOUP",
+            "Elevated": "TURKEY ROULADE WITH SPINACH&SUNDRIED TOMATO                     (GF/DF)",
+            "Comfort": "SPAGHETTI AND MEATBALLS IN MARINARA",
+            "Alternative": "GRILLED TILAPIA WITH BALSAMIC ONION SAUCE",
+            "Veggie 1": "BROCCOLINI WITH GARLIC CONFIT",
+            "Veggie 2": "SUMAC SPICED ROASTED CARROT CHUNKS",
+            "Starch": "HERB AND CREAM CHEESE POLENTA",
+            "Dessert": "LEMON BREAD WITH ICING"
           },
           "Saturday": {
-            "Appetizer 1": "Hot Appetizer: Spicy Calamari, citrus aioli",
-            "Appetizer 2": "Cold Appetizer: Mushroom Bruschetta with Garlic Toast",
-            "Elevated": "Lamb Shank, braising jus (GF/DF)",
-            "Traditional": "Wild Rice-Stuffed Acorn Squash (V)",
-            "Alternative": "",
-            "Veg 1": "Celeriac Puree",
-            "Veg 2": "Roasted Cremini Mushrooms",
-            "Starch": "Wild Rice Pilaf",
-            "Dessert": "Blood Orange Tart"
+            "Appetizer 1": "GRILLED ZUCCHINI ROLLUP WITH RICOTTA",
+            "Appetizer 2": "BACON AND CLAM FLATBREAD",
+            "Elevated": "RED WINE BRAISED BEEF BRISKET",
+            "Comfort": "ROASTED PORK TENDERLOIN WITH OLIVE AND FETA SALSA",
+            "Alternative": "WILD MUSHROOM TART WITH GOAT CHEESE",
+            "Veggie 1": "ROASTED MEXICAN STREET CORN",
+            "Veggie 2": "BRAISED BEAN CASSOULET",
+            "Starch": "HERB ROASTED POTATO WEDGES",
+            "Dessert": "KEY LIME PIE"
+          },
+          "Sunday": {
+            "Appetizer 1": "ZUCCHINI FRITTERS WITH DIP",
+            "Appetizer 2": "SOBA NOODLE SALAD",
+            "Elevated": "SHRIMP LINGUINI WITH SAFFRON SAUCE AND PEPPERED GREENS",
+            "Comfort": "ROASTED CHICKEN BREAST IN CREAMY SUNDRIED TOMATO SAUCE",
+            "Alternative": "SEARED SALMON WITH BASIL PESTO SAUCE",
+            "Veggie 1": "SAUTEED ASPARAGUS (2\" CUTS)",
+            "Veggie 2": "ROASTED BUTTERNUT SQUASH",
+            "Starch": "WILD RICE PILAF",
+            "Dessert": "PEACH COBBLER"
           }
         }
       },
       "Week 3": {
         "days": {
-          "Sunday": {
-            "Appetizer 1": "Hot Appetizer: Baked Brie en Croûte, spiced apple",
-            "Appetizer 2": "Cold Appetizer: Berries and Feta Salad with Mixed Greens (Choice Dressing)",
-            "Elevated": "Braised Short Rib, root vegetables (GF/DF)",
-            "Traditional": "Spinach & Mushroom Strata (V)",
-            "Alternative": "",
-            "Veg 1": "Buttered Green Peas",
-            "Veg 2": "Roasted Turnips",
-            "Starch": "Yukon Gold Mash",
-            "Dessert": "Apple Cider Doughnut Bread Pudding"
-          },
           "Monday": {
-            "Appetizer 1": "Hot Appetizer: Baked Crab & Gruyère Dip, crostini",
-            "Appetizer 2": "Cold Appetizer: Mulligatawny Soup",
-            "Elevated": "Pan-Roasted CHEFS FISH, citrus sauce (GF)",
-            "Traditional": "Slow-Braised Porchetta Style meat (DF)",
-            "Alternative": "Caramelized Onion & Goat Cheese Tart (V)",
-            "Veg 1": "Roasted Broccolini",
-            "Veg 2": "Glazed Heirloom Carrots",
-            "Starch": "Creamy Parmesan Risotto",
-            "Dessert": "Honey Panna Cotta, thyme syrup (GF)"
+            "Appetizer 1": "GERMAN POTATO SALAD",
+            "Appetizer 2": "CHILLED MELON SOUP WITH PROSCIUTTO CHIP",
+            "Elevated": "SHRIMP CURRY",
+            "Comfort": "BAKED CHICKEN IN CREAMY BASIL AND CORN SAUCE",
+            "Alternative": "SEARED SALMON FILET WITH PINEAPPLE SALSA",
+            "Veggie 1": "SAUTEED BOK CHOY",
+            "Veggie 2": "ROASTED CARROTS",
+            "Starch": "SCALLOPED POTATOES",
+            "Dessert": "ORANGE CUSTARD WITH BLACKBERRY"
           },
           "Tuesday": {
-            "Appetizer 1": "Hot Appetizer: Spiced Shrimp & Polenta Bite",
-            "Appetizer 2": "Cold Appetizer: Chefs Salad with Garden Vegetables (Choice Dressing)",
-            "Elevated": "Grilled Flank Steak, chimichurri (GF/DF)",
-            "Traditional": "Roasted Chicken Ballotine, spinach & herbs (GF)",
-            "Alternative": "Wild Mushroom Stroganoff (V)",
-            "Veg 1": "Sautéed Green Beans, shallots",
-            "Veg 2": "Roasted Acorn Squash",
-            "Starch": "Buttered Spaetzle",
-            "Dessert": "Assorted Desserts"
+            "Appetizer 1": "AVGOLEMONO SOUP (GREEK LEMON CHICKEN)",
+            "Appetizer 2": "SPINACH STRAWBERRY SALAD WITH ALMOND & GOAT CHEESE HONEY MUSTARD DRESSING",
+            "Elevated": "BEEF BRISKET BBQ",
+            "Comfort": "FRIED CHICKEN",
+            "Alternative": "",
+            "Veggie 1": "STEAMED BROCCOLI",
+            "Veggie 2": "GREEN AND YELLOW BEAN",
+            "Starch": "GARLIC MASHED POTATO",
+            "Dessert": "INDIAN PUDDING (MOLASSES/CORNMEAL)"
           },
           "Wednesday": {
-            "Appetizer 1": "Hot Appetizer: Bacon-Wrapped Dates, smoked paprika glaze",
-            "Appetizer 2": "Cold Appetizer: Horiatiki Salad (Greek Salad) - Composed **",
-            "Elevated": "Seared Basa Fillet, Yellow Thai Curry Sauce (Cream)",
-            "Traditional": "Braised Veal Shoulder, gremolata (GF/DF)",
-            "Alternative": "Sweet Corn & Ricotta Ravioli (V)",
-            "Veg 1": "Roasted Green and Yellow Zucchini",
-            "Veg 2": "Sauteed Spinach with Julienned Onions",
-            "Starch": "Herbed Farro",
-            "Dessert": "Lemon Mascarpone Cheesecake"
+            "Appetizer 1": "MANHATTAN CLAM CHOWDER (TOMATO BASE)",
+            "Appetizer 2": "CLASSIC DEVILLED EGGS WITH BABY GREENS",
+            "Elevated": "GRILLED TILAPIA",
+            "Comfort": "TURKEY CUTLET WITH ARUGULA",
+            "Alternative": "CARAMELIZED ONION TART",
+            "Veggie 1": "GRILLED EGGPLANT CHUNKS",
+            "Veggie 2": "ROASTED ZUCCHINI",
+            "Starch": "BUTTERED HERB NOODLE",
+            "Dessert": "BOSTON CREAM PIE"
           },
           "Thursday": {
-            "Appetizer 1": "Hot Appetizer: Spinach & Feta Phyllo Parcels",
-            "Appetizer 2": "Cold Appetizer: Individual Antipasti Plate (Olives, Roasted Vegetables, Prosciutto, Crostini)",
-            "Elevated": "Roasted Leg of Lamb, rosemary jus (GF/DF)",
-            "Traditional": "Baked Stuffed Sole with Salmon Mousse, brown butter sauce (GF)",
-            "Alternative": "Roasted Vegetable Paella (V)",
-            "Veg 1": "Charred Cauliflower",
-            "Veg 2": "Sautéed Swiss Chard",
-            "Starch": "Saffron Basmati Rice",
-            "Dessert": "Fig & Almond Tart"
+            "Appetizer 1": "THAI CHICKEN NOODLE SOUP",
+            "Appetizer 2": "WHITE BEAN DIP WITH TOASTED PITA CHIPS",
+            "Elevated": "SAUTEED SHRIMP AND PESTO PASTA",
+            "Comfort": "SALMON FILET WITH TZATZIKI SAUCE",
+            "Alternative": "TOMATO CHEDDAR AND BACON PIE",
+            "Veggie 1": "GRILLED ASPARAGUS",
+            "Veggie 2": "SAUTEED BABY PEPPERS",
+            "Starch": "STICKY JASMINE RICE",
+            "Dessert": "ASSORTED DESSERTS"
           },
           "Friday": {
-            "Appetizer 1": "Hot Appetizer: Smoked Salmon Plate, dill cream",
-            "Appetizer 2": "Cold Appetizer: Chicken and Dumpling Soup",
-            "Elevated": "Braised Beef Brisket, red wine jus (GF/DF)",
-            "Traditional": "Roasted Chicken Breast, cider glaze (GF/DF)",
-            "Alternative": "Truffle Mac & Cheese Croquette (V)",
-            "Veg 1": "Roasted Brussels Sprouts",
-            "Veg 2": "Honey-Glazed Parsnips",
-            "Starch": "Whipped Sweet Potatoes",
-            "Dessert": "Chocolate Caramel Tart (GF)"
+            "Appetizer 1": "RIBBON SALAD WITH ORANGE VINAIGRETTE",
+            "Appetizer 2": "CREAM OF ASPARAGUS SOUP WITH SOUR CREAM",
+            "Elevated": "BEEF STROGANOFF",
+            "Comfort": "SEARED CATFISH",
+            "Alternative": "CHICKEN CAESAR SALAD",
+            "Veggie 1": "CARROT AND PEA MIX",
+            "Veggie 2": "STEAMED CAULIFLOWER",
+            "Starch": "CORNBREAD",
+            "Dessert": "CLASSIC BUTTER TARTS"
           },
           "Saturday": {
-            "Appetizer 1": "Hot Appetizer: Deep Fried Ravioli, parmesan cream dip",
-            "Appetizer 2": "Cold Appetizer: Caesar Salad (Classic - Pre Tossed)",
-            "Elevated": "Grilled Salmon Filet (CHEFS FISH), fresh pineapple relish (GF/DF)",
-            "Traditional": "Braised Pork Tenderloin - Cassoulet Style (GF/DF)",
-            "Alternative": "Butternut Squash & Sage Risotto (V)",
-            "Veg 1": "Blistered Shishito Peppers",
-            "Veg 2": "Roasted Mushrooms",
-            "Starch": "Herbed Baby Potatoes",
-            "Dessert": "Vanilla Bean Crème Brûlée (GF)"
+            "Appetizer 1": "SMOKED SALMON & AVOCADO MOUSSE PLATE",
+            "Appetizer 2": "ROASTED RED PEPPER SOUP",
+            "Elevated": "DOVER SOLE WITH HERB OIL",
+            "Comfort": "GRILLED LEMON GARLIC CHICKEN BREAST",
+            "Alternative": "GRILLED VEGETABLE SKEWER",
+            "Veggie 1": "GRILLED ZUCCHINI CHUNKS",
+            "Veggie 2": "STEAMED CARROT WEDGES",
+            "Starch": "FARO WITH FRESH HERBS",
+            "Dessert": "SHOOFLY PIE"
+          },
+          "Sunday": {
+            "Appetizer 1": "HUSH PUPPIES WITH GARLIC DIP",
+            "Appetizer 2": "GRILLED EGGPLANT CAPRESE DISH",
+            "Elevated": "BBQ PORK BACK RIBS",
+            "Comfort": "CREAMY MAC N CHEESE",
+            "Alternative": "CHICKEN MARSALA",
+            "Veggie 1": "STEAMED GREEN BEANS",
+            "Veggie 2": "ROASTED ROOT VEGETABLE",
+            "Starch": "LOADED BAKED POTATO",
+            "Dessert": "POUDING CHOMEUR"
           }
         }
       },
       "Week 4": {
         "days": {
-          "Sunday": {
-            "Appetizer 1": "Hot Appetizer: Hot Artichoke & Parmesan Dip with Crostini",
-            "Appetizer 2": "Cold Appetizer: Berries and Feta Salad with Mixed Greens (Choice Dressing)",
-            "Elevated": "Salmon Coulibiac with Lemon Sauce",
-            "Traditional": "Lemon-Garlic Roasted Chicken (GF/DF)",
-            "Alternative": "",
-            "Veg 1": "Creamed Spinach",
-            "Veg 2": "Roasted Root Medley",
-            "Starch": "Duck Fat Potatoes",
-            "Dessert": "Vanilla Bean Cheesecake blueberry compote"
-          },
           "Monday": {
-            "Appetizer 1": "Hot Appetizer: Lobster & Corn Croquettes",
-            "Appetizer 2": "Cold Appetizer: Leek and Potato Soup",
-            "Elevated": "Grilled Cape Hake, olive vinaigrette (GF/DF)",
-            "Traditional": "Chicken Fricassée (Boneless Thigh), tarragon cream (GF)",
-            "Alternative": "Ricotta Gnocchi, Roasted Garlic (V)",
-            "Veg 1": "Sautéed Green Beans",
-            "Veg 2": "Glazed Yellow Beets",
-            "Starch": "Creamy Herb Polenta",
-            "Dessert": "Pistachio Panna Cotta"
+            "Appetizer 1": "SHRIMP CEVICHE WITH CROSTINI AND SALSA",
+            "Appetizer 2": "TOMATO PUFF TART",
+            "Elevated": "JAMBALAYA",
+            "Comfort": "CHICKEN BROCCOLI RICE CASSEROLE",
+            "Alternative": "CORN SPOONBREAD",
+            "Veggie 1": "ROASTED BROCCOLINI",
+            "Veggie 2": "STEAMED CARROTS",
+            "Starch": "ROASTED POTATO",
+            "Dessert": "STRAWBERRY LEMONADE BARS"
           },
           "Tuesday": {
-            "Appetizer 1": "Hot Appetizer: Italian Sausage & Ricotta Toast",
-            "Appetizer 2": "Cold Appetizer: Caesar Salad (Classic - Pre Tossed) (No Crouton - GF)",
-            "Elevated": "Beef Bavette, bordelaise (GF/DF)",
-            "Traditional": "Chicken Thigh with Crispy Skin and Apple Sausage Hash",
-            "Alternative": "Eggplant & Tomato Gratin (V)",
-            "Veg 1": "Charred Broccoli",
-            "Veg 2": "Sautéed Swiss Chard",
-            "Starch": "Fully Loaded Baked Potato with Cheddar, Bacon, Chive",
-            "Dessert": "Chocolate Espresso Pots de Crème (GF)"
+            "Appetizer 1": "LEMON ORZO SALAD",
+            "Appetizer 2": "TARRAGON CHICKEN SALAD CROSTINI",
+            "Elevated": "CHICKEN FRANCESE",
+            "Comfort": "CLASSIC BEEF CHILI",
+            "Alternative": "VEGETABLE ENCHILADAS",
+            "Veggie 1": "ROASTED BUTTERNUT SQUASH",
+            "Veggie 2": "SAUTEED PEPPERS",
+            "Starch": "SPANISH RICE",
+            "Dessert": "BLUEBERRY CRUMBLE CHEESECAKE"
           },
           "Wednesday": {
-            "Appetizer 1": "Hot Appetizer: PEI Mussels in Tomato Wine Broth / Toasted Bread Spear",
-            "Appetizer 2": "Cold Appetizer: Tomato Florentine Soup",
-            "Elevated": "Seared Rock Fish, nori wrapped with Miso Sauce (GF/DF)",
-            "Traditional": "Chicken Parmigiana",
-            "Alternative": "Spinach & Chickpea East-Indian Curry (V)",
-            "Veg 1": "Roasted Carrots",
-            "Veg 2": "Steamed Broccoli",
-            "Starch": "Lemon Herb Cous Cous",
-            "Dessert": "Citrus Olive Oil Cake (DF)"
+            "Appetizer 1": "GRILLED CLAMS WITH CUCUMBER AND SCALLION",
+            "Appetizer 2": "MUFFULETTA OLIVE SALAD",
+            "Elevated": "SMOTHERED PORK CHOPS IN MUSHROOM GRAVY",
+            "Comfort": "FARFELLE PASTA WITH CHICKEN AND SAUSAGE",
+            "Alternative": "GRILLED COD WITH ROMESCO SAUCE",
+            "Veggie 1": "ROASTED BRUSSEL SPROUT WITH LEMON",
+            "Veggie 2": "STEAMED GREEN BEANS",
+            "Starch": "SWEET POTATO PUREE",
+            "Dessert": "MARGARITA BARS"
           },
           "Thursday": {
-            "Appetizer 1": "Hot Appetizer: Baked Mushroom & Goat Cheese Dip with Crostini",
-            "Appetizer 2": "Cold Appetizer: Olive Tapanade with Crostini",
-            "Elevated": "Roasted Pork Loin, mustard jus (GF)",
-            "Traditional": "Seared Scallops, brown butter (GF)",
-            "Alternative": "Wild Mushroom Pot Pie (V)",
-            "Veg 1": "Roasted Leeks",
-            "Veg 2": "Haricots Verts",
-            "Starch": "Steamed Baby Potatoes",
-            "Dessert": "Basque Cheesecake"
+            "Appetizer 1": "SUMMER RICE WRAPS",
+            "Appetizer 2": "VIDALIA ONION SOUP",
+            "Elevated": "GRILLED BEEF STEAK WITH GREEN PEPPERCORN SAUCE",
+            "Comfort": "BAKED SALMON WITH BLACK BEAN SALSA",
+            "Alternative": "BAKED CAULIFLOWER STEAK WITH CAJUN CORN SALSA",
+            "Veggie 1": "SAUTEED SPINACH",
+            "Veggie 2": "STEAMED CAULIFLOWER",
+            "Starch": "BUTTER MASHED POTATO",
+            "Dessert": "ASSORTED DESSERTS"
           },
           "Friday": {
-            "Appetizer 1": "Corn Chowder",
-            "Appetizer 2": "Cold Appetizer: Nicoise Inspired Salad",
-            "Elevated": "Crab Cakes",
-            "Traditional": "Beef Pastrami Sandwich",
-            "Alternative": "Spinach & Ricotta Stuffed Peppers (V)",
-            "Veg 1": "Steamed Broccoli",
-            "Veg 2": "Steamed Cauliflower",
-            "Starch": "Truffle Pommes Purée",
-            "Dessert": "Chocolate Layer Cake"
+            "Appetizer 1": "BROCCOLI CHEDDAR SOUP",
+            "Appetizer 2": "WATERMELON FETA CUCUMBER SALAD",
+            "Elevated": "PORK SCHNITZEL WITH CINNAMON APPLE SAUCE",
+            "Comfort": "TURKEY POT ROAST",
+            "Alternative": "GARLIC SAUTEED SHRIMP",
+            "Veggie 1": "SEARED GREEN BEANS",
+            "Veggie 2": "ROASTED ACORN SQUASH WEDGES",
+            "Starch": "SPAETZLE",
+            "Dessert": "PAVLOVA WITH FRESH BERRIES"
           },
           "Saturday": {
-            "Appetizer 1": "Hot Appetizer: Savory Cheese Gougères",
-            "Appetizer 2": "Cold Appetizer: Classic Tomato Bruschetta with Crostini",
-            "Elevated": "Braised Porkloin, orange jus (GF)",
-            "Traditional": "Grilled Salmon Filet, Herb Cream Sauce (GF)",
-            "Alternative": "Creamy Mushroom & Leek Pasta (V)",
-            "Veg 1": "Roasted Asparagus",
-            "Veg 2": "Sautéed Spinach",
-            "Starch": "Parmesan Rice Pilaf",
-            "Dessert": "Strawberry Shortcake"
+            "Appetizer 1": "TOMATO BASIL PIZETTE",
+            "Appetizer 2": "SUMMER MINESTRONE",
+            "Elevated": "SALISBURY STEAK IN ONION GRAVY",
+            "Comfort": "OVEN BAKED BBQ BONE-IN CHICKEN",
+            "Alternative": "ROASTED VEGETABLE AND FALAFEL ON BREAD",
+            "Veggie 1": "RATATOUILLE COINS",
+            "Veggie 2": "TRI COLOR CAULIFLOWER GRATIN",
+            "Starch": "STEAMED CARROTS",
+            "Dessert": "APEROL SPRITZ TRIFLE"
+          },
+          "Sunday": {
+            "Appetizer 1": "CHICKEN GNOCCHI SOUP",
+            "Appetizer 2": "CLASSIC POTATO SALAD",
+            "Elevated": "LOBSTER TAIL THERMIDOR",
+            "Comfort": "SPAGHETTI WITH BOLOGNESE",
+            "Alternative": "",
+            "Veggie 1": "SAUTEED SPINACH WITH GARROT/MUSHROOM/ONION",
+            "Veggie 2": "PARMESAN GREEN BEANS",
+            "Starch": "STEAMED BROCCOLI",
+            "Dessert": "CHERRY SLAB PIE BARS"
           }
         }
       }

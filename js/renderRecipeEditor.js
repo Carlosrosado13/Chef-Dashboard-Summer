@@ -2,13 +2,18 @@ const CATEGORY_OPTIONS = [
   { label: "Appetizer 1", value: "Appetizer 1" },
   { label: "Appetizer 2", value: "Appetizer 2" },
   { label: "Elevated", value: "Elevated" },
-  { label: "Comfort", value: "Traditional" },
+  { label: "Comfort", value: "Comfort" },
   { label: "Alternative", value: "Alternative" },
-  { label: "Veggie 1", value: "Veg 1" },
-  { label: "Veggie 2", value: "Veg 2" },
+  { label: "Veggie 1", value: "Veggie 1" },
+  { label: "Veggie 2", value: "Veggie 2" },
   { label: "Starch", value: "Starch" },
   { label: "Dessert", value: "Dessert" }
 ];
+const LEGACY_CATEGORY_ALIASES = {
+  Traditional: "Comfort",
+  "Veg 1": "Veggie 1",
+  "Veg 2": "Veggie 2"
+};
 const WEEK_OPTIONS = ["Week 1", "Week 2", "Week 3", "Week 4"];
 const DAY_OPTIONS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 const NEW_RECIPE_SLOT = "__new_recipe__";
@@ -102,19 +107,29 @@ function formatSteps(steps) {
 }
 
 function normalizeCategory(value) {
-  if (value === "Veggie 1") {
-    return "Veg 1";
-  }
+  const text = String(value || "").trim();
+  const category = LEGACY_CATEGORY_ALIASES[text] || text;
 
-  if (value === "Veggie 2") {
-    return "Veg 2";
-  }
-
-  return CATEGORY_OPTIONS.some((option) => option.value === value) ? value : "Elevated";
+  return CATEGORY_OPTIONS.some((option) => option.value === category) ? category : "Elevated";
 }
 
 function getDayMenu(menuData, assignment) {
   return menuData?.[assignment.mealType || "dinner"]?.weeks?.[assignment.week]?.days?.[assignment.day] || null;
+}
+
+function resolveDayMenuCategory(dayMenu, category) {
+  const normalizedCategory = normalizeCategory(category);
+
+  if (Object.hasOwn(dayMenu || {}, normalizedCategory)) {
+    return normalizedCategory;
+  }
+
+  const legacyCategory = Object.entries(LEGACY_CATEGORY_ALIASES)
+    .find(([, canonicalCategory]) => canonicalCategory === normalizedCategory)?.[0];
+
+  return legacyCategory && Object.hasOwn(dayMenu || {}, legacyCategory)
+    ? legacyCategory
+    : normalizedCategory;
 }
 
 function cleanMenuRecipeName(value) {
@@ -126,7 +141,8 @@ function cleanMenuRecipeName(value) {
 function createMenuSlotOptions(menuData, assignment) {
   const dayMenu = getDayMenu(menuData, assignment);
   const options = CATEGORY_OPTIONS.map((option) => {
-    const currentRecipe = cleanMenuRecipeName(dayMenu?.[option.value]);
+    const category = resolveDayMenuCategory(dayMenu, option.value);
+    const currentRecipe = cleanMenuRecipeName(dayMenu?.[category]);
 
     return {
       value: option.value,
@@ -199,7 +215,7 @@ export function renderRecipeEditor(container, recipe, options = {}) {
   const isMenuCreateFlow = options.mode === "create";
   const isNewRecipeFlow = isMenuCreateFlow && assignment.slotMode === "new";
   const selectedDayMenu = getDayMenu(options.menuData, assignment);
-  const selectedMenuRecipeName = cleanMenuRecipeName(selectedDayMenu?.[assignment.category]);
+  const selectedMenuRecipeName = cleanMenuRecipeName(selectedDayMenu?.[resolveDayMenuCategory(selectedDayMenu, assignment.category)]);
   const form = createElement("form", "recipe-editor-form production-recipe-form");
   const header = createElement("div", "production-recipe-form__header");
   const fields = createElement("div", "production-recipe-form__grid");

@@ -94,7 +94,7 @@ export function normalizeRecipe(recipe) {
     normalizedRecipe.yield = normalizeTextField(recipe.yield, "24 servings");
   }
 
-  normalizedRecipe.category = normalizeTextField(recipe.category, "Traditional");
+  normalizedRecipe.category = normalizeTextField(recipe.category, "Comfort");
 
   if (Object.hasOwn(recipe, "ingredients")) {
     const ingredients = Array.isArray(recipe.ingredients) ? recipe.ingredients : [recipe.ingredients];

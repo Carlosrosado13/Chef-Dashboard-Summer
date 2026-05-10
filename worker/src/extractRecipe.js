@@ -253,7 +253,7 @@ export function normalizeExtractedRecipeForEditor(recipe) {
     title: normalizeExtractedTextField(firstDefined(recipe?.title, recipe?.name)),
     category: normalizeExtractedTextField(
       firstDefined(recipe?.category, recipe?.recipeCategory, recipe?.type, recipe?.section),
-      "Traditional"
+      "Comfort"
     ),
     yield: normalizeExtractedTextField(
       firstDefined(recipe?.yield, recipe?.recipeYield, recipe?.servings, recipe?.portions),

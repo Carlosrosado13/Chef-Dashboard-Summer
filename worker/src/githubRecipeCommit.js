@@ -3,6 +3,11 @@ import { validatePatchStructure } from "./recipePatchApi.js";
 
 const DEFAULT_RECIPE_SOURCE = "data/recipes/sample-recipes.json";
 const DEFAULT_MENU_SOURCE = "data/processed/clean-menu.json";
+const LEGACY_DINNER_CATEGORY_ALIASES = {
+  Traditional: "Comfort",
+  "Veg 1": "Veggie 1",
+  "Veg 2": "Veggie 2"
+};
 
 function createTimestamp() {
   return new Date().toISOString();
@@ -26,6 +31,27 @@ function createRecipeId(recipeOrTitle) {
 
 function normalizeReference(value) {
   return String(value || "").trim();
+}
+
+function normalizeMenuCategory(category) {
+  const text = String(category || "").trim();
+
+  return LEGACY_DINNER_CATEGORY_ALIASES[text] || text;
+}
+
+function resolveMenuCategoryKey(dayMenu, category) {
+  const normalizedCategory = normalizeMenuCategory(category);
+
+  if (Object.hasOwn(dayMenu || {}, normalizedCategory)) {
+    return normalizedCategory;
+  }
+
+  const legacyCategory = Object.entries(LEGACY_DINNER_CATEGORY_ALIASES)
+    .find(([, canonicalCategory]) => canonicalCategory === normalizedCategory)?.[0];
+
+  return legacyCategory && Object.hasOwn(dayMenu || {}, legacyCategory)
+    ? legacyCategory
+    : normalizedCategory;
 }
 
 function createReferenceSet(values = []) {
@@ -425,20 +451,22 @@ function applyMenuAssignment(menuData, assignment, recipeTitle, originalTitle = 
 
     const updatedDayMenu = updatedMenu[mealType].weeks[week].days[day];
 
-    if (!Object.hasOwn(updatedDayMenu, category)) {
+    const categoryKey = resolveMenuCategoryKey(updatedDayMenu, category);
+
+    if (!Object.hasOwn(updatedDayMenu, categoryKey)) {
       return {
         ok: false,
         errors: [{ message: "Selected menu category is not available." }]
       };
     }
 
-    const originalValue = updatedDayMenu[category] || "";
-    updatedDayMenu[category] = recipeTitle;
+    const originalValue = updatedDayMenu[categoryKey] || "";
+    updatedDayMenu[categoryKey] = recipeTitle;
     slotAssignment = {
       mealType,
       week,
       day,
-      category,
+      category: categoryKey,
       originalValue,
       updatedValue: recipeTitle
     };
