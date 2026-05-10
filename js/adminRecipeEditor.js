@@ -125,6 +125,70 @@ function getAssignedMenuRecipeName(assignment = state.productionAssignment) {
   );
 }
 
+function createRecipeId(recipeOrTitle) {
+  const title = typeof recipeOrTitle === "string" ? recipeOrTitle : recipeOrTitle?.title;
+
+  return String(title || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function isPlaceholderRecipe(recipe) {
+  const title = String(recipe?.title || "").trim().toLowerCase();
+  const tags = Array.isArray(recipe?.tags) ? recipe.tags.map((tag) => String(tag).toLowerCase()) : [];
+
+  return (
+    title === "placeholder" ||
+    title === "untitled" ||
+    title === "new recipe" ||
+    title.includes("placeholder") ||
+    tags.includes("placeholder") ||
+    recipe?.metadata?.placeholder === true ||
+    recipe?.placeholder === true
+  );
+}
+
+function canDeleteSelectedRecipe() {
+  const recipe = getSelectedRecipe();
+
+  return (
+    state.mode !== "create" &&
+    state.selectedIndex !== null &&
+    Number.isInteger(state.selectedIndex) &&
+    state.selectedIndex >= 0 &&
+    state.selectedIndex < state.recipes.length &&
+    recipe &&
+    typeof recipe === "object" &&
+    String(recipe.title || "").trim() &&
+    !isPlaceholderRecipe(recipe)
+  );
+}
+
+function findMenuLinksForRecipe(recipe) {
+  const title = String(recipe?.title || "").trim();
+  const references = new Set([title, createRecipeId(title)].filter(Boolean));
+  const links = [];
+
+  if (!state.menuData || references.size === 0) {
+    return links;
+  }
+
+  for (const [mealType, meal] of Object.entries(state.menuData || {})) {
+    for (const [week, weekValue] of Object.entries(meal?.weeks || {})) {
+      for (const [day, dayValue] of Object.entries(weekValue?.days || {})) {
+        for (const [category, value] of Object.entries(dayValue || {})) {
+          if (references.has(value)) {
+            links.push({ mealType, week, day, category });
+          }
+        }
+      }
+    }
+  }
+
+  return links;
+}
+
 function getFilteredRecipes() {
   const query = state.search.toLowerCase().trim();
 
@@ -227,6 +291,51 @@ function cancelEditing() {
   state.isDirty = false;
   state.localSaveStatus = "idle";
   renderAdmin();
+}
+
+function openDeleteRecipeDialog() {
+  if (!canDeleteSelectedRecipe()) {
+    state.notice = {
+      tone: "error",
+      message: "Recipe deletion failed."
+    };
+    updateValidationAndPatch();
+    return;
+  }
+
+  const recipe = getSelectedRecipe();
+  const links = findMenuLinksForRecipe(recipe);
+  const overlay = createElement("div", "recipe-import-modal");
+  const dialog = createElement("section", "recipe-import-modal__dialog");
+  const header = createElement("header", "recipe-import-modal__header");
+  const body = createElement("div", "recipe-import-modal__body");
+  const content = createElement("div", "");
+  const actions = createElement("div", "admin-actions recipe-import-modal__actions");
+  const cancelButton = createElement("button", "filter-button", "Cancel");
+  const deleteButton = createElement("button", "filter-button", "Delete Recipe");
+
+  cancelButton.type = "button";
+  deleteButton.type = "button";
+  cancelButton.addEventListener("click", () => overlay.remove());
+  deleteButton.addEventListener("click", async () => {
+    deleteButton.disabled = true;
+    cancelButton.disabled = true;
+    await deleteSelectedRecipe();
+    overlay.remove();
+  });
+
+  header.append(createElement("h2", "", "Delete Recipe"));
+  content.append(createElement("p", "admin-muted", "Are you sure you want to permanently delete this recipe?"));
+
+  if (links.length > 0) {
+    content.append(createElement("p", "admin-auth-error", "This recipe is currently linked to one or more menu slots. Deleting it will leave those slots unlinked."));
+  }
+
+  body.append(content);
+  actions.append(cancelButton, deleteButton);
+  dialog.append(header, body, actions);
+  overlay.append(dialog);
+  document.body.append(overlay);
 }
 
 function updateCreateDraft(recipe, assignment) {
@@ -435,6 +544,20 @@ function validateCurrentSchema(recipe) {
   return validateRecipeForKitchen(recipe);
 }
 
+function createDeleteRecipePatch(recipe, index) {
+  return {
+    ok: true,
+    operation: "deleteRecipe",
+    patchType: "delete-recipe",
+    source: "data/recipes/sample-recipes.json",
+    index,
+    originalTitle: recipe.title,
+    timestamp: new Date().toISOString(),
+    changedFields: {},
+    hasChanges: true
+  };
+}
+
 async function reloadPersistedData(selectedTitle = "", fallbackRecipes = null) {
   const [recipeResult, menuResult] = await Promise.all([
     loadRecipes(`data/recipes/sample-recipes.json?v=${Date.now()}`),
@@ -462,6 +585,68 @@ async function reloadPersistedData(selectedTitle = "", fallbackRecipes = null) {
   state.entryMode = null;
   state.draft = selectedIndex >= 0 ? structuredClone(state.recipes[selectedIndex]) : null;
   state.validation = state.draft ? validateRecipeForKitchen(state.draft) : null;
+}
+
+function notifyDashboardRefresh() {
+  const payload = {
+    type: "recipe-data-updated",
+    timestamp: Date.now()
+  };
+
+  try {
+    localStorage.setItem("chefDashboard.recipeDataUpdated", JSON.stringify(payload));
+  } catch {
+    // Ignore storage failures; the persisted GitHub data is still the source of truth.
+  }
+
+  try {
+    const channel = new BroadcastChannel("chef-dashboard-admin");
+    channel.postMessage(payload);
+    channel.close();
+  } catch {
+    // BroadcastChannel is a progressive enhancement for already-open dashboard tabs.
+  }
+}
+
+async function deleteSelectedRecipe() {
+  if (!canDeleteSelectedRecipe()) {
+    state.notice = {
+      tone: "error",
+      message: "Recipe deletion failed."
+    };
+    updateValidationAndPatch();
+    return;
+  }
+
+  const recipe = getSelectedRecipe();
+  const patch = createDeleteRecipePatch(recipe, state.selectedIndex);
+  const draftId = getCurrentDraftId();
+  const commitResult = await commitRecipePatch(patch, recipe, null);
+
+  if (!commitResult.ok) {
+    state.notice = {
+      tone: "error",
+      message: "Recipe deletion failed."
+    };
+    updateValidationAndPatch();
+    return;
+  }
+
+  draftSaver.cancel();
+  if (draftId) {
+    clearRecipeDraft(draftId);
+  }
+
+  await reloadPersistedData("", commitResult.recipes);
+  state.notice = {
+    tone: "success",
+    message: "Recipe deleted successfully."
+  };
+  state.isDirty = false;
+  state.localSaveStatus = "idle";
+  state.draftRecord = null;
+  notifyDashboardRefresh();
+  renderAdmin();
 }
 
 async function applyCurrentPatch() {
@@ -976,7 +1161,8 @@ function renderAdmin() {
       onValidate: validateDraft,
       onSave: saveDraft,
       onReset: resetDraft,
-      onCancel: cancelEditing
+      onCancel: cancelEditing,
+      onDelete: canDeleteSelectedRecipe() ? openDeleteRecipeDialog : undefined
     });
   }
   renderDraftStatus();

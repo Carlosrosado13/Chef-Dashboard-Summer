@@ -59,12 +59,16 @@ export function validatePatchStructure(patch) {
     return [{ message: "patch must be an object" }];
   }
 
-  if (!["updateRecipe", "createRecipe"].includes(patch.operation)) {
-    errors.push({ message: "patch.operation must be updateRecipe or createRecipe" });
+  if (!["updateRecipe", "createRecipe", "deleteRecipe"].includes(patch.operation)) {
+    errors.push({ message: "patch.operation must be updateRecipe, createRecipe, or deleteRecipe" });
   }
 
-  if (patch.operation === "updateRecipe" && (!Number.isInteger(patch.index) || patch.index < 0)) {
+  if (["updateRecipe", "deleteRecipe"].includes(patch.operation) && (!Number.isInteger(patch.index) || patch.index < 0)) {
     errors.push({ message: "patch.index must be a non-negative integer" });
+  }
+
+  if (patch.operation === "deleteRecipe") {
+    return errors;
   }
 
   if (!isRecord(patch.changedFields)) {
@@ -119,6 +123,19 @@ export function validateRecipePatchPayload(payload) {
   }
 
   errors.push(...validatePatchStructure(payload.patch));
+
+  if (payload.patch?.operation === "deleteRecipe") {
+    return errors.length > 0
+      ? {
+          ok: false,
+          errors
+        }
+      : {
+          ok: true,
+          patch: payload.patch,
+          updatedRecipe: null
+        };
+  }
 
   const updatedRecipe = buildUpdatedRecipe(payload);
 

@@ -164,6 +164,42 @@ function applyPatchToRecipeDataset(recipes, patch) {
   }
 
   const originalRecipe = cloneValue(recipes[patch.index]);
+
+  if (patch.operation === "deleteRecipe") {
+    if (!originalRecipe || typeof originalRecipe !== "object" || !String(originalRecipe.title || "").trim()) {
+      return {
+        ok: false,
+        errors: [{ message: "Selected recipe cannot be deleted." }]
+      };
+    }
+
+    if (isPlaceholderRecipe(originalRecipe)) {
+      return {
+        ok: false,
+        errors: [{ message: "Placeholder recipes cannot be deleted." }]
+      };
+    }
+
+    if (patch.originalTitle && patch.originalTitle !== originalRecipe.title) {
+      return {
+        ok: false,
+        errors: [{ message: "Recipe delete conflict; selected recipe title changed." }]
+      };
+    }
+
+    const updatedRecipes = cloneValue(recipes);
+    updatedRecipes.splice(patch.index, 1);
+
+    return {
+      ok: true,
+      originalRecipe,
+      updatedRecipe: null,
+      updatedRecipes,
+      deleted: true,
+      index: patch.index
+    };
+  }
+
   const updatedRecipe = cloneValue(originalRecipe);
   const conflicts = [];
 
@@ -205,6 +241,60 @@ function applyPatchToRecipeDataset(recipes, patch) {
     originalRecipe,
     updatedRecipe,
     updatedRecipes
+  };
+}
+
+function isPlaceholderRecipe(recipe) {
+  const title = String(recipe?.title || "").trim().toLowerCase();
+  const tags = Array.isArray(recipe?.tags) ? recipe.tags.map((tag) => String(tag).toLowerCase()) : [];
+
+  return (
+    title === "placeholder" ||
+    title === "untitled" ||
+    title === "new recipe" ||
+    title.includes("placeholder") ||
+    tags.includes("placeholder") ||
+    recipe?.metadata?.placeholder === true ||
+    recipe?.placeholder === true
+  );
+}
+
+function cleanupMenuReferences(menuData, recipeTitle) {
+  const updatedMenu = cloneValue(menuData);
+  const references = new Set([recipeTitle, createRecipeId(recipeTitle)].filter(Boolean));
+  const removedLinks = [];
+
+  if (references.size === 0) {
+    return {
+      updatedMenu,
+      changed: false,
+      removedLinks
+    };
+  }
+
+  for (const [mealType, meal] of Object.entries(updatedMenu || {})) {
+    for (const [weekName, weekValue] of Object.entries(meal?.weeks || {})) {
+      for (const [dayName, dayValue] of Object.entries(weekValue?.days || {})) {
+        for (const [slotCategory, value] of Object.entries(dayValue || {})) {
+          if (references.has(value)) {
+            dayValue[slotCategory] = "";
+            removedLinks.push({
+              mealType,
+              week: weekName,
+              day: dayName,
+              category: slotCategory,
+              originalValue: value
+            });
+          }
+        }
+      }
+    }
+  }
+
+  return {
+    updatedMenu,
+    changed: removedLinks.length > 0,
+    removedLinks
   };
 }
 
@@ -284,6 +374,10 @@ function applyMenuAssignment(menuData, assignment, recipeTitle, originalTitle = 
 }
 
 function createCommitMessage(patch) {
+  if (patch.operation === "deleteRecipe") {
+    return `Delete recipe: ${patch.originalTitle || `recipe ${patch.index}`}`;
+  }
+
   const title = patch.updatedTitle || patch.originalTitle || `recipe ${patch.index}`;
 
   return `Update recipe: ${title}`;
@@ -426,7 +520,22 @@ export async function commitRecipePatch(payload, env) {
       changed: false
     };
 
-    if (payload.menuAssignment) {
+    if (applyResult.deleted) {
+      const menuFile = await fetchGithubFile(env, menuSourceResult.sourcePath);
+      const menuData = JSON.parse(menuFile.content);
+      const menuCleanupResult = cleanupMenuReferences(menuData, applyResult.originalRecipe.title);
+
+      menuPlan = {
+        file: menuFile,
+        applyResult: {
+          updatedMenu: menuCleanupResult.updatedMenu,
+          applied: true,
+          changed: menuCleanupResult.changed,
+          removedLinks: menuCleanupResult.removedLinks
+        },
+        commitMessage: `Unlink deleted recipe: ${applyResult.originalRecipe.title}`
+      };
+    } else if (payload.menuAssignment) {
       const menuFile = await fetchGithubFile(env, menuSourceResult.sourcePath);
       const menuData = JSON.parse(menuFile.content);
       const menuApplyResult = applyMenuAssignment(
@@ -472,7 +581,7 @@ export async function commitRecipePatch(payload, env) {
           menuSourceResult.sourcePath,
           menuPlan.file.sha,
           `${JSON.stringify(menuApplyResult.updatedMenu, null, 2)}\n`,
-          `Assign recipe: ${applyResult.updatedRecipe.title}`
+          menuPlan.commitMessage || `Assign recipe: ${applyResult.updatedRecipe.title}`
         );
 
         menuResult = {
@@ -480,6 +589,7 @@ export async function commitRecipePatch(payload, env) {
           changed: true,
           source: menuSourceResult.sourcePath,
           assignment: menuApplyResult.assignment,
+          removedLinks: menuApplyResult.removedLinks || [],
           github: {
             commitSha: menuCommitResult.commit?.sha || menuCommitResult.content?.sha || "",
             contentSha: menuCommitResult.content?.sha || "",
@@ -491,16 +601,17 @@ export async function commitRecipePatch(payload, env) {
           applied: true,
           changed: false,
           source: menuSourceResult.sourcePath,
-          assignment: menuApplyResult.assignment
+          assignment: menuApplyResult.assignment,
+          removedLinks: menuApplyResult.removedLinks || []
         };
       }
     }
 
     return {
       ok: true,
-      message: "Recipe saved to GitHub.",
+      message: applyResult.deleted ? "Recipe deleted from GitHub." : "Recipe saved to GitHub.",
       saved: true,
-      recipeId: createRecipeId(applyResult.updatedRecipe),
+      recipeId: applyResult.deleted ? "" : createRecipeId(applyResult.updatedRecipe),
       updatedFiles: [
         sourceResult.sourcePath,
         ...(menuResult.changed ? [menuSourceResult.sourcePath] : [])
@@ -513,7 +624,7 @@ export async function commitRecipePatch(payload, env) {
         patchTimestamp: payload.patch.timestamp || "",
         appliedAt: createTimestamp(),
         originalTitle: payload.patch.originalTitle || applyResult.originalRecipe?.title || "",
-        updatedTitle: payload.patch.updatedTitle || applyResult.updatedRecipe.title,
+        updatedTitle: payload.patch.updatedTitle || applyResult.updatedRecipe?.title || "",
         changedFields: Object.keys(payload.patch.changedFields || {}),
         previousFileSha: sourceFile.sha,
         commitSha,

@@ -207,6 +207,7 @@ export function renderRecipeEditor(container, recipe, options = {}) {
   const saveButton = createElement("button", "filter-button production-recipe-form__primary", options.mode === "create" ? "Save & Place on Menu" : "Save Changes");
   const resetButton = createElement("button", "filter-button", "Reset");
   const cancelButton = createElement("button", "filter-button", "Close");
+  const deleteButton = createElement("button", "filter-button", "Delete Recipe");
 
   header.append(
     createElement("h2", "", options.mode === "create" ? "New Production Recipe" : "Production Recipe"),
@@ -246,9 +247,14 @@ export function renderRecipeEditor(container, recipe, options = {}) {
   saveButton.type = "submit";
   resetButton.type = "button";
   cancelButton.type = "button";
+  deleteButton.type = "button";
   resetButton.addEventListener("click", options.onReset);
   cancelButton.addEventListener("click", options.onCancel);
+  deleteButton.addEventListener("click", () => options.onDelete?.());
   actions.append(saveButton, resetButton, cancelButton);
+  if (options.mode !== "create" && typeof options.onDelete === "function") {
+    actions.append(deleteButton);
+  }
   form.append(actions);
 
   const emitChange = () => {

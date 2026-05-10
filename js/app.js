@@ -507,6 +507,43 @@ function setupResponsiveControls() {
   controlsPanel?.removeAttribute("open");
 }
 
+async function refreshDashboardData() {
+  const cacheKey = Date.now();
+  const [menuResult, recipeResult] = await Promise.all([
+    loadMenuData(`data/processed/clean-menu.json?v=${cacheKey}`),
+    loadRecipes(`data/recipes/sample-recipes.json?v=${cacheKey}`)
+  ]);
+
+  if (menuResult.ok) {
+    state.menuData = menuResult.data;
+  }
+
+  if (recipeResult.ok) {
+    recipes = recipeResult.recipes;
+  }
+
+  renderDashboard();
+}
+
+function listenForAdminRefreshes() {
+  window.addEventListener("storage", (event) => {
+    if (event.key === "chefDashboard.recipeDataUpdated") {
+      refreshDashboardData();
+    }
+  });
+
+  try {
+    const channel = new BroadcastChannel("chef-dashboard-admin");
+    channel.addEventListener("message", (event) => {
+      if (event.data?.type === "recipe-data-updated") {
+        refreshDashboardData();
+      }
+    });
+  } catch {
+    // Storage events still cover cross-tab refreshes when BroadcastChannel is unavailable.
+  }
+}
+
 async function initDashboard() {
   menuRoot = document.querySelector("#menu-root");
   ingredientRoot = document.querySelector("#ingredient-root");
@@ -533,6 +570,7 @@ async function initDashboard() {
   previousDayButton?.addEventListener("click", () => moveDay(-1));
   nextDayButton?.addEventListener("click", () => moveDay(1));
   setupResponsiveControls();
+  listenForAdminRefreshes();
 
   try {
     clearFrontendError();
