@@ -3671,3 +3671,44 @@ body {
     grid-column: auto;
   }
 }
+
+/* Recipe modal viewport safety */
+.recipe-modal {
+  --recipe-modal-top-offset: clamp(76px, 12vh, 132px);
+  z-index: 1000;
+  place-items: center;
+  padding: var(--recipe-modal-top-offset) 16px 24px;
+  overflow: hidden;
+}
+
+.recipe-modal__panel {
+  width: min(820px, 100%);
+  max-height: calc(100dvh - var(--recipe-modal-top-offset) - 24px);
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+@supports not (height: 100dvh) {
+  .recipe-modal__panel {
+    max-height: calc(100vh - var(--recipe-modal-top-offset) - 24px);
+  }
+}
+
+@media (max-width: 640px) {
+  .recipe-modal {
+    --recipe-modal-top-offset: max(10px, env(safe-area-inset-top));
+    place-items: start center;
+    padding: var(--recipe-modal-top-offset) 6px max(8px, env(safe-area-inset-bottom));
+  }
+
+  .recipe-modal__panel {
+    width: 100%;
+    max-height: calc(100dvh - var(--recipe-modal-top-offset) - max(8px, env(safe-area-inset-bottom)));
+  }
+
+  @supports not (height: 100dvh) {
+    .recipe-modal__panel {
+      max-height: calc(100vh - var(--recipe-modal-top-offset) - 8px);
+    }
+  }
+}
