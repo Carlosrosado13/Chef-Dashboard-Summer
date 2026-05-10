@@ -3,6 +3,7 @@ import { initMenuAssignment, reloadMenuAssignment } from "./adminMenuAssignment.
 import { loadRecipes } from "./loadRecipes.js";
 import { applyRecipePatch, rollbackRecipePatch } from "./applyRecipePatch.js";
 import { generateCreateRecipePatch, generateRecipePatch } from "./generateRecipePatch.js";
+import { loadMenuData } from "./loadMenuData.js";
 import { renderPatchPreview } from "./renderPatchPreview.js";
 import {
   clearRecipeDraft,
@@ -20,6 +21,7 @@ const RECIPE_SCHEMA_URL = "schemas/recipe.schema.json";
 
 const state = {
   recipes: [],
+  menuData: null,
   schema: null,
   mode: "edit",
   selectedIndex: null,
@@ -105,7 +107,8 @@ function normalizeProductionAssignment(assignment = {}) {
     mealType: "dinner",
     week: assignment.week || state.productionAssignment.week || "Week 1",
     day: assignment.day || state.productionAssignment.day || "Monday",
-    category: assignment.category || state.productionAssignment.category || "Elevated"
+    category: assignment.category || state.productionAssignment.category || "Elevated",
+    slotMode: assignment.slotMode || state.productionAssignment.slotMode || "existing"
   };
 }
 
@@ -413,10 +416,17 @@ function validateCurrentSchema(recipe) {
 }
 
 async function reloadPersistedData(selectedTitle = "", fallbackRecipes = null) {
-  const recipeResult = await loadRecipes(`data/recipes/sample-recipes.json?v=${Date.now()}`);
+  const [recipeResult, menuResult] = await Promise.all([
+    loadRecipes(`data/recipes/sample-recipes.json?v=${Date.now()}`),
+    loadMenuData(`data/processed/clean-menu.json?v=${Date.now()}`)
+  ]);
 
   if (!recipeResult.ok) {
     throw new Error(recipeResult.error);
+  }
+
+  if (menuResult.ok) {
+    state.menuData = menuResult.data;
   }
 
   const reloadedHasRecipe = !selectedTitle || recipeResult.recipes.some((recipe) => recipe.title === selectedTitle);
@@ -890,6 +900,7 @@ function openExtractionPreview(recipe, validation) {
   const previewOptions = {
     mode: "create",
     assignment: state.productionAssignment,
+    menuData: state.menuData,
     onChange(recipeDraft, assignment) {
       modalDraft = recipeDraft;
       updateProductionAssignment(assignment);
@@ -929,6 +940,7 @@ function renderAdmin() {
     renderRecipeEditor(editorRoot, state.draft, {
       mode: "create",
       assignment: state.productionAssignment,
+      menuData: state.menuData,
       onChange: updateCreateDraft,
       onValidate: validateCreateDraft,
       onSave: saveCreateDraft,
@@ -939,6 +951,7 @@ function renderAdmin() {
     renderRecipeEditor(editorRoot, state.draft, {
       mode: "edit",
       assignment: state.productionAssignment,
+      menuData: state.menuData,
       onChange: updateDraft,
       onValidate: validateDraft,
       onSave: saveDraft,
@@ -972,8 +985,9 @@ async function initAdmin() {
 
   try {
     clearError();
-    const [recipeResult, schema] = await Promise.all([
+    const [recipeResult, menuResult, schema] = await Promise.all([
       loadRecipes(),
+      loadMenuData(),
       loadJson(RECIPE_SCHEMA_URL)
     ]);
 
@@ -982,6 +996,9 @@ async function initAdmin() {
     }
 
     state.recipes = recipeResult.recipes;
+    if (menuResult.ok) {
+      state.menuData = menuResult.data;
+    }
     state.schema = schema;
     await initMenuAssignment({ recipes: state.recipes });
     createRecipeButton.addEventListener("click", startCreateRecipe);

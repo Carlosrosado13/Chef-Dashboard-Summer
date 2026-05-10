@@ -11,6 +11,7 @@ const CATEGORY_OPTIONS = [
 ];
 const WEEK_OPTIONS = ["Week 1", "Week 2", "Week 3", "Week 4"];
 const DAY_OPTIONS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+const NEW_RECIPE_SLOT = "__new_recipe__";
 const KNOWN_UNITS = new Set([
   "bag", "bags", "bunch", "bunches", "can", "cans", "case", "cases", "clove", "cloves",
   "cup", "cups", "each", "ea", "fl", "gal", "g", "kg", "lb", "lbs", "oz", "pt", "qt",
@@ -43,15 +44,22 @@ function createInputField(name, label, value, placeholder = "") {
   return wrapper;
 }
 
-function createSelectField(name, label, value, options) {
+function createSelectField(name, label, value, options, attributes = {}) {
   const wrapper = createElement("label", "admin-field");
   const select = createElement("select", "");
   select.name = name;
+
+  for (const [attribute, attributeValue] of Object.entries(attributes)) {
+    select.dataset[attribute] = attributeValue;
+  }
 
   for (const option of options) {
     const optionElement = createElement("option", "", option.label || option);
     optionElement.value = option.value || option;
     optionElement.selected = optionElement.value === value;
+    if (option.recipeTitle !== undefined) {
+      optionElement.dataset.recipeTitle = option.recipeTitle;
+    }
     select.append(optionElement);
   }
 
@@ -101,6 +109,51 @@ function normalizeCategory(value) {
   return CATEGORY_OPTIONS.some((option) => option.value === value) ? value : "Elevated";
 }
 
+function getDayMenu(menuData, assignment) {
+  return menuData?.[assignment.mealType || "dinner"]?.weeks?.[assignment.week]?.days?.[assignment.day] || null;
+}
+
+function cleanMenuRecipeName(value) {
+  return String(value || "")
+    .replace(/^Hot Appetizer:\s*/i, "")
+    .trim();
+}
+
+function createMenuSlotOptions(menuData, assignment) {
+  const dayMenu = getDayMenu(menuData, assignment);
+  const options = CATEGORY_OPTIONS.map((option) => {
+    const currentRecipe = cleanMenuRecipeName(dayMenu?.[option.value]);
+
+    return {
+      value: option.value,
+      label: currentRecipe ? `${option.label} — ${currentRecipe}` : `${option.label} — Unassigned`,
+      recipeTitle: currentRecipe
+    };
+  });
+
+  options.push({
+    value: NEW_RECIPE_SLOT,
+    label: "New Recipe",
+    recipeTitle: ""
+  });
+
+  return options;
+}
+
+function replaceSelectOptions(select, options, selectedValue) {
+  select.replaceChildren();
+
+  for (const option of options) {
+    const optionElement = createElement("option", "", option.label || option);
+    optionElement.value = option.value || option;
+    optionElement.selected = optionElement.value === selectedValue;
+    if (option.recipeTitle !== undefined) {
+      optionElement.dataset.recipeTitle = option.recipeTitle;
+    }
+    select.append(optionElement);
+  }
+}
+
 export function renderRecipeList(container, recipes, selectedIndex, onSelect) {
   container.replaceChildren();
 
@@ -132,10 +185,13 @@ export function renderRecipeEditor(container, recipe, options = {}) {
   }
 
   const assignment = {
+    mealType: options.assignment?.mealType || "dinner",
     week: options.assignment?.week || "Week 1",
     day: options.assignment?.day || "Monday",
-    category: normalizeCategory(options.assignment?.category || recipe.category)
+    category: normalizeCategory(options.assignment?.category || recipe.category),
+    slotMode: options.assignment?.slotMode || "existing"
   };
+  const selectedCategoryValue = assignment.slotMode === "new" ? NEW_RECIPE_SLOT : normalizeCategory(recipe.category || assignment.category);
   const form = createElement("form", "recipe-editor-form production-recipe-form");
   const header = createElement("div", "production-recipe-form__header");
   const fields = createElement("div", "production-recipe-form__grid");
@@ -151,9 +207,9 @@ export function renderRecipeEditor(container, recipe, options = {}) {
 
   fields.append(
     createInputField("title", "Recipe Name", recipe.title, "Coffee-Rubbed Beef Tenderloin"),
-    createSelectField("category", "Recipe Category", normalizeCategory(recipe.category || assignment.category), CATEGORY_OPTIONS),
     createSelectField("week", "Week", assignment.week, WEEK_OPTIONS),
     createSelectField("day", "Day", assignment.day, DAY_OPTIONS),
+    createSelectField("category", "Menu Slot", selectedCategoryValue, createMenuSlotOptions(options.menuData, assignment), { fallbackCategory: assignment.category }),
     createInputField("yield", "Yield", recipe.yield, "24 servings")
   );
 
@@ -177,8 +233,43 @@ export function renderRecipeEditor(container, recipe, options = {}) {
     options.onChange?.(next.recipe, next.assignment);
   };
 
+  const titleInput = form.elements.namedItem("title");
+  const weekSelect = form.elements.namedItem("week");
+  const daySelect = form.elements.namedItem("day");
+  const categorySelect = form.elements.namedItem("category");
+
+  const syncSlotControls = () => {
+    if (!categorySelect || !weekSelect || !daySelect) {
+      return;
+    }
+
+    const categoryValue = categorySelect.value === NEW_RECIPE_SLOT
+      ? categorySelect.dataset.fallbackCategory || assignment.category
+      : categorySelect.value;
+    const nextAssignment = {
+      ...assignment,
+      week: weekSelect.value,
+      day: daySelect.value,
+      category: normalizeCategory(categoryValue)
+    };
+    const selectedValue = categorySelect.value === NEW_RECIPE_SLOT ? NEW_RECIPE_SLOT : normalizeCategory(categoryValue);
+    categorySelect.dataset.fallbackCategory = nextAssignment.category;
+    replaceSelectOptions(categorySelect, createMenuSlotOptions(options.menuData, nextAssignment), selectedValue);
+
+    if (titleInput) {
+      titleInput.disabled = false;
+    }
+  };
+
+  syncSlotControls();
+
   form.addEventListener("input", emitChange);
-  form.addEventListener("change", emitChange);
+  form.addEventListener("change", (event) => {
+    if (event.target === weekSelect || event.target === daySelect || event.target === categorySelect) {
+      syncSlotControls();
+    }
+    emitChange();
+  });
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     const next = readRecipeForm(form, recipe);
@@ -190,7 +281,11 @@ export function renderRecipeEditor(container, recipe, options = {}) {
 
 export function readRecipeForm(form, baseRecipe = {}) {
   const formData = new FormData(form);
-  const category = normalizeCategory(String(formData.get("category") || ""));
+  const rawCategory = String(formData.get("category") || "");
+  const categorySelect = form.elements.namedItem("category");
+  const category = rawCategory === NEW_RECIPE_SLOT
+    ? normalizeCategory(categorySelect?.dataset?.fallbackCategory || baseRecipe.category || "")
+    : normalizeCategory(rawCategory);
   const recipe = {
     ...structuredClone(baseRecipe),
     title: String(formData.get("title") || "").trim(),
@@ -209,7 +304,8 @@ export function readRecipeForm(form, baseRecipe = {}) {
       mealType: "dinner",
       week: String(formData.get("week") || "Week 1"),
       day: String(formData.get("day") || "Monday"),
-      category
+      category,
+      slotMode: rawCategory === NEW_RECIPE_SLOT ? "new" : "existing"
     }
   };
 }
