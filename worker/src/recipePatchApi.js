@@ -1,6 +1,7 @@
 import { validateRecipe } from "./validateRecipe.js";
 
 const ALLOWED_PATCH_FIELDS = ["title", "yield", "category", "ingredients", "steps", "notes", "tags", "metadata"];
+const SUPPORTED_PATCH_OPERATIONS = ["updateRecipe", "createRecipe", "deleteRecipe"];
 const draftPatchStore = new Map();
 
 function createTimestamp() {
@@ -59,15 +60,25 @@ export function validatePatchStructure(patch) {
     return [{ message: "patch must be an object" }];
   }
 
-  if (!["updateRecipe", "createRecipe", "deleteRecipe"].includes(patch.operation)) {
-    errors.push({ message: "patch.operation must be updateRecipe, createRecipe, or deleteRecipe" });
+  if (!SUPPORTED_PATCH_OPERATIONS.includes(patch.operation)) {
+    errors.push({ message: `Unsupported patch operation: ${String(patch.operation || "missing")}` });
+    return errors;
   }
 
-  if (["updateRecipe", "deleteRecipe"].includes(patch.operation) && (!Number.isInteger(patch.index) || patch.index < 0)) {
+  if (patch.operation === "updateRecipe" && (!Number.isInteger(patch.index) || patch.index < 0)) {
     errors.push({ message: "patch.index must be a non-negative integer" });
   }
 
   if (patch.operation === "deleteRecipe") {
+    const hasIndex = Number.isInteger(patch.index) && patch.index >= 0;
+    const hasTitle = typeof patch.recipeTitle === "string" && patch.recipeTitle.trim() !== "";
+    const hasOriginalTitle = typeof patch.originalTitle === "string" && patch.originalTitle.trim() !== "";
+    const hasRecipeId = typeof patch.recipeId === "string" && patch.recipeId.trim() !== "";
+
+    if (!hasIndex && !hasTitle && !hasOriginalTitle && !hasRecipeId) {
+      errors.push({ message: "deleteRecipe requires index, recipeTitle, originalTitle, or recipeId." });
+    }
+
     return errors;
   }
 

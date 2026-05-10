@@ -24,6 +24,26 @@ function createRecipeId(recipeOrTitle) {
     .replace(/^-|-$/g, "");
 }
 
+function normalizeReference(value) {
+  return String(value || "").trim();
+}
+
+function createReferenceSet(values = []) {
+  const references = new Set();
+
+  for (const value of values) {
+    const text = normalizeReference(value);
+    if (!text) {
+      continue;
+    }
+
+    references.add(text);
+    references.add(createRecipeId(text));
+  }
+
+  return references;
+}
+
 function normalizeForComparison(value) {
   if (Array.isArray(value)) {
     return value.map(normalizeForComparison);
@@ -170,16 +190,18 @@ function applyPatchToRecipeDataset(recipes, patch) {
     };
   }
 
-  if (patch.index >= recipes.length) {
-    return {
-      ok: false,
-      errors: [{ message: "Patch index is outside the recipe dataset." }]
-    };
-  }
-
-  const originalRecipe = cloneValue(recipes[patch.index]);
-
   if (patch.operation === "deleteRecipe") {
+    const deleteIndex = resolveDeleteRecipeIndex(recipes, patch);
+
+    if (deleteIndex < 0 || deleteIndex >= recipes.length) {
+      return {
+        ok: false,
+        errors: [{ message: "Recipe to delete was not found." }]
+      };
+    }
+
+    const originalRecipe = cloneValue(recipes[deleteIndex]);
+
     if (!originalRecipe || typeof originalRecipe !== "object" || !String(originalRecipe.title || "").trim()) {
       return {
         ok: false,
@@ -194,7 +216,7 @@ function applyPatchToRecipeDataset(recipes, patch) {
       };
     }
 
-    if (patch.originalTitle && patch.originalTitle !== originalRecipe.title) {
+    if (patch.originalTitle && normalizeReference(patch.originalTitle) !== normalizeReference(originalRecipe.title)) {
       return {
         ok: false,
         errors: [{ message: "Recipe delete conflict; selected recipe title changed." }]
@@ -202,7 +224,7 @@ function applyPatchToRecipeDataset(recipes, patch) {
     }
 
     const updatedRecipes = cloneValue(recipes);
-    updatedRecipes.splice(patch.index, 1);
+    updatedRecipes.splice(deleteIndex, 1);
 
     return {
       ok: true,
@@ -210,9 +232,24 @@ function applyPatchToRecipeDataset(recipes, patch) {
       updatedRecipe: null,
       updatedRecipes,
       deleted: true,
-      index: patch.index
+      index: deleteIndex,
+      deleteReferences: Array.from(createReferenceSet([
+        originalRecipe.title,
+        patch.recipeTitle,
+        patch.originalTitle,
+        patch.recipeId
+      ]))
     };
   }
+
+  if (patch.index >= recipes.length) {
+    return {
+      ok: false,
+      errors: [{ message: "Patch index is outside the recipe dataset." }]
+    };
+  }
+
+  const originalRecipe = cloneValue(recipes[patch.index]);
 
   const updatedRecipe = cloneValue(originalRecipe);
   const conflicts = [];
@@ -258,6 +295,23 @@ function applyPatchToRecipeDataset(recipes, patch) {
   };
 }
 
+function resolveDeleteRecipeIndex(recipes, patch) {
+  if (Number.isInteger(patch.index) && patch.index >= 0 && patch.index < recipes.length) {
+    return patch.index;
+  }
+
+  const references = createReferenceSet([patch.recipeTitle, patch.originalTitle, patch.recipeId]);
+
+  if (references.size === 0) {
+    return -1;
+  }
+
+  return recipes.findIndex((recipe) => {
+    const title = normalizeReference(recipe?.title);
+    return references.has(title) || references.has(createRecipeId(title));
+  });
+}
+
 function isPlaceholderRecipe(recipe) {
   const title = String(recipe?.title || "").trim().toLowerCase();
   const tags = Array.isArray(recipe?.tags) ? recipe.tags.map((tag) => String(tag).toLowerCase()) : [];
@@ -273,9 +327,9 @@ function isPlaceholderRecipe(recipe) {
   );
 }
 
-function cleanupMenuReferences(menuData, recipeTitle) {
+function cleanupMenuReferences(menuData, referencesInput = []) {
   const updatedMenu = cloneValue(menuData);
-  const references = new Set([recipeTitle, createRecipeId(recipeTitle)].filter(Boolean));
+  const references = createReferenceSet(Array.isArray(referencesInput) ? referencesInput : [referencesInput]);
   const removedLinks = [];
 
   if (references.size === 0) {
@@ -290,7 +344,8 @@ function cleanupMenuReferences(menuData, recipeTitle) {
     for (const [weekName, weekValue] of Object.entries(meal?.weeks || {})) {
       for (const [dayName, dayValue] of Object.entries(weekValue?.days || {})) {
         for (const [slotCategory, value] of Object.entries(dayValue || {})) {
-          if (references.has(value)) {
+          const textValue = normalizeReference(value);
+          if (references.has(textValue) || references.has(createRecipeId(textValue))) {
             dayValue[slotCategory] = "";
             removedLinks.push({
               mealType,
@@ -542,7 +597,10 @@ export async function commitRecipePatch(payload, env) {
     if (applyResult.deleted) {
       const menuFile = await fetchGithubFile(env, menuSourceResult.sourcePath);
       const menuData = JSON.parse(menuFile.content);
-      const menuCleanupResult = cleanupMenuReferences(menuData, applyResult.originalRecipe.title);
+      const menuCleanupResult = cleanupMenuReferences(
+        menuData,
+        applyResult.deleteReferences || [applyResult.originalRecipe.title, payload.patch.recipeTitle, payload.patch.recipeId]
+      );
 
       menuPlan = {
         file: menuFile,

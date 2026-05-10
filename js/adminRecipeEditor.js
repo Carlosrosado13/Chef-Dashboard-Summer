@@ -556,15 +556,18 @@ function validateCurrentSchema(recipe) {
 }
 
 function createDeleteRecipePatch(recipe, index) {
+  const title = String(recipe?.title || "").trim();
+
   return {
     ok: true,
     operation: "deleteRecipe",
     patchType: "delete-recipe",
     source: "data/recipes/sample-recipes.json",
     index,
-    originalTitle: recipe.title,
-    recipeTitle: recipe.title,
-    recipeId: createRecipeId(recipe),
+    originalTitle: title,
+    recipeTitle: title,
+    recipeId: createRecipeId(title),
+    cleanupAssignments: true,
     timestamp: new Date().toISOString(),
     changedFields: {},
     hasChanges: true
@@ -583,8 +586,13 @@ function validateDeleteCommitPayload(payload) {
     errors.push("Delete payload operation must be deleteRecipe.");
   }
 
-  if (!Number.isInteger(patch?.index) || patch.index < 0 || patch.index >= state.recipes.length) {
-    errors.push("Delete payload index is outside the recipe list.");
+  const hasIndex = Number.isInteger(patch?.index) && patch.index >= 0 && patch.index < state.recipes.length;
+  const hasTitle = typeof patch?.recipeTitle === "string" && patch.recipeTitle.trim() !== "";
+  const hasOriginalTitle = typeof patch?.originalTitle === "string" && patch.originalTitle.trim() !== "";
+  const hasRecipeId = typeof patch?.recipeId === "string" && patch.recipeId.trim() !== "";
+
+  if (!hasIndex && !hasTitle && !hasOriginalTitle && !hasRecipeId) {
+    errors.push("Delete payload must include index, recipeTitle, originalTitle, or recipeId.");
   }
 
   if (typeof patch?.source !== "string" || !patch.source.startsWith("data/recipes/")) {
