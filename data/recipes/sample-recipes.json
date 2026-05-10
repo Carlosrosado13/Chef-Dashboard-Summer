@@ -364,5 +364,199 @@
       "Top with chopped 2 tablespoons scallions or serve with your favorite meal.",
       "If you've tried this recipe, please come back to leave us a comment and give it a star rating!"
     ]
+  },
+  {
+    "title": "Corn Soup",
+    "yield": "24 portions",
+    "category": "Appetizer 1",
+    "ingredients": [
+      {
+        "name": "sweet corn kernels",
+        "amount": 4,
+        "unit": "kg"
+      },
+      {
+        "name": "Spanish onions, diced",
+        "amount": 2,
+        "unit": "large"
+      },
+      {
+        "name": "celery, diced",
+        "amount": 6,
+        "unit": "stalks"
+      },
+      {
+        "name": "carrots, diced",
+        "amount": 4,
+        "unit": "large"
+      },
+      {
+        "name": "unsalted butter",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "vegetable stock",
+        "amount": 5,
+        "unit": "L"
+      },
+      {
+        "name": "35% cream",
+        "amount": 1,
+        "unit": "L"
+      }
+    ],
+    "steps": [
+      "Sweat onions, celery, and carrots in butter.",
+      "Add corn and cook 5 minutes.",
+      "Add stock and simmer 30 minutes.",
+      "Blend until smooth.",
+      "Add cream and season.",
+      "Garnish with chives before serving."
+    ],
+    "metadata": {
+      "importedFrom": "week1_summer_recipes_dashboard.json",
+      "week": "Week 1",
+      "day": "Monday"
+    }
+  },
+  {
+    "title": "Braised Short Ribs with Red Wine Sauce",
+    "yield": "24 portions",
+    "category": "Elevated",
+    "ingredients": [
+      {
+        "name": "beef short ribs",
+        "amount": 12,
+        "unit": "kg"
+      },
+      {
+        "name": "onions, rough chopped",
+        "amount": 4,
+        "unit": "large"
+      },
+      {
+        "name": "carrots, rough chopped",
+        "amount": 4,
+        "unit": "large"
+      },
+      {
+        "name": "celery, rough chopped",
+        "amount": 6,
+        "unit": "stalks"
+      },
+      {
+        "name": "dry red wine",
+        "amount": 3,
+        "unit": "L"
+      },
+      {
+        "name": "beef stock",
+        "amount": 5,
+        "unit": "L"
+      }
+    ],
+    "steps": [
+      "Season and sear short ribs deeply.",
+      "Caramelize vegetables.",
+      "Add tomato paste and deglaze with wine.",
+      "Reduce wine by half.",
+      "Add stock and herbs.",
+      "Braise covered at 325°F for 3.5 hours.",
+      "Reduce sauce and serve."
+    ],
+    "metadata": {
+      "importedFrom": "week1_summer_recipes_dashboard.json",
+      "week": "Week 1",
+      "day": "Monday"
+    }
+  },
+  {
+    "title": "Pan Seared Salmon with Cucumber Dill Yogurt Sauce",
+    "yield": "24 portions",
+    "category": "Alternative",
+    "ingredients": [
+      {
+        "name": "salmon fillets",
+        "amount": 24,
+        "unit": ""
+      },
+      {
+        "name": "Greek yogurt",
+        "amount": 1,
+        "unit": "L"
+      },
+      {
+        "name": "English cucumbers",
+        "amount": 2,
+        "unit": ""
+      },
+      {
+        "name": "fresh dill",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "name": "lemon juice",
+        "amount": 60,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Season salmon.",
+      "Prepare cucumber dill yogurt sauce.",
+      "Sear salmon until golden.",
+      "Finish cooking gently.",
+      "Serve with sauce and garnish."
+    ],
+    "metadata": {
+      "importedFrom": "week1_summer_recipes_dashboard.json",
+      "week": "Week 1",
+      "day": "Monday"
+    }
+  },
+  {
+    "title": "Roast Beef with Chimichurri",
+    "yield": "24 portions",
+    "category": "Elevated",
+    "ingredients": [
+      {
+        "name": "AAA roast beef",
+        "amount": 12,
+        "unit": "kg"
+      },
+      {
+        "name": "fresh parsley",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "name": "fresh oregano",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "red wine vinegar",
+        "amount": 250,
+        "unit": "ml"
+      },
+      {
+        "name": "olive oil",
+        "amount": 500,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Season and roast beef.",
+      "Rest before slicing.",
+      "Prepare chimichurri.",
+      "Slice beef thinly.",
+      "Serve with chimichurri."
+    ],
+    "metadata": {
+      "importedFrom": "week1_summer_recipes_dashboard.json",
+      "week": "Week 1",
+      "day": "Wednesday"
+    }
   }
 ]
