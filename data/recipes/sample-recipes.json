@@ -185,5 +185,55 @@
       "Sear and roast to desired doneness.",
       "Rest, slice, and finish with shallot butter."
     ]
+  },
+  {
+    "title": "Miso and Soy Chilean Sea Bass",
+    "category": "Traditional",
+    "yield": "4",
+    "ingredients": [
+      {
+        "amount": 0.33333334326744,
+        "unit": "cup",
+        "name": "sake"
+      },
+      {
+        "amount": 0.33333334326744,
+        "unit": "cup",
+        "name": "mirin (Japanese sweet rice wine)"
+      },
+      {
+        "amount": 0.33333334326744,
+        "unit": "cup",
+        "name": "miso paste"
+      },
+      {
+        "amount": 0.25,
+        "unit": "cup",
+        "name": "packed brown sugar"
+      },
+      {
+        "amount": 3,
+        "unit": "tablespoons",
+        "name": "soy sauce"
+      },
+      {
+        "amount": 4,
+        "unit": "",
+        "name": "(4 ounce) fillets fresh sea bass, about 1 inch thick"
+      },
+      {
+        "amount": 2,
+        "unit": "tablespoons",
+        "name": "chopped green onion"
+      }
+    ],
+    "steps": [
+      "Whisk together sake, mirin, miso paste, brown sugar, and soy sauce in a bowl.",
+      "Place sea bass fillets in a large resealable plastic bag; pour marinade over fillets. Chill in the refrigerator for 3 to 6 hours.",
+      "Preheat the oven's broiler and set the oven rack about 6 inches from the heat source. Prop the oven door to remain slightly ajar.",
+      "Arrange fillets on a baking sheet; discard marinade.",
+      "Broil sea bass in the preheated oven until fish flakes easily with a fork, 7 to 9 minutes.",
+      "Sprinkle with chopped green onions to serve."
+    ]
   }
 ]
