@@ -100,8 +100,8 @@ export function getAvailableDays(menuData, filters = {}) {
   const dayOrder = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
   return Array.from(days).sort((firstDay, secondDay) => {
-    const firstIndex = dayOrder.indexOf(firstDay);
-    const secondIndex = dayOrder.indexOf(secondDay);
+    const firstIndex = dayOrder.findIndex((day) => day === firstDay);
+    const secondIndex = dayOrder.findIndex((day) => day === secondDay);
 
     if (firstIndex !== -1 || secondIndex !== -1) {
       return (firstIndex === -1 ? 99 : firstIndex) - (secondIndex === -1 ? 99 : secondIndex);

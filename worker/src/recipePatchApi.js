@@ -53,6 +53,18 @@ function isRecord(value) {
   return value !== null && typeof value === "object" && !Array.isArray(value);
 }
 
+function getPatchFromPayload(payload) {
+  if (isRecord(payload?.patch)) {
+    return payload.patch;
+  }
+
+  if (isRecord(payload) && typeof payload.operation === "string") {
+    return payload;
+  }
+
+  return null;
+}
+
 export function validatePatchStructure(patch) {
   const errors = [];
 
@@ -133,9 +145,10 @@ export function validateRecipePatchPayload(payload) {
     };
   }
 
-  errors.push(...validatePatchStructure(payload.patch));
+  const patch = getPatchFromPayload(payload);
+  errors.push(...validatePatchStructure(patch));
 
-  if (payload.patch?.operation === "deleteRecipe") {
+  if (patch?.operation === "deleteRecipe") {
     return errors.length > 0
       ? {
           ok: false,
@@ -143,12 +156,13 @@ export function validateRecipePatchPayload(payload) {
         }
       : {
           ok: true,
-          patch: payload.patch,
+          patch,
           updatedRecipe: null
         };
   }
 
-  const updatedRecipe = buildUpdatedRecipe(payload);
+  const normalizedPayload = isRecord(payload.patch) ? payload : { ...payload, patch };
+  const updatedRecipe = buildUpdatedRecipe(normalizedPayload);
 
   if (!updatedRecipe) {
     errors.push({ message: "payload must include updatedRecipe or originalRecipe" });
@@ -173,7 +187,7 @@ export function validateRecipePatchPayload(payload) {
 
   return {
     ok: true,
-    patch: payload.patch,
+    patch,
     updatedRecipe
   };
 }

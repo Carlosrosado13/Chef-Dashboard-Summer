@@ -244,22 +244,29 @@ function createFilterButton(label, value, isActive, onSelect) {
 }
 
 function syncDefaultSelections() {
-  const mealTypes = getAvailableMealTypes(state.menuData);
+  const mealTypes = Array.isArray(getAvailableMealTypes(state.menuData)) ? getAvailableMealTypes(state.menuData) : [];
 
   if (!mealTypes.includes(state.selectedMealType)) {
     state.selectedMealType = mealTypes[0] || "";
   }
 
-  const weeks = getAvailableWeeksForMeal(state.menuData, state.selectedMealType);
+  const weeks = Array.isArray(getAvailableWeeksForMeal(state.menuData, state.selectedMealType))
+    ? getAvailableWeeksForMeal(state.menuData, state.selectedMealType)
+    : [];
 
   if (!weeks.includes(state.selectedWeek)) {
     state.selectedWeek = weeks[0] || "";
   }
 
-  const days = getAvailableDays(state.menuData, {
+  const days = Array.isArray(getAvailableDays(state.menuData, {
     mealType: state.selectedMealType,
     week: state.selectedWeek
-  });
+  }))
+    ? getAvailableDays(state.menuData, {
+        mealType: state.selectedMealType,
+        week: state.selectedWeek
+      })
+    : [];
 
   if (!days.includes(state.selectedDay)) {
     state.selectedDay = days[0] || "";
@@ -338,8 +345,8 @@ function renderControls(options) {
 }
 
 function updateQuickSwitchButtons(options) {
-  const weekIndex = options.weeks.indexOf(state.selectedWeek);
-  const dayIndex = options.days.indexOf(state.selectedDay);
+  const weekIndex = options.weeks.findIndex((week) => week === state.selectedWeek);
+  const dayIndex = options.days.findIndex((day) => day === state.selectedDay);
   const isWeeklyView = state.viewMode === "weekly";
 
   if (previousWeekButton) previousWeekButton.disabled = weekIndex <= 0;
@@ -349,8 +356,10 @@ function updateQuickSwitchButtons(options) {
 }
 
 function moveWeek(delta) {
-  const weeks = getAvailableWeeksForMeal(state.menuData, state.selectedMealType);
-  const index = weeks.indexOf(state.selectedWeek);
+  const weeks = Array.isArray(getAvailableWeeksForMeal(state.menuData, state.selectedMealType))
+    ? getAvailableWeeksForMeal(state.menuData, state.selectedMealType)
+    : [];
+  const index = weeks.findIndex((week) => week === state.selectedWeek);
   const nextWeek = weeks[index + delta];
 
   if (!nextWeek) {
@@ -363,11 +372,16 @@ function moveWeek(delta) {
 }
 
 function moveDay(delta) {
-  const days = getAvailableDays(state.menuData, {
+  const days = Array.isArray(getAvailableDays(state.menuData, {
     mealType: state.selectedMealType,
     week: state.selectedWeek
-  });
-  const index = days.indexOf(state.selectedDay);
+  }))
+    ? getAvailableDays(state.menuData, {
+        mealType: state.selectedMealType,
+        week: state.selectedWeek
+      })
+    : [];
+  const index = days.findIndex((day) => day === state.selectedDay);
   const nextDay = days[index + delta];
 
   if (!nextDay) {

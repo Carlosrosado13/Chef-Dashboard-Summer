@@ -559,24 +559,17 @@ function createDeleteRecipePatch(recipe, index) {
   const title = String(recipe?.title || "").trim();
 
   return {
-    ok: true,
     operation: "deleteRecipe",
-    patchType: "delete-recipe",
     source: "data/recipes/sample-recipes.json",
-    index,
-    originalTitle: title,
     recipeTitle: title,
-    recipeId: createRecipeId(title),
     cleanupAssignments: true,
-    timestamp: new Date().toISOString(),
-    changedFields: {},
-    hasChanges: true
+    timestamp: new Date().toISOString()
   };
 }
 
 function validateDeleteCommitPayload(payload) {
   const errors = [];
-  const patch = payload?.patch;
+  const patch = payload?.patch || (payload?.operation ? payload : null);
 
   if (!patch || typeof patch !== "object" || Array.isArray(patch)) {
     errors.push("Delete payload must include a patch object.");
@@ -597,14 +590,6 @@ function validateDeleteCommitPayload(payload) {
 
   if (typeof patch?.source !== "string" || !patch.source.startsWith("data/recipes/")) {
     errors.push("Delete payload source must be a recipe JSON path string.");
-  }
-
-  if (typeof payload?.menuSource !== "string") {
-    errors.push("Delete payload menuSource must be a string.");
-  }
-
-  if (!payload?.originalRecipe || typeof payload.originalRecipe !== "object" || !String(payload.originalRecipe.title || "").trim()) {
-    errors.push("Delete payload originalRecipe must include a title.");
   }
 
   if (!Array.isArray(state.recipes)) {
@@ -680,10 +665,10 @@ async function deleteSelectedRecipe() {
   const recipe = getSelectedRecipe();
   const patch = createDeleteRecipePatch(recipe, state.selectedIndex);
   const draftId = getCurrentDraftId();
-  const commitResult = await commitRecipePatch(patch, recipe, null, {
+  const commitResult = await commitRecipePatch(patch, null, null, {
     skipMenuAssignment: true,
-    validatePayload: validateDeleteCommitPayload,
-    commitMessage: `Delete recipe: ${recipe.title}`
+    flatPatch: true,
+    validatePayload: validateDeleteCommitPayload
   });
 
   if (!commitResult.ok) {
@@ -851,13 +836,18 @@ async function applyCurrentPatchUnsafe() {
 
 async function commitRecipePatch(patch, originalRecipe, updatedRecipe, options = {}) {
   try {
-    const payload = {
-      patch,
-      source: "data/recipes/sample-recipes.json",
-      originalRecipe,
-      updatedRecipe,
-      menuSource: "data/processed/clean-menu.json"
-    };
+    const payload = options.flatPatch
+      ? {
+          ...patch,
+          source: patch.source || "data/recipes/sample-recipes.json"
+        }
+      : {
+          patch,
+          source: "data/recipes/sample-recipes.json",
+          originalRecipe,
+          updatedRecipe,
+          menuSource: "data/processed/clean-menu.json"
+        };
 
     if (!options.skipMenuAssignment) {
       payload.menuAssignment = state.productionAssignment;

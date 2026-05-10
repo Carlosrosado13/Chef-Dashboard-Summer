@@ -149,6 +149,18 @@ function validateMenuSourcePath(source) {
   };
 }
 
+function getPatchFromPayload(payload) {
+  if (isRecord(payload?.patch)) {
+    return payload.patch;
+  }
+
+  if (isRecord(payload) && typeof payload.operation === "string") {
+    return payload;
+  }
+
+  return null;
+}
+
 function applyPatchToRecipeDataset(recipes, patch) {
   const structureErrors = validatePatchStructure(patch);
 
@@ -444,7 +456,7 @@ function applyMenuAssignment(menuData, assignment, recipeTitle, originalTitle = 
 
 function createCommitMessage(patch) {
   if (patch.operation === "deleteRecipe") {
-    return `Delete recipe: ${patch.originalTitle || `recipe ${patch.index}`}`;
+    return `Delete recipe: ${patch.recipeTitle || patch.originalTitle || `recipe ${patch.index}`}`;
   }
 
   const title = patch.updatedTitle || patch.originalTitle || `recipe ${patch.index}`;
@@ -522,6 +534,7 @@ async function commitGithubFile(env, sourcePath, currentSha, content, message) {
 
 export async function commitRecipePatch(payload, env) {
   const timestamp = createTimestamp();
+  const patch = getPatchFromPayload(payload);
   const envErrors = validateGithubEnv(env);
 
   if (envErrors.length > 0) {
@@ -534,21 +547,21 @@ export async function commitRecipePatch(payload, env) {
     };
   }
 
-  if (!isRecord(payload) || !isRecord(payload.patch)) {
+  if (!isRecord(payload) || !isRecord(patch)) {
     return {
       ok: false,
       status: 400,
       error: "Request must include a patch object.",
-      details: [{ message: "payload.patch is required" }],
+      details: [{ message: "payload.patch or flat patch operation is required" }],
       timestamp
     };
   }
 
-  console.log("[recipe-commit] operation:", payload.patch.operation || "missing");
-  console.log("[recipe-commit] source type:", typeof (payload.patch.source || payload.source));
+  console.log("[recipe-commit] operation:", patch.operation || "missing");
+  console.log("[recipe-commit] source type:", typeof (patch.source || payload.source));
   console.log("[recipe-commit] menuSource type:", typeof payload.menuSource);
 
-  const sourceResult = validateSourcePath(payload.patch.source || payload.source);
+  const sourceResult = validateSourcePath(patch.source || payload.source);
 
   if (!sourceResult.ok) {
     return {
@@ -575,7 +588,7 @@ export async function commitRecipePatch(payload, env) {
 
     const sourceFile = await fetchGithubFile(env, sourceResult.sourcePath);
     const recipes = JSON.parse(sourceFile.content);
-    const applyResult = applyPatchToRecipeDataset(recipes, payload.patch);
+    const applyResult = applyPatchToRecipeDataset(recipes, patch);
 
     if (!applyResult.ok) {
       console.log("[recipe-commit] apply failed:", JSON.stringify(applyResult.errors || []));
@@ -599,7 +612,7 @@ export async function commitRecipePatch(payload, env) {
       const menuData = JSON.parse(menuFile.content);
       const menuCleanupResult = cleanupMenuReferences(
         menuData,
-        applyResult.deleteReferences || [applyResult.originalRecipe.title, payload.patch.recipeTitle, payload.patch.recipeId]
+        applyResult.deleteReferences || [applyResult.originalRecipe.title, patch.recipeTitle, patch.recipeId]
       );
 
       menuPlan = {
@@ -619,7 +632,7 @@ export async function commitRecipePatch(payload, env) {
         menuData,
         payload.menuAssignment,
         applyResult.updatedRecipe.title,
-        applyResult.originalRecipe?.title || payload.patch.originalTitle || ""
+        applyResult.originalRecipe?.title || patch.originalTitle || ""
       );
 
       if (!menuApplyResult.ok) {
@@ -640,7 +653,7 @@ export async function commitRecipePatch(payload, env) {
     }
 
     const updatedContent = `${JSON.stringify(applyResult.updatedRecipes, null, 2)}\n`;
-    const commitMessage = payload.commitMessage || createCommitMessage(payload.patch);
+    const commitMessage = payload.commitMessage || createCommitMessage(patch);
     const commitResult = await commitGithubFile(
       env,
       sourceResult.sourcePath,
@@ -699,18 +712,18 @@ export async function commitRecipePatch(payload, env) {
       branch: env.GH_BRANCH,
       audit: {
         timestamp,
-        patchTimestamp: payload.patch.timestamp || "",
+        patchTimestamp: patch.timestamp || "",
         appliedAt: createTimestamp(),
-        originalTitle: payload.patch.originalTitle || applyResult.originalRecipe?.title || "",
-        updatedTitle: payload.patch.updatedTitle || applyResult.updatedRecipe?.title || "",
-        changedFields: Object.keys(payload.patch.changedFields || {}),
+        originalTitle: patch.originalTitle || applyResult.originalRecipe?.title || "",
+        updatedTitle: patch.updatedTitle || applyResult.updatedRecipe?.title || "",
+        changedFields: Object.keys(patch.changedFields || {}),
         previousFileSha: sourceFile.sha,
         commitSha,
         rollback: {
           source: sourceResult.sourcePath,
           branch: env.GH_BRANCH,
           previousFileSha: sourceFile.sha,
-          recipeIndex: applyResult.index ?? payload.patch.index,
+          recipeIndex: applyResult.index ?? patch.index,
           originalRecipe: applyResult.originalRecipe
         }
       },
@@ -720,7 +733,7 @@ export async function commitRecipePatch(payload, env) {
         htmlUrl: commitResult.commit?.html_url || commitResult.content?.html_url || ""
       },
       recipe: applyResult.updatedRecipe,
-      recipeIndex: applyResult.index ?? payload.patch.index,
+      recipeIndex: applyResult.index ?? patch.index,
       recipes: applyResult.updatedRecipes,
       menu: menuResult
     };

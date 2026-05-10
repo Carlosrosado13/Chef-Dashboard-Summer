@@ -7,6 +7,18 @@ function createTimestamp() {
   return new Date().toISOString();
 }
 
+function getPatchFromPayload(payload) {
+  if (payload?.patch && typeof payload.patch === "object" && !Array.isArray(payload.patch)) {
+    return payload.patch;
+  }
+
+  if (payload && typeof payload === "object" && !Array.isArray(payload) && typeof payload.operation === "string") {
+    return payload;
+  }
+
+  return null;
+}
+
 export async function handleCommitPatch(request, env) {
   const pathname = new URL(request.url).pathname;
   console.log(`[recipe-api] ${request.method} ${pathname} ${createTimestamp()}`);
@@ -20,6 +32,7 @@ export async function handleCommitPatch(request, env) {
     return parsed.response;
   }
 
+  const patch = getPatchFromPayload(parsed.data);
   const result = await commitRecipePatch(parsed.data, env);
 
   if (!result.ok) {
@@ -28,8 +41,8 @@ export async function handleCommitPatch(request, env) {
       ...(result.details || []),
       {
         message: "Commit patch rejected by worker.",
-        operation: parsed.data?.patch?.operation || "",
-        sourceType: typeof (parsed.data?.patch?.source || parsed.data?.source),
+        operation: patch?.operation || "",
+        sourceType: typeof (patch?.source || parsed.data?.source),
         menuSourceType: typeof parsed.data?.menuSource
       }
     ]);
