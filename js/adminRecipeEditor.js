@@ -165,6 +165,17 @@ function canDeleteSelectedRecipe() {
   );
 }
 
+function hasExistingRecipeSelection() {
+  return (
+    state.mode !== "create" &&
+    state.selectedIndex !== null &&
+    Number.isInteger(state.selectedIndex) &&
+    state.selectedIndex >= 0 &&
+    state.selectedIndex < state.recipes.length &&
+    Boolean(getSelectedRecipe())
+  );
+}
+
 function findMenuLinksForRecipe(recipe) {
   const title = String(recipe?.title || "").trim();
   const references = new Set([title, createRecipeId(title)].filter(Boolean));
@@ -328,7 +339,7 @@ function openDeleteRecipeDialog() {
   content.append(createElement("p", "admin-muted", "Are you sure you want to permanently delete this recipe?"));
 
   if (links.length > 0) {
-    content.append(createElement("p", "admin-auth-error", "This recipe is currently linked to one or more menu slots. Deleting it will leave those slots unlinked."));
+    content.append(createElement("p", "admin-auth-error", "This recipe is currently assigned to one or more menu slots."));
   }
 
   body.append(content);
@@ -1162,7 +1173,9 @@ function renderAdmin() {
       onSave: saveDraft,
       onReset: resetDraft,
       onCancel: cancelEditing,
-      onDelete: canDeleteSelectedRecipe() ? openDeleteRecipeDialog : undefined
+      showDelete: hasExistingRecipeSelection(),
+      deleteDisabled: !canDeleteSelectedRecipe(),
+      onDelete: openDeleteRecipeDialog
     });
   }
   renderDraftStatus();

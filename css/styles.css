@@ -229,6 +229,18 @@ button {
   transform: none;
 }
 
+.filter-button--danger {
+  border-color: rgba(216, 92, 69, 0.46);
+  background: var(--color-coral-soft);
+  color: var(--color-error);
+}
+
+.filter-button--danger:hover:not(:disabled) {
+  border-color: var(--color-coral);
+  background: #ffe2dc;
+  color: var(--color-error);
+}
+
 .dashboard-section-nav {
   position: sticky;
   top: 0;
