@@ -1492,6 +1492,10 @@ button {
   gap: 16px;
 }
 
+.admin-section-panel[hidden] {
+  display: none !important;
+}
+
 .admin-content[data-active-admin-section="workspace"] .admin-layout {
   grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
 }
@@ -2077,6 +2081,125 @@ button {
 
   .production-recipe-form__grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard,
+  .admin-dashboard * {
+    max-width: 100%;
+  }
+
+  .admin-dashboard {
+    overflow-x: hidden;
+  }
+
+  .admin-dashboard .dashboard-header {
+    position: static;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .admin-header-status {
+    justify-items: start;
+  }
+
+  .admin-section-nav {
+    position: static;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6px;
+    overflow-x: auto;
+    padding: 5px;
+    scrollbar-width: none;
+  }
+
+  .admin-section-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .admin-section-nav__button {
+    flex: 0 0 auto;
+    min-height: 32px;
+    padding: 5px 10px;
+    white-space: nowrap;
+  }
+
+  .admin-content,
+  .admin-layout,
+  .admin-content[data-active-admin-section="workspace"] .admin-layout,
+  .menu-assignment-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .admin-panel,
+  .recipe-list-panel,
+  .recipe-editor-panel,
+  .validation-panel,
+  .menu-assignment-panel,
+  .menu-assignment-controls,
+  .menu-assignment-recipes,
+  .menu-assignment-preview {
+    width: 100%;
+    min-width: 0;
+    overflow: visible;
+  }
+
+  .admin-panel {
+    padding: 10px;
+  }
+
+  .recipe-editor-panel {
+    order: 1;
+  }
+
+  .validation-panel {
+    position: static;
+    order: 2;
+  }
+
+  .recipe-list-panel {
+    order: 3;
+  }
+
+  .recipe-entry {
+    gap: 9px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .recipe-entry__modes,
+  .recipe-entry__import,
+  .production-recipe-form__grid,
+  .production-recipe-form__actions {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .recipe-entry__mode-button,
+  .recipe-entry__import .filter-button,
+  .production-recipe-form__actions .filter-button,
+  .admin-field input,
+  .admin-field select,
+  .admin-field textarea,
+  .menu-assignment-recipes input[type="search"] {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .production-recipe-form__actions {
+    display: grid;
+    gap: 7px;
+  }
+
+  .patch-preview,
+  .patch-field__value {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
   }
 }
 
