@@ -185,5 +185,274 @@
       "Sear and roast to desired doneness.",
       "Rest, slice, and finish with shallot butter."
     ]
+  },
+  {
+    "title": "Miso and Soy Chilean Sea Bass",
+    "category": "Traditional",
+    "yield": "4",
+    "ingredients": [
+      {
+        "amount": 0.33333334326744,
+        "unit": "cup",
+        "name": "sake"
+      },
+      {
+        "amount": 0.33333334326744,
+        "unit": "cup",
+        "name": "mirin (Japanese sweet rice wine)"
+      },
+      {
+        "amount": 0.33333334326744,
+        "unit": "cup",
+        "name": "miso paste"
+      },
+      {
+        "amount": 0.25,
+        "unit": "cup",
+        "name": "packed brown sugar"
+      },
+      {
+        "amount": 3,
+        "unit": "tablespoons",
+        "name": "soy sauce"
+      },
+      {
+        "amount": 4,
+        "unit": "",
+        "name": "(4 ounce) fillets fresh sea bass, about 1 inch thick"
+      },
+      {
+        "amount": 2,
+        "unit": "tablespoons",
+        "name": "chopped green onion"
+      }
+    ],
+    "steps": [
+      "Whisk together sake, mirin, miso paste, brown sugar, and soy sauce in a bowl.",
+      "Place sea bass fillets in a large resealable plastic bag; pour marinade over fillets. Chill in the refrigerator for 3 to 6 hours.",
+      "Preheat the oven's broiler and set the oven rack about 6 inches from the heat source. Prop the oven door to remain slightly ajar.",
+      "Arrange fillets on a baking sheet; discard marinade.",
+      "Broil sea bass in the preheated oven until fish flakes easily with a fork, 7 to 9 minutes.",
+      "Sprinkle with chopped green onions to serve."
+    ]
+  },
+  {
+    "title": "Spinach Cheese Manicotti",
+    "category": "Alternative",
+    "yield": "6",
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "(15 ounce) container ricotta cheese"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "(10 ounce) package frozen chopped spinach, thawed and squeezed dry"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "minced onion"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "large egg"
+      },
+      {
+        "amount": 2,
+        "unit": "teaspoons",
+        "name": "minced fresh parsley"
+      },
+      {
+        "amount": 0.5,
+        "unit": "teaspoon",
+        "name": "pepper"
+      },
+      {
+        "amount": 0.25,
+        "unit": "teaspoon",
+        "name": "garlic powder"
+      },
+      {
+        "amount": 1.5,
+        "unit": "cups",
+        "name": "shredded mozzarella cheese, divided"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "grated Parmesan cheese, divided"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "(8 ounce) package manicotti shells"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "(26 ounce) jars spaghetti sauce"
+      },
+      {
+        "amount": 1.5,
+        "unit": "cups",
+        "name": "water"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 350 degrees F (175 degrees C).",
+      "Mix ricotta, spinach, onion, egg, parsley, pepper, and garlic powder together in a large bowl. Stir in 1 cup mozzarella and 1/4 cup Parmesan. Stuff mixture into uncooked manicotti shells.",
+      "Stir spaghetti sauce and water together in a bowl. Spread 1 cup sauce over the bottom of a 9x13-inch baking dish. Arrange stuffed manicotti in a single layer in the dish. Cover with remaining sauce, then sprinkle with remaining mozzarella and Parmesan.",
+      "Bake in the preheated oven until shells are tender yet firm to the bite, 45 to 55 minutes."
+    ]
+  },
+  {
+    "title": "Spinach Cheese Manicotti",
+    "category": "Alternative",
+    "yield": "6",
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "(15 ounce) container ricotta cheese"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "(10 ounce) package frozen chopped spinach, thawed and squeezed dry"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "minced onion"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "large egg"
+      },
+      {
+        "amount": 2,
+        "unit": "teaspoons",
+        "name": "minced fresh parsley"
+      },
+      {
+        "amount": 0.5,
+        "unit": "teaspoon",
+        "name": "pepper"
+      },
+      {
+        "amount": 0.25,
+        "unit": "teaspoon",
+        "name": "garlic powder"
+      },
+      {
+        "amount": 1.5,
+        "unit": "cups",
+        "name": "shredded mozzarella cheese, divided"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "grated Parmesan cheese, divided"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "(8 ounce) package manicotti shells"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "(26 ounce) jars spaghetti sauce"
+      },
+      {
+        "amount": 1.5,
+        "unit": "cups",
+        "name": "water"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 350 degrees F (175 degrees C).",
+      "Mix ricotta, spinach, onion, egg, parsley, pepper, and garlic powder together in a large bowl. Stir in 1 cup mozzarella and 1/4 cup Parmesan. Stuff mixture into uncooked manicotti shells.",
+      "Stir spaghetti sauce and water together in a bowl. Spread 1 cup sauce over the bottom of a 9x13-inch baking dish. Arrange stuffed manicotti in a single layer in the dish. Cover with remaining sauce, then sprinkle with remaining mozzarella and Parmesan.",
+      "Bake in the preheated oven until shells are tender yet firm to the bite, 45 to 55 minutes."
+    ]
+  },
+  {
+    "title": "Spinach and Ricotta Manicotti",
+    "category": "Alternative",
+    "yield": "6",
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "(15 ounce) container ricotta cheese"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "(10 ounce) package frozen chopped spinach, thawed and squeezed dry"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "minced onion"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "large egg"
+      },
+      {
+        "amount": 2,
+        "unit": "teaspoons",
+        "name": "minced fresh parsley"
+      },
+      {
+        "amount": 0.5,
+        "unit": "teaspoon",
+        "name": "pepper"
+      },
+      {
+        "amount": 0.25,
+        "unit": "teaspoon",
+        "name": "garlic powder"
+      },
+      {
+        "amount": 1.5,
+        "unit": "cups",
+        "name": "shredded mozzarella cheese, divided"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "grated Parmesan cheese, divided"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "(8 ounce) package manicotti shells"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "(26 ounce) jars spaghetti sauce"
+      },
+      {
+        "amount": 1.5,
+        "unit": "cups",
+        "name": "water"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 350 degrees F (175 degrees C).",
+      "Mix ricotta, spinach, onion, egg, parsley, pepper, and garlic powder together in a large bowl. Stir in 1 cup mozzarella and 1/4 cup Parmesan. Stuff mixture into uncooked manicotti shells.",
+      "Stir spaghetti sauce and water together in a bowl. Spread 1 cup sauce over the bottom of a 9x13-inch baking dish. Arrange stuffed manicotti in a single layer in the dish. Cover with remaining sauce, then sprinkle with remaining mozzarella and Parmesan.",
+      "Bake in the preheated oven until shells are tender yet firm to the bite, 45 to 55 minutes."
+    ]
   }
 ]
