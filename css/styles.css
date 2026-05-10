@@ -2476,6 +2476,46 @@ body {
   background: #f4fbf6;
 }
 
+.admin-debug-details,
+.audit-panel {
+  padding: 10px;
+  border: 1px solid rgba(207, 226, 216, 0.9);
+  border-radius: 8px;
+  background: #f8fcf9;
+}
+
+.admin-debug-details summary {
+  cursor: pointer;
+  color: var(--color-accent-strong);
+  font-weight: 850;
+}
+
+.admin-debug-details .patch-preview,
+.audit-panel .patch-preview {
+  margin-top: 8px;
+  max-height: 360px;
+  overflow: auto;
+}
+
+.audit-panel {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.audit-panel:first-child {
+  margin-top: 0;
+}
+
+.audit-panel h3 {
+  margin: 0;
+}
+
+.audit-history-list {
+  display: grid;
+  gap: 8px;
+}
+
 .patch-field__value--original {
   border-color: rgba(216, 92, 69, 0.42);
   background: var(--color-coral-soft);

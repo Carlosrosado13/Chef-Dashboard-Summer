@@ -97,6 +97,18 @@ function renderPatchSummary(container, patch) {
   container.append(summary);
 }
 
+function renderDetails(title, content, options = {}) {
+  const details = el("details", options.className || "admin-debug-details");
+  const summary = el("summary", "", title);
+
+  if (options.open) {
+    details.open = true;
+  }
+
+  details.append(summary, content);
+  return details;
+}
+
 export function renderMenuAssignmentEditor(container, state, options = {}) {
   const mealTypes = Object.keys(state.menuData || {});
   const menuOptions = getMenuOptions(state.menuData, state.assignment.mealType, state.assignment.week);
@@ -146,7 +158,10 @@ export function renderMenuAssignmentEditor(container, state, options = {}) {
   recipePanel.append(el("h3", "", "Recipe Selector"), recipeSearch, recipeList);
   renderRecipePreview(previewPanel, selectedRecipe);
   renderPatchSummary(patchSummary, state.patch);
-  previewPanel.append(el("h3", "", "Assignment Preview"), patchSummary, el("h3", "", "Patch Object"), patchPreview);
+  previewPanel.append(
+    renderDetails("Assignment Preview", patchSummary, { open: true }),
+    renderDetails("Patch Object", patchPreview)
+  );
   shell.append(controls, recipePanel, previewPanel);
   container.replaceChildren(shell);
 }

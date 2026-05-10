@@ -67,6 +67,7 @@ let editorRoot;
 let validationRoot;
 let patchPreviewRoot;
 let draftStatusRoot;
+let auditHistoryRoot;
 let adminInitialized = false;
 
 async function loadJson(url) {
@@ -494,6 +495,7 @@ function updateValidationAndPatch() {
     canRollback: state.patchHistory.length > 0,
     notice: state.notice
   });
+  renderAuditHistory();
 }
 
 function createPatchPreview() {
@@ -990,6 +992,43 @@ function renderDraftStatus() {
   }
 }
 
+function renderAuditHistory() {
+  if (!auditHistoryRoot) {
+    return;
+  }
+
+  auditHistoryRoot.replaceChildren();
+
+  const patch = createPatchPreview();
+  const currentPanel = createElement("section", "audit-panel");
+  const currentTitle = createElement("h3", "", "Current Patch Object");
+  const currentCopy = createElement("p", "admin-muted", "Debug preview for the active recipe workflow. No changes are applied from this panel.");
+  const currentPatch = createElement("pre", "patch-preview", JSON.stringify(patch || {}, null, 2));
+  currentPanel.append(currentTitle, currentCopy, currentPatch);
+
+  const historyPanel = createElement("section", "audit-panel");
+  const historyTitle = createElement("h3", "", "Applied Patch History");
+  historyPanel.append(historyTitle);
+
+  if (state.patchHistory.length === 0) {
+    historyPanel.append(createElement("p", "admin-muted", "No patches have been applied in this admin session."));
+  } else {
+    const list = createElement("div", "audit-history-list");
+    for (const patchEntry of state.patchHistory.slice().reverse()) {
+      const item = createElement("details", "admin-debug-details");
+      const label = patchEntry.updatedTitle || patchEntry.originalTitle || patchEntry.recipe?.title || patchEntry.operation || "Recipe patch";
+      item.append(
+        createElement("summary", "", label),
+        createElement("pre", "patch-preview", JSON.stringify(patchEntry, null, 2))
+      );
+      list.append(item);
+    }
+    historyPanel.append(list);
+  }
+
+  auditHistoryRoot.append(currentPanel, historyPanel);
+}
+
 function createDraftStatusMessage() {
   const patch = createPatchPreview();
   const patchStatus = patch.ok ? "Ready to Save" : "Missing Required Fields";
@@ -1264,6 +1303,7 @@ async function initAdmin() {
   validationRoot = document.querySelector("#validation-root");
   patchPreviewRoot = document.querySelector("#patch-preview-root");
   draftStatusRoot = document.querySelector("#draft-status");
+  auditHistoryRoot = document.querySelector("#audit-history-root");
 
   try {
     clearError();
