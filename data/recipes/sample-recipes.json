@@ -4670,5 +4670,43 @@
       "Once the noodles are cooked, turn off the heat, add the chopped fresh cilantro, and stir to combine. Taste and adjust the seasoning with additional salt as needed.",
       "Once cooked, portion the chicken noodle soup into bowls and serve with additional cilantro and fresh lime juice as desired."
     ]
+  },
+  {
+    "title": "SEARED CATFISH",
+    "category": "Comfort",
+    "yield": "4",
+    "ingredients": [
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 2 Échalote(s)"
+      },
+      {
+        "amount": 20,
+        "unit": "",
+        "name": "cl Crème liquide"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "Beurre"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "Citron(s) jaune(s)"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "verre(s) Vin blanc"
+      }
+    ],
+    "steps": [
+      "Pelez et hachez grossièrement les échalotes. Disposez-les dans une casserole.",
+      "Pressez le citron et ajoutez le jus dans la casserole. Versez également le vin blanc. Faites chauffer à feu moyen afin que le liquide s'évapore.",
+      "Retirez la casserole du feu. Ajoutez le beurre et mélangez afin qu'il fonde. Délayez avec la crème liquide.",
+      "Placez la casserole sur le feu au bain-marie. Réchauffez la sauce quelques minutes. Nappez votre poisson avec ce beurre blanc maison."
+    ]
   }
 ]
