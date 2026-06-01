@@ -4573,5 +4573,102 @@
       "Once the pie is ready, remove it from the oven and let it sit for 30 minutes, then optionally top with more fresh chives and/or",
       "basil before serving"
     ]
+  },
+  {
+    "title": "THAI CHICKEN NOODLE SOUP",
+    "category": "Appetizer 1",
+    "yield": "4",
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "tablespoon",
+        "name": "coconut oil, or olive oil"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "chicken breasts, boneless, skinless"
+      },
+      {
+        "amount": 8,
+        "unit": "",
+        "name": "ounces rice noodles"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "onion, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "carrots, peeled and julienned"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "red bell pepper, julienned"
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "name": "mushrooms, sliced"
+      },
+      {
+        "amount": 3,
+        "unit": "cloves",
+        "name": "garlic, minced or grated"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "inch fresh ginger, minced or grated"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "red Thai chili, minced (optional)"
+      },
+      {
+        "amount": 3,
+        "unit": "tablespoons",
+        "name": "Thai red curry paste"
+      },
+      {
+        "amount": 5,
+        "unit": "cups",
+        "name": "chicken broth"
+      },
+      {
+        "amount": 1,
+        "unit": "can",
+        "name": "(14 ounces) coconut milk"
+      },
+      {
+        "amount": 1,
+        "unit": "teaspoon",
+        "name": "fish sauce (optional)"
+      },
+      {
+        "amount": 0.25,
+        "unit": "cup",
+        "name": "cilantro, finely chopped"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 Lime, cut into wedges, to serve"
+      }
+    ],
+    "steps": [
+      "In a large pot on medium heat, melt the coconut oil, then add the onion and carrots and cook for 3-4 minutes until tender.",
+      "Add the red bell pepper, mushrooms, garlic, ginger, and chili (optional), and cook for 2-3 minutes until slightly tender. Then add the curry paste and stir to coat all the vegetables.",
+      "Pour in the broth, stir to combine with the vegetables, and bring to a gentle boil. Add the raw chicken breasts to the pot, submerge them in the broth, reduce the heat to a simmer, and cook for 20 minutes or until the chicken is cooked through.",
+      "After 20 minutes, turn down the heat, remove the chicken breasts from the pot, and place them on a cutting board. Using two forks, shred the chicken into fine strips or bite-size pieces and set aside.",
+      "Bring the pot of broth back up to a boil, then add the rice noodles and cook for half of the recommended cooking time (e.g. if your noodles need to be cooked for 8 minutes, cook them for 4 minutes). As the noodles cook, stir the soup regularly to ensure the noodles do not stick together.",
+      "Once the noodles have cooked halfway, pour in the coconut milk and fish sauce (optional), and return the shredded chicken to the pot. Stir to combine, and continue to cook for the remaining time or until the noodles are tender.",
+      "Once the noodles are cooked, turn off the heat, add the chopped fresh cilantro, and stir to combine. Taste and adjust the seasoning with additional salt as needed.",
+      "Once cooked, portion the chicken noodle soup into bowls and serve with additional cilantro and fresh lime juice as desired."
+    ]
   }
 ]
