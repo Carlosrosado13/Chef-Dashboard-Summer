@@ -4439,5 +4439,56 @@
       "Stir in the tomatoes and baby clams. Season the soup with salt and pepper to taste.",
       "Simmer for 5 more minutes. Stir in the reserved bacon. Top with chopped parsley. Add oyster crackers and more bacon if desired, then serve."
     ]
+  },
+  {
+    "title": "WHITE BEAN DIP WITH TOASTED PITA CHIPS",
+    "category": "Appetizer 2",
+    "yield": "4 servings",
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": "tablespoons",
+        "name": "extra-virgin olive oil"
+      },
+      {
+        "amount": 3,
+        "unit": "",
+        "name": "fat garlic cloves, thinly sliced"
+      },
+      {
+        "amount": 3,
+        "unit": "",
+        "name": "scallions, thinly sliced, white and light green parts separated from dark greens"
+      },
+      {
+        "amount": 1,
+        "unit": "tablespoon",
+        "name": "tomato paste"
+      },
+      {
+        "amount": 2,
+        "unit": "teaspoons",
+        "name": "to 2 tablespoons chile crisp or chile paste, to taste"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "(15-ounce) cans white beans, such as cannellini or Great Northern, drained and rinsed"
+      },
+      {
+        "amount": 0.5,
+        "unit": "teaspoon",
+        "name": "fine sea salt, plus more to taste"
+      },
+      {
+        "amount": 8,
+        "unit": "",
+        "name": "ounces sharp white Cheddar, grated (about 2 cups)"
+      }
+    ],
+    "steps": [
+      "Heat oven to 475 degrees. In a 10-inch ovenproof skillet, heat olive oil over medium-high. Add garlic and white and light green scallion slices, reserving the dark greens for later. Cook until lightly golden, 1 to 3 minutes. Carefully stir in tomato paste and chile crisp, and cook for 1 minute.",
+      "Stir in the beans and salt. Taste mixture, adding more salt and chili crisp as needed (remember that the cheese will add saltiness, so don’t overdo the salt here). Sprinkle cheese evenly over the top. Bake for 6 to 10 minutes, or until the cheese has melted and browned in spots. If you’d like to toast the top further, run the skillet under the broiler for 1 to 2 minutes. Sprinkle with reserved scallion greens and serve."
+    ]
   }
 ]
