@@ -5029,7 +5029,7 @@
       {
         "amount": 0,
         "unit": "",
-        "name": "1 egg"
+        "name": "0 1 egg"
       },
       {
         "amount": 3,
@@ -5084,7 +5084,7 @@
       {
         "amount": 0,
         "unit": "",
-        "name": "0 salt & pepper"
+        "name": "0 0 salt & pepper"
       }
     ],
     "steps": [
