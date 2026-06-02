@@ -5096,5 +5096,105 @@
       "When the pan is hot, add the fish cakes and cook for 3-4 minutes on each side.",
       "To make the tartar sauce, mix together the mayo, minced capers, lime zest and lime juice, and minced green onion then season with sea salt and pepper."
     ]
+  },
+  {
+    "title": "3 - Sisters Indigenous Soup",
+    "category": "Appetizer 1",
+    "yield": "10",
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": "Tbsp",
+        "name": "olive oil"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "medium yellow onion, peeled and diced"
+      },
+      {
+        "amount": 2,
+        "unit": "cloves",
+        "name": "garlic, minced"
+      },
+      {
+        "amount": 1,
+        "unit": "lb",
+        "name": "red potatoes, diced (no need to peel)"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "chipotle powder"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "cumin"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "bay leaves"
+      },
+      {
+        "amount": 32,
+        "unit": "",
+        "name": "ounces chicken broth"
+      },
+      {
+        "amount": 28,
+        "unit": "",
+        "name": "ounce can diced fire roasted tomatoes"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 salt and fresh cracked black pepper"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "jalapeño pepper, minced (leave out for less heat)"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "zucchini, diced (do not peel)"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "summer squash, diced (do not peel)"
+      },
+      {
+        "amount": 3,
+        "unit": "",
+        "name": "ears corn, kernels removed"
+      },
+      {
+        "amount": 2,
+        "unit": "cups",
+        "name": "cooked black-eyed peas"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 fresh parsley"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 grated cheese such as Parmesan or Asiago"
+      }
+    ],
+    "steps": [
+      "Heat the oil in a large soup pot or Dutch oven and add the diced onion. Saute for five minutes, stirring often, until the onion starts to soften. Add the garlic and cook a minute or two longer.",
+      "Add the potatoes, chipotle powder, cumin, and bay leaves to the pot and cook a couple of more minutes, stirring almost constantly.",
+      "Add the broth and tomatoes to the pot and bring to a simmer. Add the jalapeños, if using, at this point too. Bring to a boil.",
+      "Lower the heat and simmer just until the potatoes are just tender, about 8-12 minutes. You can cover the pot if you like, but make sure you're cooking at a simmer, not a full boil.",
+      "Add the zucchini, summer squash, corn and beans, and bring the soup back to a bubble. Season with salt and black pepper to taste. Add more chipotle or cumin at this point if you like. Cover and let the soup simmer for just a few minutes. You just want to take the raw edge off your veggies. When they taste just barely tender, the soup is finished. Add water if your soup seems too thick.",
+      "Serve the soup topped with fresh parsley, and a sprinkle of cheese, if you like."
+    ]
   }
 ]
