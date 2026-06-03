@@ -5113,13 +5113,83 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "name": "Recipe details pending",
+        "name": "short pasta (like penne, bowties, or rotini)",
+        "amount": 48,
+        "unit": "oz"
+      },
+      {
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "medium zucchini, sliced into half-moons",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "medium yellow squash, sliced into half-moons",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "cherry tomatoes, halved",
+        "amount": 6,
+        "unit": "cup"
+      },
+      {
+        "name": "fresh or frozen peas",
+        "amount": 6,
+        "unit": "cup"
+      },
+      {
+        "name": "garlic, minced",
+        "amount": 18,
+        "unit": "clove"
+      },
+      {
+        "name": "unsalted butter",
+        "amount": 12,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "large lemon (both zested and juiced)",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "freshly grated Parmesan cheese (plus more for serving)",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "reserved pasta water",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "fresh basil leaves, chopped or torn",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "Salt and black pepper to taste",
+        "amount": 1,
+        "unit": "each"
+      },
+      {
+        "name": "A pinch of crushed red pepper flakes",
         "amount": 1,
         "unit": "each"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Bring a large pot of salted water to a boil. Cook your pasta according to the package directions until it is just al dente.",
+      "Before draining the pasta, carefully scoop out and reserve at least 1/2 cup of the starchy pasta water. Drain the pasta and set it aside.",
+      "Heat the olive oil in a large skillet over medium-high heat. Add the zucchini and yellow squash, sauteing for 3 to 4 minutes until they begin to soften and slightly brown. Stir in the minced garlic, peas, and cherry tomatoes, cooking for another 1 to 2 minutes until the garlic is fragrant and the tomatoes just begin to soften. Season lightly with salt and pepper, then transfer the veggies to a plate.",
+      "Turn the skillet heat down to low. Melt the butter in the pan, then stir in the lemon juice, lemon zest, and half of your reserved pasta water. Whisk in the grated Parmesan cheese until it melts smoothly into the liquid.",
+      "Add the cooked pasta and sauteed vegetables back into the skillet. Toss everything together vigorously over low heat so the cheese, lemon, and pasta starch merge into a glossy sauce that clings to the noodles. If the pasta looks too dry, splash in a little more of your reserved pasta water.",
+      "Turn off the heat. Stir in the fresh basil and optional red pepper flakes. Divide among bowls and finish with an extra sprinkle of Parmesan cheese and a crack of fresh black pepper. This recipe makes 4 servings"
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5786,13 +5856,68 @@
     "category": "Starch",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "blend (e.g., farro, quinoa, spelt, or barley)",
+        "amount": 6,
+        "unit": "cup"
+      },
+      {
+        "name": "low-sodium vegetable or chicken broth",
+        "amount": 12,
+        "unit": "cup"
+      },
+      {
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "minced shallot",
+        "amount": 6,
         "unit": "each"
+      },
+      {
+        "name": "minced garlic",
+        "amount": 12,
+        "unit": "clove"
+      },
+      {
+        "name": "finely chopped fresh parsley",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "chopped fresh chives",
+        "amount": 12,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "fresh lemon juice",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "lemon zest",
+        "amount": 6,
+        "unit": "tsp"
+      },
+      {
+        "name": "sea salt",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "cracked black pepper\"\"",
+        "amount": 3,
+        "unit": "tsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Place the grain blend in a fine-mesh strainer. Rinse thoroughly under cold water to remove bitter saponins or excess starch.",
+      "Heat olive oil in a medium saucepan over medium heat. Saute the minced shallot and garlic for 2 minutes until soft and fragrant.",
+      "Add the rinsed grains to the pan. Stir continuously for 2 minutes to toast them lightly, enhancing their natural nutty flavor.",
+      "Pour in the broth and bring the mixture to a boil. Reduce heat to low, cover with a tight-fitting lid, and simmer for 20 to 25 minutes until the liquid is fully absorbed.",
+      "Remove the saucepan from the heat. Keep the lid on and let the grains steam undisturbed for 5 minutes.",
+      "Fluff the grains with a fork. Fold in the fresh parsley, chives, lemon juice, lemon zest, salt, and pepper. Serve warm."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5978,13 +6103,72 @@
     "category": "Alternative",
     "ingredients": [
       {
-        "name": "Recipe details pending",
+        "name": "tilapia fillets (about 6 ounces each), patted dry",
+        "amount": 24,
+        "unit": "each"
+      },
+      {
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "garlic powder",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "paprika",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt, and pepper",
         "amount": 1,
         "unit": "each"
+      },
+      {
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "large red onion (thinly sliced)",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "balsamic vinegar",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "low-sodium chicken or vegetable broth",
+        "amount": 12,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "honey or brown sugar",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "cold butter (optional, for glossiness)",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "chopped fresh parsley\"\"",
+        "amount": 12,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Rub tilapia fillets with 1 tablespoon of olive oil. Season both sides evenly with garlic powder, paprika, salt, and black pepper. Set aside.",
+      "Heat 1 tablespoon of olive oil in a skillet over medium heat. Add sliced red onions and a pinch of salt. Cook for 8 to 10 minutes until soft and deeply browned.",
+      "Pour the balsamic vinegar, broth, and honey into the skillet with the onions. Bring to a simmer. Reduce heat to medium-low and cook for 5 minutes until the liquid reduces by half and thickens into a glaze. Stir in cold butter if using, then remove from heat.",
+      "Preheat your grill or grill pan to medium-high heat. Oil the grates well. Grill the tilapia fillets for 3 to 4 minutes per side. The fish is done when it flakes easily with a fork and reaches an internal temperature of 145eF (63eC).",
+      "Plate the grilled tilapia directly next to or on top of your herbed ancient grains. Spoon the warm balsamic onion sauce generously over the fish. Garnish with fresh parsley."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6015,13 +6199,33 @@
     "category": "Veggie 1",
     "ingredients": [
       {
-        "name": "Recipe details pending",
+        "name": "broccolini (ends trimmed, thick stalks split lengthwise)",
+        "amount": 12,
+        "unit": "bunch"
+      },
+      {
+        "name": "pre-made garlic confit cloves plus 2 tbsp of the confit oil",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "fresh lemon juice",
+        "amount": 6,
+        "unit": "tsp"
+      },
+      {
+        "name": "Flaky sea salt and red pepper flakes (to taste)\"\"",
         "amount": 1,
         "unit": "each"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Rinse the broccolini and shake off excess water. Cut any unusually thick stalks in half lengthwise so all pieces cook evenly.",
+      "Warm 2 tablespoons of the garlic confit oil in a large skillet over medium-high heat.",
+      "Add the broccolini to the pan in a single layer. Let it cook undisturbed for 2 to 3 minutes until the underside starts to develop bright green and slightly charred spots.",
+      "Pour 2 tablespoons of water into the skillet. Immediately cover with a tight lid to trap the steam. Cook for 3 minutes until the stalks are tender-crisp.",
+      "Remove the lid and turn the heat down to low. Add the 1/2 cup of garlic confit cloves. Use a spoon to gently smash the soft garlic cloves into the oil, coating the broccolini.",
+      "Toss everything together for 1 minute until heated through. Remove from heat, squeeze the fresh lemon juice over the top, and season with flaky sea salt and a pinch of red pepper flakes."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6052,13 +6256,42 @@
     "category": "Veggie 2",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
-        "unit": "each"
+        "name": "carrots (peeled and cut into 1-inch chunks)Oil: 2 tbsp olive oilPrimary Spice: 1.5 tbsp ground sumac",
+        "amount": 9,
+        "unit": "lb"
+      },
+      {
+        "name": "garlic powder",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "ground cumin",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "sea salt",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "black pepper",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "chopped fresh mint or parsley\"\"",
+        "amount": 12,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Set your oven to 425eF (220eC) and line a large baking sheet with parchment paper.",
+      "Cut the carrots into uniform 1-inch chunks so they roast evenly.",
+      "Place the carrot chunks in a large mixing bowl. Drizzle with olive oil and toss until well coated. Add the sumac, garlic powder, cumin, salt, and pepper. Toss again to evenly distribute the spices.",
+      "Spread the carrots across the baking sheet in a single layer, ensuring they do not crowd each other. Roast for 20 to 25 minutes, tossing halfway through, until the edges are deeply caramelized and the centers are fork-tender.",
+      "Transfer the warm roasted carrots to your serving plate and garnish with fresh mint or parsley if desired."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6089,13 +6322,57 @@
     "category": "Starch",
     "ingredients": [
       {
-        "name": "Recipe details pending",
+        "name": "coarse-ground cornmeal (polenta)",
+        "amount": 6,
+        "unit": "cup"
+      },
+      {
+        "name": "low-sodium vegetable broth",
+        "amount": 12,
+        "unit": "cup"
+      },
+      {
+        "name": "whole milk",
+        "amount": 12,
+        "unit": "cup"
+      },
+      {
+        "name": "cream cheese (softened)",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "unsalted butter",
+        "amount": 12,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "finely chopped fresh chives",
+        "amount": 12,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "chopped fresh thyme",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "garlic powder",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt, and white pepper (to taste)\"\"",
         "amount": 1,
         "unit": "each"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Combine vegetable broth and milk in a medium saucepan. Bring to a gentle boil over medium-high heat.",
+      "Reduce heat to low. Slowly whisk in the cornmeal in a steady stream to prevent lumps.",
+      "Cook for 20 to 25 minutes, stirring frequently with a wooden spoon. The polenta is ready when it is thick, smooth, and pulls away slightly from the sides of the pan.",
+      "Remove from heat. Stir in the cream cheese and butter until fully melted and completely incorporated.",
+      "Add the chives, thyme, garlic powder, salt, and pepper. Stir well to distribute the fresh herbs. Serve immediately while hot and creamy."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6126,13 +6403,73 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "all-purpose flour",
+        "amount": 4.5,
+        "unit": "cup"
+      },
+      {
+        "name": "baking powder",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "granulated sugar",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "large eggs",
+        "amount": 9,
         "unit": "each"
+      },
+      {
+        "name": "vegetable oil",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "sour cream",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "lemon zest",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "fresh lemon juice",
+        "amount": 9,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "vanilla extract",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "powdered sugar",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "fresh lemon juice\"\"",
+        "amount": 3,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Set your oven to 350eF (175eC). Grease an 8.5 x 4.5-inch loaf pan and line it with parchment paper.",
+      "Combine the flour, baking powder, and salt in a medium bowl. Set aside.",
+      "Rub the lemon zest into the granulated sugar in a large bowl to release the citrus oils. Whisk in the eggs, vegetable oil, sour cream, lemon juice, and vanilla extract until completely smooth.",
+      "Fold the dry ingredients into the wet mixture using a spatula just until combined. Do not overmix.",
+      "Pour the batter into the prepared loaf pan. Bake for 45 to 50 minutes, or until a toothpick inserted into the center comes out clean. Let cool completely.",
+      "Whisk the powdered sugar and lemon juice together until smooth. Drizzle over the cooled cake before slicing."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6274,13 +6611,73 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "name": "Recipe details pending",
+        "name": "large pork tenderloin (about 1 to 1.5 lbs), trimmed of silver skin",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "dried oregano",
+        "amount": 6,
+        "unit": "tsp"
+      },
+      {
+        "name": "garlic powder",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt, and black pepper",
         "amount": 1,
         "unit": "each"
+      },
+      {
+        "name": "crumbled feta cheese",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "pitted Kalamata olives (chopped)",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "ripe Roma tomato (seeded and finely diced)",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "finely chopped red onion",
+        "amount": 12,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "extra-virgin olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "fresh lemon juice",
+        "amount": 6,
+        "unit": "tsp"
+      },
+      {
+        "name": "chopped fresh parsley\"\"",
+        "amount": 6,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Preheat your oven to 400eF (204eC). Heat 1 tablespoon of olive oil in a large, oven-safe skillet over medium-high heat.",
+      "Rub the pork tenderloin with oregano, garlic powder, salt, and pepper. Sear the pork in the hot skillet for 2 minutes on all sides until a golden-brown crust forms.",
+      "Transfer the skillet directly into the oven. Roast for 15 to 20 minutes until a meat thermometer inserted into the thickest part reads 145eF (63eC).",
+      "Remove the pork from the oven, transfer it to a cutting board, and tent loosely with foil. Let it rest for 5 to 10 minutes to lock in the juices before slicing.",
+      "While the pork rests, toss the feta, olives, tomato, red onion, extra-virgin olive oil, lemon juice, and parsley together in a small bowl.",
+      "Slice the pork tenderloin into 1-inch thick medallions and spoon the cold olive and feta salsa generously over the warm meat."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6385,13 +6782,93 @@
     "category": "Veggie 2",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "(15 oz each) Cannellini or Great Northern beans (rinsed and drained)",
+        "amount": 12,
+        "unit": "can"
+      },
+      {
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "yellow onion (diced)",
+        "amount": 6,
         "unit": "each"
+      },
+      {
+        "name": "carrots (diced)",
+        "amount": 12,
+        "unit": "each"
+      },
+      {
+        "name": "celery stalks (diced)",
+        "amount": 12,
+        "unit": "each"
+      },
+      {
+        "name": "garlic (minced)",
+        "amount": 24,
+        "unit": "clove"
+      },
+      {
+        "name": "tomato paste",
+        "amount": 12,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "dry white wine (or vegetable broth)",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "low-sodium vegetable broth",
+        "amount": 9,
+        "unit": "cup"
+      },
+      {
+        "name": "(14 oz) diced tomatoes",
+        "amount": 6,
+        "unit": "can"
+      },
+      {
+        "name": "fresh thyme",
+        "amount": 12,
+        "unit": "sprig"
+      },
+      {
+        "name": "fresh rosemary",
+        "amount": 6,
+        "unit": "sprig"
+      },
+      {
+        "name": "bay leaf",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "panko breadcrumbs",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "chopped fresh parsley\"\"",
+        "amount": 12,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Heat 1 tablespoon of olive oil in a large Dutch oven or heavy-bottomed pot over medium heat. Add the onion, carrots, and celery. Cook for 8 minutes until soft.",
+      "Stir in the minced garlic and tomato paste. Cook for 2 minutes, stirring constantly, until the paste turns a deep brick-red color.",
+      "Pour in the white wine, using a wooden spoon to scrape up any browned bits from the bottom of the pot. Simmer for 3 minutes until the liquid reduces by half.",
+      "Add the rinsed beans, vegetable broth, diced tomatoes, thyme, rosemary, and the bay leaf. Bring to a boil, then reduce heat to low. Cover and simmer for 25 minutes until the sauce thickens.",
+      "While simmering, mix the panko breadcrumbs with 1 tablespoon of olive oil in a small bowl. Toast in a separate skillet over medium heat for 3 minutes until golden brown.",
+      "Remove the herb sprigs and bay leaf from the cassoulet. Season with salt and pepper to taste. Stir in the fresh parsley and top with the toasted breadcrumbs just before serving."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6577,13 +7054,95 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "name": "Recipe details pending",
+        "name": "(340g) linguini pasta",
+        "amount": 72,
+        "unit": "oz"
+      },
+      {
+        "name": "(450g) large shrimp (peeled, deveined, and tails removed)",
+        "amount": 6,
+        "unit": "lb"
+      },
+      {
+        "name": "saffron threads",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "warm vegetable broth (to bloom saffron)",
+        "amount": 18,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "unsalted butter",
+        "amount": 12,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "small shallot (finely minced)",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "garlic (minced)",
+        "amount": 18,
+        "unit": "clove"
+      },
+      {
+        "name": "dry white wine (like Pinot Grigio)",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "heavy cream",
+        "amount": 6,
+        "unit": "cup"
+      },
+      {
+        "name": "fresh baby arugula",
+        "amount": 12,
+        "unit": "cup"
+      },
+      {
+        "name": "extra-virgin olive oil",
+        "amount": 6,
+        "unit": "tsp"
+      },
+      {
+        "name": "fresh lemon juice",
+        "amount": 6,
+        "unit": "tsp"
+      },
+      {
+        "name": "freshly cracked black pepper",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt to taste",
         "amount": 1,
         "unit": "each"
+      },
+      {
+        "name": "grated Parmigiano-Reggiano\"\"",
+        "amount": 3,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Crush the saffron threads slightly with your fingers into a small bowl. Pour the 3 tablespoons of warm broth over them. Let sit for 10 minutes to draw out the deep golden color and aroma.",
+      "Bring a large pot of salted water to a boil. Cook the linguini according to package instructions until al dente. Reserve 1/2 cup of pasta water, then drain the noodles.",
+      "Heat 1 tablespoon each of butter and olive oil in a large skillet over medium-high heat. Season shrimp lightly with salt. Sear for 1 to 2 minutes per side until pink and opaque. Remove shrimp from the skillet and set aside.",
+      "Turn heat down to medium. Add the remaining 1 tablespoon of butter to the same skillet. Saute the minced shallot and garlic for 2 minutes until soft.",
+      "Pour in the white wine, scraping up the browned bits from the bottom. Simmer for 3 minutes until reduced by half. Stir in the heavy cream and the bloomed saffron liquid (including the threads). Simmer gently for 4 minutes until the sauce turns bright yellow and thickens slightly.",
+      "Add the cooked linguini and seared shrimp into the skillet. Toss continuously for 1 to 2 minutes until the pasta is coated in the golden sauce, adding a splash of reserved pasta water if the sauce gets too thick. Stir in the Parmigiano-Reggiano.",
+      "In a quick bowl, toss the fresh arugula with the extra-virgin olive oil, lemon juice, and a heavy pinch of freshly cracked black pepper.",
+      "Plate a swirl of the golden saffron linguini and shrimp. Top each portion with a loose handful of the peppered arugula just before serving."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
