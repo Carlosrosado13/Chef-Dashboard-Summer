@@ -181,17 +181,17 @@
       },
       {
         "amount": 3,
-        "unit": "tablespoons",
+        "unit": "Tbsp",
         "name": "soy sauce"
       },
       {
         "amount": 4,
-        "unit": "",
+        "unit": "each",
         "name": "(4 ounce) fillets fresh sea bass, about 1 inch thick"
       },
       {
         "amount": 2,
-        "unit": "tablespoons",
+        "unit": "Tbsp",
         "name": "chopped green onion"
       }
     ],
@@ -211,12 +211,12 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "(15 ounce) container ricotta cheese"
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "(10 ounce) package frozen chopped spinach, thawed and squeezed dry"
       },
       {
@@ -226,27 +226,27 @@
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "large egg"
       },
       {
         "amount": 2,
-        "unit": "teaspoons",
+        "unit": "tsp",
         "name": "minced fresh parsley"
       },
       {
         "amount": 0.5,
-        "unit": "teaspoon",
+        "unit": "tsp",
         "name": "pepper"
       },
       {
         "amount": 0.25,
-        "unit": "teaspoon",
+        "unit": "tsp",
         "name": "garlic powder"
       },
       {
         "amount": 1.5,
-        "unit": "cups",
+        "unit": "cup",
         "name": "shredded mozzarella cheese, divided"
       },
       {
@@ -256,17 +256,17 @@
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "(8 ounce) package manicotti shells"
       },
       {
         "amount": 2,
-        "unit": "",
+        "unit": "each",
         "name": "(26 ounce) jars spaghetti sauce"
       },
       {
         "amount": 1.5,
-        "unit": "cups",
+        "unit": "cup",
         "name": "water"
       }
     ],
@@ -294,7 +294,7 @@
       },
       {
         "amount": 1,
-        "unit": "tablespoon",
+        "unit": "Tbsp",
         "name": "ginger (, grated)"
       },
       {
@@ -304,22 +304,22 @@
       },
       {
         "amount": 1,
-        "unit": "tablespoon",
+        "unit": "Tbsp",
         "name": "butter"
       },
       {
         "amount": 0.5,
-        "unit": "teaspoon",
+        "unit": "tsp",
         "name": "kosher salt"
       },
       {
         "amount": 0.5,
-        "unit": "teaspoon",
+        "unit": "tsp",
         "name": "ground black pepper"
       },
       {
         "amount": 2,
-        "unit": "tablespoons",
+        "unit": "Tbsp",
         "name": "scallions"
       }
     ],
@@ -360,7 +360,7 @@
       },
       {
         "amount": 6,
-        "unit": "l",
+        "unit": "L",
         "name": "vegetable or chicken stock"
       },
       {
@@ -482,7 +482,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -544,7 +544,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -606,7 +606,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -762,7 +762,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "vegetable or chicken stock"
       },
       {
@@ -819,7 +819,7 @@
       },
       {
         "amount": 1.5,
-        "unit": "l",
+        "unit": "L",
         "name": "cream or dairy base"
       },
       {
@@ -985,7 +985,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -1047,7 +1047,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -1109,7 +1109,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -1265,7 +1265,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "vegetable or chicken stock"
       },
       {
@@ -1322,7 +1322,7 @@
       },
       {
         "amount": 1.5,
-        "unit": "l",
+        "unit": "L",
         "name": "cream or dairy base"
       },
       {
@@ -1488,7 +1488,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -1550,7 +1550,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -1612,7 +1612,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -1768,7 +1768,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "vegetable or chicken stock"
       },
       {
@@ -1825,7 +1825,7 @@
       },
       {
         "amount": 1.5,
-        "unit": "l",
+        "unit": "L",
         "name": "cream or dairy base"
       },
       {
@@ -1944,7 +1944,7 @@
       },
       {
         "amount": 6,
-        "unit": "l",
+        "unit": "L",
         "name": "vegetable or chicken stock"
       },
       {
@@ -2001,7 +2001,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -2063,7 +2063,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -2125,7 +2125,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -2281,7 +2281,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "vegetable or chicken stock"
       },
       {
@@ -2338,7 +2338,7 @@
       },
       {
         "amount": 1.5,
-        "unit": "l",
+        "unit": "L",
         "name": "cream or dairy base"
       },
       {
@@ -2504,7 +2504,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -2566,7 +2566,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -2628,7 +2628,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -2784,7 +2784,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "vegetable or chicken stock"
       },
       {
@@ -2841,7 +2841,7 @@
       },
       {
         "amount": 1.5,
-        "unit": "l",
+        "unit": "L",
         "name": "cream or dairy base"
       },
       {
@@ -2908,7 +2908,7 @@
       },
       {
         "amount": 6,
-        "unit": "l",
+        "unit": "L",
         "name": "vegetable or chicken stock"
       },
       {
@@ -3017,7 +3017,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -3079,7 +3079,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -3141,7 +3141,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -3297,7 +3297,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "vegetable or chicken stock"
       },
       {
@@ -3354,7 +3354,7 @@
       },
       {
         "amount": 1.5,
-        "unit": "l",
+        "unit": "L",
         "name": "cream or dairy base"
       },
       {
@@ -3421,7 +3421,7 @@
       },
       {
         "amount": 6,
-        "unit": "l",
+        "unit": "L",
         "name": "vegetable or chicken stock"
       },
       {
@@ -3530,7 +3530,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -3592,7 +3592,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -3654,7 +3654,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "stock or pan sauce base"
       },
       {
@@ -3810,7 +3810,7 @@
       },
       {
         "amount": 2,
-        "unit": "l",
+        "unit": "L",
         "name": "vegetable or chicken stock"
       },
       {
@@ -3867,7 +3867,7 @@
       },
       {
         "amount": 1.5,
-        "unit": "l",
+        "unit": "L",
         "name": "cream or dairy base"
       },
       {
@@ -3914,257 +3914,257 @@
     "ingredients": [
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 Ingredients"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "6 6"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 slices"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 bacon"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 chopped"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0.5 1/2"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 cup cup"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 onion"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 diced"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "2 2"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 carrots"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 peeled, quartered and sliced"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0.5 1/2"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 cup cup"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 celery"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 sliced"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "2 2"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 teaspoons teaspoons"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 minced garlic"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0.25 1/4"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 cup cup"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 tomato paste"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0.5 1/2"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 teaspoon teaspoon"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 dried thyme"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "1 1"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 bay leaf"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "1 1"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 pound pound"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 Russet potatoes"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 peeled and diced into 1/2 inch cubes"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "2 2"
       },
       {
         "amount": 8,
-        "unit": "",
+        "unit": "each",
         "name": "ounce bottles"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 clam juice"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "2 2"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 cups cups"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 chicken broth"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "28 28"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 ounce can"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 diced tomatoes"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 do not drain"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "10 10"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 ounce can"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 whole baby clams"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 drained"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 salt and pepper to taste"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "2 2"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 tablespoons tablespoons"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 chopped parsley"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 oyster crackers and cooked bacon for serving"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 optional"
       }
     ],
@@ -4187,257 +4187,257 @@
     "ingredients": [
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 Ingredients"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 6 6"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 slices"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 bacon"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 chopped"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0.5 1/2"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 cup cup"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 onion"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 diced"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 2 2"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 carrots"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 peeled, quartered and sliced"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0.5 1/2"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 cup cup"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 celery"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 sliced"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 2 2"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 teaspoons teaspoons"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 minced garlic"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0.25 1/4"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 cup cup"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 tomato paste"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0.5 1/2"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 teaspoon teaspoon"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 dried thyme"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 1 1"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 bay leaf"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 1 1"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 pound pound"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 Russet potatoes"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 peeled and diced into 1/2 inch cubes"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 2 2"
       },
       {
         "amount": 8,
-        "unit": "",
+        "unit": "each",
         "name": "ounce bottles"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 clam juice"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 2 2"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 cups cups"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 chicken broth"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 28 28"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 ounce can"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 diced tomatoes"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 do not drain"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 10 10"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 ounce can"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 whole baby clams"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 drained"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 salt and pepper to taste"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 2 2"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 tablespoons tablespoons"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 chopped parsley"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 oyster crackers and cooked bacon for serving"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 optional"
       }
     ],
@@ -4460,42 +4460,42 @@
     "ingredients": [
       {
         "amount": 2,
-        "unit": "tablespoons",
+        "unit": "Tbsp",
         "name": "extra-virgin olive oil"
       },
       {
         "amount": 3,
-        "unit": "",
+        "unit": "each",
         "name": "fat garlic cloves, thinly sliced"
       },
       {
         "amount": 3,
-        "unit": "",
+        "unit": "each",
         "name": "scallions, thinly sliced, white and light green parts separated from dark greens"
       },
       {
         "amount": 1,
-        "unit": "tablespoon",
+        "unit": "Tbsp",
         "name": "tomato paste"
       },
       {
         "amount": 2,
-        "unit": "teaspoons",
+        "unit": "tsp",
         "name": "to 2 tablespoons chile crisp or chile paste, to taste"
       },
       {
         "amount": 2,
-        "unit": "",
+        "unit": "each",
         "name": "(15-ounce) cans white beans, such as cannellini or Great Northern, drained and rinsed"
       },
       {
         "amount": 0.5,
-        "unit": "teaspoon",
+        "unit": "tsp",
         "name": "fine sea salt, plus more to taste"
       },
       {
         "amount": 8,
-        "unit": "",
+        "unit": "each",
         "name": "ounces sharp white Cheddar, grated (about 2 cups)"
       }
     ],
@@ -4511,47 +4511,47 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "⅓ cups plain flour, plus a little extra for sprinkling ⅓ cup + 1 tablespoon unsalted butter, chilled and diced"
       },
       {
         "amount": 3,
-        "unit": "cups",
+        "unit": "cup",
         "name": "mature cheddar cheese, grated, divided ¼ teaspoon ground black pepper"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 ¼ teaspoon dried thyme 2 ½ lbs heirloom tomatoes"
       },
       {
         "amount": 2,
-        "unit": "tablespoons",
+        "unit": "Tbsp",
         "name": "olive oil, divided ½ teaspoon salt"
       },
       {
         "amount": 2,
-        "unit": "cloves",
+        "unit": "clove",
         "name": "garlic, sliced 4 sprigs fresh thyme"
       },
       {
         "amount": 4,
-        "unit": "",
+        "unit": "each",
         "name": "bacon slices, diced 1 small onion, diced"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 ½ cup mayonnaise 1 large egg, room temperature"
       },
       {
         "amount": 2,
-        "unit": "tablespoons",
+        "unit": "Tbsp",
         "name": "chopped fresh chives, plus more for serving 1 tablespoon chopped fresh basil, plus more for serving"
       },
       {
         "amount": 2,
-        "unit": "tablespoons",
+        "unit": "Tbsp",
         "name": "breadcrumbs"
       }
     ],
@@ -4594,32 +4594,32 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "tablespoon",
+        "unit": "Tbsp",
         "name": "coconut oil, or olive oil"
       },
       {
         "amount": 2,
-        "unit": "",
+        "unit": "each",
         "name": "chicken breasts, boneless, skinless"
       },
       {
         "amount": 8,
-        "unit": "",
+        "unit": "each",
         "name": "ounces rice noodles"
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "onion, diced"
       },
       {
         "amount": 2,
-        "unit": "",
+        "unit": "each",
         "name": "carrots, peeled and julienned"
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "red bell pepper, julienned"
       },
       {
@@ -4629,27 +4629,27 @@
       },
       {
         "amount": 3,
-        "unit": "cloves",
+        "unit": "clove",
         "name": "garlic, minced or grated"
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "inch fresh ginger, minced or grated"
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "red Thai chili, minced (optional)"
       },
       {
         "amount": 3,
-        "unit": "tablespoons",
+        "unit": "Tbsp",
         "name": "Thai red curry paste"
       },
       {
         "amount": 5,
-        "unit": "cups",
+        "unit": "cup",
         "name": "chicken broth"
       },
       {
@@ -4659,7 +4659,7 @@
       },
       {
         "amount": 1,
-        "unit": "teaspoon",
+        "unit": "tsp",
         "name": "fish sauce (optional)"
       },
       {
@@ -4669,7 +4669,7 @@
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 Lime, cut into wedges, to serve"
       }
     ],
@@ -4691,12 +4691,12 @@
     "ingredients": [
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 2 Échalote(s)"
       },
       {
         "amount": 20,
-        "unit": "",
+        "unit": "each",
         "name": "cl Crème liquide"
       },
       {
@@ -4706,12 +4706,12 @@
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "Citron(s) jaune(s)"
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "verre(s) Vin blanc"
       }
     ],
@@ -4729,147 +4729,147 @@
     "ingredients": [
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 Ingredients"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 6 6"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 cups cups"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 romaine or salad greens,"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 washed, dried and chopped"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 3 3"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 slices"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 bacon,"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 cooked and crumbled"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 3 3"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 boiled eggs,"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 sliced or chopped"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 1 1"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 large"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 chicken breast,"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 seasoned and cooked"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 1 1"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 cup cup"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 cherry tomatoes"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 1 1"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 cup cup"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 croutons"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 1 1"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 tablespoon tablespoon"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 grated parmesan cheese"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 2 2"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 tablespoons tablespoons"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 shaved parmesan cheese"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 Marzetti® Simply Dressed® Caesar Salad Dressing"
       }
     ],
@@ -4888,72 +4888,72 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "pound basa fillets ( cooked and flaked)"
       },
       {
         "amount": 3,
-        "unit": "",
+        "unit": "each",
         "name": "green onion (diced)"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 1 egg"
       },
       {
         "amount": 3,
-        "unit": "",
+        "unit": "each",
         "name": "⁄4 cup panko breadcrumbs"
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "⁄2 Tablespoon red curry paste"
       },
       {
         "amount": 2,
-        "unit": "tablespoons",
+        "unit": "Tbsp",
         "name": "minced cilantro"
       },
       {
         "amount": 2,
-        "unit": "tablespoons",
+        "unit": "Tbsp",
         "name": "mayonnaise"
       },
       {
         "amount": 1,
-        "unit": "teaspoon",
+        "unit": "tsp",
         "name": "minced fresh ginger"
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "⁄2 lime (juice and zest)"
       },
       {
         "amount": 4,
-        "unit": "tablespoons",
+        "unit": "Tbsp",
         "name": "mayonnaise"
       },
       {
         "amount": 1.5,
-        "unit": "teaspoons",
+        "unit": "tsp",
         "name": "capers (minced)"
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "⁄4 lime (juice and zest)"
       },
       {
         "amount": 1,
-        "unit": "tablespoon",
+        "unit": "Tbsp",
         "name": "minced green onion"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 salt & pepper"
       }
     ],
@@ -4974,17 +4974,17 @@
     "ingredients": [
       {
         "amount": 2,
-        "unit": "tbsp",
+        "unit": "Tbsp",
         "name": "olive oil"
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "medium yellow onion, peeled and diced"
       },
       {
         "amount": 2,
-        "unit": "cloves",
+        "unit": "clove",
         "name": "garlic, minced"
       },
       {
@@ -5004,57 +5004,57 @@
       },
       {
         "amount": 2,
-        "unit": "",
+        "unit": "each",
         "name": "bay leaves"
       },
       {
         "amount": 32,
-        "unit": "",
+        "unit": "each",
         "name": "ounces chicken broth"
       },
       {
         "amount": 28,
-        "unit": "",
+        "unit": "each",
         "name": "ounce can diced fire roasted tomatoes"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 salt and fresh cracked black pepper"
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "jalapeño pepper, minced (leave out for less heat)"
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "zucchini, diced (do not peel)"
       },
       {
         "amount": 1,
-        "unit": "",
+        "unit": "each",
         "name": "summer squash, diced (do not peel)"
       },
       {
         "amount": 3,
-        "unit": "",
+        "unit": "each",
         "name": "ears corn, kernels removed"
       },
       {
         "amount": 2,
-        "unit": "cups",
+        "unit": "cup",
         "name": "cooked black-eyed peas"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 fresh parsley"
       },
       {
         "amount": 0,
-        "unit": "",
+        "unit": "each",
         "name": "0 0 grated cheese such as Parmesan or Asiago"
       }
     ],
