@@ -3893,5 +3893,1490 @@
       "menuSlot": "Dessert",
       "season": "Summer"
     }
+  },
+  {
+    "title": "MANHATTAN CLAM CHOWDER (TOMATO BASE)",
+    "category": "Appetizer 1",
+    "yield": "–",
+    "ingredients": [
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 Ingredients"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "6 6"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 slices"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 bacon"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 chopped"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0.5 1/2"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 cup cup"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 onion"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 diced"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "2 2"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 carrots"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 peeled, quartered and sliced"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0.5 1/2"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 cup cup"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 celery"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 sliced"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "2 2"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 teaspoons teaspoons"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 minced garlic"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0.25 1/4"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 cup cup"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 tomato paste"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0.5 1/2"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 teaspoon teaspoon"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 dried thyme"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "1 1"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 bay leaf"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "1 1"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 pound pound"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 Russet potatoes"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 peeled and diced into 1/2 inch cubes"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "2 2"
+      },
+      {
+        "amount": 8,
+        "unit": "",
+        "name": "ounce bottles"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 clam juice"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "2 2"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 cups cups"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 chicken broth"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "28 28"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 ounce can"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 diced tomatoes"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 do not drain"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "10 10"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 ounce can"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 whole baby clams"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 drained"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 salt and pepper to taste"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "2 2"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 tablespoons tablespoons"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 chopped parsley"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 oyster crackers and cooked bacon for serving"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 optional"
+      }
+    ],
+    "steps": [
+      "Instructions",
+      "Heat a large pot over medium heat. Add the bacon and cook, stirring occasionally, until crisp.",
+      "Remove the bacon from the pot and drain on paper towels.",
+      "Add the onions, carrots and celery to the pan. Season with salt and pepper to taste. Cook, stirring occasionally, for 6-8 minutes or until vegetables are tender.",
+      "Add the garlic and cook for 30 seconds.",
+      "Place the tomato paste, thyme, bay leaf, clam juice, broth and potatoes in the pot. Stir to combine. Bring to a simmer.",
+      "Cook for 10-15 minutes or until potatoes are tender.",
+      "Stir in the tomatoes and baby clams. Season the soup with salt and pepper to taste.",
+      "Simmer for 5 more minutes. Stir in the reserved bacon. Top with chopped parsley. Add oyster crackers and more bacon if desired, then serve."
+    ]
+  },
+  {
+    "title": "BOSTON CREAM PIE",
+    "category": "Dessert",
+    "yield": "–",
+    "ingredients": [
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 Ingredients"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 6 6"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 slices"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 bacon"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 chopped"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0.5 1/2"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 cup cup"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 onion"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 diced"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 2 2"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 carrots"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 peeled, quartered and sliced"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0.5 1/2"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 cup cup"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 celery"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 sliced"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 2 2"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 teaspoons teaspoons"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 minced garlic"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0.25 1/4"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 cup cup"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 tomato paste"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0.5 1/2"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 teaspoon teaspoon"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 dried thyme"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 1 1"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 bay leaf"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 1 1"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 pound pound"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 Russet potatoes"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 peeled and diced into 1/2 inch cubes"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 2 2"
+      },
+      {
+        "amount": 8,
+        "unit": "",
+        "name": "ounce bottles"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 clam juice"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 2 2"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 cups cups"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 chicken broth"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 28 28"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 ounce can"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 diced tomatoes"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 do not drain"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 10 10"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 ounce can"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 whole baby clams"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 drained"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 salt and pepper to taste"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 2 2"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 tablespoons tablespoons"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 chopped parsley"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 oyster crackers and cooked bacon for serving"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 optional"
+      }
+    ],
+    "steps": [
+      "Instructions",
+      "Heat a large pot over medium heat. Add the bacon and cook, stirring occasionally, until crisp.",
+      "Remove the bacon from the pot and drain on paper towels.",
+      "Add the onions, carrots and celery to the pan. Season with salt and pepper to taste. Cook, stirring occasionally, for 6-8 minutes or until vegetables are tender.",
+      "Add the garlic and cook for 30 seconds.",
+      "Place the tomato paste, thyme, bay leaf, clam juice, broth and potatoes in the pot. Stir to combine. Bring to a simmer.",
+      "Cook for 10-15 minutes or until potatoes are tender.",
+      "Stir in the tomatoes and baby clams. Season the soup with salt and pepper to taste.",
+      "Simmer for 5 more minutes. Stir in the reserved bacon. Top with chopped parsley. Add oyster crackers and more bacon if desired, then serve."
+    ]
+  },
+  {
+    "title": "WHITE BEAN DIP WITH TOASTED PITA CHIPS",
+    "category": "Appetizer 2",
+    "yield": "4 servings",
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": "tablespoons",
+        "name": "extra-virgin olive oil"
+      },
+      {
+        "amount": 3,
+        "unit": "",
+        "name": "fat garlic cloves, thinly sliced"
+      },
+      {
+        "amount": 3,
+        "unit": "",
+        "name": "scallions, thinly sliced, white and light green parts separated from dark greens"
+      },
+      {
+        "amount": 1,
+        "unit": "tablespoon",
+        "name": "tomato paste"
+      },
+      {
+        "amount": 2,
+        "unit": "teaspoons",
+        "name": "to 2 tablespoons chile crisp or chile paste, to taste"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "(15-ounce) cans white beans, such as cannellini or Great Northern, drained and rinsed"
+      },
+      {
+        "amount": 0.5,
+        "unit": "teaspoon",
+        "name": "fine sea salt, plus more to taste"
+      },
+      {
+        "amount": 8,
+        "unit": "",
+        "name": "ounces sharp white Cheddar, grated (about 2 cups)"
+      }
+    ],
+    "steps": [
+      "Heat oven to 475 degrees. In a 10-inch ovenproof skillet, heat olive oil over medium-high. Add garlic and white and light green scallion slices, reserving the dark greens for later. Cook until lightly golden, 1 to 3 minutes. Carefully stir in tomato paste and chile crisp, and cook for 1 minute.",
+      "Stir in the beans and salt. Taste mixture, adding more salt and chili crisp as needed (remember that the cheese will add saltiness, so don’t overdo the salt here). Sprinkle cheese evenly over the top. Bake for 6 to 10 minutes, or until the cheese has melted and browned in spots. If you’d like to toast the top further, run the skillet under the broiler for 1 to 2 minutes. Sprinkle with reserved scallion greens and serve."
+    ]
+  },
+  {
+    "title": "TOMATO BASIL PIZETTE",
+    "yield": "8",
+    "category": "Appetizer 1",
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "⅓ cups plain flour, plus a little extra for sprinkling ⅓ cup + 1 tablespoon unsalted butter, chilled and diced"
+      },
+      {
+        "amount": 3,
+        "unit": "cups",
+        "name": "mature cheddar cheese, grated, divided ¼ teaspoon ground black pepper"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 ¼ teaspoon dried thyme 2 ½ lbs heirloom tomatoes"
+      },
+      {
+        "amount": 2,
+        "unit": "tablespoons",
+        "name": "olive oil, divided ½ teaspoon salt"
+      },
+      {
+        "amount": 2,
+        "unit": "cloves",
+        "name": "garlic, sliced 4 sprigs fresh thyme"
+      },
+      {
+        "amount": 4,
+        "unit": "",
+        "name": "bacon slices, diced 1 small onion, diced"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 ½ cup mayonnaise 1 large egg, room temperature"
+      },
+      {
+        "amount": 2,
+        "unit": "tablespoons",
+        "name": "chopped fresh chives, plus more for serving 1 tablespoon chopped fresh basil, plus more for serving"
+      },
+      {
+        "amount": 2,
+        "unit": "tablespoons",
+        "name": "breadcrumbs"
+      }
+    ],
+    "steps": [
+      "To make the shortcrust pasty, place the plain flour, the diced butter, 1 cup of cheddar cheese, the black pepper, and the dried",
+      "thyme into a food processor. Pulse the mixture in short bursts until it begins to resemble breadcrumbs. Keep pulsing in short",
+      "bursts until the ingredients begin to form larger clumps. It may be necessary to add a tablespoon of water if this does not",
+      "happen. As soon as the pastry begins to form, stop pulsing, remove the pastry from the food processor and form it into a ball.",
+      "Wrap the ball of pastry in plastic wrap and place it in the fridge for 30 minutes to harden.",
+      "Remove the pastry from the fridge, coat a clean surface with little flour, unwrap the pastry and place it onto the floured",
+      "surface. Using a rolling pin, roll it out until it is roughly ⅓-inch thick.",
+      "Carefully lift the pastry and place it into a 9-inch pie dish. Press it into the shape of the dish and then trim the edges. Place the",
+      "pastry back into the fridge for 15 minutes.",
+      "Preheat the oven to 400 F. Line the pastry with baking paper and add pie weights, then bake the pastry for 20 minutes.",
+      "Remove the pie weights and the parchment paper, and continue to bake the pastry case for another 10 minutes until it is set",
+      "and lightly colored. Place to one side and allow to cool.",
+      "Reduce the oven temperature to 300 F.",
+      "To prepare the tomatoes, slice them into ½-inch thick pieces and place them onto a large baking tray. Drizzle with 1",
+      "tablespoon of olive oil, sprinkle with the salt, and add the sliced garlic and the fresh thyme stalks to the baking tray. Bake in",
+      "the oven for 35 to 40 minutes. This will help to remove some of the excess liquid in the tomatoes.",
+      "When the tomatoes are ready, remove them from the oven and allow them to cool to room temperature.",
+      "On the stove, using a medium-sized frying pan, gently fry the diced onion and bacon with 1 tablespoon of olive oil. Cook until",
+      "the onion is translucent and the bacon is turning crisp and golden around the edges. Leave the mixture to cool.",
+      "Meanwhile, in a medium-sized bowl, mix together the mayonnaise and the egg until they are combined. Then, stir in the",
+      "cooled onion and bacon, 2 cups of cheddar, the fresh chives, and the fresh basil.",
+      "To prepare the pie for baking, preheat the oven to 375 F. Gather together the cooled pie crust, the tomatoes, the mayonnaise",
+      "mixture, and the breadcrumbs. Begin by spreading half of the mayonnaise mixture onto the base of the pie crust. Sprinkle 1",
+      "tablespoon of breadcrumbs on top of the mayonnaise, and then layer half of the tomatoes on top. Repeat the process with the",
+      "other half of the ingredients, first the mayonnaise, then the breadcrumbs, and finally the remaining tomatoes.",
+      "Place the tomato pie into the oven and bake for 40 to 45 minutes, checking occasionally to make sure that the pie crust isn't",
+      "browning too much. If it is, cover the pie with tin foil for the remainder of the cook time.",
+      "Once the pie is ready, remove it from the oven and let it sit for 30 minutes, then optionally top with more fresh chives and/or",
+      "basil before serving"
+    ]
+  },
+  {
+    "title": "THAI CHICKEN NOODLE SOUP",
+    "category": "Appetizer 1",
+    "yield": "4",
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "tablespoon",
+        "name": "coconut oil, or olive oil"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "chicken breasts, boneless, skinless"
+      },
+      {
+        "amount": 8,
+        "unit": "",
+        "name": "ounces rice noodles"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "onion, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "carrots, peeled and julienned"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "red bell pepper, julienned"
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "name": "mushrooms, sliced"
+      },
+      {
+        "amount": 3,
+        "unit": "cloves",
+        "name": "garlic, minced or grated"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "inch fresh ginger, minced or grated"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "red Thai chili, minced (optional)"
+      },
+      {
+        "amount": 3,
+        "unit": "tablespoons",
+        "name": "Thai red curry paste"
+      },
+      {
+        "amount": 5,
+        "unit": "cups",
+        "name": "chicken broth"
+      },
+      {
+        "amount": 1,
+        "unit": "can",
+        "name": "(14 ounces) coconut milk"
+      },
+      {
+        "amount": 1,
+        "unit": "teaspoon",
+        "name": "fish sauce (optional)"
+      },
+      {
+        "amount": 0.25,
+        "unit": "cup",
+        "name": "cilantro, finely chopped"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 Lime, cut into wedges, to serve"
+      }
+    ],
+    "steps": [
+      "In a large pot on medium heat, melt the coconut oil, then add the onion and carrots and cook for 3-4 minutes until tender.",
+      "Add the red bell pepper, mushrooms, garlic, ginger, and chili (optional), and cook for 2-3 minutes until slightly tender. Then add the curry paste and stir to coat all the vegetables.",
+      "Pour in the broth, stir to combine with the vegetables, and bring to a gentle boil. Add the raw chicken breasts to the pot, submerge them in the broth, reduce the heat to a simmer, and cook for 20 minutes or until the chicken is cooked through.",
+      "After 20 minutes, turn down the heat, remove the chicken breasts from the pot, and place them on a cutting board. Using two forks, shred the chicken into fine strips or bite-size pieces and set aside.",
+      "Bring the pot of broth back up to a boil, then add the rice noodles and cook for half of the recommended cooking time (e.g. if your noodles need to be cooked for 8 minutes, cook them for 4 minutes). As the noodles cook, stir the soup regularly to ensure the noodles do not stick together.",
+      "Once the noodles have cooked halfway, pour in the coconut milk and fish sauce (optional), and return the shredded chicken to the pot. Stir to combine, and continue to cook for the remaining time or until the noodles are tender.",
+      "Once the noodles are cooked, turn off the heat, add the chopped fresh cilantro, and stir to combine. Taste and adjust the seasoning with additional salt as needed.",
+      "Once cooked, portion the chicken noodle soup into bowls and serve with additional cilantro and fresh lime juice as desired."
+    ]
+  },
+  {
+    "title": "SEARED CATFISH",
+    "category": "Comfort",
+    "yield": "4",
+    "ingredients": [
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 2 Échalote(s)"
+      },
+      {
+        "amount": 20,
+        "unit": "",
+        "name": "cl Crème liquide"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "Beurre"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "Citron(s) jaune(s)"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "verre(s) Vin blanc"
+      }
+    ],
+    "steps": [
+      "Pelez et hachez grossièrement les échalotes. Disposez-les dans une casserole.",
+      "Pressez le citron et ajoutez le jus dans la casserole. Versez également le vin blanc. Faites chauffer à feu moyen afin que le liquide s'évapore.",
+      "Retirez la casserole du feu. Ajoutez le beurre et mélangez afin qu'il fonde. Délayez avec la crème liquide.",
+      "Placez la casserole sur le feu au bain-marie. Réchauffez la sauce quelques minutes. Nappez votre poisson avec ce beurre blanc maison."
+    ]
+  },
+  {
+    "title": "CHICKEN CAESAR SALAD",
+    "category": "Alternative",
+    "yield": "4",
+    "ingredients": [
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 Ingredients"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 6 6"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 cups cups"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 romaine or salad greens,"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 washed, dried and chopped"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 3 3"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 slices"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 bacon,"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 cooked and crumbled"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 3 3"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 boiled eggs,"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 sliced or chopped"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 1 1"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 large"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 chicken breast,"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 seasoned and cooked"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 1 1"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 cup cup"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 cherry tomatoes"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 1 1"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 cup cup"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 croutons"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 1 1"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 tablespoon tablespoon"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 grated parmesan cheese"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 2 2"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 tablespoons tablespoons"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 shaved parmesan cheese"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 Marzetti® Simply Dressed® Caesar Salad Dressing"
+      }
+    ],
+    "steps": [
+      "Instructions",
+      "Add greens to a large mixing bowl. Layer crumbled bacon, hard-boiled eggs, chicken breast, and cherry tomatoes. Sprinkle on ½ tablespoon grated parmesan and 1 tablespoon shaved parmesan with 1 cup of croutons.",
+      "Drizzle the desired amount of dressing and toss (or serve undressed and dress individual servings).",
+      "Garnish with the remaining ½ tablespoon grated parmesan cheese and 1 tablespoon shaved parmesan. Optional: sprinkle with salt and black pepper.",
+      "Serving size: 2 large dinner salads or 4 side salads."
+    ]
+  },
+  {
+    "title": "Citrus and Shrimp Lemon Lavender Cups",
+    "category": "Appetizer 2",
+    "yield": "16",
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "pound medium shrimp, peeled, deveined and cut into bite-sized pieces"
+      },
+      {
+        "amount": 1,
+        "unit": "teaspoon",
+        "name": "chopped or ground dried lavender"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 0 Kosher salt"
+      },
+      {
+        "amount": 2,
+        "unit": "tablespoons",
+        "name": "olive oil"
+      },
+      {
+        "amount": 2,
+        "unit": "tablespoons",
+        "name": "chopped fresh mint"
+      },
+      {
+        "amount": 1,
+        "unit": "teaspoon",
+        "name": "lemon zest plus 1 tablespoon lemon juice"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "oranges, such as navel or Cara Cara, segmented, plus 1 teaspoon orange zest"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "Persian cucumber, peeled and diced"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "heads endive, white, red or a combination, leaves separated"
+      }
+    ],
+    "steps": [
+      "In a medium bowl, add the shrimp, lavender and 1/2 teaspoon salt and toss well to combine. Heat a large skillet over medium-high heat. Add the oil and the seasoned shrimp and cook, undisturbed, about 2 minutes. Flip the shrimp and cook on the other side until the shrimp is opaque and cooked through, about another 2 minutes.",
+      "In a separate medium bowl, add the mint, lemon zest and juice, oranges and zest, cucumbers and 1/8 teaspoon salt. Toss well to combine. Add the hot shrimp to the bowl and toss again.",
+      "Lay the endive leaves out on a platter. Spoon the shrimp mixture into the leaves, placing approximately 2 shrimp in each cup. Spoon any juices over the top and serve."
+    ]
+  },
+  {
+    "title": "Fried Calamari with Smoked Paprika Dip",
+    "category": "Appetizer 2",
+    "yield": "4",
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "pound basa fillets ( cooked and flaked)"
+      },
+      {
+        "amount": 3,
+        "unit": "",
+        "name": "green onion (diced)"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "1 egg"
+      },
+      {
+        "amount": 3,
+        "unit": "",
+        "name": "⁄4 cup panko breadcrumbs"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "⁄2 Tablespoon red curry paste"
+      },
+      {
+        "amount": 2,
+        "unit": "Tablespoons",
+        "name": "minced cilantro"
+      },
+      {
+        "amount": 2,
+        "unit": "Tablespoons",
+        "name": "mayonnaise"
+      },
+      {
+        "amount": 1,
+        "unit": "teaspoon",
+        "name": "minced fresh ginger"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "⁄2 lime (juice and zest)"
+      },
+      {
+        "amount": 4,
+        "unit": "Tablespoons",
+        "name": "mayonnaise"
+      },
+      {
+        "amount": 1.5,
+        "unit": "teaspoons",
+        "name": "capers (minced)"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "⁄4 lime (juice and zest)"
+      },
+      {
+        "amount": 1,
+        "unit": "Tablespoon",
+        "name": "minced green onion"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 salt & pepper"
+      }
+    ],
+    "steps": [
+      "Flake the fish and put into a medium sized bowl.",
+      "Add the egg, mayo, red curry paste, cilantro, green onion, lime juice and zest of lime, and ginger.",
+      "Mix well, then stir in the breadcrumbs.",
+      "Divide the mixture into 4 equal pieces, then roll each piece into a ball then flatten into a patty shape.",
+      "Heat a large skillet to medium heat, then add a bit of oil to the pan.",
+      "When the pan is hot, add the fish cakes and cook for 3-4 minutes on each side.",
+      "To make the tartar sauce, mix together the mayo, minced capers, lime zest and lime juice, and minced green onion then season with sea salt and pepper."
+    ]
+  },
+  {
+    "title": "Thai Fish Cakes with Cilantro Dip",
+    "category": "Appetizer 2",
+    "yield": "4",
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "pound basa fillets ( cooked and flaked)"
+      },
+      {
+        "amount": 3,
+        "unit": "",
+        "name": "green onion (diced)"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 1 egg"
+      },
+      {
+        "amount": 3,
+        "unit": "",
+        "name": "⁄4 cup panko breadcrumbs"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "⁄2 Tablespoon red curry paste"
+      },
+      {
+        "amount": 2,
+        "unit": "Tablespoons",
+        "name": "minced cilantro"
+      },
+      {
+        "amount": 2,
+        "unit": "Tablespoons",
+        "name": "mayonnaise"
+      },
+      {
+        "amount": 1,
+        "unit": "teaspoon",
+        "name": "minced fresh ginger"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "⁄2 lime (juice and zest)"
+      },
+      {
+        "amount": 4,
+        "unit": "Tablespoons",
+        "name": "mayonnaise"
+      },
+      {
+        "amount": 1.5,
+        "unit": "teaspoons",
+        "name": "capers (minced)"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "⁄4 lime (juice and zest)"
+      },
+      {
+        "amount": 1,
+        "unit": "Tablespoon",
+        "name": "minced green onion"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 salt & pepper"
+      }
+    ],
+    "steps": [
+      "Flake the fish and put into a medium sized bowl.",
+      "Add the egg, mayo, red curry paste, cilantro, green onion, lime juice and zest of lime, and ginger.",
+      "Mix well, then stir in the breadcrumbs.",
+      "Divide the mixture into 4 equal pieces, then roll each piece into a ball then flatten into a patty shape.",
+      "Heat a large skillet to medium heat, then add a bit of oil to the pan.",
+      "When the pan is hot, add the fish cakes and cook for 3-4 minutes on each side.",
+      "To make the tartar sauce, mix together the mayo, minced capers, lime zest and lime juice, and minced green onion then season with sea salt and pepper."
+    ]
+  },
+  {
+    "title": "3 - Sisters Indigenous Soup",
+    "category": "Appetizer 1",
+    "yield": "10",
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": "Tbsp",
+        "name": "olive oil"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "medium yellow onion, peeled and diced"
+      },
+      {
+        "amount": 2,
+        "unit": "cloves",
+        "name": "garlic, minced"
+      },
+      {
+        "amount": 1,
+        "unit": "lb",
+        "name": "red potatoes, diced (no need to peel)"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "chipotle powder"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "cumin"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "bay leaves"
+      },
+      {
+        "amount": 32,
+        "unit": "",
+        "name": "ounces chicken broth"
+      },
+      {
+        "amount": 28,
+        "unit": "",
+        "name": "ounce can diced fire roasted tomatoes"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 salt and fresh cracked black pepper"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "jalapeño pepper, minced (leave out for less heat)"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "zucchini, diced (do not peel)"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "summer squash, diced (do not peel)"
+      },
+      {
+        "amount": 3,
+        "unit": "",
+        "name": "ears corn, kernels removed"
+      },
+      {
+        "amount": 2,
+        "unit": "cups",
+        "name": "cooked black-eyed peas"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 fresh parsley"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 grated cheese such as Parmesan or Asiago"
+      }
+    ],
+    "steps": [
+      "Heat the oil in a large soup pot or Dutch oven and add the diced onion. Saute for five minutes, stirring often, until the onion starts to soften. Add the garlic and cook a minute or two longer.",
+      "Add the potatoes, chipotle powder, cumin, and bay leaves to the pot and cook a couple of more minutes, stirring almost constantly.",
+      "Add the broth and tomatoes to the pot and bring to a simmer. Add the jalapeños, if using, at this point too. Bring to a boil.",
+      "Lower the heat and simmer just until the potatoes are just tender, about 8-12 minutes. You can cover the pot if you like, but make sure you're cooking at a simmer, not a full boil.",
+      "Add the zucchini, summer squash, corn and beans, and bring the soup back to a bubble. Season with salt and black pepper to taste. Add more chipotle or cumin at this point if you like. Cover and let the soup simmer for just a few minutes. You just want to take the raw edge off your veggies. When they taste just barely tender, the soup is finished. Add water if your soup seems too thick.",
+      "Serve the soup topped with fresh parsley, and a sprinkle of cheese, if you like."
+    ]
+  },
+  {
+    "title": "3 Sisters Indigenous Soup",
+    "category": "Appetizer 1",
+    "yield": "8",
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": "tablespoons",
+        "name": "olive oil"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "bell pepper (diced)"
+      },
+      {
+        "amount": 6,
+        "unit": "",
+        "name": "garlic cloves (minced)"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "to mato (diced)"
+      },
+      {
+        "amount": 3,
+        "unit": "",
+        "name": "yellow crookneck (summer squash, chopped (larger pieces))"
+      },
+      {
+        "amount": 1.5,
+        "unit": "cups",
+        "name": "sweet corn (frozen, fresh, or canned)"
+      },
+      {
+        "amount": 1,
+        "unit": "teaspoon",
+        "name": "dried rubbed sage"
+      },
+      {
+        "amount": 1,
+        "unit": "teaspoon",
+        "name": "ancho chile powder"
+      },
+      {
+        "amount": 0.5,
+        "unit": "teaspoon",
+        "name": "ground coriander"
+      },
+      {
+        "amount": 0.25,
+        "unit": "",
+        "name": "red chili flakes"
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "name": "dry pinto beans (soaked for 3 hours prior)"
+      },
+      {
+        "amount": 4,
+        "unit": "cups",
+        "name": "vegetable broth or water"
+      },
+      {
+        "amount": 1,
+        "unit": "tablespoon",
+        "name": "maple syrup or honey"
+      },
+      {
+        "amount": 1,
+        "unit": "teaspoon",
+        "name": "apple cider vinegar"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 0 sea salt (to taste)"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 0 0 Optional (to garnish: pumpkin seeds)"
+      }
+    ],
+    "steps": [
+      "Press the ‘Saute’ button on your Instant Pot. Add oil, pepper, garlic. Saute for 5 minutes, stirring frequently. Stir in tomato, squash, and corn. Saute for 1 minute longer. Press ‘Cancel’. Stir in spices, broth/water, and pinto beans. Cook on manual high pressure for 35 minutes. Let the pressure release naturally for 10 minutes before opening the vent. Stir in maple syrup/honey and apple cider vinegar. Salt to taste. Optionally, garnish with pumpkin seeds before serving. Enjoy!",
+      "In a large pot over medium heat add oil, pepper and garlic. Sauté for 5 minutes. Add tomato, squash, corn, sage, ancho chile powder, coriander, optional red chili flakes, beans, and broth/water. Turn heat to high and bring to a boil. Cover, reduce heat to medium-low and simmer for 50 minutes, or until beans are tender, adding more water/broth as needed to maintain soup consistency. Turn off heat, then stir in maple syrup/honey and vinegar. Salt to taste. Top with pumpkin seeds, if using, before serving."
+    ]
+  },
+  {
+    "title": "3 Sisters Indigenous Soup",
+    "category": "Appetizer 1",
+    "yield": "8",
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": "tablespoons",
+        "name": "olive oil"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "bell pepper (diced)"
+      },
+      {
+        "amount": 6,
+        "unit": "",
+        "name": "garlic cloves (minced)"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "to mato (diced)"
+      },
+      {
+        "amount": 3,
+        "unit": "",
+        "name": "yellow crookneck (summer squash, chopped (larger pieces))"
+      },
+      {
+        "amount": 1.5,
+        "unit": "cups",
+        "name": "sweet corn (frozen, fresh, or canned)"
+      },
+      {
+        "amount": 1,
+        "unit": "teaspoon",
+        "name": "dried rubbed sage"
+      },
+      {
+        "amount": 1,
+        "unit": "teaspoon",
+        "name": "ancho chile powder"
+      },
+      {
+        "amount": 0.5,
+        "unit": "teaspoon",
+        "name": "ground coriander"
+      },
+      {
+        "amount": 0.25,
+        "unit": "",
+        "name": "red chili flakes"
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "name": "dry pinto beans (soaked for 3 hours prior)"
+      },
+      {
+        "amount": 4,
+        "unit": "cups",
+        "name": "vegetable broth or water"
+      },
+      {
+        "amount": 1,
+        "unit": "tablespoon",
+        "name": "maple syrup or honey"
+      },
+      {
+        "amount": 1,
+        "unit": "teaspoon",
+        "name": "apple cider vinegar"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 sea salt (to taste)"
+      },
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "0 Optional (to garnish: pumpkin seeds)"
+      }
+    ],
+    "steps": [
+      "Press the ‘Saute’ button on your Instant Pot. Add oil, pepper, garlic. Saute for 5 minutes, stirring frequently. Stir in tomato, squash, and corn. Saute for 1 minute longer. Press ‘Cancel’. Stir in spices, broth/water, and pinto beans. Cook on manual high pressure for 35 minutes. Let the pressure release naturally for 10 minutes before opening the vent. Stir in maple syrup/honey and apple cider vinegar. Salt to taste. Optionally, garnish with pumpkin seeds before serving. Enjoy!",
+      "In a large pot over medium heat add oil, pepper and garlic. Sauté for 5 minutes. Add tomato, squash, corn, sage, ancho chile powder, coriander, optional red chili flakes, beans, and broth/water. Turn heat to high and bring to a boil. Cover, reduce heat to medium-low and simmer for 50 minutes, or until beans are tender, adding more water/broth as needed to maintain soup consistency. Turn off heat, then stir in maple syrup/honey and vinegar. Salt to taste. Top with pumpkin seeds, if using, before serving."
+    ]
   }
 ]
