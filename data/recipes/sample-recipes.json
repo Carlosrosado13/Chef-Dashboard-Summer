@@ -4657,13 +4657,77 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Large shrimp, peeled and deveined",
+        "amount": 12,
+        "unit": "lb"
+      },
+      {
+        "name": "All-purpose flour",
+        "amount": 4,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 2,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Eggs, beaten",
+        "amount": 18,
         "unit": "each"
+      },
+      {
+        "name": "Unsweetened shredded coconut",
+        "amount": 8,
+        "unit": "cup"
+      },
+      {
+        "name": "Panko breadcrumbs",
+        "amount": 8,
+        "unit": "cup"
+      },
+      {
+        "name": "Canola oil for frying",
+        "amount": 2,
+        "unit": "gal"
+      },
+      {
+        "name": "Greek yogurt",
+        "amount": 6,
+        "unit": "cup"
+      },
+      {
+        "name": "Honey",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Lime juice",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Lime zest",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Cilantro, chopped",
+        "amount": 1,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Season shrimp. Dredge in flour, dip in egg, and coat with the coconut-panko mixture, pressing gently so the coating adheres.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Fry shrimp in batches at 350 F until golden and cooked through. Whisk yogurt, honey, lime juice, zest, and cilantro for the dip and serve 3 to 4 shrimp per appetizer portion.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -4694,13 +4758,72 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "name": "Recipe details pending",
+        "name": "Carrots, peeled and sliced",
+        "amount": 16,
+        "unit": "lb"
+      },
+      {
+        "name": "Yellow onion, diced",
+        "amount": 4,
+        "unit": "lb"
+      },
+      {
+        "name": "Celery, diced",
+        "amount": 3,
+        "unit": "lb"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.5,
+        "unit": "lb"
+      },
+      {
+        "name": "Olive oil",
         "amount": 1,
-        "unit": "each"
+        "unit": "cup"
+      },
+      {
+        "name": "Vegetable stock",
+        "amount": 5,
+        "unit": "gal"
+      },
+      {
+        "name": "Orange juice",
+        "amount": 2,
+        "unit": "qt"
+      },
+      {
+        "name": "Orange zest",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Ground ginger",
+        "amount": 3,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Heavy cream",
+        "amount": 2,
+        "unit": "qt"
+      },
+      {
+        "name": "Toasted almonds",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Sweat onion, celery, garlic, and carrots in olive oil until aromatic. Add stock, orange juice, zest, ginger, and salt, then simmer until carrots are very tender.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Puree smooth with an immersion blender, finish with cream, and garnish each bowl with toasted almonds.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -4731,13 +4854,62 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Salmon fillets, 6 oz portions",
+        "amount": 24,
         "unit": "each"
+      },
+      {
+        "name": "Maple syrup",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "Dijon mustard",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Soy sauce",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 2,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Parsley, chopped",
+        "amount": 1,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Whisk maple syrup, mustard, soy sauce, lemon juice, garlic, and oil. Season salmon and brush generously with glaze.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Roast salmon at 400 F until just cooked and glossy, brushing once more during cooking. Garnish with parsley and serve with reserved warm glaze.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -4768,13 +4940,72 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Chicken breast cutlets",
+        "amount": 24,
         "unit": "each"
+      },
+      {
+        "name": "Sliced ham",
+        "amount": 24,
+        "unit": "each"
+      },
+      {
+        "name": "Swiss cheese slices",
+        "amount": 24,
+        "unit": "each"
+      },
+      {
+        "name": "All-purpose flour",
+        "amount": 5,
+        "unit": "cup"
+      },
+      {
+        "name": "Eggs, beaten",
+        "amount": 18,
+        "unit": "each"
+      },
+      {
+        "name": "Panko breadcrumbs",
+        "amount": 10,
+        "unit": "cup"
+      },
+      {
+        "name": "Dijon mustard",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Butter, melted",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Chicken stock",
+        "amount": 3,
+        "unit": "qt"
+      },
+      {
+        "name": "Heavy cream",
+        "amount": 2,
+        "unit": "qt"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 2,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Pound chicken evenly, season, brush lightly with Dijon, and roll each piece around ham and Swiss cheese. Dredge in flour, egg, and panko.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Bake or shallow-fry until the coating is crisp and the chicken reaches 165 F. Make a cream sauce with stock, cream, and pan drippings; serve over sliced portions.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -4805,13 +5036,62 @@
     "category": "Alternative",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Bone-in chicken pieces",
+        "amount": 24,
         "unit": "each"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Smoked paprika",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Sweet paprika",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Thyme, chopped",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "Chicken stock",
+        "amount": 2,
+        "unit": "qt"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Combine oil, paprika, garlic, lemon juice, thyme, salt, and pepper. Rub over chicken and marinate under refrigeration when time allows.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Roast at 400 F, adding stock to the pan as needed, until browned and cooked to 165 F. Rest, pan-sauce lightly, and portion one piece per guest.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -4965,13 +5245,52 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Chocolate sponge cake layers",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "Cherry filling",
+        "amount": 3,
+        "unit": "qt"
+      },
+      {
+        "name": "Heavy cream",
+        "amount": 4,
+        "unit": "qt"
+      },
+      {
+        "name": "Powdered sugar",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "Vanilla extract",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Kirsch or cherry syrup",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Dark chocolate shavings",
+        "amount": 4,
+        "unit": "cup"
+      },
+      {
+        "name": "Maraschino or brandied cherries",
+        "amount": 24,
         "unit": "each"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Whip cream with powdered sugar and vanilla to medium peaks. Brush cake layers with kirsch or cherry syrup.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Layer cake with whipped cream and cherry filling. Mask with cream, garnish with chocolate shavings and cherries, chill, and cut into 24 portions.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5002,13 +5321,62 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Chickpeas, drained",
+        "amount": 8,
+        "unit": "qt"
+      },
+      {
+        "name": "Roasted red peppers",
+        "amount": 4,
+        "unit": "qt"
+      },
+      {
+        "name": "Tahini",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Garlic",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Ground cumin",
+        "amount": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Pita, cut and warmed",
+        "amount": 24,
         "unit": "each"
+      },
+      {
+        "name": "Parsley, chopped",
+        "amount": 1,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Blend chickpeas, roasted peppers, tahini, lemon juice, garlic, olive oil, cumin, and salt until smooth, adding water as needed for texture.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Spread or portion hummus into appetizer bowls, drizzle with olive oil, garnish with parsley, and serve with warm pita.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5039,13 +5407,67 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "name": "Recipe details pending",
+        "name": "Sushi rice, cooked and chilled",
+        "amount": 8,
+        "unit": "qt"
+      },
+      {
+        "name": "Rice vinegar",
         "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Sugar",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Sushi-grade tuna, diced",
+        "amount": 5,
+        "unit": "lb"
+      },
+      {
+        "name": "Mayonnaise",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Sriracha",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Soy sauce",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Sesame oil",
+        "amount": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "Scallions, sliced",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Canola oil for frying",
+        "amount": 1,
+        "unit": "gal"
+      },
+      {
+        "name": "Jalapeno slices",
+        "amount": 24,
         "unit": "each"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Season rice with vinegar and sugar, press into shallow pans, chill firm, and cut into small rectangles. Fry rice cakes until crisp.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Mix tuna with mayonnaise, sriracha, soy, sesame oil, and scallions. Top each crispy rice piece with spicy tuna and jalapeno.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5076,13 +5498,72 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Halibut fillets, 6 oz portions",
+        "amount": 24,
         "unit": "each"
+      },
+      {
+        "name": "Cherry tomatoes, halved",
+        "amount": 8,
+        "unit": "qt"
+      },
+      {
+        "name": "Kalamata olives, chopped",
+        "amount": 3,
+        "unit": "qt"
+      },
+      {
+        "name": "Capers",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Shallots, minced",
+        "amount": 1.5,
+        "unit": "lb"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "White wine",
+        "amount": 2,
+        "unit": "qt"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Parsley, chopped",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 2,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Cook shallots and garlic in olive oil, add tomatoes, olives, capers, white wine, and lemon juice, and simmer until saucy.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Season and sear halibut until golden and just cooked through. Spoon tomato-olive sauce over each portion and garnish with parsley.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5294,13 +5775,62 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Pie dough rounds",
+        "amount": 24,
         "unit": "each"
+      },
+      {
+        "name": "Peaches, diced",
+        "amount": 8,
+        "unit": "qt"
+      },
+      {
+        "name": "Brown sugar",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "Granulated sugar",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Cornstarch",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Cinnamon",
+        "amount": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "Egg wash",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Canola oil for frying",
+        "amount": 2,
+        "unit": "gal"
+      },
+      {
+        "name": "Powdered sugar",
+        "amount": 2,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Cook peaches with sugars, cornstarch, lemon juice, and cinnamon until thick. Chill filling completely.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Fill dough rounds, seal, crimp, and fry at 350 F until golden. Drain, dust with powdered sugar, and serve warm or room temperature.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5331,13 +5861,67 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "name": "Recipe details pending",
+        "name": "Fennel bulbs, shaved thin",
+        "amount": 8,
+        "unit": "lb"
+      },
+      {
+        "name": "Orange segments",
+        "amount": 6,
+        "unit": "qt"
+      },
+      {
+        "name": "Arugula",
+        "amount": 3,
+        "unit": "lb"
+      },
+      {
+        "name": "Red onion, shaved",
         "amount": 1,
-        "unit": "each"
+        "unit": "lb"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Orange juice",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Dijon mustard",
+        "amount": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "Honey",
+        "amount": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "Toasted pistachios",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 2,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Whisk citrus juices, Dijon, honey, olive oil, salt, and pepper into a bright vinaigrette.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Toss shaved fennel, orange segments, arugula, and red onion lightly with vinaigrette. Garnish with pistachios and serve chilled.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5368,13 +5952,57 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "name": "Recipe details pending",
+        "name": "English cucumbers, thin sliced",
+        "amount": 12,
+        "unit": "lb"
+      },
+      {
+        "name": "Red onion, thin sliced",
+        "amount": 2,
+        "unit": "lb"
+      },
+      {
+        "name": "Sour cream",
+        "amount": 3,
+        "unit": "qt"
+      },
+      {
+        "name": "Greek yogurt",
+        "amount": 2,
+        "unit": "qt"
+      },
+      {
+        "name": "White vinegar",
         "amount": 1,
-        "unit": "each"
+        "unit": "cup"
+      },
+      {
+        "name": "Fresh dill, chopped",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Sugar",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 2,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Salt cucumbers lightly and drain for 20 minutes, then pat dry.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Whisk sour cream, yogurt, vinegar, dill, sugar, salt, and pepper. Fold with cucumbers and onions and chill before service.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5405,13 +6033,67 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Chicken breast cutlets",
+        "amount": 24,
         "unit": "each"
+      },
+      {
+        "name": "All-purpose flour",
+        "amount": 4,
+        "unit": "cup"
+      },
+      {
+        "name": "Mushrooms, sliced",
+        "amount": 8,
+        "unit": "lb"
+      },
+      {
+        "name": "Shallots, minced",
+        "amount": 1.5,
+        "unit": "lb"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Marsala wine",
+        "amount": 3,
+        "unit": "qt"
+      },
+      {
+        "name": "Chicken stock",
+        "amount": 3,
+        "unit": "qt"
+      },
+      {
+        "name": "Butter",
+        "amount": 2,
+        "unit": "lb"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Parsley, chopped",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Season chicken, dredge in flour, and sear until golden. Remove and hold.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Saute mushrooms, shallots, and garlic, deglaze with Marsala, add stock, and reduce. Return chicken to sauce, finish with butter and parsley.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5442,13 +6124,62 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Roast beef, sliced",
+        "amount": 12,
+        "unit": "lb"
+      },
+      {
+        "name": "Thick bread or rolls",
+        "amount": 24,
         "unit": "each"
+      },
+      {
+        "name": "Beef stock",
+        "amount": 4,
+        "unit": "qt"
+      },
+      {
+        "name": "Onions, sliced",
+        "amount": 5,
+        "unit": "lb"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Worcestershire sauce",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Butter",
+        "amount": 1,
+        "unit": "lb"
+      },
+      {
+        "name": "Provolone cheese slices",
+        "amount": 24,
+        "unit": "each"
+      },
+      {
+        "name": "Horseradish sauce",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "Parsley, chopped",
+        "amount": 1,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Caramelize onions in butter, add garlic, beef stock, and Worcestershire, and simmer into a jus. Warm sliced beef gently in the jus.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Toast bread, top with beef, onions, and provolone, then melt. Serve open faced with extra jus and horseradish sauce.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5479,13 +6210,67 @@
     "category": "Alternative",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Cod fillets, 6 oz portions",
+        "amount": 24,
         "unit": "each"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon zest",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Parsley, chopped",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Dill, chopped",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Panko breadcrumbs",
+        "amount": 5,
+        "unit": "cup"
+      },
+      {
+        "name": "Butter, melted",
+        "amount": 1,
+        "unit": "lb"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 2,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Season cod and place on lined sheet pans. Mix oil, lemon, garlic, herbs, panko, and melted butter.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Top cod with herb crumbs and bake at 400 F until flaky. Serve with pan juices and extra lemon.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5553,13 +6338,52 @@
     "category": "Starch",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Yukon gold potatoes, peeled",
+        "amount": 18,
+        "unit": "lb"
+      },
+      {
+        "name": "Garlic cloves",
+        "amount": 48,
         "unit": "each"
+      },
+      {
+        "name": "Heavy cream",
+        "amount": 3,
+        "unit": "qt"
+      },
+      {
+        "name": "Butter",
+        "amount": 3,
+        "unit": "lb"
+      },
+      {
+        "name": "Sour cream",
+        "amount": 2,
+        "unit": "qt"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "White pepper",
+        "amount": 2,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Chives, sliced",
+        "amount": 1,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Boil potatoes and garlic in salted water until tender. Drain well and steam dry.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Mash with warm cream, butter, sour cream, salt, and white pepper. Hold hot and garnish with chives.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5590,13 +6414,62 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Baked pie shells",
+        "amount": 4,
         "unit": "each"
+      },
+      {
+        "name": "Bananas, sliced",
+        "amount": 24,
+        "unit": "each"
+      },
+      {
+        "name": "Whole milk",
+        "amount": 4,
+        "unit": "qt"
+      },
+      {
+        "name": "Egg yolks",
+        "amount": 24,
+        "unit": "each"
+      },
+      {
+        "name": "Sugar",
+        "amount": 4,
+        "unit": "cup"
+      },
+      {
+        "name": "Cornstarch",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Butter",
+        "amount": 1,
+        "unit": "lb"
+      },
+      {
+        "name": "Vanilla extract",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Heavy cream, whipped",
+        "amount": 3,
+        "unit": "qt"
+      },
+      {
+        "name": "Toasted cookie crumbs",
+        "amount": 3,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Cook milk, yolks, sugar, and cornstarch into a thick pastry cream. Finish with butter and vanilla, then chill.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Layer bananas and pastry cream in pie shells. Top with whipped cream and crumbs, chill fully, and cut into 24 portions.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5627,13 +6500,67 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
-        "unit": "each"
+        "name": "Corn kernels",
+        "amount": 12,
+        "unit": "qt"
+      },
+      {
+        "name": "Yellow onion, diced",
+        "amount": 4,
+        "unit": "lb"
+      },
+      {
+        "name": "Celery, diced",
+        "amount": 3,
+        "unit": "lb"
+      },
+      {
+        "name": "Potatoes, diced",
+        "amount": 8,
+        "unit": "lb"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Butter",
+        "amount": 1.5,
+        "unit": "lb"
+      },
+      {
+        "name": "Flour",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Vegetable or chicken stock",
+        "amount": 5,
+        "unit": "gal"
+      },
+      {
+        "name": "Heavy cream",
+        "amount": 2,
+        "unit": "qt"
+      },
+      {
+        "name": "Thyme, chopped",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 0.5,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Sweat onion, celery, garlic, and potatoes in butter. Stir in flour, then add stock and corn.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Simmer until potatoes are tender. Add cream and thyme, adjust seasoning, and hold hot for service.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5671,13 +6598,62 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Ripe mango, diced",
+        "amount": 8,
+        "unit": "qt"
+      },
+      {
+        "name": "Avocado, diced",
+        "amount": 24,
         "unit": "each"
+      },
+      {
+        "name": "Red bell pepper, diced",
+        "amount": 3,
+        "unit": "lb"
+      },
+      {
+        "name": "Red onion, minced",
+        "amount": 1,
+        "unit": "lb"
+      },
+      {
+        "name": "Cilantro, chopped",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Lime juice",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Honey",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 2,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Mixed greens",
+        "amount": 4,
+        "unit": "lb"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Whisk lime juice, oil, honey, and salt. Toss mango, pepper, onion, and cilantro with a small amount of dressing.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Fold avocado gently just before service and plate over greens with remaining dressing.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5708,13 +6684,72 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Veal shanks",
+        "amount": 24,
         "unit": "each"
+      },
+      {
+        "name": "Flour for dredging",
+        "amount": 4,
+        "unit": "cup"
+      },
+      {
+        "name": "Carrots, diced",
+        "amount": 4,
+        "unit": "lb"
+      },
+      {
+        "name": "Celery, diced",
+        "amount": 4,
+        "unit": "lb"
+      },
+      {
+        "name": "Onion, diced",
+        "amount": 5,
+        "unit": "lb"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Tomato paste",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "White wine",
+        "amount": 3,
+        "unit": "qt"
+      },
+      {
+        "name": "Veal or beef stock",
+        "amount": 4,
+        "unit": "gal"
+      },
+      {
+        "name": "Bay leaves",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "Thyme sprigs",
+        "amount": 12,
+        "unit": "each"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 0.5,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Season and dredge veal shanks, then sear deeply on all sides. Remove and saute vegetables, garlic, and tomato paste.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Deglaze with wine, add stock and herbs, return veal, and braise covered until tender. Strain and reduce jus for service.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5745,13 +6780,62 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Chicken breast cutlets",
+        "amount": 24,
         "unit": "each"
+      },
+      {
+        "name": "All-purpose flour",
+        "amount": 5,
+        "unit": "cup"
+      },
+      {
+        "name": "Eggs, beaten",
+        "amount": 18,
+        "unit": "each"
+      },
+      {
+        "name": "Italian breadcrumbs",
+        "amount": 10,
+        "unit": "cup"
+      },
+      {
+        "name": "Marinara sauce",
+        "amount": 5,
+        "unit": "qt"
+      },
+      {
+        "name": "Mozzarella, shredded",
+        "amount": 6,
+        "unit": "lb"
+      },
+      {
+        "name": "Parmesan, grated",
+        "amount": 2,
+        "unit": "lb"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 1,
+        "unit": "gal"
+      },
+      {
+        "name": "Basil, chopped",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Season chicken, dredge in flour, egg, and breadcrumbs, then pan-fry or bake until crisp and cooked through.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Top with marinara, mozzarella, and Parmesan. Bake until melted and bubbling, garnish with basil, and portion with extra sauce.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5782,13 +6866,67 @@
     "category": "Alternative",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Sea scallops",
+        "amount": 96,
         "unit": "each"
+      },
+      {
+        "name": "Butternut squash, peeled and diced",
+        "amount": 12,
+        "unit": "lb"
+      },
+      {
+        "name": "Heavy cream",
+        "amount": 2,
+        "unit": "qt"
+      },
+      {
+        "name": "Butter",
+        "amount": 2,
+        "unit": "lb"
+      },
+      {
+        "name": "Vegetable stock",
+        "amount": 2,
+        "unit": "qt"
+      },
+      {
+        "name": "Shallots, minced",
+        "amount": 1,
+        "unit": "lb"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Sage, chopped",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 2,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Cook squash with shallots and stock until tender. Puree with cream and butter until smooth and season well.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Pat scallops dry, season, and sear hard in oil until caramelized. Plate over warm squash puree with lemon and sage butter.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5948,13 +7086,57 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "English cucumbers, sliced thick",
+        "amount": 6,
         "unit": "each"
+      },
+      {
+        "name": "Smoked salmon",
+        "amount": 4,
+        "unit": "lb"
+      },
+      {
+        "name": "Cream cheese, softened",
+        "amount": 3,
+        "unit": "lb"
+      },
+      {
+        "name": "Sour cream",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Fresh dill, chopped",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Capers",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Red onion, minced",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 1,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Mix cream cheese, sour cream, dill, lemon juice, capers, onion, and pepper until smooth.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Pipe or spoon onto cucumber rounds and top with folded smoked salmon. Chill and serve cold.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -5985,13 +7167,67 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "name": "Recipe details pending",
+        "name": "Tomatoes, chopped",
+        "amount": 14,
+        "unit": "lb"
+      },
+      {
+        "name": "Cucumber, peeled and chopped",
+        "amount": 6,
+        "unit": "lb"
+      },
+      {
+        "name": "Red bell pepper, chopped",
+        "amount": 5,
+        "unit": "lb"
+      },
+      {
+        "name": "Red onion, chopped",
+        "amount": 2,
+        "unit": "lb"
+      },
+      {
+        "name": "Garlic",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Tomato juice",
+        "amount": 3,
+        "unit": "qt"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Sherry vinegar",
         "amount": 1,
-        "unit": "each"
+        "unit": "cup"
+      },
+      {
+        "name": "Lime juice",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Cilantro, chopped",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Blend tomatoes, cucumber, peppers, onion, garlic, tomato juice, oil, vinegar, lime, and salt in batches until mostly smooth.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Chill thoroughly. Adjust acidity and seasoning, garnish with cilantro, and serve cold.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6029,13 +7265,67 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "name": "Recipe details pending",
+        "name": "Turkey breast, butterflied",
+        "amount": 18,
+        "unit": "lb"
+      },
+      {
+        "name": "Spinach, wilted and squeezed dry",
+        "amount": 5,
+        "unit": "lb"
+      },
+      {
+        "name": "Sun-dried tomatoes, chopped",
+        "amount": 2,
+        "unit": "lb"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Olive oil",
         "amount": 1,
-        "unit": "each"
+        "unit": "cup"
+      },
+      {
+        "name": "Fresh basil, chopped",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Dijon mustard",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Chicken stock",
+        "amount": 3,
+        "unit": "qt"
+      },
+      {
+        "name": "Cornstarch slurry",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 0.25,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Season butterflied turkey, spread with Dijon, spinach, sun-dried tomatoes, garlic, and basil. Roll tightly and tie.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Roast until the center reaches 165 F. Rest, slice into roulade portions, and serve with a gluten-free pan jus thickened lightly with cornstarch.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6066,13 +7356,67 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Spaghetti",
+        "amount": 8,
+        "unit": "lb"
+      },
+      {
+        "name": "Ground beef",
+        "amount": 8,
+        "unit": "lb"
+      },
+      {
+        "name": "Ground pork",
+        "amount": 4,
+        "unit": "lb"
+      },
+      {
+        "name": "Eggs",
+        "amount": 12,
         "unit": "each"
+      },
+      {
+        "name": "Breadcrumbs",
+        "amount": 4,
+        "unit": "cup"
+      },
+      {
+        "name": "Parmesan, grated",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Parsley, chopped",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Marinara sauce",
+        "amount": 6,
+        "unit": "qt"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 0.5,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Mix meats with eggs, breadcrumbs, Parmesan, garlic, parsley, salt, and pepper. Form meatballs and bake until browned.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Simmer meatballs in marinara. Cook spaghetti al dente, toss with sauce, and serve with meatballs and extra Parmesan.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6500,13 +7844,62 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Large zucchini, sliced lengthwise",
+        "amount": 16,
         "unit": "each"
+      },
+      {
+        "name": "Ricotta cheese",
+        "amount": 5,
+        "unit": "lb"
+      },
+      {
+        "name": "Parmesan, grated",
+        "amount": 1.5,
+        "unit": "lb"
+      },
+      {
+        "name": "Lemon zest",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Basil, chopped",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Parsley, chopped",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 2,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Brush zucchini slices with oil, season, and grill until pliable with light char. Cool slightly.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Mix ricotta, Parmesan, lemon, herbs, salt, and pepper. Spread on zucchini, roll tightly, and chill or serve room temperature.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6537,13 +7930,62 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Flatbread crusts",
+        "amount": 12,
         "unit": "each"
+      },
+      {
+        "name": "Clams, drained and chopped",
+        "amount": 5,
+        "unit": "lb"
+      },
+      {
+        "name": "Bacon, cooked and chopped",
+        "amount": 4,
+        "unit": "lb"
+      },
+      {
+        "name": "Mozzarella, shredded",
+        "amount": 5,
+        "unit": "lb"
+      },
+      {
+        "name": "Cream cheese",
+        "amount": 2,
+        "unit": "lb"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Parsley, chopped",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Red pepper flakes",
+        "amount": 2,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 1,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Mix cream cheese with garlic, lemon, parsley, and red pepper flakes. Spread thinly over flatbreads.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Top with clams, bacon, and mozzarella. Bake until crisp and bubbling, then cut into appetizer portions.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6574,13 +8016,72 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Beef brisket",
+        "amount": 18,
+        "unit": "lb"
+      },
+      {
+        "name": "Yellow onions, sliced",
+        "amount": 6,
+        "unit": "lb"
+      },
+      {
+        "name": "Carrots, diced",
+        "amount": 5,
+        "unit": "lb"
+      },
+      {
+        "name": "Celery, diced",
+        "amount": 4,
+        "unit": "lb"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Tomato paste",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Red wine",
+        "amount": 4,
+        "unit": "qt"
+      },
+      {
+        "name": "Beef stock",
+        "amount": 4,
+        "unit": "gal"
+      },
+      {
+        "name": "Bay leaves",
+        "amount": 6,
         "unit": "each"
+      },
+      {
+        "name": "Thyme sprigs",
+        "amount": 12,
+        "unit": "each"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 0.25,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Season and sear brisket on all sides. Saute vegetables, garlic, and tomato paste in the same pan.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Deglaze with red wine, add stock and herbs, and braise covered until tender. Slice across the grain and serve with reduced braising jus.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6708,13 +8209,67 @@
     "category": "Alternative",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Puff pastry sheets",
+        "amount": 8,
         "unit": "each"
+      },
+      {
+        "name": "Wild mushrooms, sliced",
+        "amount": 10,
+        "unit": "lb"
+      },
+      {
+        "name": "Goat cheese",
+        "amount": 4,
+        "unit": "lb"
+      },
+      {
+        "name": "Yellow onion, sliced",
+        "amount": 4,
+        "unit": "lb"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Thyme, chopped",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Butter",
+        "amount": 1,
+        "unit": "lb"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Egg wash",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Arugula",
+        "amount": 2,
+        "unit": "lb"
+      },
+      {
+        "name": "Balsamic glaze",
+        "amount": 1,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Saute mushrooms, onions, garlic, and thyme until dry and deeply flavored. Cool slightly.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Dock pastry, top with goat cheese and mushroom mixture, brush edges with egg wash, and bake until crisp. Finish with arugula and balsamic glaze.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6745,13 +8300,62 @@
     "category": "Veggie 1",
     "ingredients": [
       {
-        "name": "Recipe details pending",
+        "name": "Corn kernels or cob sections",
+        "amount": 14,
+        "unit": "lb"
+      },
+      {
+        "name": "Mayonnaise",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "Sour cream",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "Cotija cheese",
+        "amount": 3,
+        "unit": "lb"
+      },
+      {
+        "name": "Lime juice",
         "amount": 1,
-        "unit": "each"
+        "unit": "cup"
+      },
+      {
+        "name": "Chili powder",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Smoked paprika",
+        "amount": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "Garlic powder",
+        "amount": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "Cilantro, chopped",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 2,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Roast corn at high heat until lightly charred and hot.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Fold with mayonnaise, sour cream, lime, chili powder, paprika, garlic, cotija, and cilantro. Serve warm with extra cheese.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6936,13 +8540,52 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Graham cracker pie shells",
+        "amount": 4,
         "unit": "each"
+      },
+      {
+        "name": "Sweetened condensed milk",
+        "amount": 8,
+        "unit": "qt"
+      },
+      {
+        "name": "Egg yolks",
+        "amount": 32,
+        "unit": "each"
+      },
+      {
+        "name": "Key lime juice",
+        "amount": 3,
+        "unit": "qt"
+      },
+      {
+        "name": "Lime zest",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Heavy cream",
+        "amount": 3,
+        "unit": "qt"
+      },
+      {
+        "name": "Powdered sugar",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Vanilla extract",
+        "amount": 0.25,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Whisk condensed milk, yolks, lime juice, and zest until smooth. Pour into crusts.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Bake until just set, chill completely, top with whipped cream, and cut into 24 portions.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -6973,13 +8616,67 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Zucchini, grated",
+        "amount": 12,
+        "unit": "lb"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Eggs",
+        "amount": 12,
         "unit": "each"
+      },
+      {
+        "name": "Flour",
+        "amount": 4,
+        "unit": "cup"
+      },
+      {
+        "name": "Parmesan, grated",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Scallions, sliced",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Canola oil for frying",
+        "amount": 1,
+        "unit": "gal"
+      },
+      {
+        "name": "Greek yogurt",
+        "amount": 4,
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Dill, chopped",
+        "amount": 1,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Salt grated zucchini and drain, then squeeze dry. Mix with eggs, flour, Parmesan, scallions, and garlic.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Pan-fry fritters until crisp and cooked through. Mix yogurt, lemon, and dill for dip and serve warm.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -7010,13 +8707,72 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "name": "Recipe details pending",
+        "name": "Soba noodles",
+        "amount": 6,
+        "unit": "lb"
+      },
+      {
+        "name": "Carrots, julienned",
+        "amount": 3,
+        "unit": "lb"
+      },
+      {
+        "name": "Cucumber, julienned",
+        "amount": 3,
+        "unit": "lb"
+      },
+      {
+        "name": "Red cabbage, shredded",
+        "amount": 3,
+        "unit": "lb"
+      },
+      {
+        "name": "Edamame",
+        "amount": 4,
+        "unit": "qt"
+      },
+      {
+        "name": "Soy sauce",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Rice vinegar",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Sesame oil",
         "amount": 1,
-        "unit": "each"
+        "unit": "cup"
+      },
+      {
+        "name": "Ginger, grated",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Honey",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Sesame seeds",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Scallions, sliced",
+        "amount": 1,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Cook soba noodles, rinse cold, and drain well.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Whisk soy, vinegar, sesame oil, ginger, and honey. Toss noodles with vegetables and dressing, then garnish with sesame seeds and scallions.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -7173,13 +8929,67 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Chicken breasts, 6 oz portions",
+        "amount": 24,
         "unit": "each"
+      },
+      {
+        "name": "Sun-dried tomatoes, chopped",
+        "amount": 3,
+        "unit": "lb"
+      },
+      {
+        "name": "Garlic, minced",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Shallots, minced",
+        "amount": 1.5,
+        "unit": "lb"
+      },
+      {
+        "name": "Chicken stock",
+        "amount": 3,
+        "unit": "qt"
+      },
+      {
+        "name": "Heavy cream",
+        "amount": 3,
+        "unit": "qt"
+      },
+      {
+        "name": "Parmesan, grated",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Spinach",
+        "amount": 4,
+        "unit": "lb"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Italian herbs",
+        "amount": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Season and roast chicken breasts until nearly cooked through.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Saute shallots, garlic, and sun-dried tomatoes, add stock and cream, and reduce. Add Parmesan and spinach, then finish chicken in sauce to 165 F.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -7210,13 +9020,62 @@
     "category": "Alternative",
     "ingredients": [
       {
-        "name": "Recipe details pending",
-        "amount": 1,
+        "name": "Salmon fillets, 6 oz portions",
+        "amount": 24,
         "unit": "each"
+      },
+      {
+        "name": "Fresh basil leaves",
+        "amount": 6,
+        "unit": "cup"
+      },
+      {
+        "name": "Parsley leaves",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Garlic",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Pine nuts or walnuts",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Parmesan, grated",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Kosher salt",
+        "amount": 3,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 2,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Blend basil, parsley, garlic, nuts, Parmesan, olive oil, lemon, salt, and pepper into pesto.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Season and sear salmon until golden and just cooked. Spoon basil pesto over each fillet and serve immediately.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
@@ -7327,13 +9186,67 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "name": "Recipe details pending",
+        "name": "Peaches, sliced",
+        "amount": 14,
+        "unit": "qt"
+      },
+      {
+        "name": "Granulated sugar",
+        "amount": 4,
+        "unit": "cup"
+      },
+      {
+        "name": "Brown sugar",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Cinnamon",
+        "amount": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "Cornstarch",
         "amount": 1,
-        "unit": "each"
+        "unit": "cup"
+      },
+      {
+        "name": "All-purpose flour",
+        "amount": 5,
+        "unit": "cup"
+      },
+      {
+        "name": "Baking powder",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Butter, cold diced",
+        "amount": 2,
+        "unit": "lb"
+      },
+      {
+        "name": "Buttermilk",
+        "amount": 2,
+        "unit": "qt"
+      },
+      {
+        "name": "Vanilla extract",
+        "amount": 0.25,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Gather and scale all ingredients for 24 portions. Set up clean hotel pans, sheet pans, and labeled holding containers before production begins.",
+      "Toss peaches with sugars, lemon, cinnamon, and cornstarch. Spread into hotel pans.",
+      "Taste and adjust seasoning in small increments. Confirm the texture and doneness are appropriate for service before transferring to holding pans.",
+      "Mix flour, baking powder, butter, buttermilk, and vanilla into biscuit topping. Drop over peaches and bake until bubbling and golden.",
+      "Hold hot items above 140 F or cold items below 40 F. Garnish and portion consistently at service."
     ],
     "notes": [
       "Placeholder only. Ingredients, quantities, and method still need chef review."
