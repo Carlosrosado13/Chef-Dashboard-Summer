@@ -1,2705 +1,711 @@
 [
   {
-    "id": "shrimp-and-chorizo-skillet-hot-appetizer-8-oz",
-    "title": "Shrimp & Chorizo Skillet (Hot Appetizer, 8 oz)",
-    "yield": 24,
-    "category": "Appetizer 1",
-    "ingredients": [
-      {
-        "name": "Shrimp, peeled & deveined",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Chorizo, sliced",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Garlic, minced",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 5.76,
-        "unit": "oz"
-      },
-      {
-        "name": "Red bell pepper, sliced",
-        "amount": 1.92,
-        "unit": "lb"
-      },
-      {
-        "name": "Lemon juice",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Paprika",
-        "amount": 0.72,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      },
-      {
-        "name": "Parsley, chopped",
-        "amount": 1.92,
-        "unit": "oz"
-      }
-    ],
-    "steps": [
-      "Heat olive oil in a skillet; sauté garlic until fragrant.",
-      "Add chorizo, cook until lightly crisp.",
-      "Add shrimp and bell peppers; season with paprika, salt, and pepper.",
-      "Cook until shrimp are opaque and tender.",
-      "Finish with lemon juice and parsley."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Monday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "veal-chop-milanese",
-    "title": "Veal Chop Milanese",
-    "yield": 24,
-    "category": "Elevated",
-    "ingredients": [
-      {
-        "name": "Veal chops (6 oz)",
-        "amount": 12,
-        "unit": "each"
-      },
-      {
-        "name": "Flour (light dredge)",
-        "amount": 0.72,
-        "unit": "lb"
-      },
-      {
-        "name": "Eggs, beaten",
-        "amount": 5.76,
-        "unit": "each"
-      },
-      {
-        "name": "Breadcrumbs",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Parmesan, grated",
-        "amount": 0.72,
-        "unit": "lb"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 5.76,
-        "unit": "oz"
-      },
-      {
-        "name": "Lemon wedges",
-        "amount": 5.76,
-        "unit": "each"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Dredge veal in flour, dip in eggs, coat with breadcrumbs and Parmesan.",
-      "Pan-fry in olive oil until golden and cooked through.",
-      "Season with salt & pepper, serve with lemon wedges."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Monday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "roasted-monkfish-saffron-tomato-broth",
-    "title": "Roasted Monkfish, Saffron Tomato Broth",
-    "yield": 24,
+    "title": "PASTA WITH SUMMER VEGETABLES WITH LEMON PARMESAN SAUCE",
+    "yield": "24 servings",
     "category": "Comfort",
     "ingredients": [
       {
-        "name": "Monkfish fillets (6 oz)",
+        "name": "short pasta (like penne, bowties, or rotini)",
+        "amount": 48,
+        "unit": "oz"
+      },
+      {
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "medium zucchini, sliced into half-moons",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "medium yellow squash, sliced into half-moons",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "cherry tomatoes, halved",
+        "amount": 6,
+        "unit": "cup"
+      },
+      {
+        "name": "fresh or frozen peas",
+        "amount": 6,
+        "unit": "cup"
+      },
+      {
+        "name": "garlic, minced",
+        "amount": 18,
+        "unit": "clove"
+      },
+      {
+        "name": "unsalted butter",
         "amount": 12,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "large lemon (both zested and juiced)",
+        "amount": 6,
         "unit": "each"
       },
       {
-        "name": "Olive oil",
-        "amount": 3.84,
-        "unit": "oz"
+        "name": "freshly grated Parmesan cheese (plus more for serving)",
+        "amount": 3,
+        "unit": "cup"
       },
       {
-        "name": "Garlic, minced",
-        "amount": 2.88,
-        "unit": "oz"
+        "name": "reserved pasta water",
+        "amount": 3,
+        "unit": "cup"
       },
       {
-        "name": "Onion, diced",
-        "amount": 1.44,
-        "unit": "lb"
+        "name": "fresh basil leaves, chopped or torn",
+        "amount": 3,
+        "unit": "cup"
       },
       {
-        "name": "Canned tomatoes, crushed",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Saffron threads",
-        "amount": 0.24,
-        "unit": "oz"
-      },
-      {
-        "name": "White wine",
-        "amount": 5.76,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
+        "name": "Salt and black pepper to taste",
         "amount": 1,
         "unit": "each"
       },
       {
-        "name": "Fresh parsley, chopped",
-        "amount": 1.92,
-        "unit": "oz"
-      }
-    ],
-    "steps": [
-      "Roast monkfish fillets in olive oil until opaque.",
-      "Sauté garlic and onion until soft, add tomatoes, saffron, and wine; simmer.",
-      "Blend lightly for broth consistency; season with salt and pepper."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Monday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "grilled-polenta-cakes-mushroom-ragout-v",
-    "title": "Grilled Polenta Cakes, Mushroom Ragout (V)",
-    "yield": 24,
-    "category": "Alternative",
-    "ingredients": [
-      {
-        "name": "Polenta, cooked & chilled",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Mushrooms, sliced",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Shallots, minced",
-        "amount": 5.76,
-        "unit": "oz"
-      },
-      {
-        "name": "Garlic, minced",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 5.76,
-        "unit": "oz"
-      },
-      {
-        "name": "Vegetable stock",
-        "amount": 1.92,
-        "unit": "qt"
-      },
-      {
-        "name": "Thyme, fresh",
-        "amount": 0.96,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
+        "name": "A pinch of crushed red pepper flakes",
         "amount": 1,
         "unit": "each"
       }
     ],
     "steps": [
-      "Grill polenta cakes until golden.",
-      "Sauté shallots and garlic in olive oil; add mushrooms and thyme.",
-      "Deglaze with vegetable stock; simmer until thickened."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Monday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
+      "Bring a large pot of salted water to a boil. Cook your pasta according to the package directions until it is just al dente.",
+      "Before draining the pasta, carefully scoop out and reserve at least 1/2 cup of the starchy pasta water. Drain the pasta and set it aside.",
+      "Heat the olive oil in a large skillet over medium-high heat. Add the zucchini and yellow squash, sauteing for 3 to 4 minutes until they begin to soften and slightly brown. Stir in the minced garlic, peas, and cherry tomatoes, cooking for another 1 to 2 minutes until the garlic is fragrant and the tomatoes just begin to soften. Season lightly with salt and pepper, then transfer the veggies to a plate.",
+      "Turn the skillet heat down to low. Melt the butter in the pan, then stir in the lemon juice, lemon zest, and half of your reserved pasta water. Whisk in the grated Parmesan cheese until it melts smoothly into the liquid.",
+      "Add the cooked pasta and sauteed vegetables back into the skillet. Toss everything together vigorously over low heat so the cheese, lemon, and pasta starch merge into a glossy sauce that clings to the noodles. If the pasta looks too dry, splash in a little more of your reserved pasta water.",
+      "Turn off the heat. Stir in the fresh basil and optional red pepper flakes. Divide among bowls and finish with an extra sprinkle of Parmesan cheese and a crack of fresh black pepper. This recipe makes 4 servings"
+    ]
   },
   {
-    "id": "broccoli-rabe",
-    "title": "Broccoli Rabe",
-    "yield": 24,
-    "category": "Veggie 1",
-    "ingredients": [
-      {
-        "name": "Broccoli rabe",
-        "amount": 3.84,
-        "unit": "lb"
-      },
-      {
-        "name": "Garlic, sliced",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 5.76,
-        "unit": "oz"
-      },
-      {
-        "name": "Red pepper flakes",
-        "amount": 0.72,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Blanch broccoli rabe in salted water 2–3 minutes; shock in ice water.",
-      "Sauté garlic and red pepper flakes in olive oil.",
-      "Toss broccoli rabe with oil and season."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Monday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "roasted-cherry-tomatoes",
-    "title": "Roasted Cherry Tomatoes",
-    "yield": 24,
-    "category": "Veggie 2",
-    "ingredients": [
-      {
-        "name": "Cherry tomatoes",
-        "amount": 3.84,
-        "unit": "lb"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Garlic, minced",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      },
-      {
-        "name": "Fresh basil",
-        "amount": 1.92,
-        "unit": "oz"
-      }
-    ],
-    "steps": [
-      "Toss tomatoes with olive oil, garlic, salt, and pepper.",
-      "Roast at 400°F until soft and slightly caramelized.",
-      "Garnish with fresh basil."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Monday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "lemon-risotto",
-    "title": "Lemon Risotto",
-    "yield": 24,
+    "title": "ANCIENT GRAINS",
+    "yield": "24 servings",
     "category": "Starch",
     "ingredients": [
       {
-        "name": "Arborio rice",
-        "amount": 2.88,
-        "unit": "lb"
+        "name": "blend (e.g., farro, quinoa, spelt, or barley)",
+        "amount": 6,
+        "unit": "cup"
       },
       {
-        "name": "Chicken or vegetable stock",
-        "amount": 5.76,
-        "unit": "qt"
-      },
-      {
-        "name": "Onion, diced",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Lemon zest",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Parmesan, grated",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Sauté onion in olive oil until translucent.",
-      "Add rice; toast lightly.",
-      "Gradually add stock, stirring constantly, until rice is creamy and tender.",
-      "Finish with butter, Parmesan, and lemon zest; adjust seasoning."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Monday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "almond-semolina-cake",
-    "title": "Almond Semolina Cake",
-    "yield": 24,
-    "category": "Dessert",
-    "ingredients": [
-      {
-        "name": "Semolina flour",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Almond flour",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Sugar",
-        "amount": 2.4,
-        "unit": "lb"
-      },
-      {
-        "name": "Butter, melted",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Eggs",
+        "name": "low-sodium vegetable or chicken broth",
         "amount": 12,
+        "unit": "cup"
+      },
+      {
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "minced shallot",
+        "amount": 6,
         "unit": "each"
       },
       {
-        "name": "Milk",
-        "amount": 1.92,
-        "unit": "qt"
+        "name": "minced garlic",
+        "amount": 12,
+        "unit": "clove"
       },
       {
-        "name": "Almond extract",
-        "amount": 1.92,
-        "unit": "oz"
+        "name": "finely chopped fresh parsley",
+        "amount": 3,
+        "unit": "cup"
       },
       {
-        "name": "Baking powder",
-        "amount": 3.84,
-        "unit": "oz"
+        "name": "chopped fresh chives",
+        "amount": 12,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "fresh lemon juice",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "lemon zest",
+        "amount": 6,
+        "unit": "tsp"
+      },
+      {
+        "name": "sea salt",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "cracked black pepper\"\"",
+        "amount": 3,
+        "unit": "tsp"
       }
     ],
     "steps": [
-      "Preheat oven to 350°F; grease pans.",
-      "Mix dry ingredients; combine with wet ingredients until smooth.",
-      "Pour into pans; bake until golden and set.",
-      "Cool slightly; optionally drizzle with glaze."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Monday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
+      "Place the grain blend in a fine-mesh strainer. Rinse thoroughly under cold water to remove bitter saponins or excess starch.",
+      "Heat olive oil in a medium saucepan over medium heat. Saute the minced shallot and garlic for 2 minutes until soft and fragrant.",
+      "Add the rinsed grains to the pan. Stir continuously for 2 minutes to toast them lightly, enhancing their natural nutty flavor.",
+      "Pour in the broth and bring the mixture to a boil. Reduce heat to low, cover with a tight-fitting lid, and simmer for 20 to 25 minutes until the liquid is fully absorbed.",
+      "Remove the saucepan from the heat. Keep the lid on and let the grains steam undisturbed for 5 minutes.",
+      "Fluff the grains with a fork. Fold in the fresh parsley, chives, lemon juice, lemon zest, salt, and pepper. Serve warm."
+    ]
   },
   {
-    "id": "baked-escargot-garlic-parsley-butter-hot-appetizer-8-oz",
-    "title": "Baked Escargot, Garlic Parsley Butter (Hot Appetizer, 8 oz)",
-    "yield": 24,
-    "category": "Appetizer 1",
+    "title": "GRILLED TILAPIA WITH BALSAMIC ONION SAUCE",
+    "yield": "24 servings",
+    "category": "Alternative",
     "ingredients": [
       {
-        "name": "Escargot, canned or pre-cooked",
+        "name": "tilapia fillets (about 6 ounces each), patted dry",
         "amount": 24,
         "unit": "each"
       },
       {
-        "name": "Butter, unsalted",
-        "amount": 1.2,
-        "unit": "lb"
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
       },
       {
-        "name": "Garlic, minced",
-        "amount": 2.88,
-        "unit": "oz"
+        "name": "garlic powder",
+        "amount": 3,
+        "unit": "tsp"
       },
       {
-        "name": "Parsley, chopped",
-        "amount": 1.92,
-        "unit": "oz"
+        "name": "paprika",
+        "amount": 3,
+        "unit": "tsp"
       },
       {
-        "name": "Lemon juice",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
+        "name": "salt, and pepper",
         "amount": 1,
         "unit": "each"
-      }
-    ],
-    "steps": [
-      "Preheat oven to 375°F.",
-      "Combine butter, garlic, parsley, lemon juice, salt, and pepper.",
-      "Place escargot in individual shells or mini dishes; top with garlic-parsley butter.",
-      "Bake until butter is bubbling and fragrant, ~10–12 minutes."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Tuesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "beef-wellington-portion-cut",
-    "title": "Beef Wellington (portion-cut)",
-    "yield": 24,
-    "category": "Elevated",
-    "ingredients": [
+      },
       {
-        "name": "Beef tenderloin, portion-cut (6–8 oz)",
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "large red onion (thinly sliced)",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "balsamic vinegar",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "low-sodium chicken or vegetable broth",
         "amount": 12,
-        "unit": "each"
+        "unit": "Tbsp"
       },
       {
-        "name": "Puff pastry sheets",
-        "amount": 1.92,
-        "unit": "lb"
+        "name": "honey or brown sugar",
+        "amount": 6,
+        "unit": "Tbsp"
       },
       {
-        "name": "Mushrooms, finely chopped",
-        "amount": 2.88,
-        "unit": "lb"
+        "name": "cold butter (optional, for glossiness)",
+        "amount": 6,
+        "unit": "Tbsp"
       },
       {
-        "name": "Shallots, minced",
-        "amount": 5.76,
-        "unit": "oz"
-      },
-      {
-        "name": "Dijon mustard",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Egg wash",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Sear beef on all sides; brush with Dijon mustard.",
-      "Sauté mushrooms and shallots in butter until moisture evaporates; cool.",
-      "Wrap beef and mushroom mixture in puff pastry; seal edges.",
-      "Brush with egg wash; bake at 400°F until golden, internal ~130°F."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Tuesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "cider-braised-chicken-thighs",
-    "title": "Cider-Braised Chicken Thighs",
-    "yield": 24,
-    "category": "Comfort",
-    "ingredients": [
-      {
-        "name": "Chicken thighs, bone-in",
+        "name": "chopped fresh parsley\"\"",
         "amount": 12,
-        "unit": "each"
-      },
-      {
-        "name": "Apple cider",
-        "amount": 0.96,
-        "unit": "qt"
-      },
-      {
-        "name": "Chicken stock",
-        "amount": 0.96,
-        "unit": "qt"
-      },
-      {
-        "name": "Onion, sliced",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Carrots, sliced",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Thyme, fresh",
-        "amount": 0.96,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Brown chicken in butter and olive oil; remove from pan.",
-      "Sauté onions and carrots; deglaze with cider and stock.",
-      "Return chicken to pan; simmer until fully cooked, ~30–35 min.",
-      "Finish with fresh thyme."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Tuesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
+      "Rub tilapia fillets with 1 tablespoon of olive oil. Season both sides evenly with garlic powder, paprika, salt, and black pepper. Set aside.",
+      "Heat 1 tablespoon of olive oil in a skillet over medium heat. Add sliced red onions and a pinch of salt. Cook for 8 to 10 minutes until soft and deeply browned.",
+      "Pour the balsamic vinegar, broth, and honey into the skillet with the onions. Bring to a simmer. Reduce heat to medium-low and cook for 5 minutes until the liquid reduces by half and thickens into a glaze. Stir in cold butter if using, then remove from heat.",
+      "Preheat your grill or grill pan to medium-high heat. Oil the grates well. Grill the tilapia fillets for 3 to 4 minutes per side. The fish is done when it flakes easily with a fork and reaches an internal temperature of 145eF (63eC).",
+      "Plate the grilled tilapia directly next to or on top of your herbed ancient grains. Spoon the warm balsamic onion sauce generously over the fish. Garnish with fresh parsley."
+    ]
   },
   {
-    "id": "eggplant-involtini-v",
-    "title": "Eggplant Involtini (V)",
-    "yield": 24,
-    "category": "Alternative",
-    "ingredients": [
-      {
-        "name": "Eggplant, sliced lengthwise",
-        "amount": 5.76,
-        "unit": "lb"
-      },
-      {
-        "name": "Ricotta cheese",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Parmesan cheese, grated",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Marinara sauce",
-        "amount": 2.88,
-        "unit": "qt"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Garlic, minced",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Fresh basil",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Roast eggplant slices until tender.",
-      "Mix ricotta, Parmesan, garlic, salt, and pepper.",
-      "Roll cheese mixture into eggplant; place in baking dish with marinara.",
-      "Bake at 375°F until heated through; garnish with basil."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Tuesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "roasted-zucchini",
-    "title": "Roasted Zucchini",
-    "yield": 24,
+    "title": "BROCCOLINI WITH GARLIC CONFIT",
+    "yield": "24 servings",
     "category": "Veggie 1",
     "ingredients": [
       {
-        "name": "Zucchini, sliced",
-        "amount": 4.8,
-        "unit": "lb"
+        "name": "broccolini (ends trimmed, thick stalks split lengthwise)",
+        "amount": 12,
+        "unit": "bunch"
       },
       {
-        "name": "Olive oil",
-        "amount": 3.84,
-        "unit": "oz"
+        "name": "pre-made garlic confit cloves plus 2 tbsp of the confit oil",
+        "amount": 3,
+        "unit": "cup"
       },
       {
-        "name": "Garlic, minced",
-        "amount": 1.92,
-        "unit": "oz"
+        "name": "fresh lemon juice",
+        "amount": 6,
+        "unit": "tsp"
       },
       {
-        "name": "Kosher salt & pepper, to taste",
+        "name": "Flaky sea salt and red pepper flakes (to taste)\"\"",
         "amount": 1,
         "unit": "each"
       }
     ],
     "steps": [
-      "Toss zucchini with olive oil, garlic, salt, and pepper.",
-      "Roast at 400°F until tender and lightly browned."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Tuesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
+      "Rinse the broccolini and shake off excess water. Cut any unusually thick stalks in half lengthwise so all pieces cook evenly.",
+      "Warm 2 tablespoons of the garlic confit oil in a large skillet over medium-high heat.",
+      "Add the broccolini to the pan in a single layer. Let it cook undisturbed for 2 to 3 minutes until the underside starts to develop bright green and slightly charred spots.",
+      "Pour 2 tablespoons of water into the skillet. Immediately cover with a tight lid to trap the steam. Cook for 3 minutes until the stalks are tender-crisp.",
+      "Remove the lid and turn the heat down to low. Add the 1/2 cup of garlic confit cloves. Use a spoon to gently smash the soft garlic cloves into the oil, coating the broccolini.",
+      "Toss everything together for 1 minute until heated through. Remove from heat, squeeze the fresh lemon juice over the top, and season with flaky sea salt and a pinch of red pepper flakes."
+    ]
   },
   {
-    "id": "glazed-pearl-onions",
-    "title": "Glazed Pearl Onions",
-    "yield": 24,
+    "title": "SUMAC SPICED ROASTED CARROT CHUNKS",
+    "yield": "24 servings",
     "category": "Veggie 2",
     "ingredients": [
       {
-        "name": "Pearl onions, peeled",
-        "amount": 2.4,
+        "name": "carrots (peeled and cut into 1-inch chunks)Oil: 2 tbsp olive oilPrimary Spice: 1.5 tbsp ground sumac",
+        "amount": 9,
         "unit": "lb"
       },
       {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
+        "name": "garlic powder",
+        "amount": 3,
+        "unit": "tsp"
       },
       {
-        "name": "Sugar",
-        "amount": 3.84,
-        "unit": "oz"
+        "name": "ground cumin",
+        "amount": 3,
+        "unit": "tsp"
       },
       {
-        "name": "Chicken stock",
-        "amount": 0.96,
-        "unit": "qt"
+        "name": "sea salt",
+        "amount": 3,
+        "unit": "tsp"
       },
       {
-        "name": "Kosher salt, to taste",
-        "amount": 1,
-        "unit": "each"
+        "name": "black pepper",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "chopped fresh mint or parsley\"\"",
+        "amount": 12,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Sauté onions in butter until lightly browned.",
-      "Add sugar and stock; simmer until onions are glazed."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Tuesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
+      "Set your oven to 425eF (220eC) and line a large baking sheet with parchment paper.",
+      "Cut the carrots into uniform 1-inch chunks so they roast evenly.",
+      "Place the carrot chunks in a large mixing bowl. Drizzle with olive oil and toss until well coated. Add the sumac, garlic powder, cumin, salt, and pepper. Toss again to evenly distribute the spices.",
+      "Spread the carrots across the baking sheet in a single layer, ensuring they do not crowd each other. Roast for 20 to 25 minutes, tossing halfway through, until the edges are deeply caramelized and the centers are fork-tender.",
+      "Transfer the warm roasted carrots to your serving plate and garnish with fresh mint or parsley if desired."
+    ]
   },
   {
-    "id": "pommes-anna",
-    "title": "Pommes Anna",
-    "yield": 24,
+    "title": "HERB AND CREAM CHEESE POLENTA",
+    "yield": "24 servings",
     "category": "Starch",
     "ingredients": [
       {
-        "name": "Yukon Gold potatoes, thinly sliced",
-        "amount": 5.76,
-        "unit": "lb"
+        "name": "coarse-ground cornmeal (polenta)",
+        "amount": 6,
+        "unit": "cup"
       },
       {
-        "name": "Butter, melted",
-        "amount": 1.44,
-        "unit": "lb"
+        "name": "low-sodium vegetable broth",
+        "amount": 12,
+        "unit": "cup"
       },
       {
-        "name": "Kosher salt & pepper, to taste",
+        "name": "whole milk",
+        "amount": 12,
+        "unit": "cup"
+      },
+      {
+        "name": "cream cheese (softened)",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "unsalted butter",
+        "amount": 12,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "finely chopped fresh chives",
+        "amount": 12,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "chopped fresh thyme",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "garlic powder",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt, and white pepper (to taste)\"\"",
+        "amount": 1,
+        "unit": "each"
+      }
+    ],
+    "steps": [
+      "Combine vegetable broth and milk in a medium saucepan. Bring to a gentle boil over medium-high heat.",
+      "Reduce heat to low. Slowly whisk in the cornmeal in a steady stream to prevent lumps.",
+      "Cook for 20 to 25 minutes, stirring frequently with a wooden spoon. The polenta is ready when it is thick, smooth, and pulls away slightly from the sides of the pan.",
+      "Remove from heat. Stir in the cream cheese and butter until fully melted and completely incorporated.",
+      "Add the chives, thyme, garlic powder, salt, and pepper. Stir well to distribute the fresh herbs. Serve immediately while hot and creamy."
+    ]
+  },
+  {
+    "title": "LEMON BREAD WITH ICING",
+    "yield": "24 servings",
+    "category": "Dessert",
+    "ingredients": [
+      {
+        "name": "all-purpose flour",
+        "amount": 4.5,
+        "unit": "cup"
+      },
+      {
+        "name": "baking powder",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "granulated sugar",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "large eggs",
+        "amount": 9,
+        "unit": "each"
+      },
+      {
+        "name": "vegetable oil",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "sour cream",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "lemon zest",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "fresh lemon juice",
+        "amount": 9,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "vanilla extract",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "powdered sugar",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "fresh lemon juice\"\"",
+        "amount": 3,
+        "unit": "Tbsp"
+      }
+    ],
+    "steps": [
+      "Set your oven to 350eF (175eC). Grease an 8.5 x 4.5-inch loaf pan and line it with parchment paper.",
+      "Combine the flour, baking powder, and salt in a medium bowl. Set aside.",
+      "Rub the lemon zest into the granulated sugar in a large bowl to release the citrus oils. Whisk in the eggs, vegetable oil, sour cream, lemon juice, and vanilla extract until completely smooth.",
+      "Fold the dry ingredients into the wet mixture using a spatula just until combined. Do not overmix.",
+      "Pour the batter into the prepared loaf pan. Bake for 45 to 50 minutes, or until a toothpick inserted into the center comes out clean. Let cool completely.",
+      "Whisk the powdered sugar and lemon juice together until smooth. Drizzle over the cooled cake before slicing."
+    ]
+  },
+  {
+    "title": "ROASTED PORK TENDERLOIN WITH OLIVE AND FETA SALSA",
+    "yield": "24 servings",
+    "category": "Comfort",
+    "ingredients": [
+      {
+        "name": "large pork tenderloin (about 1 to 1.5 lbs), trimmed of silver skin",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "dried oregano",
+        "amount": 6,
+        "unit": "tsp"
+      },
+      {
+        "name": "garlic powder",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt, and black pepper",
         "amount": 1,
         "unit": "each"
       },
       {
-        "name": "Thyme, optional",
-        "amount": 0.96,
-        "unit": "oz"
+        "name": "crumbled feta cheese",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "pitted Kalamata olives (chopped)",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "ripe Roma tomato (seeded and finely diced)",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "finely chopped red onion",
+        "amount": 12,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "extra-virgin olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "fresh lemon juice",
+        "amount": 6,
+        "unit": "tsp"
+      },
+      {
+        "name": "chopped fresh parsley\"\"",
+        "amount": 6,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Layer potato slices in buttered pans; season with salt, pepper, and thyme.",
-      "Bake at 400°F until golden and crisp on top, tender inside."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Tuesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
+      "Preheat your oven to 400eF (204eC). Heat 1 tablespoon of olive oil in a large, oven-safe skillet over medium-high heat.",
+      "Rub the pork tenderloin with oregano, garlic powder, salt, and pepper. Sear the pork in the hot skillet for 2 minutes on all sides until a golden-brown crust forms.",
+      "Transfer the skillet directly into the oven. Roast for 15 to 20 minutes until a meat thermometer inserted into the thickest part reads 145eF (63eC).",
+      "Remove the pork from the oven, transfer it to a cutting board, and tent loosely with foil. Let it rest for 5 to 10 minutes to lock in the juices before slicing.",
+      "While the pork rests, toss the feta, olives, tomato, red onion, extra-virgin olive oil, lemon juice, and parsley together in a small bowl.",
+      "Slice the pork tenderloin into 1-inch thick medallions and spoon the cold olive and feta salsa generously over the warm meat."
+    ]
   },
   {
-    "id": "dark-chocolate-marquis",
-    "title": "Dark Chocolate Marquis",
-    "yield": 24,
-    "category": "Dessert",
+    "title": "BRAISED BEAN CASSOULET",
+    "yield": "24 servings",
+    "category": "Veggie 2",
     "ingredients": [
       {
-        "name": "Dark chocolate",
-        "amount": 2.4,
-        "unit": "lb"
+        "name": "(15 oz each) Cannellini or Great Northern beans (rinsed and drained)",
+        "amount": 12,
+        "unit": "can"
       },
       {
-        "name": "Eggs",
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "yellow onion (diced)",
+        "amount": 6,
+        "unit": "each"
+      },
+      {
+        "name": "carrots (diced)",
         "amount": 12,
         "unit": "each"
       },
       {
-        "name": "Sugar",
-        "amount": 1.92,
-        "unit": "lb"
+        "name": "celery stalks (diced)",
+        "amount": 12,
+        "unit": "each"
       },
       {
-        "name": "Butter",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Heavy cream",
-        "amount": 2.88,
-        "unit": "qt"
-      },
-      {
-        "name": "Vanilla extract",
-        "amount": 1.92,
-        "unit": "oz"
-      }
-    ],
-    "steps": [
-      "Melt chocolate with butter.",
-      "Whip eggs with sugar until pale and fluffy.",
-      "Fold chocolate into eggs; gently fold in whipped cream and vanilla.",
-      "Chill until set."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Tuesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "smoked-gouda-stuffed-mushrooms-hot-appetizer-8-oz",
-    "title": "Smoked Gouda Stuffed Mushrooms (Hot Appetizer, 8 oz)",
-    "yield": 24,
-    "category": "Appetizer 1",
-    "ingredients": [
-      {
-        "name": "Mushrooms, large",
+        "name": "garlic (minced)",
         "amount": 24,
+        "unit": "clove"
+      },
+      {
+        "name": "tomato paste",
+        "amount": 12,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "dry white wine (or vegetable broth)",
+        "amount": 3,
+        "unit": "cup"
+      },
+      {
+        "name": "low-sodium vegetable broth",
+        "amount": 9,
+        "unit": "cup"
+      },
+      {
+        "name": "(14 oz) diced tomatoes",
+        "amount": 6,
+        "unit": "can"
+      },
+      {
+        "name": "fresh thyme",
+        "amount": 12,
+        "unit": "sprig"
+      },
+      {
+        "name": "fresh rosemary",
+        "amount": 6,
+        "unit": "sprig"
+      },
+      {
+        "name": "bay leaf",
+        "amount": 6,
         "unit": "each"
       },
       {
-        "name": "Smoked Gouda, grated",
-        "amount": 2.88,
-        "unit": "lb"
+        "name": "panko breadcrumbs",
+        "amount": 3,
+        "unit": "cup"
       },
       {
-        "name": "Breadcrumbs",
-        "amount": 1.44,
-        "unit": "lb"
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
       },
       {
-        "name": "Garlic, minced",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Parsley, chopped",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
+        "name": "chopped fresh parsley\"\"",
+        "amount": 12,
+        "unit": "Tbsp"
       }
     ],
     "steps": [
-      "Remove mushroom stems; sauté stems with garlic.",
-      "Mix stems with Gouda, breadcrumbs, parsley.",
-      "Fill mushroom caps; drizzle with olive oil.",
-      "Bake at 375°F until golden."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Wednesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
+      "Heat 1 tablespoon of olive oil in a large Dutch oven or heavy-bottomed pot over medium heat. Add the onion, carrots, and celery. Cook for 8 minutes until soft.",
+      "Stir in the minced garlic and tomato paste. Cook for 2 minutes, stirring constantly, until the paste turns a deep brick-red color.",
+      "Pour in the white wine, using a wooden spoon to scrape up any browned bits from the bottom of the pot. Simmer for 3 minutes until the liquid reduces by half.",
+      "Add the rinsed beans, vegetable broth, diced tomatoes, thyme, rosemary, and the bay leaf. Bring to a boil, then reduce heat to low. Cover and simmer for 25 minutes until the sauce thickens.",
+      "While simmering, mix the panko breadcrumbs with 1 tablespoon of olive oil in a small bowl. Toast in a separate skillet over medium heat for 3 minutes until golden brown.",
+      "Remove the herb sprigs and bay leaf from the cassoulet. Season with salt and pepper to taste. Stir in the fresh parsley and top with the toasted breadcrumbs just before serving."
+    ]
   },
   {
-    "id": "grilled-venison-loin-juniper-jus",
-    "title": "Grilled Venison Loin, Juniper Jus",
-    "yield": 24,
+    "title": "SHRIMP LINGUINI WITH SAFFRON SAUCE AND PEPPERED GREENS",
+    "yield": "24 servings",
     "category": "Elevated",
     "ingredients": [
       {
-        "name": "Venison loin, portion-cut",
+        "name": "(340g) linguini pasta",
+        "amount": 72,
+        "unit": "oz"
+      },
+      {
+        "name": "(450g) large shrimp (peeled, deveined, and tails removed)",
+        "amount": 6,
+        "unit": "lb"
+      },
+      {
+        "name": "saffron threads",
+        "amount": 3,
+        "unit": "tsp"
+      },
+      {
+        "name": "warm vegetable broth (to bloom saffron)",
+        "amount": 18,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "unsalted butter",
         "amount": 12,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "olive oil",
+        "amount": 6,
+        "unit": "Tbsp"
+      },
+      {
+        "name": "small shallot (finely minced)",
+        "amount": 6,
         "unit": "each"
       },
       {
-        "name": "Olive oil",
-        "amount": 2.88,
-        "unit": "oz"
+        "name": "garlic (minced)",
+        "amount": 18,
+        "unit": "clove"
       },
       {
-        "name": "Juniper berries, crushed",
-        "amount": 0.48,
-        "unit": "oz"
+        "name": "dry white wine (like Pinot Grigio)",
+        "amount": 3,
+        "unit": "cup"
       },
       {
-        "name": "Red wine",
-        "amount": 0.48,
-        "unit": "qt"
+        "name": "heavy cream",
+        "amount": 6,
+        "unit": "cup"
       },
       {
-        "name": "Beef stock",
-        "amount": 0.96,
-        "unit": "qt"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Sear venison loins in olive oil; grill to desired doneness.",
-      "For jus: sauté juniper berries, deglaze with wine, add stock, reduce by half.",
-      "Finish with butter; season."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Wednesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "blackened-red-snapper",
-    "title": "Blackened Red Snapper",
-    "yield": 24,
-    "category": "Comfort",
-    "ingredients": [
-      {
-        "name": "Red snapper fillets (6 oz)",
+        "name": "fresh baby arugula",
         "amount": 12,
-        "unit": "each"
+        "unit": "cup"
       },
       {
-        "name": "Cajun seasoning",
-        "amount": 1.92,
-        "unit": "oz"
+        "name": "extra-virgin olive oil",
+        "amount": 6,
+        "unit": "tsp"
       },
       {
-        "name": "Olive oil",
-        "amount": 2.88,
-        "unit": "oz"
+        "name": "fresh lemon juice",
+        "amount": 6,
+        "unit": "tsp"
       },
       {
-        "name": "Lemon wedges",
-        "amount": 5.76,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Coat fillets with seasoning; sear in hot pan with oil until blackened and cooked through."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Wednesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "sweet-potato-and-kale-gratin-v",
-    "title": "Sweet Potato & Kale Gratin (V)",
-    "yield": 24,
-    "category": "Alternative",
-    "ingredients": [
-      {
-        "name": "Sweet potatoes, sliced",
-        "amount": 4.8,
-        "unit": "lb"
+        "name": "freshly cracked black pepper",
+        "amount": 3,
+        "unit": "tsp"
       },
       {
-        "name": "Kale, chopped",
-        "amount": 2.4,
-        "unit": "lb"
-      },
-      {
-        "name": "Heavy cream",
-        "amount": 1.92,
-        "unit": "qt"
-      },
-      {
-        "name": "Gruyère cheese, grated",
-        "amount": 1.92,
-        "unit": "lb"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Garlic, minced",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
+        "name": "Salt to taste",
         "amount": 1,
         "unit": "each"
+      },
+      {
+        "name": "grated Parmigiano-Reggiano\"\"",
+        "amount": 3,
+        "unit": "cup"
       }
     ],
     "steps": [
-      "Layer sweet potatoes, kale, garlic, cream, and cheese in baking dish.",
-      "Bake at 375°F until tender and golden."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Wednesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "charred-okra",
-    "title": "Charred Okra",
-    "yield": 24,
-    "category": "Veggie 1",
-    "ingredients": [
-      {
-        "name": "Okra",
-        "amount": 3.84,
-        "unit": "lb"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Toss okra with oil and salt; grill or sauté until charred."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Wednesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "roasted-beets",
-    "title": "Roasted Beets",
-    "yield": 24,
-    "category": "Veggie 2",
-    "ingredients": [
-      {
-        "name": "Beets, peeled & diced",
-        "amount": 4.8,
-        "unit": "lb"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Toss beets with oil, salt, and pepper; roast at 400°F until tender."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Wednesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "carolina-gold-rice",
-    "title": "Carolina Gold Rice",
-    "yield": 24,
-    "category": "Starch",
-    "ingredients": [
-      {
-        "name": "Carolina Gold rice",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Chicken or vegetable stock",
-        "amount": 5.76,
-        "unit": "qt"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Cook rice in stock until tender; finish with butter and season."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Wednesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "pear-and-almond-crostata",
-    "title": "Pear & Almond Crostata",
-    "yield": 24,
-    "category": "Dessert",
-    "ingredients": [
-      {
-        "name": "Pie dough",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Pears, sliced",
-        "amount": 3.84,
-        "unit": "lb"
-      },
-      {
-        "name": "Almond cream",
-        "amount": 1.92,
-        "unit": "lb"
-      },
-      {
-        "name": "Sugar",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Almond extract",
-        "amount": 0.96,
-        "unit": "oz"
-      }
-    ],
-    "steps": [
-      "Roll out dough; spread almond cream.",
-      "Layer pear slices; fold edges to form crostata.",
-      "Brush with butter and bake at 375°F until golden."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Wednesday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "pork-belly-bao-hot-appetizer-8-oz",
-    "title": "Pork Belly Bao (Hot Appetizer, 8 oz)",
-    "yield": 24,
-    "category": "Appetizer 1",
-    "ingredients": [
-      {
-        "name": "Bao buns",
-        "amount": 24,
-        "unit": "each"
-      },
-      {
-        "name": "Pork belly, cooked & sliced",
-        "amount": 5.76,
-        "unit": "lb"
-      },
-      {
-        "name": "Hoisin sauce",
-        "amount": 5.76,
-        "unit": "oz"
-      },
-      {
-        "name": "Cucumber, julienne",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Scallions, sliced",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Sesame oil",
-        "amount": 1.92,
-        "unit": "oz"
-      }
-    ],
-    "steps": [
-      "Steam bao buns until warm and soft.",
-      "Fill each bun with pork belly, cucumber, scallions; drizzle with hoisin and sesame oil."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Thursday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "braised-oxtail-star-anise",
-    "title": "Braised Oxtail, Star Anise",
-    "yield": 24,
-    "category": "Elevated",
-    "ingredients": [
-      {
-        "name": "Oxtail pieces",
-        "amount": 12,
-        "unit": "lb"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Onion, diced",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Carrots, diced",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Celery, diced",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Garlic, minced",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Star anise",
-        "amount": 0.72,
-        "unit": "oz"
-      },
-      {
-        "name": "Red wine",
-        "amount": 0.96,
-        "unit": "qt"
-      },
-      {
-        "name": "Beef stock",
-        "amount": 1.92,
-        "unit": "qt"
-      },
-      {
-        "name": "Thyme, fresh",
-        "amount": 0.96,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Brown oxtail in olive oil; remove.",
-      "Sauté aromatics; add wine and stock.",
-      "Add oxtail and star anise; braise at 325°F until tender, ~3–4 hours.",
-      "Finish with fresh thyme; season."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Thursday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "seared-scallopine-of-turkey-marsala-cream",
-    "title": "Seared Scallopine of Turkey, Marsala Cream",
-    "yield": 24,
-    "category": "Comfort",
-    "ingredients": [
-      {
-        "name": "Turkey scallopine (4–5 oz)",
-        "amount": 12,
-        "unit": "each"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Mushrooms, sliced",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Shallots, minced",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Marsala wine",
-        "amount": 0.72,
-        "unit": "qt"
-      },
-      {
-        "name": "Heavy cream",
-        "amount": 0.96,
-        "unit": "qt"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Sear turkey scallopine in olive oil and butter until golden.",
-      "Remove; sauté mushrooms and shallots.",
-      "Deglaze with Marsala; reduce by half.",
-      "Add cream; return turkey, coat in sauce."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Thursday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "udon-noodles-miso-butter-and-vegetables-v",
-    "title": "Udon Noodles, Miso Butter & Vegetables (V)",
-    "yield": 24,
-    "category": "Alternative",
-    "ingredients": [
-      {
-        "name": "Udon noodles, cooked",
-        "amount": 5.76,
-        "unit": "lb"
-      },
-      {
-        "name": "Miso paste",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Carrots, julienne",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Bell peppers, julienne",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Snow peas, trimmed",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Soy sauce",
-        "amount": 2.88,
-        "unit": "oz"
-      }
-    ],
-    "steps": [
-      "Toss butter and miso to create miso butter.",
-      "Sauté vegetables lightly; toss with noodles and miso butter."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Thursday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "snow-peas",
-    "title": "Snow Peas",
-    "yield": 24,
-    "category": "Veggie 1",
-    "ingredients": [
-      {
-        "name": "Snow peas",
-        "amount": 3.84,
-        "unit": "lb"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Sauté or blanch peas; season lightly with oil and salt."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Thursday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "roasted-shiitakes",
-    "title": "Roasted Shiitakes",
-    "yield": 24,
-    "category": "Veggie 2",
-    "ingredients": [
-      {
-        "name": "Shiitake mushrooms, sliced",
-        "amount": 3.84,
-        "unit": "lb"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Toss mushrooms with oil, salt, and pepper; roast at 400°F until browned."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Thursday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "coconut-rice",
-    "title": "Coconut Rice",
-    "yield": 24,
-    "category": "Starch",
-    "ingredients": [
-      {
-        "name": "Arborio rice",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Coconut milk",
-        "amount": 3.84,
-        "unit": "qt"
-      },
-      {
-        "name": "Whole milk",
-        "amount": 2.88,
-        "unit": "qt"
-      },
-      {
-        "name": "Sugar",
-        "amount": 2.4,
-        "unit": "lb"
-      },
-      {
-        "name": "Vanilla extract",
-        "amount": 0.48,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Simmer rice in milk until tender.",
-      "Add coconut milk, sugar, vanilla; cook gently until creamy."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Thursday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "black-sesame-panna-cotta",
-    "title": "Black Sesame Panna Cotta",
-    "yield": 24,
-    "category": "Dessert",
-    "ingredients": [
-      {
-        "name": "Heavy cream",
-        "amount": 2.88,
-        "unit": "qt"
-      },
-      {
-        "name": "Sugar",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Black sesame paste",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Gelatin sheets",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Vanilla extract",
-        "amount": 1.92,
-        "unit": "oz"
-      }
-    ],
-    "steps": [
-      "Heat cream, sugar, and sesame paste; stir until smooth.",
-      "Bloom gelatin; incorporate into mixture.",
-      "Pour into molds; chill until set."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Thursday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "lobster-stuffed-mushrooms-hot-appetizer-8-oz",
-    "title": "Lobster-Stuffed Mushrooms (Hot Appetizer, 8 oz)",
-    "yield": 24,
-    "category": "Appetizer 1",
-    "ingredients": [
-      {
-        "name": "Mushrooms, large",
-        "amount": 24,
-        "unit": "each"
-      },
-      {
-        "name": "Lobster meat, cooked & chopped",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Garlic, minced",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Breadcrumbs",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Parsley, chopped",
-        "amount": 1.92,
-        "unit": "oz"
-      }
-    ],
-    "steps": [
-      "Sauté lobster with butter and garlic.",
-      "Mix with breadcrumbs and parsley; fill mushroom caps.",
-      "Bake at 375°F until golden."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Friday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "grilled-ribeye-bone-marrow-butter",
-    "title": "Grilled Ribeye, Bone Marrow Butter",
-    "yield": 24,
-    "category": "Elevated",
-    "ingredients": [
-      {
-        "name": "Ribeye steaks, 10–12 oz",
-        "amount": 12,
-        "unit": "each"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Bone marrow, softened",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Grill steaks to desired doneness.",
-      "Mix bone marrow with butter; serve on top of steak."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Friday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "seared-chefs-fish",
-    "title": "Seared CHEFS FISH",
-    "yield": 24,
-    "category": "Comfort",
-    "ingredients": [
-      {
-        "name": "Fish fillets",
-        "amount": 12,
-        "unit": "each"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Lemon juice",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Sear fish in olive oil until cooked through.",
-      "Finish with lemon juice; season."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Friday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "spinach-and-gruyere-souffle-v",
-    "title": "Spinach & Gruyère Soufflé (V)",
-    "yield": 24,
-    "category": "Alternative",
-    "ingredients": [
-      {
-        "name": "Spinach, blanched",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Gruyère cheese, grated",
-        "amount": 1.92,
-        "unit": "lb"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Flour",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Milk",
-        "amount": 1.92,
-        "unit": "qt"
-      },
-      {
-        "name": "Eggs, separated",
-        "amount": 12,
-        "unit": "each"
-      },
-      {
-        "name": "Nutmeg",
-        "amount": 0.48,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Make a roux with butter and flour; add milk to make béchamel.",
-      "Fold in spinach, cheese, egg yolks, and seasoning.",
-      "Whip egg whites; fold gently into mixture.",
-      "Bake at 375°F until puffed and golden."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Friday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "roasted-cauliflower",
-    "title": "Roasted Cauliflower",
-    "yield": 24,
-    "category": "Veggie 1",
-    "ingredients": [
-      {
-        "name": "Cauliflower, cut into florets",
-        "amount": 5.76,
-        "unit": "lb"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Toss cauliflower with oil, salt, pepper; roast at 400°F until golden."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Friday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "haricots-verts",
-    "title": "Haricots Verts",
-    "yield": 24,
-    "category": "Veggie 2",
-    "ingredients": [
-      {
-        "name": "Haricots verts",
-        "amount": 3.84,
-        "unit": "lb"
-      },
-      {
-        "name": "Butter",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Blanch; sauté lightly with butter and salt."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Friday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "truffle-mashed-potatoes",
-    "title": "Truffle Mashed Potatoes",
-    "yield": 24,
-    "category": "Starch",
-    "ingredients": [
-      {
-        "name": "Yukon Gold potatoes",
-        "amount": 5.76,
-        "unit": "lb"
-      },
-      {
-        "name": "Butter",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Heavy cream",
-        "amount": 1.92,
-        "unit": "qt"
-      },
-      {
-        "name": "Truffle oil",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Boil potatoes; mash with butter and cream.",
-      "Finish with truffle oil; season."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Friday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "chocolate-hazelnut-torte",
-    "title": "Chocolate Hazelnut Torte",
-    "yield": 24,
-    "category": "Dessert",
-    "ingredients": [
-      {
-        "name": "Dark chocolate",
-        "amount": 2.4,
-        "unit": "lb"
-      },
-      {
-        "name": "Butter",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Sugar",
-        "amount": 1.92,
-        "unit": "lb"
-      },
-      {
-        "name": "Eggs",
-        "amount": 12,
-        "unit": "each"
-      },
-      {
-        "name": "Hazelnuts, toasted & chopped",
-        "amount": 1.44,
-        "unit": "lb"
-      }
-    ],
-    "steps": [
-      "Melt chocolate with butter; whisk in sugar and eggs.",
-      "Fold in hazelnuts; bake at 350°F until set."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Friday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "spicy-calamari-citrus-aioli-hot-appetizer-8-oz",
-    "title": "Spicy Calamari, Citrus Aioli (Hot Appetizer, 8 oz)",
-    "yield": 24,
-    "category": "Appetizer 1",
-    "ingredients": [
-      {
-        "name": "Calamari, cleaned & sliced",
-        "amount": 5.76,
-        "unit": "lb"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Garlic, minced",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Red pepper flakes",
-        "amount": 0.96,
-        "unit": "oz"
-      },
-      {
-        "name": "Lemon juice",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Mayonnaise (for aioli)",
-        "amount": 1.92,
-        "unit": "qt"
-      },
-      {
-        "name": "Kosher salt, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Sauté calamari with oil, garlic, red pepper flakes until cooked."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Saturday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "lamb-shank-braising-jus",
-    "title": "Lamb Shank, Braising Jus",
-    "yield": 24,
-    "category": "Elevated",
-    "ingredients": [
-      {
-        "name": "Lamb shanks",
-        "amount": 12,
-        "unit": "each"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Onion, diced",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Carrots, diced",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Celery, diced",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Garlic, minced",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Red wine",
-        "amount": 0.96,
-        "unit": "qt"
-      },
-      {
-        "name": "Beef stock",
-        "amount": 1.92,
-        "unit": "qt"
-      },
-      {
-        "name": "Thyme, fresh",
-        "amount": 0.96,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Brown lamb shanks in oil; remove.",
-      "Sauté aromatics; add wine and stock.",
-      "Return lamb; braise at 325°F until tender, ~3–4 hrs.",
-      "Finish with fresh thyme; season."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Saturday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "wild-rice-stuffed-acorn-squash-v",
-    "title": "Wild Rice–Stuffed Acorn Squash (V)",
-    "yield": 24,
-    "category": "Comfort",
-    "ingredients": [
-      {
-        "name": "Acorn squash, halved",
-        "amount": 12,
-        "unit": "each"
-      },
-      {
-        "name": "Wild rice, cooked",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Mushrooms, diced",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Onion, diced",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Thyme, fresh",
-        "amount": 0.96,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Roast squash halves until tender.",
-      "Sauté onions and mushrooms; mix with cooked rice and butter.",
-      "Stuff squash; finish in oven at 375°F until heated."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Saturday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "braised-celeriac",
-    "title": "Braised Celeriac",
-    "yield": 24,
-    "category": "Alternative",
-    "ingredients": [
-      {
-        "name": "Celeriac, peeled & diced",
-        "amount": 5.76,
-        "unit": "lb"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Vegetable stock",
-        "amount": 0.96,
-        "unit": "qt"
-      },
-      {
-        "name": "Thyme, fresh",
-        "amount": 0.96,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Sauté celeriac in butter; add stock and thyme.",
-      "Simmer until tender."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Saturday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "roasted-mushrooms",
-    "title": "Roasted Mushrooms",
-    "yield": 24,
-    "category": "Veggie 1",
-    "ingredients": [
-      {
-        "name": "Mixed mushrooms, sliced",
-        "amount": 5.76,
-        "unit": "lb"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Toss mushrooms with oil, salt, pepper; roast at 400°F until golden."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Saturday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "garlic-orzo",
-    "title": "Garlic Orzo",
-    "yield": 24,
-    "category": "Veggie 2",
-    "ingredients": [
-      {
-        "name": "Orzo pasta",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Garlic, minced",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Chicken or vegetable stock",
-        "amount": 5.76,
-        "unit": "qt"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Cook orzo in stock until tender; finish with garlic, butter, and season."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Saturday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "blood-orange-tart",
-    "title": "Blood Orange Tart",
-    "yield": 24,
-    "category": "Dessert",
-    "ingredients": [
-      {
-        "name": "Pie dough",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Blood orange curd",
-        "amount": 3.84,
-        "unit": "lb"
-      },
-      {
-        "name": "Sugar",
-        "amount": 1.44,
-        "unit": "lb"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      }
-    ],
-    "steps": [
-      "Roll dough; bake blind until lightly golden.",
-      "Fill with blood orange curd; chill until set."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Saturday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "cheddar-and-chive-popovers-hot-appetizer-8-oz",
-    "title": "Cheddar & Chive Popovers (Hot Appetizer, 8 oz)",
-    "yield": 24,
-    "category": "Appetizer 1",
-    "ingredients": [
-      {
-        "name": "All-purpose flour",
-        "amount": 1.92,
-        "unit": "lb"
-      },
-      {
-        "name": "Eggs",
-        "amount": 12,
-        "unit": "each"
-      },
-      {
-        "name": "Whole milk",
-        "amount": 2.88,
-        "unit": "qt"
-      },
-      {
-        "name": "Butter, melted",
-        "amount": 0.72,
-        "unit": "lb"
-      },
-      {
-        "name": "Cheddar cheese, shredded",
-        "amount": 1.92,
-        "unit": "lb"
-      },
-      {
-        "name": "Chives, chopped",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Whisk eggs and milk; fold in flour, melted butter, salt, and chives.",
-      "Fold in shredded cheddar.",
-      "Pour batter into greased muffin tins or popover molds; bake at 400°F until puffed and golden."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Sunday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "roasted-beef-tenderloin",
-    "title": "Roasted Beef Tenderloin",
-    "yield": 24,
-    "category": "Elevated",
-    "ingredients": [
-      {
-        "name": "Beef tenderloin (6–8 oz portions)",
-        "amount": 12,
-        "unit": "each"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Garlic, minced",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Fresh rosemary",
-        "amount": 0.96,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Rub tenderloin with olive oil, garlic, rosemary, salt, and pepper.",
-      "Roast at 425°F to desired doneness (~130–135°F internal for medium rare).",
-      "Rest 10 minutes before slicing."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Sunday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "maple-glazed-salmon",
-    "title": "Maple-Glazed Salmon",
-    "yield": 24,
-    "category": "Comfort",
-    "ingredients": [
-      {
-        "name": "Salmon fillets (6 oz)",
-        "amount": 12,
-        "unit": "each"
-      },
-      {
-        "name": "Maple syrup",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Dijon mustard",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 1.92,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Mix maple syrup, mustard, and olive oil to make glaze.",
-      "Brush salmon; bake or sear until just cooked through."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Sunday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "savory-bread-pudding-with-leeks-v",
-    "title": "Savory Bread Pudding with Leeks (V)",
-    "yield": 24,
-    "category": "Alternative",
-    "ingredients": [
-      {
-        "name": "Stale bread, cubed",
-        "amount": 3.84,
-        "unit": "lb"
-      },
-      {
-        "name": "Leeks, sliced",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Eggs",
-        "amount": 12,
-        "unit": "each"
-      },
-      {
-        "name": "Whole milk",
-        "amount": 1.92,
-        "unit": "qt"
-      },
-      {
-        "name": "Heavy cream",
-        "amount": 0.96,
-        "unit": "qt"
-      },
-      {
-        "name": "Gruyère cheese, shredded",
-        "amount": 1.92,
-        "unit": "lb"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Sauté leeks in butter until soft; cool slightly.",
-      "Whisk eggs, milk, cream, salt, and pepper.",
-      "Toss bread, leeks, and cheese; pour custard over.",
-      "Bake at 375°F until set and golden."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Sunday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "buttered-peas",
-    "title": "Buttered Peas",
-    "yield": 24,
-    "category": "Veggie 1",
-    "ingredients": [
-      {
-        "name": "Fresh or frozen peas",
-        "amount": 3.84,
-        "unit": "lb"
-      },
-      {
-        "name": "Butter",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Blanch peas; toss with butter and salt."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Sunday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "roasted-parsnips",
-    "title": "Roasted Parsnips",
-    "yield": 24,
-    "category": "Veggie 2",
-    "ingredients": [
-      {
-        "name": "Parsnips, peeled & cut into sticks",
-        "amount": 5.76,
-        "unit": "lb"
-      },
-      {
-        "name": "Olive oil",
-        "amount": 2.88,
-        "unit": "oz"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Toss parsnips with oil, salt, and pepper; roast at 400°F until caramelized."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Sunday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "creamy-sundried-tomato-polenta",
-    "title": "Creamy Sundried Tomato Polenta",
-    "yield": 24,
-    "category": "Starch",
-    "ingredients": [
-      {
-        "name": "Polenta",
-        "amount": 2.88,
-        "unit": "lb"
-      },
-      {
-        "name": "Water or stock",
-        "amount": 5.76,
-        "unit": "qt"
-      },
-      {
-        "name": "Butter",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Heavy cream",
-        "amount": 1.92,
-        "unit": "qt"
-      },
-      {
-        "name": "Sundried tomatoes, chopped",
-        "amount": 0.96,
-        "unit": "lb"
-      },
-      {
-        "name": "Parmesan cheese, grated",
-        "amount": 1.92,
-        "unit": "lb"
-      },
-      {
-        "name": "Kosher salt & pepper, to taste",
-        "amount": 1,
-        "unit": "each"
-      }
-    ],
-    "steps": [
-      "Cook polenta in water or stock until tender.",
-      "Stir in butter, cream, sundried tomatoes, and Parmesan; season."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Sunday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
-  },
-  {
-    "id": "bourbon-bread-pudding",
-    "title": "Bourbon Bread Pudding",
-    "yield": 24,
-    "category": "Dessert",
-    "ingredients": [
-      {
-        "name": "Stale bread, cubed",
-        "amount": 3.84,
-        "unit": "lb"
-      },
-      {
-        "name": "Eggs",
-        "amount": 12,
-        "unit": "each"
-      },
-      {
-        "name": "Whole milk",
-        "amount": 2.88,
-        "unit": "qt"
-      },
-      {
-        "name": "Heavy cream",
-        "amount": 0.96,
-        "unit": "qt"
-      },
-      {
-        "name": "Sugar",
-        "amount": 1.92,
-        "unit": "lb"
-      },
-      {
-        "name": "Bourbon",
-        "amount": 3.84,
-        "unit": "oz"
-      },
-      {
-        "name": "Vanilla extract",
-        "amount": 1.92,
-        "unit": "oz"
-      }
-    ],
-    "steps": [
-      "Whisk eggs, milk, cream, sugar, bourbon, and vanilla.",
-      "Toss with bread cubes; bake at 350°F until golden and set."
-    ],
-    "metadata": {
-      "importedFrom": "Week 2 Dinner Recipes 2026.docx",
-      "week": "Week 2",
-      "day": "Sunday",
-      "sourceIngredientColumn": "50 scaled to 24",
-      "sourceType": "docx-table"
-    }
+      "Crush the saffron threads slightly with your fingers into a small bowl. Pour the 3 tablespoons of warm broth over them. Let sit for 10 minutes to draw out the deep golden color and aroma.",
+      "Bring a large pot of salted water to a boil. Cook the linguini according to package instructions until al dente. Reserve 1/2 cup of pasta water, then drain the noodles.",
+      "Heat 1 tablespoon each of butter and olive oil in a large skillet over medium-high heat. Season shrimp lightly with salt. Sear for 1 to 2 minutes per side until pink and opaque. Remove shrimp from the skillet and set aside.",
+      "Turn heat down to medium. Add the remaining 1 tablespoon of butter to the same skillet. Saute the minced shallot and garlic for 2 minutes until soft.",
+      "Pour in the white wine, scraping up the browned bits from the bottom. Simmer for 3 minutes until reduced by half. Stir in the heavy cream and the bloomed saffron liquid (including the threads). Simmer gently for 4 minutes until the sauce turns bright yellow and thickens slightly.",
+      "Add the cooked linguini and seared shrimp into the skillet. Toss continuously for 1 to 2 minutes until the pasta is coated in the golden sauce, adding a splash of reserved pasta water if the sauce gets too thick. Stir in the Parmigiano-Reggiano.",
+      "In a quick bowl, toss the fresh arugula with the extra-virgin olive oil, lemon juice, and a heavy pinch of freshly cracked black pepper.",
+      "Plate a swirl of the golden saffron linguini and shrimp. Top each portion with a loose handful of the peppered arugula just before serving."
+    ]
   }
 ]

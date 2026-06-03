@@ -1,154 +1,107 @@
 # Week 2 Recipe Import Report
 
-Source file: `C:\Users\cjr_1\Downloads\Week 2 Dinner Recipes 2026.docx`
+Source file: `missing-recipes-report.csv`
 
-No hyperlinks were present in the Word document, so all built recipes came from provided ingredient tables and method text. Ingredient quantities used the 50-serving source column scaled to requested yield `24`.
+Processed only `Week 2` rows. Recipes were generated only when the CSV row contained parseable inline recipe content. Rows with empty sources were skipped. Rows with URL-only sources are listed for manual review because recipe content was not embedded in the CSV and URL extraction was unavailable/blocked in this environment.
 
 ## Summary
 
-- Recipes successfully built: 55
-- Recipes skipped: 0
-- Recipes requiring manual review: 61
-- Current Week 2 Dinner menu titles matched exactly to source recipes: 2
-- Current Week 2 Dinner menu titles not found in this source file: 60
+- Week 2 rows processed: 57
+- Recipes successfully created: 10
+- Recipes skipped because no source exists: 9
+- Recipes requiring manual review: 38
+- Duplicate title warnings: 0
+- Duplicate ID warnings: Not applicable; active `sample-recipes.json` schema does not store recipe IDs, so no IDs were generated.
+- Schema validation issues: 0
 
-## Recipes Successfully Built
+## Recipes Successfully Created
 
-| Day | Category | Recipe Title | Ingredients | Steps |
-|---|---|---|---:|---:|
-| Monday | Appetizer 1 | Shrimp & Chorizo Skillet (Hot Appetizer, 8 oz) | 9 | 5 |
-| Monday | Elevated | Veal Chop Milanese | 8 | 3 |
-| Monday | Comfort | Roasted Monkfish, Saffron Tomato Broth | 9 | 3 |
-| Monday | Alternative | Grilled Polenta Cakes, Mushroom Ragout (V) | 8 | 3 |
-| Monday | Veggie 1 | Broccoli Rabe | 5 | 3 |
-| Monday | Veggie 2 | Roasted Cherry Tomatoes | 5 | 3 |
-| Monday | Starch | Lemon Risotto | 8 | 4 |
-| Monday | Dessert | Almond Semolina Cake | 8 | 4 |
-| Tuesday | Appetizer 1 | Baked Escargot, Garlic Parsley Butter (Hot Appetizer, 8 oz) | 6 | 4 |
-| Tuesday | Elevated | Beef Wellington (portion-cut) | 8 | 4 |
-| Tuesday | Comfort | Cider-Braised Chicken Thighs | 9 | 4 |
-| Tuesday | Alternative | Eggplant Involtini (V) | 8 | 4 |
-| Tuesday | Veggie 1 | Roasted Zucchini | 4 | 2 |
-| Tuesday | Veggie 2 | Glazed Pearl Onions | 5 | 2 |
-| Tuesday | Starch | Pommes Anna | 4 | 2 |
-| Tuesday | Dessert | Dark Chocolate Marquis | 6 | 4 |
-| Wednesday | Appetizer 1 | Smoked Gouda Stuffed Mushrooms (Hot Appetizer, 8 oz) | 7 | 4 |
-| Wednesday | Elevated | Grilled Venison Loin, Juniper Jus | 7 | 3 |
-| Wednesday | Comfort | Blackened Red Snapper | 4 | 1 |
-| Wednesday | Alternative | Sweet Potato & Kale Gratin (V) | 7 | 2 |
-| Wednesday | Veggie 1 | Charred Okra | 3 | 1 |
-| Wednesday | Veggie 2 | Roasted Beets | 3 | 1 |
-| Wednesday | Starch | Carolina Gold Rice | 4 | 1 |
-| Wednesday | Dessert | Pear & Almond Crostata | 6 | 3 |
-| Thursday | Appetizer 1 | Pork Belly Bao (Hot Appetizer, 8 oz) | 6 | 2 |
-| Thursday | Elevated | Braised Oxtail, Star Anise | 11 | 4 |
-| Thursday | Comfort | Seared Scallopine of Turkey, Marsala Cream | 8 | 4 |
-| Thursday | Alternative | Udon Noodles, Miso Butter & Vegetables (V) | 7 | 2 |
-| Thursday | Veggie 1 | Snow Peas | 3 | 1 |
-| Thursday | Veggie 2 | Roasted Shiitakes | 3 | 1 |
-| Thursday | Starch | Coconut Rice | 5 | 2 |
-| Thursday | Dessert | Black Sesame Panna Cotta | 5 | 3 |
-| Friday | Appetizer 1 | Lobster-Stuffed Mushrooms (Hot Appetizer, 8 oz) | 6 | 3 |
-| Friday | Elevated | Grilled Ribeye, Bone Marrow Butter | 5 | 2 |
-| Friday | Comfort | Seared CHEFS FISH | 4 | 2 |
-| Friday | Alternative | Spinach & Gruyère Soufflé (V) | 8 | 4 |
-| Friday | Veggie 1 | Roasted Cauliflower | 3 | 1 |
-| Friday | Veggie 2 | Haricots Verts | 3 | 1 |
-| Friday | Starch | Truffle Mashed Potatoes | 5 | 2 |
-| Friday | Dessert | Chocolate Hazelnut Torte | 5 | 2 |
-| Saturday | Appetizer 1 | Spicy Calamari, Citrus Aioli (Hot Appetizer, 8 oz) | 7 | 1 |
-| Saturday | Elevated | Lamb Shank, Braising Jus | 10 | 4 |
-| Saturday | Comfort | Wild Rice–Stuffed Acorn Squash (V) | 8 | 3 |
-| Saturday | Alternative | Braised Celeriac | 5 | 2 |
-| Saturday | Veggie 1 | Roasted Mushrooms | 3 | 1 |
-| Saturday | Veggie 2 | Garlic Orzo | 6 | 1 |
-| Saturday | Dessert | Blood Orange Tart | 4 | 2 |
-| Sunday | Appetizer 1 | Cheddar & Chive Popovers (Hot Appetizer, 8 oz) | 7 | 3 |
-| Sunday | Elevated | Roasted Beef Tenderloin | 5 | 3 |
-| Sunday | Comfort | Maple-Glazed Salmon | 5 | 2 |
-| Sunday | Alternative | Savory Bread Pudding with Leeks (V) | 8 | 4 |
-| Sunday | Veggie 1 | Buttered Peas | 3 | 1 |
-| Sunday | Veggie 2 | Roasted Parsnips | 3 | 1 |
-| Sunday | Starch | Creamy Sundried Tomato Polenta | 7 | 2 |
-| Sunday | Dessert | Bourbon Bread Pudding | 7 | 2 |
+| # | Title | Category | Ingredients | Steps |
+| --- | --- | --- | --- | --- |
+| 1 | PASTA WITH SUMMER VEGETABLES WITH LEMON PARMESAN SAUCE | Comfort | 14 | 6 |
+| 2 | ANCIENT GRAINS | Starch | 11 | 6 |
+| 3 | GRILLED TILAPIA WITH BALSAMIC ONION SAUCE | Alternative | 12 | 5 |
+| 4 | BROCCOLINI WITH GARLIC CONFIT | Veggie 1 | 4 | 6 |
+| 5 | SUMAC SPICED ROASTED CARROT CHUNKS | Veggie 2 | 6 | 5 |
+| 6 | HERB AND CREAM CHEESE POLENTA | Starch | 9 | 5 |
+| 7 | LEMON BREAD WITH ICING | Dessert | 12 | 6 |
+| 8 | ROASTED PORK TENDERLOIN WITH OLIVE AND FETA SALSA | Comfort | 12 | 6 |
+| 9 | BRAISED BEAN CASSOULET | Veggie 2 | 16 | 6 |
+| 10 | SHRIMP LINGUINI WITH SAFFRON SAUCE AND PEPPERED GREENS | Elevated | 16 | 8 |
 
-## Recipes Skipped
+## Recipes Skipped Because No Source Exists
 
-_None._
+| Day | Category | Title | Reason |
+| --- | --- | --- | --- |
+| Monday | Veggie 1 | STEAMED CAULIFLOWER FLORETS | No URL or inline recipe source in CSV row. |
+| Monday | Veggie 2 | STEAMED CARROTS | No URL or inline recipe source in CSV row. |
+| Monday | Starch | BAKED FARRO PILAF | No URL or inline recipe source in CSV row. |
+| Tuesday | Veggie 2 | ROASTED MUSHROOMS | No URL or inline recipe source in CSV row. |
+| Tuesday | Starch | WILD RICE | No URL or inline recipe source in CSV row. |
+| Wednesday | Veggie 2 | ROASTED BABY TOP CARROTS | No URL or inline recipe source in CSV row. |
+| Thursday | Veggie 1 | ROASTED ZUCCHINI CHUNKS | No URL or inline recipe source in CSV row. |
+| Saturday | Starch | HERB ROASTED POTATO WEDGES | No URL or inline recipe source in CSV row. |
+| Sunday | Veggie 2 | ROASTED BUTTERNUT SQUASH | No URL or inline recipe source in CSV row. |
 
 ## Recipes Requiring Manual Review
 
-These current `clean-menu.json` Week 2 Dinner titles were not present in the provided Week 2 recipe source, so no recipe was invented for them.
+| Day | Category | Title | Reason | Source |
+| --- | --- | --- | --- | --- |
+| Monday | Appetizer 1 | COCONUT SHRIMP WITH LIME DIP | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://thegourmetbonvivant.com/fried-coconut-shrimp-with-honey-lime-sauce/ |
+| Monday | Appetizer 2 | CARROT AND ORANGE SOUP | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://artsincubator.ca/cookbook/recipes/soups/sunny-carrot-and-orange-soup-with-toasted-almonds?gad_source=1&gad_campa |
+| Monday | Elevated | MAPLE GLAZED SALMON FILET WITH | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.becel.ca/en-ca/recipe/maple-mustard-salmon-204346?gclsrc=aw.ds&gad_source=1&gad_campaignid=21086526214&gbrai |
+| Monday | Comfort | CHICKEN CORDON BLEU | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.allrecipes.com/recipe/8669/chicken-cordon-bleu-ii/ |
+| Monday | Alternative | ROAST CHICKEN WITH PAPRIKA | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.simplyrecipes.com/recipes/smoked_paprika_roasted_chicken/ |
+| Monday | Dessert | BLACK FOREST CAKE | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.allrecipes.com/recipe/8095/black-forest-cake-i/ |
+| Tuesday | Appetizer 1 | ROASTED RED PEPPER HUMMUS AND PITA | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.themediterraneandish.com/roasted-red-pepper-hummus-recipe/ |
+| Tuesday | Appetizer 2 | SPICY TUNA AND CRISPY RICE CRACKER | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://artsincubator.ca/cookbook/recipes/spicy-tuna-crispy-rice?gad_source=1&gad_campaignid=23003435220&gbraid=0AAAAA9T |
+| Tuesday | Elevated | SEARED HALIBUT WITH CHERRY TOMATO&OLIVE | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://themodernproper.com/moms-tomato-olive-salsa (complete the recipe adding extra step to sear the fish) |
+| Tuesday | Alternative | SAUTEED SHRIMP WITH GARLIC, WHITE WINE & FRESH DICED TOMATO | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.theyellowtable.com/recipes/best-garlicky-shrimp-white-wine-tomatoes-recipe |
+| Tuesday | Dessert | PEACH FRIED PIES | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://divascancook.com/fried-peach-pies-recipe/ |
+| Wednesday | Appetizer 1 | SHAVED FENNEL AND ORANGE SALAD | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.notquitenigella.com/2021/09/03/shaved-fennel-orange-salad/ |
+| Wednesday | Appetizer 2 | CUCUMBER AND DILL SALAD | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.allrecipes.com/recipe/238366/best-ever-cucumber-dill-salad/ |
+| Wednesday | Elevated | CHICKEN MARSALA IN MUSHROOM SAUCE | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://familystylefood.com/chicken-marsala/ |
+| Wednesday | Comfort | OPEN FACED ROAST BEEF DIP | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://themodernproper.com/french-dip-sandwich |
+| Wednesday | Alternative | LEMON BAKED COD | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.themediterraneandish.com/baked-cod-recipe-lemon-garlic/ |
+| Wednesday | Starch | GARLIC MASHED POTATOES | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.simplyrecipes.com/recipes/garlic_mashed_potatoes/ |
+| Wednesday | Dessert | BANANA CREAM PIE | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://sallysbakingaddiction.com/homemade-banana-cream-pie/ |
+| Thursday | Appetizer 1 | CORN CHOWDER | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.allrecipes.com/recipe/86096/grandmas-corn-chowder/ |
+| Thursday | Appetizer 2 | MANGO AND AVOCADO SALAD | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://feelgoodfoodie.net/recipe/avocado-mango-salad/ |
+| Thursday | Elevated | VEAL SHANK WITH NATURAL JUS | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.acanadianfoodie.com/2014/10/12/osso-buco-with-veal-jus/ |
+| Thursday | Comfort | CHICKEN PARMESAN | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.allrecipes.com/recipe/223042/chicken-parmesan/ |
+| Thursday | Alternative | SEARED SCALLOPS WITH SQUASH PUREE | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.acozykitchen.com/seared-scallops-acorn-squash |
+| Friday | Appetizer 1 | SMOKED SALMON CUCUMBER BITES | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.allrecipes.com/recipe/241473/cucumber-cups-with-dill-cream-and-smoked-salmon/ |
+| Friday | Appetizer 2 | GAZPACHO SOUP | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://artsincubator.ca/cookbook/recipes/soups/chilled-roasted-red-pepper-and-cucumber-gazpacho?gad_source=1&gad_campai |
+| Friday | Elevated | TURKEY ROULADE WITH SPINACH&SUNDRIED TOMATO                     (GF/DF) | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://riverheadlocal.com/2017/04/29/in-the-kitchen-sharpen-your-knife-skills-for-this-spinach-feta-and-sun-dried-tomat |
+| Friday | Comfort | SPAGHETTI AND MEATBALLS IN MARINARA | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://amandascookin.com/spaghetti-and-meatballs-in-marinara-sauce/ |
+| Saturday | Appetizer 1 | GRILLED ZUCCHINI ROLLUP WITH RICOTTA | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.thekitchn.com/recipe-grilled-zucchini-roll-ups-with-ricotta-and-herbs-221922 |
+| Saturday | Appetizer 2 | BACON AND CLAM FLATBREAD | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://chickenofthesea.com/seafood-recipes/white-clam-flatbread-with-herbs/ |
+| Saturday | Elevated | RED WINE BRAISED BEEF BRISKET | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.allrecipes.com/recipe/221041/wine-braised-beef-brisket/ |
+| Saturday | Alternative | WILD MUSHROOM TART WITH GOAT CHEESE | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.giangiskitchen.com/mushroom-goat-cheese-tarte/ |
+| Saturday | Veggie 1 | ROASTED MEXICAN STREET CORN | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://ohsweetbasil.com/sheet-pan-mexican-street-corn-elote-recipe/ |
+| Saturday | Dessert | KEY LIME PIE | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://sallysbakingaddiction.com/key-lime-pie/ |
+| Sunday | Appetizer 1 | ZUCCHINI FRITTERS WITH DIP | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://coleycooks.com/zucchini-fritters/ |
+| Sunday | Appetizer 2 | SOBA NOODLE SALAD | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.veganricha.com/cold-soba-noodle-salad-recipe/ |
+| Sunday | Comfort | ROASTED CHICKEN BREAST IN CREAMY SUNDRIED TOMATO SAUCE | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.recipetineats.com/chicken-with-creamy-sun-dried-tomato-sauce/ |
+| Sunday | Alternative | SEARED SALMON WITH BASIL PESTO SAUCE | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.food.com/recipe/pan-seared-salmon-with-lemon-basil-pesto-444000 |
+| Sunday | Dessert | PEACH COBBLER | URL source present, but recipe content was not embedded in CSV and page extraction was blocked/unavailable in this environment. | https://www.allrecipes.com/recipe/51535/fresh-southern-peach-cobbler/ |
 
-The provided source also appears to contain no Saturday Starch recipe block, so that slot is listed for manual review rather than filled with invented data.
+## Duplicate Title Warnings
 
-| Day | Category | Menu Title |
-|---|---|---|
-| Monday | Appetizer 1 | COCONUT SHRIMP WITH LIME DIP |
-| Monday | Appetizer 2 | CARROT AND ORANGE SOUP |
-| Monday | Elevated | MAPLE GLAZED SALMON FILET WITH |
-| Monday | Comfort | CHICKEN CORDON BLEU |
-| Monday | Alternative | ROAST CHICKEN WITH PAPRIKA |
-| Monday | Veggie 1 | STEAMED CAULIFLOWER FLORETS |
-| Monday | Veggie 2 | STEAMED CARROTS |
-| Monday | Starch | BAKED FARRO PILAF |
-| Monday | Dessert | BLACK FOREST CAKE |
-| Tuesday | Appetizer 1 | ROASTED RED PEPPER HUMMUS AND PITA |
-| Tuesday | Appetizer 2 | SPICY TUNA AND CRISPY RICE CRACKER |
-| Tuesday | Elevated | SEARED HALIBUT WITH CHERRY TOMATO&OLIVE |
-| Tuesday | Comfort | PASTA WITH SUMMER VEGETABLES WITH LEMON PARMESAN SAUCE |
-| Tuesday | Veggie 1 | GRILLED ASPARAGUS |
-| Tuesday | Starch | WILD RICE |
-| Tuesday | Dessert | PEACH FRIED PIES |
-| Wednesday | Appetizer 1 | SHAVED FENNEL AND ORANGE SALAD |
-| Wednesday | Appetizer 2 | CUCUMBER AND DILL SALAD |
-| Wednesday | Elevated | CHICKEN MARSALA IN MUSHROOM SAUCE |
-| Wednesday | Comfort | OPEN FACED ROAST BEEF DIP |
-| Wednesday | Alternative | LEMON BAKED COD |
-| Wednesday | Veggie 1 | SAUTEED SPINACH WITH DICED ONIONS |
-| Wednesday | Veggie 2 | ROASTED BABY TOP CARROTS |
-| Wednesday | Starch | GARLIC MASHED POTATOES |
-| Wednesday | Dessert | BANANA CREAM PIE |
-| Thursday | Appetizer 1 | CORN CHOWDER |
-| Thursday | Appetizer 2 | MANGO AND AVOCADO SALAD |
-| Thursday | Elevated | VEAL SHANK WITH NATURAL JUS |
-| Thursday | Comfort | CHICKEN PARMESAN |
-| Thursday | Alternative | SEARED SCALLOPS WITH SQUASH PUREE |
-| Thursday | Veggie 1 | ROASTED ZUCCHINI CHUNKS |
-| Thursday | Starch | ANCIENT GRAINS |
-| Thursday | Dessert | ASSORTED DESSERTS |
-| Friday | Appetizer 1 | SMOKED SALMON CUCUMBER BITES |
-| Friday | Appetizer 2 | GAZPACHO SOUP |
-| Friday | Elevated | TURKEY ROULADE WITH SPINACH&SUNDRIED TOMATO                     (GF/DF) |
-| Friday | Comfort | SPAGHETTI AND MEATBALLS IN MARINARA |
-| Friday | Alternative | GRILLED TILAPIA WITH BALSAMIC ONION SAUCE |
-| Friday | Veggie 1 | BROCCOLINI WITH GARLIC CONFIT |
-| Friday | Veggie 2 | SUMAC SPICED ROASTED CARROT CHUNKS |
-| Friday | Starch | HERB AND CREAM CHEESE POLENTA |
-| Friday | Dessert | LEMON BREAD WITH ICING |
-| Saturday | Appetizer 1 | GRILLED ZUCCHINI ROLLUP WITH RICOTTA |
-| Saturday | Appetizer 2 | BACON AND CLAM FLATBREAD |
-| Saturday | Elevated | RED WINE BRAISED BEEF BRISKET |
-| Saturday | Comfort | ROASTED PORK TENDERLOIN WITH OLIVE AND FETA SALSA |
-| Saturday | Alternative | WILD MUSHROOM TART WITH GOAT CHEESE |
-| Saturday | Veggie 1 | ROASTED MEXICAN STREET CORN |
-| Saturday | Veggie 2 | BRAISED BEAN CASSOULET |
-| Saturday | Starch | HERB ROASTED POTATO WEDGES |
-| Saturday | Starch | No Saturday Starch recipe block found in source document |
-| Saturday | Dessert | KEY LIME PIE |
-| Sunday | Appetizer 1 | ZUCCHINI FRITTERS WITH DIP |
-| Sunday | Appetizer 2 | SOBA NOODLE SALAD |
-| Sunday | Elevated | SHRIMP LINGUINI WITH SAFFRON SAUCE AND PEPPERED GREENS |
-| Sunday | Comfort | ROASTED CHICKEN BREAST IN CREAMY SUNDRIED TOMATO SAUCE |
-| Sunday | Alternative | SEARED SALMON WITH BASIL PESTO SAUCE |
-| Sunday | Veggie 1 | SAUTEED ASPARAGUS (2" CUTS) |
-| Sunday | Veggie 2 | ROASTED BUTTERNUT SQUASH |
-| Sunday | Starch | WILD RICE PILAF |
-| Sunday | Dessert | PEACH COBBLER |
+_None._
 
-## Exact Menu Matches
+## Duplicate ID Warnings
 
-| Day | Category | Menu Title | Source Title |
-|---|---|---|---|
-| Tuesday | Veggie 2 | ROASTED MUSHROOMS | Roasted Mushrooms |
-| Thursday | Veggie 2 | BUTTERED PEAS | Buttered Peas |
+Not applicable. The current active recipe database schema does not include recipe IDs, and this package was generated to match that schema.
+
+## Validation
+
+- Valid JSON: yes
+- Unique generated records by title: yes
+- Ingredients array exists on every recipe: yes
+- Steps array exists on every recipe: yes
+- Schema matches current recipe database keys: yes
+
+## Schema Issues
+
+_None._
