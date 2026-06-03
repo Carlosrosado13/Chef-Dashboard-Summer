@@ -72,9 +72,20 @@ export function getAvailableWeeks(menuData) {
 }
 
 export function getAvailableMealTypes(menuData) {
+  const mealOrder = ["dinner", "lunch"];
+
   return Object.keys(menuData || {}).filter((mealType) => {
     const weeks = menuData[mealType]?.weeks || {};
     return Object.keys(weeks).length > 0;
+  }).sort((firstMeal, secondMeal) => {
+    const firstIndex = mealOrder.indexOf(firstMeal);
+    const secondIndex = mealOrder.indexOf(secondMeal);
+
+    if (firstIndex !== -1 || secondIndex !== -1) {
+      return (firstIndex === -1 ? 99 : firstIndex) - (secondIndex === -1 ? 99 : secondIndex);
+    }
+
+    return firstMeal.localeCompare(secondMeal);
   });
 }
 

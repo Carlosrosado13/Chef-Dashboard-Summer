@@ -93,23 +93,23 @@
       "description": "The lunch menu categories for a single day.",
       "additionalProperties": false,
       "properties": {
-        "SOUP": {
+        "Soup 1": {
           "$ref": "#/$defs/menuItem",
           "description": "The soup served at lunch."
         },
-        "SALAD": {
-          "$ref": "#/$defs/menuItem",
-          "description": "The salad served at lunch."
-        },
-        "MAIN 1": {
+        "Entrée 1": {
           "$ref": "#/$defs/menuItem",
           "description": "The first main lunch option."
         },
-        "MAIN 2": {
+        "Entrée 2": {
           "$ref": "#/$defs/menuItem",
           "description": "The second main lunch option."
         },
-        "DESSERT": {
+        "Salad": {
+          "$ref": "#/$defs/menuItem",
+          "description": "The salad served at lunch."
+        },
+        "Dessert": {
           "$ref": "#/$defs/menuItem",
           "description": "The dessert served at lunch."
         }

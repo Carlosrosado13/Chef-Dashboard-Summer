@@ -12,7 +12,7 @@ const state = {
   recipes: [],
   recipeQuery: "",
   assignment: {
-    mealType: "lunch",
+    mealType: "dinner",
     week: "",
     day: "",
     category: "",
@@ -52,7 +52,9 @@ function normalizeSelection(nextAssignment = {}) {
     ? nextAssignment.mealType
     : mealTypes.includes(state.assignment.mealType)
       ? state.assignment.mealType
-      : mealTypes[0] || "lunch";
+      : mealTypes.includes("dinner")
+        ? "dinner"
+        : mealTypes[0] || "dinner";
 
   const weekOptions = getMenuOptions(state.menuData, mealType, "").weeks;
   const week = weekOptions.includes(nextAssignment.week)

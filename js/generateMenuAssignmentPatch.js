@@ -1,4 +1,4 @@
-const LUNCH_CATEGORIES = ["SOUP", "SALAD", "MAIN 1", "MAIN 2", "DESSERT"];
+const LUNCH_CATEGORIES = ["Soup 1", "Entrée 1", "Entrée 2", "Salad", "Dessert"];
 const DINNER_CATEGORIES = ["Appetizer 1", "Appetizer 2", "Elevated", "Comfort", "Alternative", "Veggie 1", "Veggie 2", "Starch", "Dessert"];
 const LEGACY_DINNER_CATEGORY_ALIASES = {
   Traditional: "Comfort",

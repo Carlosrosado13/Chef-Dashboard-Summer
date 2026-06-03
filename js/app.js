@@ -22,7 +22,7 @@ const state = {
   menuData: null,
   activeDashboardSection: "menu",
   viewMode: "daily",
-  selectedMealType: "",
+  selectedMealType: "dinner",
   selectedWeek: "",
   selectedDay: "",
   ingredientTargetYield: ""
@@ -247,7 +247,7 @@ function syncDefaultSelections() {
   const mealTypes = Array.isArray(getAvailableMealTypes(state.menuData)) ? getAvailableMealTypes(state.menuData) : [];
 
   if (!mealTypes.includes(state.selectedMealType)) {
-    state.selectedMealType = mealTypes[0] || "";
+    state.selectedMealType = mealTypes.includes("dinner") ? "dinner" : mealTypes[0] || "";
   }
 
   const weeks = Array.isArray(getAvailableWeeksForMeal(state.menuData, state.selectedMealType))
