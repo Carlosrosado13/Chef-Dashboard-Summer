@@ -8,7 +8,7 @@ No hyperlinks were present in the Word document, so all built recipes came from 
 
 - Recipes successfully built: 55
 - Recipes skipped: 0
-- Recipes requiring manual review: 60
+- Recipes requiring manual review: 61
 - Current Week 2 Dinner menu titles matched exactly to source recipes: 2
 - Current Week 2 Dinner menu titles not found in this source file: 60
 
@@ -62,7 +62,7 @@ No hyperlinks were present in the Word document, so all built recipes came from 
 | Saturday | Alternative | Braised Celeriac | 5 | 2 |
 | Saturday | Veggie 1 | Roasted Mushrooms | 3 | 1 |
 | Saturday | Veggie 2 | Garlic Orzo | 6 | 1 |
-| Saturday | Starch | Blood Orange Tart | 4 | 2 |
+| Saturday | Dessert | Blood Orange Tart | 4 | 2 |
 | Sunday | Appetizer 1 | Cheddar & Chive Popovers (Hot Appetizer, 8 oz) | 7 | 3 |
 | Sunday | Elevated | Roasted Beef Tenderloin | 5 | 3 |
 | Sunday | Comfort | Maple-Glazed Salmon | 5 | 2 |
@@ -79,6 +79,8 @@ _None._
 ## Recipes Requiring Manual Review
 
 These current `clean-menu.json` Week 2 Dinner titles were not present in the provided Week 2 recipe source, so no recipe was invented for them.
+
+The provided source also appears to contain no Saturday Starch recipe block, so that slot is listed for manual review rather than filled with invented data.
 
 | Day | Category | Menu Title |
 |---|---|---|
@@ -132,6 +134,7 @@ These current `clean-menu.json` Week 2 Dinner titles were not present in the pro
 | Saturday | Veggie 1 | ROASTED MEXICAN STREET CORN |
 | Saturday | Veggie 2 | BRAISED BEAN CASSOULET |
 | Saturday | Starch | HERB ROASTED POTATO WEDGES |
+| Saturday | Starch | No Saturday Starch recipe block found in source document |
 | Saturday | Dessert | KEY LIME PIE |
 | Sunday | Appetizer 1 | ZUCCHINI FRITTERS WITH DIP |
 | Sunday | Appetizer 2 | SOBA NOODLE SALAD |
