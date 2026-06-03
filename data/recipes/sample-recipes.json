@@ -432,20 +432,33 @@
       }
     ],
     "steps": [
-      "Prepare primary appetizer component and trim into 24 even portions.",
-      "Season components evenly and cook using the appropriate saute, roast, fry, or poach method.",
-      "Prepare sauce or dipping component and hold at safe temperature.",
+      "Season shrimp with dried lavender and kosher salt, then saute in olive oil until opaque and cooked through.",
+      "Combine mint, lemon zest, lemon juice, orange segments, orange zest, cucumber, and seasoning for the citrus garnish.",
+      "Toss the hot shrimp with the citrus-cucumber mixture and spoon into separated endive leaves for service.",
       "Assemble with garnish so each portion is consistent for service.",
       "Taste one completed portion for seasoning and texture before pickup.",
-      "Hold hot or cold according to the dish and refresh garnish at service."
+      "Hold cold according to the dish and refresh garnish at service."
     ],
     "metadata": {
       "week": "Week 1",
       "day": "Monday",
       "importedFrom": "week1_complete_summer_recipes.corrected.json",
       "menuSlot": "Appetizer 2",
-      "season": "Summer"
-    }
+      "season": "Summer",
+      "duplicateCleanup": {
+        "retainedOriginalIndex": 9,
+        "removedOriginalIndexes": [
+          78
+        ],
+        "mergedFromOriginalIndex": 78,
+        "preservedCategory": "Appetizer 2",
+        "preservedMenuMetadata": true
+      }
+    },
+    "notes": [
+      "Duplicate record at former index 78 was reviewed during duplicate cleanup. Its useful method details were merged into this retained recipe.",
+      "Duplicate ingredient cues reviewed but not copied into structured quantities because the duplicate yield was 16 and several unit rows were malformed: shrimp, dried lavender, olive oil, mint, lemon, orange, cucumber, and endive."
+    ]
   },
   {
     "title": "Braised Short Ribs with Red Wine Sauce",
@@ -4869,149 +4882,6 @@
     ]
   },
   {
-    "title": "Citrus and Shrimp Lemon Lavender Cups",
-    "category": "Appetizer 2",
-    "yield": "16",
-    "ingredients": [
-      {
-        "amount": 1,
-        "unit": "",
-        "name": "pound medium shrimp, peeled, deveined and cut into bite-sized pieces"
-      },
-      {
-        "amount": 1,
-        "unit": "teaspoon",
-        "name": "chopped or ground dried lavender"
-      },
-      {
-        "amount": 0,
-        "unit": "",
-        "name": "0 0 0 Kosher salt"
-      },
-      {
-        "amount": 2,
-        "unit": "tablespoons",
-        "name": "olive oil"
-      },
-      {
-        "amount": 2,
-        "unit": "tablespoons",
-        "name": "chopped fresh mint"
-      },
-      {
-        "amount": 1,
-        "unit": "teaspoon",
-        "name": "lemon zest plus 1 tablespoon lemon juice"
-      },
-      {
-        "amount": 2,
-        "unit": "",
-        "name": "oranges, such as navel or Cara Cara, segmented, plus 1 teaspoon orange zest"
-      },
-      {
-        "amount": 1,
-        "unit": "",
-        "name": "Persian cucumber, peeled and diced"
-      },
-      {
-        "amount": 2,
-        "unit": "",
-        "name": "heads endive, white, red or a combination, leaves separated"
-      }
-    ],
-    "steps": [
-      "In a medium bowl, add the shrimp, lavender and 1/2 teaspoon salt and toss well to combine. Heat a large skillet over medium-high heat. Add the oil and the seasoned shrimp and cook, undisturbed, about 2 minutes. Flip the shrimp and cook on the other side until the shrimp is opaque and cooked through, about another 2 minutes.",
-      "In a separate medium bowl, add the mint, lemon zest and juice, oranges and zest, cucumbers and 1/8 teaspoon salt. Toss well to combine. Add the hot shrimp to the bowl and toss again.",
-      "Lay the endive leaves out on a platter. Spoon the shrimp mixture into the leaves, placing approximately 2 shrimp in each cup. Spoon any juices over the top and serve."
-    ]
-  },
-  {
-    "title": "Fried Calamari with Smoked Paprika Dip",
-    "category": "Appetizer 2",
-    "yield": "4",
-    "ingredients": [
-      {
-        "amount": 1,
-        "unit": "",
-        "name": "pound basa fillets ( cooked and flaked)"
-      },
-      {
-        "amount": 3,
-        "unit": "",
-        "name": "green onion (diced)"
-      },
-      {
-        "amount": 0,
-        "unit": "",
-        "name": "1 egg"
-      },
-      {
-        "amount": 3,
-        "unit": "",
-        "name": "⁄4 cup panko breadcrumbs"
-      },
-      {
-        "amount": 1,
-        "unit": "",
-        "name": "⁄2 Tablespoon red curry paste"
-      },
-      {
-        "amount": 2,
-        "unit": "tablespoons",
-        "name": "minced cilantro"
-      },
-      {
-        "amount": 2,
-        "unit": "tablespoons",
-        "name": "mayonnaise"
-      },
-      {
-        "amount": 1,
-        "unit": "teaspoon",
-        "name": "minced fresh ginger"
-      },
-      {
-        "amount": 1,
-        "unit": "",
-        "name": "⁄2 lime (juice and zest)"
-      },
-      {
-        "amount": 4,
-        "unit": "tablespoons",
-        "name": "mayonnaise"
-      },
-      {
-        "amount": 1.5,
-        "unit": "teaspoons",
-        "name": "capers (minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "",
-        "name": "⁄4 lime (juice and zest)"
-      },
-      {
-        "amount": 1,
-        "unit": "tablespoon",
-        "name": "minced green onion"
-      },
-      {
-        "amount": 0,
-        "unit": "",
-        "name": "0 salt & pepper"
-      }
-    ],
-    "steps": [
-      "Flake the fish and put into a medium sized bowl.",
-      "Add the egg, mayo, red curry paste, cilantro, green onion, lime juice and zest of lime, and ginger.",
-      "Mix well, then stir in the breadcrumbs.",
-      "Divide the mixture into 4 equal pieces, then roll each piece into a ball then flatten into a patty shape.",
-      "Heat a large skillet to medium heat, then add a bit of oil to the pan.",
-      "When the pan is hot, add the fish cakes and cook for 3-4 minutes on each side.",
-      "To make the tartar sauce, mix together the mayo, minced capers, lime zest and lime juice, and minced green onion then season with sea salt and pepper."
-    ]
-  },
-  {
     "title": "Thai Fish Cakes with Cilantro Dip",
     "category": "Appetizer 2",
     "yield": "4",
@@ -5195,188 +5065,6 @@
       "Lower the heat and simmer just until the potatoes are just tender, about 8-12 minutes. You can cover the pot if you like, but make sure you're cooking at a simmer, not a full boil.",
       "Add the zucchini, summer squash, corn and beans, and bring the soup back to a bubble. Season with salt and black pepper to taste. Add more chipotle or cumin at this point if you like. Cover and let the soup simmer for just a few minutes. You just want to take the raw edge off your veggies. When they taste just barely tender, the soup is finished. Add water if your soup seems too thick.",
       "Serve the soup topped with fresh parsley, and a sprinkle of cheese, if you like."
-    ]
-  },
-  {
-    "title": "3 Sisters Indigenous Soup",
-    "category": "Appetizer 1",
-    "yield": "8",
-    "ingredients": [
-      {
-        "amount": 2,
-        "unit": "tablespoons",
-        "name": "olive oil"
-      },
-      {
-        "amount": 1,
-        "unit": "",
-        "name": "bell pepper (diced)"
-      },
-      {
-        "amount": 6,
-        "unit": "",
-        "name": "garlic cloves (minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "",
-        "name": "to mato (diced)"
-      },
-      {
-        "amount": 3,
-        "unit": "",
-        "name": "yellow crookneck (summer squash, chopped (larger pieces))"
-      },
-      {
-        "amount": 1.5,
-        "unit": "cups",
-        "name": "sweet corn (frozen, fresh, or canned)"
-      },
-      {
-        "amount": 1,
-        "unit": "teaspoon",
-        "name": "dried rubbed sage"
-      },
-      {
-        "amount": 1,
-        "unit": "teaspoon",
-        "name": "ancho chile powder"
-      },
-      {
-        "amount": 0.5,
-        "unit": "teaspoon",
-        "name": "ground coriander"
-      },
-      {
-        "amount": 0.25,
-        "unit": "",
-        "name": "red chili flakes"
-      },
-      {
-        "amount": 1,
-        "unit": "cup",
-        "name": "dry pinto beans (soaked for 3 hours prior)"
-      },
-      {
-        "amount": 4,
-        "unit": "cups",
-        "name": "vegetable broth or water"
-      },
-      {
-        "amount": 1,
-        "unit": "tablespoon",
-        "name": "maple syrup or honey"
-      },
-      {
-        "amount": 1,
-        "unit": "teaspoon",
-        "name": "apple cider vinegar"
-      },
-      {
-        "amount": 0,
-        "unit": "",
-        "name": "0 0 0 sea salt (to taste)"
-      },
-      {
-        "amount": 0,
-        "unit": "",
-        "name": "0 0 0 Optional (to garnish: pumpkin seeds)"
-      }
-    ],
-    "steps": [
-      "Press the ‘Saute’ button on your Instant Pot. Add oil, pepper, garlic. Saute for 5 minutes, stirring frequently. Stir in tomato, squash, and corn. Saute for 1 minute longer. Press ‘Cancel’. Stir in spices, broth/water, and pinto beans. Cook on manual high pressure for 35 minutes. Let the pressure release naturally for 10 minutes before opening the vent. Stir in maple syrup/honey and apple cider vinegar. Salt to taste. Optionally, garnish with pumpkin seeds before serving. Enjoy!",
-      "In a large pot over medium heat add oil, pepper and garlic. Sauté for 5 minutes. Add tomato, squash, corn, sage, ancho chile powder, coriander, optional red chili flakes, beans, and broth/water. Turn heat to high and bring to a boil. Cover, reduce heat to medium-low and simmer for 50 minutes, or until beans are tender, adding more water/broth as needed to maintain soup consistency. Turn off heat, then stir in maple syrup/honey and vinegar. Salt to taste. Top with pumpkin seeds, if using, before serving."
-    ]
-  },
-  {
-    "title": "3 Sisters Indigenous Soup",
-    "category": "Appetizer 1",
-    "yield": "8",
-    "ingredients": [
-      {
-        "amount": 2,
-        "unit": "tablespoons",
-        "name": "olive oil"
-      },
-      {
-        "amount": 1,
-        "unit": "",
-        "name": "bell pepper (diced)"
-      },
-      {
-        "amount": 6,
-        "unit": "",
-        "name": "garlic cloves (minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "",
-        "name": "to mato (diced)"
-      },
-      {
-        "amount": 3,
-        "unit": "",
-        "name": "yellow crookneck (summer squash, chopped (larger pieces))"
-      },
-      {
-        "amount": 1.5,
-        "unit": "cups",
-        "name": "sweet corn (frozen, fresh, or canned)"
-      },
-      {
-        "amount": 1,
-        "unit": "teaspoon",
-        "name": "dried rubbed sage"
-      },
-      {
-        "amount": 1,
-        "unit": "teaspoon",
-        "name": "ancho chile powder"
-      },
-      {
-        "amount": 0.5,
-        "unit": "teaspoon",
-        "name": "ground coriander"
-      },
-      {
-        "amount": 0.25,
-        "unit": "",
-        "name": "red chili flakes"
-      },
-      {
-        "amount": 1,
-        "unit": "cup",
-        "name": "dry pinto beans (soaked for 3 hours prior)"
-      },
-      {
-        "amount": 4,
-        "unit": "cups",
-        "name": "vegetable broth or water"
-      },
-      {
-        "amount": 1,
-        "unit": "tablespoon",
-        "name": "maple syrup or honey"
-      },
-      {
-        "amount": 1,
-        "unit": "teaspoon",
-        "name": "apple cider vinegar"
-      },
-      {
-        "amount": 0,
-        "unit": "",
-        "name": "0 sea salt (to taste)"
-      },
-      {
-        "amount": 0,
-        "unit": "",
-        "name": "0 Optional (to garnish: pumpkin seeds)"
-      }
-    ],
-    "steps": [
-      "Press the ‘Saute’ button on your Instant Pot. Add oil, pepper, garlic. Saute for 5 minutes, stirring frequently. Stir in tomato, squash, and corn. Saute for 1 minute longer. Press ‘Cancel’. Stir in spices, broth/water, and pinto beans. Cook on manual high pressure for 35 minutes. Let the pressure release naturally for 10 minutes before opening the vent. Stir in maple syrup/honey and apple cider vinegar. Salt to taste. Optionally, garnish with pumpkin seeds before serving. Enjoy!",
-      "In a large pot over medium heat add oil, pepper and garlic. Sauté for 5 minutes. Add tomato, squash, corn, sage, ancho chile powder, coriander, optional red chili flakes, beans, and broth/water. Turn heat to high and bring to a boil. Cover, reduce heat to medium-low and simmer for 50 minutes, or until beans are tender, adding more water/broth as needed to maintain soup consistency. Turn off heat, then stir in maple syrup/honey and vinegar. Salt to taste. Top with pumpkin seeds, if using, before serving."
     ]
   },
   {
