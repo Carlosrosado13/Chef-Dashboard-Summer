@@ -15746,5 +15746,86 @@
         }
       ]
     }
+  },
+  {
+    "title": "BRAISED SHORT RIBS WITH RED WINE SAUCE",
+    "category": "Elevated",
+    "yield": "5",
+    "ingredients": [
+      {
+        "amount": 5,
+        "unit": "",
+        "name": "beef short ribs (, 300-400g/10-14oz each (Note 1))"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "each salt and pepper"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "olive oil"
+      },
+      {
+        "amount": 3,
+        "unit": "",
+        "name": "garlic cloves (, crushed)"
+      },
+      {
+        "amount": 1,
+        "unit": "",
+        "name": "large onion (, chopped (brown, yellow or white))"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "celery ribs (, chopped)"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "carrots (, chopped)"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "tomato paste"
+      },
+      {
+        "amount": 2,
+        "unit": "cups",
+        "name": "(500ml) dry red wine ((Note 2))"
+      },
+      {
+        "amount": 2,
+        "unit": "cups",
+        "name": "(500ml) beef stock/broth, low sodium"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "sprigs thyme ((optional))"
+      },
+      {
+        "amount": 2,
+        "unit": "",
+        "name": "bay leaves"
+      }
+    ],
+    "steps": [
+      "Preheat oven to 160°C/325°F.",
+      "Sprinkle beef all over with salt and pepper.",
+      "Heat oil in a large ovenproof pot over high heat. Add half the ribs and brown aggressively all over (~5 - 7 min in total). Remove and repeat with remaining ribs, then remove.",
+      "Turn heat down to medium. Add onion and garlic into the same pot and cook for 2 minutes.",
+      "Add carrot and celery, cook for 5 minutes until carrot is softened and sweet.",
+      "Add tomato paste and cook for 1 minute.",
+      "Add wine, broth, thyme and bay leaves. Stir until tomato paste is dissolved.",
+      "Return beef into liquid, arranging them so they are submerged (Note 3).",
+      "Cover with lid and transfer to oven for 3 hours, or until the meat can easily be pried apart with forks. (Note 4 Other cook methods)",
+      "Remove beef carefully, keeping the meat on the bone. (Note 4) Cover to keep warm.",
+      "Strain all liquid in the pot, pressing juices out of the onion, carrot etc. (Optional - can skip if you don&#039;t mind chunky sauce) Return sauce into pot, bring to simmer and stir. Adjust as necessary - simmer to reduce/thicken, add water to thin, season with salt and pepper if needed.",
+      "Place beef on serving plate, spoon over sauce. Serve!"
+    ]
   }
 ]
