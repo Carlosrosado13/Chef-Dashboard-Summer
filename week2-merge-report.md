@@ -1,87 +1,72 @@
 # Week 2 Merge Report
 
-Completed recipe source: `week2-recipes-complete.json`
-Active recipe database: `data/recipes/sample-recipes.json`
-
-Existing matching placeholder records were updated in the active recipe database. Titles and categories from `sample-recipes.json` were preserved. Ingredients, steps, and yield were replaced from the completed Week 2 package where needed.
+Merged `week2-recipes-rebuilt.json` into `data/recipes/sample-recipes.json`. `data/processed/clean-menu.json` was read for validation only and was not modified.
 
 ## Summary
 
-- Week 2 recipes in completed package: 48
-- Recipes updated: 37
+- Recipes updated: 38
 - Placeholders replaced: 37
-- Recipes already complete: 11
-- Recipes remaining as placeholders: 0
-- Schema issues for Week 2 records: 0
-- Duplicate titles in sample-recipes.json: 0
-- Duplicate IDs in sample-recipes.json: 0
-
-## Recipes Updated
-
-| Index | Completed Package Title | Sample Recipe Title | Category | Match Type | Ingredients Before | Ingredients After | Steps Before | Steps After | Yield Before | Yield After | Placeholder After |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 80 | COCONUT SHRIMP WITH LIME DIP | COCONUT SHRIMP WITH LIME DIP | Appetizer 1 | Exact title | 1 | 13 | 1 | 5 | 24 servings | 24 servings | No |
-| 81 | CARROT AND ORANGE SOUP | CARROT AND ORANGE SOUP | Appetizer 2 | Exact title | 1 | 12 | 1 | 5 | 24 servings | 24 servings | No |
-| 82 | MAPLE GLAZED SALMON FILET WITH | MAPLE GLAZED SALMON FILET WITH | Elevated | Exact title | 1 | 10 | 1 | 5 | 24 servings | 24 servings | No |
-| 83 | CHICKEN CORDON BLEU | CHICKEN CORDON BLEU | Comfort | Exact title | 1 | 12 | 1 | 5 | 24 servings | 24 servings | No |
-| 84 | ROAST CHICKEN WITH PAPRIKA | ROAST CHICKEN WITH PAPRIKA | Alternative | Exact title | 1 | 10 | 1 | 5 | 24 servings | 24 servings | No |
-| 88 | BLACK FOREST CAKE | BLACK FOREST CAKE | Dessert | Exact title | 1 | 8 | 1 | 5 | 24 servings | 24 servings | No |
-| 89 | ROASTED RED PEPPER HUMMUS AND PITA | ROASTED RED PEPPER HUMMUS AND PITA | Appetizer 1 | Exact title | 1 | 10 | 1 | 5 | 24 servings | 24 servings | No |
-| 90 | SPICY TUNA AND CRISPY RICE CRACKER | SPICY TUNA AND CRISPY RICE CRACKER | Appetizer 2 | Exact title | 1 | 11 | 1 | 5 | 24 servings | 24 servings | No |
-| 91 | SEARED HALIBUT WITH CHERRY TOMATO&OLIVE | SEARED HALIBUT WITH CHERRY TOMATO&OLIVE | Elevated | Exact title | 1 | 12 | 1 | 5 | 24 servings | 24 servings | No |
-| 95 | PEACH FRIED PIES | PEACH FRIED PIES | Dessert | Exact title | 1 | 10 | 1 | 5 | 24 servings | 24 servings | No |
-| 96 | SHAVED FENNEL AND ORANGE SALAD | SHAVED FENNEL AND ORANGE SALAD | Appetizer 1 | Exact title | 1 | 11 | 1 | 5 | 24 servings | 24 servings | No |
-| 97 | CUCUMBER AND DILL SALAD | CUCUMBER AND DILL SALAD | Appetizer 2 | Exact title | 1 | 9 | 1 | 5 | 24 servings | 24 servings | No |
-| 98 | CHICKEN MARSALA IN MUSHROOM SAUCE | CHICKEN MARSALA IN MUSHROOM SAUCE | Elevated | Exact title | 1 | 11 | 1 | 5 | 24 servings | 24 servings | No |
-| 99 | OPEN FACED ROAST BEEF DIP | OPEN FACED ROAST BEEF DIP | Comfort | Exact title | 1 | 10 | 1 | 5 | 24 servings | 24 servings | No |
-| 100 | LEMON BAKED COD | LEMON BAKED COD | Alternative | Exact title | 1 | 11 | 1 | 5 | 24 servings | 24 servings | No |
-| 102 | GARLIC MASHED POTATOES | GARLIC MASHED POTATOES | Starch | Exact title | 1 | 8 | 1 | 5 | 24 servings | 24 servings | No |
-| 103 | BANANA CREAM PIE | BANANA CREAM PIE | Dessert | Exact title | 1 | 10 | 1 | 5 | 24 servings | 24 servings | No |
-| 104 | CORN CHOWDER | CORN CHOWDER | Appetizer 1 | Exact title | 1 | 11 | 1 | 5 | 24 servings | 24 servings | No |
-| 105 | MANGO AND AVOCADO SALAD | MANGO AND AVOCADO SALAD | Appetizer 2 | Exact title | 1 | 10 | 1 | 5 | 24 servings | 24 servings | No |
-| 106 | VEAL SHANK WITH NATURAL JUS | VEAL SHANK WITH NATURAL JUS | Elevated | Exact title | 1 | 12 | 1 | 5 | 24 servings | 24 servings | No |
-| 107 | CHICKEN PARMESAN | CHICKEN PARMESAN | Comfort | Exact title | 1 | 10 | 1 | 5 | 24 servings | 24 servings | No |
-| 108 | SEARED SCALLOPS WITH SQUASH PUREE | SEARED SCALLOPS WITH SQUASH PUREE | Alternative | Exact title | 1 | 11 | 1 | 5 | 24 servings | 24 servings | No |
-| 111 | SMOKED SALMON CUCUMBER BITES | SMOKED SALMON CUCUMBER BITES | Appetizer 1 | Exact title | 1 | 9 | 1 | 5 | 24 servings | 24 servings | No |
-| 112 | GAZPACHO SOUP | GAZPACHO SOUP | Appetizer 2 | Exact title | 1 | 11 | 1 | 5 | 24 servings | 24 servings | No |
-| 113 | TURKEY ROULADE WITH SPINACH&SUNDRIED TOMATO                     (GF/DF) | TURKEY ROULADE WITH SPINACH&SUNDRIED TOMATO                     (GF/DF) | Elevated | Exact title | 1 | 11 | 1 | 5 | 24 servings | 24 servings | No |
-| 114 | SPAGHETTI AND MEATBALLS IN MARINARA | SPAGHETTI AND MEATBALLS IN MARINARA | Comfort | Exact title | 1 | 11 | 1 | 5 | 24 servings | 24 servings | No |
-| 120 | GRILLED ZUCCHINI ROLLUP WITH RICOTTA | GRILLED ZUCCHINI ROLLUP WITH RICOTTA | Appetizer 1 | Exact title | 1 | 10 | 1 | 5 | 24 servings | 24 servings | No |
-| 121 | BACON AND CLAM FLATBREAD | BACON AND CLAM FLATBREAD | Appetizer 2 | Exact title | 1 | 10 | 1 | 5 | 24 servings | 24 servings | No |
-| 122 | RED WINE BRAISED BEEF BRISKET | RED WINE BRAISED BEEF BRISKET | Elevated | Exact title | 1 | 12 | 1 | 5 | 24 servings | 24 servings | No |
-| 124 | WILD MUSHROOM TART WITH GOAT CHEESE | WILD MUSHROOM TART WITH GOAT CHEESE | Alternative | Exact title | 1 | 11 | 1 | 5 | 24 servings | 24 servings | No |
-| 125 | ROASTED MEXICAN STREET CORN | ROASTED MEXICAN STREET CORN | Veggie 1 | Exact title | 1 | 10 | 1 | 5 | 24 servings | 24 servings | No |
-| 128 | KEY LIME PIE | KEY LIME PIE | Dessert | Exact title | 1 | 8 | 1 | 5 | 24 servings | 24 servings | No |
-| 129 | ZUCCHINI FRITTERS WITH DIP | ZUCCHINI FRITTERS WITH DIP | Appetizer 1 | Exact title | 1 | 11 | 1 | 5 | 24 servings | 24 servings | No |
-| 130 | SOBA NOODLE SALAD | SOBA NOODLE SALAD | Appetizer 2 | Exact title | 1 | 12 | 1 | 5 | 24 servings | 24 servings | No |
-| 132 | ROASTED CHICKEN BREAST IN CREAMY SUNDRIED TOMATO SAUCE | ROASTED CHICKEN BREAST IN CREAMY SUNDRIED TOMATO SAUCE | Comfort | Exact title | 1 | 11 | 1 | 5 | 24 servings | 24 servings | No |
-| 133 | SEARED SALMON WITH BASIL PESTO SAUCE | SEARED SALMON WITH BASIL PESTO SAUCE | Alternative | Exact title | 1 | 10 | 1 | 5 | 24 servings | 24 servings | No |
-| 136 | PEACH COBBLER | PEACH COBBLER | Dessert | Exact title | 1 | 11 | 1 | 5 | 24 servings | 24 servings | No |
-
-## Recipes Already Complete
-
-| Index | Completed Package Title | Sample Recipe Title | Category | Ingredients | Steps | Yield | Match Type |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 92 | PASTA WITH SUMMER VEGETABLES WITH LEMON PARMESAN SAUCE | PASTA WITH SUMMER VEGETABLES WITH LEMON PARMESAN SAUCE | Comfort | 14 | 6 | 24 servings | Exact title |
-| 21 | SAUTEED SHRIMP WITH GARLIC, WHITE WINE & FRESH DICED TOMATO | Sauteed Shrimp with Garlic, White Wine and Fresh Diced Tomato | Alternative | 8 | 6 | 24 portions | Normalized title |
-| 110 | ANCIENT GRAINS | ANCIENT GRAINS | Starch | 11 | 6 | 24 servings | Exact title |
-| 115 | GRILLED TILAPIA WITH BALSAMIC ONION SAUCE | GRILLED TILAPIA WITH BALSAMIC ONION SAUCE | Alternative | 12 | 5 | 24 servings | Exact title |
-| 116 | BROCCOLINI WITH GARLIC CONFIT | BROCCOLINI WITH GARLIC CONFIT | Veggie 1 | 4 | 6 | 24 servings | Exact title |
-| 117 | SUMAC SPICED ROASTED CARROT CHUNKS | SUMAC SPICED ROASTED CARROT CHUNKS | Veggie 2 | 6 | 5 | 24 servings | Exact title |
-| 118 | HERB AND CREAM CHEESE POLENTA | HERB AND CREAM CHEESE POLENTA | Starch | 9 | 5 | 24 servings | Exact title |
-| 119 | LEMON BREAD WITH ICING | LEMON BREAD WITH ICING | Dessert | 12 | 6 | 24 servings | Exact title |
-| 123 | ROASTED PORK TENDERLOIN WITH OLIVE AND FETA SALSA | ROASTED PORK TENDERLOIN WITH OLIVE AND FETA SALSA | Comfort | 12 | 6 | 24 servings | Exact title |
-| 126 | BRAISED BEAN CASSOULET | BRAISED BEAN CASSOULET | Veggie 2 | 16 | 6 | 24 servings | Exact title |
-| 131 | SHRIMP LINGUINI WITH SAFFRON SAUCE AND PEPPERED GREENS | SHRIMP LINGUINI WITH SAFFRON SAUCE AND PEPPERED GREENS | Elevated | 16 | 8 | 24 servings | Exact title |
-
-## Recipes Remaining As Placeholders
-
-_None._
+- Low-quality recipes replaced: 37
+- Final recipe count: 379
+- Missing rebuilt titles in sample file: 0
+- Remaining Week 2 placeholders among merged rebuilt titles: 0
+- Remaining Week 2 low-quality boilerplate among merged rebuilt titles: 0
+- Remaining Week 2 placeholders across all Week 2 menu-linked recipes: 53
 
 ## Validation
 
-- Valid JSON: yes
-- No placeholder text remains for Week 2 completed-package records: yes
-- Week 2 schema valid: yes
-- No duplicate titles: yes
-- No duplicate IDs: yes (no recipe ID fields present in active schema)
+- Duplicate titles: 0
+- Duplicate IDs: 0 (no recipe id fields present)
+- Schema valid: yes
+- Menu assignments modified: no
+- clean-menu.json modified: no
+- Titles/categories/yields preserved for updated recipes: yes
+
+## Placeholder Count
+
+- Week 2 placeholders before merge across all Week 2 menu-linked recipes: 90
+- Week 2 placeholders after merge across rebuilt URL-origin recipes: 0
+- Week 2 placeholders after merge across all Week 2 menu-linked recipes: 53
+
+## Updated Recipes
+
+| Title | Ingredients | Steps | Placeholder replaced | Low-quality replaced |
+| --- | ---: | ---: | --- | --- |
+| COCONUT SHRIMP WITH LIME DIP | 12 | 15 | yes | yes |
+| CARROT AND ORANGE SOUP | 8 | 9 | yes | yes |
+| MAPLE GLAZED SALMON FILET WITH | 5 | 3 | yes | yes |
+| CHICKEN CORDON BLEU | 10 | 8 | yes | yes |
+| ROAST CHICKEN WITH PAPRIKA | 8 | 7 | yes | yes |
+| BLACK FOREST CAKE | 16 | 11 | yes | yes |
+| ROASTED RED PEPPER HUMMUS AND PITA | 10 | 14 | yes | yes |
+| SPICY TUNA AND CRISPY RICE CRACKER | 11 | 6 | yes | yes |
+| SEARED HALIBUT WITH CHERRY TOMATO&OLIVE | 11 | 3 | yes | yes |
+| Sauteed Shrimp with Garlic, White Wine and Fresh Diced Tomato | 8 | 5 | no | no |
+| PEACH FRIED PIES | 15 | 25 | yes | yes |
+| SHAVED FENNEL AND ORANGE SALAD | 6 | 5 | yes | yes |
+| CUCUMBER AND DILL SALAD | 10 | 4 | yes | yes |
+| CHICKEN MARSALA IN MUSHROOM SAUCE | 13 | 19 | yes | yes |
+| OPEN FACED ROAST BEEF DIP | 15 | 9 | yes | yes |
+| LEMON BAKED COD | 12 | 8 | yes | yes |
+| GARLIC MASHED POTATOES | 6 | 7 | yes | yes |
+| BANANA CREAM PIE | 15 | 44 | yes | yes |
+| CORN CHOWDER | 7 | 5 | yes | yes |
+| MANGO AND AVOCADO SALAD | 11 | 3 | yes | yes |
+| VEAL SHANK WITH NATURAL JUS | 15 | 17 | yes | yes |
+| CHICKEN PARMESAN | 12 | 8 | yes | yes |
+| SEARED SCALLOPS WITH SQUASH PUREE | 15 | 16 | yes | yes |
+| SMOKED SALMON CUCUMBER BITES | 8 | 5 | yes | yes |
+| GAZPACHO SOUP | 10 | 6 | yes | yes |
+| TURKEY ROULADE WITH SPINACH&SUNDRIED TOMATO                     (GF/DF) | 8 | 7 | yes | yes |
+| SPAGHETTI AND MEATBALLS IN MARINARA | 25 | 28 | yes | yes |
+| GRILLED ZUCCHINI ROLLUP WITH RICOTTA | 8 | 7 | yes | yes |
+| BACON AND CLAM FLATBREAD | 12 | 13 | yes | yes |
+| RED WINE BRAISED BEEF BRISKET | 9 | 7 | yes | yes |
+| WILD MUSHROOM TART WITH GOAT CHEESE | 12 | 14 | yes | yes |
+| ROASTED MEXICAN STREET CORN | 6 | 5 | yes | yes |
+| KEY LIME PIE | 9 | 17 | yes | yes |
+| ZUCCHINI FRITTERS WITH DIP | 16 | 11 | yes | yes |
+| SOBA NOODLE SALAD | 14 | 5 | yes | yes |
+| ROASTED CHICKEN BREAST IN CREAMY SUNDRIED TOMATO SAUCE | 12 | 10 | yes | yes |
+| SEARED SALMON WITH BASIL PESTO SAUCE | 10 | 9 | yes | yes |
+| PEACH COBBLER | 16 | 8 | yes | yes |
