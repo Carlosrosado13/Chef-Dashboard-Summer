@@ -1,0 +1,1195 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+<script type="text/javascript">
+/* <![CDATA[ */
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+/* ]]> */
+</script>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta class="foundation-mq">
+
+	<!-- If Site Icon isn't set in customizer -->
+	
+	<!-- Adobe Fonts Nove -->
+	<link rel="stylesheet" href="https://use.typekit.net/blu3why.css">
+
+	<link rel="preconnect" href="https://cdn.pricespider.com" />
+	<link rel="preload" href="https://chickenofthesea.com/wp-content/themes/cos-custom/webFonts/BaileySansITCProBold/font.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="https://chickenofthesea.com/wp-content/themes/cos-custom/webFonts/EastmanCompressedBold/font.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="https://chickenofthesea.com/wp-content/themes/cos-custom/webFonts/BaileySansITCProBookItalic/font.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="https://chickenofthesea.com/wp-content/themes/cos-custom/webFonts/BaileySansITCProBook/font.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="https://chickenofthesea.com/wp-content/themes/cos-custom/webFonts/BaileySansITCProBoldItalic/font.woff2" as="font" type="font/woff2" crossorigin>
+	<script id="mcjs">
+		! function(c, h, i, m, p) {
+			m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+		}(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/262e497b299bfb621d2377ab8/ed236cda7f73796660cc1d249.js");
+	</script>
+	<!--PriceSpider-->
+	<meta name="ps-key" content="4044-5f285362fa30f501f2c3e20c">
+	<meta name="ps-country" content="US" />
+	<meta name="ps-language" content="en" />
+	<script src="//cdn.pricespider.com/1/lib/ps-widget.js" async></script>
+
+	<!--BazaarVoice-->
+			<script async src="https://apps.bazaarvoice.com/deployments/chickenofthesea/main_site/production/en_US/bv.js"></script>
+	
+	<!--Google Tag Manager-->
+	<script>
+		/*
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'analytics_storage': 'denied',
+			'personalization_storage': 'denied',
+			'security_storage': 'granted'
+		});
+		*/
+	</script>
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-NTG2W4');
+	</script>
+	<!-- End Google Tag Manager -->
+
+	<title>White Clam Flatbread with Herbs | Chicken of the Sea</title>
+<meta name="description" content="Tender clams, crispy bacon, and a creamy sauce are the perfect combo for a tasty appetizer or satisfying lunch.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://chickenofthesea.com/seafood-recipes/white-clam-flatbread-with-herbs/">
+<meta property="og:url" content="https://chickenofthesea.com/seafood-recipes/white-clam-flatbread-with-herbs/">
+<meta property="og:site_name" content="Chicken of the Sea">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="article:author" content="https://www.facebook.com/ChickenoftheSea">
+<meta property="article:publisher" content="https://www.facebook.com/ChickenoftheSea">
+<meta property="og:title" content="White Clam Flatbread with Herbs | Chicken of the Sea">
+<meta property="og:description" content="Tender clams, crispy bacon, and a creamy sauce are the perfect combo for a tasty appetizer or satisfying lunch.">
+<meta property="og:image" content="https://chickenofthesea.com/wp-content/uploads/2022/04/White-Clam-Flatbread-with-Herbs.jpg">
+<meta property="og:image:secure_url" content="https://chickenofthesea.com/wp-content/uploads/2022/04/White-Clam-Flatbread-with-Herbs.jpg">
+<meta property="og:image:width" content="1440">
+<meta property="og:image:height" content="1200">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="White Clam Flatbread with Herbs | Chicken of the Sea">
+<meta name="twitter:description" content="Tender clams, crispy bacon, and a creamy sauce are the perfect combo for a tasty appetizer or satisfying lunch.">
+<meta name="twitter:image" content="https://chickenofthesea.com/wp-content/uploads/2022/04/White-Clam-Flatbread-with-Herbs.jpg">
+<link rel='dns-prefetch' href='//a.omappapi.com' />
+<link rel="alternate" type="application/rss+xml" title="Chicken of the Sea &raquo; Feed" href="https://chickenofthesea.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Chicken of the Sea &raquo; Comments Feed" href="https://chickenofthesea.com/comments/feed/" />
+		<script type="application/ld+json">{"@context":"https:\/\/schema.org","name":"Breadcrumb","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","id":"https:\/\/chickenofthesea.com\/seafood-recipes\/#webpage","url":"https:\/\/chickenofthesea.com\/seafood-recipes\/","name":"Recipes"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","id":"https:\/\/chickenofthesea.com\/blog\/recipes-by-seafood\/clams\/#webpage","url":"https:\/\/chickenofthesea.com\/blog\/recipes-by-seafood\/clams\/","name":"Clams"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","id":"https:\/\/chickenofthesea.com\/seafood-recipes\/white-clam-flatbread-with-herbs\/#webpage","url":"https:\/\/chickenofthesea.com\/seafood-recipes\/white-clam-flatbread-with-herbs\/","name":"White Clam Flatbread with Herbs"}}]}</script>
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://chickenofthesea.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchickenofthesea.com%2Fseafood-recipes%2Fwhite-clam-flatbread-with-herbs%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://chickenofthesea.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fchickenofthesea.com%2Fseafood-recipes%2Fwhite-clam-flatbread-with-herbs%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-block-library-inline-css' type='text/css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--deep-sea-blue: #00248a;--wp--preset--color--blue: #47aaeb;--wp--preset--color--aqua: #a9dee6;--wp--preset--color--sea-foam-green: #2bc786;--wp--preset--color--mint-green: #c1f0cb;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--system-fonts: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;--wp--preset--font-family--baileysans: BaileySansITCPro, sans-serif;--wp--preset--font-family--eastman: EastmanCompressed-Bold, sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 1200px;--wp--style--global--wide-size: 1400px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-deep-sea-blue-color{color: var(--wp--preset--color--deep-sea-blue) !important;}.has-blue-color{color: var(--wp--preset--color--blue) !important;}.has-aqua-color{color: var(--wp--preset--color--aqua) !important;}.has-sea-foam-green-color{color: var(--wp--preset--color--sea-foam-green) !important;}.has-mint-green-color{color: var(--wp--preset--color--mint-green) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-deep-sea-blue-background-color{background-color: var(--wp--preset--color--deep-sea-blue) !important;}.has-blue-background-color{background-color: var(--wp--preset--color--blue) !important;}.has-aqua-background-color{background-color: var(--wp--preset--color--aqua) !important;}.has-sea-foam-green-background-color{background-color: var(--wp--preset--color--sea-foam-green) !important;}.has-mint-green-background-color{background-color: var(--wp--preset--color--mint-green) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-deep-sea-blue-border-color{border-color: var(--wp--preset--color--deep-sea-blue) !important;}.has-blue-border-color{border-color: var(--wp--preset--color--blue) !important;}.has-aqua-border-color{border-color: var(--wp--preset--color--aqua) !important;}.has-sea-foam-green-border-color{border-color: var(--wp--preset--color--sea-foam-green) !important;}.has-mint-green-border-color{border-color: var(--wp--preset--color--mint-green) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-system-fonts-font-family{font-family: var(--wp--preset--font-family--system-fonts) !important;}.has-baileysans-font-family{font-family: var(--wp--preset--font-family--baileysans) !important;}.has-eastman-font-family{font-family: var(--wp--preset--font-family--eastman) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<style id='wpgb-head-inline-css' type='text/css'>
+.wp-grid-builder:not(.wpgb-template),.wpgb-facet{opacity:0.01}.wpgb-facet fieldset{margin:0;padding:0;border:none;outline:none;box-shadow:none}.wpgb-facet fieldset:last-child{margin-bottom:40px;}.wpgb-facet fieldset legend.wpgb-sr-only{height:1px;width:1px}
+/*# sourceURL=wpgb-head-inline-css */
+</style>
+<link rel='stylesheet' id='theme-style-css' href='https://chickenofthesea.com/wp-content/themes/cos-custom/style.min.css?ver=1770406570' type='text/css' media='all' />
+<script type="text/javascript" defer data-cfasync='false' data-no-minify="true" data-no-optimize="1" data-noptimize="1" src="//chickenofthesea.com/wp-content/uploads/705520c479/pa-QhyWVI6BVmiraS7CNmnpd.js" id="plausible-analytics-js"></script>
+<script type="text/javascript" id="plausible-analytics-js-after">
+/* <![CDATA[ */
+window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+plausible.init({"endpoint":"https:\/\/chickenofthesea.com\/wp-json\/18fa83\/v1\/119f\/f7bdbfa7"});
+//# sourceURL=plausible-analytics-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="plausible-form-submit-integration-js-extra">
+/* <![CDATA[ */
+var plausible_analytics_i18n = {"form_completions":"WP Form Completions"};
+//# sourceURL=plausible-form-submit-integration-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://chickenofthesea.com/wp-content/plugins/plausible-analytics/assets/dist/js/plausible-form-submit-integration.js?ver=1776788331" id="plausible-form-submit-integration-js"></script>
+<script type="text/javascript" src="https://chickenofthesea.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://chickenofthesea.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://chickenofthesea.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://chickenofthesea.com/wp-json/wp/v2/recipes/1750" /><link rel='shortlink' href='https://chickenofthesea.com/?p=1750' />
+<noscript><style>.wp-grid-builder .wpgb-card.wpgb-card-hidden .wpgb-card-wrapper{opacity:1!important;visibility:visible!important;transform:none!important}.wpgb-facet {opacity:1!important;pointer-events:auto!important}.wpgb-facet *:not(.wpgb-pagination-facet){display:none}</style></noscript><style>.breadcrumb {list-style:none;margin:0;padding-inline-start:0;}.breadcrumb li {margin:0;display:inline-block;position:relative;}.breadcrumb li::after{content:' - ';margin-left:5px;margin-right:5px;}.breadcrumb li:last-child::after{display:none}</style><link rel="icon" href="https://chickenofthesea.com/wp-content/uploads/2022/08/ico-full-mermaid.png" sizes="32x32" />
+<link rel="icon" href="https://chickenofthesea.com/wp-content/uploads/2022/08/ico-full-mermaid.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://chickenofthesea.com/wp-content/uploads/2022/08/ico-full-mermaid.png" />
+<meta name="msapplication-TileImage" content="https://chickenofthesea.com/wp-content/uploads/2022/08/ico-full-mermaid.png" />
+
+</head>
+
+
+<body class="wp-singular recipes-template-default single single-recipes postid-1750 wp-embed-responsive wp-theme-cos-custom">
+
+	
+	<a class="screen-reader-text" href="#content">Skip to main content</a>
+
+	<header class="header">
+
+		<div class="header__top">
+
+			<div class="header__top-inner grid-container">
+
+				<div class="header__top-content grid-x grid-padding-x">
+
+					<div class="header__top-message cell shrink"></div>
+
+					<div class="header__top-nav cell auto align-right">
+						<ul id="menu-top-menu" class="menu"><li id="menu-item-4571" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4571"><a target="_blank" href="https://trace.chickenofthesea.com/a/ryCn4sx9?code=undefined&#038;utm_source=site">Trace Products</a></li>
+<li id="menu-item-3796" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3796"><a target="_blank" href="https://b2b.chickenofthesea.com/foodservice/">Foodservice</a></li>
+<li id="menu-item-229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-229"><a href="https://chickenofthesea.com/company/contact-us/">Contact</a></li>
+</ul>					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="header__bottom">
+
+			<div class="header__bottom-inner grid-container">
+
+				<div class="header__bottom-content grid-x grid-padding-x">
+
+					<div class="header__bottom-logo cell">
+						<a href="https://chickenofthesea.com/">Chicken of the Sea</a>
+					</div>
+
+					<div class="header__bottom-nav cell grid-x">
+
+						<nav class="header__bottom-nav-menu cell shrink">
+
+  <ul class="nav-menu" id="cosMegaMenu">
+          <li class="nav-menu__item menu-item-222  nav-menu__item--has-mega ">
+
+        <a href="https://chickenofthesea.com/products/" id="cosMegaMenu1" title="Products"
+                     aria-controls="cosMegaMenuSubnav1"  class="nav-menu__l1-link" >
+                      Products                  </a>
+                  <div class="nav-menu__subnav" aria-labelledby="cosMegaMenu1" id="cosMegaMenuSubnav1">
+
+            <div class="nav-menu__subnav-inner">
+
+                              <div class="nav-menu__subnav-group nav-menu__subnav-group--large">
+
+                  <!-- if there is a promo image, headline, and CTA, display it -->
+                                                          <div href="/packet-up-packet-in" class="nav-menu__subnav-products-promo">
+                      <a href="/packet-up-packet-in" class="nav-menu__subnav-products-promo-link">
+                        <img src="https://chickenofthesea.com/wp-content/uploads/2025/10/CoS_NEW_OldBay_FranksRedHot_ProductMenu.png" alt="" />
+                        <h3>Try Our New Tuna Packet Flavors</h3>
+                      </a>
+                      <a class="nav-menu__subnav-products-promo-btn bubble-button bubble-button--seafoam" href="/products" title="Sea All Products" ><span><span>Sea All Products</span></span></a>
+                    </div>
+                  
+                  <div class="nav-menu__subnav-products">
+
+                    <div class="nav-menu__subnav-products-wrapper">
+
+                                                <div class="nav-menu__subnav-products-card">
+
+                            <a href="https://chickenofthesea.com/products/?_product_category=tuna">
+                              <div class="nav-menu__subnav-products-product-types">
+
+                                <div class="product-card__image">
+                                  <img src="https://chickenofthesea.com/wp-content/uploads/2025/05/tuna_productmenu.png" alt="" />
+                                </div>
+
+                                <h3><span>Tuna</span></h3>
+
+                              </div>
+                            </a>
+
+                          </div>
+                                                <div class="nav-menu__subnav-products-card">
+
+                            <a href="https://chickenofthesea.com/products/?_product_category=salmon">
+                              <div class="nav-menu__subnav-products-product-types">
+
+                                <div class="product-card__image">
+                                  <img src="https://chickenofthesea.com/wp-content/uploads/2025/03/salmon_updated1x.png" alt="" />
+                                </div>
+
+                                <h3><span>Salmon</span></h3>
+
+                              </div>
+                            </a>
+
+                          </div>
+                                                <div class="nav-menu__subnav-products-card">
+
+                            <a href="https://chickenofthesea.com/products/?_product_category=sardines">
+                              <div class="nav-menu__subnav-products-product-types">
+
+                                <div class="product-card__image">
+                                  <img src="https://chickenofthesea.com/wp-content/uploads/2024/08/CoS_productmenu_sardines-1.png" alt="" />
+                                </div>
+
+                                <h3><span>Sardines</span></h3>
+
+                              </div>
+                            </a>
+
+                          </div>
+                                                <div class="nav-menu__subnav-products-card">
+
+                            <a href="https://chickenofthesea.com/products/?_product_category=mackerel">
+                              <div class="nav-menu__subnav-products-product-types">
+
+                                <div class="product-card__image">
+                                  <img src="https://chickenofthesea.com/wp-content/uploads/2025/05/mackerel.png" alt="" />
+                                </div>
+
+                                <h3><span>Mackerel</span></h3>
+
+                              </div>
+                            </a>
+
+                          </div>
+                                                <div class="nav-menu__subnav-products-card">
+
+                            <a href="https://chickenofthesea.com/products/?_product_category=oysters">
+                              <div class="nav-menu__subnav-products-product-types">
+
+                                <div class="product-card__image">
+                                  <img src="https://chickenofthesea.com/wp-content/uploads/2024/08/CoS_productmenu_oysters-2.png" alt="" />
+                                </div>
+
+                                <h3><span>Oysters</span></h3>
+
+                              </div>
+                            </a>
+
+                          </div>
+                                                <div class="nav-menu__subnav-products-card">
+
+                            <a href="https://chickenofthesea.com/products/?_product_category=crab">
+                              <div class="nav-menu__subnav-products-product-types">
+
+                                <div class="product-card__image">
+                                  <img src="https://chickenofthesea.com/wp-content/uploads/2024/08/CoS_productmenu_crab-1.png" alt="" />
+                                </div>
+
+                                <h3><span>Crab</span></h3>
+
+                              </div>
+                            </a>
+
+                          </div>
+                                                <div class="nav-menu__subnav-products-card">
+
+                            <a href="https://chickenofthesea.com/products/?_product_category=clams">
+                              <div class="nav-menu__subnav-products-product-types">
+
+                                <div class="product-card__image">
+                                  <img src="https://chickenofthesea.com/wp-content/uploads/2026/03/crab-productmenu-update-1.png" alt="" />
+                                </div>
+
+                                <h3><span>Clams</span></h3>
+
+                              </div>
+                            </a>
+
+                          </div>
+                                                <div class="nav-menu__subnav-products-card">
+
+                            <a href="https://chickenofthesea.com/products/?_product_category=shrimp">
+                              <div class="nav-menu__subnav-products-product-types">
+
+                                <div class="product-card__image">
+                                  <img src="https://chickenofthesea.com/wp-content/uploads/2025/04/shrimp.png" alt="" />
+                                </div>
+
+                                <h3><span>Shrimp</span></h3>
+
+                              </div>
+                            </a>
+
+                          </div>
+                      
+                    </div>
+
+                  </div>
+
+                </div>
+              
+            </div>
+
+          </div>
+              </li>
+          <li class="nav-menu__item menu-item-2994  nav-menu__item--narrow">
+
+        <a href="https://chickenofthesea.com/all-recipes/" id="cosMegaMenu2" title="Recipes"
+                     class="nav-menu__l1-link" >
+                      Recipes                  </a>
+              </li>
+          <li class="nav-menu__item menu-item-334  nav-menu__item--has-mega nav-menu__item--narrow">
+
+        <a href="https://chickenofthesea.com/company/" id="cosMegaMenu3" title="About Us"
+                     aria-controls="cosMegaMenuSubnav3"  class="nav-menu__l1-link" >
+                      About Us                  </a>
+                  <div class="nav-menu__subnav" aria-labelledby="cosMegaMenu3" id="cosMegaMenuSubnav3">
+
+            <div class="nav-menu__subnav-inner">
+
+              
+                <div class="nav-menu__subnav-group">
+
+
+                  <ul>
+                                          <li>
+                        <a href="https://chickenofthesea.com/company/" title="Our Story" >Our Story</a>
+                      </li>
+                                          <li>
+                        <a href="https://chickenofthesea.com/company/careers/" title="Careers" >Careers</a>
+                      </li>
+                                          <li>
+                        <a href="https://chickenofthesea.com/company/faqs/" title="FAQs" >FAQs</a>
+                      </li>
+                                          <li>
+                        <a href="https://chickenofthesea.com/company/contact-us/" title="Contact" >Contact</a>
+                      </li>
+                                      </ul>
+
+                </div>
+
+
+
+              
+            </div>
+
+          </div>
+              </li>
+          <li class="nav-menu__item menu-item-2948  nav-menu__item--has-mega nav-menu__item--narrow">
+
+        <a href="https://chickenofthesea.com/sustainability/" id="cosMegaMenu4" title="Sustainability"
+                     aria-controls="cosMegaMenuSubnav4"  class="nav-menu__l1-link" >
+                      Sustainability                  </a>
+                  <div class="nav-menu__subnav" aria-labelledby="cosMegaMenu4" id="cosMegaMenuSubnav4">
+
+            <div class="nav-menu__subnav-inner">
+
+              
+                <div class="nav-menu__subnav-group">
+
+
+                  <ul>
+                                          <li>
+                        <a href="https://chickenofthesea.com/sustainability/" title="Sustainability for Good" >Sustainability for Good</a>
+                      </li>
+                                          <li>
+                        <a href="https://chickenofthesea.com/shrimpwithapurpose/" title="Shrimp With a Purpose" >Shrimp With a Purpose</a>
+                      </li>
+                                          <li>
+                        <a href="https://trace.chickenofthesea.com/a/ryCn4sx9?code=undefined&utm_source=site" title="Trace Products"  target="_blank" rel="noopener">Trace Products</a>
+                      </li>
+                                          <li>
+                        <a href="https://chickenofthesea.com/supplier-code-of-conduct/" title="Supplier CoC" >Supplier CoC</a>
+                      </li>
+                                          <li>
+                        <a href="https://chickenofthesea.com/wp-content/uploads/2023/12/Thai-Union-Vessel-Code-of-Conduct.pdf" title="Fishing Vessel CoC"  target="_blank" rel="noopener">Fishing Vessel CoC</a>
+                      </li>
+                                      </ul>
+
+                </div>
+
+
+
+              
+            </div>
+
+          </div>
+              </li>
+          <li class="nav-menu__item menu-item-219  nav-menu__item--has-mega nav-menu__item--narrow">
+
+        <a href="https://chickenofthesea.com/blog/" id="cosMegaMenu5" title="Blog"
+                     aria-controls="cosMegaMenuSubnav5"  class="nav-menu__l1-link" >
+                      Blog                  </a>
+                  <div class="nav-menu__subnav" aria-labelledby="cosMegaMenu5" id="cosMegaMenuSubnav5">
+
+            <div class="nav-menu__subnav-inner">
+
+              
+                <div class="nav-menu__subnav-group">
+
+
+                  <ul>
+                                          <li>
+                        <a href="https://chickenofthesea.com/blog/" title="All Articles" >All Articles</a>
+                      </li>
+                                          <li>
+                        <a href="https://chickenofthesea.com/blog/?_categories=entertaining" title="Entertaining" >Entertaining</a>
+                      </li>
+                                          <li>
+                        <a href="https://chickenofthesea.com/blog/?_categories=meal-prep" title="Meal Prep" >Meal Prep</a>
+                      </li>
+                                          <li>
+                        <a href="https://chickenofthesea.com/blog/?_categories=news" title="News" >News</a>
+                      </li>
+                                          <li>
+                        <a href="https://chickenofthesea.com/blog/?_categories=trends-updates" title="Trends & Updates" >Trends & Updates</a>
+                      </li>
+                                          <li>
+                        <a href="https://chickenofthesea.com/blog/?_categories=wellness" title="Wellness" >Wellness</a>
+                      </li>
+                                          <li>
+                        <a href="https://chickenofthesea.com/glp-1-and-seafood/" title="GLP-1 and Seafood" >GLP-1 and Seafood</a>
+                      </li>
+                                      </ul>
+
+                </div>
+
+
+
+              
+            </div>
+
+          </div>
+              </li>
+          <li class="nav-menu__item menu-item-4646  nav-menu__item--narrow">
+
+        <a href="https://chicken-of-the-sea.myspreadshop.com/" id="cosMegaMenu6" title="Merch Store"
+           target="_blank" rel="noopener"           class="nav-menu__l1-link" >
+                      Merch Store                  </a>
+              </li>
+          <li class="nav-menu__item menu-item-4140  nav-menu__item--narrow">
+
+        <a href="https://chickenofthesea.com/where-to-buy/" id="cosMegaMenu7" title="Where to Buy"
+                     class="bubble-button bubble-button--seafoam bubble-button--hover-salmon" >
+                      <span><span>Where to Buy</span></span>
+                  </a>
+              </li>
+    
+  </ul>
+
+</nav>
+						<div class="header__bottom-search cell shrink"><button type="button" id="open-search" aria-label="Search" aria-expanded="false" aria-controls="search-bar" class="header__bottom-search-icon">Search</button></div>
+
+						<div class="header__bottom-toggle cell shrink"><button type="button" id="open-nav" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu" href="#">Menu</button></div>
+
+					</div>
+
+				</div>
+
+				<div id="search-bar" class="header__search" aria-hidden="true">
+					<div class="header__search-inner">
+						<form method="get" id="searchform" action="https://chickenofthesea.com/">
+	<input type="text" placeholder="Search" value="" name="s" id="s" />
+	<input type="submit" id="searchsubmit" value="Search" />
+<input type="hidden" name="search_source" value="https://chickenofthesea.com/seafood-recipes/white-clam-flatbread-with-herbs/" /></form>
+						<button type="button" class="header__search-close">Close Search</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<nav id="mobilemenu" class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu__inner">
+    <div class="mobile-menu__top">
+
+      <ul>
+
+        
+          <li>
+            <a class="mobile-menu__mega" href="https://chickenofthesea.com/products/" title="Products">Products</a>
+
+                          <div class="mobile-menu__submenu">
+
+                <!-- <a class="mobile-menu__submenu-close" href="#">Products</a> -->
+
+                                  <div class="mobile-menu__products">
+                                            <div class="mobile-menu__products-item">
+
+                          <a href="https://chickenofthesea.com/products/?_product_category=tuna">
+                            <div class="mobile-menu__products-item-inner">
+
+                              <img src="https://chickenofthesea.com/wp-content/uploads/2025/05/tuna_productmenu.png" alt="" />
+
+                              <h3>Tuna</h3>
+
+                            </div>
+                          </a>
+
+                        </div>
+                                            <div class="mobile-menu__products-item">
+
+                          <a href="https://chickenofthesea.com/products/?_product_category=salmon">
+                            <div class="mobile-menu__products-item-inner">
+
+                              <img src="https://chickenofthesea.com/wp-content/uploads/2025/03/salmon_updated1x.png" alt="" />
+
+                              <h3>Salmon</h3>
+
+                            </div>
+                          </a>
+
+                        </div>
+                                            <div class="mobile-menu__products-item">
+
+                          <a href="https://chickenofthesea.com/products/?_product_category=sardines">
+                            <div class="mobile-menu__products-item-inner">
+
+                              <img src="https://chickenofthesea.com/wp-content/uploads/2024/08/CoS_productmenu_sardines-1.png" alt="" />
+
+                              <h3>Sardines</h3>
+
+                            </div>
+                          </a>
+
+                        </div>
+                                            <div class="mobile-menu__products-item">
+
+                          <a href="https://chickenofthesea.com/products/?_product_category=mackerel">
+                            <div class="mobile-menu__products-item-inner">
+
+                              <img src="https://chickenofthesea.com/wp-content/uploads/2025/05/mackerel.png" alt="" />
+
+                              <h3>Mackerel</h3>
+
+                            </div>
+                          </a>
+
+                        </div>
+                                            <div class="mobile-menu__products-item">
+
+                          <a href="https://chickenofthesea.com/products/?_product_category=oysters">
+                            <div class="mobile-menu__products-item-inner">
+
+                              <img src="https://chickenofthesea.com/wp-content/uploads/2024/08/CoS_productmenu_oysters-2.png" alt="" />
+
+                              <h3>Oysters</h3>
+
+                            </div>
+                          </a>
+
+                        </div>
+                                            <div class="mobile-menu__products-item">
+
+                          <a href="https://chickenofthesea.com/products/?_product_category=crab">
+                            <div class="mobile-menu__products-item-inner">
+
+                              <img src="https://chickenofthesea.com/wp-content/uploads/2024/08/CoS_productmenu_crab-1.png" alt="" />
+
+                              <h3>Crab</h3>
+
+                            </div>
+                          </a>
+
+                        </div>
+                                            <div class="mobile-menu__products-item">
+
+                          <a href="https://chickenofthesea.com/products/?_product_category=clams">
+                            <div class="mobile-menu__products-item-inner">
+
+                              <img src="https://chickenofthesea.com/wp-content/uploads/2026/03/crab-productmenu-update-1.png" alt="" />
+
+                              <h3>Clams</h3>
+
+                            </div>
+                          </a>
+
+                        </div>
+                                            <div class="mobile-menu__products-item">
+
+                          <a href="https://chickenofthesea.com/products/?_product_category=shrimp">
+                            <div class="mobile-menu__products-item-inner">
+
+                              <img src="https://chickenofthesea.com/wp-content/uploads/2025/04/shrimp.png" alt="" />
+
+                              <h3>Shrimp</h3>
+
+                            </div>
+                          </a>
+
+                        </div>
+                                      </div>
+                  <!-- if there is a promo image, headline, and CTA, display it -->
+                                      
+                    <a class="mobile-menu__products-promo-btn bubble-button bubble-button--seafoam" href="/products" title="Sea All Products" ><span><span>Sea All Products</span></span></a>
+
+                    <a href="/packet-up-packet-in" class="mobile-menu__products-promo">
+                      <img src="https://chickenofthesea.com/wp-content/uploads/2025/10/CoS_NEW_OldBay_FranksRedHot_ProductMenu.png" alt="" />
+                      <h3>Try Our New Tuna Packet Flavors</h3>
+                    </a>
+                                  
+          </li>
+        
+          <li>
+            <a class="" href="https://chickenofthesea.com/all-recipes/" title="Recipes">Recipes</a>
+
+            
+          </li>
+        
+          <li>
+            <a class="mobile-menu__mega" href="https://chickenofthesea.com/company/" title="About Us">About Us</a>
+
+                          <div class="mobile-menu__submenu">
+
+                <!-- <a class="mobile-menu__submenu-close" href="#">About Us</a> -->
+
+                                  <div class="mobile-menu__submenu-col">
+                    <ul>
+                                              <li>
+                          <a href="https://chickenofthesea.com/company/" title="Our Story" >Our Story</a>
+                        </li>
+                                              <li>
+                          <a href="https://chickenofthesea.com/company/careers/" title="Careers" >Careers</a>
+                        </li>
+                                              <li>
+                          <a href="https://chickenofthesea.com/company/faqs/" title="FAQs" >FAQs</a>
+                        </li>
+                                              <li>
+                          <a href="https://chickenofthesea.com/company/contact-us/" title="Contact" >Contact</a>
+                        </li>
+                                          </ul>
+
+                  </div>
+
+                  <div class="mobile-menu__submenu-col">
+                    <span></span>
+                    <p></p>
+                  </div>
+
+              </div>
+          
+          </li>
+        
+          <li>
+            <a class="mobile-menu__mega" href="https://chickenofthesea.com/sustainability/" title="Sustainability">Sustainability</a>
+
+                          <div class="mobile-menu__submenu">
+
+                <!-- <a class="mobile-menu__submenu-close" href="#">Sustainability</a> -->
+
+                                  <div class="mobile-menu__submenu-col">
+                    <ul>
+                                              <li>
+                          <a href="https://chickenofthesea.com/sustainability/" title="Sustainability for Good" >Sustainability for Good</a>
+                        </li>
+                                              <li>
+                          <a href="https://chickenofthesea.com/shrimpwithapurpose/" title="Shrimp With a Purpose" >Shrimp With a Purpose</a>
+                        </li>
+                                              <li>
+                          <a href="https://trace.chickenofthesea.com/a/ryCn4sx9?code=undefined&utm_source=site" title="Trace Products"  target="_blank" rel="noopener">Trace Products</a>
+                        </li>
+                                              <li>
+                          <a href="https://chickenofthesea.com/supplier-code-of-conduct/" title="Supplier CoC" >Supplier CoC</a>
+                        </li>
+                                              <li>
+                          <a href="https://chickenofthesea.com/wp-content/uploads/2023/12/Thai-Union-Vessel-Code-of-Conduct.pdf" title="Fishing Vessel CoC"  target="_blank" rel="noopener">Fishing Vessel CoC</a>
+                        </li>
+                                          </ul>
+
+                  </div>
+
+                  <div class="mobile-menu__submenu-col">
+                    <span></span>
+                    <p></p>
+                  </div>
+
+              </div>
+          
+          </li>
+        
+          <li>
+            <a class="mobile-menu__mega" href="https://chickenofthesea.com/blog/" title="Blog">Blog</a>
+
+                          <div class="mobile-menu__submenu">
+
+                <!-- <a class="mobile-menu__submenu-close" href="#">Blog</a> -->
+
+                                  <div class="mobile-menu__submenu-col">
+                    <ul>
+                                              <li>
+                          <a href="https://chickenofthesea.com/blog/" title="All Articles" >All Articles</a>
+                        </li>
+                                              <li>
+                          <a href="https://chickenofthesea.com/blog/?_categories=entertaining" title="Entertaining" >Entertaining</a>
+                        </li>
+                                              <li>
+                          <a href="https://chickenofthesea.com/blog/?_categories=meal-prep" title="Meal Prep" >Meal Prep</a>
+                        </li>
+                                              <li>
+                          <a href="https://chickenofthesea.com/blog/?_categories=news" title="News" >News</a>
+                        </li>
+                                              <li>
+                          <a href="https://chickenofthesea.com/blog/?_categories=trends-updates" title="Trends & Updates" >Trends & Updates</a>
+                        </li>
+                                              <li>
+                          <a href="https://chickenofthesea.com/blog/?_categories=wellness" title="Wellness" >Wellness</a>
+                        </li>
+                                              <li>
+                          <a href="https://chickenofthesea.com/glp-1-and-seafood/" title="GLP-1 and Seafood" >GLP-1 and Seafood</a>
+                        </li>
+                                          </ul>
+
+                  </div>
+
+                  <div class="mobile-menu__submenu-col">
+                    <span></span>
+                    <p></p>
+                  </div>
+
+              </div>
+          
+          </li>
+        
+          <li>
+            <a class="" href="https://chicken-of-the-sea.myspreadshop.com/" title="Merch Store">Merch Store</a>
+
+            
+          </li>
+        
+          <li>
+            <a class="" href="https://chickenofthesea.com/where-to-buy/" title="Where to Buy">Where to Buy</a>
+
+            
+          </li>
+        
+      </ul>
+
+    </div>
+
+    <div class="mobile-menu__bottom">
+      <div class="menu-top-menu-container"><ul id="menu-top-menu-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4571"><a target="_blank" href="https://trace.chickenofthesea.com/a/ryCn4sx9?code=undefined&#038;utm_source=site">Trace Products</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3796"><a target="_blank" href="https://b2b.chickenofthesea.com/foodservice/">Foodservice</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-229"><a href="https://chickenofthesea.com/company/contact-us/">Contact</a></li>
+</ul></div>    </div>
+  </div>
+</nav>	</header>
+
+	<main id="content">
+<article class="recipe-detail post-1750 recipes type-recipes status-publish has-post-thumbnail hentry recipe-seafood-clams meal-types-appetizers meal-types-entrees" itemscope itemtype="https://schema.org/Recipe">
+
+	<div class="detail-hero wave-overlay has-deepseablue-wave">
+
+  <div class="detail-hero__image">
+    <img width="1440" height="1200" src="https://chickenofthesea.com/wp-content/uploads/2022/04/White-Clam-Flatbread-with-Herbs-1440x1200.jpg" class="attachment-detail-hero-lg size-detail-hero-lg wp-post-image" alt="" itemprop="image" decoding="async" fetchpriority="high" srcset="https://chickenofthesea.com/wp-content/uploads/2022/04/White-Clam-Flatbread-with-Herbs.jpg 1440w, https://chickenofthesea.com/wp-content/uploads/2022/04/White-Clam-Flatbread-with-Herbs-558x465.jpg 558w, https://chickenofthesea.com/wp-content/uploads/2022/04/White-Clam-Flatbread-with-Herbs-1116x930.jpg 1116w, https://chickenofthesea.com/wp-content/uploads/2022/04/White-Clam-Flatbread-with-Herbs-720x600.jpg 720w" sizes="(max-width: 1440px) 100vw, 1440px" />  </div>
+
+  <div class="detail-hero__inner grid-container">
+
+    <div class="detail-hero__content grid-x grid-padding-x">
+
+      <div class="detail-hero__text cell large-5">
+
+        <h1 itemprop="name" class="h2">White Clam Flatbread with Herbs</h1>
+
+                  <div class="product-detail__hero-rating">
+            <div data-bv-show="rating_summary" data-bv-product-id="1220"></div>
+          </div>
+        
+        
+        <div itemprop="description">
+          <p><p>Tender clams, crispy bacon, and a creamy sauce are the perfect combo for a tasty appetizer or satisfying lunch.</p>
+</p>
+        </div>
+
+        
+        
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+	<div class="recipe-detail__body">
+
+		<div class="recipe-detail__body-inner grid-container">
+
+			<div class="recipe-detail__meta grid-x">
+
+  
+    <div class="cell medium-4">
+
+      <h2>Total Time</h2>
+      <div class="recipe-detail__meta-data">
+        <div>
+          <span itemprop="totalTime" content="PT45M">45</span> minutes        </div>
+      </div>
+
+    </div>
+
+  
+      <div class="cell medium-4">
+
+      <h2>Servings</h2>
+      <div class="recipe-detail__meta-data">
+        <div>
+          <span itemprop="recipeYield">4</span> servings        </div>
+      </div>
+
+    </div>
+  
+  
+</div>
+			<div class="recipe-detail__content grid-x grid-padding-x">
+
+				<div class="recipe-detail__content-ingredients cell large-5">
+
+  <div class="recipe-detail__content-ingredients-header">
+    <h2>Ingredients</h2>
+
+    <ul>
+      <li><a class="recipe-detail__content-ingredients-header-share social-share-trigger" aria-label="Share this recipe">Share</a></li>
+          </ul>
+  </div>
+
+  <ul><li itemprop="recipeIngredient"><a href="https://chickenofthesea.com/products/clams/whole-baby-clams/">1 (10 oz) can Chicken of the Sea® Whole Baby Clams, rinsed and drained
+</a></li><li itemprop="recipeIngredient">1 Tablespoon unsalted butter
+
+</li><li itemprop="recipeIngredient">1 garlic clove, minced
+</li><li itemprop="recipeIngredient">1 Tablespoon all-purpose flour
+</li><li itemprop="recipeIngredient">3/4 cup milk, warmed to room temperature
+</li><li itemprop="recipeIngredient">1/2 cup grated Parmesan cheese
+</li><li itemprop="recipeIngredient">salt, to taste
+</li><li itemprop="recipeIngredient">ground black pepper, to taste
+</li><li itemprop="recipeIngredient">4 pieces whole wheat or plain naan
+</li><li itemprop="recipeIngredient">1 cup shredded Mozzarella or Cheddar cheese
+</li><li itemprop="recipeIngredient">1 teaspoon herbs de Provence
+</li><li itemprop="recipeIngredient">6 slices bacon, cooked and crumbled
+</li></ul>
+
+</div>
+				<div class="recipe-detail__content-instructions cell large-6">
+
+  <h2>Instructions</h2>
+
+  <div itemscope itemprop="recipeInstructions">
+    <ol><li itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToStep"><meta itemprop="position" content="1">Preheat oven to 475°F. Cover a baking sheet pan with parchment paper or foil and set aside.
+</li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToStep"><meta itemprop="position" content="2">Place butter in a small saucepan over medium heat. Add garlic and cook, stirring constantly, for 1 minute.
+</li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToStep"><meta itemprop="position" content="3">Add flour and cook, whisking constantly for 1 minute. Add milk slowly, whisking constantly to keep lumps from forming, and cook until mixture has thickened slightly. 
+</li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToStep"><meta itemprop="position" content="4">Remove from heat and stir in Parmesan cheese. Season with salt and pepper.
+</li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToStep"><meta itemprop="position" content="5">Spread sauce over naan. Arrange clams over sauce. Sprinkle the Mozzarella or Cheddar, herbs de Provence and bacon over the top.
+</li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToStep"><meta itemprop="position" content="6">Bake until cheese is bubbly, about 8 minutes. Season with additional salt and pepper to taste.  Serve immediately.
+</li></ol>  </div>
+
+      <div class="recipe-detail__content-related">
+      <h2>In this Recipe:</h2>
+
+      <div class="recipe-detail__content-related-grid grid-x grid-padding-x">
+                  <div class="recipe-detail__content-related-grid-item cell small-6 medium-4 large-6">
+            <div class="product-card__image">
+
+              <div class="product-card__image-swap">
+                <a href="https://chickenofthesea.com/products/clams/whole-baby-clams/"><img src="https://chickenofthesea.com/wp-content/uploads/2023/06/Whole-Baby-Clams-Transparent.png" alt="" /></a>
+              </div>
+
+            </div>
+            <h3><a href="https://chickenofthesea.com/products/clams/whole-baby-clams/">Whole Baby Clams</a></h3>
+          </div>
+              </div>
+    </div>
+  
+</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	
+</article>
+
+
+</main>
+<!--</END MAIN>-->
+
+<footer class="footer footer--newsletter">
+
+      <div class="footer__content grid-container">
+
+      <div class="footer__content-inner grid-x grid-padding-x">
+
+        <div id="newsletter" class="footer__newsletter cell large-5 large-order-2">
+
+          <h2>CATCH OUR EMAILS FOR A CHANCE TO WIN</h2>
+
+          <p>Get the latest offers, recipes, and product news when you sign up for email. We’ll automatically enter you in our giveaway. </p>
+
+          
+                <div class='gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework' data-form-theme='gravity-theme' data-form-index='0' id='gform_wrapper_1' ><div id='gf_1' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_1' id='gform_1'  action='/seafood-recipes/white-clam-flatbread-with-herbs/#gf_1' data-formid='1' novalidate>
+                        <div class='gform-body gform_body'><div id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below validation_below'><div id="field_1_2" class="gfield gfield--type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_1_2'>Email<span class="gfield_required"><span class="gfield_required gfield_required_text">(Required)</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_2' id='input_1_2' type='email' value='' class='large'   placeholder='EMAIL ADDRESS' aria-required="true" aria-invalid="false"  />
+                        </div></div></div></div>
+        <div class='gform-footer gform_footer top_label'> <button class='gform_button' id='gform_submit_button_1'><span><span>Subscribe</span></span></button> <input type='hidden' name='gform_ajax' value='form_id=1&amp;title=&amp;description=&amp;tabindex=0&amp;theme=gravity-theme&amp;hash=75ac439250fa8d3e8bb86a623e63e202' />
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_1' value='iframe' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_1' id='gform_theme_1' value='gravity-theme' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_1' id='gform_style_settings_1' value='' />
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='USD' value='csRD4DMZB/J3rwk0TApZp3krOI3qpxQb4VBfSXY49MvFX+twE26VM5sTJ04fifZeDCGqRYsvBhWkJgQfbGssLgVw3H7X4OkrivHZrDpX+I01BnQ=' />
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjcxY2M4OTM2M2FhZDdlYWYyZTdlOGRiZmU2YjFkOTNmIl0=' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+		                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_1' id='gform_ajax_frame_1' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+		                <script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {gformInitSpinner( 1, 'https://chickenofthesea.com/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_1').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_1');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_1').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_1').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_1').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_1').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_1').val();gformInitSpinner( 1, 'https://chickenofthesea.com/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [1, current_page]);window['gf_submitting_1'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_1').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_1').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [1]);window['gf_submitting_1'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_1').text());}else{jQuery('#gform_1').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "1", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_1" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_1";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_1" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 1, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} ); 
+/* ]]> */
+</script>
+
+          <p style="color: #FFF;  font-size: 12px;  line-height: 18px;  padding: 10px 0;  font-weight: 400;  max-width: 625px;  margin-top: 20px;">
+            By submitting your information, you agree to receive marketing communications from us and may opt out at any time. See our <a href="https://chickenofthesea.com/privacy-policy/" style="color:#FFF; text-decoration: underline;">Privacy Policy</a>, <a href="https://chickenofthesea.com/terms/" style="color:#FFF; text-decoration: underline;">Terms of Use</a> and <a href="https://chickenofthesea.com/email-sign-up-sweepstakes-rules/" style="color:#FFF; text-decoration: underline;">Official Rules</a> for details. No purchase necessary. U.S./DC residents 18+.
+          </p>
+
+        </div>
+
+        <div class="footer__nav cell large-7 large-order-1 sm-padding-collapse">
+        
+        <div class="footer__top">
+
+          <div class="footer__top-inner">
+
+            <div class="footer__top-content grid-x grid-padding-x">
+
+              <div class="footer__top-logo cell large-4">
+                <a href="https://chickenofthesea.com/">Chicken of the Sea</a>
+
+                <ul class="footer__bottom-social">
+                                      <li><a class="instagram" href="https://www.instagram.com/chickenoftheseaofficial/" target="_blank" rel="noopener" aria-label="Follow on Instagram">Instagram</a></li>
+                                                        <li><a class="facebook" href="https://www.facebook.com/ChickenoftheSea" target="_blank" rel="noopener" aria-label="Follow on Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                          <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                        </svg>Facebook</a></li>
+                                                        <li><a class="youtube" href="https://www.youtube.com/chickenofthesea" target="_blank" rel="noopener" aria-label="Subscribe on YouTube">YouTube</a></li>
+                                                      <li><a class="tiktok" href="https://tiktok.com/@chickenofthesea" target="_blank" rel="noopener" aria-label="Follow on Tiktok">Twitter</a></li>
+                                                    </ul>
+              </div>
+
+              <div class="footer__top-nav cell grid-x grid-padding-x sm-padding-collapse large-8">
+                <div class="footer__top-nav-col cell large-6">
+
+
+
+                  
+                                          <h4>Company</h4>
+                    
+                    <ul id="menu-company-menu" class="menu"><li id="menu-item-221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221"><a href="https://chickenofthesea.com/company/">Our Story</a></li>
+<li id="menu-item-845" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-845"><a href="https://chickenofthesea.com/company/careers/">Careers</a></li>
+<li id="menu-item-4108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4108"><a href="https://chickenofthesea.com/company/faqs/">FAQs</a></li>
+<li id="menu-item-220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-220"><a href="https://chickenofthesea.com/company/contact-us/">Contact</a></li>
+</ul>
+
+                  
+
+
+
+                  
+
+                                          <h4>Trade</h4>
+                    
+                    <ul id="menu-b2b-customers-menu" class="menu"><li id="menu-item-1899" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1899"><a target="_blank" href="http://b2b.chickenofthesea.com">Wholesale</a></li>
+<li id="menu-item-1898" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1898"><a target="_blank" href="http://b2b.chickenofthesea.com">Foodservice</a></li>
+</ul>
+                  
+
+                </div>
+
+                <div class="footer__top-nav-col cell large-6">
+
+
+                  
+
+                                          <h4>Products</h4>
+                    
+                    <ul id="menu-products-menu" class="menu"><li id="menu-item-94" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-94"><a href="https://chickenofthesea.com/products/">Products</a></li>
+<li id="menu-item-2993" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2993"><a href="https://chickenofthesea.com/all-recipes/">Recipes</a></li>
+<li id="menu-item-4572" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4572"><a target="_blank" href="https://trace.chickenofthesea.com/a/ryCn4sx9?code=undefined&#038;utm_source=site">Trace Products</a></li>
+<li id="menu-item-4632" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4632"><a href="https://chickenofthesea.com/where-to-buy/">Where to Buy</a></li>
+<li id="menu-item-4633" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4633"><a target="_blank" href="https://chicken-of-the-sea.myspreadshop.com/">Merch Store</a></li>
+<li id="menu-item-4634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4634"><a href="https://chickenofthesea.com/packet-up-packet-in/">What&#8217;s New</a></li>
+</ul>
+                  
+
+
+                </div>
+
+
+
+
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+                </div>
+
+      </div>
+
+
+    </div>
+    <div class="footer__bottom">
+
+      <div class="footer__bottom-inner">
+
+        <div class="footer__bottom-content grid-x grid-padding-x">
+
+          <div class="footer__bottom-menu cell medium-shrink">
+
+            <ul id="menu-terms-menu" class="menu"><li id="menu-item-237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237"><a href="https://chickenofthesea.com/privacy-policy/">Privacy</a></li>
+<li id="menu-item-796" class="ot-sdk-show-settings menu-item menu-item-type-custom menu-item-object-custom menu-item-796"><a href="#">Do Not Sell or Share My Personal Information</a></li>
+<li id="menu-item-236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-236"><a href="https://chickenofthesea.com/terms/">Terms of Use</a></li>
+<li id="menu-item-5131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5131"><a href="https://chickenofthesea.com/supply-chain-transparency/">CA Supply Chain Act</a></li>
+</ul>
+          </div>
+
+          <div class="footer__bottom-supplementary cell shrink grid-x">
+            <p>&copy; Copyright 2026 Chicken of the Sea</p>
+            <ul class="footer__bottom-social">
+                              <li><a class="instagram" href="https://www.instagram.com/chickenoftheseaofficial/" target="_blank" rel="noopener" aria-label="Follow on Instagram">Instagram</a></li>
+                                            <li><a class="facebook" href="https://www.facebook.com/ChickenoftheSea" target="_blank" rel="noopener" aria-label="Follow on Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                      <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                    </svg>Facebook</a></li>
+                                            <li><a class="youtube" href="https://www.youtube.com/chickenofthesea" target="_blank" rel="noopener" aria-label="Subscribe on YouTube">YouTube</a></li>
+                                          <li><a class="tiktok" href="https://tiktok.com/@chickenofthesea" target="_blank" rel="noopener" aria-label="Follow on Tiktok">Tiktok</a></li>
+                                        </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  
+</footer>
+
+<div class="share-modal__overlay"></div>
+<div class="share-modal__popup">
+  <header>
+    <span>Share</span>
+    <div class="share-modal__close">Close</div>
+  </header>
+  <div class="share-modal__content">
+    <ul class="share-modal__content-icons">
+      <a class="facebook" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchickenofthesea.com%2Fseafood-recipes%2Fwhite-clam-flatbread-with-herbs%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">Share on Facebook</a>
+      <a class="twitter" href="https://twitter.com/intent/tweet/?url=https%3A%2F%2Fchickenofthesea.com%2Fseafood-recipes%2Fwhite-clam-flatbread-with-herbs%2F" target="_blank" rel="noopener" aria-label="Share on Twitter">Share on Twitter</a>
+      <a class="pinterest" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fchickenofthesea.com%2Fseafood-recipes%2Fwhite-clam-flatbread-with-herbs%2F" target="_blank" rel="noopener" aria-label="Share on Pinterest">Share on Pinterest</a>
+      <a class="print" href="#" onclick="window.print(); return false;" aria-label="Print this page">Print</a>
+      <a class="email" href="mailto:?subject=&amp;body=https%3A%2F%2Fchickenofthesea.com%2Fseafood-recipes%2Fwhite-clam-flatbread-with-herbs%2F" target="_self" rel="noopener" aria-label="Share by E-Mail">Email to Friend</a>
+    </ul>
+    <p>Or copy link</p>
+    <div class="share-modal__content-field">
+      <input type="text" readonly value="https://chickenofthesea.com/seafood-recipes/white-clam-flatbread-with-herbs/">
+      <button class="bubble-button bubble-button--salmon"><span><span>Copy</span></span></button>
+    </div>
+  </div>
+</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/cos-custom/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript">
+  window._mfq = window._mfq || [];
+  (function() {
+    var mf = document.createElement("script");
+    mf.type = "text/javascript"; mf.defer = true;
+    mf.src = "//cdn.mouseflow.com/projects/f2f1af8c-efba-43ed-b613-9b544747dce4.js";
+    document.getElementsByTagName("head")[0].appendChild(mf);
+  })();
+</script><!-- Custom Feeds for Instagram JS -->
+<script type="text/javascript">
+var sbiajaxurl = "https://chickenofthesea.com/wp-admin/admin-ajax.php";
+
+</script>
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: Opt-in Campaign Blog -->
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.campaign=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,323017,'gncebeijtbwwjd2ok1ey');</script>
+<!-- / OptinMonster --><!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: Opt-in Campaign - Catch Our Emails for A Chance to Win -->
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.campaign=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,323017,'mmkqupmhm07qqbibdguw');</script>
+<!-- / OptinMonster -->		<script type="text/javascript">
+		var gncebeijtbwwjd2ok1ey_shortcode = true;var mmkqupmhm07qqbibdguw_shortcode = true;		</script>
+		<script>(function(d){var s=d.createElement("script");s.type="text/javascript";s.src="https://a.omappapi.com/app/js/api.min.js";s.async=true;s.id="omapi-script";d.getElementsByTagName("head")[0].appendChild(s);})(document);</script><script type="text/javascript" src="https://chickenofthesea.com/wp-content/themes/cos-custom/js/theme.min.js?ver=1755544347" id="site-js-js"></script>
+<script type="text/javascript" src="https://chickenofthesea.com/wp-content/themes/cos-custom/js/custom-blocks.min.js?ver=1755544351" id="block-js-js"></script>
+<script type="text/javascript" src="https://chickenofthesea.com/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script type="text/javascript" src="https://chickenofthesea.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://chickenofthesea.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://chickenofthesea.com/wp-includes/js/dist/a11y.min.js?ver=cb460b4676c94bd228ed" id="wp-a11y-js"></script>
+<script type="text/javascript" defer='defer' src="https://chickenofthesea.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.10.3" id="gform_json-js"></script>
+<script type="text/javascript" id="gform_gravityforms-js-extra">
+/* <![CDATA[ */
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":0,"iconText":"Select date"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled","error":"Error","message":"Message"},"vars":{"images_url":"https://chickenofthesea.com/wp-content/plugins/gravityforms/images"}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https://chickenofthesea.com/wp-content/plugins/gravityforms","number_formats":[],"spinnerUrl":"https://chickenofthesea.com/wp-content/plugins/gravityforms/images/spinner.svg","version_hash":"e9bc4a32018afc763f6f4ea1866ec876","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+//# sourceURL=gform_gravityforms-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" defer='defer' src="https://chickenofthesea.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.10.3" id="gform_gravityforms-js"></script>
+<script type="text/javascript" defer='defer' src="https://chickenofthesea.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.10.3" id="gform_placeholder-js"></script>
+<script type="text/javascript" defer='defer' src="https://chickenofthesea.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=3f278756f0a3032bed328ff6a9f6c01d" id="gform_gravityforms_utils-js"></script>
+<script type="text/javascript" defer='defer' src="https://chickenofthesea.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=7c651d0ba638ce98b9c65141edddd567" id="gform_gravityforms_theme_vendors-js"></script>
+<script type="text/javascript" id="gform_gravityforms_theme-js-extra">
+/* <![CDATA[ */
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"e9bc4a32018afc763f6f4ea1866ec876"},"ajax":{"ajaxurl":"https://chickenofthesea.com/wp-admin/admin-ajax.php","ajax_submission_nonce":"81058d2da2","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again.","error_403":"The request was blocked (403 error) for unknown security reasons. Remove any code-like text (scripts or DB queries) and try again."}}}},"hmr_dev":"","public_path":"https://chickenofthesea.com/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"2fc6487edf"};
+//# sourceURL=gform_gravityforms_theme-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" defer='defer' src="https://chickenofthesea.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=301fdc9aa6144168f3b854c4c2c8f6d3" id="gform_gravityforms_theme-js"></script>
+<script type="text/javascript" src="https://chickenofthesea.com/wp-content/plugins/optinmonster/assets/dist/js/helper.min.js?ver=2.16.22" id="optinmonster-wp-helper-js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } ); 
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "1", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_1" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_1";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_1" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 1, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } ); 
+/* ]]> */
+</script>
+		<script type="text/javascript">var omapi_localized = {
+			ajax: 'https://chickenofthesea.com/wp-admin/admin-ajax.php?optin-monster-ajax-route=1',
+			nonce: '87df110c1f',
+			slugs:
+			{"gncebeijtbwwjd2ok1ey":{"slug":"gncebeijtbwwjd2ok1ey","mailpoet":false},"mmkqupmhm07qqbibdguw":{"slug":"mmkqupmhm07qqbibdguw","mailpoet":false}}		};</script>
+				<script type="text/javascript">var omapi_data = {"object_id":1750,"object_key":"recipes","object_type":"post","term_ids":[43,65,70],"wp_json":"https:\/\/chickenofthesea.com\/wp-json","wc_active":false,"edd_active":false,"nonce":"eac6fc83d7"};</script>
+		
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a066d0e5cd87a27e',t:'MTc4MDU3NDgzMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>
