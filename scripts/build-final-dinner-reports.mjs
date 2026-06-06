@@ -7,6 +7,7 @@ const readJson = async (name) =>
   JSON.parse((await fs.readFile(path.join(root, name), "utf8")).replace(/^\uFEFF/, ""));
 const analysis = await readJson(".tmp-final-dinner-deployment-analysis.json");
 const source = await readJson(".tmp-final-dinner-source-validation.json");
+const snapshot = await readJson(".tmp-final-dinner-deployment-snapshot.json");
 
 const actionCounts = Object.create(null);
 for (const item of analysis.recipeActions) {
@@ -68,27 +69,57 @@ for (const item of analysis.manualReview) {
 }
 await fs.writeFile(path.join(root, "recipe-validation-report.md"), `${validationLines.join("\n")}\n`);
 
+const escapeCell = (value) => String(value || "").replaceAll("|", "\\|").replace(/\s+/g, " ").trim();
+const dinnerAuditRows = analysis.completenessAudit.map((item) => ({
+  recipeName: item.recipeName,
+  issue: item.issueType,
+  sourceUrl: item.sourceUrl,
+  action: item.actionTaken
+}));
+for (const item of source.results.filter((result) => !result.ok)) {
+  dinnerAuditRows.push({
+    recipeName: item.menuItem,
+    issue: `Source validation: ${item.error || item.issues?.join("; ") || "manual review required"}`,
+    sourceUrl: item.sourceUrl,
+    action: item.recipeIndex >= 0
+      ? "Re-extracted or normalized using the active recipe as fallback; manual source verification remains."
+      : "Re-extracted from workbook URL where available; manual source verification remains."
+  });
+}
+const auditLines = [
+  "# Dinner Recipe Audit",
+  "",
+  `Generated: ${analysis.generatedAt}`,
+  "",
+  "| Recipe Name | Issue | Source URL | Action Taken |",
+  "| --- | --- | --- | --- |",
+  ...dinnerAuditRows.map((item) =>
+    `| ${escapeCell(item.recipeName)} | ${escapeCell(item.issue)} | ${escapeCell(item.sourceUrl)} | ${escapeCell(item.action)} |`
+  )
+];
+await fs.writeFile(path.join(root, "dinner-recipe-audit.md"), `${auditLines.join("\n")}\n`);
+
 const deploymentLines = [
   "# Final Summer Dinner Deployment Report",
   "",
   `Generated: ${analysis.generatedAt}`,
   "",
-  "Source of truth: `summer-menu-master-final.xlsx`",
+  `Source of truth: \`${snapshot.sourceLabel || "summer-menu-master-final.xlsx"}\``,
   "",
   "Scope: Dinner only, Weeks 1-4, approved nine Dinner categories.",
   "",
   "## Publishing Status",
   "",
-  "Production data was applied and committed locally. Update this section after remote publication succeeds.",
+  "Production data was applied locally. Update this section after remote publication succeeds.",
   "",
   "## Deployment Summary",
   "",
   "| Item | Count |",
   "| --- | ---: |",
   `| Final Dinner assignments | ${analysis.menu.finalAssignments} |`,
-  "| Dinner assignments added to blank slots | 2 |",
-  "| Dinner assignments removed | 1 |",
-  "| Dinner assignments changed | 105 |",
+  `| Dinner assignments added to blank slots | ${snapshot.changes?.added || 0} |`,
+  `| Dinner assignments removed | ${snapshot.changes?.removed || 0} |`,
+  `| Dinner assignments changed | ${snapshot.changes?.changed || 0} |`,
   `| Recipes added | ${analysis.recipes.added} |`,
   `| Recipes rebuilt from approved workbook | ${actionCounts["Rebuilt from approved workbook recipe"] || 0} |`,
   `| Recipes rebuilt from source URLs | ${actionCounts["Re-extracted and normalized from source URL"] || 0} |`,
@@ -123,6 +154,7 @@ await fs.writeFile(path.join(root, "deployment-report.md"), `${deploymentLines.j
 
 console.log(JSON.stringify({
   validationReport: "recipe-validation-report.md",
+  dinnerAudit: "dinner-recipe-audit.md",
   deploymentReport: "deployment-report.md",
   incompleteRows: analysis.completenessAudit.length,
   sourceManualReview: analysis.manualReview.length

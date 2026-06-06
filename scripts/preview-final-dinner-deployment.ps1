@@ -1,11 +1,17 @@
+param(
+    [string]$WorkbookPath = "C:\Users\cjr_1\Downloads\summer-menu-master-final.xlsx",
+    [string]$SourceLabel = "C:\Users\cjr_1\Downloads\summer-menu-master-final.xlsx"
+)
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
 $root = Split-Path -Parent $PSScriptRoot
-$finalWorkbook = "C:\Users\cjr_1\Downloads\summer-menu-master-final.xlsx"
+$finalWorkbook = $WorkbookPath
 $menuPath = Join-Path $root "data\processed\clean-menu.json"
 $previewPath = Join-Path $root "dinner-change-preview.md"
 $snapshotPath = Join-Path $root ".tmp-final-dinner-deployment-snapshot.json"
+$analysisPath = Join-Path $root ".tmp-final-dinner-deployment-analysis.json"
 
 function Read-XlsxRows([string]$Path) {
     Add-Type -AssemblyName System.IO.Compression.FileSystem
@@ -27,8 +33,15 @@ function Read-XlsxRows([string]$Path) {
         $sheetNs.AddNamespace("x", "http://schemas.openxmlformats.org/spreadsheetml/2006/main")
         $rows = [Collections.Generic.List[object[]]]::new()
         foreach ($row in $sheetDocument.SelectNodes("//x:sheetData/x:row", $sheetNs)) {
-            $values = [Collections.Generic.List[object]]::new()
+            $values = [object[]]::new(5)
             foreach ($cell in $row.SelectNodes("x:c", $sheetNs)) {
+                $columnLetters = [regex]::Match([string]$cell.r, "^[A-Z]+").Value
+                $columnIndex = 0
+                foreach ($letter in $columnLetters.ToCharArray()) {
+                    $columnIndex = ($columnIndex * 26) + ([int][char]$letter - [int][char]'A' + 1)
+                }
+                $columnIndex--
+                if ($columnIndex -lt 0 -or $columnIndex -ge $values.Count) { continue }
                 $value = if ($cell.t -eq "s") {
                     $sharedStrings[[int]$cell.v]
                 }
@@ -38,9 +51,9 @@ function Read-XlsxRows([string]$Path) {
                 else {
                     [string]$cell.v
                 }
-                $values.Add($value)
+                $values[$columnIndex] = $value
             }
-            $rows.Add($values.ToArray())
+            $rows.Add($values)
         }
         foreach ($row in $rows) { Write-Output -NoEnumerate $row }
     }
@@ -94,7 +107,9 @@ $currentDinner = @{}
 foreach ($week in $allowedWeeks) {
     foreach ($day in $allowedDays) {
         foreach ($category in $allowedCategories) {
-            $value = [string]$menu.dinner.weeks.$week.days.$day.$category
+            $dayRecord = $menu.dinner.weeks.$week.days.$day
+            $property = $dayRecord.PSObject.Properties[$category]
+            $value = if ($null -eq $property) { "" } else { [string]$property.Value }
             $currentDinner["$week|$day|$category"] = $value
         }
     }
@@ -138,6 +153,13 @@ $snapshot = [ordered]@{
     recipesHash = (Get-FileHash -LiteralPath (Join-Path $root "data\recipes\sample-recipes.json") -Algorithm SHA256).Hash
     lunchJson = $lunchSnapshot
     finalRows = $finalRows
+    sourceLabel = $SourceLabel
+    changes = [ordered]@{
+        added = $added.Count
+        removed = $removed.Count
+        changed = $changed.Count
+        unchanged = $finalRows.Count - $added.Count - $changed.Count
+    }
 }
 Set-Content -LiteralPath $snapshotPath -Value ($snapshot | ConvertTo-Json -Depth 100) -Encoding UTF8
 
@@ -153,10 +175,26 @@ function Format-Items($Items, [string]$Mode) {
     }) -join "`r`n")
 }
 
+$urlRecipePreview = "Source validation has not run yet."
+if (Test-Path -LiteralPath $analysisPath) {
+    $analysis = Get-Content -Raw -LiteralPath $analysisPath | ConvertFrom-Json
+    $urlActions = @($analysis.recipeActions | Where-Object {
+        $_.action -match "source URL|source URL blocked"
+    })
+    if ($urlActions.Count -gt 0) {
+        $urlRecipePreview = (@($urlActions | ForEach-Object {
+            "- ``$($_.recipeName)``: $($_.action)"
+        }) -join "`r`n")
+    }
+    else {
+        $urlRecipePreview = "None."
+    }
+}
+
 $preview = @"
 # Dinner Change Preview
 
-Source of truth: ``C:\Users\cjr_1\Downloads\summer-menu-master-final.xlsx``
+Source of truth: ``$SourceLabel``
 
 Scope: Dinner only, Weeks 1-4, approved nine dinner categories. No production files were modified while generating this preview.
 
@@ -182,6 +220,10 @@ $(Format-Items $removed "removed")
 ## Dinner Menu Items Being Changed
 
 $(Format-Items $changed "changed")
+
+## Recipes Rebuilt From URLs
+
+$urlRecipePreview
 
 ## Pre-Deployment Checks
 

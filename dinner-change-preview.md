@@ -1,6 +1,6 @@
 ﻿# Dinner Change Preview
 
-Source of truth: `C:\Users\cjr_1\Downloads\summer-menu-master-final.xlsx`
+Source of truth: `C:\Users\cjr_1\Downloads\summer-menu-master-final(2).xlsx (uploaded as summer-menu-master-final.xlsx)`
 
 Scope: Dinner only, Weeks 1-4, approved nine dinner categories. No production files were modified while generating this preview.
 
@@ -9,128 +9,97 @@ Scope: Dinner only, Weeks 1-4, approved nine dinner categories. No production fi
 | Change | Count |
 | --- | ---: |
 | Final dinner assignments | 250 |
-| Items added to previously blank slots | 2 |
-| Assignments removed | 1 |
-| Assignments changed | 105 |
-| Unchanged populated assignments | 143 |
+| Items added to previously blank slots | 0 |
+| Assignments removed | 0 |
+| Assignments changed | 45 |
+| Unchanged populated assignments | 205 |
 | Final unassigned dinner slots | 2 |
 
 ## Dinner Menu Items Being Added
 
-- Week 2 / Tuesday / Alternative: `SAUTEED SHRIMP WITH GARLIC, WHITE WINE & FRESH DICED TOMATO`
-- Week 3 / Tuesday / Alternative: `SAUTEED SHRIMP WITH GARLIC, WHITE WINE & FRESH DICED TOMATO`
+- None
 
 ## Dinner Menu Items Being Removed
 
-- Week 1 / Monday / Comfort: `Not Scheduled`
+- None
 
 ## Dinner Menu Items Being Changed
 
-- Week 1 / Monday / Appetizer 1: `3 Sisters Indigenous Soup` -> `3-SISTERS SOUP`
-- Week 1 / Monday / Appetizer 2: `Citrus and Shrimp Lemon Lavender Cups` -> `CITRUS AND SHRIMP LEMON LAVENDER CUPS`
-- Week 1 / Monday / Elevated: `BRAISED SHORT RIBS WITH RED WINE SAUCE` -> `BRAISED SHORT RIBS WITH RED WINE SAUCE (GF/DF)`
-- Week 1 / Monday / Alternative: `Pan Seared Salmon with Cucumber Dill Yogurt Sauce` -> `PAN SEARED SALMON WITH MAPLE DIJON SAUCE (GF/DF)`
-- Week 1 / Monday / Veggie 1: `Garlic Green Beans` -> `GARLIC GREEN BEANS`
-- Week 1 / Monday / Veggie 2: `Honey Glazed Carrots` -> `HONEY GLAZED CARROTS`
-- Week 1 / Monday / Starch: `Roasted Baby Potatoes` -> `ROASTED BABY POTATOES`
-- Week 1 / Monday / Dessert: `Peach Melba` -> `Peach Melba with Vanilla Ice Cream and Toasted Almonds (GF)`
-- Week 1 / Tuesday / Appetizer 1: `California Brococli Salad` -> `California Brocolli Salad with Cranberry and Feta Dressing (GF)`
-- Week 1 / Tuesday / Appetizer 2: `Chicken Vegetable in Broth` -> `Chicken Vegetable in light Broth (GF/DF)`
-- Week 1 / Tuesday / Elevated: `Carved Pork Tenderloin with Apple and Fennel Slaw` -> `Carved Pork Tenderloin with Brown Butter and Garlic Sauce (GF/DF)`
-- Week 1 / Tuesday / Comfort: `Turkey Medallion with Cranberry and Orange Chutney` -> `TURKEY BREAST WITH BREAD STUFFING (DF)`
-- Week 1 / Tuesday / Alternative: `Sauteed Shrimp with Garlic, White Wine and Fresh Diced Tomato` -> `SAUTEED SHRIMP WITH GARLIC, WHITE WINE & FRESH DICED TOMATO`
-- Week 1 / Tuesday / Veggie 1: `Grilled Asparagus` -> `GRILLED ASPARAGUS`
-- Week 1 / Tuesday / Veggie 2: `Buttered Peas` -> `BUTTERED PEAS`
-- Week 1 / Tuesday / Starch: `Wild Rice Pilaf` -> `WILD RICE PILAF`
-- Week 1 / Tuesday / Dessert: `Chocolate Mousse with Sponge Toffee` -> `CHOCOLATE MOUSSE WITH SPONGE TOFFEE`
-- Week 1 / Wednesday / Appetizer 1: `Prosciutto Wrapped Pears with Arugula` -> `PROSCIUTTO WRAPPED PEARS WITH ARUGULA+BLUE CHEESE`
-- Week 1 / Wednesday / Appetizer 2: `Thai Fish Cakes with Cilantro Dip` -> `THAI FISH CAKES WITH CILANTRO DIP`
-- Week 1 / Wednesday / Elevated: `Roast Beef with Chimichurri` -> `ROAST BEEF WITH APPLE AND CARAMELIZED ONION SAUCE     (GF/DF)`
-- Week 1 / Wednesday / Comfort: `Herb Roasted Chicken Leg with Lemon Sauce` -> `HERB ROASTED CHICKEN LEG WITH LEMON SAUCE (GF/DF)`
-- Week 1 / Wednesday / Alternative: `Baked Cod with Lemon Caper Vinaigrette` -> `BAKED COD WITH LEMON CAPER VINAIGRETTE (GF/DF)`
-- Week 1 / Wednesday / Veggie 1: `Grilled Summer Zucchini` -> `GRILLED SUMMER ZUCCHINI`
-- Week 1 / Wednesday / Veggie 2: `Roasted Butternut` -> `ROASTED BUTTERNUT`
-- Week 1 / Wednesday / Starch: `Quinoa Pilaf` -> `QUINOA PILAF`
-- Week 1 / Wednesday / Dessert: `Lemon Curd Tart with Egg White` -> `LEMON CURD TART WITH EGG WHITE`
-- Week 1 / Thursday / Appetizer 1: `Antipasti Skewers` -> `ANTIPASTI SKEWERS`
-- Week 1 / Thursday / Appetizer 2: `Cream of Carrot Soup` -> `CREAM OF CARROT SOUP`
-- Week 1 / Thursday / Elevated: `Seared Scallops with Citrus and Herb Salsa` -> `SEARED SCALLOPS WITH CITRUS & HERB SALSA   (GF/DF)`
-- Week 1 / Thursday / Comfort: `Roasted Lamb Leg with Mint Gremolata` -> `ROASTED LAMB LEG WITH MINT GREMOLATA (GF/DF)`
-- Week 1 / Thursday / Alternative: `Grilled Chicken Breast with Basil Pesto and Roasted Tomato` -> `GRILLED CHICKEN BREAST WITH BASIL PESTO/ROASTED TOMATO`
-- Week 1 / Thursday / Veggie 1: `Sauteed Spinach with Diced Onions` -> `SAUTEED SPINACH WITH DICED ONIONS/GOLDEN RAISINS`
-- Week 1 / Thursday / Veggie 2: `Roasted Carrots with Cardamon Seasoning` -> `ROASTED CARROTS WITH CARDAMON SEASONING`
-- Week 1 / Thursday / Starch: `Couscous with Fresh Chopped Herbs` -> `COUSCOUS WITH FRESH CHOPPED HERBS`
-- Week 1 / Thursday / Dessert: `Rice Pudding with Fresh Berries` -> `NO-BAKE BLUEBERRY CHEESECAKE`
-- Week 1 / Friday / Appetizer 1: `Sopa Ajoblanco` -> `SOPA AJOBLANCO`
-- Week 1 / Friday / Appetizer 2: `Whaldorf Endive Salad` -> `WHALDORF ENDIVE SALAD`
-- Week 1 / Friday / Elevated: `Beef Strips with Sauteed Wild Mushrooms with Pan Sauce` -> `BEEF STRIPS WITH SAUTEED WILD MUSHROOMS WITH PAN SAUCE (GF)`
-- Week 1 / Friday / Comfort: `Roasted Turkey Breast with Pan Gravy` -> `ROASTED TURKEY BREAST WITH PAN GRAVY (GF)`
-- Week 1 / Friday / Alternative: `Baked Haddock with Tomato and Basil Salsa` -> `BAKED HADDOCK WITH TOMATO&BASIL SALSA (GF/DF)`
-- Week 1 / Friday / Veggie 1: `Steamed Broccoli` -> `STEAMED BROCCOLI`
-- Week 1 / Friday / Veggie 2: `Roasted Parsnips with Cinnamon Sugar` -> `ROASTED PARSNIPS WITH CINNAMON BUTTER`
-- Week 1 / Friday / Starch: `Fresh Herb Orzo` -> `FRESH HERB ORZO`
-- Week 1 / Friday / Dessert: `Assorted Desserts` -> `ASSORTED DESSERTS`
-- Week 1 / Saturday / Appetizer 1: `Asian Vegetable - Beef Soup` -> `ASIAN VEGETABLE - BEEF SOUP`
-- Week 1 / Saturday / Appetizer 2: `Shrimp Tempura with Dipping Sauce` -> `SHRIMP TEMPURA WITH DIPPING SAUCE`
-- Week 1 / Saturday / Elevated: `Roasted Pork with Grainy Dijon Mustard Sauce` -> `ROASTED PORK WITH GRAINY DIJON MUSTARD SAUCE (GF/DF)`
-- Week 1 / Saturday / Comfort: `Honey Garlic Chicken Breast` -> `HONEY GARLIC CHICKEN BREAST`
-- Week 1 / Saturday / Alternative: `Grilled Shirmp with Mango Salsa` -> `GRILLED SHIRMP WITH MANGO SALSA`
-- Week 1 / Saturday / Veggie 1: `Buttered Corn Kernels` -> `BUTTERED CORN KERNELS`
-- Week 1 / Saturday / Veggie 2: `Roasted Brussel Sprouts` -> `ROASTED BRUSSEL SPROUTS`
-- Week 1 / Saturday / Starch: `Baked Potato with Sour Cream and Chive` -> `BAKED POTATO WITH SOUR CREAM&CHIVE`
-- Week 1 / Saturday / Dessert: `Cheesecake with Berry Compote` -> `BANANA CAKE WITH CINNAMON WHIPPED TOPPING`
-- Week 1 / Sunday / Appetizer 1: `Taco Soup` -> `TACO SOUP`
-- Week 1 / Sunday / Appetizer 2: `Wedge Salad Skewer` -> `WEDGE SALAD SKEWER`
-- Week 1 / Sunday / Elevated: `Prime Rib with Horseradish Yogurt Sauce` -> `PRIME RIB WITH HORSERADISH YOGURT SAUCE (ON SIDE)      (GF/DF)`
-- Week 1 / Sunday / Comfort: `Poached Salmon with Cucumber and Herb Sauce` -> `POACHED SALMON WITH CUCUMBER&HERB SAUCE`
-- Week 1 / Sunday / Alternative: `Roasted Chicken with Thyme and Lemon Jus` -> `ROASTED CHICKEN WITH THYME&LEMON JUS`
-- Week 1 / Sunday / Veggie 1: `Green Bean Almondine` -> `GREEN BEAN ALMONDINE`
-- Week 1 / Sunday / Veggie 2: `Roasted Root Vegetables (Carrot/Yam/Parsnip/Turnip)` -> `ROASTED ROOT VEGETABLES (CARROT/YAM/PARSNIP/TURNIP)`
-- Week 1 / Sunday / Starch: `Butter Mashed Potatoes` -> `BUTTER MASHED POTATOES`
-- Week 1 / Sunday / Dessert: `Apple Pie` -> `LEMON PISTACHIO LOAF`
-- Week 2 / Monday / Appetizer 1: `COCONUT SHRIMP WITH LIME DIP` -> `COCONUT SHRIMP WITH LIME DIPPING`
-- Week 2 / Monday / Alternative: `ROAST CHICKEN WITH PAPRIKA` -> `VEGETARIAN STUFFED KOOSA`
-- Week 2 / Tuesday / Dessert: `PEACH FRIED PIES` -> `CHOCOLATE MOUSSE WITH SPONGE TOFFEE`
-- Week 2 / Wednesday / Dessert: `BANANA CREAM PIE` -> `ASSORTED DESSERTS`
-- Week 2 / Thursday / Appetizer 1: `CORN CHOWDER` -> `ANTIPASTI SKEWERS WITH BREAD SPEAR`
-- Week 2 / Thursday / Elevated: `VEAL SHANK WITH NATURAL JUS` -> `VEAL SHANK WITH SPICED AVOCADO LIME SAUCE`
-- Week 2 / Thursday / Alternative: `SEARED SCALLOPS WITH SQUASH PUREE` -> `GRILLED CHICKEN BREAST WITH BASIL PESTO/ROASTED TOMATO`
-- Week 2 / Thursday / Dessert: `ASSORTED DESSERTS` -> `BANANA CREAM PIE`
-- Week 2 / Friday / Elevated: `TURKEY ROULADE WITH SPINACH&SUNDRIED TOMATO                     (GF/DF)` -> `BEEF STRIPS WITH SAUTEED WILD MUSHROOMS WITH PAN SAUCE (GF)`
-- Week 2 / Saturday / Elevated: `RED WINE BRAISED BEEF BRISKET` -> `SLOW ROASTED FLANK ROAST WITH RED WINE SAUCE`
-- Week 2 / Saturday / Starch: `HERB ROASTED POTATO WEDGES` -> `BAKED POTATO WITH SOUR CREAM&CHIVE`
-- Week 2 / Sunday / Starch: `WILD RICE PILAF` -> `BUTTER MASHED POTATOES`
-- Week 3 / Monday / Elevated: `SHRIMP CURRY` -> `SHRIMP CURRY (MADRAS)`
-- Week 3 / Monday / Alternative: `SEARED SALMON FILET WITH PINEAPPLE SALSA` -> `PAN SEARED SALMON WITH MAPLE DIJON SAUCE (GF/DF)`
-- Week 3 / Tuesday / Appetizer 2: `SPINACH STRAWBERRY SALAD WITH ALMOND & GOAT CHEESE HONEY MUSTARD DRESSING` -> `SPINACH STRAWBERRY SALAD ALMOND & GOAT CHEESE HONEY MUSTARD`
-- Week 3 / Tuesday / Dessert: `INDIAN PUDDING (MOLASSES/CORNMEAL)` -> `CHOCOLATE MOUSSE WITH SPONGE TOFFEE`
-- Week 3 / Wednesday / Elevated: `GRILLED TILAPIA` -> `GRILLED TILAPIA PERUVIAN GREEN SAUCE`
-- Week 3 / Wednesday / Comfort: `TURKEY CUTLET WITH ARUGULA` -> `TURKEY CUTLET WITH ARUGULA&PARM`
-- Week 3 / Wednesday / Veggie 1: `GRILLED EGGPLANT CHUNKS` -> `ROASTED EGGPLANT WITH TAHINI`
-- Week 3 / Thursday / Alternative: `TOMATO CHEDDAR AND BACON PIE` -> `GRILLED CHICKEN BREAST WITH BASIL PESTO/ROASTED TOMATO`
-- Week 3 / Friday / Elevated: `BEEF STROGANOFF` -> `BEEF STRIPS WITH SAUTEED WILD MUSHROOMS WITH PAN SAUCE (GF)`
-- Week 3 / Friday / Comfort: `SEARED CATFISH` -> `SEARED CATFISH LEMON BEURRE BLANC SAUCE`
-- Week 3 / Friday / Dessert: `CLASSIC BUTTER TARTS` -> `CLASSIC TREACLE TART (BUTTER TART PIE)`
-- Week 3 / Saturday / Elevated: `DOVER SOLE WITH HERB OIL` -> `DOVER SOLE WITH CREAMY PARSLEY SAUCE AND HERB OIL`
-- Week 3 / Saturday / Comfort: `GRILLED LEMON GARLIC CHICKEN BREAST` -> `HONEY GARLIC CHICKEN BREAST`
-- Week 3 / Saturday / Alternative: `GRILLED VEGETABLE SKEWER` -> `GRILLED SHRIMPS WITH MANGO SALSA`
-- Week 3 / Saturday / Starch: `FARO WITH FRESH HERBS` -> `BAKED POTATO WITH SOUR CREAM&CHIVE`
-- Week 3 / Sunday / Starch: `LOADED BAKED POTATO` -> `BUTTER MASHED POTATOES`
-- Week 4 / Monday / Appetizer 1: `SHRIMP CEVICHE WITH CROSTINI AND SALSA` -> `GERMAN POTATO SALAD`
-- Week 4 / Monday / Alternative: `CORN SPOONBREAD` -> `PAN SEARED SALMON WITH PINEAPPLE SALSA (GF/DF)`
-- Week 4 / Tuesday / Comfort: `CLASSIC BEEF CHILI` -> `CLASSIC BEEF CHILI WITH GARLIC BREAD`
-- Week 4 / Tuesday / Alternative: `VEGETABLE ENCHILADAS` -> `SAUTEED SHRIMP WITH GARLIC, WHITE WINE & FRESH DICED TOMATO`
-- Week 4 / Tuesday / Dessert: `BLUEBERRY CRUMBLE CHEESECAKE` -> `CHOCOLATE MOUSSE WITH SPONGE TOFFEE`
-- Week 4 / Wednesday / Comfort: `FARFELLE PASTA WITH CHICKEN AND SAUSAGE` -> `PENNE PASTA WITH CHICKEN AND SAUSAGE`
-- Week 4 / Thursday / Alternative: `BAKED CAULIFLOWER STEAK WITH CAJUN CORN SALSA` -> `GRILLED CHICKEN BREAST WITH BASIL PESTO/ROASTED TOMATO`
-- Week 4 / Friday / Elevated: `PORK SCHNITZEL WITH CINNAMON APPLE SAUCE` -> `BEEF STRIPS WITH SAUTEED WILD MUSHROOMS WITH PAN SAUCE (GF)`
-- Week 4 / Friday / Starch: `SPAETZLE` -> `STUFFED BAKED POTATO`
-- Week 4 / Friday / Dessert: `PAVLOVA WITH FRESH BERRIES` -> `CHOCOLATE RASPBERRY PAVLOVA`
-- Week 4 / Saturday / Alternative: `ROASTED VEGETABLE AND FALAFEL ON BREAD` -> `ROASTED VEGETABLE AND FALAFEL ON BREAD WITH YOGURT SAUCE`
-- Week 4 / Saturday / Starch: `STEAMED CARROTS` -> `BAKED POTATO WITH SOUR CREAM&CHIVE`
-- Week 4 / Sunday / Comfort: `SPAGHETTI WITH BOLOGNESE` -> `SPAGHETTI ALLA NORMA`
-- Week 4 / Sunday / Veggie 1: `SAUTEED SPINACH WITH GARROT/MUSHROOM/ONION` -> `SAUTEED SPINACH WITH CARROT/MUSHROOM/ONION`
-- Week 4 / Sunday / Starch: `STEAMED BROCCOLI` -> `BUTTER MASHED POTATOES`
+- Week 1 / Wednesday / Appetizer 1: `PROSCIUTTO WRAPPED PEARS WITH ARUGULA+BLUE CHEESE` -> `Prosciutto Wrapped Pears with Arugula and Blue Cheese (GF)`
+- Week 1 / Wednesday / Appetizer 2: `THAI FISH CAKES WITH CILANTRO DIP` -> `Thai Fish Cakes with Cilantro Lime Dip `
+- Week 1 / Wednesday / Elevated: `ROAST BEEF WITH APPLE AND CARAMELIZED ONION SAUCE     (GF/DF)` -> `Roasted Beef Rump with Carmelized Onion and Apple Sauce (GF/DF)`
+- Week 1 / Wednesday / Dessert: `LEMON CURD TART WITH EGG WHITE` -> `Lemon Curd Tart with Egg-white Meringue `
+- Week 1 / Thursday / Appetizer 1: `ANTIPASTI SKEWERS` -> `Antipasti Skewers with Cured Meats and Italian Vegetables with Garlic Bread Spear `
+- Week 1 / Thursday / Starch: `COUSCOUS WITH FRESH CHOPPED HERBS` -> `Steamed Cous Cous with Herbs and Golden Raisins`
+- Week 1 / Friday / Appetizer 1: `SOPA AJOBLANCO` -> `Sopa Ajoblanco (Spanish White Gazpacho) (GF) `
+- Week 1 / Friday / Elevated: `BEEF STRIPS WITH SAUTEED WILD MUSHROOMS WITH PAN SAUCE (GF)` -> `Beef Strips with Sauteed Mushrooms and Pan Jus (GF/DF)`
+- Week 1 / Friday / Comfort: `ROASTED TURKEY BREAST WITH PAN GRAVY (GF)` -> `Roasted Turkey with Poultry Herb Sauce (GF/DF)`
+- Week 1 / Saturday / Appetizer 2: `SHRIMP TEMPURA WITH DIPPING SAUCE` -> `Shrimp Tempura with Sweet Dipping Sauce (GF/DF)`
+- Week 1 / Saturday / Veggie 1: `BUTTERED CORN KERNELS` -> `Paprika and Honey Steamed Corn Kernels`
+- Week 1 / Sunday / Comfort: `POACHED SALMON WITH CUCUMBER&HERB SAUCE` -> `Poached Salmon with Cucumber and Herb Relish (GF/DF)`
+- Week 1 / Sunday / Alternative: `ROASTED CHICKEN WITH THYME&LEMON JUS` -> `Baked Chicken Thigh with Lemon and Herb Sauce (GF/DF)`
+- Week 2 / Monday / Alternative: `VEGETARIAN STUFFED KOOSA` -> `Vegetarian stuffed Koosa (Riced Stuffed Zucchini) (GF/DF)`
+- Week 2 / Monday / Starch: `BAKED FARRO PILAF` -> `Baked Farro Pilaf with aromatic vegetables`
+- Week 2 / Tuesday / Starch: `WILD RICE` -> `Wild Rice with Apricot and Dried Cranberry`
+- Week 2 / Wednesday / Elevated: `CHICKEN MARSALA IN MUSHROOM SAUCE` -> `Chicken Thigh Marsala in Mushroom Sauce (GF/DF)`
+- Week 2 / Wednesday / Comfort: `OPEN FACED ROAST BEEF DIP` -> `Open Faced Roast Beef Dip on French Baguette with Side Jus (DF)`
+- Week 2 / Thursday / Appetizer 1: `ANTIPASTI SKEWERS WITH BREAD SPEAR` -> `Antipasti Skewers with Cured Meats and Italian Vegetables with Garlic Bread Spear `
+- Week 2 / Thursday / Appetizer 2: `MANGO AND AVOCADO SALAD` -> `Mango and Avocado Salad.  Choice Dressing (GF/DF)`
+- Week 2 / Friday / Appetizer 2: `GAZPACHO SOUP` -> `Mexican Gazpacho Cold Soup (GF/DF)`
+- Week 2 / Friday / Dessert: `LEMON BREAD WITH ICING` -> `Lemond Chiffon Cake with Icing`
+- Week 2 / Saturday / Appetizer 1: `GRILLED ZUCCHINI ROLLUP WITH RICOTTA` -> `Griilled Zucchini Roll with Herbed Ricotta (GF) `
+- Week 2 / Saturday / Elevated: `SLOW ROASTED FLANK ROAST WITH RED WINE SAUCE` -> `Slow roasted Flank Roast with Red Wine Sauce (GF/DF)`
+- Week 2 / Saturday / Comfort: `ROASTED PORK TENDERLOIN WITH OLIVE AND FETA SALSA` -> `Brined Pork Tenderloin with Feta and Olive Salsa (GF)`
+- Week 2 / Sunday / Appetizer 2: `SOBA NOODLE SALAD` -> `Spicy Peanut Soba Noodle Salad (DF)`
+- Week 3 / Monday / Starch: `SCALLOPED POTATOES` -> `Garlic Mashed Potato`
+- Week 3 / Tuesday / Comfort: `FRIED CHICKEN` -> `Buttermilk Fried Chicken (***BONE-IN***) (DF)`
+- Week 3 / Tuesday / Dessert: `CHOCOLATE MOUSSE WITH SPONGE TOFFEE` -> `Indian Pudding – Cornmeal and Molasses Cake with Vanilla Ice Cream`
+- Week 3 / Thursday / Appetizer 2: `WHITE BEAN DIP WITH TOASTED PITA CHIPS` -> `Cheesy Chili White Bean Dip with Pita Chips `
+- Week 3 / Saturday / Comfort: `HONEY GARLIC CHICKEN BREAST` -> `HONEY LEMON GARLIC CHICKEN BREAST`
+- Week 3 / Sunday / Appetizer 1: `HUSH PUPPIES WITH GARLIC DIP` -> `BBQ Pork Hush Puppies with Garlic Dip`
+- Week 3 / Sunday / Comfort: `CREAMY MAC N CHEESE` -> `Creamy Mac’N’Cheese Bake`
+- Week 3 / Sunday / Alternative: `CHICKEN MARSALA` -> `Chicken Marsala with Creamy Mushroom Sauce (DF)`
+- Week 3 / Sunday / Dessert: `POUDING CHOMEUR` -> `Pudding Chomeur with Vanilla Ice Cream`
+- Week 4 / Tuesday / Elevated: `CHICKEN FRANCESE` -> `Chicken Francese – Dusted Chicken Breast in Buttery Lemon Sauce (GF/DF)`
+- Week 4 / Tuesday / Alternative: `SAUTEED SHRIMP WITH GARLIC, WHITE WINE & FRESH DICED TOMATO` -> `Vegetable Enchiladas with Melted Cheese`
+- Week 4 / Wednesday / Appetizer 1: `GRILLED CLAMS WITH CUCUMBER AND SCALLION` -> `Grilled Clams with Cucumber and Scallion Salad (GF/DF)`
+- Week 4 / Wednesday / Appetizer 2: `MUFFULETTA OLIVE SALAD` -> `Muffuletta Olive Salad on Grilled Crostini (DF) `
+- Week 4 / Wednesday / Comfort: `PENNE PASTA WITH CHICKEN AND SAUSAGE` -> `Penne Pasta with Chicken and Sausage in Aglio Olio (Garlic & Olive Oil) Sauce`
+- Week 4 / Thursday / Appetizer 1: `SUMMER RICE WRAPS` -> `Summer Rice Wraps with Peanut Dipping Sauce (GF/DF)`
+- Week 4 / Thursday / Comfort: `BAKED SALMON WITH BLACK BEAN SALSA` -> `Baked Salmon Medallion with Black Bean and Sweet Pepper Salsa (GF/DF)`
+- Week 4 / Thursday / Alternative: `GRILLED CHICKEN BREAST WITH BASIL PESTO/ROASTED TOMATO` -> `Baked Cauliflower Steak with Cajun Corn Salsa (GF/DF)`
+- Week 4 / Friday / Appetizer 2: `WATERMELON FETA CUCUMBER SALAD` -> `Watermelon and Feta Salad with Goddess Dressing (GF)`
+- Week 4 / Friday / Comfort: `TURKEY POT ROAST` -> `Turkey Pot Roast with Savoury Gravy (GF/DF)`
+
+## Recipes Rebuilt From URLs
+
+- `CARROT AND ORANGE SOUP`: Re-extracted and normalized from source URL
+- `MAPLE GLAZED SALMON FILET WITH`: Re-extracted and normalized from source URL
+- `CHICKEN CORDON BLEU`: Retained and normalized current extraction; source URL blocked
+- `BLACK FOREST CAKE`: Retained and normalized current extraction; source URL blocked
+- `SHAVED FENNEL AND ORANGE SALAD`: Re-extracted and normalized from source URL
+- `CUCUMBER AND DILL SALAD`: Re-extracted and normalized from source URL
+- `Chicken Thigh Marsala in Mushroom Sauce (GF/DF)`: Re-extracted and normalized from source URL
+- `Open Faced Roast Beef Dip on French Baguette with Side Jus (DF)`: Re-extracted and normalized from source URL
+- `LEMON BAKED COD`: Re-extracted and normalized from source URL
+- `GARLIC MASHED POTATOES`: Retained and normalized current extraction; source URL blocked
+- `Mango and Avocado Salad.  Choice Dressing (GF/DF)`: Re-extracted and normalized from source URL
+- `CHICKEN PARMESAN`: Re-extracted and normalized from source URL
+- `BANANA CREAM PIE`: Re-extracted and normalized from source URL
+- `SMOKED SALMON CUCUMBER BITES`: Re-extracted and normalized from source URL
+- `SPAGHETTI AND MEATBALLS IN MARINARA`: Re-extracted and normalized from source URL
+- `Griilled Zucchini Roll with Herbed Ricotta (GF) `: Retained and normalized current extraction; source URL blocked
+- `BACON AND CLAM FLATBREAD`: Re-extracted and normalized from source URL
+- `WILD MUSHROOM TART WITH GOAT CHEESE`: Re-extracted and normalized from source URL
+- `ROASTED MEXICAN STREET CORN`: Re-extracted and normalized from source URL
+- `KEY LIME PIE`: Re-extracted and normalized from source URL
+- `ZUCCHINI FRITTERS WITH DIP`: Re-extracted and normalized from source URL
+- `ROASTED CHICKEN BREAST IN CREAMY SUNDRIED TOMATO SAUCE`: Re-extracted and normalized from source URL
+- `SEARED SALMON WITH BASIL PESTO SAUCE`: Re-extracted and normalized from source URL
+- `PEACH COBBLER`: Re-extracted and normalized from source URL
+- `ROASTED RED PEPPER HUMMUS AND PITA`: Re-extracted and normalized from source URL
+- `SPICY TUNA AND CRISPY RICE CRACKER`: Re-extracted and normalized from source URL
+- `SEARED HALIBUT WITH CHERRY TOMATO&OLIVE`: Re-extracted and normalized from source URL
 
 ## Pre-Deployment Checks
 

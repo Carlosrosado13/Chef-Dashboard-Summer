@@ -1,0 +1,3595 @@
+{
+  "archivedAt": "2026-06-06T18:28:26.176Z",
+  "reason": "Not referenced by final Dinner menu or unchanged Lunch menu",
+  "recipes": [
+    {
+      "title": "LEMON CURD TART WITH EGG WHITE",
+      "yield": "6 to 8 servings",
+      "category": "Dessert",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "store-bought 9-inch unbaked pie crust (or homemade shortcrust pastry)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "blind-baked and cooled"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Lemon"
+        },
+        {
+          "amount": 4,
+          "unit": "each",
+          "name": "large egg yolks"
+        },
+        {
+          "amount": 0.6666666666666666,
+          "unit": "cup",
+          "name": "granulated sugar"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "lemon zest"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "fresh lemon juice"
+        },
+        {
+          "amount": 6,
+          "unit": "Tbsp",
+          "name": "unsalted butter (chilled and cubed)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 3,
+          "unit": "each",
+          "name": "large egg whites"
+        },
+        {
+          "amount": 0.3333333333333333,
+          "unit": "cup",
+          "name": "powdered sugar"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "cream of tartar"
+        }
+      ],
+      "steps": [
+        "Cook lemon curd: Whisk egg yolks, sugar, lemon zest, and lemon juice together in a saucepan over medium-low heat. Cook for 6 to 8 minutes, whisking constantly, until thick enough to coat a spoon. Remove from heat and stir in cold butter cubes until completely melted.",
+        "Fill tart shell: Pour the smooth lemon curd into the baked tart shell, smoothing the surface with a spatula; place in the refrigerator for 15 minutes.",
+        "Make glossy finish: Whip egg whites and cream of tartar in a clean bowl with an electric mixer until soft peaks form. Gradually beat in powdered sugar until stiff, glossy peaks form.",
+        "Broil or torch: Spread or pipe egg white peaks over the lemon curd. Place under an oven broiler for 1 to 2 minutes (or use a kitchen torch) until the tips turn golden brown; serve chilled."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Wednesday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Dessert",
+        "season": "Summer",
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 1",
+            "day": "Wednesday",
+            "category": "Dessert"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.928Z"
+      }
+    },
+    {
+      "title": "ANTIPASTI SKEWERS",
+      "yield": "4 servings (approx. 12 skewers)",
+      "category": "Appetizer 1",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 12,
+          "unit": "each",
+          "name": "wooden appetizer skewers"
+        },
+        {
+          "amount": 12,
+          "unit": "each",
+          "name": "cherry tomatoes"
+        },
+        {
+          "amount": 12,
+          "unit": "each",
+          "name": "marinated artichoke hearts (quartered)"
+        },
+        {
+          "amount": 12,
+          "unit": "each",
+          "name": "cubes feta or provolone cheese"
+        },
+        {
+          "amount": 12,
+          "unit": "each",
+          "name": "pitted Kalamata olives"
+        },
+        {
+          "amount": 12,
+          "unit": "slice",
+          "name": "salami or prosciutto (folded)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "extra-virgin olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "red wine vinegar"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "dried Italian seasoning"
+        },
+        {
+          "amount": 1,
+          "unit": "pinch",
+          "name": "salt"
+        }
+      ],
+      "steps": [
+        "Thread ingredients: Carefully thread a cherry tomato, a folded slice of meat, an artichoke heart quarter, a cheese cube, and a Kalamata olive onto each wooden skewer.",
+        "Arrange platter: Place the completed antipasti skewers in a neat overlapping circle pattern on a large serving platter.",
+        "Whisk dressing: Whisk together the extra-virgin olive oil, red wine vinegar, dried Italian seasoning, and a pinch of salt in a small bowl.",
+        "Drizzle and serve: Drizzle the herb dressing evenly across the skewers just before serving at room temperature."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Thursday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Appetizer 1",
+        "season": "Summer",
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 1",
+            "day": "Thursday",
+            "category": "Appetizer 1"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.928Z"
+      }
+    },
+    {
+      "title": "COUSCOUS WITH FRESH CHOPPED HERBS",
+      "yield": "4 servings",
+      "category": "Starch",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Base"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "dry couscous"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Liquid"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "low-sodium vegetable or chicken broth"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "olive oil or butter"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Herb"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "finely chopped fresh flat-leaf parsley"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "chopped fresh chives"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "fresh lemon juice"
+        }
+      ],
+      "steps": [
+        "Boil broth base: Combine vegetable or chicken broth, olive oil or butter, and kosher salt in a small saucepan; bring to a rolling boil over high heat.",
+        "Steam grain: Remove saucepan from heat entirely. Pour in the dry couscous, stir once quickly to submerge, and immediately cover tightly with a lid.",
+        "Trap steam: Let the couscous sit undisturbed for 5 minutes off the heat to allow the grains to fully absorb the hot liquid.",
+        "Fluff and herb: Remove the lid and fluff the couscous grains thoroughly with a fork. Fold in the fresh chopped parsley, chives, and lemon juice before serving warm."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Thursday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Starch",
+        "season": "Summer",
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 1",
+            "day": "Thursday",
+            "category": "Starch"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.929Z"
+      }
+    },
+    {
+      "title": "SOPA AJOBLANCO",
+      "yield": "4 servings",
+      "category": "Appetizer 1",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Soup"
+        },
+        {
+          "amount": 1.5,
+          "unit": "cup",
+          "name": "blanched raw almonds"
+        },
+        {
+          "amount": 2,
+          "unit": "clove",
+          "name": "garlic (germ removed)"
+        },
+        {
+          "amount": 3,
+          "unit": "slice",
+          "name": "day-old white bread (crusts removed, soaked in water)"
+        },
+        {
+          "amount": 3,
+          "unit": "cup",
+          "name": "ice-cold water"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Liquids &"
+        },
+        {
+          "amount": 5,
+          "unit": "Tbsp",
+          "name": "extra-virgin olive oil"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "sherry vinegar"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "green seedless grapes (halved)"
+        }
+      ],
+      "steps": [
+        "Process paste: Place almonds, garlic cloves, and salt into a high-speed blender. Blend until a fine powdery crumb texture forms.",
+        "Blend base: Squeeze excess water from the soaked bread. Add bread to blender along with vinegar and 1 cup of the ice-cold water; blend until a thick paste sets.",
+        "Emulsify oil: Turn blender on low, slowly drizzle in the extra-virgin olive oil to emulsify. Pour in remaining cold water and blend on high until silky smooth.",
+        "Chill and serve: Transfer soup into a glass pitcher, cover, and chill for 2 hours. Serve cold in shallow bowls topped with halved green grapes."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Friday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Appetizer 1",
+        "season": "Summer",
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 1",
+            "day": "Friday",
+            "category": "Appetizer 1"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.929Z"
+      }
+    },
+    {
+      "title": "ROASTED TURKEY BREAST WITH PAN GRAVY (GF)",
+      "yield": "6 servings",
+      "category": "Comfort",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 3,
+          "unit": "lb",
+          "name": "bone-in turkey breast (skin-on)"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "poultry seasoning"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "garlic powder"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "salt"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "black pepper"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 2,
+          "unit": "cup",
+          "name": "turkey pan drippings plus chicken broth"
+        },
+        {
+          "amount": 1.5,
+          "unit": "Tbsp",
+          "name": "cornstarch (dissolved in 3 tbsp water)"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "kitchen bouquet (optional, for color)"
+        }
+      ],
+      "steps": [
+        "Preheat and rub: Preheat oven to 375°F (190°C). Pat turkey breast dry. Rub with olive oil and coat evenly with poultry seasoning, garlic powder, salt, and pepper.",
+        "Roast juicy: Roast turkey breast in a pan for 1 hour to 1 hour and 15 minutes until a thermometer inserted in the thickest part reads 165°F (74°C); let rest 15 minutes.",
+        "Simmer drippings: Pour pan drippings into a measuring cup, skim off fat, add chicken broth to make 2 cups total, and pour into a saucepan over medium heat.",
+        "Thicken gravy: Whisk in the cornstarch slurry. Bring to a boil, stirring constantly, for 2 to 3 minutes until thickened smoothly; carve turkey and serve with gravy."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Friday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Comfort",
+        "season": "Summer",
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 1",
+            "day": "Friday",
+            "category": "Comfort"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.929Z"
+      }
+    },
+    {
+      "title": "SHRIMP TEMPURA WITH DIPPING SAUCE",
+      "yield": "4 servings",
+      "category": "Appetizer 2",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 12,
+          "unit": "each",
+          "name": "large shrimp (peeled, deveined, tails left on, bellies scored to stay straight)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Crispy"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "all-purpose flour"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "cornstarch"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "baking powder"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "egg yolk"
+        },
+        {
+          "amount": 0.75,
+          "unit": "cup",
+          "name": "ice-cold sparkling water"
+        },
+        {
+          "amount": 4,
+          "unit": "cup",
+          "name": "vegetable oil (for frying)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Tentsuyu"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Dipping"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "dashi stock"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "soy sauce"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "mirin"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "grated ginger"
+        }
+      ],
+      "steps": [
+        "Simmer dip sauce: Combine dashi, soy sauce, mirin, and grated ginger in a small saucepan. Simmer for 2 minutes to blend flavors; set aside.",
+        "Whisk cold batter: Whisk egg yolk and ice-cold sparkling water in a bowl. Add flour, cornstarch, and baking powder, mixing briefly with chopsticks—leave lumps in batter.",
+        "Dip and fry: Heat frying oil to 350°F (175°C) in a deep pot. Dust straight shrimp with extra flour, dip fully into the cold batter, and drop into hot oil.",
+        "Drain crisp: Fry 3 to 4 shrimp at a time for 2 to 3 minutes until light golden and crisp. Drain on a wire rack and serve hot with the dipping sauce."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Saturday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Appetizer 2",
+        "season": "Summer",
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 1",
+            "day": "Saturday",
+            "category": "Appetizer 2"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.930Z"
+      }
+    },
+    {
+      "title": "BUTTERED CORN KERNELS",
+      "yield": "4 servings",
+      "category": "Veggie 1",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 4,
+          "unit": "cup",
+          "name": "fresh or frozen sweet corn kernels (no need to thaw)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Rich"
+        },
+        {
+          "amount": 3,
+          "unit": "Tbsp",
+          "name": "unsalted butter"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "garlic powder"
+        },
+        {
+          "amount": 0.125,
+          "unit": "tsp",
+          "name": "freshly cracked black pepper"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "fresh chives or flat-leaf parsley (finely chopped)"
+        }
+      ],
+      "steps": [
+        "Melt the butter: Melt the unsalted butter in a large skillet over medium heat until it is hot, foaming, and completely fluid.Sauté the corn: Dump the sweet corn kernels directly into the hot buttered skillet. Increase the heat slightly to medium-high.",
+        "Sauté for 3 to 4 minutes, stirring frequently, until the corn is plump, tender, heated through, and turns a vibrant golden yellow.Season the kernels: Sprinkle the kosher salt, garlic powder, and freshly cracked black pepper evenly over the sautéed corn. Toss or stir vigorously for 1 minute so the spices fully dissolve into the warm butter glaze.Garnish and serve: Remove the skillet from the heat source.",
+        "Fold in the finely chopped fresh chives or parsley, transfer to a warm side dish, and serve immediately."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Saturday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Veggie 1",
+        "season": "Summer",
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 1",
+            "day": "Saturday",
+            "category": "Veggie 1"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.930Z"
+      }
+    },
+    {
+      "title": "POACHED SALMON WITH CUCUMBER&HERB SAUCE",
+      "yield": "4 servings",
+      "category": "Comfort",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Salmon &"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Poaching"
+        },
+        {
+          "amount": 4,
+          "unit": "each",
+          "name": "skinless salmon fillets (approx. 6 oz each)"
+        },
+        {
+          "amount": 4,
+          "unit": "cup",
+          "name": "low-sodium vegetable or chicken broth (or water)"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "dry white wine (optional)"
+        },
+        {
+          "amount": 0.5,
+          "unit": "each",
+          "name": "small yellow onion (sliced)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "lemon (sliced into wheels)"
+        },
+        {
+          "amount": 2,
+          "unit": "sprig",
+          "name": "fresh parsley"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "bay leaf"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Cucumber &"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Herb"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "English cucumber (peeled, seeded, and finely grated)"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "plain Greek yogurt (or sour cream)"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "fresh dill (finely chopped)"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "fresh chives (finely chopped)"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "fresh lemon juice"
+        },
+        {
+          "amount": 1,
+          "unit": "clove",
+          "name": "garlic (finely minced)"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 0.125,
+          "unit": "tsp",
+          "name": "white pepper"
+        }
+      ],
+      "steps": [
+        "Make the herbed sauce: Place the grated cucumber into a clean kitchen towel or cheesecloth and squeeze firmly over the sink to wring out all excess water. Transfer the dry cucumber to a medium mixing bowl.",
+        "Add the Greek yogurt, fresh dill, chives, lemon juice, minced garlic, salt, and white pepper. Whisk thoroughly until smooth and uniform, then cover and chill in the refrigerator.Build the aromatic bath: Combine the broth, optional white wine, sliced onion, lemon wheels, parsley sprigs, bay leaf, and salt in a large, wide skillet or shallow saucepan.",
+        "Bring the liquid to a boil over high heat, then reduce the heat to medium-low. Let it simmer uncovered for 5 minutes so the liquids absorb the aromatic flavors.Poach the salmon: Pat the salmon fillets completely dry with a paper towel.",
+        "Lower the fillets gently into the simmering liquid in a single layer—the liquid should just barely submerge the fish. Cover the skillet tightly with a lid and simmer gently for 8 to 10 minutes.",
+        "Do not let the liquid boil; a gentle bubble ensures the salmon remains incredibly tender and moist.Plate and garnish: The salmon is perfectly cooked when it turns opaque and flakes easily with a fork in the center. Use a wide slotted spatula to carefully lift each fillet out of the liquid, letting any excess broth drain off.",
+        "Place the salmon onto serving plates, top each fillet generously with a cold dollop of the cucumber-herb sauce, and serve warm or at room temperature."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Sunday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Comfort",
+        "season": "Summer",
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 1",
+            "day": "Sunday",
+            "category": "Comfort"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.932Z"
+      }
+    },
+    {
+      "title": "ROASTED CHICKEN WITH THYME&LEMON JUS",
+      "yield": "4 servings",
+      "category": "Alternative",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "whole chicken (approx. 3-4 lbs)"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Jus &"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "small yellow onion (quartered)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "lemon (halved)"
+        },
+        {
+          "amount": 4,
+          "unit": "sprig",
+          "name": "fresh thyme"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "low-sodium chicken broth"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "butter"
+        },
+        {
+          "amount": 1,
+          "unit": "to taste",
+          "name": "salt"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "and pepper"
+        }
+      ],
+      "steps": [
+        "Preheat and prep: Preheat oven to 400°F (200°C). Stuff chicken cavity with onion, lemon halves, and thyme sprigs.",
+        "Season and roast: Rub skin with olive oil, salt, and pepper. Roast breast-side up for 45 to 50 minutes until internal temperature hits 165°F (74°C).",
+        "Simmer jus: Remove chicken to a board to rest. Place roasting pan over stove burners on medium heat, pour in broth, and scrape up browned bits. Simmer 5 minutes, whisk in butter, and strain.",
+        "Serve: Carve chicken and spoon hot thyme-lemon jus over top."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Sunday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Alternative",
+        "season": "Summer",
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 1",
+            "day": "Sunday",
+            "category": "Alternative"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.932Z"
+      }
+    },
+    {
+      "title": "WHITE BEAN DIP WITH TOASTED PITA CHIPS",
+      "yield": "4 servings",
+      "category": "Appetizer 2",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "White"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Bean"
+        },
+        {
+          "amount": 1,
+          "unit": "can",
+          "name": "(15 oz) Cannellini beans (drained and rinsed)"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "extra virgin olive oil"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "fresh lemon juice"
+        },
+        {
+          "amount": 1,
+          "unit": "clove",
+          "name": "garlic"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "branch fresh rosemary (leaves stripped)"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 0.125,
+          "unit": "tsp",
+          "name": "black pepper"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Toasted"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Pita"
+        },
+        {
+          "amount": 3,
+          "unit": "each",
+          "name": "pita breads (cut into 6 triangles each)"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "olive oil"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "dried Italian seasoning"
+        },
+        {
+          "amount": 1,
+          "unit": "pinch",
+          "name": "salt"
+        }
+      ],
+      "steps": [
+        "Bake pita chips: Preheat your oven to 400°F (200°C). Arrange pita triangles in a single flat layer on a large baking sheet. Drizzle with 2 tbsp olive oil and sprinkle with Italian seasoning and salt. Bake for 6 to 8 minutes until completely crisp and golden brown; set aside.",
+        "Process bean dip: Place the drained Cannellini beans, extra virgin olive oil, lemon juice, garlic clove, fresh rosemary leaves, salt, and black pepper into a food processor or high-speed blender.",
+        "Blend velvety: Process on high speed for 1 to 2 minutes, scraping down the sides as needed, until the mixture transforms into an ultra-smooth, creamy dip.",
+        "Plate and serve: Spoon the white bean dip into a shallow bowl, drizzle the top with a tiny drop of olive oil, and serve immediately alongside the warm, toasted pita chips."
+      ],
+      "metadata": {
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 3",
+            "day": "Thursday",
+            "category": "Appetizer 2"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.941Z"
+      }
+    },
+    {
+      "title": "THAI FISH CAKES WITH CILANTRO DIP",
+      "yield": "4 servings (approx. 12 small fish cakes)",
+      "category": "Appetizer 2",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "lb",
+          "name": "firm white fish like cod or haddock (cut into chunks)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "large egg"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "Thai red curry paste"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "fish sauce"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "sugar"
+        },
+        {
+          "amount": 3,
+          "unit": "each",
+          "name": "green onions (thinly sliced)"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "name": "flat green beans (finely sliced into rings)"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "vegetable oil (for pan)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Cilantro"
+        },
+        {
+          "amount": 0.3333333333333333,
+          "unit": "cup",
+          "name": "sweet chili sauce"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "fresh lime juice"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "finely chopped fresh cilantro"
+        }
+      ],
+      "steps": [
+        "Process fish base: Place fish chunks, egg, red curry paste, fish sauce, and sugar in a food processor. Pulse until it forms a smooth, sticky paste.",
+        "Fold mix-ins: Transfer paste to a bowl. Fold in sliced green onions and finely sliced green bean rings until evenly distributed.",
+        "Shape and pan-fry: Shape mixture into small, flat patties (about 2 inches wide). Heat vegetable oil in a skillet over medium heat. Fry cakes for 3 to 4 minutes per side until golden brown and firm.",
+        "Serve warm: Whisk sweet chili sauce, lime juice, and chopped cilantro together. Serve hot fish cakes alongside the sweet cilantro dip."
+      ],
+      "metadata": {
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 1",
+            "day": "Wednesday",
+            "category": "Appetizer 2"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.927Z"
+      }
+    },
+    {
+      "title": "BAKED FARRO PILAF",
+      "yield": "4 servings",
+      "category": "Starch",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "pearled farro (rinsed and drained)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "butter"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "small yellow onion (finely diced)"
+        },
+        {
+          "amount": 2,
+          "unit": "clove",
+          "name": "garlic (minced)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Veg &"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "cremini mushrooms (sliced)"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "fresh thyme leaves (or 1/2 tsp dried thyme)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 2,
+          "unit": "cup",
+          "name": "low-sodium chicken or vegetable broth"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "black pepper"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "name": "grated Parmesan cheese"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "fresh flat-leaf parsley (chopped)"
+        }
+      ],
+      "steps": [
+        "Preheat and sauté: Preheat your oven to 375°F (190°C). Heat the olive oil and butter in a medium oven-safe pan or Dutch oven over medium heat.",
+        "Add the diced onion and sliced mushrooms, sautéing for 5 to 6 minutes until the vegetables are soft and the mushrooms are browned.Toast the farro: Stir in the minced garlic and fresh thyme, cooking for 1 minute until fragrant. Add the rinsed farro to the pan and stir constantly for 2 minutes to lightly toast the grains and coat them in the oils.Simmer and cover: Pour in the broth, salt, and black pepper, stirring to scrape up any browned bits from the bottom.",
+        "Bring the liquid to a boil, then immediately turn off the heat and cover the pan tightly with a lid or a double layer of aluminum foil.Bake and fluff: Transfer the covered pan to the oven and bake for 30 to 35 minutes until the farro is tender and all the liquid is absorbed. Remove from the oven, let sit covered for 5 minutes, then fluff with a fork and fold in the Parmesan cheese and fresh parsley before serving."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 2",
+            "day": "Monday",
+            "category": "Starch"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 2",
+            "day": "Monday",
+            "category": "Starch"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.935Z"
+      }
+    },
+    {
+      "title": "WILD RICE",
+      "yield": "4 servings (approx. 3 cups cooked)",
+      "category": "Starch",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "uncooked 100% wild rice (thoroughly rinsed in a fine-mesh strainer)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 3,
+          "unit": "cup",
+          "name": "low-sodium chicken broth"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "vegetable broth"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "or water"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Flavor"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "butter or olive oil"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "kosher salt"
+        }
+      ],
+      "steps": [
+        "Rinse the rice: Place the wild rice into a fine-mesh strainer and rinse thoroughly under cold running water for 30 seconds to remove any surface debris and bitter starches.Bring to a boil: Combine the rinsed wild rice, broth or water, butter or oil, and salt in a medium saucepan. Bring the liquid to a rolling boil over high heat.Simmer and cover: Stir once, then immediately reduce the heat to low.",
+        "Cover the saucepan tightly with a lid and let simmer undisturbed for 40 to 45 minutes until the grains burst open, revealing a fluffy white interior.Steam and fluff: Remove the saucepan from the heat source but leave the lid on. Let the rice steam undisturbed for 5 to 10 minutes.",
+        "Remove the lid, drain away any excess unabsorbed liquid if necessary, fluff with a fork, and serve hot."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 2",
+            "day": "Tuesday",
+            "category": "Starch"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 2",
+            "day": "Tuesday",
+            "category": "Starch"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.939Z"
+      }
+    },
+    {
+      "title": "LEMON BREAD WITH ICING",
+      "yield": "1 loaf (8-10 slices)??",
+      "category": "Dessert",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Cake"
+        },
+        {
+          "amount": 1.5,
+          "unit": "cup",
+          "name": "all-purpose flour"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "baking powder"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "salt"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "granulated sugar"
+        },
+        {
+          "amount": 3,
+          "unit": "each",
+          "name": "large eggs"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "vegetable oil"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "sour cream"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "lemon zest"
+        },
+        {
+          "amount": 3,
+          "unit": "Tbsp",
+          "name": "fresh lemon juice"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "vanilla extract"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Lemon"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "powdered sugar"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "fresh lemon juice??"
+        }
+      ],
+      "steps": [
+        "Preheat and prep: Set your oven to 350°F (175°C). Grease an 8.5 x 4.5-inch loaf pan and line it with parchment paper.Whisk dry ingredients: Combine the flour, baking powder, and salt in a medium bowl.",
+        "Set aside.Mix wet ingredients: Rub the lemon zest into the granulated sugar in a large bowl to release the citrus oils. Whisk in the eggs, vegetable oil, sour cream, lemon juice, and vanilla extract until completely smooth.Combine: Fold the dry ingredients into the wet mixture using a spatula just until combined.",
+        "Do not overmix.Bake: Pour the batter into the prepared loaf pan. Bake for 45 to 50 minutes, or until a toothpick inserted into the center comes out clean.",
+        "Let cool completely.Ice: Whisk the powdered sugar and lemon juice together until smooth. Drizzle over the cooled cake before slicing."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 2",
+            "day": "Friday",
+            "category": "Dessert"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 2",
+            "day": "Friday",
+            "category": "Dessert"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.937Z"
+      }
+    },
+    {
+      "title": "ROASTED PORK TENDERLOIN WITH OLIVE AND FETA SALSA",
+      "yield": "4 servings??",
+      "category": "Comfort",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "large pork tenderloin (about 1 to 1.5 lbs)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "trimmed of silver skin"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Pork"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "dried oregano"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "garlic powder"
+        },
+        {
+          "amount": 1,
+          "unit": "to taste",
+          "name": "salt"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "and black pepper"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Salsa"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "crumbled feta cheese"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "pitted Kalamata olives (chopped)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Salsa"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "ripe Roma tomato (seeded and finely diced)"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "finely chopped red onion"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Salsa"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "extra-virgin olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "fresh lemon juice"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "chopped fresh parsley??"
+        }
+      ],
+      "steps": [
+        "Preheat and sear: Preheat your oven to 400°F (204°C). Heat 1 tablespoon of olive oil in a large, oven-safe skillet over medium-high heat.Season and sear meat: Rub the pork tenderloin with oregano, garlic powder, salt, and pepper.",
+        "Sear the pork in the hot skillet for 2 minutes on all sides until a golden-brown crust forms.Roast: Transfer the skillet directly into the oven. Roast for 15 to 20 minutes until a meat thermometer inserted into the thickest part reads 145°F (63°C).Rest: Remove the pork from the oven, transfer it to a cutting board, and tent loosely with foil.",
+        "Let it rest for 5 to 10 minutes to lock in the juices before slicing.Make the salsa: While the pork rests, toss the feta, olives, tomato, red onion, extra-virgin olive oil, lemon juice, and parsley together in a small bowl.Serve: Slice the pork tenderloin into 1-inch thick medallions and spoon the cold olive and feta salsa generously over the warm meat."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 2",
+            "day": "Saturday",
+            "category": "Comfort"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 2",
+            "day": "Saturday",
+            "category": "Comfort"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.938Z"
+      }
+    },
+    {
+      "title": "SCALLOPED POTATOES",
+      "yield": "6 servings",
+      "category": "Starch",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 2.5,
+          "unit": "lb",
+          "name": "(approx. 1.1 kg) Russet or Yukon Gold potatoes"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "peeled and sliced into 1/8-inch thick rounds"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Sauce"
+        },
+        {
+          "amount": 3,
+          "unit": "Tbsp",
+          "name": "butter"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "small yellow onion (finely diced)"
+        },
+        {
+          "amount": 3,
+          "unit": "clove",
+          "name": "garlic (minced)"
+        },
+        {
+          "amount": 3,
+          "unit": "Tbsp",
+          "name": "all-purpose flour"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1.5,
+          "unit": "cup",
+          "name": "whole milk"
+        },
+        {
+          "amount": 1.5,
+          "unit": "cup",
+          "name": "heavy cream"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "freshly cracked black pepper"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "ground nutmeg"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Cheese &"
+        },
+        {
+          "amount": 1.5,
+          "unit": "cup",
+          "name": "shredded Gruyère or sharp cheddar cheese (divided)"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "fresh thyme leaves"
+        }
+      ],
+      "steps": [
+        "Preheat and prep: Preheat your oven to 375°F (190°C) and grease a 9x13-inch baking dish with butter. Peel the potatoes and use a mandoline or sharp knife to slice them into uniform ⅛-inch thick rounds.Build the cream sauce: Melt the butter in a saucepan over medium heat.",
+        "Sauté the diced onion for 4 to 5 minutes until soft, then stir in the minced garlic for 30 seconds. Whisk in the flour and cook for 1 minute to remove the raw flour taste.Simmer the liquids: Gradually whisk in the milk and heavy cream to avoid lumps.",
+        "Season with salt, black pepper, and ground nutmeg. Bring the sauce to a gentle simmer, whisking constantly, for 3 to 4 minutes until it thickens slightly.",
+        "Remove from heat.Layer and bake: Arrange half of the potato slices in overlapping rows in the prepared baking dish. Pour half of the warm cream sauce over the top and sprinkle with ¾ cup of the shredded cheese.",
+        "Repeat with the remaining potatoes, sauce, and cheese. Cover tightly with foil and bake for 45 minutes.",
+        "Remove the foil and bake for an additional 25 to 30 minutes until the top is deeply golden brown, bubbling, and the potatoes are fork-tender. Garnish with fresh thyme and let rest for 10 minutes before slicing."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Monday",
+            "category": "Starch"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 3",
+            "day": "Monday",
+            "category": "Starch"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.940Z"
+      }
+    },
+    {
+      "title": "FRIED CHICKEN",
+      "yield": "4 to 6 servings",
+      "category": "Comfort",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 3,
+          "unit": "lb",
+          "name": "bone-in"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "skin-on chicken pieces (drumsticks, thighs, and breasts cut in half)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Buttermilk"
+        },
+        {
+          "amount": 2,
+          "unit": "cup",
+          "name": "buttermilk"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "hot sauce"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "garlic powder"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "onion powder"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "smoked paprika"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 3,
+          "unit": "cup",
+          "name": "all-purpose flour"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "cornstarch"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "garlic powder"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "onion powder"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "smoked paprika"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "cayenne pepper (optional)"
+        },
+        {
+          "amount": 2,
+          "unit": "tsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "black pepper"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Frying"
+        },
+        {
+          "amount": 4,
+          "unit": "cup",
+          "name": "peanut oil or vegetable oil (for deep frying)"
+        }
+      ],
+      "steps": [
+        "Marinate the chicken: Whisk together the buttermilk, hot sauce, salt, garlic powder, onion powder, and smoked paprika in a large bowl. Submerge the chicken pieces fully in the liquid.",
+        "Cover the bowl and refrigerate for at least 4 hours, or overnight for the best results.Prepare the flour dredge: Whisk the all-purpose flour, cornstarch, garlic powder, onion powder, smoked paprika, cayenne, salt, and black pepper together in a large, shallow baking dish. Drizzle 3 tablespoons of the buttermilk marinade from the chicken bowl into the flour and mix with a fork to create small clumps for extra-crispy bits.Dredge the chicken: Remove each chicken piece from the buttermilk, letting the excess drip off, and drop it into the flour mixture.",
+        "Press the flour firmly onto all sides of the chicken to ensure full coverage. Transfer the coated pieces to a wire rack and let them rest for 15 minutes so the coating sets.Fry until golden: Heat 2 inches of oil in a large cast-iron skillet or Dutch oven over medium-high heat until it reaches 350°F (175°C).",
+        "Carefully lower 3 to 4 pieces of chicken into the oil, frying in batches to avoid crowding. Fry dark meat for 12 to 14 minutes and white meat for 8 to 10 minutes, flipping halfway through, until the crust is golden brown and the internal temperature reaches 165°F (74°C).",
+        "Drain on a clean wire rack and serve hot."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Tuesday",
+            "category": "Comfort"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 3",
+            "day": "Tuesday",
+            "category": "Comfort"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.946Z"
+      }
+    },
+    {
+      "title": "HUSH PUPPIES WITH GARLIC DIP",
+      "yield": "4 to 6 servings (approx. 20 to 24 hush puppies)",
+      "category": "Appetizer 1",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Garlic"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "mayonnaise"
+        },
+        {
+          "amount": 2,
+          "unit": "clove",
+          "name": "garlic (finely minced or grated)"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "fresh lemon juice"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 0.125,
+          "unit": "tsp",
+          "name": "freshly cracked black pepper"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Pork &"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "leftover smoked pulled pork (finely chopped)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "small sweet onion (finely minced)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Dry"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "yellow cornmeal"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "all-purpose flour"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "baking powder"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "granulated white sugar"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "garlic powder"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "cayenne pepper"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Wet"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "large egg (beaten)"
+        },
+        {
+          "amount": 0.75,
+          "unit": "cup",
+          "name": "buttermilk"
+        },
+        {
+          "amount": 4,
+          "unit": "Tbsp",
+          "name": "( 1/2 stick) unsalted butter (melted and cooled)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Frying"
+        },
+        {
+          "amount": 4,
+          "unit": "cup",
+          "name": "vegetable or peanut oil (for deep frying)"
+        }
+      ],
+      "steps": [
+        "Whisk the garlic dip: Combine the mayonnaise, minced garlic, fresh lemon juice, salt, and black pepper in a small serving bowl. Whisk thoroughly until smooth and creamy.",
+        "Cover and place in the refrigerator to let the flavors blend while you prepare the hush puppies.Prepare the batter: Whisk the yellow cornmeal, all-purpose flour, baking powder, sugar, salt, garlic powder, and cayenne pepper together in a large bowl. In a separate medium bowl, stir together the beaten egg, buttermilk, and melted butter.",
+        "Fold the wet ingredients into the dry ingredients gently with a rubber spatula just until combined.Fold in the pork: Add the finely chopped pulled pork and minced sweet onion into the thick batter. Fold gently until they are evenly distributed throughout the mixture.",
+        "Let the completed batter rest at room temperature for 10 minutes to thicken up.Fry and serve: Heat 2 inches of vegetable oil in a large Dutch oven over medium-high heat until it reaches a steady 365°F (185°C). Drop rounded tablespoons of the batter into the hot oil using a small cookie scoop, frying 6 to 8 at a time.",
+        "Fry for 3 to 4 minutes per batch, rolling them occasionally, until deeply golden brown and cooked through. Drain on a paper towel-lined plate and serve hot with the garlic dip."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Sunday",
+            "category": "Appetizer 1"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 3",
+            "day": "Sunday",
+            "category": "Appetizer 1"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.945Z"
+      }
+    },
+    {
+      "title": "CREAMY MAC N CHEESE",
+      "yield": "6 to 8 servings",
+      "category": "Comfort",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "lb",
+          "name": "(approx. 450 g) elbow macaroni or cavatappi"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Roux"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "name": "( 1/2 stick) unsalted butter"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "name": "all-purpose flour"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 2.5,
+          "unit": "cup",
+          "name": "whole milk (warmed)"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "heavy cream (warmed)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "garlic powder"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "ground mustard"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "freshly cracked black pepper"
+        },
+        {
+          "amount": 1,
+          "unit": "pinch",
+          "name": "cayenne pepper"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 3,
+          "unit": "cup",
+          "name": "sharp cheddar cheese (shredded and divided)"
+        },
+        {
+          "amount": 1.5,
+          "unit": "cup",
+          "name": "Gruyère or Monterey Jack cheese (shredded)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Crunchy"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "Panko breadcrumbs"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "unsalted butter (melted)"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "fresh parsley (chopped)"
+        }
+      ],
+      "steps": [
+        "Boil pasta and preheat: Preheat your oven to 375°F (190°C) and lightly grease a 9x13-inch baking dish with butter. Bring a large pot of salted water to a rolling boil.",
+        "Cook the macaroni for 2 minutes less than the package directions suggest so it stays firm al dente. Drain and set aside.Build the cream sauce: Melt ¼ cup of butter in a large pot over medium heat.",
+        "Whisk in the flour and cook constantly for 1 to 2 minutes until golden. Slowly pour in the warm milk and heavy cream, whisking vigorously to avoid lumps.",
+        "Whisk in the salt, garlic powder, ground mustard, black pepper, and cayenne. Simmer for 3 to 4 minutes until thickened.Melt cheese and toss: Turn off the heat.",
+        "Add 2 cups of the shredded cheddar and all of the Gruyère cheese one handful at a time, stirring until completely melted and smooth. Fold the cooked macaroni into the cheese sauce until every noodle is fully coated.Assemble and bake: Pour the macaroni mixture into the prepared baking dish.",
+        "Sprinkle the remaining 1 cup of shredded cheddar cheese evenly over the top. Mix the Panko breadcrumbs, melted butter, and fresh parsley in a small bowl, then scatter them over the cheese layer.",
+        "Bake uncovered for 20 to 25 minutes until the sauce is bubbling at the edges and the breadcrumbs are deeply golden brown. Let rest for 10 minutes before serving."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Sunday",
+            "category": "Comfort"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 3",
+            "day": "Sunday",
+            "category": "Comfort"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.945Z"
+      }
+    },
+    {
+      "title": "CHICKEN MARSALA",
+      "yield": "4 servings",
+      "category": "Alternative",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 4,
+          "unit": "each",
+          "name": "boneless"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "skinless chicken breasts (pounded to an even 1/2-inch thickness)"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "name": "gluten-free flour blend (or white rice flour, for dredging)"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "black pepper"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Sear &"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "olive oil (divided)"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "dairy-free butter alternative"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "small shallot (finely chopped)"
+        },
+        {
+          "amount": 2,
+          "unit": "clove",
+          "name": "garlic (minced)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Mushrooms &"
+        },
+        {
+          "amount": 8,
+          "unit": "oz",
+          "name": "cremini or button mushrooms (sliced)"
+        },
+        {
+          "amount": 0.75,
+          "unit": "cup",
+          "name": "sweet Marsala wine"
+        },
+        {
+          "amount": 0.75,
+          "unit": "cup",
+          "name": "low-sodium chicken broth"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Creamy"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "unsweetened cashew cream (or full-fat canned coconut milk, shaken well)"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "fresh lemon juice"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "fresh flat-leaf parsley (finely chopped)"
+        }
+      ],
+      "steps": [
+        "Dredge the chicken: Mix the gluten-free flour, salt, and black pepper together in a shallow dish. Pat the pounded chicken breasts completely dry with paper towels, then coat each piece lightly in the flour mixture, thoroughly shaking off any excess.Sear the cutlets: Heat 1 tbsp of olive oil and 1 tbsp of dairy-free butter in a large skillet over medium-high heat.",
+        "Add the chicken breasts and sear for 3 to 4 minutes per side until they turn a beautiful golden brown and are cooked through. Remove the chicken to a warm plate and cover with foil.Sauté the mushrooms: Add the remaining 1 tbsp of olive oil and 1 tbsp of dairy-free butter to the same skillet over medium heat.",
+        "Toss in the sliced mushrooms and chopped shallot. Sauté for 5 to 6 minutes, stirring occasionally, until the mushrooms release their liquid and become deeply browned.",
+        "Stir in the minced garlic and cook for 30 seconds until fragrant.Build the creamy sauce: Pour the Marsala wine and chicken broth into the skillet, using a wooden spoon to scrape up all the flavorful browned bits stuck to the bottom. Bring to a boil, then reduce the heat to medium and let simmer for 5 minutes until the liquid reduces by half.",
+        "Stir in the dairy-free cashew cream (or coconut milk) and lemon juice, simmering for another 2 minutes until the sauce thickens slightly into a rich velvety glaze. Nestled the warm chicken and any accumulated juices back into the skillet, spooning the sauce over the meat.",
+        "Garnish with fresh parsley and serve hot."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Sunday",
+            "category": "Alternative"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 3",
+            "day": "Sunday",
+            "category": "Alternative"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.945Z"
+      }
+    },
+    {
+      "title": "POUDING CHOMEUR",
+      "yield": "6 to 8 servings",
+      "category": "Dessert",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Cake"
+        },
+        {
+          "amount": 1.5,
+          "unit": "cup",
+          "name": "all-purpose flour"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "baking powder"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "name": "( 1/2 stick) unsalted butter (at room temperature)"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "granulated white sugar"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "large egg"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "pure vanilla extract"
+        },
+        {
+          "amount": 0.75,
+          "unit": "cup",
+          "name": "whole milk"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Maple"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Syrup"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "pure maple syrup (Grade A amber preferred)"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "packed light brown sugar"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "heavy cream"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "unsalted butter"
+        },
+        {
+          "amount": 1,
+          "unit": "pinch",
+          "name": "salt"
+        }
+      ],
+      "steps": [
+        "Preheat and prep: Preheat your oven to 350°F (175°C) and lightly grease an 8x11-inch or 9-inch square baking dish with butter. Whisk the all-purpose flour, baking powder, and salt together in a medium bowl to remove lumps.Cream and mix batter: Beat the room-temperature butter and granulated sugar together in a large bowl with an electric mixer for 2 to 3 minutes until light and fluffy.",
+        "Add the egg and vanilla extract, beating until completely smooth. Alternately add the dry flour mixture and the whole milk in batches, stirring gently with a spatula just until a thick batter forms.",
+        "Spread the batter evenly into the bottom of the prepared dish.Boil the sauce: Combine the pure maple syrup, brown sugar, heavy cream, butter, and a pinch of salt in a medium saucepan over medium heat. Bring the mixture to a boil, stirring constantly to dissolve the sugar, and let it boil for exactly 1 minute.Pour and bake: Carefully pour the boiling hot maple sauce directly over the raw cake batter in the baking dish—do not stir them together.",
+        "The batter will rise through the hot liquid as it bakes. Place the dish into the preheated oven and bake for 30 to 35 minutes until the cake top is deeply golden brown, a toothpick inserted into the cake center comes out clean, and the maple sauce is bubbling thickly underneath.",
+        "Let cool for 15 minutes to allow the sauce to set, then serve warm."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Sunday",
+            "category": "Dessert"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 3",
+            "day": "Sunday",
+            "category": "Dessert"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.946Z"
+      }
+    },
+    {
+      "title": "CHICKEN FRANCESE",
+      "yield": "4 servings",
+      "category": "Elevated",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 4,
+          "unit": "each",
+          "name": "chicken breasts (pounded thin)"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "name": "flour"
+        },
+        {
+          "amount": 2,
+          "unit": "each",
+          "name": "eggs (beaten with 1 tbsp water)"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "olive oil"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "butter"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Francese"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "dry white wine"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "low-sodium chicken broth"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "lemon (sliced into rounds)"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "fresh lemon juice"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "butter"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "chopped fresh parsley"
+        }
+      ],
+      "steps": [
+        "Dredge and egg coat: Season chicken cutlets with salt and pepper. Dust lightly in flour, then submerge completely in the beaten egg mixture.",
+        "Pan-fry golden: Heat olive oil and 2 tbsp butter in a large skillet over medium-high heat. Fry egg-coated chicken for 3 to 4 minutes per side until golden; remove and keep warm.",
+        "Simmer wine reduction: Pour white wine, chicken broth, and lemon juice into the hot skillet, scraping up bits. Simmer hard for 5 minutes until reduced by half, dropping lemon rounds in for the last 2 minutes.",
+        "Thicken glaze: Whisk in 1 tbsp butter and fresh parsley until glossy. Return chicken to skillet for 1 minute to coat in the glaze, then serve hot."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Tuesday",
+            "category": "Elevated"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 4",
+            "day": "Tuesday",
+            "category": "Elevated"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.951Z"
+      }
+    },
+    {
+      "title": "GRILLED CLAMS WITH CUCUMBER AND SCALLION",
+      "yield": "4 servings",
+      "category": "Appetizer 1",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 2,
+          "unit": "lb",
+          "name": "fresh littleneck clams (scrubbed thoroughly and rinsed)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Dressing"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "melted butter"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Persian cucumber (finely diced)"
+        },
+        {
+          "amount": 2,
+          "unit": "each",
+          "name": "green onions (scallions, thinly sliced)"
+        },
+        {
+          "amount": 1,
+          "unit": "clove",
+          "name": "garlic (grated)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "juice of 1/2 lime"
+        },
+        {
+          "amount": 1,
+          "unit": "to taste",
+          "name": "salt and pepper to taste"
+        }
+      ],
+      "steps": [
+        "Clean clams: Soak clams in cold salted water for 15 minutes to purge sand, then scrub shells clean and discard any open ones that don't close when tapped.",
+        "Preheat grill: Preheat your outdoor grill to high heat (approx. 450°F / 230°C).",
+        "Grill shells: Place clams directly onto the clean grill grates. Close the lid and cook for 5 to 8 minutes. Watch closely and remove individual clams with tongs as soon as their shells pop open wide; discard any that stay closed.",
+        "Toss and serve: Pile open hot clams into a large serving bowl. Pour melted butter, olive oil, lime juice, grated garlic, finely diced cucumber, and sliced green onions over top. Toss quickly and serve immediately."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Wednesday",
+            "category": "Appetizer 1"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 4",
+            "day": "Wednesday",
+            "category": "Appetizer 1"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.947Z"
+      }
+    },
+    {
+      "title": "MUFFULETTA OLIVE SALAD",
+      "yield": "4 servings (approx. 2 cups)",
+      "category": "Appetizer 2",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Olive"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "pitted green Sicilian or Castelvetrano olives (chopped)"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "pitted Kalamata olives (chopped)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Pickled"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "giardiniera (Italian pickled vegetables, drained and chopped)"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "capers (drained)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 3,
+          "unit": "Tbsp",
+          "name": "extra virgin olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "red wine vinegar"
+        },
+        {
+          "amount": 1,
+          "unit": "clove",
+          "name": "garlic (minced)"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "dried oregano"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "freshly cracked black pepper"
+        }
+      ],
+      "steps": [
+        "Chop ingredients: Coarsely chop the green olives, Kalamata olives, giardiniera pickled vegetables, and drained capers.",
+        "Combine base: Toss all the chopped olives and pickled vegetables together in a medium-sized glass bowl.",
+        "Whisk vinaigrette: Whisk the extra virgin olive oil, red wine vinegar, minced garlic, dried oregano, and black pepper together in a small cup.",
+        "Marinate and serve: Pour dressing over olive mix and stir thoroughly. Cover and let marinate at room temperature for at least 15 minutes (or overnight) before serving as a relish spread."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Wednesday",
+            "category": "Appetizer 2"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 4",
+            "day": "Wednesday",
+            "category": "Appetizer 2"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.947Z"
+      }
+    },
+    {
+      "title": "SUMMER RICE WRAPS",
+      "yield": "4 servings (8 wraps)",
+      "category": "Appetizer 1",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 8,
+          "unit": "each",
+          "name": "round rice paper sheets (rice wrappers)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "cooked small shrimp or shredded chicken"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "rice vermicelli noodles (cooked and cooled)"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "English cucumber (julienned)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "carrot (julienned)"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "fresh mint leaves"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Sweet"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Peanut"
+        },
+        {
+          "amount": 0.3333333333333333,
+          "unit": "cup",
+          "name": "creamy peanut butter"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "hoisin sauce"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "lime juice"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "warm water"
+        }
+      ],
+      "steps": [
+        "Soften wrapper: Pour warm water into a wide, shallow dish. Dip one rice paper sheet into the water for 5 seconds until pliable but still slightly firm; lay flat on a clean cutting board.",
+        "Layer fillings: Place a few mint leaves in the center, followed by a small handful of vermicelli noodles, julienned carrots, cucumbers, and a line of shrimp or chicken.",
+        "Roll tightly: Fold the bottom edge of the paper up over the fillings, fold in both sides snugly, and roll upward tightly to seal like a burrito.",
+        "Mix dip and serve: Whisk peanut butter, hoisin sauce, lime juice, and warm water together until smooth. Serve the fresh summer rolls immediately alongside the dipping sauce."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Thursday",
+            "category": "Appetizer 1"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 4",
+            "day": "Thursday",
+            "category": "Appetizer 1"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.948Z"
+      }
+    },
+    {
+      "title": "BAKED SALMON WITH BLACK BEAN SALSA",
+      "yield": "4 servings",
+      "category": "Comfort",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Black"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Bean"
+        },
+        {
+          "amount": 1,
+          "unit": "can",
+          "name": "(15 oz) black beans (rinsed and drained)"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "corn kernels"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Roma tomato (diced)"
+        },
+        {
+          "amount": 0.5,
+          "unit": "each",
+          "name": "red onion (diced)"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "name": "cilantro"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "juice of 1 lime"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "salt"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 4,
+          "unit": "each",
+          "name": "skinless salmon fillets (approx. 6 oz each)"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "chili powder"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "ground cumin"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "garlic powder"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "salt"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "pepper"
+        }
+      ],
+      "steps": [
+        "Mix salsa base: Toss drained black beans, corn, diced tomato, red onion, cilantro, lime juice, and salt in a bowl; set aside.",
+        "Preheat and season: Preheat oven to 400°F (200°C) and line a pan with parchment. Pat fillets dry, rub with olive oil, and coat with chili powder, cumin, garlic powder, salt, and pepper.",
+        "Bake fillets: Place salmon fillets on the baking pan and bake uncovered for 10 to 12 minutes until flaky and cooked through.",
+        "Assemble plate: Serve salmon fillets hot, topped generously with large spoonfuls of the refreshing black bean and corn salsa."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Thursday",
+            "category": "Comfort"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 4",
+            "day": "Thursday",
+            "category": "Comfort"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.949Z"
+      }
+    },
+    {
+      "title": "WATERMELON FETA CUCUMBER SALAD",
+      "yield": "4 servings",
+      "category": "Appetizer 2",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Cold"
+        },
+        {
+          "amount": 4,
+          "unit": "cup",
+          "name": "seedless watermelon (cut into 1-inch cubes)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "English cucumber (sliced into half-moons)"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "name": "red onion (thinly sliced)"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "feta cheese (crumbled)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Dressing &"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "extra virgin olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "fresh lime juice"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "name": "fresh mint leaves (torn)"
+        },
+        {
+          "amount": 1,
+          "unit": "pinch",
+          "name": "flaky sea salt"
+        }
+      ],
+      "steps": [
+        "Chop and chill: Cut watermelon into cubes and slice cucumber into half-moons. Chill both in the refrigerator for 10 minutes before assembling.",
+        "Layer base: Combine cold watermelon cubes, cucumber half-moons, and thinly sliced red onion in a large, wide salad bowl.",
+        "Whisk dressing: Whisk olive oil and fresh lime juice together in a small cup.",
+        "Dress and garnish: Pour dressing over salad mix. Scatter crumbled feta cheese, torn fresh mint leaves, and a tiny pinch of flaky sea salt over the top; serve immediately."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Friday",
+            "category": "Appetizer 2"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 4",
+            "day": "Friday",
+            "category": "Appetizer 2"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.950Z"
+      }
+    },
+    {
+      "title": "TURKEY POT ROAST",
+      "yield": "6 servings",
+      "category": "Comfort",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 3,
+          "unit": "lb",
+          "name": "boneless turkey thigh or breast roast"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "vegetable oil"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "onion (diced)"
+        },
+        {
+          "amount": 3,
+          "unit": "each",
+          "name": "carrots (chopped)"
+        },
+        {
+          "amount": 3,
+          "unit": "each",
+          "name": "red potatoes (quartered)"
+        },
+        {
+          "amount": 2,
+          "unit": "cup",
+          "name": "chicken broth"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "bay leaf"
+        },
+        {
+          "amount": 1,
+          "unit": "to taste",
+          "name": "salt"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "and pepper"
+        }
+      ],
+      "steps": [
+        "Sear meat: Heat oil in a large Dutch oven over medium-high heat. Season turkey roast with salt and pepper; sear 5 minutes until browned on all sides, then remove.",
+        "Sauté onions: Cook diced onion in the same pot fat for 3 minutes until translucent. Pour in broth, scraping up browned bits.",
+        "Simmer pot: Return turkey roast to the pot, add chopped carrots, quartered potatoes, and bay leaf. Bring to a boil, cover tightly, and reduce heat to low.",
+        "Cook tender: Simmer gently for 1.5 to 2 hours until the turkey is fork-tender. Slice meat and serve surrounded by the pot vegetables and juices."
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Friday",
+            "category": "Comfort"
+          }
+        ],
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 4",
+            "day": "Friday",
+            "category": "Comfort"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.950Z"
+      }
+    },
+    {
+      "title": "PROSCIUTTO WRAPPED PEARS WITH ARUGULA+BLUE CHEESE",
+      "yield": "4 servings",
+      "category": "Appetizer 1",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 2,
+          "unit": "each",
+          "name": "firm but ripe pears (cut into 8 wedges each)"
+        },
+        {
+          "amount": 8,
+          "unit": "each",
+          "name": "thin slices prosciutto (halved lengthwise)"
+        },
+        {
+          "amount": 2,
+          "unit": "cup",
+          "name": "fresh baby arugula"
+        },
+        {
+          "amount": 2,
+          "unit": "oz",
+          "name": "blue cheese (crumbled)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "extra-virgin olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "balsamic glaze"
+        },
+        {
+          "amount": 1,
+          "unit": "pinch",
+          "name": "cracked black pepper"
+        }
+      ],
+      "steps": [
+        "Prep fruit: Wash and dry pears, cut into uniform wedges, and core them. Leave the skin on for stability and color contrast.",
+        "Wrap wedges: Place a few clean arugula leaves and a small piece of crumbled blue cheese against a pear wedge, then wrap a piece of prosciutto snugly around the center to secure everything.",
+        "Arrange plate: Place the wrapped pear elegant appetizer pieces on a large serving platter.",
+        "Finish presentation: Drizzle olive oil and balsamic glaze over the top in a zig-zag pattern, crack fresh black pepper over everything, and serve immediately."
+      ],
+      "metadata": {
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 1",
+            "day": "Wednesday",
+            "category": "Appetizer 1"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.926Z"
+      }
+    },
+    {
+      "title": "ROAST BEEF WITH APPLE AND CARAMELIZED ONION SAUCE     (GF/DF)",
+      "yield": "4 servings",
+      "category": "Elevated",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1.5,
+          "unit": "lb",
+          "name": "beef top sirloin or tenderloin roast"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "salt"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "black pepper"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Apple"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Onion"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "dairy-free butter or olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "large sweet onion (thinly sliced)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "crisp apple (peeled and finely diced)"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "low-sodium beef broth"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "apple cider vinegar"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "fresh thyme"
+        }
+      ],
+      "steps": [
+        "Season roast: Preheat oven to 400°F (200°C). Pat beef dry, rub with olive oil, and season with salt and pepper. Sear in a hot skillet for 2 minutes per side to form a crust.",
+        "Roast beef: Transfer meat skillet to the oven. Roast for 20 to 25 minutes until the internal temperature reaches 135°F (57°C) for medium-rare; let rest on a cutting board tented with foil.",
+        "Caramelize sauce: While beef cooks, melt dairy-free butter in a pan over medium heat. Sauté sliced onions and diced apples for 12 to 15 minutes until tender and deeply caramelized.",
+        "Deglaze pan: Stir in thyme, beef broth, and apple cider vinegar, scraping up pan bits. Simmer for 3 minutes until thick. Slice roast beef thinly and smother with the warm apple-onion sauce."
+      ],
+      "metadata": {
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 1",
+            "day": "Wednesday",
+            "category": "Elevated"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.927Z"
+      }
+    },
+    {
+      "title": "VEGETARIAN STUFFED KOOSA",
+      "yield": "4 servings",
+      "category": "Alternative",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 6,
+          "unit": "each",
+          "name": "medium green koosa (grey zucchini or marrow squash, cored)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Rice &"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Veggie"
+        },
+        {
+          "amount": 0.75,
+          "unit": "cup",
+          "name": "long-grain rice (rinsed)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "medium tomato (finely diced)"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "finely chopped parsley"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "name": "finely chopped mint"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "small onion (minced)"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "salt"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "allspice"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Tomato"
+        },
+        {
+          "amount": 1,
+          "unit": "can",
+          "name": "(14 oz) tomato sauce"
+        },
+        {
+          "amount": 2,
+          "unit": "cup",
+          "name": "vegetable broth"
+        },
+        {
+          "amount": 2,
+          "unit": "clove",
+          "name": "garlic (smashed)"
+        }
+      ],
+      "steps": [
+        "Mix filling: Stir the rinsed rice, diced tomato, parsley, mint, onion, olive oil, salt, and allspice together in a bowl until fully mixed.",
+        "Stuff koosa: Gently pack the rice mixture into the hollowed koosa, leaving a ½-inch gap at the top to allow the rice to expand.",
+        "Arrange and liquid: Place stuffed koosa snugly in a large pot. Whisk tomato sauce, vegetable broth, and smashed garlic together, then pour over the squash.",
+        "Simmer tender: Bring to a boil, then cover with a lid and reduce heat to medium-low. Simmer gently for 35 minutes until the rice inside is fully cooked and koosa is tender."
+      ],
+      "metadata": {
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 2",
+            "day": "Monday",
+            "category": "Alternative"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.934Z"
+      }
+    },
+    {
+      "title": "ANTIPASTI SKEWERS WITH BREAD SPEAR",
+      "yield": "4 servings (12 skewers)",
+      "category": "Appetizer 1",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Bread"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "small baguette (cut into 12 thin 3-inch strips lengthwise)"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "pinch",
+          "name": "garlic powder"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 12,
+          "unit": "each",
+          "name": "cherry tomatoes"
+        },
+        {
+          "amount": 12,
+          "unit": "each",
+          "name": "marinated bocconcini (mozzarella balls)"
+        },
+        {
+          "amount": 12,
+          "unit": "slice",
+          "name": "salami (folded into quarters)"
+        },
+        {
+          "amount": 12,
+          "unit": "each",
+          "name": "marinated artichoke hearts (halved)"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "balsamic glaze"
+        }
+      ],
+      "steps": [
+        "Toast bread spears: Preheat oven to 400°F (200°C). Brush baguette strips with olive oil and garlic powder. Bake 5 minutes until crispy crouton spears form; cool.",
+        "Assemble skewers: On long appetizer picks, thread a cherry tomato, a folded slice of salami, an artichoke heart half, and a bocconcini ball.",
+        "Attach bread: Slide one crispy garlic bread crouton spear snugly onto the back of each skewer.",
+        "Platter and drizzle: Arrange the completed skewers on a wide platter and drizzle with a pattern of sweet balsamic glaze before serving."
+      ],
+      "metadata": {
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 2",
+            "day": "Thursday",
+            "category": "Appetizer 1"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.935Z"
+      }
+    },
+    {
+      "title": "PENNE PASTA WITH CHICKEN AND SAUSAGE",
+      "yield": "4 servings",
+      "category": "Comfort",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 10,
+          "unit": "oz",
+          "name": "penne pasta"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "olive oil"
+        },
+        {
+          "amount": 2,
+          "unit": "each",
+          "name": "Italian sausage links (casings removed and crumbled)"
+        },
+        {
+          "amount": 0.5,
+          "unit": "lb",
+          "name": "boneless chicken breasts (diced)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "The"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "Aromatics &"
+        },
+        {
+          "amount": 2,
+          "unit": "clove",
+          "name": "garlic (minced)"
+        },
+        {
+          "amount": 1,
+          "unit": "jar",
+          "name": "(24 oz) marinara sauce"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "dried Italian seasoning"
+        },
+        {
+          "amount": 1,
+          "unit": "to taste",
+          "name": "salt"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "and pepper"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "name": "grated Parmesan"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "fresh basil leaves"
+        }
+      ],
+      "steps": [
+        "Boil pasta: Bring a large pot of salted water to a boil. Cook penne pasta according to package directions until al dente; drain and set aside.",
+        "Brown proteins: Heat olive oil in a large skillet over medium-high heat. Sauté crumbled sausage and diced chicken together for 6 to 8 minutes until fully browned and cooked through.",
+        "Simmer sauce: Lower heat to medium, stir in minced garlic for 30 seconds, then pour in the marinara sauce and Italian seasoning. Bring to a simmer for 3 minutes.",
+        "Combine elements: Dump the drained penne directly into the skillet sauce, tossing for 1 minute until noodles are fully coated and hot. Top with Parmesan and basil."
+      ],
+      "metadata": {
+        "deployedFrom": "summer-menu-master-final.xlsx",
+        "finalWorkbookSha256": "DD6F145A6173CF8BDBE37389CF5FE0F23134EA5A96366BC5F1FDFB4E2E3036D9",
+        "dinnerAssignments": [
+          {
+            "week": "Week 4",
+            "day": "Wednesday",
+            "category": "Comfort"
+          }
+        ],
+        "deployedAt": "2026-06-06T17:16:02.947Z"
+      }
+    }
+  ]
+}

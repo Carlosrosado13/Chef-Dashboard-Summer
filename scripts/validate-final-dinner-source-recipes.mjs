@@ -54,6 +54,10 @@ function getSourceUrl(recipe) {
     || "";
 }
 
+function cleanSourceUrl(value) {
+  return String(value || "").trim().replace(/\s+\(.*$/s, "").replace(/\/$/, "");
+}
+
 function completeness(recipe) {
   const ingredients = Array.isArray(recipe?.ingredients) ? recipe.ingredients : [];
   const steps = Array.isArray(recipe?.steps) ? recipe.steps : [];
@@ -72,14 +76,19 @@ function completeness(recipe) {
 
 const candidates = new Map();
 for (const row of snapshot.finalRows) {
-  const index = findRecipeIndex(row.MenuItem);
-  if (index < 0) continue;
-  const sourceUrl = getSourceUrl(recipes[index]);
-  if (!sourceUrl || candidates.has(index)) continue;
-  candidates.set(index, {
+  let index = findRecipeIndex(row.MenuItem);
+  const workbookValue = String(row.RecipeText || "").trim();
+  const workbookUrl = /^https?:\/\//i.test(workbookValue) ? cleanSourceUrl(workbookValue) : "";
+  if (index < 0 && workbookUrl) {
+    index = recipes.findIndex((recipe) => cleanSourceUrl(getSourceUrl(recipe)) === workbookUrl);
+  }
+  const sourceUrl = workbookUrl || (index >= 0 ? getSourceUrl(recipes[index]) : "");
+  const candidateKey = index >= 0 ? `recipe:${index}` : `menu:${normalizeTitle(row.MenuItem)}`;
+  if (!sourceUrl || candidates.has(candidateKey)) continue;
+  candidates.set(candidateKey, {
     recipeIndex: index,
     menuItem: row.MenuItem,
-    currentTitle: recipes[index].title,
+    currentTitle: index >= 0 ? recipes[index].title : "",
     sourceUrl
   });
 }
@@ -135,7 +144,7 @@ async function worker() {
   }
 }
 await Promise.all(Array.from({ length: Math.min(5, queue.length) }, worker));
-results.sort((a, b) => a.recipeIndex - b.recipeIndex);
+results.sort((a, b) => a.menuItem.localeCompare(b.menuItem));
 
 const output = {
   generatedAt: new Date().toISOString(),

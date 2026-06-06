@@ -62,6 +62,20 @@ function getMenuReferences(rotation) {
   return references;
 }
 
+function cleanSourceUrl(value) {
+  return String(value || "").trim().replace(/\s+\(.*$/s, "").replace(/\/$/, "");
+}
+
+function getRecipeSourceUrl(recipe) {
+  return recipe?.metadata?.sourceUrl
+    || recipe?.metadata?.importedFromUrl
+    || recipe?.metadata?.recipeUrl
+    || recipe?.sourceUrl
+    || recipe?.importedFromUrl
+    || recipe?.recipeUrl
+    || "";
+}
+
 const lunchReferences = getMenuReferences(currentMenu.lunch);
 const lunchIndices = new Set();
 for (const reference of lunchReferences) {
@@ -257,6 +271,7 @@ function normalizeSourceRecipe(recipe, row, fallbackRecipe = null) {
 }
 
 const sourceByIndex = new Map(sourceValidation.results.map((item) => [item.recipeIndex, item]));
+const sourceByMenuItem = new Map(sourceValidation.results.map((item) => [normalizeText(item.menuItem), item]));
 const finalRows = snapshot.finalRows;
 const finalGroups = new Map();
 for (const row of finalRows) {
@@ -268,6 +283,13 @@ for (const row of finalRows) {
 const currentIndexByFinalKey = new Map();
 for (const [key, rows] of finalGroups) {
   const matches = new Set(rows.map((row) => getRecipeIndex(currentRecipes, row.MenuItem)).filter((index) => index >= 0));
+  const workbookUrl = cleanSourceUrl(rows[0].RecipeText);
+  if (/^https?:\/\//i.test(workbookUrl)) {
+    const sourceIndex = currentRecipes.findIndex((recipe) =>
+      cleanSourceUrl(getRecipeSourceUrl(recipe)) === workbookUrl
+    );
+    if (sourceIndex >= 0) matches.add(sourceIndex);
+  }
   if (matches.size > 1) throw new Error(`Final recipe resolves to multiple current records: ${rows[0].MenuItem}`);
   currentIndexByFinalKey.set(key, matches.size ? [...matches][0] : -1);
 }
@@ -301,12 +323,21 @@ for (const [key, rows] of finalGroups) {
   }
 
   const current = currentIndex >= 0 ? currentRecipes[currentIndex] : null;
-  const sourceResult = currentIndex >= 0 ? sourceByIndex.get(currentIndex) : null;
+  const sourceResult = (currentIndex >= 0 ? sourceByIndex.get(currentIndex) : null)
+    || sourceByMenuItem.get(normalizeText(row.MenuItem))
+    || null;
   const workbookValue = String(row.RecipeText || "").trim();
   const isUrlRecipe = /^https?:\/\//i.test(workbookValue);
-  const parsed = isUrlRecipe
-    ? normalizeSourceRecipe(sourceResult?.extracted, row, current)
-    : parseWorkbookRecipe(row);
+  if (!workbookValue && !current) {
+    throw new Error(`Approved workbook omits recipe text and no active recipe exists: ${row.MenuItem}`);
+  }
+  const parsed = !workbookValue
+    ? structuredClone(current)
+    : isUrlRecipe
+      ? normalizeSourceRecipe(sourceResult?.extracted, row, current)
+      : parseWorkbookRecipe(row);
+  parsed.title = row.MenuItem.trim();
+  parsed.category = row.Category;
   parsed.metadata = {
     ...(current?.metadata || {}),
     deployedFrom: "summer-menu-master-final.xlsx",
@@ -345,7 +376,9 @@ for (const [key, rows] of finalGroups) {
     replacements.set(currentIndex, parsed);
     recipeActions.push({
       recipeName: row.MenuItem,
-      action: isUrlRecipe
+      action: !workbookValue
+        ? "Retained validated active recipe; workbook recipe cell blank"
+        : isUrlRecipe
         ? (sourceResult?.extracted ? "Re-extracted and normalized from source URL" : "Retained and normalized current extraction; source URL blocked")
         : "Rebuilt from approved workbook recipe",
       currentIndex
