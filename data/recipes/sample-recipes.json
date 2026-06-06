@@ -522,69 +522,7 @@
       "season": "Summer"
     }
   },
-  {
-    "title": "Herb Roasted Chicken Supreme",
-    "yield": "24 portions",
-    "category": "Comfort",
-    "ingredients": [
-      {
-        "amount": 12,
-        "unit": "kg",
-        "name": "chicken"
-      },
-      {
-        "amount": 2,
-        "unit": "kg",
-        "name": "onions, diced"
-      },
-      {
-        "amount": 1.5,
-        "unit": "kg",
-        "name": "carrots and celery, diced"
-      },
-      {
-        "amount": 2,
-        "unit": "L",
-        "name": "stock or pan sauce base"
-      },
-      {
-        "amount": 750,
-        "unit": "ml",
-        "name": "wine, citrus, or finishing sauce"
-      },
-      {
-        "amount": 250,
-        "unit": "ml",
-        "name": "olive oil"
-      },
-      {
-        "amount": 180,
-        "unit": "g",
-        "name": "fresh herbs"
-      },
-      {
-        "amount": 80,
-        "unit": "g",
-        "name": "kosher salt and cracked pepper"
-      }
-    ],
-    "steps": [
-      "Trim and portion the protein for 24 servings; pat dry and season evenly.",
-      "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
-      "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
-      "Cook protein to safe internal temperature and rest before slicing or holding.",
-      "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
-      "Plate or pan with sauce and garnish so portions are consistent and production-ready."
-    ],
-    "metadata": {
-      "week": "Week 1",
-      "day": "Monday",
-      "importedFrom": "week1_complete_summer_recipes.corrected.json",
-      "menuSlot": "Comfort",
-      "season": "Summer"
-    }
-  },
-  {
+    {
     "title": "Pan Seared Salmon with Cucumber Dill Yogurt Sauce",
     "yield": "24 portions",
     "category": "Alternative",
