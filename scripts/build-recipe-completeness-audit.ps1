@@ -1,10 +1,16 @@
+param(
+    [switch]$IngredientAudit
+)
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
 $root = Split-Path -Parent $PSScriptRoot
-$analysisPath = Join-Path $root ".tmp-final-dinner-deployment-analysis.json"
-$outputPath = Join-Path $root "recipe-completeness-audit.xlsx"
+$analysisPath = Join-Path $root $(if ($IngredientAudit) { ".tmp-ingredient-audit.json" } else { ".tmp-final-dinner-deployment-analysis.json" })
+$outputPath = Join-Path $root $(if ($IngredientAudit) { "ingredient-audit-report.xlsx" } else { "recipe-completeness-audit.xlsx" })
 $analysis = Get-Content -Raw -LiteralPath $analysisPath | ConvertFrom-Json
+$sheetName = if ($IngredientAudit) { "Ingredient Audit" } else { "Recipe Completeness Audit" }
+$tableName = if ($IngredientAudit) { "IngredientAudit" } else { "CompletenessAudit" }
 
 function Get-ExcelColumnName([int]$ColumnNumber) {
     $name = ""
@@ -67,7 +73,7 @@ function Get-TableXml([object[][]]$Rows) {
     $lastColumn = Get-ExcelColumnName $columnCount
     $builder = [Text.StringBuilder]::new()
     [void]$builder.Append('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>')
-    [void]$builder.Append("<table xmlns=`"http://schemas.openxmlformats.org/spreadsheetml/2006/main`" id=`"1`" name=`"CompletenessAudit`" displayName=`"CompletenessAudit`" ref=`"A1:$lastColumn$($Rows.Count)`" totalsRowShown=`"0`"><autoFilter ref=`"A1:$lastColumn$($Rows.Count)`"/><tableColumns count=`"$columnCount`">")
+    [void]$builder.Append("<table xmlns=`"http://schemas.openxmlformats.org/spreadsheetml/2006/main`" id=`"1`" name=`"$tableName`" displayName=`"$tableName`" ref=`"A1:$lastColumn$($Rows.Count)`" totalsRowShown=`"0`"><autoFilter ref=`"A1:$lastColumn$($Rows.Count)`"/><tableColumns count=`"$columnCount`">")
     for ($column = 0; $column -lt $columnCount; $column++) {
         $id = $column + 1
         [void]$builder.Append("<tableColumn id=`"$id`" name=`"$(Escape-Xml ([string]$Rows[0][$column]))`"/>")
@@ -77,15 +83,28 @@ function Get-TableXml([object[][]]$Rows) {
 }
 
 $rows = [Collections.Generic.List[object[]]]::new()
-$rows.Add(@("Recipe Name", "Issue Type", "Issue Description", "Source URL", "Action Taken"))
-foreach ($item in @($analysis.completenessAudit)) {
-    $rows.Add(@(
-        [string]$item.recipeName,
-        [string]$item.issueType,
-        [string]$item.issueDescription,
-        [string]$item.sourceUrl,
-        [string]$item.actionTaken
-    ))
+if ($IngredientAudit) {
+    $rows.Add(@("Recipe Name", "Invalid Ingredient", "Reason", "Action Taken"))
+    foreach ($item in @($analysis.auditRows)) {
+        $rows.Add(@(
+            [string]$item.recipeName,
+            [string]$item.invalidIngredient,
+            [string]$item.reason,
+            [string]$item.actionTaken
+        ))
+    }
+}
+else {
+    $rows.Add(@("Recipe Name", "Issue Type", "Issue Description", "Source URL", "Action Taken"))
+    foreach ($item in @($analysis.completenessAudit)) {
+        $rows.Add(@(
+            [string]$item.recipeName,
+            [string]$item.issueType,
+            [string]$item.issueDescription,
+            [string]$item.sourceUrl,
+            [string]$item.actionTaken
+        ))
+    }
 }
 
 Add-Type -AssemblyName System.IO.Compression
@@ -96,7 +115,7 @@ $zip = [IO.Compression.ZipArchive]::new($stream, [IO.Compression.ZipArchiveMode]
 try {
     Add-ZipTextEntry $zip '[Content_Types].xml' '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/tables/table1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.table+xml"/></Types>'
     Add-ZipTextEntry $zip '_rels/.rels' '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>'
-    Add-ZipTextEntry $zip 'xl/workbook.xml' '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><bookViews><workbookView activeTab="0"/></bookViews><sheets><sheet name="Recipe Completeness Audit" sheetId="1" r:id="rId1"/></sheets><calcPr calcId="191029" fullCalcOnLoad="1"/></workbook>'
+    Add-ZipTextEntry $zip 'xl/workbook.xml' "<?xml version=`"1.0`" encoding=`"UTF-8`" standalone=`"yes`"?><workbook xmlns=`"http://schemas.openxmlformats.org/spreadsheetml/2006/main`" xmlns:r=`"http://schemas.openxmlformats.org/officeDocument/2006/relationships`"><bookViews><workbookView activeTab=`"0`"/></bookViews><sheets><sheet name=`"$(Escape-Xml $sheetName)`" sheetId=`"1`" r:id=`"rId1`"/></sheets><calcPr calcId=`"191029`" fullCalcOnLoad=`"1`"/></workbook>"
     Add-ZipTextEntry $zip 'xl/_rels/workbook.xml.rels' '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>'
     Add-ZipTextEntry $zip 'xl/styles.xml' '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="2"><font><sz val="11"/><name val="Calibri"/></font><font><b/><color rgb="FFFFFFFF"/><sz val="11"/><name val="Calibri"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF204070"/><bgColor indexed="64"/></patternFill></fill></fills><borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FFD9E2F3"/></left><right style="thin"><color rgb="FFD9E2F3"/></right><top style="thin"><color rgb="FFD9E2F3"/></top><bottom style="thin"><color rgb="FFD9E2F3"/></bottom><diagonal/></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="3"><xf numFmtId="0" fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1"/><xf numFmtId="0" fontId="1" fillId="2" borderId="1" xfId="0" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center"/></xf><xf numFmtId="0" fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles><dxfs count="0"/><tableStyles count="0" defaultTableStyle="TableStyleMedium2" defaultPivotStyle="PivotStyleLight16"/></styleSheet>'
     Add-ZipTextEntry $zip 'xl/worksheets/sheet1.xml' (Get-WorksheetXml $rows.ToArray())
@@ -105,4 +124,4 @@ try {
 }
 finally { $zip.Dispose(); $stream.Dispose() }
 
-Write-Output "Created recipe-completeness-audit.xlsx with $($rows.Count - 1) issue rows."
+Write-Output "Created $(Split-Path -Leaf $outputPath) with $($rows.Count - 1) issue rows."
