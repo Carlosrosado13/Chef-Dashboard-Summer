@@ -1,0 +1,417 @@
+﻿[
+    {
+        "title":  "Grilled Lemon-Herb Chicken",
+        "yield":  "24 servings",
+        "category":  "entree",
+        "ingredients":  [
+                            {
+                                "name":  "Chicken breast",
+                                "amount":  12,
+                                "unit":  "lb"
+                            },
+                            {
+                                "name":  "Lemon juice",
+                                "amount":  2,
+                                "unit":  "cup"
+                            },
+                            {
+                                "name":  "Olive oil",
+                                "amount":  1,
+                                "unit":  "cup"
+                            },
+                            {
+                                "name":  "Chopped parsley",
+                                "amount":  1,
+                                "unit":  "cup"
+                            }
+                        ],
+        "steps":  [
+                      "Marinate chicken with lemon juice, olive oil, herbs, and seasoning.",
+                      "Grill chicken until marked and cooked through.",
+                      "Rest briefly, slice, and hold warm for service."
+                  ]
+    },
+    {
+        "title":  "Beef Bourguignon",
+        "yield":  "24 servings",
+        "category":  "entree",
+        "ingredients":  [
+                            {
+                                "name":  "Beef chuck",
+                                "amount":  14,
+                                "unit":  "lb"
+                            },
+                            {
+                                "name":  "Mushrooms",
+                                "amount":  4,
+                                "unit":  "lb"
+                            },
+                            {
+                                "name":  "Pearl onions",
+                                "amount":  3,
+                                "unit":  "lb"
+                            },
+                            {
+                                "name":  "Red wine",
+                                "amount":  2,
+                                "unit":  "qt"
+                            }
+                        ],
+        "steps":  [
+                      "Brown beef in batches and remove from the pan.",
+                      "Cook mushrooms and onions, then deglaze with wine.",
+                      "Braise beef with vegetables until tender and sauce is reduced."
+                  ]
+    },
+    {
+        "title":  "Cream of Mushroom Soup",
+        "yield":  "24 servings",
+        "category":  "soup",
+        "ingredients":  [
+                            {
+                                "name":  "Cremini mushrooms",
+                                "amount":  8,
+                                "unit":  "lb"
+                            },
+                            {
+                                "name":  "Onion",
+                                "amount":  2,
+                                "unit":  "lb"
+                            },
+                            {
+                                "name":  "Cream",
+                                "amount":  2,
+                                "unit":  "qt"
+                            },
+                            {
+                                "name":  "Vegetable stock",
+                                "amount":  2,
+                                "unit":  "gal"
+                            }
+                        ],
+        "steps":  [
+                      "Saute mushrooms and onions until moisture evaporates.",
+                      "Add stock and simmer until flavors develop.",
+                      "Blend partially, finish with cream, and season."
+                  ]
+    },
+    {
+        "title":  "Beef Meatloaf with Jus",
+        "yield":  "24 servings",
+        "category":  "entree",
+        "ingredients":  [
+                            {
+                                "name":  "Ground beef",
+                                "amount":  12,
+                                "unit":  "lb"
+                            },
+                            {
+                                "name":  "Breadcrumbs",
+                                "amount":  4,
+                                "unit":  "cup"
+                            },
+                            {
+                                "name":  "Eggs",
+                                "amount":  12,
+                                "unit":  "each"
+                            },
+                            {
+                                "name":  "Beef jus",
+                                "amount":  2,
+                                "unit":  "qt"
+                            }
+                        ],
+        "steps":  [
+                      "Mix beef, breadcrumbs, eggs, and seasoning until just combined.",
+                      "Shape into loaves and bake until cooked through.",
+                      "Slice and serve with hot beef jus."
+                  ]
+    },
+    {
+        "title":  "Coffee-Rubbed Beef Tenderloin, shallot butter (GF)",
+        "yield":  "24 servings",
+        "category":  "dinner elevated",
+        "ingredients":  [
+                            {
+                                "name":  "Beef tenderloin",
+                                "amount":  12,
+                                "unit":  "lb"
+                            },
+                            {
+                                "name":  "Ground coffee",
+                                "amount":  0.5,
+                                "unit":  "cup"
+                            },
+                            {
+                                "name":  "Shallot butter",
+                                "amount":  2,
+                                "unit":  "lb"
+                            }
+                        ],
+        "steps":  [
+                      "Season tenderloin with coffee rub and kosher salt.",
+                      "Sear and roast to desired doneness.",
+                      "Rest, slice, and finish with shallot butter."
+                  ]
+    },
+    {
+        "title":  "Miso and Soy Chilean Sea Bass",
+        "category":  "Traditional",
+        "yield":  "4",
+        "ingredients":  [
+                            {
+                                "amount":  0.33333334326744,
+                                "unit":  "cup",
+                                "name":  "sake"
+                            },
+                            {
+                                "amount":  0.33333334326744,
+                                "unit":  "cup",
+                                "name":  "mirin (Japanese sweet rice wine)"
+                            },
+                            {
+                                "amount":  0.33333334326744,
+                                "unit":  "cup",
+                                "name":  "miso paste"
+                            },
+                            {
+                                "amount":  0.25,
+                                "unit":  "cup",
+                                "name":  "packed brown sugar"
+                            },
+                            {
+                                "amount":  3,
+                                "unit":  "Tbsp",
+                                "name":  "soy sauce"
+                            },
+                            {
+                                "amount":  4,
+                                "unit":  "each",
+                                "name":  "(4 ounce) fillets fresh sea bass, about 1 inch thick"
+                            },
+                            {
+                                "amount":  2,
+                                "unit":  "Tbsp",
+                                "name":  "chopped green onion"
+                            }
+                        ],
+        "steps":  [
+                      "Whisk together sake, mirin, miso paste, brown sugar, and soy sauce in a bowl.",
+                      "Place sea bass fillets in a large resealable plastic bag; pour marinade over fillets. Chill in the refrigerator for 3 to 6 hours.",
+                      "Preheat the oven\u0027s broiler and set the oven rack about 6 inches from the heat source. Prop the oven door to remain slightly ajar.",
+                      "Arrange fillets on a baking sheet; discard marinade.",
+                      "Broil sea bass in the preheated oven until fish flakes easily with a fork, 7 to 9 minutes.",
+                      "Sprinkle with chopped green onions to serve."
+                  ]
+    },
+    {
+        "title":  "Spinach and Ricotta Manicotti",
+        "category":  "Alternative",
+        "yield":  "6",
+        "ingredients":  [
+                            {
+                                "amount":  1,
+                                "unit":  "each",
+                                "name":  "(15 ounce) container ricotta cheese"
+                            },
+                            {
+                                "amount":  1,
+                                "unit":  "each",
+                                "name":  "(10 ounce) package frozen chopped spinach, thawed and squeezed dry"
+                            },
+                            {
+                                "amount":  0.5,
+                                "unit":  "cup",
+                                "name":  "minced onion"
+                            },
+                            {
+                                "amount":  1,
+                                "unit":  "each",
+                                "name":  "large egg"
+                            },
+                            {
+                                "amount":  2,
+                                "unit":  "tsp",
+                                "name":  "minced fresh parsley"
+                            },
+                            {
+                                "amount":  0.5,
+                                "unit":  "tsp",
+                                "name":  "pepper"
+                            },
+                            {
+                                "amount":  0.25,
+                                "unit":  "tsp",
+                                "name":  "garlic powder"
+                            },
+                            {
+                                "amount":  1.5,
+                                "unit":  "cup",
+                                "name":  "shredded mozzarella cheese, divided"
+                            },
+                            {
+                                "amount":  0.5,
+                                "unit":  "cup",
+                                "name":  "grated Parmesan cheese, divided"
+                            },
+                            {
+                                "amount":  1,
+                                "unit":  "each",
+                                "name":  "(8 ounce) package manicotti shells"
+                            },
+                            {
+                                "amount":  2,
+                                "unit":  "each",
+                                "name":  "(26 ounce) jars spaghetti sauce"
+                            },
+                            {
+                                "amount":  1.5,
+                                "unit":  "cup",
+                                "name":  "water"
+                            }
+                        ],
+        "steps":  [
+                      "Preheat the oven to 350 degrees F (175 degrees C).",
+                      "Mix ricotta, spinach, onion, egg, parsley, pepper, and garlic powder together in a large bowl. Stir in 1 cup mozzarella and 1/4 cup Parmesan. Stuff mixture into uncooked manicotti shells.",
+                      "Stir spaghetti sauce and water together in a bowl. Spread 1 cup sauce over the bottom of a 9x13-inch baking dish. Arrange stuffed manicotti in a single layer in the dish. Cover with remaining sauce, then sprinkle with remaining mozzarella and Parmesan.",
+                      "Bake in the preheated oven until shells are tender yet firm to the bite, 45 to 55 minutes."
+                  ]
+    },
+    {
+        "title":  "Ginger Jasmine Rice",
+        "category":  "Starch",
+        "yield":  "4",
+        "ingredients":  [
+                            {
+                                "amount":  1,
+                                "unit":  "cup",
+                                "name":  "jasmine rice (not instant)*"
+                            },
+                            {
+                                "amount":  2.25,
+                                "unit":  "cup",
+                                "name":  "water or low-sodium chicken broth"
+                            },
+                            {
+                                "amount":  1,
+                                "unit":  "Tbsp",
+                                "name":  "ginger (, grated)"
+                            },
+                            {
+                                "amount":  1,
+                                "unit":  "clove",
+                                "name":  "garlic (, minced)"
+                            },
+                            {
+                                "amount":  1,
+                                "unit":  "Tbsp",
+                                "name":  "butter"
+                            },
+                            {
+                                "amount":  0.5,
+                                "unit":  "tsp",
+                                "name":  "kosher salt"
+                            },
+                            {
+                                "amount":  0.5,
+                                "unit":  "tsp",
+                                "name":  "ground black pepper"
+                            },
+                            {
+                                "amount":  2,
+                                "unit":  "Tbsp",
+                                "name":  "scallions"
+                            }
+                        ],
+        "steps":  [
+                      "In a colander, rinse the 1 cup jasmine rice (not instant)* well, shaking off excess water.",
+                      "Combine 2 1/4 cup water or low-sodium chicken broth, rinsed rice, fresh grated 1 tablespoon ginger, grated 1 clove garlic, 1 tablespoon butter, 1/2 teaspoon kosher salt and 1/2 teaspoon ground black pepper in a medium sauce pan.",
+                      "Bring to a low boil and then lower heat to a low simmer.",
+                      "Cover and allow to cook for 20-25 minutes.",
+                      "Fluff with a fork and serve.",
+                      "Top with chopped 2 tablespoons scallions or serve with your favorite meal.",
+                      "If you\u0027ve tried this recipe, please come back to leave us a comment and give it a star rating!"
+                  ]
+    },
+    {
+        "title":  "BRAISED SHORT RIBS WITH RED WINE SAUCE",
+        "category":  "Elevated",
+        "yield":  "5",
+        "ingredients":  [
+                            {
+                                "amount":  5,
+                                "unit":  "",
+                                "name":  "beef short ribs (, 300-400g/10-14oz each (Note 1))"
+                            },
+                            {
+                                "amount":  1.5,
+                                "unit":  "tsp",
+                                "name":  "each salt and pepper"
+                            },
+                            {
+                                "amount":  2,
+                                "unit":  "tbsp",
+                                "name":  "olive oil"
+                            },
+                            {
+                                "amount":  3,
+                                "unit":  "",
+                                "name":  "garlic cloves (, crushed)"
+                            },
+                            {
+                                "amount":  1,
+                                "unit":  "",
+                                "name":  "large onion (, chopped (brown, yellow or white))"
+                            },
+                            {
+                                "amount":  2,
+                                "unit":  "",
+                                "name":  "celery ribs (, chopped)"
+                            },
+                            {
+                                "amount":  2,
+                                "unit":  "",
+                                "name":  "carrots (, chopped)"
+                            },
+                            {
+                                "amount":  2,
+                                "unit":  "tbsp",
+                                "name":  "tomato paste"
+                            },
+                            {
+                                "amount":  2,
+                                "unit":  "cups",
+                                "name":  "(500ml) dry red wine ((Note 2))"
+                            },
+                            {
+                                "amount":  2,
+                                "unit":  "cups",
+                                "name":  "(500ml) beef stock/broth, low sodium"
+                            },
+                            {
+                                "amount":  2,
+                                "unit":  "",
+                                "name":  "sprigs thyme ((optional))"
+                            },
+                            {
+                                "amount":  2,
+                                "unit":  "",
+                                "name":  "bay leaves"
+                            }
+                        ],
+        "steps":  [
+                      "Preheat oven to 160Â°C/325Â°F.",
+                      "Sprinkle beef all over with salt and pepper.",
+                      "Heat oil in a large ovenproof pot over high heat. Add half the ribs and brown aggressively all over (~5 - 7 min in total). Remove and repeat with remaining ribs, then remove.",
+                      "Turn heat down to medium. Add onion and garlic into the same pot and cook for 2 minutes.",
+                      "Add carrot and celery, cook for 5 minutes until carrot is softened and sweet.",
+                      "Add tomato paste and cook for 1 minute.",
+                      "Add wine, broth, thyme and bay leaves. Stir until tomato paste is dissolved.",
+                      "Return beef into liquid, arranging them so they are submerged (Note 3).",
+                      "Cover with lid and transfer to oven for 3 hours, or until the meat can easily be pried apart with forks. (Note 4 Other cook methods)",
+                      "Remove beef carefully, keeping the meat on the bone. (Note 4) Cover to keep warm.",
+                      "Strain all liquid in the pot, pressing juices out of the onion, carrot etc. (Optional - can skip if you don\u0026#039;t mind chunky sauce) Return sauce into pot, bring to simmer and stir. Adjust as necessary - simmer to reduce/thicken, add water to thin, season with salt and pepper if needed.",
+                      "Place beef on serving plate, spoon over sauce. Serve!"
+                  ]
+    }
+]
