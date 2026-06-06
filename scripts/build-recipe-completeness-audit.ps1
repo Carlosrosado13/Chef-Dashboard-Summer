@@ -1,16 +1,24 @@
 param(
-    [switch]$IngredientAudit
+    [switch]$IngredientAudit,
+    [switch]$FinalManualReview,
+    [switch]$FlaggedRecipesReview,
+    [switch]$IngredientRootCause,
+    [switch]$MenuValidationSeparated
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
 $root = Split-Path -Parent $PSScriptRoot
-$analysisPath = Join-Path $root $(if ($IngredientAudit) { ".tmp-ingredient-audit.json" } else { ".tmp-final-dinner-deployment-analysis.json" })
-$outputPath = Join-Path $root $(if ($IngredientAudit) { "ingredient-audit-report.xlsx" } else { "recipe-completeness-audit.xlsx" })
+$modeCount = [int][bool]$IngredientAudit + [int][bool]$FinalManualReview + [int][bool]$FlaggedRecipesReview + [int][bool]$IngredientRootCause + [int][bool]$MenuValidationSeparated
+if ($modeCount -gt 1) { throw "Choose only one audit mode." }
+$analysisFile = if ($MenuValidationSeparated) { ".tmp-menu-validation-separated.json" } elseif ($IngredientRootCause) { ".tmp-ingredient-validation-root-cause.json" } elseif ($FlaggedRecipesReview) { ".tmp-flagged-recipes-review.json" } elseif ($FinalManualReview) { ".tmp-final-manual-review.json" } elseif ($IngredientAudit) { ".tmp-ingredient-audit.json" } else { ".tmp-final-dinner-deployment-analysis.json" }
+$outputFile = if ($MenuValidationSeparated) { "menu-type-validation-results.xlsx" } elseif ($IngredientRootCause) { "ingredient-validation-root-cause.xlsx" } elseif ($FlaggedRecipesReview) { "flagged-recipes-review.xlsx" } elseif ($FinalManualReview) { "final-manual-review.xlsx" } elseif ($IngredientAudit) { "ingredient-audit-report.xlsx" } else { "recipe-completeness-audit.xlsx" }
+$analysisPath = Join-Path $root $analysisFile
+$outputPath = Join-Path $root $outputFile
 $analysis = Get-Content -Raw -LiteralPath $analysisPath | ConvertFrom-Json
-$sheetName = if ($IngredientAudit) { "Ingredient Audit" } else { "Recipe Completeness Audit" }
-$tableName = if ($IngredientAudit) { "IngredientAudit" } else { "CompletenessAudit" }
+$sheetName = if ($MenuValidationSeparated) { "Menu Validation Results" } elseif ($IngredientRootCause) { "Ingredient Root Cause" } elseif ($FlaggedRecipesReview) { "Flagged Recipes Review" } elseif ($FinalManualReview) { "Final Manual Review" } elseif ($IngredientAudit) { "Ingredient Audit" } else { "Recipe Completeness Audit" }
+$tableName = if ($MenuValidationSeparated) { "MenuValidationResults" } elseif ($IngredientRootCause) { "IngredientRootCause" } elseif ($FlaggedRecipesReview) { "FlaggedRecipesReview" } elseif ($FinalManualReview) { "FinalManualReview" } elseif ($IngredientAudit) { "IngredientAudit" } else { "CompletenessAudit" }
 
 function Get-ExcelColumnName([int]$ColumnNumber) {
     $name = ""
@@ -39,7 +47,7 @@ function Get-WorksheetXml([object[][]]$Rows) {
     $rowCount = $Rows.Count
     $columnCount = $Rows[0].Count
     $lastColumn = Get-ExcelColumnName $columnCount
-    $widthCaps = @(42, 38, 70, 55, 55)
+    $widthCaps = @(42, 16, 16, 30, 48, 65, 55, 22, 16, 14, 45, 70, 70, 85)
     $builder = [Text.StringBuilder]::new()
     [void]$builder.Append('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>')
     [void]$builder.Append('<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">')
@@ -83,7 +91,76 @@ function Get-TableXml([object[][]]$Rows) {
 }
 
 $rows = [Collections.Generic.List[object[]]]::new()
-if ($IngredientAudit) {
+if ($MenuValidationSeparated) {
+    $rows.Add(@(
+        "Recipe Name", "Menu Type", "Week", "Day", "Category",
+        "Missing Ingredients", "Ingredient Count", "Missing Instructions", "Step Count"
+    ))
+    foreach ($item in @($analysis.rows)) {
+        $rows.Add(@(
+            [string]$item.recipeName,
+            [string]$item.menuType,
+            [string]$item.week,
+            [string]$item.day,
+            [string]$item.category,
+            [string]$item.missingIngredients,
+            [string]$item.ingredientCount,
+            [string]$item.missingInstructions,
+            [string]$item.stepCount
+        ))
+    }
+}
+elseif ($IngredientRootCause) {
+    $rows.Add(@("Recipe Name", "Ingredient Count", "Ingredient Schema Type", "Source File", "Validation Failure Reason"))
+    foreach ($item in @($analysis.rows)) {
+        $rows.Add(@(
+            [string]$item.recipeName,
+            [string]$item.ingredientCount,
+            [string]$item.ingredientSchemaType,
+            [string]$item.sourceFile,
+            [string]$item.validationFailureReason
+        ))
+    }
+}
+elseif ($FlaggedRecipesReview) {
+    $rows.Add(@(
+        "Recipe Name", "Week", "Day", "Category", "Classification", "Reason Flagged",
+        "Source URL", "Yield", "Ingredient Count", "Step Count",
+        "Generic Ingredients Detected", "Generic Instructions Detected",
+        "Current Ingredient List", "Current Step List"
+    ))
+    foreach ($item in @($analysis.rows)) {
+        $rows.Add(@(
+            [string]$item.recipeName,
+            [string]$item.week,
+            [string]$item.day,
+            [string]$item.category,
+            [string]$item.classification,
+            [string]$item.reasonFlagged,
+            [string]$item.sourceUrl,
+            [string]$item.yield,
+            [string]$item.ingredientCount,
+            [string]$item.stepCount,
+            [string]$item.genericIngredientsDetected,
+            [string]$item.genericInstructionsDetected,
+            [string]$item.currentIngredientList,
+            [string]$item.currentStepList
+        ))
+    }
+}
+elseif ($FinalManualReview) {
+    $rows.Add(@("Recipe Name", "Issue Type", "Severity", "Recommended Fix", "Source URL"))
+    foreach ($item in @($analysis.rows)) {
+        $rows.Add(@(
+            [string]$item.recipeName,
+            [string]$item.issueType,
+            [string]$item.severity,
+            [string]$item.recommendedFix,
+            [string]$item.sourceUrl
+        ))
+    }
+}
+elseif ($IngredientAudit) {
     $rows.Add(@("Recipe Name", "Invalid Ingredient", "Reason", "Action Taken"))
     foreach ($item in @($analysis.auditRows)) {
         $rows.Add(@(
