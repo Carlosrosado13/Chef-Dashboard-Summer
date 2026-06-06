@@ -522,7 +522,7 @@
       "season": "Summer"
     }
   },
-    {
+  {
     "title": "Pan Seared Salmon with Cucumber Dill Yogurt Sauce",
     "yield": "24 portions",
     "category": "Alternative",
@@ -19927,6 +19927,21 @@
       "Remove beef carefully, keeping the meat on the bone. (Note 4) Cover to keep warm.",
       "Strain all liquid in the pot, pressing juices out of the onion, carrot etc. (Optional - can skip if you don&#039;t mind chunky sauce) Return sauce into pot, bring to simmer and stir. Adjust as necessary - simmer to reduce/thicken, add water to thin, season with salt and pepper if needed.",
       "Place beef on serving plate, spoon over sauce. Serve!"
+    ]
+  },
+  {
+    "title": "Not Scheduled",
+    "yield": "",
+    "category": "Comfort",
+    "ingredients": [
+      {
+        "amount": 0,
+        "unit": "",
+        "name": "Not Scheduled"
+      }
+    ],
+    "steps": [
+      "Not Scheduled"
     ]
   }
 ]
