@@ -3,22 +3,23 @@ param(
     [switch]$FinalManualReview,
     [switch]$FlaggedRecipesReview,
     [switch]$IngredientRootCause,
-    [switch]$MenuValidationSeparated
+    [switch]$MenuValidationSeparated,
+    [switch]$RemainingArtifactReport
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
 $root = Split-Path -Parent $PSScriptRoot
-$modeCount = [int][bool]$IngredientAudit + [int][bool]$FinalManualReview + [int][bool]$FlaggedRecipesReview + [int][bool]$IngredientRootCause + [int][bool]$MenuValidationSeparated
+$modeCount = [int][bool]$IngredientAudit + [int][bool]$FinalManualReview + [int][bool]$FlaggedRecipesReview + [int][bool]$IngredientRootCause + [int][bool]$MenuValidationSeparated + [int][bool]$RemainingArtifactReport
 if ($modeCount -gt 1) { throw "Choose only one audit mode." }
-$analysisFile = if ($MenuValidationSeparated) { ".tmp-menu-validation-separated.json" } elseif ($IngredientRootCause) { ".tmp-ingredient-validation-root-cause.json" } elseif ($FlaggedRecipesReview) { ".tmp-flagged-recipes-review.json" } elseif ($FinalManualReview) { ".tmp-final-manual-review.json" } elseif ($IngredientAudit) { ".tmp-ingredient-audit.json" } else { ".tmp-final-dinner-deployment-analysis.json" }
-$outputFile = if ($MenuValidationSeparated) { "menu-type-validation-results.xlsx" } elseif ($IngredientRootCause) { "ingredient-validation-root-cause.xlsx" } elseif ($FlaggedRecipesReview) { "flagged-recipes-review.xlsx" } elseif ($FinalManualReview) { "final-manual-review.xlsx" } elseif ($IngredientAudit) { "ingredient-audit-report.xlsx" } else { "recipe-completeness-audit.xlsx" }
+$analysisFile = if ($RemainingArtifactReport) { ".tmp-remaining-artifact-report.json" } elseif ($MenuValidationSeparated) { ".tmp-menu-validation-separated.json" } elseif ($IngredientRootCause) { ".tmp-ingredient-validation-root-cause.json" } elseif ($FlaggedRecipesReview) { ".tmp-flagged-recipes-review.json" } elseif ($FinalManualReview) { ".tmp-final-manual-review.json" } elseif ($IngredientAudit) { ".tmp-ingredient-audit.json" } else { ".tmp-final-dinner-deployment-analysis.json" }
+$outputFile = if ($RemainingArtifactReport) { "remaining-artifact-report.xlsx" } elseif ($MenuValidationSeparated) { "menu-type-validation-results.xlsx" } elseif ($IngredientRootCause) { "ingredient-validation-root-cause.xlsx" } elseif ($FlaggedRecipesReview) { "flagged-recipes-review.xlsx" } elseif ($FinalManualReview) { "final-manual-review.xlsx" } elseif ($IngredientAudit) { "ingredient-audit-report.xlsx" } else { "recipe-completeness-audit.xlsx" }
 $analysisPath = Join-Path $root $analysisFile
 $outputPath = Join-Path $root $outputFile
 $analysis = Get-Content -Raw -LiteralPath $analysisPath | ConvertFrom-Json
-$sheetName = if ($MenuValidationSeparated) { "Menu Validation Results" } elseif ($IngredientRootCause) { "Ingredient Root Cause" } elseif ($FlaggedRecipesReview) { "Flagged Recipes Review" } elseif ($FinalManualReview) { "Final Manual Review" } elseif ($IngredientAudit) { "Ingredient Audit" } else { "Recipe Completeness Audit" }
-$tableName = if ($MenuValidationSeparated) { "MenuValidationResults" } elseif ($IngredientRootCause) { "IngredientRootCause" } elseif ($FlaggedRecipesReview) { "FlaggedRecipesReview" } elseif ($FinalManualReview) { "FinalManualReview" } elseif ($IngredientAudit) { "IngredientAudit" } else { "CompletenessAudit" }
+$sheetName = if ($RemainingArtifactReport) { "Remaining Artifact Report" } elseif ($MenuValidationSeparated) { "Menu Validation Results" } elseif ($IngredientRootCause) { "Ingredient Root Cause" } elseif ($FlaggedRecipesReview) { "Flagged Recipes Review" } elseif ($FinalManualReview) { "Final Manual Review" } elseif ($IngredientAudit) { "Ingredient Audit" } else { "Recipe Completeness Audit" }
+$tableName = if ($RemainingArtifactReport) { "RemainingArtifactReport" } elseif ($MenuValidationSeparated) { "MenuValidationResults" } elseif ($IngredientRootCause) { "IngredientRootCause" } elseif ($FlaggedRecipesReview) { "FlaggedRecipesReview" } elseif ($FinalManualReview) { "FinalManualReview" } elseif ($IngredientAudit) { "IngredientAudit" } else { "CompletenessAudit" }
 
 function Get-ExcelColumnName([int]$ColumnNumber) {
     $name = ""
@@ -91,7 +92,18 @@ function Get-TableXml([object[][]]$Rows) {
 }
 
 $rows = [Collections.Generic.List[object[]]]::new()
-if ($MenuValidationSeparated) {
+if ($RemainingArtifactReport) {
+    $rows.Add(@("Recipe Name", "Invalid Ingredient", "Source URL", "Action Taken"))
+    foreach ($item in @($analysis.rows)) {
+        $rows.Add(@(
+            [string]$item.recipeName,
+            [string]$item.invalidIngredient,
+            [string]$item.sourceUrl,
+            [string]$item.actionTaken
+        ))
+    }
+}
+elseif ($MenuValidationSeparated) {
     $rows.Add(@(
         "Recipe Name", "Menu Type", "Week", "Day", "Category",
         "Missing Ingredients", "Ingredient Count", "Missing Instructions", "Step Count"

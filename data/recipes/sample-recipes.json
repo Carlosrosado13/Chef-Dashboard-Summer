@@ -6,11 +6,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "medium shrimp (peeled, deveined, and cut into bite-sized pieces)"
       },
@@ -28,21 +23,6 @@
         "amount": 0.5,
         "unit": "tsp",
         "name": "kosher salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Citrus &"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Crunch"
       },
       {
         "amount": 2,
@@ -78,11 +58,6 @@
         "amount": 0.125,
         "unit": "tsp",
         "name": "kosher salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -129,11 +104,6 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "large bone-in beef short ribs (approx. 2 1/2 to 3 lbs total)"
@@ -142,11 +112,6 @@
         "amount": 1,
         "unit": "Tbsp",
         "name": "vegetable oil"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -176,11 +141,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Braising"
       },
       {
@@ -192,16 +152,6 @@
         "amount": 2,
         "unit": "cup",
         "name": "low-sodium beef broth"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Herbs &"
       },
       {
         "amount": 2,
@@ -260,18 +210,8 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "fresh green beans (trimmed)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Aromatics &"
       },
       {
         "amount": 1,
@@ -335,18 +275,8 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "carrots (peeled and sliced diagonally into 1/4-inch coins)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Glaze"
       },
       {
         "amount": 2,
@@ -409,19 +339,9 @@
     "category": "Starch",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 1.5,
         "unit": "lb",
         "name": "small baby red or yellow potatoes (halved)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Coating &"
       },
       {
         "amount": 2,
@@ -484,54 +404,54 @@
     "category": "Alternative",
     "ingredients": [
       {
-        "amount": 1,
+        "amount": 3,
+        "unit": "Tbsp",
+        "name": "olive oil, plus more for drizzling"
+      },
+      {
+        "amount": 4,
+        "unit": "clove",
+        "name": "garlic, thinly sliced"
+      },
+      {
+        "amount": 2,
         "unit": "each",
-        "name": "The"
+        "name": "medium shallots, thinly sliced"
+      },
+      {
+        "amount": 1,
+        "unit": "pint",
+        "name": "grape tomatoes, halved lengthwise"
       },
       {
         "amount": 1,
         "unit": "lb",
-        "name": "large shrimp (peeled, deveined)"
+        "name": "large shrimp, peeled and deveined with tails left on"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "Base &"
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "dried red pepper flakes"
       },
       {
         "amount": 2,
-        "unit": "Tbsp",
-        "name": "olive oil"
+        "unit": "tsp",
+        "name": "fresh thyme leaves"
       },
       {
         "amount": 1,
-        "unit": "Tbsp",
-        "name": "butter"
-      },
-      {
-        "amount": 3,
-        "unit": "clove",
-        "name": "garlic (minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "large tomato (diced)"
-      },
-      {
-        "amount": 0.25,
         "unit": "cup",
         "name": "dry white wine"
       },
       {
         "amount": 1,
-        "unit": "each",
-        "name": "juice of 1/2 lemon"
+        "unit": "tsp",
+        "name": "kosher salt, or to taste"
       },
       {
-        "amount": 0.25,
-        "unit": "cup",
-        "name": "fresh parsley"
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground black pepper, or to taste"
       }
     ],
     "steps": [
@@ -583,18 +503,8 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "fresh asparagus spears (tough woody ends snapped off)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Coating &"
       },
       {
         "amount": 1,
@@ -667,11 +577,6 @@
     "category": "Veggie 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "cup",
         "name": "frozen sweet peas (no need to thaw)"
@@ -743,23 +648,8 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "cup",
         "name": "wild rice blend (rinsed thoroughly in a fine-mesh strainer)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Base &"
       },
       {
         "amount": 1,
@@ -775,11 +665,6 @@
         "amount": 2.25,
         "unit": "cup",
         "name": "low-sodium chicken or vegetable broth"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Seasoning &"
       },
       {
         "amount": 0.5,
@@ -827,11 +712,6 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "oz",
         "name": "high-quality semi-sweet chocolate (chopped)"
@@ -855,11 +735,6 @@
         "amount": 0.5,
         "unit": "cup",
         "name": "heavy cream"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 0.5,
@@ -907,11 +782,6 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "bone-in"
@@ -925,11 +795,6 @@
         "amount": 1,
         "unit": "Tbsp",
         "name": "olive oil"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Herb"
       },
       {
         "amount": 1,
@@ -1016,11 +881,6 @@
     "yield": "4 servings",
     "category": "Alternative",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 4,
         "unit": "each",
@@ -1117,19 +977,9 @@
     "category": "Veggie 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "each",
         "name": "medium summer zucchinis (ends trimmed, cut lengthwise into 1/2-inch spears)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Coating &"
       },
       {
         "amount": 1.5,
@@ -1194,11 +1044,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "large butternut squash (approx. 2 to 3 lbs, peeled, seeded, and cut into 1-inch cubes)"
       },
       {
@@ -1258,18 +1103,8 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "cup",
         "name": "uncooked quinoa (rinsed thoroughly in a fine-mesh strainer)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Base &"
       },
       {
         "amount": 1,
@@ -1333,11 +1168,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "carrots (peeled and chopped)"
       },
@@ -1355,11 +1185,6 @@
         "amount": 1,
         "unit": "Tbsp",
         "name": "butter"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 3,
@@ -1380,11 +1205,6 @@
         "amount": 0.25,
         "unit": "tsp",
         "name": "ground ginger"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 0.25,
@@ -1428,11 +1248,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "large sea scallops (tough side muscles removed)"
       },
@@ -1455,16 +1270,6 @@
         "amount": 0.25,
         "unit": "tsp",
         "name": "white pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Citrus"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Herb"
       },
       {
         "amount": 1,
@@ -1531,11 +1336,6 @@
     "yield": "6 servings",
     "category": "Comfort",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 3,
         "unit": "lb",
@@ -1627,19 +1427,9 @@
     "category": "Veggie 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 10,
         "unit": "oz",
         "name": "fresh baby spinach leaves (washed and thoroughly dried)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -1697,19 +1487,9 @@
     "category": "Veggie 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 1.5,
         "unit": "lb",
         "name": "carrots (peeled and sliced diagonally into 1-inch thick chunks)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -1720,11 +1500,6 @@
         "amount": 1,
         "unit": "Tbsp",
         "name": "honey"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 0.5,
@@ -1779,16 +1554,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Salad"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "large crisp apple (diced)"
       },
       {
@@ -1805,11 +1570,6 @@
         "amount": 0.3333333333333333,
         "unit": "cup",
         "name": "toasted walnuts (chopped)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 0.3333333333333333,
@@ -1830,11 +1590,6 @@
         "amount": 0.125,
         "unit": "tsp",
         "name": "black pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -1872,11 +1627,6 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 1.5,
         "unit": "lb",
         "name": "sirloin or flank steak (sliced across grain into 1/2-inch strips)"
@@ -1900,16 +1650,6 @@
         "amount": 1,
         "unit": "each",
         "name": "and pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Sauce &"
       },
       {
         "amount": 2,
@@ -1981,11 +1721,6 @@
     "yield": "4 servings",
     "category": "Alternative",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 4,
         "unit": "each",
@@ -2084,17 +1819,7 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "large head of broccoli (cut into uniform bite-sized florets)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Steam"
       },
       {
         "amount": 2,
@@ -2153,23 +1878,8 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "cup",
         "name": "dry orzo pasta"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Liquid"
       },
       {
         "amount": 4,
@@ -2185,16 +1895,6 @@
         "amount": 0.25,
         "unit": "cup",
         "name": "low-sodium chicken or vegetable broth"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Herb"
       },
       {
         "amount": 2,
@@ -2316,16 +2016,6 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Beef &"
-      },
-      {
         "amount": 0.5,
         "unit": "lb",
         "name": "flank steak (sliced into thin strips)"
@@ -2352,11 +2042,6 @@
       },
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "Tbsp",
         "name": "fresh ginger (grated)"
       },
@@ -2369,11 +2054,6 @@
         "amount": 1,
         "unit": "stalk",
         "name": "lemongrass (bruised)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -2425,11 +2105,6 @@
     "yield": "4 servings",
     "category": "Elevated",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 1,
         "unit": "each",
@@ -2531,11 +2206,6 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "boneless skinless chicken breasts (pounded to even thickness)"
@@ -2627,11 +2297,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "large shrimp (peeled, deveined, tails removed)"
       },
@@ -2716,11 +2381,6 @@
     "category": "Veggie 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 1.5,
         "unit": "lb",
         "name": "(approx. 680 g) fresh Brussels sprouts"
@@ -2741,19 +2401,9 @@
         "name": "and cut in half lengthwise"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "Tbsp",
         "name": "extra virgin olive oil"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 0.5,
@@ -2807,11 +2457,6 @@
     "category": "Starch",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "large Russet potatoes (scrubbed and dried)"
@@ -2825,11 +2470,6 @@
         "amount": 1,
         "unit": "tsp",
         "name": "kosher salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -2908,16 +2548,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Meat &"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "lean ground beef (or ground turkey)"
       },
@@ -2939,16 +2569,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Spice"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "packet (1 oz) taco seasoning mix"
       },
       {
@@ -2960,16 +2580,6 @@
         "amount": 0.5,
         "unit": "tsp",
         "name": "kosher salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Base &"
       },
       {
         "amount": 1,
@@ -2995,11 +2605,6 @@
         "amount": 1,
         "unit": "can",
         "name": "(15 oz) whole kernel corn (drained)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2.5,
@@ -3054,11 +2659,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "head",
         "name": "crisp iceberg lettuce"
       },
@@ -3076,11 +2676,6 @@
         "amount": 12,
         "unit": "each",
         "name": "sturdy wooden or bamboo appetizer skewers (about 6 inches long)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -3170,18 +2765,8 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "fresh green beans (trimmed)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -3243,11 +2828,6 @@
     "category": "Veggie 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "each",
         "name": "carrots"
@@ -3266,11 +2846,6 @@
         "amount": 1,
         "unit": "each",
         "name": "turnip (all peeled and cut into 1-inch chunks)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 3,
@@ -3327,19 +2902,9 @@
     "category": "Starch",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2.5,
         "unit": "lb",
         "name": "Yukon Gold potatoes (peeled and cut into 1-inch chunks)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 0.5,
@@ -3407,11 +2972,6 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "slice",
         "name": "thick-cut bacon (chopped)"
@@ -3442,16 +3002,6 @@
         "name": "garlic (minced)"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Liquids &"
-      },
-      {
         "amount": 2,
         "unit": "can",
         "name": "(6.5 oz each) chopped clams (reserve the juice!)"
@@ -3480,11 +3030,6 @@
         "amount": 1,
         "unit": "tsp",
         "name": "dried thyme"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -3521,11 +3066,6 @@
     "yield": "8 servings",
     "category": "Dessert",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 1,
         "unit": "each",
@@ -3632,11 +3172,6 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "mini pre-made flatbreads or pita breads"
@@ -3645,11 +3180,6 @@
         "amount": 1,
         "unit": "Tbsp",
         "name": "olive oil"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 0.5,
@@ -3699,11 +3229,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Soup"
       },
       {
@@ -3740,11 +3265,6 @@
         "amount": 1,
         "unit": "Tbsp",
         "name": "brown sugar"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Fillings &"
       },
       {
         "amount": 2,
@@ -3802,16 +3322,6 @@
     "category": "Alternative",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Salad"
-      },
-      {
         "amount": 6,
         "unit": "cup",
         "name": "Romaine lettuce (washed and chopped)"
@@ -3825,11 +3335,6 @@
         "amount": 0.5,
         "unit": "cup",
         "name": "shaved Parmesan cheese"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1.5,
@@ -4190,11 +3695,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "large head of cauliflower (approx. 2 lbs)"
       },
       {
@@ -4203,29 +3703,9 @@
         "name": "washed and cut into bite-sized florets"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Steam"
-      },
-      {
         "amount": 2,
         "unit": "cup",
         "name": "water"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Dressing &"
       },
       {
         "amount": 1,
@@ -4286,11 +3766,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "(approx. 450 g) whole carrots"
       },
@@ -4300,29 +3775,9 @@
         "name": "peeled and sliced diagonally into 1/4-inch thick rounds"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Steam"
-      },
-      {
         "amount": 2,
         "unit": "cup",
         "name": "water"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Dressing &"
       },
       {
         "amount": 1,
@@ -4827,34 +4282,79 @@
     "category": "Comfort",
     "ingredients": [
       {
+        "amount": 8,
+        "unit": "oz",
+        "name": "short pasta, such as penne, bowties, or rotini"
+      },
+      {
         "amount": 1,
-        "unit": "each",
-        "name": "The Pasta & Vegetables8 oz short pasta (like penne, bowties, or rotini)1 tbsp olive oil1 medium zucchini"
+        "unit": "Tbsp",
+        "name": "olive oil"
       },
       {
         "amount": 1,
         "unit": "each",
-        "name": "sliced into half-moons1 medium yellow squash"
+        "name": "medium zucchini, sliced into half-moons"
       },
       {
         "amount": 1,
         "unit": "each",
-        "name": "sliced into half-moons1 cup cherry tomatoes"
+        "name": "medium yellow squash, sliced into half-moons"
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "name": "cherry tomatoes, halved"
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "name": "fresh or frozen peas"
+      },
+      {
+        "amount": 3,
+        "unit": "clove",
+        "name": "garlic, minced"
+      },
+      {
+        "amount": 2,
+        "unit": "Tbsp",
+        "name": "unsalted butter"
       },
       {
         "amount": 1,
         "unit": "each",
-        "name": "halved1 cup fresh or frozen peas3 cloves garlic"
+        "name": "large lemon, zested and juiced"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "Parmesan cheese, grated"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "reserved pasta cooking water"
+      },
+      {
+        "amount": 0.25,
+        "unit": "cup",
+        "name": "fresh basil leaves, chopped or torn"
       },
       {
         "amount": 1,
-        "unit": "each",
-        "name": "mincedThe Lemon Parmesan Sauce2 tbsp unsalted butter1 large lemon (both zested and juiced) 1/2 cup freshly grated Parmesan cheese (plus more for serving) 1/2 cup reserved pasta water 1/4 cup fresh basil leaves"
+        "unit": "tsp",
+        "name": "kosher salt, or to taste"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "chopped or tornSalt and black pepper to tasteOptional: A pinch of crushed red pepper flakes"
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground black pepper"
+      },
+      {
+        "amount": 0.125,
+        "unit": "tsp",
+        "name": "crushed red pepper flakes, optional"
       }
     ],
     "steps": [
@@ -4898,11 +4398,6 @@
     "category": "Veggie 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 1.5,
         "unit": "lb",
         "name": "(approx. 680 g) mixed wild mushrooms (such as cremini, shiitake, and button)"
@@ -4911,11 +4406,6 @@
         "amount": 1,
         "unit": "each",
         "name": "wiped clean and halved"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -4931,11 +4421,6 @@
         "amount": 3,
         "unit": "clove",
         "name": "garlic (finely minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -5525,11 +5010,6 @@
     "category": "Veggie 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "each",
         "name": "bunches true baby carrots (tops still attached)"
@@ -5538,16 +5018,6 @@
         "amount": 1,
         "unit": "each",
         "name": "thoroughly washed and scrubbed"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Glaze &"
       },
       {
         "amount": 2,
@@ -5563,11 +5033,6 @@
         "amount": 1,
         "unit": "Tbsp",
         "name": "honey or maple syrup"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -6121,11 +5586,6 @@
     "category": "Veggie 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "each",
         "name": "medium zucchinis (approx. 1 1/2 lbs)"
@@ -6146,11 +5606,6 @@
         "name": "and cut into 1-inch thick chunks"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "Tbsp",
         "name": "extra virgin olive oil"
@@ -6159,11 +5614,6 @@
         "amount": 3,
         "unit": "clove",
         "name": "garlic (finely minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -6737,11 +6187,6 @@
       },
       {
         "amount": 1,
-        "unit": "each",
-        "name": "Sauce"
-      },
-      {
-        "amount": 1,
         "unit": "Tbsp",
         "name": "olive oil"
       },
@@ -6749,11 +6194,6 @@
         "amount": 1,
         "unit": "each",
         "name": "large red onion (thinly sliced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Sauce"
       },
       {
         "amount": 0.5,
@@ -7915,11 +7355,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Saffron"
       },
       {
@@ -7951,11 +7386,6 @@
         "amount": 3,
         "unit": "clove",
         "name": "garlic (minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Sauce"
       },
       {
         "amount": 0.5,
@@ -8255,11 +7685,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "(approx. 450 g) fresh asparagus spears"
       },
@@ -8270,11 +7695,6 @@
       },
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "Tbsp",
         "name": "olive oil"
       },
@@ -8282,16 +7702,6 @@
         "amount": 1,
         "unit": "Tbsp",
         "name": "butter"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Aromatics &"
       },
       {
         "amount": 2,
@@ -8358,11 +7768,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "large butternut squash (approx. 2 to 3 lbs)"
       },
       {
@@ -8381,11 +7786,6 @@
         "name": "and cut into 1-inch cubes"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "Tbsp",
         "name": "extra virgin olive oil"
@@ -8394,11 +7794,6 @@
         "amount": 1,
         "unit": "Tbsp",
         "name": "maple syrup or honey (optional, for extra caramelization)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -8731,11 +8126,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "large cantaloupe (approx. 3-4 lbs, peeled, seeded, and chopped)"
       },
       {
@@ -8749,34 +8139,14 @@
         "name": "honey (optional, adjust based on melon sweetness)"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Herb"
-      },
-      {
         "amount": 0.25,
         "unit": "cup",
         "name": "fresh mint leaves"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "thin slices prosciutto"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -8847,11 +8217,6 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "boneless"
@@ -8883,11 +8248,6 @@
       },
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "Tbsp",
         "name": "butter"
       },
@@ -8900,16 +8260,6 @@
         "amount": 1,
         "unit": "each",
         "name": "small shallot (finely chopped)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Corn &"
       },
       {
         "amount": 2,
@@ -8935,16 +8285,6 @@
         "amount": 1,
         "unit": "each",
         "name": "Parmesan cheese"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Basil &"
       },
       {
         "amount": 0.5,
@@ -9000,11 +8340,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Bok"
       },
       {
@@ -9016,11 +8351,6 @@
         "amount": 1,
         "unit": "each",
         "name": "halved or quartered lengthwise and washed thoroughly"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -9036,16 +8366,6 @@
         "amount": 1,
         "unit": "Tbsp",
         "name": "fresh ginger (peeled and minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Sauce &"
       },
       {
         "amount": 2,
@@ -9106,11 +8426,6 @@
     "category": "Veggie 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 1.5,
         "unit": "lb",
         "name": "(approx. 680 g) whole carrots"
@@ -9121,11 +8436,6 @@
         "name": "peeled and sliced diagonally into 1-inch thick pieces"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "Tbsp",
         "name": "extra virgin olive oil"
@@ -9134,11 +8444,6 @@
         "amount": 1,
         "unit": "Tbsp",
         "name": "melted butter"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -9200,11 +8505,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Custard"
       },
       {
@@ -9228,16 +8528,6 @@
         "name": "salt"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Citrus &"
-      },
-      {
         "amount": 1.5,
         "unit": "cup",
         "name": "whole milk"
@@ -9256,11 +8546,6 @@
         "amount": 0.3333333333333333,
         "unit": "cup",
         "name": "fresh squeezed orange juice"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -9324,11 +8609,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Broth"
       },
       {
@@ -9349,11 +8629,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Egg-"
       },
       {
@@ -9370,16 +8645,6 @@
         "amount": 0.5,
         "unit": "cup",
         "name": "fresh squeezed lemon juice (approx. 2 large lemons)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Seasoning &"
       },
       {
         "amount": 1,
@@ -9444,17 +8709,7 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "whole packer beef brisket (12 to 14 lbs, trimmed with a 1/4-inch fat cap)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -9495,16 +8750,6 @@
         "amount": 1,
         "unit": "tsp",
         "name": "smoked paprika"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Wrap &"
       },
       {
         "amount": 1,
@@ -9551,11 +8796,6 @@
     "category": "Veggie 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 0.5,
         "unit": "lb",
         "name": "fresh green beans (trimmed)"
@@ -9564,11 +8804,6 @@
         "amount": 0.5,
         "unit": "lb",
         "name": "fresh yellow wax beans (trimmed)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -9581,11 +8816,6 @@
         "name": "butter"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "clove",
         "name": "garlic (thinly sliced)"
@@ -9594,16 +8824,6 @@
         "amount": 1,
         "unit": "each",
         "name": "small shallot (finely minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Seasoning &"
       },
       {
         "amount": 0.5,
@@ -9664,11 +8884,6 @@
     "category": "Starch",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "lb",
         "name": "(approx. 1.4 kg) Yukon Gold potatoes"
@@ -9677,11 +8892,6 @@
         "amount": 1,
         "unit": "each",
         "name": "peeled and cut into 1-inch chunks"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -9699,16 +8909,6 @@
         "name": "olive oil"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Dairy &"
-      },
-      {
         "amount": 0.5,
         "unit": "cup",
         "name": "(1 stick) unsalted butter (melted)"
@@ -9717,11 +8917,6 @@
         "amount": 1,
         "unit": "cup",
         "name": "whole milk or heavy cream (warmed)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1.5,
@@ -9784,24 +8979,9 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 6,
         "unit": "each",
         "name": "large eggs (preferably a few days old, which makes peeling easier)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Filling"
       },
       {
         "amount": 0.25,
@@ -9819,11 +8999,6 @@
         "name": "apple cider vinegar"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 0.25,
         "unit": "tsp",
         "name": "kosher salt"
@@ -9837,11 +9012,6 @@
         "amount": 1,
         "unit": "pinch",
         "name": "garlic powder"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -9916,22 +9086,12 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "store-bought sheet puff pastry (thawed but kept cold)"
       },
       {
         "amount": 1,
         "unit": "each",
         "name": "large egg (beaten with 1 tbsp water for egg wash)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 3,
@@ -9972,11 +9132,6 @@
         "amount": 1,
         "unit": "tsp",
         "name": "brown sugar"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -10033,11 +9188,6 @@
     "category": "Veggie 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "each",
         "name": "medium zucchinis (approx. 1 1/2 lbs)"
@@ -10058,11 +9208,6 @@
         "name": "and sliced into 1/2-inch thick rounds or spears"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "Tbsp",
         "name": "extra virgin olive oil"
@@ -10071,11 +9216,6 @@
         "amount": 2,
         "unit": "clove",
         "name": "garlic (finely minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -10140,29 +9280,14 @@
     "category": "Starch",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 8,
         "unit": "oz",
         "name": "(approx. 225 g) wide egg noodles"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "Tbsp",
         "name": "( 1/2 stick) unsalted butter"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 0.25,
@@ -10173,11 +9298,6 @@
         "amount": 2,
         "unit": "Tbsp",
         "name": "fresh chives (finely chopped)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 0.5,
@@ -10233,11 +9353,6 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 10,
         "unit": "oz",
         "name": "(approx. 280 g) penne"
@@ -10254,23 +9369,8 @@
       },
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "large shrimp (peeled, deveined, tails removed, patted dry)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Coating &"
       },
       {
         "amount": 2,
@@ -10288,11 +9388,6 @@
         "name": "garlic (minced)"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 0.5,
         "unit": "tsp",
         "name": "kosher salt"
@@ -10306,16 +9401,6 @@
         "amount": 0.25,
         "unit": "tsp",
         "name": "red pepper flakes (optional)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Sauce &"
       },
       {
         "amount": 0.5,
@@ -10374,11 +9459,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Tzatziki"
       },
       {
@@ -10415,11 +9495,6 @@
         "amount": 0.25,
         "unit": "tsp",
         "name": "kosher salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 4,
@@ -10493,11 +9568,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "(approx. 450 g) mini sweet baby peppers"
       },
@@ -10505,16 +9575,6 @@
         "amount": 1,
         "unit": "each",
         "name": "washed and left whole (or halved lengthwise and seeded)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Coating &"
       },
       {
         "amount": 1,
@@ -10527,24 +9587,9 @@
         "name": "butter"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "clove",
         "name": "garlic (thinly sliced or minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Seasoning &"
       },
       {
         "amount": 0.5,
@@ -10604,29 +9649,14 @@
     "category": "Starch",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 1.5,
         "unit": "cup",
         "name": "uncooked jasmine rice"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "cup",
         "name": "water"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -10680,11 +9710,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Ribbon"
       },
       {
@@ -10701,11 +9726,6 @@
         "amount": 1,
         "unit": "each",
         "name": "English cucumber (washed)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -10746,16 +9766,6 @@
         "amount": 0.125,
         "unit": "tsp",
         "name": "black pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Crunch &"
       },
       {
         "amount": 0.25,
@@ -10812,11 +9822,6 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "lb",
         "name": "(approx. 900 g) fresh asparagus"
@@ -10832,11 +9837,6 @@
         "name": "stalks chopped into 1-inch pieces"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "Tbsp",
         "name": "unsalted butter"
@@ -10850,11 +9850,6 @@
         "amount": 2,
         "unit": "clove",
         "name": "garlic (minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -10875,11 +9870,6 @@
         "amount": 0.25,
         "unit": "tsp",
         "name": "freshly cracked black pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -10946,11 +9936,6 @@
     "category": "Veggie 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "each",
         "name": "medium carrots (peeled and diced into 1/2-inch cubes)"
@@ -10961,34 +9946,14 @@
         "name": "frozen sweet peas (no need to thaw)"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "Tbsp",
         "name": "unsalted butter (or olive oil)"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 0.25,
         "unit": "cup",
         "name": "low-sodium chicken or vegetable broth (or water)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Seasoning &"
       },
       {
         "amount": 0.5,
@@ -11050,11 +10015,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "large head of cauliflower (approx. 2 lbs)"
       },
       {
@@ -11068,29 +10028,9 @@
         "name": "bite-sized florets"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Steam"
-      },
-      {
         "amount": 2,
         "unit": "cup",
         "name": "water"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Dressing &"
       },
       {
         "amount": 1,
@@ -11163,11 +10103,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Dry"
       },
       {
@@ -11199,11 +10134,6 @@
         "amount": 1,
         "unit": "tsp",
         "name": "kosher salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -11271,11 +10201,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Avocado"
       },
       {
@@ -11309,19 +10234,9 @@
         "name": "cayenne pepper"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 8,
         "unit": "oz",
         "name": "(approx. 225 g) high-quality cold-smoked salmon slices"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -11332,16 +10247,6 @@
         "amount": 4,
         "unit": "cup",
         "name": "mixed baby greens or arugula"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Dressing &"
       },
       {
         "amount": 2,
@@ -11412,11 +10317,6 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "jar",
         "name": "(16 oz / 450 g each) roasted red peppers (drained and chopped)"
@@ -11425,11 +10325,6 @@
         "amount": 1,
         "unit": "each",
         "name": "or 4 large fresh red bell peppers (roasted, peeled, and seeded)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -11452,16 +10347,6 @@
         "name": "dried basil (or thyme)"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Liquid"
-      },
-      {
         "amount": 3,
         "unit": "cup",
         "name": "low-sodium vegetable or chicken broth"
@@ -11475,11 +10360,6 @@
         "amount": 0.25,
         "unit": "tsp",
         "name": "freshly cracked black pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -11540,11 +10420,6 @@
     "category": "Veggie 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "each",
         "name": "medium zucchinis (approx. 1 1/2 lbs)"
@@ -11565,16 +10440,6 @@
         "name": "and cut into thick 1-inch chunks"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Coating &"
-      },
-      {
         "amount": 2,
         "unit": "Tbsp",
         "name": "extra virgin olive oil"
@@ -11583,11 +10448,6 @@
         "amount": 2,
         "unit": "clove",
         "name": "garlic (finely minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -11660,11 +10520,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "(approx. 450 g) large whole carrots"
       },
@@ -11674,29 +10529,9 @@
         "name": "peeled and cut lengthwise into thick wedges"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Steam"
-      },
-      {
         "amount": 2,
         "unit": "cup",
         "name": "water"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Dressing &"
       },
       {
         "amount": 1,
@@ -11759,27 +10594,12 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "store-bought 9-inch unbaked deep-dish pie crust (or homemade pastry dough)"
       },
       {
         "amount": 1,
         "unit": "each",
         "name": "chilled"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Liquid"
       },
       {
         "amount": 0.5,
@@ -11800,11 +10620,6 @@
         "amount": 1,
         "unit": "each",
         "name": "large egg (beaten)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -11881,11 +10696,6 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "each",
         "name": "medium globe eggplants (approx. 1 1/2 lbs)"
@@ -11894,11 +10704,6 @@
         "amount": 1,
         "unit": "each",
         "name": "washed and cut into 1/2-inch thick rounds"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -11914,16 +10719,6 @@
         "amount": 2,
         "unit": "each",
         "name": "large ripe beefsteak tomatoes (sliced into rounds)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Coating &"
       },
       {
         "amount": 3,
@@ -11944,16 +10739,6 @@
         "amount": 0.25,
         "unit": "tsp",
         "name": "freshly cracked black pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Basil &"
       },
       {
         "amount": 0.25,
@@ -12010,19 +10795,9 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "each",
         "name": "racks pork back ribs (approx. 3-4 lbs total, membrane removed)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -12077,22 +10852,12 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Wrap"
       },
       {
         "amount": 4,
         "unit": "tsp",
         "name": "butter (divided)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -12141,11 +10906,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "(approx. 450 g) fresh green beans"
       },
@@ -12155,29 +10915,9 @@
         "name": "washed and tough stem ends snapped or trimmed off"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Steam"
-      },
-      {
         "amount": 2,
         "unit": "cup",
         "name": "water"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Dressing &"
       },
       {
         "amount": 1,
@@ -12250,11 +10990,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Root"
       },
       {
@@ -12283,11 +11018,6 @@
         "name": "large beetroot (all peeled and cut into 1-inch chunks)"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "Tbsp",
         "name": "extra virgin olive oil"
@@ -12296,11 +11026,6 @@
         "amount": 3,
         "unit": "clove",
         "name": "garlic (finely minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -12373,22 +11098,12 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "sheet store-bought puff pastry (thawed but kept cold)"
       },
       {
         "amount": 1,
         "unit": "each",
         "name": "large egg (beaten with 1 tbsp water for egg wash)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 3,
@@ -12399,11 +11114,6 @@
         "amount": 0.5,
         "unit": "tsp",
         "name": "kosher salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -12434,16 +11144,6 @@
         "amount": 1,
         "unit": "clove",
         "name": "garlic (finely minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Seasoning &"
       },
       {
         "amount": 1,
@@ -12507,11 +11207,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "Tbsp",
         "name": "vegetable oil"
       },
@@ -12529,11 +11224,6 @@
         "amount": 0.5,
         "unit": "lb",
         "name": "large shrimp (peeled, deveined)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -12559,16 +11249,6 @@
         "amount": 4,
         "unit": "clove",
         "name": "garlic (minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Grains &"
       },
       {
         "amount": 1.5,
@@ -12644,16 +11324,6 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Base"
-      },
-      {
         "amount": 3,
         "unit": "cup",
         "name": "cooked chicken (shredded)"
@@ -12667,16 +11337,6 @@
         "amount": 3,
         "unit": "cup",
         "name": "cooked white rice"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Sauce"
       },
       {
         "amount": 2,
@@ -12717,11 +11377,6 @@
         "amount": 1,
         "unit": "each",
         "name": "and pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -12767,24 +11422,9 @@
     "category": "Veggie 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "each",
         "name": "bunches fresh broccolini (ends trimmed, thick stalks split lengthwise)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Coating &"
       },
       {
         "amount": 2,
@@ -12855,19 +11495,9 @@
     "category": "Starch",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "lb",
         "name": "Russet or Yukon Gold potatoes (peeled and cut into 1-inch cubes)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -12935,11 +11565,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Shortbread"
       },
       {
@@ -12961,11 +11586,6 @@
         "amount": 1,
         "unit": "pinch",
         "name": "salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -13045,16 +11665,6 @@
     "yield": "4 servings",
     "category": "Appetizer 1",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Grain &"
-      },
       {
         "amount": 1,
         "unit": "cup",
@@ -13156,27 +11766,12 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Base"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "French baguette (sliced into 1/4-inch rounds)"
       },
       {
         "amount": 2,
         "unit": "Tbsp",
         "name": "olive oil"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -13257,11 +11852,6 @@
     "category": "Veggie 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "each",
         "name": "large bell peppers (red, yellow, orange, cored and cut into 1/4-inch thin strips)"
@@ -13270,11 +11860,6 @@
         "amount": 1,
         "unit": "each",
         "name": "medium yellow onion (sliced thin)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -13352,11 +11937,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Grain"
       },
       {
@@ -13370,11 +11950,6 @@
         "name": "vegetable oil"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 0.5,
         "unit": "each",
         "name": "medium yellow onion (finely diced)"
@@ -13383,11 +11958,6 @@
         "amount": 2,
         "unit": "clove",
         "name": "garlic (minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -13458,11 +12028,6 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "bone-in pork chops (approx. 3/4-inch thick)"
@@ -13491,11 +12056,6 @@
         "amount": 1,
         "unit": "each",
         "name": "and pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -13578,11 +12138,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Romesco"
       },
       {
@@ -13619,11 +12174,6 @@
         "amount": 0.25,
         "unit": "tsp",
         "name": "salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 4,
@@ -13690,18 +12240,8 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "Brussels sprouts (trimmed and cut in half lengthwise)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -13762,19 +12302,9 @@
     "category": "Starch",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "each",
         "name": "large sweet potatoes (peeled and chopped into 1-inch chunks)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -13841,11 +12371,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "to taste",
         "name": "Salty"
       },
@@ -13863,11 +12388,6 @@
         "amount": 0.5,
         "unit": "cup",
         "name": "unsalted butter (melted)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -13938,11 +12458,6 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "each",
         "name": "large sweet Vidalia onions (thinly sliced)"
@@ -13968,16 +12483,6 @@
         "name": "kosher salt"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Liquid"
-      },
-      {
         "amount": 4,
         "unit": "cup",
         "name": "low-sodium beef broth"
@@ -14001,11 +12506,6 @@
         "amount": 0.25,
         "unit": "cup",
         "name": "dry white wine or sherry (optional)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Finish"
       },
       {
         "amount": 4,
@@ -14055,11 +12555,6 @@
     "yield": "4 servings",
     "category": "Elevated",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 4,
         "unit": "each",
@@ -14159,19 +12654,9 @@
     "category": "Veggie 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 10,
         "unit": "oz",
         "name": "fresh baby spinach leaves (washed and thoroughly dried)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -14232,19 +12717,9 @@
     "category": "Starch",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2.5,
         "unit": "lb",
         "name": "Yukon Gold potatoes (peeled and cut into 1-inch chunks)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 0.5,
@@ -14305,11 +12780,6 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "Tbsp",
         "name": "butter"
@@ -14335,11 +12805,6 @@
         "name": "whole milk"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "cup",
         "name": "fresh broccoli florets (chopped fine)"
@@ -14363,11 +12828,6 @@
         "amount": 1,
         "unit": "each",
         "name": "and pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -14419,18 +12879,8 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "large shrimp (peeled, deveined, tails removed)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Aromatics &"
       },
       {
         "amount": 2,
@@ -14502,18 +12952,8 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "fresh green beans (trimmed and dried thoroughly)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -14575,17 +13015,7 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "large acorn squash (washed, halved, seeded, and cut into 1-inch thick wedges)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -14777,11 +13207,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "ground beef"
       },
@@ -14884,11 +13309,6 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "large bone-in"
@@ -14922,11 +13342,6 @@
         "amount": 0.25,
         "unit": "tsp",
         "name": "black pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -14974,11 +13389,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "small eggplant"
       },
       {
@@ -14995,11 +13405,6 @@
         "amount": 3,
         "unit": "each",
         "name": "roma tomatoes (all sliced into uniform 1/4-inch thick rounds)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -15070,11 +13475,6 @@
     "category": "Veggie 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 1.5,
         "unit": "lb",
         "name": "mixed tri-color cauliflower florets (white, purple, orange)"
@@ -15083,11 +13483,6 @@
         "amount": 1,
         "unit": "each",
         "name": "washed"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -15180,11 +13575,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Cake"
       },
       {
@@ -15208,16 +13598,6 @@
         "name": "fresh orange juice"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Citrus"
-      },
-      {
         "amount": 2,
         "unit": "cup",
         "name": "prepared vanilla pastry cream"
@@ -15226,11 +13606,6 @@
         "amount": 1,
         "unit": "Tbsp",
         "name": "orange zest"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -15302,11 +13677,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "Tbsp",
         "name": "olive oil"
       },
@@ -15336,16 +13706,6 @@
         "name": "garlic (minced)"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Liquid &"
-      },
-      {
         "amount": 4,
         "unit": "cup",
         "name": "low-sodium chicken broth"
@@ -15359,16 +13719,6 @@
         "amount": 1,
         "unit": "package",
         "name": "(16 oz) shelf-stable potato gnocchi"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Chicken &"
       },
       {
         "amount": 2,
@@ -15429,24 +13779,9 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2.5,
         "unit": "lb",
         "name": "Yukon Gold potatoes (peeled and cut into 3/4-inch cubes)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Crunch"
       },
       {
         "amount": 3,
@@ -15467,16 +13802,6 @@
         "amount": 0.25,
         "unit": "cup",
         "name": "sweet pickle relish"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Dressing"
       },
       {
         "amount": 1,
@@ -15547,11 +13872,6 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "each",
         "name": "large cold-water lobster tails"
@@ -15565,11 +13885,6 @@
         "amount": 1,
         "unit": "pinch",
         "name": "salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -15661,23 +13976,8 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "fresh green beans (trimmed)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Dressing"
       },
       {
         "amount": 1,
@@ -15693,11 +13993,6 @@
         "amount": 2,
         "unit": "clove",
         "name": "garlic (minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Finish"
       },
       {
         "amount": 0.3333333333333333,
@@ -15753,16 +14048,6 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Crust &"
-      },
-      {
         "amount": 3,
         "unit": "cup",
         "name": "all-purpose flour"
@@ -15791,11 +14076,6 @@
         "amount": 1,
         "unit": "each",
         "name": "large egg"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -16447,11 +14727,6 @@
         "unit": "Tbsp"
       },
       {
-        "name": "finely diced celery (for crunch)Herbs & Seasoning: 2 tbsp finely chopped fresh chives",
-        "amount": 3,
-        "unit": "cup"
-      },
-      {
         "name": "Old Bay seasoning",
         "amount": 6,
         "unit": "tsp"
@@ -16570,14 +14845,24 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "name": "freshly squeezed lemon juice (from about 5 to 6 large juicy lemons)The Sweetener: 1 cup granulated sugar",
         "amount": 6,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "freshly squeezed lemon juice"
       },
       {
-        "name": "waterBrightener: 1 tbsp finely grated lemon zest",
+        "amount": 1,
+        "unit": "cup",
+        "name": "granulated sugar"
+      },
+      {
         "amount": 6,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "water"
+      },
+      {
+        "amount": 1,
+        "unit": "Tbsp",
+        "name": "finely grated lemon zest"
       }
     ],
     "steps": [
@@ -16608,64 +14893,94 @@
     "category": "Soup 1",
     "ingredients": [
       {
-        "name": "olive oil",
         "amount": 4,
-        "unit": "Tbsp"
+        "unit": "Tbsp",
+        "name": "olive oil"
       },
       {
-        "name": "medium yellow onion (diced)",
         "amount": 4,
-        "unit": "each"
+        "unit": "each",
+        "name": "yellow onions, diced"
       },
       {
-        "name": "jalape ño (seeded and minced)",
         "amount": 4,
-        "unit": "each"
+        "unit": "each",
+        "name": "jalapeno peppers, seeded and minced"
       },
       {
-        "name": "cloves garlic (minced)Spices: 1 tsp ground cumin",
         "amount": 12,
-        "unit": "each"
+        "unit": "clove",
+        "name": "garlic, minced"
       },
       {
-        "name": "chili powder",
+        "amount": 1,
+        "unit": "tsp",
+        "name": "ground cumin"
+      },
+      {
         "amount": 4,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "chili powder"
       },
       {
-        "name": "dried oregano",
         "amount": 4,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "dried oregano"
       },
       {
-        "name": "saltLiquids: 4 cups low-sodium chicken broth",
         "amount": 2,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "kosher salt"
       },
       {
-        "name": "(14 oz) crushed tomatoesFillings: 3 cups cooked shredded chicken (rotisserie chicken works perfectly)",
         "amount": 4,
-        "unit": "can"
+        "unit": "cup",
+        "name": "low-sodium chicken broth"
       },
       {
-        "name": "(15 oz) black beans (rinsed and drained)",
         "amount": 4,
-        "unit": "can"
+        "unit": "can",
+        "name": "14 oz crushed tomatoes"
       },
       {
-        "name": "frozen or canned cornBrightener: 2 tbsp fresh lemon or lime juiceToppings: 1 cup crushed tortilla chips or fried tortilla strips",
+        "amount": 3,
+        "unit": "cup",
+        "name": "cooked chicken, shredded"
+      },
+      {
         "amount": 4,
-        "unit": "cup"
+        "unit": "can",
+        "name": "black beans, drained and rinsed"
       },
       {
-        "name": "diced avocado",
         "amount": 4,
-        "unit": "each"
+        "unit": "cup",
+        "name": "corn kernels"
       },
       {
-        "name": "crumbled cotija or feta cheese, fresh cilantro leaves",
         "amount": 2,
-        "unit": "cup"
+        "unit": "Tbsp",
+        "name": "fresh lime or lemon juice"
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "name": "tortilla chips, crushed"
+      },
+      {
+        "amount": 4,
+        "unit": "each",
+        "name": "avocados, diced"
+      },
+      {
+        "amount": 2,
+        "unit": "cup",
+        "name": "shredded cheese"
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "name": "fresh cilantro, chopped"
       }
     ],
     "steps": [
@@ -16698,59 +15013,69 @@
     "category": "Entrée 1",
     "ingredients": [
       {
-        "name": "firm white fish fillets (such as mahi-mahi, cod, halibut, or tilapia), patted dryFish Rub: 1 tbsp olive oil",
         "amount": 24,
-        "unit": "each"
+        "unit": "each",
+        "name": "fish fillets, 4 to 5 oz each"
       },
       {
-        "name": "chili powder",
+        "amount": 6,
+        "unit": "Tbsp",
+        "name": "olive oil, divided"
+      },
+      {
         "amount": 3,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "chili powder"
       },
       {
-        "name": "garlic powder",
         "amount": 3,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "garlic powder"
       },
       {
-        "name": "ground cumin",
         "amount": 1.5,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "ground cumin"
       },
       {
-        "name": "salt, and black pepperFresh Salsa: 1 cup diced ripe mango or tomatoes",
+        "amount": 2,
+        "unit": "tsp",
+        "name": "kosher salt"
+      },
+      {
         "amount": 1,
-        "unit": "each"
+        "unit": "tsp",
+        "name": "ground black pepper"
       },
       {
-        "name": "diced red bell pepper",
+        "amount": 6,
+        "unit": "cup",
+        "name": "diced ripe mango or tomato"
+      },
+      {
         "amount": 3,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "diced red bell pepper"
       },
       {
-        "name": "finely diced red onion",
         "amount": 1.5,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "finely diced red onion"
       },
       {
-        "name": "chopped fresh cilantro",
         "amount": 1.5,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "fresh cilantro, chopped"
       },
       {
-        "name": "jalape ño (seeded and minced)Brightener: 2 tbsp fresh lime juice",
         "amount": 6,
-        "unit": "each"
+        "unit": "each",
+        "name": "jalapeno peppers, seeded and minced"
       },
       {
-        "name": "extra-virgin olive oil",
-        "amount": 6,
-        "unit": "Tbsp"
-      },
-      {
-        "name": "salt",
-        "amount": 1.5,
-        "unit": "tsp"
+        "amount": 0.75,
+        "unit": "cup",
+        "name": "fresh lime juice"
       }
     ],
     "steps": [
@@ -16799,11 +15124,6 @@
       {
         "name": "Italian seasoned panko breadcrumbs",
         "amount": 6,
-        "unit": "cup"
-      },
-      {
-        "name": "grated parmesan cheeseSauce & Cheese: 1 jar (24 oz) high-quality marinara sauce",
-        "amount": 2,
         "unit": "cup"
       },
       {
@@ -16983,49 +15303,59 @@
     "category": "Soup 1",
     "ingredients": [
       {
-        "name": "(28 oz each) whole peeled San Marzano tomatoes, with their juices",
         "amount": 12,
-        "unit": "can"
+        "unit": "can",
+        "name": "14 oz diced tomatoes"
       },
       {
-        "name": "unsalted butter",
         "amount": 12,
-        "unit": "Tbsp"
+        "unit": "Tbsp",
+        "name": "unsalted butter"
       },
       {
-        "name": "olive oil",
         "amount": 6,
-        "unit": "Tbsp"
+        "unit": "Tbsp",
+        "name": "olive oil"
       },
       {
-        "name": "medium yellow onion (diced)",
         "amount": 6,
-        "unit": "each"
+        "unit": "each",
+        "name": "yellow onions, diced"
       },
       {
-        "name": "cloves garlic (minced)Liquids: 2 cups low-sodium vegetable or chicken broth",
         "amount": 24,
-        "unit": "each"
+        "unit": "clove",
+        "name": "garlic, minced"
       },
       {
-        "name": "heavy creamHerbs &",
+        "amount": 12,
+        "unit": "cup",
+        "name": "low-sodium vegetable broth"
+      },
+      {
         "amount": 3,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "heavy cream"
       },
       {
-        "name": "tightly packed fresh basil leaves",
         "amount": 3,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "fresh basil leaves"
       },
       {
-        "name": "sugar (optional, to balance acidity)Seasoning: 1/2 tsp sea salt",
         "amount": 6,
-        "unit": "Tbsp"
+        "unit": "Tbsp",
+        "name": "granulated sugar"
       },
       {
-        "name": "cracked black pepper",
+        "amount": 3,
+        "unit": "tsp",
+        "name": "sea salt"
+      },
+      {
         "amount": 1.5,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "ground black pepper"
       }
     ],
     "steps": [
@@ -17057,29 +15387,49 @@
     "category": "Entrée 1",
     "ingredients": [
       {
-        "name": "ribeye steak (very thinly shaved or sliced)",
         "amount": 9,
-        "unit": "lb"
+        "unit": "lb",
+        "name": "ribeye steak, thinly sliced"
       },
       {
-        "name": "large yellow onion (thinly sliced)",
         "amount": 6,
-        "unit": "each"
+        "unit": "each",
+        "name": "large yellow onions, thinly sliced"
       },
       {
-        "name": "green bell pepper (thinly sliced, optional)The Cheese: 8 slices Provolone cheese (or 1/2 cup warm Cheez Whiz)The Bread: 4 soft Italian hoagie rolls (split lengthwise)Oil & Seasoning: 2 tbsp vegetable oil",
         "amount": 6,
-        "unit": "each"
+        "unit": "each",
+        "name": "green bell peppers, thinly sliced"
       },
       {
-        "name": "garlic powder",
+        "amount": 48,
+        "unit": "slice",
+        "name": "provolone cheese"
+      },
+      {
+        "amount": 24,
+        "unit": "each",
+        "name": "hoagie rolls"
+      },
+      {
+        "amount": 6,
+        "unit": "Tbsp",
+        "name": "vegetable oil"
+      },
+      {
         "amount": 3,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "garlic powder"
       },
       {
-        "name": "salt, and black pepper (to taste",
+        "amount": 2,
+        "unit": "tsp",
+        "name": "kosher salt"
+      },
+      {
         "amount": 1,
-        "unit": "each"
+        "unit": "tsp",
+        "name": "ground black pepper"
       }
     ],
     "steps": [
@@ -17147,11 +15497,6 @@
       },
       {
         "name": "honey (or maple syrup)",
-        "amount": 6,
-        "unit": "Tbsp"
-      },
-      {
-        "name": "cornstarch (for thickening)Aromatics & Oil: 2 tbsp vegetable oil (divided)",
         "amount": 6,
         "unit": "Tbsp"
       },
@@ -17400,11 +15745,6 @@
         "unit": "cup"
       },
       {
-        "name": "heavy creamVegetables & Herbs: 2 medium Russet potatoes (peeled and diced into 1/2-inch cubes)",
-        "amount": 4,
-        "unit": "cup"
-      },
-      {
         "name": "bay leaf",
         "amount": 4,
         "unit": "each"
@@ -17479,11 +15819,6 @@
         "unit": "tsp"
       },
       {
-        "name": "salt, and black pepperThe Fillings: 1 large wheel of Brie cheese (sliced into 1/4-inch thick strips)",
-        "amount": 1,
-        "unit": "each"
-      },
-      {
         "name": "ripe avocados (sliced)The Greens & Crunch: 2 cups fresh baby arugula",
         "amount": 12,
         "unit": "each"
@@ -17556,11 +15891,6 @@
       {
         "name": "green bell pepper (sliced)",
         "amount": 4.8,
-        "unit": "each"
-      },
-      {
-        "name": "cloves garlic (minced)Flavor Builders: 1 large grated vine tomato (discard skin)",
-        "amount": 19.2,
         "unit": "each"
       },
       {
@@ -17827,11 +16157,6 @@
         "unit": "each"
       },
       {
-        "name": "cloves garlic (minced)Flavor Builders: 1 tbsp Thai red curry paste",
-        "amount": 18,
-        "unit": "each"
-      },
-      {
         "name": "soy sauce (or tamari)",
         "amount": 12,
         "unit": "Tbsp"
@@ -17986,74 +16311,84 @@
     "category": "Entrée 2",
     "ingredients": [
       {
-        "name": "(15 oz each) chickpeas / garbanzo beans (rinsed and drained)",
         "amount": 12,
-        "unit": "can"
+        "unit": "can",
+        "name": "15 oz chickpeas, drained and rinsed"
       },
       {
-        "name": "(13.5 oz) full-fat coconut milk",
         "amount": 6,
-        "unit": "can"
+        "unit": "can",
+        "name": "14 oz coconut milk"
       },
       {
-        "name": "(14 oz) diced tomatoes (with juices)Aromatics & Oil: 1 tbsp coconut oil (or vegetable oil)",
         "amount": 6,
-        "unit": "can"
+        "unit": "can",
+        "name": "14 oz diced tomatoes"
       },
       {
-        "name": "yellow onion (diced)",
         "amount": 6,
-        "unit": "each"
+        "unit": "Tbsp",
+        "name": "coconut or vegetable oil"
       },
       {
-        "name": "cloves garlic (minced)",
+        "amount": 6,
+        "unit": "each",
+        "name": "yellow onions, diced"
+      },
+      {
         "amount": 18,
-        "unit": "each"
+        "unit": "clove",
+        "name": "garlic, minced"
       },
       {
-        "name": "grated fresh gingerSpices: 1.5 tbsp yellow curry powder",
         "amount": 6,
-        "unit": "Tbsp"
+        "unit": "Tbsp",
+        "name": "fresh ginger, minced"
       },
       {
-        "name": "ground cumin",
+        "amount": 9,
+        "unit": "Tbsp",
+        "name": "curry powder"
+      },
+      {
         "amount": 6,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "ground cumin"
       },
       {
-        "name": "ground turmeric",
         "amount": 3,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "ground turmeric"
       },
       {
-        "name": "salt",
         "amount": 3,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "kosher salt"
       },
       {
-        "name": "large sweet potato (peeled and diced into 1/2-inch cubes)",
         "amount": 6,
-        "unit": "each"
+        "unit": "each",
+        "name": "sweet potatoes, peeled and diced"
       },
       {
-        "name": "red bell pepper (chopped)",
         "amount": 6,
-        "unit": "each"
+        "unit": "each",
+        "name": "red bell peppers, diced"
       },
       {
-        "name": "fresh baby spinach",
         "amount": 12,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "baby spinach"
       },
       {
-        "name": "fresh lime juice",
         "amount": 6,
-        "unit": "Tbsp"
+        "unit": "Tbsp",
+        "name": "fresh lime juice"
       },
       {
-        "name": "fresh cilantro (chopped",
         "amount": 1.5,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "fresh cilantro, chopped"
       }
     ],
     "steps": [
@@ -18165,69 +16500,79 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "name": "melted butter (for topping)",
         "amount": 12,
-        "unit": "Tbsp"
+        "unit": "Tbsp",
+        "name": "unsalted butter, melted, for topping"
       },
       {
-        "name": "light brown sugar",
         "amount": 1.5,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "packed brown sugar"
       },
       {
-        "name": "(20 oz) pineapple slices in juice (drained, reserve 1/4 cup juice)The Cake Batter: 1 1/2 cups all-purpose flour",
         "amount": 3,
-        "unit": "can"
+        "unit": "can",
+        "name": "20 oz pineapple slices, drained with juice reserved"
       },
       {
-        "name": "baking powder",
         "amount": 4.5,
-        "unit": "tsp"
+        "unit": "cup",
+        "name": "all-purpose flour"
       },
       {
-        "name": "salt",
+        "amount": 4.5,
+        "unit": "tsp",
+        "name": "baking powder"
+      },
+      {
         "amount": 0.75,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "kosher salt"
       },
       {
-        "name": "softened butter (for batter)",
         "amount": 1.5,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "unsalted butter, softened"
       },
       {
-        "name": "granulated sugar",
         "amount": 2.25,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "granulated sugar"
       },
       {
-        "name": "large eggs",
         "amount": 6,
-        "unit": "each"
+        "unit": "each",
+        "name": "large eggs"
       },
       {
-        "name": "vanilla extract",
         "amount": 3,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "vanilla extract"
       },
       {
-        "name": "reserved pineapple juice",
         "amount": 0.75,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "reserved pineapple juice"
       },
       {
-        "name": "whole milkThe Citrus Glaze: 1/4 cup powdered sugar",
         "amount": 0.75,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "milk"
       },
       {
-        "name": "fresh lime juice",
-        "amount": 3,
-        "unit": "Tbsp"
+        "amount": 0.75,
+        "unit": "cup",
+        "name": "icing sugar"
       },
       {
-        "name": "orange zest",
         "amount": 3,
-        "unit": "tsp"
+        "unit": "Tbsp",
+        "name": "fresh lime juice"
+      },
+      {
+        "amount": 3,
+        "unit": "tsp",
+        "name": "finely grated orange zest"
       }
     ],
     "steps": [
@@ -18262,59 +16607,79 @@
     "category": "Soup 1",
     "ingredients": [
       {
-        "name": "French green lentils (Lentilles du Puy), rinsed and picked over",
         "amount": 4,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "French green lentils, rinsed"
       },
       {
-        "name": "olive oil",
         "amount": 8,
-        "unit": "Tbsp"
+        "unit": "Tbsp",
+        "name": "olive oil"
       },
       {
-        "name": "large yellow onion (diced)",
         "amount": 4,
-        "unit": "each"
+        "unit": "each",
+        "name": "yellow onions, diced"
       },
       {
-        "name": "carrots (diced)",
         "amount": 8,
-        "unit": "each"
+        "unit": "each",
+        "name": "carrots, diced"
       },
       {
-        "name": "celery stalks (diced)",
         "amount": 8,
-        "unit": "each"
+        "unit": "each",
+        "name": "celery stalks, diced"
       },
       {
-        "name": "cloves garlic (minced)Flavor Builders: 2 tbsp tomato paste",
         "amount": 12,
-        "unit": "each"
+        "unit": "clove",
+        "name": "garlic, minced"
       },
       {
-        "name": "dry white or red wine (optional)Liquids: 6 cups low-sodium vegetable or chicken brothHerbs & Seasoning: 1 bay leaf",
+        "amount": 8,
+        "unit": "Tbsp",
+        "name": "tomato paste"
+      },
+      {
         "amount": 2,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "dry red wine"
       },
       {
-        "name": "sprigs fresh thyme",
+        "amount": 24,
+        "unit": "cup",
+        "name": "low-sodium vegetable broth"
+      },
+      {
+        "amount": 4,
+        "unit": "each",
+        "name": "bay leaves"
+      },
+      {
         "amount": 12,
-        "unit": "each"
+        "unit": "sprig",
+        "name": "fresh thyme"
       },
       {
-        "name": "sea salt",
         "amount": 2,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "kosher salt"
       },
       {
-        "name": "black pepperBrightener: 1 tbsp fresh lemon juice or red wine vinegar",
         "amount": 1,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "ground black pepper"
       },
       {
-        "name": "finely chopped fresh parsley",
+        "amount": 4,
+        "unit": "Tbsp",
+        "name": "fresh lemon juice or red wine vinegar"
+      },
+      {
         "amount": 1,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "fresh parsley, chopped"
       }
     ],
     "steps": [
@@ -18416,64 +16781,74 @@
     "category": "Entrée 2",
     "ingredients": [
       {
-        "name": "wild -caught cod fillets (about 6 oz each, thick cuts preferred)The Sear: 1 tbsp olive oil",
         "amount": 24,
-        "unit": "each"
+        "unit": "each",
+        "name": "cod fillets, 4 to 5 oz each"
       },
       {
-        "name": "onion powder",
+        "amount": 6,
+        "unit": "Tbsp",
+        "name": "olive oil"
+      },
+      {
         "amount": 3,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "onion powder"
       },
       {
-        "name": "salt, and white pepper (to taste)Lemon & Herb",
-        "amount": 1,
-        "unit": "each"
-      },
-      {
-        "name": "extra-virgin olive oil",
-        "amount": 12,
-        "unit": "Tbsp"
-      },
-      {
-        "name": "shallots (finely minced)",
-        "amount": 12,
-        "unit": "each"
-      },
-      {
-        "name": "cloves garlic (minced)",
-        "amount": 18,
-        "unit": "each"
-      },
-      {
-        "name": "low-sodium vegetable broth",
         "amount": 2,
-        "unit": "cup"
+        "unit": "tsp",
+        "name": "kosher salt"
       },
       {
-        "name": "fresh lemon juice",
+        "amount": 1,
+        "unit": "tsp",
+        "name": "ground black pepper"
+      },
+      {
+        "amount": 12,
+        "unit": "Tbsp",
+        "name": "extra-virgin olive oil"
+      },
+      {
+        "amount": 12,
+        "unit": "each",
+        "name": "shallots, minced"
+      },
+      {
+        "amount": 18,
+        "unit": "clove",
+        "name": "garlic, minced"
+      },
+      {
+        "amount": 2,
+        "unit": "cup",
+        "name": "low-sodium vegetable broth"
+      },
+      {
         "amount": 1.5,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "fresh lemon juice"
       },
       {
-        "name": "lemon zestFresh",
         "amount": 6,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "finely grated lemon zest"
       },
       {
-        "name": "finely chopped fresh parsley",
         "amount": 1.5,
-        "unit": "cup"
+        "unit": "cup",
+        "name": "fresh parsley, chopped"
       },
       {
-        "name": "chopped fresh dill",
         "amount": 6,
-        "unit": "Tbsp"
+        "unit": "Tbsp",
+        "name": "fresh dill, chopped"
       },
       {
-        "name": "cornstarch mixed with 1 tbsp cold water (slurry for thickening",
         "amount": 6,
-        "unit": "tsp"
+        "unit": "tsp",
+        "name": "cornstarch mixed with cold water"
       }
     ],
     "steps": [
@@ -18611,11 +16986,6 @@
         "name": "pre-made puff pastry (thawed) or 1 unbaked 9-inch pie crust",
         "amount": 3,
         "unit": "sheet"
-      },
-      {
-        "name": "large Honeycrisp, Granny Smith, or Gala apples (peeled, cored, and very thinly sliced)The Sweetener & Spice: 3 tbsp unsalted butter (melted)",
-        "amount": 12,
-        "unit": "each"
       },
       {
         "name": "granulated sugar",
@@ -22372,11 +20742,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Three"
       },
       {
@@ -22406,16 +20771,6 @@
       },
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Base &"
-      },
-      {
-        "amount": 1,
         "unit": "Tbsp",
         "name": "sunflower oil or butter"
       },
@@ -22438,16 +20793,6 @@
         "amount": 4,
         "unit": "clove",
         "name": "garlic (minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Liquid &"
       },
       {
         "amount": 6,
@@ -22499,11 +20844,6 @@
     "yield": "4 servings",
     "category": "Alternative",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 4,
         "unit": "each",
@@ -22590,21 +20930,6 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Peaches &"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Poaching"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "large ripe peaches (halved and pitted)"
@@ -22630,16 +20955,6 @@
         "name": "fresh lemon juice"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Melba"
-      },
-      {
         "amount": 2,
         "unit": "cup",
         "name": "fresh raspberries"
@@ -22653,11 +20968,6 @@
         "amount": 1,
         "unit": "tsp",
         "name": "fresh lemon juice"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -22700,11 +21010,6 @@
     "category": "Alternative",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "small chicken breasts (boneless, skinless, pounded to an even 1/2-inch thickness)"
@@ -22728,16 +21033,6 @@
         "amount": 1,
         "unit": "each",
         "name": "and pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Sauce &"
       },
       {
         "amount": 0.5,
@@ -22795,11 +21090,6 @@
     "category": "Veggie 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 10,
         "unit": "oz",
         "name": "fresh baby spinach leaves (washed and thoroughly dried)"
@@ -22808,11 +21098,6 @@
         "amount": 0.25,
         "unit": "cup",
         "name": "golden raisins"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -22865,11 +21150,6 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 1.5,
         "unit": "cup",
         "name": "graham cracker crumbs"
@@ -22883,11 +21163,6 @@
         "amount": 6,
         "unit": "Tbsp",
         "name": "unsalted butter (melted)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -22908,11 +21183,6 @@
         "amount": 1,
         "unit": "cup",
         "name": "heavy whipping cream (cold)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -22945,19 +21215,9 @@
     "category": "Veggie 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 1.5,
         "unit": "lb",
         "name": "parsnips (peeled, cored if large, cut into 3-inch batons)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Coat &"
       },
       {
         "amount": 2,
@@ -23009,11 +21269,6 @@
     "yield": "9 to 12 servings",
     "category": "Dessert",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 1,
         "unit": "each",
@@ -23077,11 +21332,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Cinnamon"
       },
       {
@@ -23133,11 +21383,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "bone-in or boneless prime rib roast (approx. 4 to 5 lbs)"
       },
       {
@@ -23166,11 +21411,6 @@
         "name": "Free"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "Herb"
-      },
-      {
         "amount": 4,
         "unit": "clove",
         "name": "garlic (finely minced)"
@@ -23194,11 +21434,6 @@
         "amount": 1,
         "unit": "tsp",
         "name": "freshly cracked black pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -23269,11 +21504,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Loaf"
       },
       {
@@ -23322,11 +21552,6 @@
         "name": "shelled pistachios (finely chopped)"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 0.5,
         "unit": "cup",
         "name": "powdered sugar"
@@ -23361,11 +21586,6 @@
     "yield": "4 servings",
     "category": "Appetizer 1",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Salad"
-      },
       {
         "amount": 4,
         "unit": "cup",
@@ -23447,11 +21667,6 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "cup",
         "name": "low-sodium chicken broth"
@@ -23515,11 +21730,6 @@
     "yield": "4 servings",
     "category": "Elevated",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 1.5,
         "unit": "lb",
@@ -23601,11 +21811,6 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "lb",
         "name": "turkey breast roast (boneless)"
@@ -23629,11 +21834,6 @@
         "amount": 1,
         "unit": "each",
         "name": "poultry seasoning"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 4,
@@ -23690,11 +21890,6 @@
     "yield": "4 servings",
     "category": "Appetizer 1",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 1,
         "unit": "lb",
@@ -23770,11 +21965,6 @@
     "yield": "4 servings",
     "category": "Elevated",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 4,
         "unit": "each",
@@ -23886,11 +22076,6 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "lb",
         "name": "flank steak (rolled and tied tightly with butcher twine)"
@@ -23914,11 +22099,6 @@
         "amount": 0.5,
         "unit": "tsp",
         "name": "black pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -23987,18 +22167,8 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "large shrimp (peeled, deveined, tails removed)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Aromatics &"
       },
       {
         "amount": 1,
@@ -24019,11 +22189,6 @@
         "amount": 1,
         "unit": "Tbsp",
         "name": "fresh ginger (grated)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Spices &"
       },
       {
         "amount": 2,
@@ -24126,11 +22291,6 @@
         "name": "olive oil"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "fresh tilapia fillets (approx. 6 oz each)"
@@ -24196,11 +22356,6 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "turkey breast cutlets (pounded to 1/4-inch thickness)"
@@ -24226,16 +22381,6 @@
         "name": "olive oil (for shallow frying)"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Topping"
-      },
-      {
         "amount": 3,
         "unit": "cup",
         "name": "fresh baby arugula"
@@ -24244,16 +22389,6 @@
         "amount": 1,
         "unit": "cup",
         "name": "cherry tomatoes (halved)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Dressing &"
       },
       {
         "amount": 2,
@@ -24305,11 +22440,6 @@
     "yield": "4 servings",
     "category": "Veggie 1",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 2,
         "unit": "each",
@@ -24405,11 +22535,6 @@
     "yield": "4 servings",
     "category": "Comfort",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 4,
         "unit": "each",
@@ -24513,17 +22638,7 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "unbaked 9-inch pie crust (blind-baked and cooled completely)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -24544,11 +22659,6 @@
         "amount": 1,
         "unit": "each",
         "name": "zest and juice of 1 large lemon"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -24585,16 +22695,6 @@
     "yield": "4 servings",
     "category": "Elevated",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Herb"
-      },
       {
         "amount": 0.5,
         "unit": "cup",
@@ -24664,11 +22764,6 @@
         "amount": 0.125,
         "unit": "tsp",
         "name": "white pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 4,
@@ -24767,11 +22862,6 @@
       },
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "large shrimp (peeled, deveined, tails removed)"
       },
@@ -24820,11 +22910,6 @@
     "yield": "4 servings",
     "category": "Appetizer 2",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Salad"
-      },
       {
         "amount": 6,
         "unit": "cup",
@@ -24913,11 +22998,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Pineapple"
       },
       {
@@ -24949,11 +23029,6 @@
         "amount": 0.25,
         "unit": "tsp",
         "name": "salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 4,
@@ -25010,11 +23085,6 @@
     "yield": "4 servings",
     "category": "Starch",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 4,
         "unit": "each",
@@ -25086,11 +23156,6 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "large egg whites (room temperature)"
@@ -25156,11 +23221,6 @@
     "category": "Alternative",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 12,
         "unit": "each",
         "name": "pre-made cooked falafel balls (warmed)"
@@ -25184,11 +23244,6 @@
         "amount": 1,
         "unit": "each",
         "name": "Yogurt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Sauce"
       },
       {
         "amount": 1,
@@ -25243,11 +23298,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "large globe eggplant (cut into 1-inch cubes)"
       },
       {
@@ -25259,16 +23309,6 @@
         "amount": 0.5,
         "unit": "tsp",
         "name": "salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Pasta &"
       },
       {
         "amount": 12,
@@ -25331,19 +23371,9 @@
     "category": "Veggie 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 10,
         "unit": "oz",
         "name": "fresh baby spinach leaves (washed and thoroughly dried)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -25418,11 +23448,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Chili"
       },
       {
@@ -25469,11 +23494,6 @@
         "amount": 1,
         "unit": "can",
         "name": "(14.5 oz) diced tomatoes"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -25526,11 +23546,6 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "each",
         "name": "firm but ripe pears (cut into 8 wedges each)"
@@ -25549,11 +23564,6 @@
         "amount": 2,
         "unit": "oz",
         "name": "blue cheese (crumbled)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -25595,11 +23605,6 @@
     "yield": "4 servings (approx. 12 small fish cakes)",
     "category": "Appetizer 2",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 1,
         "unit": "lb",
@@ -25685,11 +23690,6 @@
     "yield": "4 servings",
     "category": "Elevated",
     "ingredients": [
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
       {
         "amount": 1.5,
         "unit": "lb",
@@ -25778,22 +23778,12 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "store-bought 9-inch unbaked pie crust (or homemade shortcrust pastry)"
       },
       {
         "amount": 1,
         "unit": "each",
         "name": "blind-baked and cooled"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -25824,11 +23814,6 @@
         "amount": 6,
         "unit": "Tbsp",
         "name": "unsalted butter (chilled and cubed)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 3,
@@ -25871,11 +23856,6 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 12,
         "unit": "each",
         "name": "wooden appetizer skewers"
@@ -25904,11 +23884,6 @@
         "amount": 12,
         "unit": "slice",
         "name": "salami or prosciutto (folded)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -25962,28 +23937,8 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Base"
-      },
-      {
-        "amount": 1,
         "unit": "cup",
         "name": "dry couscous"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Liquid"
       },
       {
         "amount": 1,
@@ -25999,16 +23954,6 @@
         "amount": 0.25,
         "unit": "tsp",
         "name": "kosher salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Herb"
       },
       {
         "amount": 2,
@@ -26053,11 +23998,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Soup"
       },
       {
@@ -26079,11 +24019,6 @@
         "amount": 3,
         "unit": "cup",
         "name": "ice-cold water"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Liquids &"
       },
       {
         "amount": 5,
@@ -26131,11 +24066,6 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 1.5,
         "unit": "lb",
         "name": "sirloin or flank steak (sliced across grain into 1/2-inch strips)"
@@ -26159,16 +24089,6 @@
         "amount": 1,
         "unit": "each",
         "name": "and pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Sauce &"
       },
       {
         "amount": 2,
@@ -26226,11 +24146,6 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "lb",
         "name": "bone-in turkey breast (skin-on)"
@@ -26259,11 +24174,6 @@
         "amount": 0.5,
         "unit": "tsp",
         "name": "black pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -26306,19 +24216,9 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 12,
         "unit": "each",
         "name": "large shrimp (peeled, deveined, tails left on, bellies scored to stay straight)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -26411,19 +24311,9 @@
     "category": "Veggie 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "cup",
         "name": "fresh or frozen sweet corn kernels (no need to thaw)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -26434,11 +24324,6 @@
         "amount": 3,
         "unit": "Tbsp",
         "name": "unsalted butter"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 0.5,
@@ -26485,21 +24370,6 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Salmon &"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Poaching"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "skinless salmon fillets (approx. 6 oz each)"
@@ -26538,21 +24408,6 @@
         "amount": 0.5,
         "unit": "tsp",
         "name": "kosher salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Cucumber &"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Herb"
       },
       {
         "amount": 1,
@@ -26624,22 +24479,12 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "whole chicken (approx. 3-4 lbs)"
       },
       {
         "amount": 2,
         "unit": "Tbsp",
         "name": "olive oil"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Jus &"
       },
       {
         "amount": 1,
@@ -26702,19 +24547,9 @@
     "category": "Alternative",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 6,
         "unit": "each",
         "name": "medium green koosa (grey zucchini or marrow squash, cored)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Rice &"
       },
       {
         "amount": 1,
@@ -26808,18 +24643,8 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "cup",
         "name": "pearled farro (rinsed and drained)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -26843,16 +24668,6 @@
       },
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Veg &"
-      },
-      {
-        "amount": 1,
         "unit": "cup",
         "name": "cremini mushrooms (sliced)"
       },
@@ -26860,11 +24675,6 @@
         "amount": 1,
         "unit": "tsp",
         "name": "fresh thyme leaves (or 1/2 tsp dried thyme)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -26918,11 +24728,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Soup"
       },
       {
@@ -26956,16 +24761,6 @@
         "name": "garlic"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Seasoning &"
-      },
-      {
         "amount": 3,
         "unit": "Tbsp",
         "name": "extra-virgin olive oil"
@@ -26994,11 +24789,6 @@
         "amount": 0.25,
         "unit": "tsp",
         "name": "freshly cracked black pepper (Certified Gluten-Free)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -27038,11 +24828,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Dry"
       },
       {
@@ -27064,16 +24849,6 @@
         "amount": 1,
         "unit": "tsp",
         "name": "fine salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Liquid"
       },
       {
         "amount": 7,
@@ -27113,17 +24888,7 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Lemon"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Glaze"
       },
       {
         "amount": 2,
@@ -27175,11 +24940,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Brine"
       },
       {
@@ -27210,11 +24970,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "large pork tenderloin (approx. 1 to 1.5 lbs, silver skin trimmed)"
       },
       {
@@ -27231,16 +24986,6 @@
         "amount": 0.25,
         "unit": "tsp",
         "name": "black pepper (Certified Gluten-Free)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Feta &"
       },
       {
         "amount": 1,
@@ -27312,16 +25057,6 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Noodles &"
-      },
-      {
         "amount": 8,
         "unit": "oz",
         "name": "(approx. 225 g) buckwheat soba noodles"
@@ -27345,11 +25080,6 @@
         "amount": 1,
         "unit": "each",
         "name": "red bell pepper (thinly sliced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -27448,38 +25178,13 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "cup",
         "name": "uncooked 100% wild rice (thoroughly rinsed in a fine-mesh strainer)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Liquid"
       },
       {
         "amount": 3,
         "unit": "cup",
         "name": "low-sodium chicken or vegetable broth"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Aromatics &"
       },
       {
         "amount": 1,
@@ -27495,16 +25200,6 @@
         "amount": 1,
         "unit": "clove",
         "name": "garlic (minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Sweet &"
       },
       {
         "amount": 1,
@@ -27525,11 +25220,6 @@
         "amount": 0.25,
         "unit": "cup",
         "name": "sliced almonds (toasted)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 0.5,
@@ -27575,11 +25265,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Pita"
       },
       {
@@ -27606,11 +25291,6 @@
         "amount": 0.25,
         "unit": "tsp",
         "name": "kosher salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -27656,16 +25336,6 @@
         "amount": 0.25,
         "unit": "tsp",
         "name": "black pepper"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Chili &"
       },
       {
         "amount": 1,
@@ -27719,11 +25389,6 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "boneless"
@@ -27732,11 +25397,6 @@
         "amount": 1,
         "unit": "each",
         "name": "skinless chicken breasts (pounded to an even 1/2-inch thickness)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -27785,11 +25445,6 @@
       },
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "tsp",
         "name": "kosher salt"
       },
@@ -27833,11 +25488,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Garlic"
       },
       {
@@ -27866,16 +25516,6 @@
         "name": "freshly cracked black pepper"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Pork &"
-      },
-      {
         "amount": 0.5,
         "unit": "cup",
         "name": "leftover smoked pulled pork (finely chopped)"
@@ -27884,11 +25524,6 @@
         "amount": 1,
         "unit": "each",
         "name": "small sweet onion (finely minced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -27933,11 +25568,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Wet"
       },
       {
@@ -27954,11 +25584,6 @@
         "amount": 4,
         "unit": "Tbsp",
         "name": "( 1/2 stick) unsalted butter (melted and cooled)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -27998,18 +25623,8 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "lb",
         "name": "(approx. 450 g) elbow macaroni or cavatappi"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -28027,11 +25642,6 @@
         "name": "all-purpose flour"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2.5,
         "unit": "cup",
         "name": "whole milk (warmed)"
@@ -28040,11 +25650,6 @@
         "amount": 1,
         "unit": "cup",
         "name": "heavy cream (warmed)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -28072,11 +25677,6 @@
         "name": "cayenne pepper"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "cup",
         "name": "sharp cheddar cheese (shredded and divided)"
@@ -28085,11 +25685,6 @@
         "amount": 1.5,
         "unit": "cup",
         "name": "Gruyère or Monterey Jack cheese (shredded)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -28140,11 +25735,6 @@
     "category": "Alternative",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "boneless"
@@ -28170,16 +25760,6 @@
         "name": "black pepper"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Sear &"
-      },
-      {
         "amount": 2,
         "unit": "Tbsp",
         "name": "olive oil (divided)"
@@ -28200,16 +25780,6 @@
         "name": "garlic (minced)"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Mushrooms &"
-      },
-      {
         "amount": 8,
         "unit": "oz",
         "name": "cremini or button mushrooms (sliced)"
@@ -28223,11 +25793,6 @@
         "amount": 0.75,
         "unit": "cup",
         "name": "low-sodium chicken broth"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -28279,11 +25844,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Cake"
       },
       {
@@ -28325,11 +25885,6 @@
         "amount": 0.75,
         "unit": "cup",
         "name": "whole milk"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -28393,11 +25948,6 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "lb",
         "name": "bone-in"
@@ -28406,11 +25956,6 @@
         "amount": 1,
         "unit": "each",
         "name": "skin-on chicken pieces (drumsticks, thighs, and breasts cut in half)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -28446,11 +25991,6 @@
         "amount": 1,
         "unit": "tsp",
         "name": "smoked paprika"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 3,
@@ -28495,11 +26035,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Frying"
       },
       {
@@ -28534,16 +26069,6 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Liquid &"
-      },
-      {
         "amount": 4,
         "unit": "cup",
         "name": "whole milk (divided)"
@@ -28552,16 +26077,6 @@
         "amount": 0.5,
         "unit": "cup",
         "name": "yellow cornmeal (fine or medium grind)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Sweetener &"
       },
       {
         "amount": 0.5,
@@ -28577,16 +26092,6 @@
         "amount": 0.25,
         "unit": "cup",
         "name": "granulated white sugar"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Spices &"
       },
       {
         "amount": 2,
@@ -28612,11 +26117,6 @@
         "amount": 0.5,
         "unit": "tsp",
         "name": "kosher salt"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -28650,24 +26150,9 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "lb",
         "name": "fresh littleneck clams (scrubbed thoroughly and rinsed)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Dressing"
       },
       {
         "amount": 2,
@@ -28732,11 +26217,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Olive"
       },
       {
@@ -28752,11 +26232,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Pickled"
       },
       {
@@ -28768,11 +26243,6 @@
         "amount": 2,
         "unit": "Tbsp",
         "name": "capers (drained)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 3,
@@ -28825,19 +26295,9 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 10,
         "unit": "oz",
         "name": "(approx. 280 g) penne pasta"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -28858,11 +26318,6 @@
         "amount": 2,
         "unit": "each",
         "name": "Italian sausage links (mild or hot, casings removed and crumbled)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -28888,16 +26343,6 @@
         "amount": 0.5,
         "unit": "tsp",
         "name": "crushed red pepper flakes (optional, for heat)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Seasoning &"
       },
       {
         "amount": 1,
@@ -28954,19 +26399,9 @@
     "category": "Appetizer 1",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 8,
         "unit": "each",
         "name": "round rice paper sheets (rice wrappers)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -29049,11 +26484,6 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "skinless salmon medallions (approx. 6 oz each, cut thick and rounded)"
@@ -29062,16 +26492,6 @@
         "amount": 1,
         "unit": "Tbsp",
         "name": "extra virgin olive oil"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Spice"
       },
       {
         "amount": 0.5,
@@ -29101,17 +26521,7 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Black"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Bean &"
       },
       {
         "amount": 1,
@@ -29142,11 +26552,6 @@
         "amount": 0.25,
         "unit": "cup",
         "name": "fresh cilantro (chopped)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 2,
@@ -29193,11 +26598,6 @@
     "category": "Alternative",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 2,
         "unit": "each",
         "name": "large heads of fresh cauliflower"
@@ -29206,11 +26606,6 @@
         "amount": 2,
         "unit": "Tbsp",
         "name": "extra virgin olive oil"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -29260,11 +26655,6 @@
       {
         "amount": 1,
         "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
         "name": "Cajun"
       },
       {
@@ -29291,11 +26681,6 @@
         "amount": 0.25,
         "unit": "cup",
         "name": "fresh cilantro (chopped)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -29344,16 +26729,6 @@
     "category": "Appetizer 2",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Salad"
-      },
-      {
         "amount": 4,
         "unit": "cup",
         "name": "fresh seedless watermelon (cut into 1-inch cubes)"
@@ -29369,16 +26744,6 @@
         "name": "red onion (thinly sliced into half-moons)"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Cheese &"
-      },
-      {
         "amount": 4,
         "unit": "oz",
         "name": "sharp feta cheese (chilled and crumbled)"
@@ -29392,11 +26757,6 @@
         "amount": 2,
         "unit": "Tbsp",
         "name": "fresh basil leaves (thinly sliced)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -29473,11 +26833,6 @@
     "category": "Comfort",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 3,
         "unit": "lb",
         "name": "boneless turkey thigh or breast roast"
@@ -29548,11 +26903,6 @@
     "category": "Elevated",
     "ingredients": [
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
         "amount": 4,
         "unit": "each",
         "name": "chicken breasts (pounded to a uniform 1/2-inch thickness)"
@@ -29573,16 +26923,6 @@
         "name": "ground white pepper"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Coating"
-      },
-      {
         "amount": 2,
         "unit": "each",
         "name": "large eggs"
@@ -29591,11 +26931,6 @@
         "amount": 1,
         "unit": "Tbsp",
         "name": "water (Ensure all dredging elements are Certified Gluten-Free)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -29611,11 +26946,6 @@
         "amount": 2,
         "unit": "Tbsp",
         "name": "dairy-free butter alternative (divided)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,
@@ -29677,11 +27007,6 @@
     "ingredients": [
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "Tbsp",
         "name": "olive oil"
       },
@@ -29717,11 +27042,6 @@
       },
       {
         "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
         "unit": "tsp",
         "name": "chili powder"
       },
@@ -29741,16 +27061,6 @@
         "name": "black pepper"
       },
       {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "Base &"
-      },
-      {
         "amount": 2,
         "unit": "cup",
         "name": "high-quality red enchilada sauce (divided)"
@@ -29759,11 +27069,6 @@
         "amount": 8,
         "unit": "each",
         "name": "soft corn or flour tortillas (warmed)"
-      },
-      {
-        "amount": 1,
-        "unit": "each",
-        "name": "The"
       },
       {
         "amount": 1,

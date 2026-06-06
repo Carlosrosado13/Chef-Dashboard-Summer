@@ -1,0 +1,4040 @@
+{
+  "generatedAt": "2026-06-06T20:26:31.819Z",
+  "totals": {
+    "recipesAudited": 358,
+    "affectedRecipes": 203,
+    "artifactsRemoved": 576,
+    "recipesRebuiltFromSourceUrls": 1,
+    "recipesRebuiltFromContent": 10,
+    "remainingHeadingArtifacts": 0,
+    "remainingMalformedIngredients": 0
+  },
+  "rows": [
+    {
+      "recipeName": "CITRUS AND SHRIMP LEMON LAVENDER CUPS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CITRUS AND SHRIMP LEMON LAVENDER CUPS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CITRUS AND SHRIMP LEMON LAVENDER CUPS",
+      "invalidIngredient": "1 each Citrus &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "CITRUS AND SHRIMP LEMON LAVENDER CUPS",
+      "invalidIngredient": "1 each Crunch",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "CITRUS AND SHRIMP LEMON LAVENDER CUPS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BRAISED SHORT RIBS WITH RED WINE SAUCE (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BRAISED SHORT RIBS WITH RED WINE SAUCE (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BRAISED SHORT RIBS WITH RED WINE SAUCE (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BRAISED SHORT RIBS WITH RED WINE SAUCE (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BRAISED SHORT RIBS WITH RED WINE SAUCE (GF/DF)",
+      "invalidIngredient": "1 each Herbs &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "GARLIC GREEN BEANS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GARLIC GREEN BEANS",
+      "invalidIngredient": "1 each Aromatics &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "HONEY GLAZED CARROTS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "HONEY GLAZED CARROTS",
+      "invalidIngredient": "1 each Glaze",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "ROASTED BABY POTATOES",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED BABY POTATOES",
+      "invalidIngredient": "1 each Coating &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "SAUTEED SHRIMP WITH GARLIC, WHITE WINE & FRESH DICED TOMATO",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "https://www.theyellowtable.com/recipes/best-garlicky-shrimp-white-wine-tomatoes-recipe",
+      "actionTaken": "Removed heading artifact and rebuilt the full ingredient list from the source URL"
+    },
+    {
+      "recipeName": "SAUTEED SHRIMP WITH GARLIC, WHITE WINE & FRESH DICED TOMATO",
+      "invalidIngredient": "1 each Base &",
+      "sourceUrl": "https://www.theyellowtable.com/recipes/best-garlicky-shrimp-white-wine-tomatoes-recipe",
+      "actionTaken": "Removed heading artifact and rebuilt the full ingredient list from the source URL"
+    },
+    {
+      "recipeName": "GRILLED ASPARAGUS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED ASPARAGUS",
+      "invalidIngredient": "1 each Coating &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "BUTTERED PEAS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "WILD RICE PILAF",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "WILD RICE PILAF",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "WILD RICE PILAF",
+      "invalidIngredient": "1 each Base &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "WILD RICE PILAF",
+      "invalidIngredient": "1 each Seasoning &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "CHOCOLATE MOUSSE WITH SPONGE TOFFEE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CHOCOLATE MOUSSE WITH SPONGE TOFFEE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "HERB ROASTED CHICKEN LEG WITH LEMON SAUCE (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "HERB ROASTED CHICKEN LEG WITH LEMON SAUCE (GF/DF)",
+      "invalidIngredient": "1 each Herb",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "BAKED COD WITH LEMON CAPER VINAIGRETTE (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED SUMMER ZUCCHINI",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED SUMMER ZUCCHINI",
+      "invalidIngredient": "1 each Coating &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "ROASTED BUTTERNUT",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "QUINOA PILAF",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "QUINOA PILAF",
+      "invalidIngredient": "1 each Base &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "CREAM OF CARROT SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CREAM OF CARROT SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CREAM OF CARROT SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SEARED SCALLOPS WITH CITRUS & HERB SALSA   (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SEARED SCALLOPS WITH CITRUS & HERB SALSA   (GF/DF)",
+      "invalidIngredient": "1 each Citrus",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "SEARED SCALLOPS WITH CITRUS & HERB SALSA   (GF/DF)",
+      "invalidIngredient": "1 each Herb",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "ROASTED LAMB LEG WITH MINT GREMOLATA (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED SPINACH WITH DICED ONIONS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED SPINACH WITH DICED ONIONS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED CARROTS WITH CARDAMON SEASONING",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED CARROTS WITH CARDAMON SEASONING",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED CARROTS WITH CARDAMON SEASONING",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "WHALDORF ENDIVE SALAD",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "WHALDORF ENDIVE SALAD",
+      "invalidIngredient": "1 each Salad",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "WHALDORF ENDIVE SALAD",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "WHALDORF ENDIVE SALAD",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BEEF STRIPS WITH SAUTEED WILD MUSHROOMS WITH PAN SAUCE (GF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BEEF STRIPS WITH SAUTEED WILD MUSHROOMS WITH PAN SAUCE (GF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BEEF STRIPS WITH SAUTEED WILD MUSHROOMS WITH PAN SAUCE (GF)",
+      "invalidIngredient": "1 each Sauce &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "BAKED HADDOCK WITH TOMATO&BASIL SALSA (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED BROCCOLI",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED BROCCOLI",
+      "invalidIngredient": "1 each Steam",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "FRESH HERB ORZO",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "FRESH HERB ORZO",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "FRESH HERB ORZO",
+      "invalidIngredient": "1 each Liquid",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "FRESH HERB ORZO",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "FRESH HERB ORZO",
+      "invalidIngredient": "1 each Herb",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "ASIAN VEGETABLE - BEEF SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ASIAN VEGETABLE - BEEF SOUP",
+      "invalidIngredient": "1 each Beef &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "ASIAN VEGETABLE - BEEF SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ASIAN VEGETABLE - BEEF SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED PORK WITH GRAINY DIJON MUSTARD SAUCE (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "HONEY GARLIC CHICKEN BREAST",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED SHIRMP WITH MANGO SALSA",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED BRUSSEL SPROUTS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED BRUSSEL SPROUTS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED BRUSSEL SPROUTS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BAKED POTATO WITH SOUR CREAM&CHIVE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BAKED POTATO WITH SOUR CREAM&CHIVE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TACO SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TACO SOUP",
+      "invalidIngredient": "1 each Meat &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "TACO SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TACO SOUP",
+      "invalidIngredient": "1 each Spice",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "TACO SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TACO SOUP",
+      "invalidIngredient": "1 each Base &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "TACO SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "WEDGE SALAD SKEWER",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "WEDGE SALAD SKEWER",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GREEN BEAN ALMONDINE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GREEN BEAN ALMONDINE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED ROOT VEGETABLES (CARROT/YAM/PARSNIP/TURNIP)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED ROOT VEGETABLES (CARROT/YAM/PARSNIP/TURNIP)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BUTTER MASHED POTATOES",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BUTTER MASHED POTATOES",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "MANHATTAN CLAM CHOWDER (TOMATO BASE)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "MANHATTAN CLAM CHOWDER (TOMATO BASE)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "MANHATTAN CLAM CHOWDER (TOMATO BASE)",
+      "invalidIngredient": "1 each Liquids &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "MANHATTAN CLAM CHOWDER (TOMATO BASE)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BOSTON CREAM PIE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TOMATO BASIL PIZETTE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TOMATO BASIL PIZETTE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "THAI CHICKEN NOODLE SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "THAI CHICKEN NOODLE SOUP",
+      "invalidIngredient": "1 each Fillings &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "CHICKEN CAESAR SALAD",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CHICKEN CAESAR SALAD",
+      "invalidIngredient": "1 each Salad",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "CHICKEN CAESAR SALAD",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED CAULIFLOWER FLORETS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED CAULIFLOWER FLORETS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED CAULIFLOWER FLORETS",
+      "invalidIngredient": "1 each Steam",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "STEAMED CAULIFLOWER FLORETS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED CAULIFLOWER FLORETS",
+      "invalidIngredient": "1 each Dressing &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "STEAMED CARROTS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED CARROTS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED CARROTS",
+      "invalidIngredient": "1 each Steam",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "STEAMED CARROTS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED CARROTS",
+      "invalidIngredient": "1 each Dressing &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "PASTA WITH SUMMER VEGETABLES WITH LEMON PARMESAN SAUCE",
+      "invalidIngredient": "1 each The Pasta & Vegetables8 oz short pasta (like penne, bowties, or rotini)1 tbsp olive oil1 medium zucchini",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PASTA WITH SUMMER VEGETABLES WITH LEMON PARMESAN SAUCE",
+      "invalidIngredient": "1 each sliced into half-moons1 medium yellow squash",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PASTA WITH SUMMER VEGETABLES WITH LEMON PARMESAN SAUCE",
+      "invalidIngredient": "1 each sliced into half-moons1 cup cherry tomatoes",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PASTA WITH SUMMER VEGETABLES WITH LEMON PARMESAN SAUCE",
+      "invalidIngredient": "1 each halved1 cup fresh or frozen peas3 cloves garlic",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PASTA WITH SUMMER VEGETABLES WITH LEMON PARMESAN SAUCE",
+      "invalidIngredient": "1 each mincedThe Lemon Parmesan Sauce2 tbsp unsalted butter1 large lemon (both zested and juiced) 1/2 cup freshly grated Parmesan cheese (plus more for serving) 1/2 cup reserved pasta water 1/4 cup fresh basil leaves",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PASTA WITH SUMMER VEGETABLES WITH LEMON PARMESAN SAUCE",
+      "invalidIngredient": "1 each chopped or tornSalt and black pepper to tasteOptional: A pinch of crushed red pepper flakes",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "ROASTED MUSHROOMS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED MUSHROOMS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED MUSHROOMS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED BABY TOP CARROTS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED BABY TOP CARROTS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED BABY TOP CARROTS",
+      "invalidIngredient": "1 each Glaze &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "ROASTED BABY TOP CARROTS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED ZUCCHINI CHUNKS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED ZUCCHINI CHUNKS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED ZUCCHINI CHUNKS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED TILAPIA WITH BALSAMIC ONION SAUCE",
+      "invalidIngredient": "1 each Sauce",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "GRILLED TILAPIA WITH BALSAMIC ONION SAUCE",
+      "invalidIngredient": "1 each Sauce",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "SHRIMP LINGUINI WITH SAFFRON SAUCE AND PEPPERED GREENS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SHRIMP LINGUINI WITH SAFFRON SAUCE AND PEPPERED GREENS",
+      "invalidIngredient": "1 each Sauce",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "SAUTEED ASPARAGUS (2\" CUTS)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED ASPARAGUS (2\" CUTS)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED ASPARAGUS (2\" CUTS)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED ASPARAGUS (2\" CUTS)",
+      "invalidIngredient": "1 each Aromatics &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "ROASTED BUTTERNUT SQUASH",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED BUTTERNUT SQUASH",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED BUTTERNUT SQUASH",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CHILLED MELON SOUP WITH PROSCIUTTO CHIP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CHILLED MELON SOUP WITH PROSCIUTTO CHIP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CHILLED MELON SOUP WITH PROSCIUTTO CHIP",
+      "invalidIngredient": "1 each Herb",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "CHILLED MELON SOUP WITH PROSCIUTTO CHIP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CHILLED MELON SOUP WITH PROSCIUTTO CHIP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BAKED CHICKEN IN CREAMY BASIL AND CORN SAUCE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BAKED CHICKEN IN CREAMY BASIL AND CORN SAUCE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BAKED CHICKEN IN CREAMY BASIL AND CORN SAUCE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BAKED CHICKEN IN CREAMY BASIL AND CORN SAUCE",
+      "invalidIngredient": "1 each Corn &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "BAKED CHICKEN IN CREAMY BASIL AND CORN SAUCE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BAKED CHICKEN IN CREAMY BASIL AND CORN SAUCE",
+      "invalidIngredient": "1 each Basil &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "SAUTEED BOK CHOY",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED BOK CHOY",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED BOK CHOY",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED BOK CHOY",
+      "invalidIngredient": "1 each Sauce &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "ROASTED CARROTS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED CARROTS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED CARROTS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ORANGE CUSTARD WITH BLACKBERRY",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ORANGE CUSTARD WITH BLACKBERRY",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ORANGE CUSTARD WITH BLACKBERRY",
+      "invalidIngredient": "1 each Citrus &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "ORANGE CUSTARD WITH BLACKBERRY",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "AVGOLEMONO SOUP (GREEK LEMON CHICKEN)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "AVGOLEMONO SOUP (GREEK LEMON CHICKEN)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "AVGOLEMONO SOUP (GREEK LEMON CHICKEN)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "AVGOLEMONO SOUP (GREEK LEMON CHICKEN)",
+      "invalidIngredient": "1 each Seasoning &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "BEEF BRISKET BBQ",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BEEF BRISKET BBQ",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BEEF BRISKET BBQ",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BEEF BRISKET BBQ",
+      "invalidIngredient": "1 each Wrap &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "GREEN AND YELLOW BEAN",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GREEN AND YELLOW BEAN",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GREEN AND YELLOW BEAN",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GREEN AND YELLOW BEAN",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GREEN AND YELLOW BEAN",
+      "invalidIngredient": "1 each Seasoning &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Garlic Mashed Potato",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Garlic Mashed Potato",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Garlic Mashed Potato",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Garlic Mashed Potato",
+      "invalidIngredient": "1 each Dairy &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Garlic Mashed Potato",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CLASSIC DEVILLED EGGS WITH BABY GREENS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CLASSIC DEVILLED EGGS WITH BABY GREENS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CLASSIC DEVILLED EGGS WITH BABY GREENS",
+      "invalidIngredient": "1 each Filling",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "CLASSIC DEVILLED EGGS WITH BABY GREENS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CLASSIC DEVILLED EGGS WITH BABY GREENS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CARAMELIZED ONION TART",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CARAMELIZED ONION TART",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CARAMELIZED ONION TART",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED ZUCCHINI",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED ZUCCHINI",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED ZUCCHINI",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BUTTERED HERB NOODLE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BUTTERED HERB NOODLE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BUTTERED HERB NOODLE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BUTTERED HERB NOODLE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED SHRIMP AND PESTO PASTA",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED SHRIMP AND PESTO PASTA",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED SHRIMP AND PESTO PASTA",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED SHRIMP AND PESTO PASTA",
+      "invalidIngredient": "1 each Coating &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "SAUTEED SHRIMP AND PESTO PASTA",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED SHRIMP AND PESTO PASTA",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED SHRIMP AND PESTO PASTA",
+      "invalidIngredient": "1 each Sauce &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "SALMON FILET WITH TZATZIKI SAUCE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SALMON FILET WITH TZATZIKI SAUCE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED BABY PEPPERS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED BABY PEPPERS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED BABY PEPPERS",
+      "invalidIngredient": "1 each Coating &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "SAUTEED BABY PEPPERS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED BABY PEPPERS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED BABY PEPPERS",
+      "invalidIngredient": "1 each Seasoning &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "STICKY JASMINE RICE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STICKY JASMINE RICE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STICKY JASMINE RICE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "RIBBON SALAD WITH ORANGE VINAIGRETTE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "RIBBON SALAD WITH ORANGE VINAIGRETTE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "RIBBON SALAD WITH ORANGE VINAIGRETTE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "RIBBON SALAD WITH ORANGE VINAIGRETTE",
+      "invalidIngredient": "1 each Crunch &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "CREAM OF ASPARAGUS SOUP WITH SOUR CREAM",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CREAM OF ASPARAGUS SOUP WITH SOUR CREAM",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CREAM OF ASPARAGUS SOUP WITH SOUR CREAM",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CREAM OF ASPARAGUS SOUP WITH SOUR CREAM",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CARROT AND PEA MIX",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CARROT AND PEA MIX",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CARROT AND PEA MIX",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CARROT AND PEA MIX",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CARROT AND PEA MIX",
+      "invalidIngredient": "1 each Seasoning &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "STEAMED CAULIFLOWER",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED CAULIFLOWER",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED CAULIFLOWER",
+      "invalidIngredient": "1 each Steam",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "STEAMED CAULIFLOWER",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED CAULIFLOWER",
+      "invalidIngredient": "1 each Dressing &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "CORNBREAD",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CORNBREAD",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SMOKED SALMON & AVOCADO MOUSSE PLATE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SMOKED SALMON & AVOCADO MOUSSE PLATE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SMOKED SALMON & AVOCADO MOUSSE PLATE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SMOKED SALMON & AVOCADO MOUSSE PLATE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SMOKED SALMON & AVOCADO MOUSSE PLATE",
+      "invalidIngredient": "1 each Dressing &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "ROASTED RED PEPPER SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED RED PEPPER SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED RED PEPPER SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED RED PEPPER SOUP",
+      "invalidIngredient": "1 each Liquid",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "ROASTED RED PEPPER SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED ZUCCHINI CHUNKS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED ZUCCHINI CHUNKS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED ZUCCHINI CHUNKS",
+      "invalidIngredient": "1 each Coating &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "GRILLED ZUCCHINI CHUNKS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED CARROT WEDGES",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED CARROT WEDGES",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED CARROT WEDGES",
+      "invalidIngredient": "1 each Steam",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "STEAMED CARROT WEDGES",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED CARROT WEDGES",
+      "invalidIngredient": "1 each Dressing &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "SHOOFLY PIE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SHOOFLY PIE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SHOOFLY PIE",
+      "invalidIngredient": "1 each Liquid",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "SHOOFLY PIE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED EGGPLANT CAPRESE DISH",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED EGGPLANT CAPRESE DISH",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED EGGPLANT CAPRESE DISH",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED EGGPLANT CAPRESE DISH",
+      "invalidIngredient": "1 each Coating &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "GRILLED EGGPLANT CAPRESE DISH",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED EGGPLANT CAPRESE DISH",
+      "invalidIngredient": "1 each Basil &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "BBQ PORK BACK RIBS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BBQ PORK BACK RIBS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BBQ PORK BACK RIBS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BBQ PORK BACK RIBS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED GREEN BEANS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED GREEN BEANS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED GREEN BEANS",
+      "invalidIngredient": "1 each Steam",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "STEAMED GREEN BEANS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STEAMED GREEN BEANS",
+      "invalidIngredient": "1 each Dressing &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "ROASTED ROOT VEGETABLE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED ROOT VEGETABLE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED ROOT VEGETABLE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TOMATO PUFF TART",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TOMATO PUFF TART",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TOMATO PUFF TART",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TOMATO PUFF TART",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TOMATO PUFF TART",
+      "invalidIngredient": "1 each Seasoning &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "JAMBALAYA",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "JAMBALAYA",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "JAMBALAYA",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "JAMBALAYA",
+      "invalidIngredient": "1 each Grains &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "CHICKEN BROCCOLI RICE CASSEROLE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CHICKEN BROCCOLI RICE CASSEROLE",
+      "invalidIngredient": "1 each Base",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "CHICKEN BROCCOLI RICE CASSEROLE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CHICKEN BROCCOLI RICE CASSEROLE",
+      "invalidIngredient": "1 each Sauce",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "CHICKEN BROCCOLI RICE CASSEROLE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED BROCCOLINI",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED BROCCOLINI",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED BROCCOLINI",
+      "invalidIngredient": "1 each Coating &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "ROASTED POTATO",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED POTATO",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STRAWBERRY LEMONADE BARS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STRAWBERRY LEMONADE BARS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "LEMON ORZO SALAD",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "LEMON ORZO SALAD",
+      "invalidIngredient": "1 each Grain &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "TARRAGON CHICKEN SALAD CROSTINI",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TARRAGON CHICKEN SALAD CROSTINI",
+      "invalidIngredient": "1 each Base",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "TARRAGON CHICKEN SALAD CROSTINI",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED PEPPERS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED PEPPERS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SPANISH RICE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SPANISH RICE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SPANISH RICE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SMOTHERED PORK CHOPS IN MUSHROOM GRAVY",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SMOTHERED PORK CHOPS IN MUSHROOM GRAVY",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED COD WITH ROMESCO SAUCE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED COD WITH ROMESCO SAUCE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED BRUSSEL SPROUT WITH LEMON",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED BRUSSEL SPROUT WITH LEMON",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SWEET POTATO PUREE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SWEET POTATO PUREE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "MARGARITA BARS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "MARGARITA BARS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "VIDALIA ONION SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "VIDALIA ONION SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "VIDALIA ONION SOUP",
+      "invalidIngredient": "1 each Liquid",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "VIDALIA ONION SOUP",
+      "invalidIngredient": "1 each Finish",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "GRILLED BEEF STEAK WITH GREEN PEPPERCORN SAUCE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED SPINACH",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED SPINACH",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BUTTER MASHED POTATO",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BUTTER MASHED POTATO",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BROCCOLI CHEDDAR SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BROCCOLI CHEDDAR SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BROCCOLI CHEDDAR SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GARLIC SAUTEED SHRIMP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GARLIC SAUTEED SHRIMP",
+      "invalidIngredient": "1 each Aromatics &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "SEARED GREEN BEANS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SEARED GREEN BEANS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED ACORN SQUASH WEDGES",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED ACORN SQUASH WEDGES",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SALISBURY STEAK IN ONION GRAVY",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "OVEN BAKED BBQ BONE-IN CHICKEN",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "OVEN BAKED BBQ BONE-IN CHICKEN",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "RATATOUILLE COINS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "RATATOUILLE COINS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TRI COLOR CAULIFLOWER GRATIN",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TRI COLOR CAULIFLOWER GRATIN",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "APEROL SPRITZ TRIFLE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "APEROL SPRITZ TRIFLE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "APEROL SPRITZ TRIFLE",
+      "invalidIngredient": "1 each Citrus",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "APEROL SPRITZ TRIFLE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CHICKEN GNOCCHI SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CHICKEN GNOCCHI SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CHICKEN GNOCCHI SOUP",
+      "invalidIngredient": "1 each Liquid &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "CHICKEN GNOCCHI SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CHICKEN GNOCCHI SOUP",
+      "invalidIngredient": "1 each Chicken &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "CLASSIC POTATO SALAD",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CLASSIC POTATO SALAD",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CLASSIC POTATO SALAD",
+      "invalidIngredient": "1 each Crunch",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "CLASSIC POTATO SALAD",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CLASSIC POTATO SALAD",
+      "invalidIngredient": "1 each Dressing",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "LOBSTER TAIL THERMIDOR",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "LOBSTER TAIL THERMIDOR",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "PARMESAN GREEN BEANS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "PARMESAN GREEN BEANS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "PARMESAN GREEN BEANS",
+      "invalidIngredient": "1 each Dressing",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "PARMESAN GREEN BEANS",
+      "invalidIngredient": "1 each Finish",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "CHERRY SLAB PIE BARS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CHERRY SLAB PIE BARS",
+      "invalidIngredient": "1 each Crust &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "CHERRY SLAB PIE BARS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "LOBSTER / SHRIMP ROLL ON TOASTED BRIOCHE",
+      "invalidIngredient": "3 cup finely diced celery (for crunch)Herbs & Seasoning: 2 tbsp finely chopped fresh chives",
+      "sourceUrl": "",
+      "actionTaken": "Removed multiple ingredients collapsed into one field"
+    },
+    {
+      "recipeName": "LEMON SORBET",
+      "invalidIngredient": "6 cup freshly squeezed lemon juice (from about 5 to 6 large juicy lemons)The Sweetener: 1 cup granulated sugar",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "LEMON SORBET",
+      "invalidIngredient": "6 cup waterBrightener: 1 tbsp finely grated lemon zest",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKEN TORTILLA",
+      "invalidIngredient": "4 Tbsp olive oil",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKEN TORTILLA",
+      "invalidIngredient": "4 each medium yellow onion (diced)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKEN TORTILLA",
+      "invalidIngredient": "4 each jalape ño (seeded and minced)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKEN TORTILLA",
+      "invalidIngredient": "12 each cloves garlic (minced)Spices: 1 tsp ground cumin",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKEN TORTILLA",
+      "invalidIngredient": "4 tsp chili powder",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKEN TORTILLA",
+      "invalidIngredient": "4 tsp dried oregano",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKEN TORTILLA",
+      "invalidIngredient": "2 tsp saltLiquids: 4 cups low-sodium chicken broth",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKEN TORTILLA",
+      "invalidIngredient": "4 can (14 oz) crushed tomatoesFillings: 3 cups cooked shredded chicken (rotisserie chicken works perfectly)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKEN TORTILLA",
+      "invalidIngredient": "4 can (15 oz) black beans (rinsed and drained)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKEN TORTILLA",
+      "invalidIngredient": "4 cup frozen or canned cornBrightener: 2 tbsp fresh lemon or lime juiceToppings: 1 cup crushed tortilla chips or fried tortilla strips",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKEN TORTILLA",
+      "invalidIngredient": "4 each diced avocado",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKEN TORTILLA",
+      "invalidIngredient": "2 cup crumbled cotija or feta cheese, fresh cilantro leaves",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "GRILLED FISH WITH SALSA",
+      "invalidIngredient": "24 each firm white fish fillets (such as mahi-mahi, cod, halibut, or tilapia), patted dryFish Rub: 1 tbsp olive oil",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "GRILLED FISH WITH SALSA",
+      "invalidIngredient": "3 tsp chili powder",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "GRILLED FISH WITH SALSA",
+      "invalidIngredient": "3 tsp garlic powder",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "GRILLED FISH WITH SALSA",
+      "invalidIngredient": "1.5 tsp ground cumin",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "GRILLED FISH WITH SALSA",
+      "invalidIngredient": "1 each salt, and black pepperFresh Salsa: 1 cup diced ripe mango or tomatoes",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "GRILLED FISH WITH SALSA",
+      "invalidIngredient": "3 cup diced red bell pepper",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "GRILLED FISH WITH SALSA",
+      "invalidIngredient": "1.5 cup finely diced red onion",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "GRILLED FISH WITH SALSA",
+      "invalidIngredient": "1.5 cup chopped fresh cilantro",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "GRILLED FISH WITH SALSA",
+      "invalidIngredient": "6 each jalape ño (seeded and minced)Brightener: 2 tbsp fresh lime juice",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "GRILLED FISH WITH SALSA",
+      "invalidIngredient": "6 Tbsp extra-virgin olive oil",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "GRILLED FISH WITH SALSA",
+      "invalidIngredient": "1.5 tsp salt",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "EGGPLANT PARMESAN",
+      "invalidIngredient": "2 cup grated parmesan cheeseSauce & Cheese: 1 jar (24 oz) high-quality marinara sauce",
+      "sourceUrl": "",
+      "actionTaken": "Removed multiple ingredients collapsed into one field"
+    },
+    {
+      "recipeName": "TOMATO BASIL",
+      "invalidIngredient": "12 can (28 oz each) whole peeled San Marzano tomatoes, with their juices",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "TOMATO BASIL",
+      "invalidIngredient": "12 Tbsp unsalted butter",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "TOMATO BASIL",
+      "invalidIngredient": "6 Tbsp olive oil",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "TOMATO BASIL",
+      "invalidIngredient": "6 each medium yellow onion (diced)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "TOMATO BASIL",
+      "invalidIngredient": "24 each cloves garlic (minced)Liquids: 2 cups low-sodium vegetable or chicken broth",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "TOMATO BASIL",
+      "invalidIngredient": "3 cup heavy creamHerbs &",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "TOMATO BASIL",
+      "invalidIngredient": "3 cup tightly packed fresh basil leaves",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "TOMATO BASIL",
+      "invalidIngredient": "6 Tbsp sugar (optional, to balance acidity)Seasoning: 1/2 tsp sea salt",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "TOMATO BASIL",
+      "invalidIngredient": "1.5 tsp cracked black pepper",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PHILLY CHEESESTEAK",
+      "invalidIngredient": "9 lb ribeye steak (very thinly shaved or sliced)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PHILLY CHEESESTEAK",
+      "invalidIngredient": "6 each large yellow onion (thinly sliced)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PHILLY CHEESESTEAK",
+      "invalidIngredient": "6 each green bell pepper (thinly sliced, optional)The Cheese: 8 slices Provolone cheese (or 1/2 cup warm Cheez Whiz)The Bread: 4 soft Italian hoagie rolls (split lengthwise)Oil & Seasoning: 2 tbsp vegetable oil",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PHILLY CHEESESTEAK",
+      "invalidIngredient": "3 tsp garlic powder",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PHILLY CHEESESTEAK",
+      "invalidIngredient": "1 each salt, and black pepper (to taste",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "VEGETABLE & TOFU STIRFRY",
+      "invalidIngredient": "6 Tbsp cornstarch (for thickening)Aromatics & Oil: 2 tbsp vegetable oil (divided)",
+      "sourceUrl": "",
+      "actionTaken": "Removed multiple ingredients collapsed into one field"
+    },
+    {
+      "recipeName": "SEAFOOD CHOWDER",
+      "invalidIngredient": "4 cup heavy creamVegetables & Herbs: 2 medium Russet potatoes (peeled and diced into 1/2-inch cubes)",
+      "sourceUrl": "",
+      "actionTaken": "Removed multiple ingredients collapsed into one field"
+    },
+    {
+      "recipeName": "SPICED CHICKEN, BRIE, & AVOCADO MELT",
+      "invalidIngredient": "1 each salt, and black pepperThe Fillings: 1 large wheel of Brie cheese (sliced into 1/4-inch thick strips)",
+      "sourceUrl": "",
+      "actionTaken": "Removed multiple ingredients collapsed into one field"
+    },
+    {
+      "recipeName": "VEGETABLE PAELLA",
+      "invalidIngredient": "19.2 each cloves garlic (minced)Flavor Builders: 1 large grated vine tomato (discard skin)",
+      "sourceUrl": "",
+      "actionTaken": "Removed multiple ingredients collapsed into one field"
+    },
+    {
+      "recipeName": "THAI COCONUT & VEGETABLE",
+      "invalidIngredient": "18 each cloves garlic (minced)Flavor Builders: 1 tbsp Thai red curry paste",
+      "sourceUrl": "",
+      "actionTaken": "Removed multiple ingredients collapsed into one field"
+    },
+    {
+      "recipeName": "CHICKPEA & VEGETABLE CURRY",
+      "invalidIngredient": "12 can (15 oz each) chickpeas / garbanzo beans (rinsed and drained)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKPEA & VEGETABLE CURRY",
+      "invalidIngredient": "6 can (13.5 oz) full-fat coconut milk",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKPEA & VEGETABLE CURRY",
+      "invalidIngredient": "6 can (14 oz) diced tomatoes (with juices)Aromatics & Oil: 1 tbsp coconut oil (or vegetable oil)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKPEA & VEGETABLE CURRY",
+      "invalidIngredient": "6 each yellow onion (diced)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKPEA & VEGETABLE CURRY",
+      "invalidIngredient": "18 each cloves garlic (minced)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKPEA & VEGETABLE CURRY",
+      "invalidIngredient": "6 Tbsp grated fresh gingerSpices: 1.5 tbsp yellow curry powder",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKPEA & VEGETABLE CURRY",
+      "invalidIngredient": "6 tsp ground cumin",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKPEA & VEGETABLE CURRY",
+      "invalidIngredient": "3 tsp ground turmeric",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKPEA & VEGETABLE CURRY",
+      "invalidIngredient": "3 tsp salt",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKPEA & VEGETABLE CURRY",
+      "invalidIngredient": "6 each large sweet potato (peeled and diced into 1/2-inch cubes)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKPEA & VEGETABLE CURRY",
+      "invalidIngredient": "6 each red bell pepper (chopped)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKPEA & VEGETABLE CURRY",
+      "invalidIngredient": "12 cup fresh baby spinach",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKPEA & VEGETABLE CURRY",
+      "invalidIngredient": "6 Tbsp fresh lime juice",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "CHICKPEA & VEGETABLE CURRY",
+      "invalidIngredient": "1.5 cup fresh cilantro (chopped",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PINEAPPLE CAKE WITH CITRUS TOPPING",
+      "invalidIngredient": "12 Tbsp melted butter (for topping)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PINEAPPLE CAKE WITH CITRUS TOPPING",
+      "invalidIngredient": "1.5 cup light brown sugar",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PINEAPPLE CAKE WITH CITRUS TOPPING",
+      "invalidIngredient": "3 can (20 oz) pineapple slices in juice (drained, reserve 1/4 cup juice)The Cake Batter: 1 1/2 cups all-purpose flour",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PINEAPPLE CAKE WITH CITRUS TOPPING",
+      "invalidIngredient": "4.5 tsp baking powder",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PINEAPPLE CAKE WITH CITRUS TOPPING",
+      "invalidIngredient": "0.75 tsp salt",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PINEAPPLE CAKE WITH CITRUS TOPPING",
+      "invalidIngredient": "1.5 cup softened butter (for batter)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PINEAPPLE CAKE WITH CITRUS TOPPING",
+      "invalidIngredient": "2.25 cup granulated sugar",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PINEAPPLE CAKE WITH CITRUS TOPPING",
+      "invalidIngredient": "6 each large eggs",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PINEAPPLE CAKE WITH CITRUS TOPPING",
+      "invalidIngredient": "3 tsp vanilla extract",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PINEAPPLE CAKE WITH CITRUS TOPPING",
+      "invalidIngredient": "0.75 cup reserved pineapple juice",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PINEAPPLE CAKE WITH CITRUS TOPPING",
+      "invalidIngredient": "0.75 cup whole milkThe Citrus Glaze: 1/4 cup powdered sugar",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PINEAPPLE CAKE WITH CITRUS TOPPING",
+      "invalidIngredient": "3 Tbsp fresh lime juice",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "PINEAPPLE CAKE WITH CITRUS TOPPING",
+      "invalidIngredient": "3 tsp orange zest",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "FRENCH LENTIL",
+      "invalidIngredient": "4 cup French green lentils (Lentilles du Puy), rinsed and picked over",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "FRENCH LENTIL",
+      "invalidIngredient": "8 Tbsp olive oil",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "FRENCH LENTIL",
+      "invalidIngredient": "4 each large yellow onion (diced)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "FRENCH LENTIL",
+      "invalidIngredient": "8 each carrots (diced)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "FRENCH LENTIL",
+      "invalidIngredient": "8 each celery stalks (diced)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "FRENCH LENTIL",
+      "invalidIngredient": "12 each cloves garlic (minced)Flavor Builders: 2 tbsp tomato paste",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "FRENCH LENTIL",
+      "invalidIngredient": "2 cup dry white or red wine (optional)Liquids: 6 cups low-sodium vegetable or chicken brothHerbs & Seasoning: 1 bay leaf",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "FRENCH LENTIL",
+      "invalidIngredient": "12 each sprigs fresh thyme",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "FRENCH LENTIL",
+      "invalidIngredient": "2 tsp sea salt",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "FRENCH LENTIL",
+      "invalidIngredient": "1 tsp black pepperBrightener: 1 tbsp fresh lemon juice or red wine vinegar",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "FRENCH LENTIL",
+      "invalidIngredient": "1 cup finely chopped fresh parsley",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "COD WITH LEMON&HERB SAUCE (GF/DF)",
+      "invalidIngredient": "24 each wild -caught cod fillets (about 6 oz each, thick cuts preferred)The Sear: 1 tbsp olive oil",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "COD WITH LEMON&HERB SAUCE (GF/DF)",
+      "invalidIngredient": "3 tsp onion powder",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "COD WITH LEMON&HERB SAUCE (GF/DF)",
+      "invalidIngredient": "1 each salt, and white pepper (to taste)Lemon & Herb",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "COD WITH LEMON&HERB SAUCE (GF/DF)",
+      "invalidIngredient": "12 Tbsp extra-virgin olive oil",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "COD WITH LEMON&HERB SAUCE (GF/DF)",
+      "invalidIngredient": "12 each shallots (finely minced)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "COD WITH LEMON&HERB SAUCE (GF/DF)",
+      "invalidIngredient": "18 each cloves garlic (minced)",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "COD WITH LEMON&HERB SAUCE (GF/DF)",
+      "invalidIngredient": "2 cup low-sodium vegetable broth",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "COD WITH LEMON&HERB SAUCE (GF/DF)",
+      "invalidIngredient": "1.5 cup fresh lemon juice",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "COD WITH LEMON&HERB SAUCE (GF/DF)",
+      "invalidIngredient": "6 tsp lemon zestFresh",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "COD WITH LEMON&HERB SAUCE (GF/DF)",
+      "invalidIngredient": "1.5 cup finely chopped fresh parsley",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "COD WITH LEMON&HERB SAUCE (GF/DF)",
+      "invalidIngredient": "6 Tbsp chopped fresh dill",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "COD WITH LEMON&HERB SAUCE (GF/DF)",
+      "invalidIngredient": "6 tsp cornstarch mixed with 1 tbsp cold water (slurry for thickening",
+      "sourceUrl": "",
+      "actionTaken": "Rebuilt ingredient list from recipe content"
+    },
+    {
+      "recipeName": "APPLE TART",
+      "invalidIngredient": "12 each large Honeycrisp, Granny Smith, or Gala apples (peeled, cored, and very thinly sliced)The Sweetener & Spice: 3 tbsp unsalted butter (melted)",
+      "sourceUrl": "",
+      "actionTaken": "Removed multiple ingredients collapsed into one field"
+    },
+    {
+      "recipeName": "3-SISTERS SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "3-SISTERS SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "3-SISTERS SOUP",
+      "invalidIngredient": "1 each Base &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "3-SISTERS SOUP",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "3-SISTERS SOUP",
+      "invalidIngredient": "1 each Liquid &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "PAN SEARED SALMON WITH MAPLE DIJON SAUCE (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Peach Melba with Vanilla Ice Cream and Toasted Almonds (GF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Peach Melba with Vanilla Ice Cream and Toasted Almonds (GF)",
+      "invalidIngredient": "1 each Peaches &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Peach Melba with Vanilla Ice Cream and Toasted Almonds (GF)",
+      "invalidIngredient": "1 each Poaching",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "Peach Melba with Vanilla Ice Cream and Toasted Almonds (GF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Peach Melba with Vanilla Ice Cream and Toasted Almonds (GF)",
+      "invalidIngredient": "1 each Melba",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "Peach Melba with Vanilla Ice Cream and Toasted Almonds (GF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED CHICKEN BREAST WITH BASIL PESTO/ROASTED TOMATO",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED CHICKEN BREAST WITH BASIL PESTO/ROASTED TOMATO",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED CHICKEN BREAST WITH BASIL PESTO/ROASTED TOMATO",
+      "invalidIngredient": "1 each Sauce &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "SAUTEED SPINACH WITH DICED ONIONS/GOLDEN RAISINS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED SPINACH WITH DICED ONIONS/GOLDEN RAISINS",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "NO-BAKE BLUEBERRY CHEESECAKE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "NO-BAKE BLUEBERRY CHEESECAKE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "NO-BAKE BLUEBERRY CHEESECAKE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED PARSNIPS WITH CINNAMON BUTTER",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED PARSNIPS WITH CINNAMON BUTTER",
+      "invalidIngredient": "1 each Coat &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "BANANA CAKE WITH CINNAMON WHIPPED TOPPING",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BANANA CAKE WITH CINNAMON WHIPPED TOPPING",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "PRIME RIB WITH HORSERADISH YOGURT SAUCE (ON SIDE)      (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "PRIME RIB WITH HORSERADISH YOGURT SAUCE (ON SIDE)      (GF/DF)",
+      "invalidIngredient": "1 each Herb",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "PRIME RIB WITH HORSERADISH YOGURT SAUCE (ON SIDE)      (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "LEMON PISTACHIO LOAF",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "LEMON PISTACHIO LOAF",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "California Brocolli Salad with Cranberry and Feta Dressing (GF)",
+      "invalidIngredient": "1 each Salad",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "Chicken Vegetable in light Broth (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Carved Pork Tenderloin with Brown Butter and Garlic Sauce (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TURKEY BREAST WITH BREAD STUFFING (DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TURKEY BREAST WITH BREAD STUFFING (DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "COCONUT SHRIMP WITH LIME DIPPING",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "VEAL SHANK WITH SPICED AVOCADO LIME SAUCE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Slow roasted Flank Roast with Red Wine Sauce (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Slow roasted Flank Roast with Red Wine Sauce (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SHRIMP CURRY (MADRAS)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SHRIMP CURRY (MADRAS)",
+      "invalidIngredient": "1 each Aromatics &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "SHRIMP CURRY (MADRAS)",
+      "invalidIngredient": "1 each Spices &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "GRILLED TILAPIA PERUVIAN GREEN SAUCE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TURKEY CUTLET WITH ARUGULA&PARM",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TURKEY CUTLET WITH ARUGULA&PARM",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TURKEY CUTLET WITH ARUGULA&PARM",
+      "invalidIngredient": "1 each Topping",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "TURKEY CUTLET WITH ARUGULA&PARM",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "TURKEY CUTLET WITH ARUGULA&PARM",
+      "invalidIngredient": "1 each Dressing &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "ROASTED EGGPLANT WITH TAHINI",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SEARED CATFISH LEMON BEURRE BLANC SAUCE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CLASSIC TREACLE TART (BUTTER TART PIE)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CLASSIC TREACLE TART (BUTTER TART PIE)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CLASSIC TREACLE TART (BUTTER TART PIE)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "DOVER SOLE WITH CREAMY PARSLEY SAUCE AND HERB OIL",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "DOVER SOLE WITH CREAMY PARSLEY SAUCE AND HERB OIL",
+      "invalidIngredient": "1 each Herb",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "DOVER SOLE WITH CREAMY PARSLEY SAUCE AND HERB OIL",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "GRILLED SHRIMPS WITH MANGO SALSA",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SPINACH STRAWBERRY SALAD ALMOND & GOAT CHEESE HONEY MUSTARD",
+      "invalidIngredient": "1 each Salad",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "PAN SEARED SALMON WITH PINEAPPLE SALSA (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "PAN SEARED SALMON WITH PINEAPPLE SALSA (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "STUFFED BAKED POTATO",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CHOCOLATE RASPBERRY PAVLOVA",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED VEGETABLE AND FALAFEL ON BREAD WITH YOGURT SAUCE",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "ROASTED VEGETABLE AND FALAFEL ON BREAD WITH YOGURT SAUCE",
+      "invalidIngredient": "1 each Sauce",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "SPAGHETTI ALLA NORMA",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SPAGHETTI ALLA NORMA",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SPAGHETTI ALLA NORMA",
+      "invalidIngredient": "1 each Pasta &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "SAUTEED SPINACH WITH CARROT/MUSHROOM/ONION",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "SAUTEED SPINACH WITH CARROT/MUSHROOM/ONION",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CLASSIC BEEF CHILI WITH GARLIC BREAD",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "CLASSIC BEEF CHILI WITH GARLIC BREAD",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Prosciutto Wrapped Pears with Arugula and Blue Cheese (GF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Prosciutto Wrapped Pears with Arugula and Blue Cheese (GF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Thai Fish Cakes with Cilantro Lime Dip",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Roasted Beef Rump with Carmelized Onion and Apple Sauce (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Lemon Curd Tart with Egg-white Meringue",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Lemon Curd Tart with Egg-white Meringue",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Lemon Curd Tart with Egg-white Meringue",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Antipasti Skewers with Cured Meats and Italian Vegetables with Garlic Bread Spear",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Antipasti Skewers with Cured Meats and Italian Vegetables with Garlic Bread Spear",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Steamed Cous Cous with Herbs and Golden Raisins",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Steamed Cous Cous with Herbs and Golden Raisins",
+      "invalidIngredient": "1 each Base",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "Steamed Cous Cous with Herbs and Golden Raisins",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Steamed Cous Cous with Herbs and Golden Raisins",
+      "invalidIngredient": "1 each Liquid",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "Steamed Cous Cous with Herbs and Golden Raisins",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Steamed Cous Cous with Herbs and Golden Raisins",
+      "invalidIngredient": "1 each Herb",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "Sopa Ajoblanco (Spanish White Gazpacho) (GF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Sopa Ajoblanco (Spanish White Gazpacho) (GF)",
+      "invalidIngredient": "1 each Liquids &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Beef Strips with Sauteed Mushrooms and Pan Jus (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Beef Strips with Sauteed Mushrooms and Pan Jus (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Beef Strips with Sauteed Mushrooms and Pan Jus (GF/DF)",
+      "invalidIngredient": "1 each Sauce &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Roasted Turkey with Poultry Herb Sauce (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Roasted Turkey with Poultry Herb Sauce (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Shrimp Tempura with Sweet Dipping Sauce (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Shrimp Tempura with Sweet Dipping Sauce (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Paprika and Honey Steamed Corn Kernels",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Paprika and Honey Steamed Corn Kernels",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Paprika and Honey Steamed Corn Kernels",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Poached Salmon with Cucumber and Herb Relish (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Poached Salmon with Cucumber and Herb Relish (GF/DF)",
+      "invalidIngredient": "1 each Salmon &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Poached Salmon with Cucumber and Herb Relish (GF/DF)",
+      "invalidIngredient": "1 each Poaching",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "Poached Salmon with Cucumber and Herb Relish (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Poached Salmon with Cucumber and Herb Relish (GF/DF)",
+      "invalidIngredient": "1 each Cucumber &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Poached Salmon with Cucumber and Herb Relish (GF/DF)",
+      "invalidIngredient": "1 each Herb",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "Baked Chicken Thigh with Lemon and Herb Sauce (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Baked Chicken Thigh with Lemon and Herb Sauce (GF/DF)",
+      "invalidIngredient": "1 each Jus &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Vegetarian stuffed Koosa (Riced Stuffed Zucchini) (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Vegetarian stuffed Koosa (Riced Stuffed Zucchini) (GF/DF)",
+      "invalidIngredient": "1 each Rice &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Baked Farro Pilaf with aromatic vegetables",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Baked Farro Pilaf with aromatic vegetables",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Baked Farro Pilaf with aromatic vegetables",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Baked Farro Pilaf with aromatic vegetables",
+      "invalidIngredient": "1 each Veg &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Baked Farro Pilaf with aromatic vegetables",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Mexican Gazpacho Cold Soup (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Mexican Gazpacho Cold Soup (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Mexican Gazpacho Cold Soup (GF/DF)",
+      "invalidIngredient": "1 each Seasoning &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Mexican Gazpacho Cold Soup (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Lemond Chiffon Cake with Icing",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Lemond Chiffon Cake with Icing",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Lemond Chiffon Cake with Icing",
+      "invalidIngredient": "1 each Liquid",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "Lemond Chiffon Cake with Icing",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Lemond Chiffon Cake with Icing",
+      "invalidIngredient": "1 each Glaze",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "Brined Pork Tenderloin with Feta and Olive Salsa (GF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Brined Pork Tenderloin with Feta and Olive Salsa (GF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Brined Pork Tenderloin with Feta and Olive Salsa (GF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Brined Pork Tenderloin with Feta and Olive Salsa (GF)",
+      "invalidIngredient": "1 each Feta &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Spicy Peanut Soba Noodle Salad (DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Spicy Peanut Soba Noodle Salad (DF)",
+      "invalidIngredient": "1 each Noodles &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Spicy Peanut Soba Noodle Salad (DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Wild Rice with Apricot and Dried Cranberry",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Wild Rice with Apricot and Dried Cranberry",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Wild Rice with Apricot and Dried Cranberry",
+      "invalidIngredient": "1 each Liquid",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "Wild Rice with Apricot and Dried Cranberry",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Wild Rice with Apricot and Dried Cranberry",
+      "invalidIngredient": "1 each Aromatics &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Wild Rice with Apricot and Dried Cranberry",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Wild Rice with Apricot and Dried Cranberry",
+      "invalidIngredient": "1 each Sweet &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Wild Rice with Apricot and Dried Cranberry",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Cheesy Chili White Bean Dip with Pita Chips",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Cheesy Chili White Bean Dip with Pita Chips",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Cheesy Chili White Bean Dip with Pita Chips",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Cheesy Chili White Bean Dip with Pita Chips",
+      "invalidIngredient": "1 each Chili &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "HONEY LEMON GARLIC CHICKEN BREAST",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "HONEY LEMON GARLIC CHICKEN BREAST",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "HONEY LEMON GARLIC CHICKEN BREAST",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BBQ Pork Hush Puppies with Garlic Dip",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BBQ Pork Hush Puppies with Garlic Dip",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BBQ Pork Hush Puppies with Garlic Dip",
+      "invalidIngredient": "1 each Pork &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "BBQ Pork Hush Puppies with Garlic Dip",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BBQ Pork Hush Puppies with Garlic Dip",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "BBQ Pork Hush Puppies with Garlic Dip",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Creamy Mac’N’Cheese Bake",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Creamy Mac’N’Cheese Bake",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Creamy Mac’N’Cheese Bake",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Creamy Mac’N’Cheese Bake",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Creamy Mac’N’Cheese Bake",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Creamy Mac’N’Cheese Bake",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Chicken Marsala with Creamy Mushroom Sauce (DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Chicken Marsala with Creamy Mushroom Sauce (DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Chicken Marsala with Creamy Mushroom Sauce (DF)",
+      "invalidIngredient": "1 each Sear &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Chicken Marsala with Creamy Mushroom Sauce (DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Chicken Marsala with Creamy Mushroom Sauce (DF)",
+      "invalidIngredient": "1 each Mushrooms &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Chicken Marsala with Creamy Mushroom Sauce (DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Pudding Chomeur with Vanilla Ice Cream",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Pudding Chomeur with Vanilla Ice Cream",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Buttermilk Fried Chicken (***BONE-IN***) (DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Buttermilk Fried Chicken (***BONE-IN***) (DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Buttermilk Fried Chicken (***BONE-IN***) (DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Buttermilk Fried Chicken (***BONE-IN***) (DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Indian Pudding – Cornmeal and Molasses Cake with Vanilla Ice Cream",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Indian Pudding – Cornmeal and Molasses Cake with Vanilla Ice Cream",
+      "invalidIngredient": "1 each Liquid &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Indian Pudding – Cornmeal and Molasses Cake with Vanilla Ice Cream",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Indian Pudding – Cornmeal and Molasses Cake with Vanilla Ice Cream",
+      "invalidIngredient": "1 each Sweetener &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Indian Pudding – Cornmeal and Molasses Cake with Vanilla Ice Cream",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Indian Pudding – Cornmeal and Molasses Cake with Vanilla Ice Cream",
+      "invalidIngredient": "1 each Spices &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Indian Pudding – Cornmeal and Molasses Cake with Vanilla Ice Cream",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Grilled Clams with Cucumber and Scallion Salad (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Grilled Clams with Cucumber and Scallion Salad (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Grilled Clams with Cucumber and Scallion Salad (GF/DF)",
+      "invalidIngredient": "1 each Dressing",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "Muffuletta Olive Salad on Grilled Crostini (DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Muffuletta Olive Salad on Grilled Crostini (DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Muffuletta Olive Salad on Grilled Crostini (DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Penne Pasta with Chicken and Sausage in Aglio Olio (Garlic & Olive Oil) Sauce",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Penne Pasta with Chicken and Sausage in Aglio Olio (Garlic & Olive Oil) Sauce",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Penne Pasta with Chicken and Sausage in Aglio Olio (Garlic & Olive Oil) Sauce",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Penne Pasta with Chicken and Sausage in Aglio Olio (Garlic & Olive Oil) Sauce",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Penne Pasta with Chicken and Sausage in Aglio Olio (Garlic & Olive Oil) Sauce",
+      "invalidIngredient": "1 each Seasoning &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Summer Rice Wraps with Peanut Dipping Sauce (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Summer Rice Wraps with Peanut Dipping Sauce (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Baked Salmon Medallion with Black Bean and Sweet Pepper Salsa (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Baked Salmon Medallion with Black Bean and Sweet Pepper Salsa (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Baked Salmon Medallion with Black Bean and Sweet Pepper Salsa (GF/DF)",
+      "invalidIngredient": "1 each Spice",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "Baked Salmon Medallion with Black Bean and Sweet Pepper Salsa (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Baked Salmon Medallion with Black Bean and Sweet Pepper Salsa (GF/DF)",
+      "invalidIngredient": "1 each Bean &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Baked Salmon Medallion with Black Bean and Sweet Pepper Salsa (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Baked Cauliflower Steak with Cajun Corn Salsa (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Baked Cauliflower Steak with Cajun Corn Salsa (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Baked Cauliflower Steak with Cajun Corn Salsa (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Baked Cauliflower Steak with Cajun Corn Salsa (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Watermelon and Feta Salad with Goddess Dressing (GF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Watermelon and Feta Salad with Goddess Dressing (GF)",
+      "invalidIngredient": "1 each Salad",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "Watermelon and Feta Salad with Goddess Dressing (GF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Watermelon and Feta Salad with Goddess Dressing (GF)",
+      "invalidIngredient": "1 each Cheese &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Watermelon and Feta Salad with Goddess Dressing (GF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Turkey Pot Roast with Savoury Gravy (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Chicken Francese – Dusted Chicken Breast in Buttery Lemon Sauce (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Chicken Francese – Dusted Chicken Breast in Buttery Lemon Sauce (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Chicken Francese – Dusted Chicken Breast in Buttery Lemon Sauce (GF/DF)",
+      "invalidIngredient": "1 each Coating",
+      "sourceUrl": "",
+      "actionTaken": "Removed single-word section heading"
+    },
+    {
+      "recipeName": "Chicken Francese – Dusted Chicken Breast in Buttery Lemon Sauce (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Chicken Francese – Dusted Chicken Breast in Buttery Lemon Sauce (GF/DF)",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Vegetable Enchiladas with Melted Cheese",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Vegetable Enchiladas with Melted Cheese",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Vegetable Enchiladas with Melted Cheese",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    },
+    {
+      "recipeName": "Vegetable Enchiladas with Melted Cheese",
+      "invalidIngredient": "1 each Base &",
+      "sourceUrl": "",
+      "actionTaken": "Removed truncated section heading"
+    },
+    {
+      "recipeName": "Vegetable Enchiladas with Melted Cheese",
+      "invalidIngredient": "1 each The",
+      "sourceUrl": "",
+      "actionTaken": "Removed section-heading fragment"
+    }
+  ]
+}
