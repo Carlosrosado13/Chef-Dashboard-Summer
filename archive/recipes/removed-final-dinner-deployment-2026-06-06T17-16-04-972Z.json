@@ -1,0 +1,3255 @@
+{
+  "archivedAt": "2026-06-06T17:16:04.975Z",
+  "reason": "Not referenced by final Dinner menu or unchanged Lunch menu",
+  "recipes": [
+    {
+      "title": "Grilled Lemon-Herb Chicken",
+      "yield": "24 servings",
+      "category": "entree",
+      "ingredients": [
+        {
+          "name": "Chicken breast",
+          "amount": 12,
+          "unit": "lb"
+        },
+        {
+          "name": "Lemon juice",
+          "amount": 2,
+          "unit": "cup"
+        },
+        {
+          "name": "Olive oil",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "Chopped parsley",
+          "amount": 1,
+          "unit": "cup"
+        }
+      ],
+      "steps": [
+        "Marinate chicken with lemon juice, olive oil, herbs, and seasoning.",
+        "Grill chicken until marked and cooked through.",
+        "Rest briefly, slice, and hold warm for service."
+      ]
+    },
+    {
+      "title": "Beef Bourguignon",
+      "yield": "24 servings",
+      "category": "entree",
+      "ingredients": [
+        {
+          "name": "Beef chuck",
+          "amount": 14,
+          "unit": "lb"
+        },
+        {
+          "name": "Mushrooms",
+          "amount": 4,
+          "unit": "lb"
+        },
+        {
+          "name": "Pearl onions",
+          "amount": 3,
+          "unit": "lb"
+        },
+        {
+          "name": "Red wine",
+          "amount": 2,
+          "unit": "qt"
+        }
+      ],
+      "steps": [
+        "Brown beef in batches and remove from the pan.",
+        "Cook mushrooms and onions, then deglaze with wine.",
+        "Braise beef with vegetables until tender and sauce is reduced."
+      ]
+    },
+    {
+      "title": "Cream of Mushroom Soup",
+      "yield": "24 servings",
+      "category": "soup",
+      "ingredients": [
+        {
+          "name": "Cremini mushrooms",
+          "amount": 8,
+          "unit": "lb"
+        },
+        {
+          "name": "Onion",
+          "amount": 2,
+          "unit": "lb"
+        },
+        {
+          "name": "Cream",
+          "amount": 2,
+          "unit": "qt"
+        },
+        {
+          "name": "Vegetable stock",
+          "amount": 2,
+          "unit": "gal"
+        }
+      ],
+      "steps": [
+        "Saute mushrooms and onions until moisture evaporates.",
+        "Add stock and simmer until flavors develop.",
+        "Blend partially, finish with cream, and season."
+      ]
+    },
+    {
+      "title": "Beef Meatloaf with Jus",
+      "yield": "24 servings",
+      "category": "entree",
+      "ingredients": [
+        {
+          "name": "Ground beef",
+          "amount": 12,
+          "unit": "lb"
+        },
+        {
+          "name": "Breadcrumbs",
+          "amount": 4,
+          "unit": "cup"
+        },
+        {
+          "name": "Eggs",
+          "amount": 12,
+          "unit": "each"
+        },
+        {
+          "name": "Beef jus",
+          "amount": 2,
+          "unit": "qt"
+        }
+      ],
+      "steps": [
+        "Mix beef, breadcrumbs, eggs, and seasoning until just combined.",
+        "Shape into loaves and bake until cooked through.",
+        "Slice and serve with hot beef jus."
+      ]
+    },
+    {
+      "title": "Coffee-Rubbed Beef Tenderloin, shallot butter (GF)",
+      "yield": "24 servings",
+      "category": "dinner elevated",
+      "ingredients": [
+        {
+          "name": "Beef tenderloin",
+          "amount": 12,
+          "unit": "lb"
+        },
+        {
+          "name": "Ground coffee",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "Shallot butter",
+          "amount": 2,
+          "unit": "lb"
+        }
+      ],
+      "steps": [
+        "Season tenderloin with coffee rub and kosher salt.",
+        "Sear and roast to desired doneness.",
+        "Rest, slice, and finish with shallot butter."
+      ]
+    },
+    {
+      "title": "Miso and Soy Chilean Sea Bass",
+      "category": "Traditional",
+      "yield": "4",
+      "ingredients": [
+        {
+          "amount": 0.33333334326744,
+          "unit": "cup",
+          "name": "sake"
+        },
+        {
+          "amount": 0.33333334326744,
+          "unit": "cup",
+          "name": "mirin (Japanese sweet rice wine)"
+        },
+        {
+          "amount": 0.33333334326744,
+          "unit": "cup",
+          "name": "miso paste"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "name": "packed brown sugar"
+        },
+        {
+          "amount": 3,
+          "unit": "Tbsp",
+          "name": "soy sauce"
+        },
+        {
+          "amount": 4,
+          "unit": "each",
+          "name": "(4 ounce) fillets fresh sea bass, about 1 inch thick"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "chopped green onion"
+        }
+      ],
+      "steps": [
+        "Whisk together sake, mirin, miso paste, brown sugar, and soy sauce in a bowl.",
+        "Place sea bass fillets in a large resealable plastic bag; pour marinade over fillets. Chill in the refrigerator for 3 to 6 hours.",
+        "Preheat the oven's broiler and set the oven rack about 6 inches from the heat source. Prop the oven door to remain slightly ajar.",
+        "Arrange fillets on a baking sheet; discard marinade.",
+        "Broil sea bass in the preheated oven until fish flakes easily with a fork, 7 to 9 minutes.",
+        "Sprinkle with chopped green onions to serve."
+      ]
+    },
+    {
+      "title": "Spinach and Ricotta Manicotti",
+      "category": "Alternative",
+      "yield": "6",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "(15 ounce) container ricotta cheese"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "(10 ounce) package frozen chopped spinach, thawed and squeezed dry"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "minced onion"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "large egg"
+        },
+        {
+          "amount": 2,
+          "unit": "tsp",
+          "name": "minced fresh parsley"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "pepper"
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "name": "garlic powder"
+        },
+        {
+          "amount": 1.5,
+          "unit": "cup",
+          "name": "shredded mozzarella cheese, divided"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "name": "grated Parmesan cheese, divided"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "(8 ounce) package manicotti shells"
+        },
+        {
+          "amount": 2,
+          "unit": "each",
+          "name": "(26 ounce) jars spaghetti sauce"
+        },
+        {
+          "amount": 1.5,
+          "unit": "cup",
+          "name": "water"
+        }
+      ],
+      "steps": [
+        "Preheat the oven to 350 degrees F (175 degrees C).",
+        "Mix ricotta, spinach, onion, egg, parsley, pepper, and garlic powder together in a large bowl. Stir in 1 cup mozzarella and 1/4 cup Parmesan. Stuff mixture into uncooked manicotti shells.",
+        "Stir spaghetti sauce and water together in a bowl. Spread 1 cup sauce over the bottom of a 9x13-inch baking dish. Arrange stuffed manicotti in a single layer in the dish. Cover with remaining sauce, then sprinkle with remaining mozzarella and Parmesan.",
+        "Bake in the preheated oven until shells are tender yet firm to the bite, 45 to 55 minutes."
+      ]
+    },
+    {
+      "title": "Ginger Jasmine Rice",
+      "category": "Starch",
+      "yield": "4",
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "jasmine rice (not instant)*"
+        },
+        {
+          "amount": 2.25,
+          "unit": "cup",
+          "name": "water or low-sodium chicken broth"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "ginger (, grated)"
+        },
+        {
+          "amount": 1,
+          "unit": "clove",
+          "name": "garlic (, minced)"
+        },
+        {
+          "amount": 1,
+          "unit": "Tbsp",
+          "name": "butter"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "kosher salt"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "name": "ground black pepper"
+        },
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "scallions"
+        }
+      ],
+      "steps": [
+        "In a colander, rinse the 1 cup jasmine rice (not instant)* well, shaking off excess water.",
+        "Combine 2 1/4 cup water or low-sodium chicken broth, rinsed rice, fresh grated 1 tablespoon ginger, grated 1 clove garlic, 1 tablespoon butter, 1/2 teaspoon kosher salt and 1/2 teaspoon ground black pepper in a medium sauce pan.",
+        "Bring to a low boil and then lower heat to a low simmer.",
+        "Cover and allow to cook for 20-25 minutes.",
+        "Fluff with a fork and serve.",
+        "Top with chopped 2 tablespoons scallions or serve with your favorite meal.",
+        "If you've tried this recipe, please come back to leave us a comment and give it a star rating!"
+      ]
+    },
+    {
+      "title": "Corn Soup",
+      "yield": "24 portions",
+      "category": "Appetizer 1",
+      "ingredients": [
+        {
+          "amount": 4,
+          "unit": "kg",
+          "name": "corn kernels"
+        },
+        {
+          "amount": 2,
+          "unit": "kg",
+          "name": "Spanish onions, diced"
+        },
+        {
+          "amount": 1,
+          "unit": "kg",
+          "name": "celery, diced"
+        },
+        {
+          "amount": 1,
+          "unit": "kg",
+          "name": "carrots, diced"
+        },
+        {
+          "amount": 6,
+          "unit": "L",
+          "name": "vegetable or chicken stock"
+        },
+        {
+          "amount": 750,
+          "unit": "ml",
+          "name": "35% cream or coconut milk"
+        },
+        {
+          "amount": 120,
+          "unit": "ml",
+          "name": "olive oil"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "name": "kosher salt and white pepper blend"
+        }
+      ],
+      "steps": [
+        "Inspect and wash all vegetables; dice aromatics evenly for consistent cooking.",
+        "Sweat aromatics in oil or butter over medium heat until translucent with no browning.",
+        "Add primary vegetable and stock; simmer until completely tender and flavors are developed.",
+        "Blend in batches until smooth, then strain only if a refined texture is required.",
+        "Finish with cream or alternate dairy, adjust seasoning, and cool rapidly if not serving immediately.",
+        "Reheat gently for service and garnish each portion consistently."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Monday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Appetizer 1",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "Pan Seared Salmon with Cucumber Dill Yogurt Sauce",
+      "yield": "24 portions",
+      "category": "Alternative",
+      "ingredients": [
+        {
+          "amount": 12,
+          "unit": "kg",
+          "name": "salmon"
+        },
+        {
+          "amount": 2,
+          "unit": "kg",
+          "name": "onions, diced"
+        },
+        {
+          "amount": 1.5,
+          "unit": "kg",
+          "name": "carrots and celery, diced"
+        },
+        {
+          "amount": 2,
+          "unit": "L",
+          "name": "stock or pan sauce base"
+        },
+        {
+          "amount": 750,
+          "unit": "ml",
+          "name": "wine, citrus, or finishing sauce"
+        },
+        {
+          "amount": 250,
+          "unit": "ml",
+          "name": "olive oil"
+        },
+        {
+          "amount": 180,
+          "unit": "g",
+          "name": "fresh herbs"
+        },
+        {
+          "amount": 80,
+          "unit": "g",
+          "name": "kosher salt and cracked pepper"
+        }
+      ],
+      "steps": [
+        "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+        "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+        "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+        "Cook protein to safe internal temperature and rest before slicing or holding.",
+        "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+        "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Monday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Alternative",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "Peach Melba",
+      "yield": "24 portions",
+      "category": "Dessert",
+      "ingredients": [
+        {
+          "amount": 4,
+          "unit": "kg",
+          "name": "peaches"
+        },
+        {
+          "amount": 1.5,
+          "unit": "kg",
+          "name": "sugar"
+        },
+        {
+          "amount": 1.5,
+          "unit": "L",
+          "name": "cream or dairy base"
+        },
+        {
+          "amount": 750,
+          "unit": "g",
+          "name": "eggs or stabilizer"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "name": "butter"
+        },
+        {
+          "amount": 60,
+          "unit": "ml",
+          "name": "vanilla or citrus zest"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "name": "kosher salt"
+        }
+      ],
+      "steps": [
+        "Scale ingredients accurately and prepare pans, molds, or service vessels.",
+        "Mix base ingredients in the correct order until smooth and evenly incorporated.",
+        "Bake, chill, simmer, or set dessert according to the preparation style.",
+        "Cool safely and portion into 24 consistent servings.",
+        "Prepare garnish or sauce separately and hold until service.",
+        "Finish each portion neatly with garnish just before pickup."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Monday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Dessert",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "California Brococli Salad",
+      "yield": "24 portions",
+      "category": "Appetizer 1",
+      "ingredients": [
+        {
+          "amount": 3,
+          "unit": "kg",
+          "name": "seasonal vegetables"
+        },
+        {
+          "amount": 1.5,
+          "unit": "kg",
+          "name": "mixed greens or composed garnish"
+        },
+        {
+          "amount": 750,
+          "unit": "g",
+          "name": "fresh citrus or seasonal fruit"
+        },
+        {
+          "amount": 500,
+          "unit": "ml",
+          "name": "vinaigrette"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "name": "toasted seeds, nuts, or crisp garnish"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "name": "kosher salt and cracked pepper"
+        }
+      ],
+      "steps": [
+        "Wash, trim, and dry all greens and vegetables before assembly.",
+        "Prepare dressing and garnishes separately; hold cold until service.",
+        "Cut fruit or vegetables uniformly so each portion is consistent.",
+        "Assemble components close to service to preserve texture and color.",
+        "Taste for salt, acid, and sweetness; adjust dressing before final plating.",
+        "Portion into 24 even servings and garnish neatly."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Tuesday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Appetizer 1",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "Chicken Vegetable in Broth",
+      "yield": "24 portions",
+      "category": "Appetizer 2",
+      "ingredients": [
+        {
+          "amount": 4,
+          "unit": "kg",
+          "name": "chicken"
+        },
+        {
+          "amount": 1.5,
+          "unit": "kg",
+          "name": "aromatic vegetables"
+        },
+        {
+          "amount": 750,
+          "unit": "ml",
+          "name": "house sauce or dipping sauce"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "name": "fresh herbs and garnish"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "name": "kosher salt and spice blend"
+        },
+        {
+          "amount": 250,
+          "unit": "g",
+          "name": "fresh herbs, citrus, or service garnish"
+        }
+      ],
+      "steps": [
+        "Prepare primary appetizer component and trim into 24 even portions.",
+        "Season components evenly and cook using the appropriate saute, roast, fry, or poach method.",
+        "Prepare sauce or dipping component and hold at safe temperature.",
+        "Assemble with garnish so each portion is consistent for service.",
+        "Taste one completed portion for seasoning and texture before pickup.",
+        "Hold hot or cold according to the dish and refresh garnish at service."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Tuesday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Appetizer 2",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "Carved Pork Tenderloin with Apple and Fennel Slaw",
+      "yield": "24 portions",
+      "category": "Elevated",
+      "ingredients": [
+        {
+          "amount": 12,
+          "unit": "kg",
+          "name": "pork"
+        },
+        {
+          "amount": 2,
+          "unit": "kg",
+          "name": "onions, diced"
+        },
+        {
+          "amount": 1.5,
+          "unit": "kg",
+          "name": "carrots and celery, diced"
+        },
+        {
+          "amount": 2,
+          "unit": "L",
+          "name": "stock or pan sauce base"
+        },
+        {
+          "amount": 750,
+          "unit": "ml",
+          "name": "wine, citrus, or finishing sauce"
+        },
+        {
+          "amount": 250,
+          "unit": "ml",
+          "name": "olive oil"
+        },
+        {
+          "amount": 180,
+          "unit": "g",
+          "name": "fresh herbs"
+        },
+        {
+          "amount": 80,
+          "unit": "g",
+          "name": "kosher salt and cracked pepper"
+        }
+      ],
+      "steps": [
+        "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+        "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+        "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+        "Cook protein to safe internal temperature and rest before slicing or holding.",
+        "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+        "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Tuesday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Elevated",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "Turkey Medallion with Cranberry and Orange Chutney",
+      "yield": "24 portions",
+      "category": "Comfort",
+      "ingredients": [
+        {
+          "amount": 12,
+          "unit": "kg",
+          "name": "turkey"
+        },
+        {
+          "amount": 2,
+          "unit": "kg",
+          "name": "onions, diced"
+        },
+        {
+          "amount": 1.5,
+          "unit": "kg",
+          "name": "carrots and celery, diced"
+        },
+        {
+          "amount": 2,
+          "unit": "L",
+          "name": "stock or pan sauce base"
+        },
+        {
+          "amount": 750,
+          "unit": "ml",
+          "name": "wine, citrus, or finishing sauce"
+        },
+        {
+          "amount": 250,
+          "unit": "ml",
+          "name": "olive oil"
+        },
+        {
+          "amount": 180,
+          "unit": "g",
+          "name": "fresh herbs"
+        },
+        {
+          "amount": 80,
+          "unit": "g",
+          "name": "kosher salt and cracked pepper"
+        }
+      ],
+      "steps": [
+        "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+        "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+        "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+        "Cook protein to safe internal temperature and rest before slicing or holding.",
+        "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+        "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Tuesday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Comfort",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "Prosciutto Wrapped Pears with Arugula",
+      "yield": "24 portions",
+      "category": "Appetizer 1",
+      "ingredients": [
+        {
+          "amount": 3,
+          "unit": "kg",
+          "name": "seasonal vegetables"
+        },
+        {
+          "amount": 1.5,
+          "unit": "kg",
+          "name": "mixed greens or composed garnish"
+        },
+        {
+          "amount": 750,
+          "unit": "g",
+          "name": "fresh citrus or seasonal fruit"
+        },
+        {
+          "amount": 500,
+          "unit": "ml",
+          "name": "vinaigrette"
+        },
+        {
+          "amount": 300,
+          "unit": "g",
+          "name": "toasted seeds, nuts, or crisp garnish"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "name": "kosher salt and cracked pepper"
+        }
+      ],
+      "steps": [
+        "Wash, trim, and dry all greens and vegetables before assembly.",
+        "Prepare dressing and garnishes separately; hold cold until service.",
+        "Cut fruit or vegetables uniformly so each portion is consistent.",
+        "Assemble components close to service to preserve texture and color.",
+        "Taste for salt, acid, and sweetness; adjust dressing before final plating.",
+        "Portion into 24 even servings and garnish neatly."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Wednesday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Appetizer 1",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "Fried Calamari with Smoked Paprika Dip",
+      "yield": "24 portions",
+      "category": "Appetizer 2",
+      "ingredients": [
+        {
+          "amount": 4,
+          "unit": "kg",
+          "name": "seasonal vegetables"
+        },
+        {
+          "amount": 1.5,
+          "unit": "kg",
+          "name": "aromatic vegetables"
+        },
+        {
+          "amount": 750,
+          "unit": "ml",
+          "name": "house sauce or dipping sauce"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "name": "fresh herbs and garnish"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "name": "kosher salt and spice blend"
+        },
+        {
+          "amount": 250,
+          "unit": "g",
+          "name": "fresh herbs, citrus, or service garnish"
+        }
+      ],
+      "steps": [
+        "Prepare primary appetizer component and trim into 24 even portions.",
+        "Season components evenly and cook using the appropriate saute, roast, fry, or poach method.",
+        "Prepare sauce or dipping component and hold at safe temperature.",
+        "Assemble with garnish so each portion is consistent for service.",
+        "Taste one completed portion for seasoning and texture before pickup.",
+        "Hold hot or cold according to the dish and refresh garnish at service."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Wednesday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Appetizer 2",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "Roast Beef with Chimichurri",
+      "yield": "24 portions",
+      "category": "Elevated",
+      "ingredients": [
+        {
+          "amount": 12,
+          "unit": "kg",
+          "name": "beef"
+        },
+        {
+          "amount": 2,
+          "unit": "kg",
+          "name": "onions, diced"
+        },
+        {
+          "amount": 1.5,
+          "unit": "kg",
+          "name": "carrots and celery, diced"
+        },
+        {
+          "amount": 2,
+          "unit": "L",
+          "name": "stock or pan sauce base"
+        },
+        {
+          "amount": 750,
+          "unit": "ml",
+          "name": "wine, citrus, or finishing sauce"
+        },
+        {
+          "amount": 250,
+          "unit": "ml",
+          "name": "olive oil"
+        },
+        {
+          "amount": 180,
+          "unit": "g",
+          "name": "fresh herbs"
+        },
+        {
+          "amount": 80,
+          "unit": "g",
+          "name": "kosher salt and cracked pepper"
+        }
+      ],
+      "steps": [
+        "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+        "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+        "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+        "Cook protein to safe internal temperature and rest before slicing or holding.",
+        "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+        "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Wednesday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Elevated",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "Grilled Chicken Breast with Basil Pesto and Roasted Tomato",
+      "yield": "24 portions",
+      "category": "Alternative",
+      "ingredients": [
+        {
+          "amount": 12,
+          "unit": "kg",
+          "name": "chicken"
+        },
+        {
+          "amount": 2,
+          "unit": "kg",
+          "name": "onions, diced"
+        },
+        {
+          "amount": 1.5,
+          "unit": "kg",
+          "name": "carrots and celery, diced"
+        },
+        {
+          "amount": 2,
+          "unit": "L",
+          "name": "stock or pan sauce base"
+        },
+        {
+          "amount": 750,
+          "unit": "ml",
+          "name": "wine, citrus, or finishing sauce"
+        },
+        {
+          "amount": 250,
+          "unit": "ml",
+          "name": "olive oil"
+        },
+        {
+          "amount": 180,
+          "unit": "g",
+          "name": "fresh herbs"
+        },
+        {
+          "amount": 80,
+          "unit": "g",
+          "name": "kosher salt and cracked pepper"
+        }
+      ],
+      "steps": [
+        "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+        "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+        "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+        "Cook protein to safe internal temperature and rest before slicing or holding.",
+        "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+        "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Thursday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Alternative",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "Rice Pudding with Fresh Berries",
+      "yield": "24 portions",
+      "category": "Dessert",
+      "ingredients": [
+        {
+          "amount": 4,
+          "unit": "kg",
+          "name": "short grain rice"
+        },
+        {
+          "amount": 1.5,
+          "unit": "kg",
+          "name": "sugar"
+        },
+        {
+          "amount": 1.5,
+          "unit": "L",
+          "name": "cream or dairy base"
+        },
+        {
+          "amount": 750,
+          "unit": "g",
+          "name": "eggs or stabilizer"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "name": "butter"
+        },
+        {
+          "amount": 60,
+          "unit": "ml",
+          "name": "vanilla or citrus zest"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "name": "kosher salt"
+        }
+      ],
+      "steps": [
+        "Scale ingredients accurately and prepare pans, molds, or service vessels.",
+        "Mix base ingredients in the correct order until smooth and evenly incorporated.",
+        "Bake, chill, simmer, or set dessert according to the preparation style.",
+        "Cool safely and portion into 24 consistent servings.",
+        "Prepare garnish or sauce separately and hold until service.",
+        "Finish each portion neatly with garnish just before pickup."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Thursday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Dessert",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "Roasted Parsnips with Cinnamon Sugar",
+      "yield": "24 portions",
+      "category": "Veggie 2",
+      "ingredients": [
+        {
+          "amount": 7,
+          "unit": "kg",
+          "name": "parsnips"
+        },
+        {
+          "amount": 350,
+          "unit": "ml",
+          "name": "olive oil or melted butter"
+        },
+        {
+          "amount": 180,
+          "unit": "g",
+          "name": "garlic or shallots, minced"
+        },
+        {
+          "amount": 120,
+          "unit": "g",
+          "name": "fresh herbs"
+        },
+        {
+          "amount": 80,
+          "unit": "ml",
+          "name": "lemon juice or vinegar"
+        },
+        {
+          "amount": 60,
+          "unit": "g",
+          "name": "kosher salt and cracked pepper"
+        }
+      ],
+      "steps": [
+        "Wash, trim, and cut vegetables into uniform pieces for even cooking.",
+        "Blanch or par-cook vegetables if needed; shock and drain well for service hold.",
+        "Finish in saute pan, oven, or steamer with fat, aromatics, and seasoning.",
+        "Taste for doneness, salt, acid, and texture before transferring to hotel pans.",
+        "Hold hot without overcooking; refresh with herbs or lemon before service.",
+        "Portion evenly alongside the assigned entree."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Friday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Veggie 2",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "Cheesecake with Berry Compote",
+      "yield": "24 portions",
+      "category": "Dessert",
+      "ingredients": [
+        {
+          "amount": 4,
+          "unit": "kg",
+          "name": "cream cheese"
+        },
+        {
+          "amount": 1.5,
+          "unit": "kg",
+          "name": "sugar"
+        },
+        {
+          "amount": 1.5,
+          "unit": "L",
+          "name": "cream or dairy base"
+        },
+        {
+          "amount": 750,
+          "unit": "g",
+          "name": "eggs or stabilizer"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "name": "butter"
+        },
+        {
+          "amount": 60,
+          "unit": "ml",
+          "name": "vanilla or citrus zest"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "name": "kosher salt"
+        }
+      ],
+      "steps": [
+        "Scale ingredients accurately and prepare pans, molds, or service vessels.",
+        "Mix base ingredients in the correct order until smooth and evenly incorporated.",
+        "Bake, chill, simmer, or set dessert according to the preparation style.",
+        "Cool safely and portion into 24 consistent servings.",
+        "Prepare garnish or sauce separately and hold until service.",
+        "Finish each portion neatly with garnish just before pickup."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Saturday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Dessert",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "Prime Rib with Horseradish Yogurt Sauce",
+      "yield": "24 portions",
+      "category": "Elevated",
+      "ingredients": [
+        {
+          "amount": 12,
+          "unit": "kg",
+          "name": "beef"
+        },
+        {
+          "amount": 2,
+          "unit": "kg",
+          "name": "onions, diced"
+        },
+        {
+          "amount": 1.5,
+          "unit": "kg",
+          "name": "carrots and celery, diced"
+        },
+        {
+          "amount": 2,
+          "unit": "L",
+          "name": "stock or pan sauce base"
+        },
+        {
+          "amount": 750,
+          "unit": "ml",
+          "name": "wine, citrus, or finishing sauce"
+        },
+        {
+          "amount": 250,
+          "unit": "ml",
+          "name": "olive oil"
+        },
+        {
+          "amount": 180,
+          "unit": "g",
+          "name": "fresh herbs"
+        },
+        {
+          "amount": 80,
+          "unit": "g",
+          "name": "kosher salt and cracked pepper"
+        }
+      ],
+      "steps": [
+        "Trim and portion the protein for 24 servings; pat dry and season evenly.",
+        "Sear, roast, grill, or braise the protein according to the dish until proper color is developed.",
+        "Build the sauce with aromatics, stock, wine, citrus, or herbs and reduce to service consistency.",
+        "Cook protein to safe internal temperature and rest before slicing or holding.",
+        "Strain or finish sauce, adjust salt and acidity, and hold hot for service.",
+        "Plate or pan with sauce and garnish so portions are consistent and production-ready."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Sunday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Elevated",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "Apple Pie",
+      "yield": "24 portions",
+      "category": "Dessert",
+      "ingredients": [
+        {
+          "amount": 4,
+          "unit": "kg",
+          "name": "apples"
+        },
+        {
+          "amount": 1.5,
+          "unit": "kg",
+          "name": "sugar"
+        },
+        {
+          "amount": 1.5,
+          "unit": "L",
+          "name": "cream or dairy base"
+        },
+        {
+          "amount": 750,
+          "unit": "g",
+          "name": "eggs or stabilizer"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "name": "butter"
+        },
+        {
+          "amount": 60,
+          "unit": "ml",
+          "name": "vanilla or citrus zest"
+        },
+        {
+          "amount": 30,
+          "unit": "g",
+          "name": "kosher salt"
+        }
+      ],
+      "steps": [
+        "Scale ingredients accurately and prepare pans, molds, or service vessels.",
+        "Mix base ingredients in the correct order until smooth and evenly incorporated.",
+        "Bake, chill, simmer, or set dessert according to the preparation style.",
+        "Cool safely and portion into 24 consistent servings.",
+        "Prepare garnish or sauce separately and hold until service.",
+        "Finish each portion neatly with garnish just before pickup."
+      ],
+      "metadata": {
+        "week": "Week 1",
+        "day": "Sunday",
+        "importedFrom": "week1_complete_summer_recipes.corrected.json",
+        "menuSlot": "Dessert",
+        "season": "Summer"
+      }
+    },
+    {
+      "title": "SEARED CATFISH",
+      "category": "Comfort",
+      "yield": "4",
+      "ingredients": [
+        {
+          "amount": 2,
+          "unit": "each",
+          "name": "shallots"
+        },
+        {
+          "amount": 200,
+          "unit": "ml",
+          "name": "cream"
+        },
+        {
+          "amount": 80,
+          "unit": "g",
+          "name": "butter"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "lemon"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "name": "white wine"
+        }
+      ],
+      "steps": [
+        "Pelez et hachez grossièrement les échalotes. Disposez-les dans une casserole.",
+        "Pressez le citron et ajoutez le jus dans la casserole. Versez également le vin blanc. Faites chauffer à feu moyen afin que le liquide s'évapore.",
+        "Retirez la casserole du feu. Ajoutez le beurre et mélangez afin qu'il fonde. Délayez avec la crème liquide.",
+        "Placez la casserole sur le feu au bain-marie. Réchauffez la sauce quelques minutes. Nappez votre poisson avec ce beurre blanc maison."
+      ]
+    },
+    {
+      "title": "3 - Sisters Indigenous Soup",
+      "category": "Appetizer 1",
+      "yield": "10",
+      "ingredients": [
+        {
+          "amount": 2,
+          "unit": "Tbsp",
+          "name": "olive oil"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "medium yellow onion, peeled and diced"
+        },
+        {
+          "amount": 2,
+          "unit": "clove",
+          "name": "garlic, minced"
+        },
+        {
+          "amount": 1,
+          "unit": "lb",
+          "name": "red potatoes, diced (no need to peel)"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "chipotle powder"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "cumin"
+        },
+        {
+          "amount": 2,
+          "unit": "each",
+          "name": "bay leaves"
+        },
+        {
+          "amount": 32,
+          "unit": "oz",
+          "name": "chicken broth"
+        },
+        {
+          "amount": 1,
+          "unit": "can",
+          "name": "28-ounce diced fire roasted tomatoes"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "salt and fresh cracked black pepper, to taste"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "jalapeño pepper, minced (leave out for less heat)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "zucchini, diced (do not peel)"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "summer squash, diced (do not peel)"
+        },
+        {
+          "amount": 3,
+          "unit": "each",
+          "name": "ears corn, kernels removed"
+        },
+        {
+          "amount": 2,
+          "unit": "cup",
+          "name": "cooked black-eyed peas"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "fresh parsley, chopped, for garnish"
+        },
+        {
+          "amount": 1,
+          "unit": "each",
+          "name": "grated Parmesan or Asiago cheese, optional"
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large soup pot or Dutch oven and add the diced onion. Saute for five minutes, stirring often, until the onion starts to soften. Add the garlic and cook a minute or two longer.",
+        "Add the potatoes, chipotle powder, cumin, and bay leaves to the pot and cook a couple of more minutes, stirring almost constantly.",
+        "Add the broth and tomatoes to the pot and bring to a simmer. Add the jalapeños, if using, at this point too. Bring to a boil.",
+        "Lower the heat and simmer just until the potatoes are just tender, about 8-12 minutes. You can cover the pot if you like, but make sure you're cooking at a simmer, not a full boil.",
+        "Add the zucchini, summer squash, corn and beans, and bring the soup back to a bubble. Season with salt and black pepper to taste. Add more chipotle or cumin at this point if you like. Cover and let the soup simmer for just a few minutes. You just want to take the raw edge off your veggies. When they taste just barely tender, the soup is finished. Add water if your soup seems too thick.",
+        "Serve the soup topped with fresh parsley, and a sprinkle of cheese, if you like."
+      ]
+    },
+    {
+      "title": "COCONUT SHRIMP WITH LIME DIP",
+      "yield": "24 servings",
+      "category": "Appetizer 1",
+      "ingredients": [
+        {
+          "name": "fresh or frozen shrimp (peeled and deveined)",
+          "amount": 1,
+          "unit": "lb"
+        },
+        {
+          "name": "salt",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "vegetable oil",
+          "amount": 3,
+          "unit": "Tbsp"
+        },
+        {
+          "name": "flour",
+          "amount": 0.5,
+          "unit": "C"
+        },
+        {
+          "name": "cornstarch",
+          "amount": 0.5,
+          "unit": "C"
+        },
+        {
+          "name": "2 eggs",
+          "amount": 2,
+          "unit": "eggs"
+        },
+        {
+          "name": "coconut flakes",
+          "amount": 1,
+          "unit": "C"
+        },
+        {
+          "name": "panko bread crumbs",
+          "amount": 0.75,
+          "unit": "C"
+        },
+        {
+          "name": "honey",
+          "amount": 2,
+          "unit": "Tbsp"
+        },
+        {
+          "name": "(zest and juice)",
+          "amount": 1,
+          "unit": "lime"
+        },
+        {
+          "name": "ginger (grated)",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "water (if needed to thin out the dip)",
+          "amount": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Prehat a non-stick skillet with 3-4 tbsp vegetable oil in it over medium-high heat.",
+        "Prep your shrimp by patting them dry with a paper towel.",
+        "Season them with salt.",
+        "Set up three shallow bowls or pie pans.",
+        "In the first, mix the cornstarch and flour together.",
+        "In the second, put the two lightly beaten eggs.",
+        "In the third, mix together the panko and coconut.",
+        "Working one shrimp at a time, dip them first in the flour mixture, then the eggs, then the panko and coconut, making sure each is coated thouroughly.",
+        "Then place in the pan.",
+        "Keep dredging the shrimp until there's no room left in the pan.",
+        "Cook for two minutes per side, and place on a wire cooling rack over a baking sheet.",
+        "Continue with the remaining shrimp.",
+        "You may have to add extra oil to the pan in between batches.",
+        "Serve with honey lime dipping sauce.",
+        "Add all the ingredients to a small bowl and whisk to combine. If it's too thick add a ½ tsp of water."
+      ],
+      "metadata": {
+        "source": "https://thegourmetbonvivant.com/fried-coconut-shrimp-with-honey-lime-sauce/",
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 2",
+            "day": "Monday",
+            "category": "Appetizer 1"
+          }
+        ],
+        "rebuiltFrom": "week2-recipes-rebuilt.json",
+        "sourceUrl": "https://thegourmetbonvivant.com/fried-coconut-shrimp-with-honey-lime-sauce/",
+        "extractionMethod": "source-html-extracted"
+      }
+    },
+    {
+      "title": "ROAST CHICKEN WITH PAPRIKA",
+      "yield": "24 servings",
+      "category": "Alternative",
+      "ingredients": [
+        {
+          "name": "(4- to 5-pound) whole roasting chicken",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "smoked paprika",
+          "amount": 2,
+          "unit": "Tbsp"
+        },
+        {
+          "name": "melted unsalted butter",
+          "amount": 2,
+          "unit": "Tbsp"
+        },
+        {
+          "name": "garlic powder",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "salt",
+          "amount": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "pepper",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "honey",
+          "amount": 4,
+          "unit": "Tbsp"
+        },
+        {
+          "name": "lemon juice",
+          "amount": 2,
+          "unit": "Tbsp"
+        }
+      ],
+      "steps": [
+        "Preheat the oven to 325 F.",
+        "Pat the chicken dry thoroughly.",
+        "Mix smoked paprika, melted butter, garlic powder, salt, and pepper; spread the mixture over the entire chicken.",
+        "Place the chicken in a shallow baking pan.",
+        "Warm honey and lemon juice in a small pot until the honey dissolves, then set aside.",
+        "Roast for 1 hour to 1 hour 15 minutes, basting with the honey-lemon glaze after 35 minutes and every 15 minutes after that.",
+        "Cook until juices run clear and the breast and thigh register about 165 F."
+      ],
+      "metadata": {
+        "source": "https://www.simplyrecipes.com/recipes/smoked_paprika_roasted_chicken/",
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 2",
+            "day": "Monday",
+            "category": "Alternative"
+          }
+        ],
+        "rebuiltFrom": "week2-recipes-rebuilt.json",
+        "sourceUrl": "https://www.simplyrecipes.com/recipes/smoked_paprika_roasted_chicken/",
+        "extractionMethod": "browser/manual-recovered"
+      }
+    },
+    {
+      "title": "PEACH FRIED PIES",
+      "yield": "24 servings",
+      "category": "Dessert",
+      "ingredients": [
+        {
+          "name": "all-purpose flour",
+          "amount": 2,
+          "unit": "cup"
+        },
+        {
+          "name": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "cold unsalted butter",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "butter-flavored shortening",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "cold water",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "frozen sliced peaches",
+          "amount": 16,
+          "unit": "oz"
+        },
+        {
+          "name": "granulated sugar",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "light brown sugar",
+          "amount": 1,
+          "unit": "Tbsp"
+        },
+        {
+          "name": "unsalted butter",
+          "amount": 1,
+          "unit": "Tbsp"
+        },
+        {
+          "name": "fresh lemon juice",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "name": "cornstarch ( (if needed))",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "powdered sugar",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "milk",
+          "amount": 2,
+          "unit": "Tbsp"
+        },
+        {
+          "name": "vanilla extract",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "salt, pinch",
+          "amount": 0,
+          "unit": ""
+        }
+      ],
+      "steps": [
+        "In a large bowl, sift together flour and salt.",
+        "Cut in butter and shortening until mixture resembles large crumbs.",
+        "Add water and stir until a dough begins to form.",
+        "Turn dough out onto a work surface and begin kneading until you have a soft, uniform ball of dough. (dough will be very crumbly at first) Cut dough into 8 equal size pieces and roll into a ball.",
+        "Place dough balls on a baking sheet and press them into a disc.",
+        "Cover and refrigerate until chilled, about 30 minutes or until ready to use.",
+        "In a large saucepan, add peaches, granulated sugar, and brown sugar.",
+        "Toss to coat peaches in sugar.",
+        "Bring to a simmer over medium heat until peaches are tender enough to mash.",
+        "Mash the peaches (I like to mash some and then cut the rest into small chunks) Allow the peaches to continue simmering until thickened and the juices have dissolved.",
+        "Stir in butter and lemon juice.",
+        "Stir in cornstarch if needed.",
+        "Remove from heat and allow to cool completely.",
+        "In a large bowl, stir together powdered sugar and milk until silky. (may need to add more milk) Stir in a pinch of salt and vanilla extract. Set aside until ready to use.",
+        "To assemble the pies, roll a dough ball out to about 5-6 inches wide.",
+        "Place 2 tablespoons of peach filling in the center.",
+        "Fold the dough over the peach filling and press the edges of the dough together firmly.",
+        "Use a pizza cutter to trim the edges to make them neater.",
+        "Crimp the edges with a fork to further seal the pie.",
+        "Repeat these steps with the rest of the pies.",
+        "Heat oil in a deep-fryer or deep skillet to 350 F.",
+        "Once the oil is hot, carefully place 2-3 pies in the oil and fry until lightly golden, about 3-4 minutes. (flip midway if needed) Place fried pies on a cooling rack.",
+        "When the pies are done frying, brush one side with the glaze.",
+        "Then, once the glaze has hardened, brush them once again.",
+        "Serve once the final glaze has hardened."
+      ],
+      "metadata": {
+        "source": "https://divascancook.com/fried-peach-pies-recipe/",
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 2",
+            "day": "Tuesday",
+            "category": "Dessert"
+          }
+        ],
+        "rebuiltFrom": "week2-recipes-rebuilt.json",
+        "sourceUrl": "https://divascancook.com/fried-peach-pies-recipe/",
+        "extractionMethod": "source-html-extracted"
+      }
+    },
+    {
+      "title": "VEAL SHANK WITH NATURAL JUS",
+      "yield": "24 servings",
+      "category": "Elevated",
+      "ingredients": [
+        {
+          "name": "veal shanks ((about 1 pound per shank), trimmed)",
+          "amount": 3,
+          "unit": "whole"
+        },
+        {
+          "name": "Sea salt and freshly ground black pepper",
+          "amount": 0,
+          "unit": ""
+        },
+        {
+          "name": "All purpose flour (, for dredging)",
+          "amount": 0,
+          "unit": ""
+        },
+        {
+          "name": "vegetable oil",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "butter",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "(, diced)",
+          "amount": 1,
+          "unit": "onion"
+        },
+        {
+          "name": "(, diced)",
+          "amount": 2,
+          "unit": "carrots"
+        },
+        {
+          "name": "celery (, diced)",
+          "amount": 3,
+          "unit": "stalks"
+        },
+        {
+          "name": "garlic (, peeled and minced)",
+          "amount": 4,
+          "unit": "clove"
+        },
+        {
+          "name": "veal just",
+          "amount": 3,
+          "unit": "cubes"
+        },
+        {
+          "name": "dry white wine",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "beef stock",
+          "amount": 4,
+          "unit": "cup"
+        },
+        {
+          "name": "cornstarch",
+          "amount": 1,
+          "unit": "Tbsp"
+        },
+        {
+          "name": "fresh flat-leaf Italian parsley (, chopped)",
+          "amount": 3,
+          "unit": "Tbsp"
+        },
+        {
+          "name": "lemon zest",
+          "amount": 1,
+          "unit": "Tbsp"
+        }
+      ],
+      "steps": [
+        "Pat shanks dry with paper towel to remove moisture; using twine, circle circumference of each shank and tie tightly with twine",
+        "Season each shank with salt and freshly ground pepper; dredge each in flour, shaking off excess",
+        "In a large heavy pot, heat oil and butter until smoking; add tied veal shanks to hot pan",
+        "Brown all sides (3 minutes per side); remove browned shanks and reserve",
+        "Preheat oven to 300F",
+        "In the same pot, add onion, carrot and celery; season with salt to draw out moisture from vegetables",
+        "Saute until translucent; about 8 minutes",
+        "Add veal jus cubes until melted; combine",
+        "Add white wine and reduce liquid by half (5-8 minutes); add beef stock",
+        "Return shanks and juices to pan with stock; bring to boil",
+        "Place shanks, uncovered in oven for 3 hours; cooking liquid should be about 3/4 up each shank (add more stock, if necessary, or cover with foil or lid",
+        "Carefully remove cooked shanks; place in decorative serving platter; cut off and discard twine",
+        "Set pot with juices and sauce on stove; bring to a boil and reduce by 1/3 or ½",
+        "Sprinkle 1 tablespoon corn starch into sauce to thicken; stir constantly",
+        "Season with salt and pepper; pour over shanks and place remainder in pitcher alongside",
+        "Garnish with chopped parsley and lemon zest",
+        "Traditionally served over risotto; mashed potatoes also make a wonderful accompaniment"
+      ],
+      "metadata": {
+        "source": "https://www.acanadianfoodie.com/2014/10/12/osso-buco-with-veal-jus/",
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 2",
+            "day": "Thursday",
+            "category": "Elevated"
+          }
+        ],
+        "rebuiltFrom": "week2-recipes-rebuilt.json",
+        "sourceUrl": "https://www.acanadianfoodie.com/2014/10/12/osso-buco-with-veal-jus/",
+        "extractionMethod": "source-html-extracted"
+      }
+    },
+    {
+      "title": "SEARED SCALLOPS WITH SQUASH PUREE",
+      "yield": "24 servings",
+      "category": "Alternative",
+      "ingredients": [
+        {
+          "name": "squashes (, halved)",
+          "amount": 2,
+          "unit": "acorn"
+        },
+        {
+          "name": "potato",
+          "amount": 1,
+          "unit": "sweet"
+        },
+        {
+          "name": "Simply Nature 100% Pure Avocado Oil",
+          "amount": 0,
+          "unit": ""
+        },
+        {
+          "name": "Kosher salt",
+          "amount": 0,
+          "unit": ""
+        },
+        {
+          "name": "unsalted butter (cubed)",
+          "amount": 2,
+          "unit": "Tbsp"
+        },
+        {
+          "name": "cloves (minced)",
+          "amount": 2,
+          "unit": "garlic"
+        },
+        {
+          "name": "grated Emporium Selection Premium Aged Cheddar",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "walnuts (chopped)",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "unsalted butter",
+          "amount": 2,
+          "unit": "Tbsp"
+        },
+        {
+          "name": "Juice from 1/4 lemon",
+          "amount": 0,
+          "unit": ""
+        },
+        {
+          "name": "(trimmed and minced)",
+          "amount": 2,
+          "unit": "chives"
+        },
+        {
+          "name": "Kosher salt",
+          "amount": 0,
+          "unit": ""
+        },
+        {
+          "name": "Pinch of crushed red pepper",
+          "amount": 0,
+          "unit": ""
+        },
+        {
+          "name": "Simply Nature 100% Pure Avocado Oil",
+          "amount": 3,
+          "unit": "Tbsp"
+        },
+        {
+          "name": "frozen Specially Selected Jumbo Scallops (thawed)",
+          "amount": 6,
+          "unit": "oz"
+        }
+      ],
+      "steps": [
+        "Preheat your oven to 400 degrees F.",
+        "Place acorn squashes on your baking sheet.",
+        "Drizzle with a bit of oil and a few pinches of salt.",
+        "Place face side down.",
+        "Transfer to the oven to roast for 30 to 40 minutes, until tender.",
+        "Remove the squash from the oven and allow to cool for about 10 to 15 minutes, until they’re cool enough to handle.",
+        "Scoop the squash and add it to a food processor.",
+        "Remove the skin from the sweet potato and add the sweet potato to the food processor, along with the butter, garlic, cheddar and a few pinches of salt.",
+        "Process until mostly smooth (some texture is good!).",
+        "In a small pan, set over medium heat, add the walnuts and butter.",
+        "Toast them until they’re fragrant and slightly darker in color, about 2 minutes, until the butter is fragrant and turning a brown color.",
+        "Mix in the lemon juice, chives, a pinch of salt and pepper.",
+        "In a skillet, set over medium high heat, add the avocado oil.",
+        "When the oil is hot and glistening and glides along the pan smoothly, you know it’s hot enough.",
+        "Add the scallops and don’t move them until they begin to lift off the pan, about 2 minutes.",
+        "Flip the scallops and cook on their opposite side for 1 minute."
+      ],
+      "metadata": {
+        "source": "https://www.acozykitchen.com/seared-scallops-acorn-squash",
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 2",
+            "day": "Thursday",
+            "category": "Alternative"
+          }
+        ],
+        "rebuiltFrom": "week2-recipes-rebuilt.json",
+        "sourceUrl": "https://www.acozykitchen.com/seared-scallops-acorn-squash",
+        "extractionMethod": "source-html-extracted"
+      }
+    },
+    {
+      "title": "TURKEY ROULADE WITH SPINACH&SUNDRIED TOMATO                     (GF/DF)",
+      "yield": "24 servings",
+      "category": "Elevated",
+      "ingredients": [
+        {
+          "name": "turkey breast, butterflied",
+          "amount": 1,
+          "unit": "boneless"
+        },
+        {
+          "name": "salt and freshly ground black pepper",
+          "amount": 0,
+          "unit": ""
+        },
+        {
+          "name": "olive oil",
+          "amount": 2,
+          "unit": "Tbsp"
+        },
+        {
+          "name": "garlic, minced",
+          "amount": 2,
+          "unit": "clove"
+        },
+        {
+          "name": "baby spinach",
+          "amount": 5,
+          "unit": "oz"
+        },
+        {
+          "name": "sun-dried tomatoes, chopped",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "feta cheese, crumbled",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "kitchen twine",
+          "amount": 0,
+          "unit": ""
+        }
+      ],
+      "steps": [
+        "Butterfly the turkey breast and pound it to an even thickness.",
+        "Season the turkey with salt and pepper.",
+        "Warm olive oil in a skillet and cook garlic briefly, then wilt the spinach.",
+        "Spread spinach, chopped sun-dried tomatoes, and feta over the turkey.",
+        "Roll the turkey tightly around the filling and tie with kitchen twine.",
+        "Roast until the roulade reaches 165 F at the center.",
+        "Rest the roulade before slicing."
+      ],
+      "metadata": {
+        "source": "https://riverheadlocal.com/2017/04/29/in-the-kitchen-sharpen-your-knife-skills-for-this-spinach-feta-and-sun-dried-tomato-turkey-roulade/",
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 2",
+            "day": "Friday",
+            "category": "Elevated"
+          }
+        ],
+        "rebuiltFrom": "week2-recipes-rebuilt.json",
+        "sourceUrl": "https://riverheadlocal.com/2017/04/29/in-the-kitchen-sharpen-your-knife-skills-for-this-spinach-feta-and-sun-dried-tomato-turkey-roulade/",
+        "extractionMethod": "browser/manual-recovered"
+      }
+    },
+    {
+      "title": "RED WINE BRAISED BEEF BRISKET",
+      "yield": "24 servings",
+      "category": "Elevated",
+      "ingredients": [
+        {
+          "name": "dried thyme",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "ground black pepper",
+          "amount": 0.25,
+          "unit": "tsp"
+        },
+        {
+          "name": "(3 pound) beef brisket",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "olive oil",
+          "amount": 1,
+          "unit": "Tbsp"
+        },
+        {
+          "name": "onion, sliced",
+          "amount": 1,
+          "unit": "red"
+        },
+        {
+          "name": "(14.5 ounce) can beef broth",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "(8 ounce) can tomato sauce",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "red wine",
+          "amount": 0.5,
+          "unit": "cup"
+        }
+      ],
+      "steps": [
+        "Preheat oven to 350 F.",
+        "Mix thyme, salt, and black pepper, then rub the seasoning over both sides of the brisket.",
+        "Heat olive oil in a roasting pan over medium-high heat and brown brisket 3 to 4 minutes per side.",
+        "Remove brisket and cook sliced red onion in the hot pan about 2 minutes until slightly softened.",
+        "Stir in beef broth, tomato sauce, and red wine.",
+        "Return brisket to the roasting pan and cover with foil.",
+        "Roast 1 hour, baste with pan juices, cover again, and continue roasting 1 1/2 to 2 hours until very tender and the pan sauce thickens."
+      ],
+      "metadata": {
+        "source": "https://www.allrecipes.com/recipe/221041/wine-braised-beef-brisket/",
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 2",
+            "day": "Saturday",
+            "category": "Elevated"
+          }
+        ],
+        "rebuiltFrom": "week2-recipes-rebuilt.json",
+        "sourceUrl": "https://www.allrecipes.com/recipe/221041/wine-braised-beef-brisket/",
+        "extractionMethod": "browser/manual-recovered"
+      }
+    },
+    {
+      "title": "HERB ROASTED POTATO WEDGES",
+      "yield": "24 servings",
+      "category": "Starch",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 2",
+            "day": "Saturday",
+            "category": "Starch"
+          }
+        ]
+      }
+    },
+    {
+      "title": "SHRIMP CURRY",
+      "yield": "24 servings",
+      "category": "Elevated",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Monday",
+            "category": "Elevated"
+          }
+        ]
+      }
+    },
+    {
+      "title": "SEARED SALMON FILET WITH PINEAPPLE SALSA",
+      "yield": "24 servings",
+      "category": "Alternative",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Monday",
+            "category": "Alternative"
+          }
+        ]
+      }
+    },
+    {
+      "title": "SPINACH STRAWBERRY SALAD WITH ALMOND & GOAT CHEESE HONEY MUSTARD DRESSING",
+      "yield": "24 servings",
+      "category": "Appetizer 2",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Tuesday",
+            "category": "Appetizer 2"
+          }
+        ]
+      }
+    },
+    {
+      "title": "INDIAN PUDDING (MOLASSES/CORNMEAL)",
+      "yield": "24 servings",
+      "category": "Dessert",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Tuesday",
+            "category": "Dessert"
+          }
+        ]
+      }
+    },
+    {
+      "title": "GRILLED TILAPIA",
+      "yield": "24 servings",
+      "category": "Elevated",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Wednesday",
+            "category": "Elevated"
+          }
+        ]
+      }
+    },
+    {
+      "title": "TURKEY CUTLET WITH ARUGULA",
+      "yield": "24 servings",
+      "category": "Comfort",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Wednesday",
+            "category": "Comfort"
+          }
+        ]
+      }
+    },
+    {
+      "title": "GRILLED EGGPLANT CHUNKS",
+      "yield": "24 servings",
+      "category": "Veggie 1",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Wednesday",
+            "category": "Veggie 1"
+          }
+        ]
+      }
+    },
+    {
+      "title": "TOMATO CHEDDAR AND BACON PIE",
+      "yield": "24 servings",
+      "category": "Alternative",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Thursday",
+            "category": "Alternative"
+          }
+        ]
+      }
+    },
+    {
+      "title": "BEEF STROGANOFF",
+      "yield": "24 servings",
+      "category": "Elevated",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Friday",
+            "category": "Elevated"
+          }
+        ]
+      }
+    },
+    {
+      "title": "CLASSIC BUTTER TARTS",
+      "yield": "24 servings",
+      "category": "Dessert",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Friday",
+            "category": "Dessert"
+          }
+        ]
+      }
+    },
+    {
+      "title": "DOVER SOLE WITH HERB OIL",
+      "yield": "24 servings",
+      "category": "Elevated",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Saturday",
+            "category": "Elevated"
+          }
+        ]
+      }
+    },
+    {
+      "title": "GRILLED LEMON GARLIC CHICKEN BREAST",
+      "yield": "24 servings",
+      "category": "Comfort",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Saturday",
+            "category": "Comfort"
+          }
+        ]
+      }
+    },
+    {
+      "title": "GRILLED VEGETABLE SKEWER",
+      "yield": "24 servings",
+      "category": "Alternative",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Saturday",
+            "category": "Alternative"
+          }
+        ]
+      }
+    },
+    {
+      "title": "FARO WITH FRESH HERBS",
+      "yield": "24 servings",
+      "category": "Starch",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Saturday",
+            "category": "Starch"
+          }
+        ]
+      }
+    },
+    {
+      "title": "LOADED BAKED POTATO",
+      "yield": "24 servings",
+      "category": "Starch",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 3",
+            "day": "Sunday",
+            "category": "Starch"
+          }
+        ]
+      }
+    },
+    {
+      "title": "SHRIMP CEVICHE WITH CROSTINI AND SALSA",
+      "yield": "24 servings",
+      "category": "Appetizer 1",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Monday",
+            "category": "Appetizer 1"
+          }
+        ]
+      }
+    },
+    {
+      "title": "CORN SPOONBREAD",
+      "yield": "24 servings",
+      "category": "Alternative",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Monday",
+            "category": "Alternative"
+          }
+        ]
+      }
+    },
+    {
+      "title": "CLASSIC BEEF CHILI",
+      "yield": "24 servings",
+      "category": "Comfort",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Tuesday",
+            "category": "Comfort"
+          }
+        ]
+      }
+    },
+    {
+      "title": "VEGETABLE ENCHILADAS",
+      "yield": "24 servings",
+      "category": "Alternative",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Tuesday",
+            "category": "Alternative"
+          }
+        ]
+      }
+    },
+    {
+      "title": "BLUEBERRY CRUMBLE CHEESECAKE",
+      "yield": "24 servings",
+      "category": "Dessert",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Tuesday",
+            "category": "Dessert"
+          }
+        ]
+      }
+    },
+    {
+      "title": "FARFELLE PASTA WITH CHICKEN AND SAUSAGE",
+      "yield": "24 servings",
+      "category": "Comfort",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Wednesday",
+            "category": "Comfort"
+          }
+        ]
+      }
+    },
+    {
+      "title": "BAKED CAULIFLOWER STEAK WITH CAJUN CORN SALSA",
+      "yield": "24 servings",
+      "category": "Alternative",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Thursday",
+            "category": "Alternative"
+          }
+        ]
+      }
+    },
+    {
+      "title": "PORK SCHNITZEL WITH CINNAMON APPLE SAUCE",
+      "yield": "24 servings",
+      "category": "Elevated",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Friday",
+            "category": "Elevated"
+          }
+        ]
+      }
+    },
+    {
+      "title": "SPAETZLE",
+      "yield": "24 servings",
+      "category": "Starch",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Friday",
+            "category": "Starch"
+          }
+        ]
+      }
+    },
+    {
+      "title": "PAVLOVA WITH FRESH BERRIES",
+      "yield": "24 servings",
+      "category": "Dessert",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Friday",
+            "category": "Dessert"
+          }
+        ]
+      }
+    },
+    {
+      "title": "ROASTED VEGETABLE AND FALAFEL ON BREAD",
+      "yield": "24 servings",
+      "category": "Alternative",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Saturday",
+            "category": "Alternative"
+          }
+        ]
+      }
+    },
+    {
+      "title": "SPAGHETTI WITH BOLOGNESE",
+      "yield": "24 servings",
+      "category": "Comfort",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Sunday",
+            "category": "Comfort"
+          }
+        ]
+      }
+    },
+    {
+      "title": "SAUTEED SPINACH WITH GARROT/MUSHROOM/ONION",
+      "yield": "24 servings",
+      "category": "Veggie 1",
+      "ingredients": [
+        {
+          "name": "Recipe details pending",
+          "amount": 1,
+          "unit": "each"
+        }
+      ],
+      "steps": [
+        "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      ],
+      "notes": [
+        "Placeholder only. Ingredients, quantities, and method still need chef review."
+      ],
+      "tags": [
+        "placeholder",
+        "needs-recipe"
+      ],
+      "metadata": {
+        "source": "menu-link-placeholder",
+        "createdForMenuLinkAudit": true,
+        "mealTypes": [
+          "dinner"
+        ],
+        "assignments": [
+          {
+            "mealType": "dinner",
+            "week": "Week 4",
+            "day": "Sunday",
+            "category": "Veggie 1"
+          }
+        ]
+      }
+    },
+    {
+      "title": "BRAISED SHORT RIBS WITH RED WINE SAUCE",
+      "category": "Elevated",
+      "yield": "5",
+      "ingredients": [
+        {
+          "amount": 5,
+          "unit": "",
+          "name": "beef short ribs (, 300-400g/10-14oz each (Note 1))"
+        },
+        {
+          "amount": 1.5,
+          "unit": "tsp",
+          "name": "each salt and pepper"
+        },
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "name": "olive oil"
+        },
+        {
+          "amount": 3,
+          "unit": "",
+          "name": "garlic cloves (, crushed)"
+        },
+        {
+          "amount": 1,
+          "unit": "",
+          "name": "large onion (, chopped (brown, yellow or white))"
+        },
+        {
+          "amount": 2,
+          "unit": "",
+          "name": "celery ribs (, chopped)"
+        },
+        {
+          "amount": 2,
+          "unit": "",
+          "name": "carrots (, chopped)"
+        },
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "name": "tomato paste"
+        },
+        {
+          "amount": 2,
+          "unit": "cups",
+          "name": "(500ml) dry red wine ((Note 2))"
+        },
+        {
+          "amount": 2,
+          "unit": "cups",
+          "name": "(500ml) beef stock/broth, low sodium"
+        },
+        {
+          "amount": 2,
+          "unit": "",
+          "name": "sprigs thyme ((optional))"
+        },
+        {
+          "amount": 2,
+          "unit": "",
+          "name": "bay leaves"
+        }
+      ],
+      "steps": [
+        "Preheat oven to 160°C/325°F.",
+        "Sprinkle beef all over with salt and pepper.",
+        "Heat oil in a large ovenproof pot over high heat. Add half the ribs and brown aggressively all over (~5 - 7 min in total). Remove and repeat with remaining ribs, then remove.",
+        "Turn heat down to medium. Add onion and garlic into the same pot and cook for 2 minutes.",
+        "Add carrot and celery, cook for 5 minutes until carrot is softened and sweet.",
+        "Add tomato paste and cook for 1 minute.",
+        "Add wine, broth, thyme and bay leaves. Stir until tomato paste is dissolved.",
+        "Return beef into liquid, arranging them so they are submerged (Note 3).",
+        "Cover with lid and transfer to oven for 3 hours, or until the meat can easily be pried apart with forks. (Note 4 Other cook methods)",
+        "Remove beef carefully, keeping the meat on the bone. (Note 4) Cover to keep warm.",
+        "Strain all liquid in the pot, pressing juices out of the onion, carrot etc. (Optional - can skip if you don&#039;t mind chunky sauce) Return sauce into pot, bring to simmer and stir. Adjust as necessary - simmer to reduce/thicken, add water to thin, season with salt and pepper if needed.",
+        "Place beef on serving plate, spoon over sauce. Serve!"
+      ]
+    },
+    {
+      "title": "Not Scheduled",
+      "yield": "",
+      "category": "Comfort",
+      "ingredients": [
+        {
+          "amount": 0,
+          "unit": "",
+          "name": "0 Not Scheduled"
+        }
+      ],
+      "steps": [
+        "Not Scheduled"
+      ]
+    }
+  ]
+}
