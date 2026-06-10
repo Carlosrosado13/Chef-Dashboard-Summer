@@ -866,6 +866,6 @@ Core Lunch validation: **PASS**
 
 ## DEPLOYMENT STATUS
 
-- Commit completed: Pending
-- Push completed: Pending
-- Live verification completed: Pending
+- Commit completed: Yes (`7dbfed8`, production Lunch menu update)
+- Push completed: Yes (`main` pushed to `origin`)
+- Live verification completed: Yes (Summer Dashboard and production menu JSON returned HTTP 200; updated Lunch assignments confirmed)
