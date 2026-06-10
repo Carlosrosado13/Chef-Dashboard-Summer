@@ -6,6 +6,7 @@ import { findRecipeByTitle, normalizeRecipeTitle } from "../js/loadRecipes.js";
 import { validateRecipe } from "../worker/src/validateRecipe.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const writeReport = !process.argv.includes("--no-report");
 const readJson = async (file) =>
   JSON.parse((await fs.readFile(path.join(root, file), "utf8")).replace(/^\uFEFF/, ""));
 const readHeadJson = (file) =>
@@ -184,10 +185,12 @@ const lines = [
   "",
 ];
 
-await fs.writeFile(
-  path.join(root, "tuesday-dessert-update-report.md"),
-  lines.join("\n"),
-  "utf8",
-);
+if (writeReport) {
+  await fs.writeFile(
+    path.join(root, "tuesday-dessert-update-report.md"),
+    lines.join("\n"),
+    "utf8",
+  );
+}
 
 console.log(JSON.stringify(validation, null, 2));

@@ -11,6 +11,7 @@ const readJson = async (file) =>
 
 const menu = await readJson(menuPath);
 const recipes = await readJson(recipesPath);
+const recipeCountBefore = recipes.length;
 
 const assignments = {
   "Week 1": "CHOCOLATE MOUSSE WITH SPONGE TOFFEE",
@@ -34,7 +35,7 @@ mousse.category = "Dessert";
 mousse.metadata = {
   ...(mousse.metadata || {}),
   dinnerAssignments: assignmentFor("Week 1"),
-  tuesdayDessertSource: "summer-menu-master-final.xlsx",
+  tuesdayDessertSource: "Dinner Tuesday Desserts.txt",
 };
 
 const indianPudding = findRecipeByTitle(recipes, assignments["Week 3"]);
@@ -44,7 +45,7 @@ indianPudding.category = "Dessert";
 indianPudding.metadata = {
   ...(indianPudding.metadata || {}),
   dinnerAssignments: assignmentFor("Week 3"),
-  tuesdayDessertSource: "summer-menu-master-final.xlsx",
+  tuesdayDessertSource: "Dinner Tuesday Desserts.txt",
 };
 
 const peachFriedPies = {
@@ -77,8 +78,8 @@ const peachFriedPies = {
   ],
   tags: ["dairy-free"],
   metadata: {
-    sourceWorkbookCell: "Menu Master!E126",
-    tuesdayDessertSource: "summer-menu-master-final.xlsx",
+    sourceFile: "Dinner Tuesday Desserts.txt",
+    tuesdayDessertSource: "Dinner Tuesday Desserts.txt",
     dinnerAssignments: assignmentFor("Week 2"),
   },
 };
@@ -113,8 +114,8 @@ const blueberryCrumbleCheesecake = {
     "Remove the foil, run a thin knife around the inside edge, and refrigerate for at least 6 hours or overnight before removing the springform collar and slicing.",
   ],
   metadata: {
-    sourceWorkbookCell: "Menu Master!E251",
-    tuesdayDessertSource: "summer-menu-master-final.xlsx",
+    sourceFile: "Dinner Tuesday Desserts.txt",
+    tuesdayDessertSource: "Dinner Tuesday Desserts.txt",
     dinnerAssignments: assignmentFor("Week 4"),
   },
 };
@@ -148,7 +149,7 @@ console.log(
     {
       updatedAssignments: assignments,
       recipesVerifiedOrUpdated: targetRecipes.length,
-      recipesAdded: 2,
+      recipesAdded: recipes.length - recipeCountBefore,
     },
     null,
     2,

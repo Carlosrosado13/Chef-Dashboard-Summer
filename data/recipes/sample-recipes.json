@@ -764,7 +764,7 @@
         }
       ],
       "deployedAt": "2026-06-06T18:28:23.793Z",
-      "tuesdayDessertSource": "summer-menu-master-final.xlsx"
+      "tuesdayDessertSource": "Dinner Tuesday Desserts.txt"
     }
   },
   {
@@ -26133,7 +26133,7 @@
         }
       ],
       "deployedAt": "2026-06-06T18:28:23.809Z",
-      "tuesdayDessertSource": "summer-menu-master-final.xlsx"
+      "tuesdayDessertSource": "Dinner Tuesday Desserts.txt"
     }
   },
   {
@@ -27187,8 +27187,8 @@
       "dairy-free"
     ],
     "metadata": {
-      "sourceWorkbookCell": "Menu Master!E126",
-      "tuesdayDessertSource": "summer-menu-master-final.xlsx",
+      "sourceFile": "Dinner Tuesday Desserts.txt",
+      "tuesdayDessertSource": "Dinner Tuesday Desserts.txt",
       "dinnerAssignments": [
         {
           "week": "Week 2",
@@ -27284,8 +27284,8 @@
       "Remove the foil, run a thin knife around the inside edge, and refrigerate for at least 6 hours or overnight before removing the springform collar and slicing."
     ],
     "metadata": {
-      "sourceWorkbookCell": "Menu Master!E251",
-      "tuesdayDessertSource": "summer-menu-master-final.xlsx",
+      "sourceFile": "Dinner Tuesday Desserts.txt",
+      "tuesdayDessertSource": "Dinner Tuesday Desserts.txt",
       "dinnerAssignments": [
         {
           "week": "Week 4",
