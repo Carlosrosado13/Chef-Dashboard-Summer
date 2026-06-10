@@ -337,7 +337,7 @@
             "Dessert": "MANGO PUDDING"
           },
           "Tuesday": {
-            "Soup 1": "ROASTED RED PEPPER WITH DILL YOGURT",
+            "Soup 1": "ROASTED RED PEPPER SOUP WITH DILL YOGURT (GF)",
             "Entrée 1": "TURKEY MEDALLION WITH CRANBERRY ORANGE CHUTNEY",
             "Entrée 2": "LOBSTER / SHRIMP ROLL ON TOASTED BRIOCHE",
             "Salad": "ARUGULA & PEAR WITH BALSAMIC VINAIGRETTE",
@@ -345,38 +345,38 @@
           },
           "Wednesday": {
             "Soup 1": "CHICKEN TORTILLA",
-            "Entrée 1": "GRILLED FISH WITH SALSA",
-            "Entrée 2": "EGGPLANT PARMESAN",
-            "Salad": "CORN & AVOCADO WITH HONEY MUSTARD VINAIGRETTE",
+            "Entrée 1": "GRILLED FISH WITH BLACK BEAN AND CORN SALSA (GF/DF)",
+            "Entrée 2": "EGGPLANT PARMESAN WITH TOMATO SAUCE AND MOZZARELLA",
+            "Salad": "MIXED GREENS WITH AVOCADO, CORN, AND TOMATO.  CHOICE DRESSING (GF/DF)",
             "Dessert": "COCONUT FLAN"
           },
           "Thursday": {
             "Soup 1": "TOMATO BASIL",
             "Entrée 1": "PHILLY CHEESESTEAK",
-            "Entrée 2": "VEGETABLE & TOFU STIRFRY",
+            "Entrée 2": "VEGETABLE AND TOFU STIRFRY WITH STICKY PLUM SAUCE (GF/DF)",
             "Salad": "BEET & GOAT CHEESE WITH RED WINE VINAIGRETTE",
             "Dessert": "CHAI POACHED PEARS WITH CINNAMON TOPPING"
           },
           "Friday": {
-            "Soup 1": "SEAFOOD CHOWDER",
-            "Entrée 1": "SPICED CHICKEN, BRIE, & AVOCADO MELT",
-            "Entrée 2": "VEGETABLE PAELLA",
-            "Salad": "CITRUS GREENS WITH CHOICE DRESSING",
-            "Dessert": "KEY LIME MOUSSE"
+            "Soup 1": "SEAFOOD CHOWDER IN LIGHT TOMATO BROTH (GF/DF)",
+            "Entrée 1": "SPICED CHICKEN AND BRIE SANDWICH WITH AVOCADO MAYO",
+            "Entrée 2": "VEGETABLE PAELLA.  ASSORTED GARDEN VEGETABLES WITH ORZO PASTA IN TOMATO ACCENTS (DF)",
+            "Salad": "BABY GREENS WITH ASSORTED CITRUS, RED ONION AND TOMATO.  CHOICE DRESSING (GF/DF)",
+            "Dessert": "KEY LIME WHITE CHOCOLATE MOUSSE (GF)"
           },
           "Saturday": {
             "Soup 1": "THAI COCONUT & VEGETABLE",
-            "Entrée 1": "LEMONGRASS CHICKEN",
+            "Entrée 1": "LEMONGRASS CHICKEN WITH BROCCOLI RICE (GF/DF)",
             "Entrée 2": "CHICKPEA & VEGETABLE CURRY",
-            "Salad": "GREEN MANGO SALAD WITH POPPYSEED DRESSING",
+            "Salad": "MIXED GARDEN GREENS WITH FRESH ASSORTED VEGETABLES.  CHOICE DRESSING (GF/DF)",
             "Dessert": "PINEAPPLE CAKE WITH CITRUS TOPPING"
           },
           "Sunday": {
             "Soup 1": "FRENCH LENTIL",
-            "Entrée 1": "CAPRESE STYLE CHICKEN PLATE",
-            "Entrée 2": "COD WITH LEMON&HERB SAUCE (GF/DF)",
-            "Salad": "MEDITERRANEAN CHICKPEA",
-            "Dessert": "APPLE TART"
+            "Entrée 1": "CAPRESE STYLE CHICKEN OVER SPUDS (GF)",
+            "Entrée 2": "BAKED COD LOIN WITH LEMON AND HERB SAUCE (GF/DF)",
+            "Salad": "GREEK SALAD WITH FETA CHEESE (GF)",
+            "Dessert": "APPLE TURNOVER WITH CINNAMON SUGAR (DF)"
           }
         }
       },
@@ -384,51 +384,51 @@
         "days": {
           "Monday": {
             "Soup 1": "GAZPACHO SOUP (DF/GF)",
-            "Entrée 1": "GRILLED CHICKEN SOUVLAKI",
+            "Entrée 1": "GRILLED CHICKEN SOUVLAKI WITH ROASTED SPUDS AND GARLIC SAUCE (GF)",
             "Entrée 2": "VEGETABLE PAD THAI WITH TOFU",
             "Salad": "CUCUMBER & DILL WITH LEMON YOGURT DRESSING",
-            "Dessert": "STRAWBERRIES & CREAM"
+            "Dessert": "STRAWBERRIES AND CREAM PARFAIT"
           },
           "Tuesday": {
             "Soup 1": "WONTON SOUP (DF)",
-            "Entrée 1": "HOISIN BEEF & BROCCOLI",
+            "Entrée 1": "HOISIN SHAVED BEEF WITH BROCCOLI OVER RICE (GF/DF)",
             "Entrée 2": "STUFFED BOLOGNESE ZUCCHINI BOATS",
             "Salad": "NAPPA CABBAGE SALAD WITH ASIAN VINAIGRETTE",
             "Dessert": "COCONUT CREAM PIE"
           },
           "Wednesday": {
             "Soup 1": "BLACK BEAN SOUP WITH SCALLION CRÈME FRAICHE",
-            "Entrée 1": "GRILLED CHICKEN BREAST WITH CITRUS SALSA",
-            "Entrée 2": "PASTA PRIMAVERA",
+            "Entrée 1": "GRILLED CHICKEN BREAST WITH PICO DE GALLO (GF/DF)",
+            "Entrée 2": "PASTA PRIMAVERA.  PENNE PASTA TOSSED WITH GARDEN VEGETABLES IN OLIVE GARLIC SAUCE (DF)",
             "Salad": "TOMATO AND LIME SALAD WITH CITRUS VINAIGRETTE",
             "Dessert": "MANGO SORBET"
           },
           "Thursday": {
-            "Soup 1": "MUSHROOM VELOUTE (GF)",
+            "Soup 1": "MUSHROOM VELOUTE.  CREAMY BASE WITH SAUTEED MUSHROOMS (GF)",
             "Entrée 1": "ROAST PORK TENDERLOIN WITH APPLE FENNEL SLAW",
             "Entrée 2": "SWEET POTATO & BLACK BEAN BOWL",
             "Salad": "MIXED GREENS WITH CHOICE DRESSING",
-            "Dessert": "PANNA COTTA"
+            "Dessert": "MAPLE PANNA COTTA"
           },
           "Friday": {
             "Soup 1": "GINGER & CARROT WITH CORRIANDER YOGURT (GF)",
             "Entrée 1": "CHICKEN FRIED RICE",
-            "Entrée 2": "STEAMED COD WITH GINGER SCALLION",
+            "Entrée 2": "STEAMED COD WITH GINGER SCALLION SAUCE",
             "Salad": "THAI CUCUMBER SALAD",
             "Dessert": "S'MORE CUPCAKES"
           },
           "Saturday": {
-            "Soup 1": "SUMMER MINESTRONE (DF)",
-            "Entrée 1": "HERB ROASTED CHICKEN",
-            "Entrée 2": "RATAOUILLE WITH LENTILS",
+            "Soup 1": "SUMMER MINESTRONE SOUP (DF)",
+            "Entrée 1": "HERB ROASTED CHICKEN THIGH OVER ROASTED SPUDS (GF/DF)",
+            "Entrée 2": "RATATOUILLE WITH BRAISED LENTILS (GF/DF)",
             "Salad": "PROSCIUTTO & MELON WITH BALSAMIC REDUCTION",
             "Dessert": "VANILLA CRÈME BRULEE"
           },
           "Sunday": {
             "Soup 1": "CHICKEN VEGETABLE BROTH (GF)",
-            "Entrée 1": "THAI GRILLED CHICKEN",
-            "Entrée 2": "VEGETABLE CURRY",
-            "Salad": "SPINACH AND STRAWBERRY SALAD",
+            "Entrée 1": "THAI GRILLED CHICKEN BREAST (GF/DF)",
+            "Entrée 2": "VEGETABLE CURRY.  ASSORTED GARDEN VEGETABLES IN MIDRAS CURRY SAUCE (GF/DF)",
+            "Salad": "WATERMELON AND FETA SALAD WITH PESTO VINAIGRETTE (GF)",
             "Dessert": "ASSORTED DESSERT"
           }
         }
@@ -436,52 +436,52 @@
       "Week 3": {
         "days": {
           "Monday": {
-            "Soup 1": "SPINACH & LEEK",
-            "Entrée 1": "GRILLED LAMB KOFTA WITH TOMATO CUCUMBER YOGURT W/ DILL",
-            "Entrée 2": "GRILLED STEAK WITH COWBOY BUTTER SAUCE (GF)",
-            "Salad": "MEDITERRANEAN CHICKPEA",
-            "Dessert": "YOGURT WITH HONEY, FIG & NUTS PARFAIT"
+            "Soup 1": "SPINACH AND LEEKS SAUTEED IN A LIGHT VEGETABLE BROTH (GF/DF)",
+            "Entrée 1": "FRESH GRILLED SIRLOIN STEAK WITH COWBOY BUTTER SAUCE (GF)",
+            "Entrée 2": "GROUND LAMB WITH EGYPTIAN FLAVORS, TOPPED WITH CUCUMBER AND TOMATO SALAD WITH LEMON YOGURT DRESSING (GF)",
+            "Salad": "MEDITERRANEAN SPICED CHICKPEA WITH BABY SPINACH, PEPPERS AND ONIONS IN A LEMON POPPYSEED DRESSING (GF/DF)",
+            "Dessert": "HONEY YOGURT PARFAIT WITH FIGS AND NUTS (GF)"
           },
           "Tuesday": {
-            "Soup 1": "HOT & SOUR BEEF SOUP",
-            "Entrée 1": "TERIYAKI CHICKEN",
-            "Entrée 2": "VEGETABLE SUSHI ROLL",
-            "Salad": "SOBA NOODLE SALAD",
+            "Soup 1": "HOT & SOUR BEEF SOUP WITH SCALLION (GF/DF)",
+            "Entrée 1": "BAKED CHICKEN BREAST WITH TERIYAKI SAUCE OVER STEAMED RICE (GF/DF)",
+            "Entrée 2": "VEGETABLE SUSHI ROLL (CALIFORNIA ROLL) WITH PICKLED GINGER AND WASABI (GF/DF)",
+            "Salad": "SOBA NOODLE SALAD WITH GARDEN VEGETABLES AND SWEET MIRIN VINAIGRETTE (DF)",
             "Dessert": "BLUEBERRY TART"
           },
           "Wednesday": {
-            "Soup 1": "CORN CHOWDER",
-            "Entrée 1": "MOJO PORK",
-            "Entrée 2": "RICE & BEAN STUFFED PEPPERS",
-            "Salad": "JICAMA SLAW",
-            "Dessert": "TRES LECHES"
+            "Soup 1": "BABY CORN CHOWDER WITH COCONUT MILK AND THAI SPICES (GF/DF)",
+            "Entrée 1": "MOJO PORK – CUBAN STYLE ROASTED PORK WITH CORN SALSA (GF/DF)",
+            "Entrée 2": "RICE & BEAN STUFFED PEPPERS TOPPED WITH MELTED CHEESE (GF)",
+            "Salad": "JICAMA SLAW WITH FRESH HERB VINAIGRETTE (GF/DF)",
+            "Dessert": "TRES LECHES – SPANISH INSPIRED CAKE TOPPED WITH WHIPPED TOPPING"
           },
           "Thursday": {
-            "Soup 1": "TOMATO & GARLIC",
-            "Entrée 1": "JERK SALMON",
-            "Entrée 2": "COCONUT VEGETABLE CURRY WITH SEITAN",
-            "Salad": "SPINACH & MANGO",
+            "Soup 1": "TOMATO AND GARLIC SOUP – FRESHLY ROASTED TOMATOES WITH CARAMELIZED GARLIC WITH OREGANO (GF/DF)",
+            "Entrée 1": "JERK SALMON – JAMAICAN STYLED MARINADE WITH SEARED SALMON MEDALLION OVER FRIED PLANTAINS (GF/DF)",
+            "Entrée 2": "COCONUT VEGETABLE CURRY – EAST INDIAN STYLE DAL CURRY WITH GARDEN VEGETABLES",
+            "Salad": "BABY SPINACH AND MANGO SALAD WITH RED WINE VINAIGRETTE (GF/DF)",
             "Dessert": "BANANA CREAM PIE TRIFFLE"
           },
           "Friday": {
-            "Soup 1": "BOULLIABAISE",
-            "Entrée 1": "BAKED HADDOCK WITH DILL SAUCE",
-            "Entrée 2": "VEGETABLE QUICHE",
-            "Salad": "ARUGULA PARMESAN",
-            "Dessert": "FRESH BERRIES & CREAM"
+            "Soup 1": "BOULLIABAISE – MIXED SEAFOOD IN A TOMATO AND FENNEL BROTH (GF/DF)",
+            "Entrée 1": "BAKED HADDOCK LOIN WITH CREAMY DILL SAUCE (GF)",
+            "Entrée 2": "VEGETABLE QUICHE – ASSORTED ROASTED VEGETABLES WITH SHARP CHEDDAR CHEESE",
+            "Salad": "ARUGULA, PARMESAN, AND TOMATO SALAD WITH TOASTED ALMONDS LEMON VINAIGRETTE (GF)",
+            "Dessert": "FRESH BERRIES AND VANILLA CUSTARD BOWL (GF)"
           },
           "Saturday": {
-            "Soup 1": "CHILLED PEA SOUP",
-            "Entrée 1": "ROAST CHICKEN W/ TARRAGON",
-            "Entrée 2": "WEST INDIES CRAB LETTUCE WRAPS WITH KEY LIME MAYO",
-            "Salad": "GARDEN GREENS",
+            "Soup 1": "CHILLED PEA SOUP WITH HERB OIL (GF/DF)",
+            "Entrée 1": "ROASTED TARRAGON CHICKEN – BONE-IN THIGH WITH TARRAGON SAUCE (GF/DF)",
+            "Entrée 2": "WEST INDIES CRAB LETTUCE WRAPS WITH KEY LIME MAYO (GF/DF)",
+            "Salad": "MIXED GARDEN GREENS WITH FRESH ASSORTED VEGETABLES.  CHOICE DRESSING (GF/DF)",
             "Dessert": "PEAR AND CUSTARD TART"
           },
           "Sunday": {
             "Soup 1": "SWISS ONION SOUP",
-            "Entrée 1": "BEEF LASAGNA",
-            "Entrée 2": "CARRIBEAN RAGU STUFFED PLANTAINS",
-            "Salad": "CUCUMBER SALAD",
+            "Entrée 1": "STUFFED PLANTAINS WITH NORTH AFRICAN SPICED GROUND BEEF WITH PEPPERS (GF/DF)",
+            "Entrée 2": "BEEF LASAGNA – CLASSIC STYLE WITH BOLOGNESE AND RICOTTA",
+            "Salad": "CUCUMBER AND RED ONION SALAD WITH CREAMY HERB DRESSING (GF)",
             "Dessert": "DULCE DE LECHE PARFAIT"
           }
         }
@@ -489,52 +489,52 @@
       "Week 4": {
         "days": {
           "Monday": {
-            "Soup 1": "VEGETABLE BROTH WITH FRESH HERB",
-            "Entrée 1": "GRILLED FISH WITH LEMON RICE",
-            "Entrée 2": "CHICKPEA STEW",
-            "Salad": "AVOCADO & TOMATO",
-            "Dessert": "COCONUT PANNA COTTA"
+            "Soup 1": "GARDEN VEGETABLES IN LIGHT BROTH WITH CHOPPED HERBS (GF/DF)",
+            "Entrée 1": "GRILLED FISH (CHEFS CHOICE) WITH CHARRED LEMON AND STEAMED RICE",
+            "Entrée 2": "CHICKPEA AND SWEET POTATO STEW (GF/DF)",
+            "Salad": "AVOCADO AND TOMATO SALAD WITH GREEK VINAIGRETTE (GF/DF)",
+            "Dessert": "COCONUT PANNA COTTA (GF/DF)"
           },
           "Tuesday": {
-            "Soup 1": "MISO TOFU SOUP",
-            "Entrée 1": "GINGER BEEF WITH JULIENNED ASIAN VEGETABLE",
-            "Entrée 2": "POACHED CHICKEN WITH TARRAGON YOGURT SAUCE",
-            "Salad": "BABY CORN SALAD",
+            "Soup 1": "MISO TOFU SOUP (GF/DF)",
+            "Entrée 1": "GINGER MARINATED SHAVED BEEF WITH JULIENNED ASIAN VEGETABLE MIX  (GF/DF)",
+            "Entrée 2": "BROTH-POACHED CHICKEN WITH SUMMER TABBOULEH (DF)",
+            "Salad": "BABY CORN SALAD WITH ASIAN STYLE VINAIGRETTE WITH GARDEN VEGETABLES (GF/DF)",
             "Dessert": "LIMONCELLO TIRAMISU"
           },
           "Wednesday": {
-            "Soup 1": "ROASTED TOMATO & FENNEL",
-            "Entrée 1": "TURKEY MEATBALLS WITH BASIL SAUCE",
-            "Entrée 2": "SALMON WITH LEMON YOGURT SAUCE",
-            "Salad": "BOCCONCINI & BASIL",
-            "Dessert": "LEMON CUSTARD WITH FRESH BERRIES"
-          },
-          "Thursday": {
-            "Soup 1": "SHRIMP & CORN BROTH",
-            "Entrée 1": "SEAFOOD STEW",
-            "Entrée 2": "ZUCCHINI AND RICOTTA BAKED PASTA",
-            "Salad": "CITRUS AVOCADO GREENS",
+            "Soup 1": "CREAM OF ASPARAGUS SOUP (GF)",
+            "Entrée 1": "TURKEY MEATBALLS IN HEARTY MARINARA SAUCE (DF)",
+            "Entrée 2": "SALMON WITH LEMON YOGURT SAUCE (GF)",
+            "Salad": "BOCCONCINI AND BASIL SALAD WITH MIXED GREENS.  CHOICE DRESSING (GF)",
             "Dessert": "STRAWBERRY CRUNCH POKE CAKE"
           },
+          "Thursday": {
+            "Soup 1": "SHRIMP AND CORN BROTH (GF/DF)",
+            "Entrée 1": "ZUCCHINI AND RICOTTA BAKED PENNE PASTA",
+            "Entrée 2": "SEAFOOD STEW WITH BREAD SPEAR – HEARTY STEW WITH SEAFOOD CHUNKS IN ROSE SAUCE (GF – WITHOUT SPEAR)",
+            "Salad": "CITRUS AND AVOCADO GREENS WITH CHOICE DRESSING (GF/DF)",
+            "Dessert": "LEMON PUDDING WITH FRESH BERRIES"
+          },
           "Friday": {
-            "Soup 1": "TUSCAN WHITE BEAN SOUP",
+            "Soup 1": "TUSCAN WHITE BEAN SOUP WITH PANCETTA -  (GF)",
             "Entrée 1": "PORK TENDERLOIN WITH HERB BUTTER SAUCE",
-            "Entrée 2": "CLASSIC FISH AND CHIPS WITH TARTAR AND LEMON",
-            "Salad": "ROASTED BEET & ORANGE",
-            "Dessert": "CAMPFIRE BERRY-PEACH COBBLER"
+            "Entrée 2": "CLASSIC FISH AND CHIPS WITH TARTAR SAUCE AND LEMON WEDGE (1PC) (DF)",
+            "Salad": "ROASTED BEET, FETA AND ORANGE SALAD WITH HERB VINAIGRETTE (GF)",
+            "Dessert": "CAMPFIRE-PEACH COBBLER"
           },
           "Saturday": {
-            "Soup 1": "CHICKEN & WILD RICE",
-            "Entrée 1": "GRILLED CHICKEN BREAST WITH FRESH TOMATO&BASIL SALSA",
-            "Entrée 2": "VEGETABLE FAJITAS",
-            "Salad": "SPINACH & STRAWBERRY",
+            "Soup 1": "CHICKEN AND WILD RICE WITH AROMATIC VEGETABLES (GF/DF)",
+            "Entrée 1": "GRILLED CHICKEN BREAST WITH MANGO AND TOMATO SALSA (GF/DF)",
+            "Entrée 2": "VEGETABLE FAJITAS ON TORTILLA WITH DICED TOMATO AND SOUR CREAM",
+            "Salad": "BABY SPINACH, STRAWBERRY AND WALNUT SALAD.  CHOICE DRESSING (GF/DF)",
             "Dessert": "RICE PUDDING W/ CINNAMON (GF/DF)"
           },
           "Sunday": {
-            "Soup 1": "CHILLED MELON SOUP",
-            "Entrée 1": "ROASTED CHICKEN LEG CHIMICHURRI",
+            "Soup 1": "CHILLED MELON SOUP WITH HERB CRÈME FRAICHE (GF)",
+            "Entrée 1": "ROASTED CHICKEN LEG WITH ITALIAN SALSA VERDE (GF/DF)",
             "Entrée 2": "EGGPLANT & TOMATO GRATIN",
-            "Salad": "ARUGULA,SHAVED FENNEL & CRISPY PROSCIUTTO",
+            "Salad": "ARUGULA AND SHAVED FENNEL WITH CRISPY PROSCIUTTO WITH BALSAMIC VINAIGRETTE (GF/DF)",
             "Dessert": "VANILLA CRÈME BRULEE"
           }
         }

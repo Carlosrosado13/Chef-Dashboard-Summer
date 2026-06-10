@@ -60,6 +60,9 @@ function createRecipeIdentifierSet(recipeOrReference) {
   addIdentifier(identifiers, recipeOrReference.slug);
   addIdentifier(identifiers, recipeOrReference.title);
   addIdentifier(identifiers, recipeOrReference.name);
+  for (const alias of recipeOrReference.aliases || []) {
+    addIdentifier(identifiers, alias);
+  }
 
   return identifiers;
 }

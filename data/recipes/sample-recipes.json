@@ -5360,7 +5360,10 @@
       "rebuiltFrom": "week2-recipes-rebuilt.json",
       "sourceUrl": "https://www.allrecipes.com/recipe/86096/grandmas-corn-chowder/",
       "extractionMethod": "browser/manual-recovered"
-    }
+    },
+    "aliases": [
+      "BABY CORN CHOWDER WITH COCONUT MILK AND THAI SPICES (GF/DF)"
+    ]
   },
   {
     "title": "Mango and Avocado Salad.  Choice Dressing (GF/DF)",
@@ -7326,7 +7329,10 @@
       "rebuiltFrom": "week2-recipes-rebuilt.json",
       "sourceUrl": "https://www.veganricha.com/cold-soba-noodle-salad-recipe/",
       "extractionMethod": "source-html-extracted"
-    }
+    },
+    "aliases": [
+      "SOBA NOODLE SALAD WITH GARDEN VEGETABLES AND SWEET MIRIN VINAIGRETTE (DF)"
+    ]
   },
   {
     "title": "SHRIMP LINGUINI WITH SAFFRON SAUCE AND PEPPERED GREENS",
@@ -13189,7 +13195,10 @@
       ],
       "remediatedAt": "2026-06-06T20:06:46.816Z",
       "remediationScope": "Final Dinner remediation"
-    }
+    },
+    "aliases": [
+      "SUMMER MINESTRONE SOUP (DF)"
+    ]
   },
   {
     "title": "SALISBURY STEAK IN ONION GRAVY",
@@ -14620,7 +14629,10 @@
           "category": "Soup 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "ROASTED RED PEPPER SOUP WITH DILL YOGURT (GF)"
+    ]
   },
   {
     "title": "TURKEY MEDALLION WITH CRANBERRY ORANGE CHUTNEY",
@@ -15090,7 +15102,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "GRILLED FISH WITH BLACK BEAN AND CORN SALSA (GF/DF)"
+    ]
   },
   {
     "title": "EGGPLANT PARMESAN",
@@ -15150,7 +15165,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "EGGPLANT PARMESAN WITH TOMATO SAUCE AND MOZZARELLA"
+    ]
   },
   {
     "title": "CORN & AVOCADO WITH HONEY MUSTARD VINAIGRETTE",
@@ -15224,7 +15242,10 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "MIXED GREENS WITH AVOCADO, CORN, AND TOMATO.  CHOICE DRESSING (GF/DF)"
+    ]
   },
   {
     "title": "COCONUT FLAN",
@@ -15534,7 +15555,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "VEGETABLE AND TOFU STIRFRY WITH STICKY PLUM SAUCE (GF/DF)"
+    ]
   },
   {
     "title": "BEET & GOAT CHEESE WITH RED WINE VINAIGRETTE",
@@ -15777,7 +15801,10 @@
           "category": "Soup 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "SEAFOOD CHOWDER IN LIGHT TOMATO BROTH (GF/DF)"
+    ]
   },
   {
     "title": "SPICED CHICKEN, BRIE, & AVOCADO MELT",
@@ -15842,7 +15869,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "SPICED CHICKEN AND BRIE SANDWICH WITH AVOCADO MAYO"
+    ]
   },
   {
     "title": "VEGETABLE PAELLA",
@@ -15942,7 +15972,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "VEGETABLE PAELLA.  ASSORTED GARDEN VEGETABLES WITH ORZO PASTA IN TOMATO ACCENTS (DF)"
+    ]
   },
   {
     "title": "CITRUS GREENS WITH CHOICE DRESSING",
@@ -16055,7 +16088,10 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "BABY GREENS WITH ASSORTED CITRUS, RED ONION AND TOMATO.  CHOICE DRESSING (GF/DF)"
+    ]
   },
   {
     "title": "KEY LIME MOUSSE",
@@ -16115,7 +16151,10 @@
           "category": "Dessert"
         }
       ]
-    }
+    },
+    "aliases": [
+      "KEY LIME WHITE CHOCOLATE MOUSSE (GF)"
+    ]
   },
   {
     "title": "THAI COCONUT & VEGETABLE",
@@ -16294,7 +16333,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "LEMONGRASS CHICKEN WITH BROCCOLI RICE (GF/DF)"
+    ]
   },
   {
     "title": "CHICKPEA & VEGETABLE CURRY",
@@ -16483,7 +16525,10 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "MIXED GARDEN GREENS WITH FRESH ASSORTED VEGETABLES.  CHOICE DRESSING (GF/DF)"
+    ]
   },
   {
     "title": "PINEAPPLE CAKE WITH CITRUS TOPPING",
@@ -16764,7 +16809,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "CAPRESE STYLE CHICKEN OVER SPUDS (GF)"
+    ]
   },
   {
     "title": "COD WITH LEMON&HERB SAUCE (GF/DF)",
@@ -16865,7 +16913,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "BAKED COD LOIN WITH LEMON AND HERB SAUCE (GF/DF)"
+    ]
   },
   {
     "title": "MEDITERRANEAN CHICKPEA",
@@ -16966,7 +17017,11 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "GREEK SALAD WITH FETA CHEESE (GF)",
+      "MEDITERRANEAN SPICED CHICKPEA WITH BABY SPINACH, PEPPERS AND ONIONS IN A LEMON POPPYSEED DRESSING (GF/DF)"
+    ]
   },
   {
     "title": "APPLE TART",
@@ -17026,7 +17081,10 @@
           "category": "Dessert"
         }
       ]
-    }
+    },
+    "aliases": [
+      "APPLE TURNOVER WITH CINNAMON SUGAR (DF)"
+    ]
   },
   {
     "title": "GRILLED CHICKEN SOUVLAKI",
@@ -17063,7 +17121,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "GRILLED CHICKEN SOUVLAKI WITH ROASTED SPUDS AND GARLIC SAUCE (GF)"
+    ]
   },
   {
     "title": "VEGETABLE PAD THAI WITH TOFU",
@@ -17174,7 +17235,10 @@
           "category": "Dessert"
         }
       ]
-    }
+    },
+    "aliases": [
+      "STRAWBERRIES AND CREAM PARFAIT"
+    ]
   },
   {
     "title": "WONTON SOUP (DF)",
@@ -17248,7 +17312,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "HOISIN SHAVED BEEF WITH BROCCOLI OVER RICE (GF/DF)"
+    ]
   },
   {
     "title": "STUFFED BOLOGNESE ZUCCHINI BOATS",
@@ -17433,7 +17500,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "GRILLED CHICKEN BREAST WITH PICO DE GALLO (GF/DF)"
+    ]
   },
   {
     "title": "PASTA PRIMAVERA",
@@ -17470,7 +17540,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "PASTA PRIMAVERA.  PENNE PASTA TOSSED WITH GARDEN VEGETABLES IN OLIVE GARLIC SAUCE (DF)"
+    ]
   },
   {
     "title": "TOMATO AND LIME SALAD WITH CITRUS VINAIGRETTE",
@@ -17581,7 +17654,10 @@
           "category": "Soup 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "MUSHROOM VELOUTE.  CREAMY BASE WITH SAUTEED MUSHROOMS (GF)"
+    ]
   },
   {
     "title": "ROAST PORK TENDERLOIN WITH APPLE FENNEL SLAW",
@@ -17729,7 +17805,10 @@
           "category": "Dessert"
         }
       ]
-    }
+    },
+    "aliases": [
+      "MAPLE PANNA COTTA"
+    ]
   },
   {
     "title": "GINGER & CARROT WITH CORRIANDER YOGURT (GF)",
@@ -17840,7 +17919,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "STEAMED COD WITH GINGER SCALLION SAUCE"
+    ]
   },
   {
     "title": "THAI CUCUMBER SALAD",
@@ -17951,7 +18033,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "HERB ROASTED CHICKEN THIGH OVER ROASTED SPUDS (GF/DF)"
+    ]
   },
   {
     "title": "RATAOUILLE WITH LENTILS",
@@ -17988,7 +18073,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "RATATOUILLE WITH BRAISED LENTILS (GF/DF)"
+    ]
   },
   {
     "title": "PROSCIUTTO & MELON WITH BALSAMIC REDUCTION",
@@ -18142,7 +18230,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "THAI GRILLED CHICKEN BREAST (GF/DF)"
+    ]
   },
   {
     "title": "VEGETABLE CURRY",
@@ -18179,7 +18270,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "VEGETABLE CURRY.  ASSORTED GARDEN VEGETABLES IN MIDRAS CURRY SAUCE (GF/DF)"
+    ]
   },
   {
     "title": "SPINACH AND STRAWBERRY SALAD",
@@ -18216,7 +18310,10 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "WATERMELON AND FETA SALAD WITH PESTO VINAIGRETTE (GF)"
+    ]
   },
   {
     "title": "ASSORTED DESSERT",
@@ -18318,7 +18415,10 @@
           "category": "Soup 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "SPINACH AND LEEKS SAUTEED IN A LIGHT VEGETABLE BROTH (GF/DF)"
+    ]
   },
   {
     "title": "GRILLED LAMB KOFTA WITH TOMATO CUCUMBER YOGURT W/ DILL",
@@ -18355,7 +18455,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "FRESH GRILLED SIRLOIN STEAK WITH COWBOY BUTTER SAUCE (GF)"
+    ]
   },
   {
     "title": "GRILLED STEAK WITH COWBOY BUTTER SAUCE (GF)",
@@ -18392,7 +18495,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "GROUND LAMB WITH EGYPTIAN FLAVORS, TOPPED WITH CUCUMBER AND TOMATO SALAD WITH LEMON YOGURT DRESSING (GF)"
+    ]
   },
   {
     "title": "YOGURT WITH HONEY, FIG & NUTS PARFAIT",
@@ -18429,7 +18535,10 @@
           "category": "Dessert"
         }
       ]
-    }
+    },
+    "aliases": [
+      "HONEY YOGURT PARFAIT WITH FIGS AND NUTS (GF)"
+    ]
   },
   {
     "title": "HOT & SOUR BEEF SOUP",
@@ -18466,7 +18575,10 @@
           "category": "Soup 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "HOT & SOUR BEEF SOUP WITH SCALLION (GF/DF)"
+    ]
   },
   {
     "title": "TERIYAKI CHICKEN",
@@ -18503,7 +18615,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "BAKED CHICKEN BREAST WITH TERIYAKI SAUCE OVER STEAMED RICE (GF/DF)"
+    ]
   },
   {
     "title": "VEGETABLE SUSHI ROLL",
@@ -18540,7 +18655,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "VEGETABLE SUSHI ROLL (CALIFORNIA ROLL) WITH PICKLED GINGER AND WASABI (GF/DF)"
+    ]
   },
   {
     "title": "BLUEBERRY TART",
@@ -18614,7 +18732,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "MOJO PORK – CUBAN STYLE ROASTED PORK WITH CORN SALSA (GF/DF)"
+    ]
   },
   {
     "title": "RICE & BEAN STUFFED PEPPERS",
@@ -18651,7 +18772,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "RICE & BEAN STUFFED PEPPERS TOPPED WITH MELTED CHEESE (GF)"
+    ]
   },
   {
     "title": "JICAMA SLAW",
@@ -18688,7 +18812,10 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "JICAMA SLAW WITH FRESH HERB VINAIGRETTE (GF/DF)"
+    ]
   },
   {
     "title": "TRES LECHES",
@@ -18725,7 +18852,10 @@
           "category": "Dessert"
         }
       ]
-    }
+    },
+    "aliases": [
+      "TRES LECHES – SPANISH INSPIRED CAKE TOPPED WITH WHIPPED TOPPING"
+    ]
   },
   {
     "title": "TOMATO & GARLIC",
@@ -18762,7 +18892,10 @@
           "category": "Soup 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "TOMATO AND GARLIC SOUP – FRESHLY ROASTED TOMATOES WITH CARAMELIZED GARLIC WITH OREGANO (GF/DF)"
+    ]
   },
   {
     "title": "JERK SALMON",
@@ -18799,7 +18932,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "JERK SALMON – JAMAICAN STYLED MARINADE WITH SEARED SALMON MEDALLION OVER FRIED PLANTAINS (GF/DF)"
+    ]
   },
   {
     "title": "COCONUT VEGETABLE CURRY WITH SEITAN",
@@ -18836,7 +18972,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "COCONUT VEGETABLE CURRY – EAST INDIAN STYLE DAL CURRY WITH GARDEN VEGETABLES"
+    ]
   },
   {
     "title": "SPINACH & MANGO",
@@ -18873,7 +19012,10 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "BABY SPINACH AND MANGO SALAD WITH RED WINE VINAIGRETTE (GF/DF)"
+    ]
   },
   {
     "title": "BANANA CREAM PIE TRIFFLE",
@@ -18947,7 +19089,10 @@
           "category": "Soup 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "BOULLIABAISE – MIXED SEAFOOD IN A TOMATO AND FENNEL BROTH (GF/DF)"
+    ]
   },
   {
     "title": "BAKED HADDOCK WITH DILL SAUCE",
@@ -18984,7 +19129,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "BAKED HADDOCK LOIN WITH CREAMY DILL SAUCE (GF)"
+    ]
   },
   {
     "title": "VEGETABLE QUICHE",
@@ -19021,7 +19169,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "VEGETABLE QUICHE – ASSORTED ROASTED VEGETABLES WITH SHARP CHEDDAR CHEESE"
+    ]
   },
   {
     "title": "ARUGULA PARMESAN",
@@ -19058,7 +19209,10 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "ARUGULA, PARMESAN, AND TOMATO SALAD WITH TOASTED ALMONDS LEMON VINAIGRETTE (GF)"
+    ]
   },
   {
     "title": "FRESH BERRIES & CREAM",
@@ -19095,7 +19249,10 @@
           "category": "Dessert"
         }
       ]
-    }
+    },
+    "aliases": [
+      "FRESH BERRIES AND VANILLA CUSTARD BOWL (GF)"
+    ]
   },
   {
     "title": "CHILLED PEA SOUP",
@@ -19132,7 +19289,10 @@
           "category": "Soup 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "CHILLED PEA SOUP WITH HERB OIL (GF/DF)"
+    ]
   },
   {
     "title": "ROAST CHICKEN W/ TARRAGON",
@@ -19169,7 +19329,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "ROASTED TARRAGON CHICKEN – BONE-IN THIGH WITH TARRAGON SAUCE (GF/DF)"
+    ]
   },
   {
     "title": "WEST INDIES CRAB LETTUCE WRAPS WITH KEY LIME MAYO",
@@ -19354,7 +19517,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "STUFFED PLANTAINS WITH NORTH AFRICAN SPICED GROUND BEEF WITH PEPPERS (GF/DF)"
+    ]
   },
   {
     "title": "CARRIBEAN RAGU STUFFED PLANTAINS",
@@ -19391,7 +19557,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "BEEF LASAGNA – CLASSIC STYLE WITH BOLOGNESE AND RICOTTA"
+    ]
   },
   {
     "title": "CUCUMBER SALAD",
@@ -19428,7 +19597,10 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "CUCUMBER AND RED ONION SALAD WITH CREAMY HERB DRESSING (GF)"
+    ]
   },
   {
     "title": "DULCE DE LECHE PARFAIT",
@@ -19502,7 +19674,10 @@
           "category": "Soup 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "GARDEN VEGETABLES IN LIGHT BROTH WITH CHOPPED HERBS (GF/DF)"
+    ]
   },
   {
     "title": "GRILLED FISH WITH LEMON RICE",
@@ -19539,7 +19714,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "GRILLED FISH (CHEFS CHOICE) WITH CHARRED LEMON AND STEAMED RICE"
+    ]
   },
   {
     "title": "CHICKPEA STEW",
@@ -19576,7 +19754,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "CHICKPEA AND SWEET POTATO STEW (GF/DF)"
+    ]
   },
   {
     "title": "AVOCADO & TOMATO",
@@ -19613,7 +19794,10 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "AVOCADO AND TOMATO SALAD WITH GREEK VINAIGRETTE (GF/DF)"
+    ]
   },
   {
     "title": "COCONUT PANNA COTTA",
@@ -19724,7 +19908,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "GINGER MARINATED SHAVED BEEF WITH JULIENNED ASIAN VEGETABLE MIX  (GF/DF)"
+    ]
   },
   {
     "title": "POACHED CHICKEN WITH TARRAGON YOGURT SAUCE",
@@ -19761,7 +19948,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "BROTH-POACHED CHICKEN WITH SUMMER TABBOULEH (DF)"
+    ]
   },
   {
     "title": "BABY CORN SALAD",
@@ -19798,7 +19988,10 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "BABY CORN SALAD WITH ASIAN STYLE VINAIGRETTE WITH GARDEN VEGETABLES (GF/DF)"
+    ]
   },
   {
     "title": "LIMONCELLO TIRAMISU",
@@ -19872,7 +20065,10 @@
           "category": "Soup 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "CREAM OF ASPARAGUS SOUP (GF)"
+    ]
   },
   {
     "title": "TURKEY MEATBALLS WITH BASIL SAUCE",
@@ -19909,7 +20105,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "TURKEY MEATBALLS IN HEARTY MARINARA SAUCE (DF)"
+    ]
   },
   {
     "title": "SALMON WITH LEMON YOGURT SAUCE",
@@ -19983,7 +20182,10 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "BOCCONCINI AND BASIL SALAD WITH MIXED GREENS.  CHOICE DRESSING (GF)"
+    ]
   },
   {
     "title": "LEMON CUSTARD WITH FRESH BERRIES",
@@ -20094,7 +20296,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "ZUCCHINI AND RICOTTA BAKED PENNE PASTA"
+    ]
   },
   {
     "title": "ZUCCHINI AND RICOTTA BAKED PASTA",
@@ -20131,7 +20336,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "SEAFOOD STEW WITH BREAD SPEAR – HEARTY STEW WITH SEAFOOD CHUNKS IN ROSE SAUCE (GF – WITHOUT SPEAR)"
+    ]
   },
   {
     "title": "CITRUS AVOCADO GREENS",
@@ -20168,7 +20376,10 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "CITRUS AND AVOCADO GREENS WITH CHOICE DRESSING (GF/DF)"
+    ]
   },
   {
     "title": "STRAWBERRY CRUNCH POKE CAKE",
@@ -20205,7 +20416,10 @@
           "category": "Dessert"
         }
       ]
-    }
+    },
+    "aliases": [
+      "LEMON PUDDING WITH FRESH BERRIES"
+    ]
   },
   {
     "title": "TUSCAN WHITE BEAN SOUP",
@@ -20242,7 +20456,10 @@
           "category": "Soup 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "TUSCAN WHITE BEAN SOUP WITH PANCETTA -  (GF)"
+    ]
   },
   {
     "title": "PORK TENDERLOIN WITH HERB BUTTER SAUCE",
@@ -20316,7 +20533,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "CLASSIC FISH AND CHIPS WITH TARTAR SAUCE AND LEMON WEDGE (1PC) (DF)"
+    ]
   },
   {
     "title": "ROASTED BEET & ORANGE",
@@ -20353,7 +20573,10 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "ROASTED BEET, FETA AND ORANGE SALAD WITH HERB VINAIGRETTE (GF)"
+    ]
   },
   {
     "title": "CAMPFIRE BERRY-PEACH COBBLER",
@@ -20390,7 +20613,10 @@
           "category": "Dessert"
         }
       ]
-    }
+    },
+    "aliases": [
+      "CAMPFIRE-PEACH COBBLER"
+    ]
   },
   {
     "title": "CHICKEN & WILD RICE",
@@ -20427,7 +20653,10 @@
           "category": "Soup 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "CHICKEN AND WILD RICE WITH AROMATIC VEGETABLES (GF/DF)"
+    ]
   },
   {
     "title": "GRILLED CHICKEN BREAST WITH FRESH TOMATO&BASIL SALSA",
@@ -20464,7 +20693,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "GRILLED CHICKEN BREAST WITH MANGO AND TOMATO SALSA (GF/DF)"
+    ]
   },
   {
     "title": "VEGETABLE FAJITAS",
@@ -20501,7 +20733,10 @@
           "category": "Entrée 2"
         }
       ]
-    }
+    },
+    "aliases": [
+      "VEGETABLE FAJITAS ON TORTILLA WITH DICED TOMATO AND SOUR CREAM"
+    ]
   },
   {
     "title": "SPINACH & STRAWBERRY",
@@ -20538,7 +20773,10 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "BABY SPINACH, STRAWBERRY AND WALNUT SALAD.  CHOICE DRESSING (GF/DF)"
+    ]
   },
   {
     "title": "RICE PUDDING W/ CINNAMON (GF/DF)",
@@ -20612,7 +20850,10 @@
           "category": "Soup 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "CHILLED MELON SOUP WITH HERB CRÈME FRAICHE (GF)"
+    ]
   },
   {
     "title": "ROASTED CHICKEN LEG CHIMICHURRI",
@@ -20649,7 +20890,10 @@
           "category": "Entrée 1"
         }
       ]
-    }
+    },
+    "aliases": [
+      "ROASTED CHICKEN LEG WITH ITALIAN SALSA VERDE (GF/DF)"
+    ]
   },
   {
     "title": "EGGPLANT & TOMATO GRATIN",
@@ -20723,7 +20967,10 @@
           "category": "Salad"
         }
       ]
-    }
+    },
+    "aliases": [
+      "ARUGULA AND SHAVED FENNEL WITH CRISPY PROSCIUTTO WITH BALSAMIC VINAIGRETTE (GF/DF)"
+    ]
   },
   {
     "title": "3-SISTERS SOUP",
