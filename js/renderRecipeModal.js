@@ -39,6 +39,44 @@ function renderSteps(steps) {
   return list;
 }
 
+function renderRecipePhoto(photoUrl, title) {
+  const wrapper = createElement("div", "recipe-modal__photo");
+  const openButton = createElement("button", "recipe-modal__photo-button", "\u{1F4F7} Dessert Photo");
+  const popup = createElement("div", "recipe-photo-popup");
+  const backdrop = createElement("button", "recipe-photo-popup__backdrop");
+  const dialog = createElement("section", "recipe-photo-popup__dialog");
+  const closeButton = createElement("button", "recipe-photo-popup__close", "Close Photo");
+  const image = createElement("img", "recipe-photo-popup__image");
+
+  openButton.type = "button";
+  backdrop.type = "button";
+  backdrop.setAttribute("aria-label", "Close dessert photo");
+  popup.hidden = true;
+  dialog.setAttribute("role", "dialog");
+  dialog.setAttribute("aria-modal", "true");
+  dialog.setAttribute("aria-label", `${title} dessert photo`);
+  closeButton.type = "button";
+  image.src = photoUrl;
+  image.alt = `${title} dessert photo`;
+  image.loading = "lazy";
+
+  function closePhoto() {
+    popup.hidden = true;
+  }
+
+  openButton.addEventListener("click", () => {
+    popup.hidden = false;
+    closeButton.focus();
+  });
+  backdrop.addEventListener("click", closePhoto);
+  closeButton.addEventListener("click", closePhoto);
+
+  dialog.append(closeButton, image);
+  popup.append(backdrop, dialog);
+  wrapper.append(openButton, popup);
+  return wrapper;
+}
+
 export function createRecipeModal() {
   const modal = createElement("div", "recipe-modal");
   modal.hidden = true;
@@ -105,6 +143,7 @@ function renderRecipe(recipe, originalRecipe) {
   content.append(
     title,
     meta,
+    ...(recipe.photoUrl ? [renderRecipePhoto(recipe.photoUrl, recipe.title)] : []),
     scaler,
     ingredientsTitle,
     ingredientsWrap,

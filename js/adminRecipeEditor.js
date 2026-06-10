@@ -6,6 +6,12 @@ import { generateCreateRecipePatch, generateRecipePatch } from "./generateRecipe
 import { loadMenuData } from "./loadMenuData.js";
 import { renderPatchPreview } from "./renderPatchPreview.js";
 import {
+  deleteRecipePhoto,
+  isManagedRecipePhoto,
+  RECIPE_PHOTO_ACCEPT,
+  uploadRecipePhoto
+} from "./adminRecipePhoto.js";
+import {
   clearRecipeDraft,
   createDebouncedRecipeDraftSaver,
   getRecipeDraftId,
@@ -52,6 +58,7 @@ function createEmptyRecipeDraft() {
     title: "",
     yield: "",
     category: "Elevated",
+    photoUrl: "",
     ingredients: [],
     steps: []
   };
@@ -634,6 +641,26 @@ async function reloadPersistedData(selectedTitle = "", fallbackRecipes = null) {
   state.validation = state.draft ? validateRecipeForKitchen(state.draft) : null;
 }
 
+async function cleanupReplacedPhoto(originalRecipe, updatedRecipe) {
+  const originalPhotoUrl = String(originalRecipe?.photoUrl || "").trim();
+  const updatedPhotoUrl = String(updatedRecipe?.photoUrl || "").trim();
+
+  if (!originalPhotoUrl || originalPhotoUrl === updatedPhotoUrl || !isManagedRecipePhoto(originalPhotoUrl)) {
+    return null;
+  }
+
+  try {
+    await deleteRecipePhoto(originalPhotoUrl);
+    return null;
+  } catch (error) {
+    return error.message || "The previous managed photo could not be deleted.";
+  }
+}
+
+async function handlePhotoUpload(file, recipeTitle) {
+  return uploadRecipePhoto(file, recipeTitle);
+}
+
 function notifyDashboardRefresh() {
   const payload = {
     type: "recipe-data-updated",
@@ -683,6 +710,7 @@ async function deleteSelectedRecipe() {
     return;
   }
 
+  const photoCleanupWarning = await cleanupReplacedPhoto(recipe, null);
   draftSaver.cancel();
   if (draftId) {
     clearRecipeDraft(draftId);
@@ -690,8 +718,10 @@ async function deleteSelectedRecipe() {
 
   await reloadPersistedData("", commitResult.recipes);
   state.notice = {
-    tone: "success",
-    message: "Recipe deleted successfully."
+    tone: photoCleanupWarning ? "error" : "success",
+    message: photoCleanupWarning
+      ? `Recipe deleted successfully. ${photoCleanupWarning}`
+      : "Recipe deleted successfully."
   };
   state.isDirty = false;
   state.localSaveStatus = "idle";
@@ -817,6 +847,10 @@ async function applyCurrentPatchUnsafe() {
     return;
   }
 
+  const photoCleanupWarning = await cleanupReplacedPhoto(
+    state.recipes[patch.index],
+    result.appliedRecipe
+  );
   await reloadPersistedData(result.appliedRecipe.title, commitResult.recipes);
   state.patchHistory.push({
     ...result.historyEntry,
@@ -831,8 +865,11 @@ async function applyCurrentPatchUnsafe() {
   }
   state.draftRecord = null;
   state.notice = {
-    tone: "success",
-    message: createApplyPatchMessage(result.historyEntry.appliedAt, commitResult)
+    tone: photoCleanupWarning ? "error" : "success",
+    message: [
+      createApplyPatchMessage(result.historyEntry.appliedAt, commitResult),
+      photoCleanupWarning
+    ].filter(Boolean).join(" ")
   };
   renderAdmin();
 }
@@ -1220,6 +1257,8 @@ function openExtractionPreview(recipe, validation) {
     mode: "create",
     assignment: state.productionAssignment,
     menuData: state.menuData,
+    photoAccept: RECIPE_PHOTO_ACCEPT,
+    onPhotoUpload: handlePhotoUpload,
     onChange(recipeDraft, assignment) {
       modalDraft = recipeDraft;
       updateProductionAssignment(assignment);
@@ -1264,6 +1303,8 @@ function renderAdmin() {
       mode: "create",
       assignment: state.productionAssignment,
       menuData: state.menuData,
+      photoAccept: RECIPE_PHOTO_ACCEPT,
+      onPhotoUpload: handlePhotoUpload,
       onChange: updateCreateDraft,
       onValidate: validateCreateDraft,
       onSave: saveCreateDraft,
@@ -1275,6 +1316,8 @@ function renderAdmin() {
       mode: "edit",
       assignment: state.productionAssignment,
       menuData: state.menuData,
+      photoAccept: RECIPE_PHOTO_ACCEPT,
+      onPhotoUpload: handlePhotoUpload,
       onChange: updateDraft,
       onValidate: validateDraft,
       onSave: saveDraft,

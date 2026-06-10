@@ -1,6 +1,6 @@
 import { validateRecipe } from "./validateRecipe.js";
 
-const ALLOWED_PATCH_FIELDS = ["title", "yield", "category", "ingredients", "steps", "notes", "tags", "metadata"];
+const ALLOWED_PATCH_FIELDS = ["title", "yield", "category", "photoUrl", "ingredients", "steps", "notes", "tags", "metadata"];
 const SUPPORTED_PATCH_OPERATIONS = ["updateRecipe", "createRecipe", "deleteRecipe"];
 const draftPatchStore = new Map();
 

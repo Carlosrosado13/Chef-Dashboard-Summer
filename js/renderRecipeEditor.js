@@ -89,6 +89,160 @@ function createTextareaField(name, label, value, placeholder, rows = 8) {
   return wrapper;
 }
 
+function createRecipePhotoField(recipe, options = {}) {
+  const section = createElement("section", "recipe-photo-editor");
+  const heading = createElement("h3", "", "Dessert Photo");
+  const controls = createElement("div", "recipe-photo-editor__modes");
+  const uploadButton = createElement("button", "filter-button", "Upload Photo");
+  const urlButton = createElement("button", "filter-button", "Paste Image URL");
+  const uploadPanel = createElement("div", "recipe-photo-editor__upload");
+  const dropZone = createElement("label", "recipe-photo-dropzone");
+  const dropTitle = createElement("strong", "", "Drag and drop an image here");
+  const dropCopy = createElement("span", "", "or browse files from your device");
+  const browseLabel = createElement("span", "filter-button recipe-photo-dropzone__browse", "Browse Files");
+  const fileInput = createElement("input", "recipe-photo-dropzone__input");
+  const urlPanel = createElement("label", "admin-field recipe-photo-editor__url");
+  const urlInput = createElement("input", "");
+  const preview = createElement("div", "recipe-photo-preview");
+  const previewImage = createElement("img", "recipe-photo-preview__image");
+  const emptyPreview = createElement("p", "admin-muted", "No dessert photo selected.");
+  const status = createElement("p", "recipe-photo-editor__status", "");
+  const removeButton = createElement("button", "filter-button filter-button--danger", "Delete Photo");
+  let activeMode = recipe.photoUrl ? "url" : "upload";
+
+  uploadButton.type = "button";
+  urlButton.type = "button";
+  fileInput.type = "file";
+  fileInput.accept = options.photoAccept || "image/jpeg,image/png,image/webp";
+  fileInput.name = "photoFile";
+  urlInput.type = "url";
+  urlInput.name = "photoUrl";
+  urlInput.value = recipe.photoUrl || "";
+  urlInput.placeholder = "https://example.com/dessert.jpg";
+  urlInput.inputMode = "url";
+  previewImage.alt = recipe.title ? `${recipe.title} dessert photo preview` : "Dessert photo preview";
+  removeButton.type = "button";
+  dropZone.tabIndex = 0;
+  dropZone.append(dropTitle, dropCopy, browseLabel, fileInput);
+  uploadPanel.append(dropZone);
+  urlPanel.append(createElement("span", "", "Image URL"), urlInput);
+
+  function renderMode() {
+    const uploadActive = activeMode === "upload";
+    uploadPanel.hidden = !uploadActive;
+    urlPanel.hidden = uploadActive;
+    uploadButton.setAttribute("aria-pressed", String(uploadActive));
+    urlButton.setAttribute("aria-pressed", String(!uploadActive));
+  }
+
+  function renderPreview() {
+    const photoUrl = urlInput.value.trim();
+    removeButton.hidden = !photoUrl;
+    preview.replaceChildren();
+
+    if (!photoUrl) {
+      preview.append(emptyPreview);
+      return;
+    }
+
+    previewImage.src = photoUrl;
+    previewImage.hidden = false;
+    previewImage.addEventListener("error", () => {
+      previewImage.hidden = true;
+      status.textContent = "The image preview could not be loaded.";
+      status.dataset.tone = "error";
+    }, { once: true });
+    preview.append(previewImage);
+  }
+
+  function emitPhotoChange() {
+    urlInput.dispatchEvent(new Event("input", { bubbles: true }));
+  }
+
+  async function handleFile(file) {
+    if (!file || typeof options.onPhotoUpload !== "function") {
+      return;
+    }
+
+    const localPreviewUrl = URL.createObjectURL(file);
+    previewImage.src = localPreviewUrl;
+    previewImage.hidden = false;
+    preview.replaceChildren(previewImage);
+    status.textContent = "Uploading photo...";
+    status.dataset.tone = "neutral";
+    fileInput.disabled = true;
+
+    try {
+      const result = await options.onPhotoUpload(file, formTitle());
+      urlInput.value = result.photoUrl;
+      activeMode = "upload";
+      renderMode();
+      renderPreview();
+      emitPhotoChange();
+      status.textContent = "Photo uploaded. Save the recipe to keep this photo assignment.";
+      status.dataset.tone = "success";
+    } catch (error) {
+      status.textContent = error.message || "Photo upload failed.";
+      status.dataset.tone = "error";
+      renderPreview();
+    } finally {
+      fileInput.disabled = false;
+      fileInput.value = "";
+      URL.revokeObjectURL(localPreviewUrl);
+    }
+  }
+
+  function formTitle() {
+    return section.closest("form")?.elements.namedItem("title")?.value || recipe.title || "Dessert";
+  }
+
+  uploadButton.addEventListener("click", () => {
+    activeMode = "upload";
+    renderMode();
+  });
+  urlButton.addEventListener("click", () => {
+    activeMode = "url";
+    renderMode();
+    urlInput.focus();
+  });
+  fileInput.addEventListener("change", () => handleFile(fileInput.files?.[0]));
+  urlInput.addEventListener("input", () => {
+    status.textContent = "";
+    renderPreview();
+  });
+  removeButton.addEventListener("click", () => {
+    urlInput.value = "";
+    renderPreview();
+    emitPhotoChange();
+    status.textContent = "Photo removed. Save the recipe to apply this change.";
+    status.dataset.tone = "success";
+  });
+  dropZone.addEventListener("dragover", (event) => {
+    event.preventDefault();
+    dropZone.classList.add("recipe-photo-dropzone--active");
+  });
+  dropZone.addEventListener("dragleave", () => {
+    dropZone.classList.remove("recipe-photo-dropzone--active");
+  });
+  dropZone.addEventListener("drop", (event) => {
+    event.preventDefault();
+    dropZone.classList.remove("recipe-photo-dropzone--active");
+    handleFile(event.dataTransfer?.files?.[0]);
+  });
+  dropZone.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      fileInput.click();
+    }
+  });
+
+  controls.append(uploadButton, createElement("span", "admin-muted", "or"), urlButton);
+  section.append(heading, controls, uploadPanel, urlPanel, createElement("h4", "", "Preview Image"), preview, status, removeButton);
+  renderMode();
+  renderPreview();
+  return section;
+}
+
 function formatIngredients(ingredients) {
   return (ingredients || [])
     .map((ingredient) => {
@@ -256,6 +410,7 @@ export function renderRecipeEditor(container, recipe, options = {}) {
   form.append(
     header,
     fields,
+    createRecipePhotoField(recipe, options),
     createTextareaField("ingredients", "Ingredients", formatIngredients(recipe.ingredients), "14 lb Beef chuck\n4 lb Mushrooms\n2 qt Red wine", 9),
     createTextareaField("steps", "Steps", formatSteps(recipe.steps), "1. Sear beef\n2. Add vegetables\n3. Simmer", 7)
   );
@@ -350,6 +505,7 @@ export function readRecipeForm(form, baseRecipe = {}) {
     title: String(formData.get("title") || "").trim(),
     yield: String(formData.get("yield") || "").trim(),
     category,
+    photoUrl: String(formData.get("photoUrl") || "").trim(),
     ingredients: parseIngredients(String(formData.get("ingredients") || "")),
     steps: parseSteps(String(formData.get("steps") || ""))
   };

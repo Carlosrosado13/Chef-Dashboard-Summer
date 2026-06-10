@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "test": "node --test",
     "validate:recipe": "node worker/src/validateRecipe.js"
   },
   "dependencies": {

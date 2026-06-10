@@ -25,6 +25,10 @@
       "type": "string",
       "description": "The menu or production category for the recipe, such as soup, entree, side, dessert, or salad."
     },
+    "photoUrl": {
+      "type": "string",
+      "description": "Optional repository-relative path or external URL for the finished dessert photo."
+    },
     "ingredients": {
       "type": "array",
       "description": "The ingredients required to prepare the recipe.",

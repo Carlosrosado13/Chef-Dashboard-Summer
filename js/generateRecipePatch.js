@@ -1,4 +1,4 @@
-export const PATCH_FIELDS = ["title", "yield", "category", "ingredients", "steps", "notes", "tags", "metadata"];
+export const PATCH_FIELDS = ["title", "yield", "category", "photoUrl", "ingredients", "steps", "notes", "tags", "metadata"];
 const KNOWN_UNITS = new Set([
   "bag", "bags", "bunch", "bunches", "can", "cans", "case", "cases", "clove", "cloves",
   "cup", "cups", "each", "ea", "fl", "gal", "g", "kg", "lb", "lbs", "oz", "pt", "qt",
@@ -85,6 +85,7 @@ function normalizeRecipeForPatch(recipe = {}) {
     title: normalizeText(recipe.title),
     yield: normalizeText(recipe.yield),
     category: normalizeText(recipe.category),
+    photoUrl: normalizeText(recipe.photoUrl),
     ingredients: Array.isArray(recipe.ingredients)
       ? recipe.ingredients.map(normalizeIngredient).filter((ingredient) => ingredient.name || ingredient.unit || ingredient.amount !== 0)
       : normalizeStringList(recipe.ingredients).map(parseIngredientLine),

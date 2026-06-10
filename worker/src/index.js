@@ -7,6 +7,7 @@ import {
 import { extractRecipeFromHtmlDocument } from "./extractRecipe.js";
 import { handleSaveDraft, handleValidatePatch } from "./recipePatchApi.js";
 import { handleCommitPatch } from "./recipePatchRoutes.js";
+import { handleDeleteRecipePhoto, handleUploadRecipePhoto } from "./recipePhotoApi.js";
 
 const ADMIN_LOGIN_PATH = "/api/admin/login";
 const ADMIN_LOGOUT_PATH = "/api/admin/logout";
@@ -16,6 +17,7 @@ const RECIPE_SAVE_DRAFT_PATH = "/api/recipe/save-draft";
 const RECIPE_COMMIT_PATCH_PATH = "/api/recipe/commit-patch";
 const RECIPE_SAVE_PATH = "/api/recipe/save";
 const ADMIN_EXTRACT_URL_PATH = "/api/admin/extract-url";
+const RECIPE_PHOTO_PATH = "/api/recipe/photo";
 const DEV_ADMIN_AUTH_BYPASS = true;
 const RECIPE_FETCH_HEADERS = {
   "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
@@ -42,7 +44,7 @@ function normalizePathname(pathname) {
 function createCorsHeaders(request) {
   return {
     "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+    "Access-Control-Allow-Methods": "GET,POST,DELETE,OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type, Authorization"
   };
 }
@@ -241,6 +243,26 @@ async function handleRecipeSaveRequest(request, env) {
 
 routeHandlers.set(`POST ${RECIPE_COMMIT_PATCH_PATH}`, handleRecipeSaveRequest);
 routeHandlers.set(`POST ${RECIPE_SAVE_PATH}`, handleRecipeSaveRequest);
+routeHandlers.set(`POST ${RECIPE_PHOTO_PATH}`, async (request, env) => {
+  if (!DEV_ADMIN_AUTH_BYPASS) {
+    const auth = requireAdminAuth(request);
+    if (!auth.ok) {
+      return withCors(auth.response, request);
+    }
+  }
+
+  return withCors(await handleUploadRecipePhoto(request, env), request);
+});
+routeHandlers.set(`DELETE ${RECIPE_PHOTO_PATH}`, async (request, env) => {
+  if (!DEV_ADMIN_AUTH_BYPASS) {
+    const auth = requireAdminAuth(request);
+    if (!auth.ok) {
+      return withCors(auth.response, request);
+    }
+  }
+
+  return withCors(await handleDeleteRecipePhoto(request, env), request);
+});
 
 function isRecipeSavePath(pathname) {
   return pathname === RECIPE_COMMIT_PATCH_PATH || pathname === RECIPE_SAVE_PATH;
