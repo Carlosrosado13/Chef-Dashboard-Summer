@@ -14848,31 +14848,13 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "amount": 6,
-        "unit": "cup",
-        "name": "freshly squeezed lemon juice"
-      },
-      {
         "amount": 1,
-        "unit": "cup",
-        "name": "granulated sugar"
-      },
-      {
-        "amount": 6,
-        "unit": "cup",
-        "name": "water"
-      },
-      {
-        "amount": 1,
-        "unit": "Tbsp",
-        "name": "finely grated lemon zest"
+        "unit": "each",
+        "name": "Store-bought item"
       }
     ],
     "steps": [
-      "Combine the water and granulated sugar in a small saucepan over medium heat. Stir frequently for 3 to 5 minutes until the sugar dissolves completely and the liquid turns clear. Do not let it boil vigorously. Remove from heat.",
-      "Stir the fresh lemon zest directly into the hot simple syrup. Let the syrup cool completely to room temperature, allowing the oils from the zest to steep into the liquid.",
-      "Pour the freshly squeezed lemon juice into the cooled sugar syrup and stir thoroughly to combine. For an ultra-smooth texture, pour the mixture through a fine-mesh strainer into a bowl to remove any remaining pulp or zest pieces.",
-      "Chill the mixture for at least 1 hour until completely cold. Churn the chilled liquid in an ice cream maker until it reaches a soft slushy consistency, then transfer to an airtight container and freeze for 2 to 3 hours until firm. For no-churn production, pour the cold liquid into a shallow metal baking dish and freeze, stirring every 30 minutes for the first 2 to 3 hours until the texture is uniformly icy and scoopable."
+      "Store-bought"
     ],
     "metadata": {
       "source": "menu-link-placeholder",
@@ -14887,8 +14869,13 @@
           "day": "Tuesday",
           "category": "Dessert"
         }
-      ]
-    }
+      ],
+      "importedFrom": "lunch-menu-master.xlsx",
+      "updatedAt": "2026-07-06T21:15:59.512Z"
+    },
+    "notes": [
+      "Store-bought item per lunch-menu-master.xlsx."
+    ]
   },
   {
     "title": "CHICKEN TORTILLA",
@@ -17588,16 +17575,16 @@
     "category": "Dessert",
     "ingredients": [
       {
-        "name": "Recipe details pending",
         "amount": 1,
-        "unit": "each"
+        "unit": "each",
+        "name": "Store-bought item"
       }
     ],
     "steps": [
-      "Placeholder recipe created to link the current menu assignment. Replace with the approved production recipe before service."
+      "Store-bought"
     ],
     "notes": [
-      "Placeholder only. Ingredients, quantities, and method still need chef review."
+      "Store-bought item per lunch-menu-master.xlsx."
     ],
     "tags": [
       "placeholder",
@@ -17616,7 +17603,9 @@
           "day": "Wednesday",
           "category": "Dessert"
         }
-      ]
+      ],
+      "importedFrom": "lunch-menu-master.xlsx",
+      "updatedAt": "2026-07-06T21:15:59.596Z"
     }
   },
   {
