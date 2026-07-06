@@ -119,9 +119,9 @@
           "Thursday": {
             "Appetizer 1": "Antipasti Skewers with Cured Meats and Italian Vegetables with Garlic Bread Spear ",
             "Appetizer 2": "Mango and Avocado Salad.  Choice Dressing (GF/DF)",
-            "Elevated": "VEAL SHANK WITH SPICED AVOCADO LIME SAUCE",
+            "Elevated": "OSSO BUCCO WITH SPICED AVOCADO LIME SAUCE",
             "Comfort": "CHICKEN PARMESAN",
-            "Alternative": "GRILLED CHICKEN BREAST WITH BASIL PESTO/ROASTED TOMATO",
+            "Alternative": "GRILLED SALMON WITH BASIL PESTO/ROASTED TOMATO",
             "Veggie 1": "ROASTED ZUCCHINI CHUNKS",
             "Veggie 2": "BUTTERED PEAS",
             "Starch": "ANCIENT GRAINS",
@@ -158,7 +158,7 @@
             "Veggie 1": "SAUTEED ASPARAGUS (2\" CUTS)",
             "Veggie 2": "ROASTED BUTTERNUT SQUASH",
             "Starch": "BUTTER MASHED POTATOES",
-            "Dessert": "PEACH COBBLER"
+            "Dessert": "NO BAKE ECLAIR CAKE"
           }
         }
       },
@@ -180,7 +180,6 @@
             "Appetizer 2": "SPINACH STRAWBERRY SALAD ALMOND & GOAT CHEESE HONEY MUSTARD",
             "Elevated": "BEEF BRISKET BBQ",
             "Comfort": "Buttermilk Fried Chicken (***BONE-IN***) (DF)",
-            "Alternative": "SAUTEED SHRIMP WITH GARLIC, WHITE WINE & FRESH DICED TOMATO",
             "Veggie 1": "STEAMED BROCCOLI",
             "Veggie 2": "GREEN AND YELLOW BEAN",
             "Starch": "GARLIC MASHED POTATO",
@@ -202,7 +201,7 @@
             "Appetizer 2": "Cheesy Chili White Bean Dip with Pita Chips ",
             "Elevated": "SAUTEED SHRIMP AND PESTO PASTA",
             "Comfort": "SALMON FILET WITH TZATZIKI SAUCE",
-            "Alternative": "GRILLED CHICKEN BREAST WITH BASIL PESTO/ROASTED TOMATO",
+            "Alternative": "TOMATO CHEDDAR AND BACON PIE",
             "Veggie 1": "GRILLED ASPARAGUS",
             "Veggie 2": "SAUTEED BABY PEPPERS",
             "Starch": "STICKY JASMINE RICE",
@@ -211,7 +210,7 @@
           "Friday": {
             "Appetizer 1": "RIBBON SALAD WITH ORANGE VINAIGRETTE",
             "Appetizer 2": "CREAM OF ASPARAGUS SOUP WITH SOUR CREAM",
-            "Elevated": "BEEF STRIPS WITH SAUTEED WILD MUSHROOMS WITH PAN SAUCE (GF)",
+            "Elevated": "BEEF STROGANOFF (GF)",
             "Comfort": "SEARED CATFISH LEMON BEURRE BLANC SAUCE",
             "Alternative": "CHICKEN CAESAR SALAD",
             "Veggie 1": "CARROT AND PEA MIX",
@@ -227,7 +226,7 @@
             "Alternative": "GRILLED SHRIMPS WITH MANGO SALSA",
             "Veggie 1": "GRILLED ZUCCHINI CHUNKS",
             "Veggie 2": "STEAMED CARROT WEDGES",
-            "Starch": "BAKED POTATO WITH SOUR CREAM&CHIVE",
+            "Starch": "FARO WITH FRESH CHOPPED HERBS",
             "Dessert": "SHOOFLY PIE"
           },
           "Sunday": {
@@ -235,10 +234,10 @@
             "Appetizer 2": "GRILLED EGGPLANT CAPRESE DISH",
             "Elevated": "BBQ PORK BACK RIBS",
             "Comfort": "Creamy Mac’N’Cheese Bake",
-            "Alternative": "Chicken Marsala with Creamy Mushroom Sauce (DF)",
+            "Alternative": "CHICKEN MARSALA WITH CREAMY MUSHROOM SAUCE (DF)",
             "Veggie 1": "STEAMED GREEN BEANS",
             "Veggie 2": "ROASTED ROOT VEGETABLE",
-            "Starch": "BUTTER MASHED POTATOES",
+            "Starch": "LOADED BAKED POTATO",
             "Dessert": "Pudding Chomeur with Vanilla Ice Cream"
           }
         }

@@ -27541,5 +27541,542 @@
         }
       ]
     }
+  },
+  {
+    "title": "OSSO BUCCO WITH SPICED AVOCADO LIME SAUCE",
+    "yield": "4 servings",
+    "category": "Elevated",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "each",
+        "name": "thick-cut veal shanks (Osso Buco style)"
+      },
+      {
+        "amount": 2,
+        "unit": "Tbsp",
+        "name": "olive oil"
+      },
+      {
+        "amount": 1,
+        "unit": "each",
+        "name": "onion (diced)"
+      },
+      {
+        "amount": 2,
+        "unit": "cup",
+        "name": "beef broth"
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "name": "dry white wine"
+      },
+      {
+        "amount": 1,
+        "unit": "to taste",
+        "name": "salt"
+      },
+      {
+        "amount": 1,
+        "unit": "each",
+        "name": "and pepper"
+      },
+      {
+        "amount": 1,
+        "unit": "each",
+        "name": "Spiced"
+      },
+      {
+        "amount": 1,
+        "unit": "each",
+        "name": "Avocado"
+      },
+      {
+        "amount": 1,
+        "unit": "each",
+        "name": "Lime"
+      },
+      {
+        "amount": 2,
+        "unit": "each",
+        "name": "ripe avocados"
+      },
+      {
+        "amount": 1,
+        "unit": "each",
+        "name": "juice of 2 limes"
+      },
+      {
+        "amount": 1,
+        "unit": "each",
+        "name": "jalapeno (seeded)"
+      },
+      {
+        "amount": 0.25,
+        "unit": "cup",
+        "name": "cilantro leaves"
+      },
+      {
+        "amount": 1,
+        "unit": "clove",
+        "name": "garlic"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground cumin"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt"
+      }
+    ],
+    "steps": [
+      "Preheat and sear: Preheat oven to 325°F (160°C). Season veal shanks heavily with salt and pepper. Heat olive oil in a Dutch oven; sear shanks for 4 minutes per side until deeply browned; remove.",
+      "Saute and deglaze: Cook diced onion in the same pot for 3 minutes. Pour in white wine, scraping the bottom, and simmer 3 minutes. Add beef broth.",
+      "Braised tender: Return veal shanks to the liquid, cover tightly with a lid, and braise in the oven for 2 hours until fork-tender.",
+      "Blend sauce and serve: Blend avocados, lime juice, jalapeno, cilantro, garlic, cumin, and salt until ultra-smooth. Slice veal and serve hot with a pool of the cold, creamy avocado sauce."
+    ],
+    "metadata": {
+      "week": "Week 2",
+      "day": "Thursday",
+      "menuSlot": "Elevated",
+      "season": "Summer",
+      "importedFrom": "Dinner update jul 06.xlsx",
+      "updatedAt": "2026-07-06T20:48:57.734Z"
+    }
+  },
+  {
+    "title": "GRILLED SALMON WITH BASIL PESTO/ROASTED TOMATO",
+    "yield": "4 servings",
+    "category": "Alternative",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "each",
+        "name": "salmon fillets (center-cut, skin-on)"
+      },
+      {
+        "amount": 2,
+        "unit": "Tbsp",
+        "name": "olive oil"
+      },
+      {
+        "amount": 1,
+        "unit": "to taste",
+        "name": "salt"
+      },
+      {
+        "amount": 1,
+        "unit": "each",
+        "name": "and pepper"
+      },
+      {
+        "amount": 2,
+        "unit": "cup",
+        "name": "cherry tomatoes (whole)"
+      },
+      {
+        "amount": 1,
+        "unit": "Tbsp",
+        "name": "balsamic vinegar"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "fresh basil leaves"
+      },
+      {
+        "amount": 0.25,
+        "unit": "cup",
+        "name": "pine nuts (toasted)"
+      },
+      {
+        "amount": 1,
+        "unit": "clove",
+        "name": "garlic"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "parmesan cheese (grated)"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "extra virgin olive oil"
+      }
+    ],
+    "steps": [
+      "Preheat and roast: Preheat oven to 400°F (205°C). Toss cherry tomatoes with 1 Tbsp olive oil, balsamic vinegar, salt, and pepper on a baking sheet; roast for 15 minutes until blistered; remove.",
+      "Make the pesto: Blend basil leaves, toasted pine nuts, garlic, parmesan cheese, and extra virgin olive oil in a food processor until ultra-smooth. Season with salt to taste.",
+      "Grill the salmon: Preheat grill to medium-high heat. Brush salmon fillets with remaining olive oil and season heavily with salt and pepper; grill skin-side down for 5 minutes, flip, and grill 4 minutes more until cooked through.",
+      "Assemble and serve: Place grilled salmon fillets on a platter. Spoon a generous layer of basil pesto over the top and scatter the warm roasted tomatoes over the sauce."
+    ],
+    "metadata": {
+      "week": "Week 2",
+      "day": "Thursday",
+      "menuSlot": "Alternative",
+      "season": "Summer",
+      "importedFrom": "Dinner update jul 06.xlsx",
+      "updatedAt": "2026-07-06T20:48:57.739Z"
+    }
+  },
+  {
+    "title": "NO BAKE ECLAIR CAKE",
+    "yield": "12 servings",
+    "category": "Dessert",
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": "bags",
+        "name": "graham crackers (whole sheets)"
+      },
+      {
+        "amount": 2,
+        "unit": "packages",
+        "name": "instant vanilla pudding mix (3.4 oz each)"
+      },
+      {
+        "amount": 3,
+        "unit": "cup",
+        "name": "whole milk"
+      },
+      {
+        "amount": 1,
+        "unit": "container",
+        "name": "frozen whipped topping (8 oz, thawed)"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "unsweetened cocoa powder"
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "name": "granulated white sugar"
+      },
+      {
+        "amount": 0.25,
+        "unit": "cup",
+        "name": "whole milk (for glaze)"
+      },
+      {
+        "amount": 1,
+        "unit": "stick",
+        "name": "unsalted butter (0.5 cup)"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla extract"
+      }
+    ],
+    "steps": [
+      "Whisk and fold: Whisk together instant vanilla pudding mix and 3 cups of whole milk in a large bowl for 2 minutes until thickened. Gently fold in the thawed whipped topping until the filling is uniform and smooth.",
+      "Layer the base: Arrange a single layer of graham crackers in the bottom of a 9x13-inch baking dish, breaking them to fit snugly. Spread half of the pudding mixture evenly over the cracker layer.",
+      "Repeat and top: Add a second layer of graham crackers over the pudding, followed by the remaining pudding mixture. Place a final layer of graham crackers on top and press down very lightly.",
+      "Boil and chill: Melt butter, cocoa powder, sugar, and 0.25 cup milk in a saucepan over medium heat, boiling for 1 minute while stirring. Remove from heat, stir in vanilla, and pour the warm glaze over the top; chill cake for 4 hours."
+    ],
+    "metadata": {
+      "week": "Week 2",
+      "day": "Sunday",
+      "menuSlot": "Dessert",
+      "season": "Summer",
+      "importedFrom": "Dinner update jul 06.xlsx",
+      "updatedAt": "2026-07-06T20:48:57.743Z"
+    }
+  },
+  {
+    "title": "TOMATO CHEDDAR AND BACON PIE",
+    "yield": "6 servings",
+    "category": "Alternative",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "each",
+        "name": "thick-cut bacon slices (diced)"
+      },
+      {
+        "amount": 4,
+        "unit": "each",
+        "name": "large tomatoes (sliced, seeds removed)"
+      },
+      {
+        "amount": 1,
+        "unit": "each",
+        "name": "pre-baked 9-inch pie crust"
+      },
+      {
+        "amount": 1,
+        "unit": "to taste",
+        "name": "salt"
+      },
+      {
+        "amount": 1,
+        "unit": "each",
+        "name": "and pepper"
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "name": "sharp cheddar cheese (shredded)"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "mozzarella cheese (shredded)"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "mayonnaise"
+      },
+      {
+        "amount": 0.25,
+        "unit": "cup",
+        "name": "fresh basil leaves (chopped)"
+      },
+      {
+        "amount": 1,
+        "unit": "clove",
+        "name": "garlic (minced)"
+      }
+    ],
+    "steps": [
+      "Preheat and crisp: Preheat oven to 375°F (190°C). Fry diced bacon in a skillet over medium heat for 7 minutes until completely crisp; remove and drain on paper towels.",
+      "Drain and dry: Layer sliced tomatoes on paper towels and sprinkle heavily with salt; let sit for 15 minutes to draw out excess moisture, then blot dry.",
+      "Mix the topping: Combine shredded cheddar, mozzarella, mayonnaise, chopped basil, minced garlic, and pepper in a medium bowl until thoroughly mixed.",
+      "Layer and bake: Layer tomatoes and crisped bacon inside the pre-baked pie crust. Spread the cheese mixture evenly over the top layer; bake for 30 minutes until bubbling and golden brown."
+    ],
+    "metadata": {
+      "week": "Week 3",
+      "day": "Thursday",
+      "menuSlot": "Alternative",
+      "season": "Summer",
+      "importedFrom": "Dinner update jul 06.xlsx",
+      "updatedAt": "2026-07-06T20:48:57.747Z"
+    }
+  },
+  {
+    "title": "BEEF STROGANOFF (GF)",
+    "yield": "4 servings",
+    "category": "Elevated",
+    "ingredients": [
+      {
+        "amount": 1.5,
+        "unit": "lb",
+        "name": "beef sirloin steak (sliced into thin strips)"
+      },
+      {
+        "amount": 2,
+        "unit": "Tbsp",
+        "name": "olive oil"
+      },
+      {
+        "amount": 1,
+        "unit": "each",
+        "name": "onion (diced)"
+      },
+      {
+        "amount": 8,
+        "unit": "oz",
+        "name": "white button mushrooms (sliced)"
+      },
+      {
+        "amount": 2,
+        "unit": "cup",
+        "name": "gluten-free beef broth"
+      },
+      {
+        "amount": 1,
+        "unit": "Tbsp",
+        "name": "gluten-free Worcestershire sauce"
+      },
+      {
+        "amount": 1,
+        "unit": "to taste",
+        "name": "salt"
+      },
+      {
+        "amount": 1,
+        "unit": "each",
+        "name": "and pepper"
+      },
+      {
+        "amount": 2,
+        "unit": "Tbsp",
+        "name": "cornstarch"
+      },
+      {
+        "amount": 2,
+        "unit": "Tbsp",
+        "name": "cold water"
+      },
+      {
+        "amount": 0.75,
+        "unit": "cup",
+        "name": "sour cream"
+      },
+      {
+        "amount": 12,
+        "unit": "oz",
+        "name": "gluten-free egg noodles (or rotini)"
+      }
+    ],
+    "steps": [
+      "Preheat and sear: Heat olive oil in a large skillet over medium-high heat. Season beef strips heavily with salt and pepper; sear shanks and strips for 3 minutes until browned but tender; remove.",
+      "Saute and deglaze: Cook diced onion and sliced mushrooms in the same pot for 5 minutes until soft. Pour in gluten-free beef broth and Worcestershire sauce, scraping the bottom, and simmer 3 minutes.",
+      "Thicken and simmer: Whisk cornstarch and cold water in a small bowl until smooth. Pour mixture into the simmering broth, stirring constantly, and let boil for 1 minute until the gravy thickens up.",
+      "Finish and serve: Lower heat to low. Stir in the sour cream and returned beef strips until ultra-smooth and hot (do not boil). Slice veal and serve hot over cooked gluten-free noodles."
+    ],
+    "metadata": {
+      "week": "Week 3",
+      "day": "Friday",
+      "menuSlot": "Elevated",
+      "season": "Summer",
+      "importedFrom": "Dinner update jul 06.xlsx",
+      "updatedAt": "2026-07-06T20:48:57.750Z"
+    }
+  },
+  {
+    "title": "FARO WITH FRESH CHOPPED HERBS",
+    "yield": "4 servings",
+    "category": "Starch",
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "cup",
+        "name": "farro (pearled)"
+      },
+      {
+        "amount": 3,
+        "unit": "cup",
+        "name": "water (or vegetable broth)"
+      },
+      {
+        "amount": 2,
+        "unit": "Tbsp",
+        "name": "olive oil"
+      },
+      {
+        "amount": 1,
+        "unit": "to taste",
+        "name": "salt"
+      },
+      {
+        "amount": 1,
+        "unit": "each",
+        "name": "and pepper"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "fresh parsley (finely chopped)"
+      },
+      {
+        "amount": 0.25,
+        "unit": "cup",
+        "name": "fresh mint leaves (finely chopped)"
+      },
+      {
+        "amount": 0.25,
+        "unit": "cup",
+        "name": "fresh dill (finely chopped)"
+      },
+      {
+        "amount": 2,
+        "unit": "each",
+        "name": "green onions (sliced thin)"
+      },
+      {
+        "amount": 1,
+        "unit": "each",
+        "name": "juice of 1 lemon"
+      }
+    ],
+    "steps": [
+      "Rinse and boil: Rinse farro thoroughly under cold water. Combine farro, water, and a pinch of salt in a medium saucepan over high heat; bring to a rolling boil.",
+      "Simmer and tender: Lower heat to medium-low, cover tightly with a lid, and simmer for 25 minutes until the farro grains are chewy and tender.",
+      "Drain and cool: Drain any excess water completely from the pot. Transfer the cooked farro to a large mixing bowl, toss with olive oil, and let cool for 10 minutes.",
+      "Toss and serve: Add the chopped parsley, mint, dill, green onions, and lemon juice into the bowl; season with salt and pepper, and toss until ultra-smooth and well combined."
+    ],
+    "metadata": {
+      "week": "Week 3",
+      "day": "Saturday",
+      "menuSlot": "Starch",
+      "season": "Summer",
+      "importedFrom": "Dinner update jul 06.xlsx",
+      "updatedAt": "2026-07-06T20:48:57.754Z"
+    }
+  },
+  {
+    "title": "LOADED BAKED POTATO",
+    "yield": "4 servings",
+    "category": "Starch",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "each",
+        "name": "large Russet potatoes (scrubbed clean)"
+      },
+      {
+        "amount": 1,
+        "unit": "Tbsp",
+        "name": "olive oil"
+      },
+      {
+        "amount": 1,
+        "unit": "to taste",
+        "name": "salt"
+      },
+      {
+        "amount": 1,
+        "unit": "each",
+        "name": "and pepper"
+      },
+      {
+        "amount": 6,
+        "unit": "each",
+        "name": "thick-cut bacon slices (diced)"
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "name": "sharp cheddar cheese (shredded)"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "name": "sour cream"
+      },
+      {
+        "amount": 4,
+        "unit": "Tbsp",
+        "name": "unsalted butter"
+      },
+      {
+        "amount": 0.25,
+        "unit": "cup",
+        "name": "fresh chives (finely sliced)"
+      }
+    ],
+    "steps": [
+      "Preheat and bake: Preheat oven to 400°F (205°C). Pierce clean potatoes all over with a fork, rub skins heavily with olive oil and salt, and bake directly on the oven rack for 1 hour until tender.",
+      "Crisp the bacon: Fry diced bacon in a skillet over medium heat for 7 minutes until completely crisp; remove with a slotted spoon and drain on paper towels.",
+      "Slice and fluff: Slice a thin layer off the top of each baked potato lengthwise. Gently fluff the steaming inside flesh with a fork, mashing it slightly while keeping the outer skin intact.",
+      "Load and serve: Stuff each potato with 1 Tbsp butter, seasoned with pepper. Top evenly with shredded cheddar cheese, warm crisped bacon, a dollop of cold sour cream, and fresh chopped chives."
+    ],
+    "metadata": {
+      "week": "Week 3",
+      "day": "Sunday",
+      "menuSlot": "Starch",
+      "season": "Summer",
+      "importedFrom": "Dinner update jul 06.xlsx",
+      "updatedAt": "2026-07-06T20:48:57.761Z"
+    }
   }
 ]
